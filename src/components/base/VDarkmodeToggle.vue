@@ -4,7 +4,6 @@ const { isDark, onChange } = useDarkmode()
 
 <template>
   <label
-    data-cy="dark-mode-toggle"
     class="dark-mode"
     tabindex="0"
     role="button"
@@ -12,7 +11,6 @@ const { isDark, onChange } = useDarkmode()
   >
     <ClientOnly>
       <input
-        data-cy="dark-mode-toggle"
         type="checkbox"
         :checked="!isDark"
         @click="onChange"

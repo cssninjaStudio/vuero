@@ -403,19 +403,6 @@ useHead({
                   standards.
                 </p>
               </div>
-              <div class="flex-cell is-bordered">
-                <div class="icon-holder">
-                  <VIcon
-                    class="smaller"
-                    icon="file-icons:prettier"
-                  />
-                </div>
-                <h3>Prettier</h3>
-                <p>
-                  Prettier tidies your code and makes it look much more cleaner and easier
-                  to read.
-                </p>
-              </div>
               <div class="flex-cell">
                 <div class="icon-holder">
                   <VIcon
@@ -446,26 +433,13 @@ useHead({
                 <div class="icon-holder">
                   <VIcon
                     class="smaller"
-                    icon="simple-icons:cypress"
+                    icon="simple-icons:bun"
                   />
                 </div>
-                <h3>Cypress</h3>
+                <h3>Bun</h3>
                 <p>
-                  Cypress handles end to end testing to make sure everything works as
-                  expected.
-                </p>
-              </div>
-              <div class="flex-cell">
-                <div class="icon-holder">
-                  <VIcon
-                    class="smaller"
-                    icon="file-icons:pnpm"
-                  />
-                </div>
-                <h3>Pnpm + Yarn</h3>
-                <p>
-                  Vuero works very well with Pnpm or Yarn for efficient dependency
-                  management.
+                  Support Bun as alternative to Nodejs for a faster and more efficient
+                  development.
                 </p>
               </div>
               <div class="flex-cell">
@@ -485,19 +459,6 @@ useHead({
                 <div class="icon-holder">
                   <VIcon
                     class="smaller"
-                    icon="mdi:robot"
-                  />
-                </div>
-                <h3>Robot Friendly</h3>
-                <p>
-                  Fully featured with structured data. Help your site display in richer
-                  features in search results.
-                </p>
-              </div>
-              <div class="flex-cell">
-                <div class="icon-holder">
-                  <VIcon
-                    class="smaller"
                     icon="ic:twotone-check-circle"
                   />
                 </div>
@@ -505,19 +466,6 @@ useHead({
                 <p>
                   Vuero base components ship with props validation to prevent unexpected
                   errors.
-                </p>
-              </div>
-              <div class="flex-cell">
-                <div class="icon-holder">
-                  <VIcon
-                    class="smaller"
-                    icon="solar:folder-error-bold"
-                  />
-                </div>
-                <h3>Error Handling</h3>
-                <p>
-                  While developping Vuero, we focused on providing an up to standards
-                  error handling.
                 </p>
               </div>
               <div class="flex-cell">

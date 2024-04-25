@@ -8,7 +8,7 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
-RUN CYPRESS_INSTALL_BINARY=0 pnpm install
+RUN pnpm install
 
 COPY . .
 RUN VITE_API_BASE_URL=$VITE_API_BASE_URL \

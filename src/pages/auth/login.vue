@@ -90,7 +90,6 @@ useHead({
             <form
               method="post"
               novalidate
-              data-cy="login-form"
               :class="[step !== 'login' && 'is-hidden']"
               class="login-wrapper"
               @submit.prevent="handleLogin"
@@ -112,7 +111,6 @@ useHead({
                     Email Address
                   </VLabel>
                   <VInput
-                    data-cy="email-input"
                     type="email"
                     autocomplete="current-password"
                   />
@@ -124,7 +122,6 @@ useHead({
                     Password
                   </VLabel>
                   <VInput
-                    data-cy="password-input"
                     type="password"
                     autocomplete="current-password"
                   />

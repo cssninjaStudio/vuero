@@ -120,7 +120,6 @@ watchEffect(() => {
             <ClientOnly>
               <input
                 :checked="isDark"
-                data-cy="dark-mode-toggle"
                 type="checkbox"
                 @click="onChange"
               >

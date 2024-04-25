@@ -177,8 +177,6 @@ zip -r $ARCHIVE . \
   -x "vite-plugin-vuero-doc/*" \
   -x ".git/*" \
   -x ".github/*" \
-  -x "cypress/*" \
-  -x "cypress.json" \
   -x "docker-compose.e2e.yml"\
   -x "docker-compose.yml"
 
