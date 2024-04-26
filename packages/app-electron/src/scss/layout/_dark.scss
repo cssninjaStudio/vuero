@@ -1,0 +1,45 @@
+/*! _dark.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Layout Dark mode
+*/
+
+/* ==========================================================================
+1. Layout Dark mode
+========================================================================== */
+
+.is-dark {
+  background: var(--dark-sidebar-light-10);
+
+  &.is-chat-side-collapsed {
+    background: var(--dark-sidebar-light-5) !important;
+  }
+
+  &.opened {
+    background: var(--dark-sidebar-light-5);
+  }
+
+  .pageloader {
+    background: var(--dark-sidebar-light-10);
+  }
+
+  .infraloader {
+    background: var(--dark-sidebar-light-15) !important;
+  }
+
+  .page-title {
+    h1 {
+      color: var(--primary-grey-light-3);
+    }
+  }
+
+  .menu-toggle .iconify {
+    background: var(--primary);
+    color: var(--primary--color-invert);
+  }
+
+  .zoom-overlay {
+    background: var(--dark-sidebar-light-10);
+    border-color: var(--dark-sidebar-light-10);
+  }
+}

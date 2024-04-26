@@ -25,6 +25,7 @@ node_modules/
 
 # build output
 dist
+dist-electron
 
 # ignoring vuero releases files
 public/sitemap.xml
