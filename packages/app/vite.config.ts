@@ -34,18 +34,11 @@ export default defineConfig({
         find: '/@src/',
         replacement: `/src/`,
       },
-      {
-        find: '/@server/',
-        replacement: `/server/`,
-      },
     ],
   },
   // development server configuration
   server: {
     port: 3000,
-  },
-  ssr: {
-    noExternal: isProd ? [] : ['vue-router'],
   },
   // Predefine dependencies in order to prevent reloading them in the browser during development.
   optimizeDeps: {

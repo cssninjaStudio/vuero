@@ -1,10 +1,11 @@
-<route lang="yaml">
-  meta:
-    requiresAuth: true
-</route>
-
 <script setup lang="ts">
 import Layout from '/@src/layouts/sideblock.vue'
+
+definePage({
+  meta: {
+    requiresAuth: true
+  }
+})
 
 useHead({
   meta: [
