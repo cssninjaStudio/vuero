@@ -146,6 +146,7 @@ watchEffect(() => {
         .nav-link {
           position: relative;
           font-family: var(--font-alt);
+          font-weight: 500;
           font-size: 0.9rem;
           color: var(--light-text);
           text-transform: capitalize;
