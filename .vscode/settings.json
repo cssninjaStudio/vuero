@@ -13,7 +13,7 @@
   "eslint.alwaysShowStatus": true,
   "prettier.enable": false,
   // "eslint.format.enable": true,
-  "eslint.lintTask.options": "-c .eslintrc.cjs .",
+  "eslint.lintTask.options": "-c ./packages/demo/.eslintrc.cjs .",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -29,7 +29,6 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"],
   "vue.codeActions.enabled": false
 }
