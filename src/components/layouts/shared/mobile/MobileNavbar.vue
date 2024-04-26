@@ -44,133 +44,9 @@ const modelValue = defineModel<boolean>({
       }
     }
 
-    .user-dropdown {
-      margin-inline-start: auto;
-      width: 32px;
-      height: 32px;
-
-      &.is-active {
-        .iconify {
-          color: var(--muted-grey);
-        }
-      }
-
-      .is-trigger {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        cursor: pointer;
-
-        .profile-avatar {
-          position: relative;
-          min-width: 32px;
-          min-height: 32px;
-
-          .avatar {
-            display: block;
-            width: 32px;
-            height: 32px;
-            min-width: 32px;
-            min-height: 32px;
-            border-radius: var(--radius-rounded);
-          }
-
-          .badge {
-            position: absolute;
-            top: unset !important;
-            inset-inline-end: -6px;
-            bottom: -2px;
-            width: 18px;
-            min-width: 18px;
-            height: 18px;
-            max-height: 18px;
-            border: 2px solid var(--white);
-            border-radius: var(--radius-rounded);
-          }
-        }
-
-        .iconify {
-          margin-inline-start: 3px;
-          width: 22px;
-          height: 22px;
-          color: var(--dark-sidebar);
-          transition: all 0.3s; // transition-all test
-        }
-      }
-
+    .profile-dropdown {
       .dropdown-menu {
-        inset-inline-end: -12px;
         margin-top: 20px;
-
-        .dropdown-content {
-          padding-top: 0;
-          overflow: hidden;
-
-          .dropdown-head {
-            display: flex;
-            align-items: center;
-            padding: 20px 16px;
-            margin-bottom: 12px;
-            background: #fafafa;
-
-            .meta {
-              margin-inline-start: 12px;
-              font-family: var(--font);
-
-              span {
-                display: block;
-
-                &:first-child {
-                  font-size: 1.1rem;
-                  font-weight: 500;
-                  color: var(--dark-text);
-                  line-height: 1.2;
-                }
-
-                &:nth-child(2) {
-                  text-transform: uppercase;
-                  color: var(--light-text);
-                  font-size: 0.7rem;
-                }
-              }
-            }
-          }
-
-          .logout-button {
-            .iconify {
-              color: var(--smoke-white) !important;
-            }
-          }
-        }
-
-        .dropdown-item {
-          font-size: 0.9rem;
-        }
-      }
-
-      .flex-item {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 15px;
-
-        .toggler .iconify {
-          color: var(--smoke-white) !important;
-        }
-
-        .toggle-title {
-          font-size: 0.8rem;
-          color: var(--muted-grey);
-
-          &:hover,
-          &:focus {
-            background: transparent !important;
-          }
-        }
-
-        &:hover {
-          background: transparent !important;
-        }
       }
     }
   }
@@ -500,18 +376,6 @@ const modelValue = defineModel<boolean>({
           &:focus {
             ~ span .iconify {
               color: var(--primary);
-            }
-          }
-        }
-      }
-    }
-
-    .navbar-brand {
-      .user-dropdown {
-        .dropdown-menu {
-          .dropdown-content {
-            .dropdown-head {
-              background: var(--dark-sidebar-light-6);
             }
           }
         }

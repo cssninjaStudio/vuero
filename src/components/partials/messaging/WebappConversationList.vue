@@ -58,5 +58,7 @@ const props = withDefaults(
         </div>
       </div>
     </div>
+
+    <div class="overlay" />
   </div>
 </template>

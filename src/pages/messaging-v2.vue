@@ -127,7 +127,6 @@ const conversations: conversationData[] = [
 ]
 
 const { onceError } = useImageError()
-const panels = usePanels()
 const selectedConversationId = ref(3)
 const mobileConversationListOpen = ref(false)
 const selectedConversation = computed(() => {
@@ -140,9 +139,6 @@ const selectedConversation = computed(() => {
 
   return conversations[0]
 })
-
-const dropdownElement1 = ref<HTMLElement>()
-const dropdown1 = useDropdown(dropdownElement1)
 
 const dropdownElement2 = ref<HTMLElement>()
 const dropdown2 = useDropdown(dropdownElement2)
@@ -159,10 +155,12 @@ useHead({
       <div class="chat-app-header">
         <!--Logo-->
         <div class="logo">
-          <AnimatedLogo
-            width="38px"
-            height="38px"
-          />
+          <VLink to="/">
+            <AnimatedLogo
+              width="38px"
+              height="38px"
+            />
+          </VLink>
         </div>
 
         <!--Search-->
@@ -189,95 +187,10 @@ useHead({
         <div class="user-settings">
           <!--Toolbar-->
           <div class="toolbar desktop-toolbar">
+            <ToolbarThemeToggle />
             <ToolbarNotification />
-
-            <a
-              class="toolbar-link right-panel-trigger"
-              aria-label="View activity"
-              tabindex="0"
-              role="button"
-              @keydown.enter.prevent="panels.setActive('activity')"
-              @click="panels.setActive('activity')"
-            >
-              <VIcon
-                icon="lucide:grid"
-              />
-            </a>
-          </div>
-
-          <!--User Menu-->
-          <div
-            ref="dropdownElement1"
-            class="dropdown is-right dropdown-trigger user-dropdown"
-          >
-            <div
-              tabindex="0"
-              class="is-trigger"
-              aria-haspopup="true"
-              @keydown.enter.prevent="dropdown1.toggle"
-              @click="dropdown1.toggle"
-            >
-              <div class="profile-avatar">
-                <img
-                  class="avatar"
-                  src="/images/avatars/svg/vuero-1.svg"
-                  alt=""
-                  @error.once="onceError($event, 150)"
-                >
-              </div>
-              <VIcon
-                icon="lucide:chevron-down"
-              />
-            </div>
-            <div
-              class="dropdown-menu"
-              role="menu"
-            >
-              <div class="dropdown-content">
-                <div class="dropdown-item">
-                  <p class="is-size-7">
-                    Erik Kovalsky
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  class="dropdown-item"
-                >
-                  <VIcon
-                    icon="lucide:user"
-                  />
-                  <span>Profile</span>
-                </a>
-                <a class="dropdown-item">
-                  <VIcon
-                    icon="lucide:edit-2"
-                  />
-                  <span>Edit Profile</span>
-                </a>
-                <a class="dropdown-item">
-                  <VIcon
-                    icon="lucide:box"
-                  />
-                  <span>Projects</span>
-                </a>
-                <a class="dropdown-item">
-                  <VIcon
-                    icon="lucide:settings"
-                  />
-                  <span>Settings</span>
-                </a>
-                <hr class="dropdown-divider">
-                <a
-                  href="#"
-                  class="dropdown-item"
-                >
-                  <VIcon
-                    icon="lucide:log-out"
-                  />
-                  <span>Sign Out</span>
-                </a>
-              </div>
-            </div>
+            <ToolbarActivity />
+            <ToolbarUserProfile class="ml-4" right />
           </div>
         </div>
       </div>
@@ -289,7 +202,7 @@ useHead({
           v-model:conversationId="selectedConversationId"
           :mobile-conversation-list-open="mobileConversationListOpen"
           :conversations="conversations"
-          @toggle-mobile-csonversation="
+          @toggle-mobile-conversation="
             mobileConversationListOpen = !mobileConversationListOpen
           "
         />
@@ -301,7 +214,7 @@ useHead({
           <!--Conversation 1-->
           <WebappConversation1
             :class="[selectedConversationId === 1 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -309,7 +222,7 @@ useHead({
           <!--Conversation 2-->
           <WebappConversation2
             :class="[selectedConversationId === 2 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -317,7 +230,7 @@ useHead({
           <!--Conversation 3-->
           <WebappConversation3
             :class="[selectedConversationId === 3 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -325,7 +238,7 @@ useHead({
           <!--Conversation 4-->
           <WebappConversation4
             :class="[selectedConversationId === 4 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -333,7 +246,7 @@ useHead({
           <!--Conversation 5-->
           <WebappConversation5
             :class="[selectedConversationId === 5 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -341,7 +254,7 @@ useHead({
           <!--Conversation 6-->
           <WebappConversation6
             :class="[selectedConversationId === 6 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -349,7 +262,7 @@ useHead({
           <!--Conversation 7-->
           <WebappConversation7
             :class="[selectedConversationId === 7 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -357,7 +270,7 @@ useHead({
           <!--Conversation 8-->
           <WebappConversation8
             :class="[selectedConversationId === 8 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -365,7 +278,7 @@ useHead({
           <!--Conversation 9-->
           <WebappConversation9
             :class="[selectedConversationId === 9 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -373,7 +286,7 @@ useHead({
           <!--Conversation 10-->
           <WebappConversation10
             :class="[selectedConversationId === 10 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -381,7 +294,7 @@ useHead({
           <!--Conversation 11-->
           <WebappConversation11
             :class="[selectedConversationId === 11 && 'is-active']"
-            @toggle-mobile-csonversation="
+            @toggle-mobile-conversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -519,31 +432,7 @@ useHead({
 
             <div class="detail-photos">
               <div class="detail-photo-title">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-image"
-                >
-                  <rect
-                    x="3"
-                    y="3"
-                    width="18"
-                    height="18"
-                    rx="2"
-                    ry="2"
-                  />
-                  <circle
-                    cx="8.5"
-                    cy="8.5"
-                    r="1.5"
-                  />
-                  <path d="M21 15l-5-5L5 21" />
-                </svg>
+                <VIcon icon="lucide:images" />
                 Shared photos
               </div>
               <div class="detail-photo-grid">
@@ -614,6 +503,11 @@ useHead({
         </div>
       </div>
     </div>
+
+    <PanelLanguages />
+    <PanelActivity />
+    <PanelSearch />
+    <PanelTask />
   </MinimalLayout>
 </template>
 
@@ -654,8 +548,8 @@ $overlay-bg-dark: linear-gradient(
   overflow: hidden;
 
   .chat-app-header {
-    height: 80px;
-    min-height: 80px;
+    height: 64px;
+    min-height: 64px;
     width: 100%;
     border-bottom: 1px solid $border-color;
     display: flex;
@@ -668,7 +562,7 @@ $overlay-bg-dark: linear-gradient(
     }
 
     .search-bar {
-      height: 80px;
+      height: 64px;
       flex-grow: 2;
       z-index: 3;
       position: relative;
@@ -683,12 +577,14 @@ $overlay-bg-dark: linear-gradient(
           width: 100%;
 
           .form-icon {
-            height: 80px;
-            width: 80px;
+            height: 64px;
+            width: 64px;
 
             .iconify {
               height: 20px;
               width: 20px;
+              font-size: 20px;
+              color: var(--light-text-dark-5);
             }
           }
 
@@ -698,12 +594,11 @@ $overlay-bg-dark: linear-gradient(
             display: block;
             background-color: transparent;
             border: none;
-            color: var(--body-color);
             font-family: var(--font);
             font-weight: 500;
             font-size: 15px;
-            padding-inline-start: 80px;
-            padding-inline-end: 80px;
+            padding-inline-start: 64px;
+            padding-inline-end: 64px;
 
             &:focus {
               box-shadow: none;
@@ -722,70 +617,6 @@ $overlay-bg-dark: linear-gradient(
 
       & > * + * {
         margin-inline-start: 14px;
-      }
-
-      .user-dropdown {
-        .is-trigger {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          cursor: pointer;
-
-          .profile-avatar {
-            position: relative;
-
-            .avatar {
-              display: block;
-              width: 38px;
-              height: 38px;
-              border-radius: var(--radius-rounded);
-            }
-
-            .badge {
-              position: absolute;
-              inset-inline-end: -8px;
-              bottom: 0;
-              width: 20px;
-              height: 20px;
-              border: 2px solid var(--white);
-              border-radius: var(--radius-rounded);
-            }
-          }
-
-          .iconify {
-            margin-inline-start: 3px;
-            width: 18px;
-            height: 18px;
-            color: var(--light-text);
-            transition: all 0.3s; // transition-all test
-          }
-        }
-
-        .dropdown-menu {
-          top: 52px;
-          border: 1px solid var(--fade-grey-dark-3);
-          box-shadow: var(--light-box-shadow);
-          border-radius: 8px;
-          padding-top: 0;
-          width: 180px;
-          overflow: hidden;
-
-          .dropdown-item {
-            display: flex;
-            align-items: center;
-            font-family: var(--font);
-            font-size: 0.9rem;
-            padding: 8px 12px;
-            color: var(--light-text);
-
-            .iconify {
-              margin-inline-end: 8px;
-              height: 16px;
-              width: 16px;
-              color: var(--light-text);
-            }
-          }
-        }
       }
     }
   }
@@ -807,14 +638,6 @@ $overlay-bg-dark: linear-gradient(
             .input {
               color: var(--dark-dark-text);
             }
-          }
-        }
-      }
-
-      .user-settings {
-        .user-dropdown {
-          .dropdown-menu {
-            border-color: var(--dark-sidebar-light-12);
           }
         }
       }
@@ -842,15 +665,17 @@ $overlay-bg-dark: linear-gradient(
       position: relative;
       width: 340px;
       flex-shrink: 0;
+      padding-bottom: 80px;
 
       .overlay {
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        bottom: -2px;
         inset-inline-start: 0;
-        width: 100%;
+        width: 340px;
         flex-shrink: 0;
         background: $overlay-bg;
         height: 80px;
+        pointer-events: none;
       }
 
       .conversation {
@@ -973,6 +798,7 @@ $overlay-bg-dark: linear-gradient(
       overflow-y: auto;
       overflow-x: hidden !important;
       flex-grow: 1;
+      z-index: 1;
 
       .overlay {
         position: absolute;
@@ -982,6 +808,7 @@ $overlay-bg-dark: linear-gradient(
         flex-shrink: 0;
         background: $overlay-bg;
         height: 80px;
+        z-index: 10000;
       }
 
       .chat-area-content {
@@ -1014,6 +841,7 @@ $overlay-bg-dark: linear-gradient(
           .iconify {
             height: 20px;
             width: 20px;
+            font-size: 20px;
           }
         }
 
@@ -1168,13 +996,12 @@ $overlay-bg-dark: linear-gradient(
         inset-inline-end: 0;
         margin: 0 auto;
         width: calc(100% - 680px);
-        overflow-x: hidden;
+        // overflow-x: hidden;
         bottom: 0;
         inset-inline-start: 0;
 
         input {
           border: 1px solid transparent;
-          color: var(--body-color);
           background-color: $input-bg;
           padding: 12px;
           border-radius: var(--radius-large);
@@ -1228,7 +1055,7 @@ $overlay-bg-dark: linear-gradient(
 
             .iconify {
               color: var(--placeholder);
-              stroke-width: 2px;
+              font-size: 18px;
               height: 18px;
               width: 18px;
               transition:
@@ -1248,6 +1075,7 @@ $overlay-bg-dark: linear-gradient(
               .iconify {
                 height: 18px;
                 width: 18px;
+                font-size: 18px;
                 color: var(--muted-grey);
               }
 
@@ -1304,7 +1132,7 @@ $overlay-bg-dark: linear-gradient(
 
             .iconify {
               color: var(--placeholder);
-              stroke-width: 2px;
+              font-size: 18px;
               height: 18px;
               width: 18px;
               transition:
@@ -1481,6 +1309,9 @@ $overlay-bg-dark: linear-gradient(
 
         .side-actions {
           padding: 12px 0;
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
 
           .button {
             color: var(--light-text);
@@ -1507,6 +1338,7 @@ $overlay-bg-dark: linear-gradient(
 
             .iconify {
               width: 16px;
+              font-size: 16px;
               margin-inline-end: 8px;
             }
           }

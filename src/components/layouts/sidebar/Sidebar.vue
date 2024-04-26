@@ -113,12 +113,6 @@ const themeClasses = computed(() => {
             }
           }
         }
-
-        .profile-dropdown {
-          .status-indicator {
-            border-color: var(--primary);
-          }
-        }
       }
     }
   }
@@ -382,7 +376,7 @@ const themeClasses = computed(() => {
           }
         }
 
-        a {
+        a:not(.dropdown-item) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -413,84 +407,6 @@ const themeClasses = computed(() => {
             border: 2px solid var(--white);
             background: var(--success);
             z-index: 2;
-          }
-        }
-      }
-
-      .profile-dropdown {
-        .dropdown-menu {
-          .dropdown-content {
-            padding-top: 0;
-            overflow: hidden;
-
-            .dropdown-head {
-              display: flex;
-              align-items: center;
-              padding: 20px 16px;
-              margin-bottom: 12px;
-              background: #fafafa;
-
-              .meta {
-                margin-inline-start: 12px;
-                font-family: var(--font);
-
-                span {
-                  display: block;
-
-                  &:first-child {
-                    font-size: 1.1rem;
-                    font-weight: 500;
-                    color: var(--dark-text);
-                    line-height: 1.2;
-                  }
-
-                  &:nth-child(2) {
-                    text-transform: uppercase;
-                    color: var(--light-text);
-                    font-size: 0.7rem;
-                  }
-                }
-              }
-            }
-
-            .logout-button {
-              .iconify {
-                color: var(--smoke-white) !important;
-              }
-            }
-          }
-
-          .dropdown-item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 100% !important;
-
-            &:hover,
-            &:focus:not(.is-button) {
-              background: var(--fade-grey-light-3);
-            }
-          }
-
-          .flex-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 15px;
-
-            .toggle-title {
-              font-size: 0.8rem;
-              color: var(--muted-grey);
-
-              &:hover,
-              &:focus {
-                background: transparent !important;
-              }
-            }
-
-            &:hover {
-              background: transparent !important;
-            }
           }
         }
       }
@@ -556,53 +472,6 @@ const themeClasses = computed(() => {
       }
     }
 
-    .profile-dropdown {
-      .dropdown-content {
-        background: var(--dark-sidebar);
-
-        .dropdown-head {
-          background: var(--dark-sidebar-light-2) !important;
-
-          &:hover,
-          &:focus {
-            background: var(--dark-sidebar-light-2) !important;
-          }
-
-          .meta {
-            &:hover {
-              background: var(--dark-sidebar-light-2) !important;
-            }
-
-            span {
-              &:first-child {
-                color: var(--dark-dark-text) !important;
-              }
-            }
-          }
-        }
-
-        .dropdown-item {
-          color: var(--white);
-
-          &:hover,
-          &:focus:not(.is-button) {
-            background: var(--dark-sidebar-light-5);
-          }
-
-          &.is-button {
-            &:hover,
-            &:focus {
-              background: var(--dark-sidebar-light-2) !important;
-            }
-          }
-        }
-
-        .dropdown-divider {
-          background: var(--dark-sidebar-light-5);
-        }
-      }
-    }
-
     .sidebar-inner {
       .icon-menu,
       .bottom-menu {
@@ -645,37 +514,6 @@ const themeClasses = computed(() => {
               .sidebar-svg {
                 color: var(--smoke-white-light-2);
                 opacity: 0.5;
-              }
-            }
-          }
-        }
-      }
-
-      .profile-dropdown {
-        .status-indicator {
-          border-color: var(--primary-dark-2) !important;
-        }
-
-        .dropdown-menu {
-          .dropdown-content {
-            .dropdown-head {
-              background: var(--dark-sidebar-light-2) !important;
-
-              &:hover,
-              &:focus {
-                background: var(--dark-sidebar-light-2) !important;
-              }
-
-              .meta {
-                &:hover {
-                  background: var(--dark-sidebar-light-2) !important;
-                }
-
-                span {
-                  &:first-child {
-                    color: var(--dark-dark-text) !important;
-                  }
-                }
               }
             }
           }

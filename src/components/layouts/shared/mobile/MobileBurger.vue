@@ -5,18 +5,20 @@ const modelValue = defineModel<boolean>({
 </script>
 
 <template>
-  <div
-    class="navbar-burger"
+  <a
+    class="navbar-burger burger is-hidden-desktop"
     :class="[modelValue && 'is-active']"
-    tabindex="0"
     role="button"
+    aria-label="menu"
+    aria-expanded="false"
+    tabindex="0"
     @keydown.enter.prevent="modelValue = !modelValue"
     @click="modelValue = !modelValue"
   >
-    <span />
-    <span />
-    <span />
-  </div>
+    <span aria-hidden="true" />
+    <span aria-hidden="true" />
+    <span aria-hidden="true" />
+  </a>
 </template>
 
 <style scoped lang="scss">

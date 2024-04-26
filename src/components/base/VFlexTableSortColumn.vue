@@ -112,18 +112,14 @@ export default defineComponent({
         },
         {
           default() {
-            const icon = h(
-              'span',
-              { key: `${rawSort.value}`, class: 'is-inline' },
-              h('iconify-icon', {
-                class: 'ml-3 iconify is-inline',
-                icon: isAsc.value
-                  ? 'fa6-solid:sort-up'
-                  : isDesc.value
-                    ? 'fa6-solid:sort-down'
-                    : 'fa6-solid:sort',
-              }),
-            )
+            const icon = h('iconify-icon', {
+              class: 'ml-3 iconify',
+              icon: isAsc.value
+                ? 'fa6-solid:sort-up'
+                : isDesc.value
+                  ? 'fa6-solid:sort-down'
+                  : 'fa6-solid:sort',
+            })
 
             return [slotContent ?? props.label, icon]
           },

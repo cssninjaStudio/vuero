@@ -162,14 +162,6 @@
       width: 25%;
       margin-inline-start: auto;
 
-      .toolbar {
-        .dropdown {
-          .dropdown-menu {
-            margin-top: 28px;
-          }
-        }
-      }
-
       .icon-link {
         display: flex;
         justify-content: center;
@@ -195,61 +187,6 @@
           transition: stroke 0.3s;
           vertical-align: 0;
           transform: none;
-        }
-      }
-
-      .profile-dropdown {
-        > img {
-          height: 32px;
-          width: 32px;
-          border-radius: 50%;
-          margin: 0 4px;
-          cursor: pointer;
-        }
-
-        .dropdown-menu {
-          margin-top: 12px;
-
-          .dropdown-content {
-            padding-top: 0;
-            overflow: hidden;
-
-            .dropdown-head {
-              display: flex;
-              align-items: center;
-              padding: 20px 16px;
-              margin-bottom: 12px;
-              background: #fafafa;
-
-              .meta {
-                margin-inline-start: 12px;
-                font-family: var(--font);
-
-                span {
-                  display: block;
-
-                  &:first-child {
-                    font-size: 1.1rem;
-                    font-weight: 500;
-                    color: var(--dark-text);
-                    line-height: 1.2;
-                  }
-
-                  &:nth-child(2) {
-                    text-transform: uppercase;
-                    color: var(--light-text);
-                    font-size: 0.7rem;
-                  }
-                }
-              }
-            }
-
-            .logout-button {
-              .iconify {
-                stroke: var(--smoke-white) !important;
-              }
-            }
-          }
         }
       }
     }
@@ -388,33 +325,6 @@
           > .iconify {
             color: var(--smoke-white);
             stroke: var(--smoke-white);
-          }
-        }
-
-        .profile-dropdown {
-          .dropdown-menu {
-            .dropdown-content {
-              .dropdown-head {
-                background: var(--dark-sidebar-light-2) !important;
-
-                &:hover,
-                &:focus {
-                  background: var(--dark-sidebar-light-2) !important;
-                }
-
-                .meta {
-                  &:hover {
-                    background: var(--dark-sidebar-light-2) !important;
-                  }
-
-                  span {
-                    &:first-child {
-                      color: var(--dark-dark-text) !important;
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }

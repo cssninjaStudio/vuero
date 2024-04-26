@@ -100,6 +100,7 @@ function placeholderHandler(event: Event) {
         .iconify {
           height: 15px;
           width: 15px;
+          font-size: 15px;
         }
 
         .fas,
@@ -302,10 +303,8 @@ function placeholderHandler(event: Event) {
       .iconify {
         height: 18px;
         width: 18px;
-        stroke-width: 1.6px;
+        font-size: 18px;
         color: var(--light-text);
-        vertical-align: 0 !important;
-        transform: rotate(calc(var(--transform-direction) * 0)) translate(-50%, -50%) !important;
       }
 
       .fas,

@@ -11,7 +11,7 @@ function logout() {
 <template>
   <VDropdown
     spaced
-    class="user-dropdown profile-dropdown"
+    class="profile-dropdown"
   >
     <template #button="{ toggle }">
       <a
@@ -129,3 +129,82 @@ function logout() {
     </template>
   </VDropdown>
 </template>
+
+<style scoped lang="scss">
+.profile-dropdown {
+  > img {
+    height: 32px;
+    width: 32px;
+    border-radius: var(--radius-rounded);
+    margin: 0 4px;
+    cursor: pointer;
+  }
+
+  .dropdown-content, :deep(.dropdown-content) {
+    padding-top: 0px !important;
+    overflow: hidden;
+
+    .dropdown-head {
+      display: flex;
+      align-items: center;
+      padding: 20px 16px;
+      margin-bottom: 12px;
+      background: #fafafa;
+
+      .meta {
+        margin-inline-start: 12px;
+        font-family: var(--font);
+
+        span {
+          display: block;
+
+          &:first-child {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--dark-text);
+            line-height: 1.2;
+          }
+
+          &:nth-child(2) {
+            text-transform: uppercase;
+            color: var(--light-text);
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    .logout-button {
+      .iconify {
+        color: var(--smoke-white) !important;
+      }
+    }
+  }
+}
+.is-dark {
+  .profile-dropdown {
+    .dropdown-content, :deep(.dropdown-content) {
+      .dropdown-head {
+        background: var(--dark-sidebar-light-2) !important;
+
+        &:hover,
+        &:focus {
+          background: var(--dark-sidebar-light-2) !important;
+        }
+
+        .meta {
+          &:hover {
+            background: var(--dark-sidebar-light-2) !important;
+          }
+
+          span {
+            &:first-child {
+              color: var(--dark-dark-text) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>

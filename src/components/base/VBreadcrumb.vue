@@ -185,6 +185,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
           .iconify {
             position: relative;
             top: 0;
+            font-size: 16px;
             height: 16px;
             min-width: 16px;
           }
