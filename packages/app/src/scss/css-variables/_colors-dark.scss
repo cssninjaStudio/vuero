@@ -1,0 +1,17 @@
+/*! colors-dark.scss | Vuero | Css ninja 2020-2024 */
+
+.is-dark {
+  --background-grey: var(--dark-sidebar-light-5);
+  --border: var(--dark-sidebar-light-12);
+
+  // override primary dark HSL (#29ab8d) // hsl(166, 61%, 42%)
+  --primary-h: 166; /* Hue        */
+  --primary-s: 61%; /* Saturation */
+  --primary-l: 42%; /* Lightness  */
+
+  // override dark-text dark HSL (#fcfcfc) // hsl(0, 0%, 99%)
+  @include colorHsl('dark-text', 0, 0%, 99%);
+
+  // override red HSL (#f92b60) // hsl(345, 94%, 57%)
+  @include colorHsl('red', 324, 100%, 63%);
+}

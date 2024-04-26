@@ -1,6 +1,5 @@
-import { createSSRApp } from 'vue'
+import { createApp as createClientApp } from 'vue'
 
-import type { H3Event } from 'h3'
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
@@ -14,8 +13,8 @@ const plugins = import.meta.glob<{ default?: VueroPlugin }>('./plugins/*.ts', {
   eager: true,
 })
 
-export async function createApp(event?: H3Event) {
-  const app = createSSRApp(VueroApp)
+export async function createApp() {
+  const app = createClientApp(VueroApp)
 
   const router = createRouter()
 

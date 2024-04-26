@@ -1,0 +1,47 @@
+/*! _links.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Action Link
+    2. Action Link Dark Mode
+*/
+
+/* ==========================================================================
+1. Action Link
+========================================================================== */
+
+.action-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: var(--primary);
+  transition: opacity 0.3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1.6px dotted var(--primary);
+  }
+
+  &:hover {
+    color: var(--primary);
+    opacity: 0.6;
+  }
+}
+
+/* ==========================================================================
+2. Action Link Dark Mode
+========================================================================== */
+
+.is-dark {
+  .action-link {
+    color: var(--primary);
+
+    &::after {
+      border-bottom-color: var(--primary);
+    }
+  }
+}

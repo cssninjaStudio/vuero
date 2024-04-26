@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 
+      preloading fonts vendors
+    -->
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/font-awesome-v5.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/line-icons-pro.css"
+    />
+
+    <!-- 
+      this enables dark mode before the app is loaded when the user 
+      has dark mode enabled in their OS but only if the user 
+      hasn't set a preference in the app
+
+      @see /src/stores/darkmode.ts
+    -->
+    <script>
+      ;(function () {
+        const prefersDark =
+          window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('color-schema') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('is-dark', true)
+      })()
+    </script>
+  </head>
+  <body>
+    <!-- 
+      this is a placeholder for Teleport's vue feature
+
+      @see /src/pages/navbar/dashboards/influencer.vue
+      @see /src/pages/sidebar/dashboards/influencer.vue
+    -->
+    <div data-teleport-bg></div>
+
+    <div id="app" class="app-wrapper"></div>
+    <script type="module" src="/src/entry-client.ts"></script>
+  </body>
+</html>
