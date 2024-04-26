@@ -109,7 +109,7 @@ watch(
     >
       <template v-if="props.size === 'full'">
         <slot name="page-heading">
-          <SidebarPageHeading
+          <SideblockPageHeading
             :open="isDesktopSideblockOpen"
             @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
           >
@@ -121,7 +121,7 @@ watch(
                 v-bind="contextRx"
               />
             </template>
-          </SidebarPageHeading>
+          </SideblockPageHeading>
         </slot>
 
         <slot v-bind="contextRx" />
@@ -131,7 +131,7 @@ watch(
           class="is-relative"
         >
           <slot name="page-heading">
-            <SidebarPageHeading
+            <SideblockPageHeading
               :open="isDesktopSideblockOpen"
               @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
             >
@@ -143,7 +143,7 @@ watch(
                   v-bind="contextRx"
                 />
               </template>
-            </SidebarPageHeading>
+            </SideblockPageHeading>
           </slot>
 
           <slot v-bind="contextRx" />

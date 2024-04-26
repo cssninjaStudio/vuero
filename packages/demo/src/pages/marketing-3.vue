@@ -87,7 +87,6 @@ useHead({
     <MarketingAbout />
     <MarketingPricings />
     <MarketingCTA />
-    <LandingFooter />
   </Layout>
 </template>
 
