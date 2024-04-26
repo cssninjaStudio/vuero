@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <PersonalDashboardV3 class="has-navbar-spacing" />
-  </div>
+  <PersonalDashboardV3 class="has-navbar-spacing" />
 </template>

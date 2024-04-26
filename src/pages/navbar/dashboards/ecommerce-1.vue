@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <EcommerceDashboardV1 class="has-navbar-spacing" />
-  </div>
+  <EcommerceDashboardV1 class="has-navbar-spacing" />
 </template>

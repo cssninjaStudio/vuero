@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <ViewListV2 />
-  </div>
+  <ViewListV2 />
 </template>

@@ -35,165 +35,163 @@ useHead({
 
 <template>
   <div>
-    <div class="page-content-inner">
-      <VBreadcrumb
-        with-icons
-        separator="bullet"
-        :items="[
-          {
-            label: 'Vuero',
-            hideLabel: true,
-            icon: 'lucide:home',
-            to: '/',
-          },
-          {
-            label: 'Elements',
-            to: '/elements/',
-          },
-          {
-            label: 'VModal',
-            to: '/elements/modal',
-          },
-        ]"
-      />
+    <VBreadcrumb
+      with-icons
+      separator="bullet"
+      :items="[
+        {
+          label: 'Vuero',
+          hideLabel: true,
+          icon: 'lucide:home',
+          to: '/',
+        },
+        {
+          label: 'Elements',
+          to: '/elements/',
+        },
+        {
+          label: 'VModal',
+          to: '/elements/modal',
+        },
+      ]"
+    />
 
-      <div class="columns is-multiline">
-        <div
-          ref="markdownContainer"
-          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-          class="column doc-column stay-focus-container"
-        >
-          <!--VModal-->
-          <VModalBaseDocumentation />
+    <div class="columns is-multiline">
+      <div
+        ref="markdownContainer"
+        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+        class="column doc-column stay-focus-container"
+      >
+        <!--VModal-->
+        <VModalBaseDocumentation />
 
-          <div class="buttons mb-6">
-            <VButton
-              bold
-              @click="leftActionsOpen = true"
-            >
-              Left Actions
-            </VButton>
-            <VButton
-              bold
-              @click="centeredActionsOpen = true"
-            >
-              Center Actions
-            </VButton>
-            <VButton
-              bold
-              @click="rightActionsOpen = true"
-            >
-              Right Actions
-            </VButton>
-            <VButton
-              bold
-              @click="customLabelActionsOpen = true"
-            >
-              Custom label
-            </VButton>
-          </div>
-
-          <!--VModal sizes-->
-          <VModalSizesDocumentation />
-
-          <div class="buttons mb-6">
-            <VButton
-              bold
-              @click="smallOpen = true"
-            >
-              Small Modal
-            </VButton>
-            <VButton
-              bold
-              @click="standardOpen = true"
-            >
-              Standard Modal
-            </VButton>
-            <VButton
-              bold
-              @click="mediumOpen = true"
-            >
-              Medium Modal
-            </VButton>
-            <VButton
-              bold
-              @click="largeOpen = true"
-            >
-              Large Modal
-            </VButton>
-            <VButton
-              bold
-              @click="bigOpen = true"
-            >
-              Big Modal
-            </VButton>
-          </div>
-
-          <!--VModal forms-->
-          <VModalFormsDocumentation />
-
-          <div class="buttons mb-6">
-            <VButton
-              bold
-              @click="smallFormOpen = true"
-            >
-              Small Modal
-            </VButton>
-            <VButton
-              bold
-              @click="standardFormOpen = true"
-            >
-              Standard Modal
-            </VButton>
-            <VButton
-              bold
-              @click="mediumFormOpen = true"
-            >
-              Medium Modal
-            </VButton>
-            <VButton
-              bold
-              @click="largeFormOpen = true"
-            >
-              Large Modal
-            </VButton>
-            <VButton
-              bold
-              @click="bigFormOpen = true"
-            >
-              Big Modal
-            </VButton>
-          </div>
-
-          <!--VModal options-->
-          <VModalOptionsDocumentation />
-
-          <div class="buttons mb-6">
-            <VButton
-              bold
-              @click="noscrollOpen = true"
-            >
-              Scroll disabled
-            </VButton>
-            <VButton
-              bold
-              @click="nocloseOpen = true"
-            >
-              No background close handler
-            </VButton>
-          </div>
-
-          <DocumentationMeta
-            name="VModal"
-            :meta="VModalMeta"
-          />
+        <div class="buttons mb-6">
+          <VButton
+            bold
+            @click="leftActionsOpen = true"
+          >
+            Left Actions
+          </VButton>
+          <VButton
+            bold
+            @click="centeredActionsOpen = true"
+          >
+            Center Actions
+          </VButton>
+          <VButton
+            bold
+            @click="rightActionsOpen = true"
+          >
+            Right Actions
+          </VButton>
+          <VButton
+            bold
+            @click="customLabelActionsOpen = true"
+          >
+            Custom label
+          </VButton>
         </div>
-        <div
-          v-if="toc.length"
-          class="column is-3 toc-column"
-        >
-          <DocumentationToc :toc="toc" />
+
+        <!--VModal sizes-->
+        <VModalSizesDocumentation />
+
+        <div class="buttons mb-6">
+          <VButton
+            bold
+            @click="smallOpen = true"
+          >
+            Small Modal
+          </VButton>
+          <VButton
+            bold
+            @click="standardOpen = true"
+          >
+            Standard Modal
+          </VButton>
+          <VButton
+            bold
+            @click="mediumOpen = true"
+          >
+            Medium Modal
+          </VButton>
+          <VButton
+            bold
+            @click="largeOpen = true"
+          >
+            Large Modal
+          </VButton>
+          <VButton
+            bold
+            @click="bigOpen = true"
+          >
+            Big Modal
+          </VButton>
         </div>
+
+        <!--VModal forms-->
+        <VModalFormsDocumentation />
+
+        <div class="buttons mb-6">
+          <VButton
+            bold
+            @click="smallFormOpen = true"
+          >
+            Small Modal
+          </VButton>
+          <VButton
+            bold
+            @click="standardFormOpen = true"
+          >
+            Standard Modal
+          </VButton>
+          <VButton
+            bold
+            @click="mediumFormOpen = true"
+          >
+            Medium Modal
+          </VButton>
+          <VButton
+            bold
+            @click="largeFormOpen = true"
+          >
+            Large Modal
+          </VButton>
+          <VButton
+            bold
+            @click="bigFormOpen = true"
+          >
+            Big Modal
+          </VButton>
+        </div>
+
+        <!--VModal options-->
+        <VModalOptionsDocumentation />
+
+        <div class="buttons mb-6">
+          <VButton
+            bold
+            @click="noscrollOpen = true"
+          >
+            Scroll disabled
+          </VButton>
+          <VButton
+            bold
+            @click="nocloseOpen = true"
+          >
+            No background close handler
+          </VButton>
+        </div>
+
+        <DocumentationMeta
+          name="VModal"
+          :meta="VModalMeta"
+        />
+      </div>
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
+        <DocumentationToc :toc="toc" />
       </div>
     </div>
 

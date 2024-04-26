@@ -9,11 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div
-    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-navbar-lg"
-  >
-    <div class="page-content-inner">
-      <FlexListV3 />
-    </div>
-  </div>
+  <FlexListV3 />
 </template>

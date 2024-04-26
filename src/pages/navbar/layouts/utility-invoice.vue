@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <Invoice class="is-navbar" />
-  </div>
+  <Invoice class="is-navbar" />
 </template>

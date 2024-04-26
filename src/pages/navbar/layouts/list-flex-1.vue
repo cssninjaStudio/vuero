@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <FlexListV1 />
-  </div>
+  <FlexListV1 />
 </template>

@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <UsersGridV4 />
-  </div>
+  <UsersGridV4 />
 </template>

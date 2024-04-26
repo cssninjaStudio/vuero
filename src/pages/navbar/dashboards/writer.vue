@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <LifestyleDashboardV4 />
-  </div>
+  <LifestyleDashboardV4 />
 </template>

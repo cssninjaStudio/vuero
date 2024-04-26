@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <BankingDashboardV2 />
-  </div>
+  <BankingDashboardV2 />
 </template>

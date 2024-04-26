@@ -12,7 +12,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <ViewListV4 :active-tab="activeTab" />
-  </div>
+  <ViewListV4 :active-tab="activeTab" />
 </template>

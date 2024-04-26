@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <HumanRessourcesDashboard class="has-navbar-spacing" />
-  </div>
+  <HumanRessourcesDashboard class="has-navbar-spacing" />
 </template>

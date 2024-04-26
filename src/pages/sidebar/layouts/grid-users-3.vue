@@ -12,7 +12,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <UsersGridV3 :active-tab="activeTab" />
-  </div>
+  <UsersGridV3 :active-tab="activeTab" />
 </template>

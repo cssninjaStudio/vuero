@@ -61,135 +61,133 @@ const filteredData = computed(() => {
       </div>
     </div>
 
-    <div class="page-content-inner">
-      <!--List-->
-      <div class="list-view list-view-v3">
-        <!--List Empty Search Placeholder -->
-        <VPlaceholderPage
-          v-if="!filteredData.length"
-          title="We couldn't find any matching results."
-          subtitle="Too bad. Looks like we couldn't find any matching results for the
-          search terms you've entered. Please try different search terms or
-          criteria."
-          larger
-        >
-          <template #image>
-            <img
-              class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-3.svg"
-              alt=""
-            >
-            <img
-              class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
-              alt=""
-            >
-          </template>
-        </VPlaceholderPage>
+    <!--List-->
+    <div class="list-view list-view-v3">
+      <!--List Empty Search Placeholder -->
+      <VPlaceholderPage
+        v-if="!filteredData.length"
+        title="We couldn't find any matching results."
+        subtitle="Too bad. Looks like we couldn't find any matching results for the
+        search terms you've entered. Please try different search terms or
+        criteria."
+        larger
+      >
+        <template #image>
+          <img
+            class="light-image"
+            src="/@src/assets/illustrations/placeholders/search-3.svg"
+            alt=""
+          >
+          <img
+            class="dark-image"
+            src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
+            alt=""
+          >
+        </template>
+      </VPlaceholderPage>
 
-        <!--Active Tab-->
-        <div v-else-if="activeTab === 'all'">
-          <div class="list-view-inner">
-            <TransitionGroup
-              name="list-complete"
-              tag="div"
+      <!--Active Tab-->
+      <div v-else-if="activeTab === 'all'">
+        <div class="list-view-inner">
+          <TransitionGroup
+            name="list-complete"
+            tag="div"
+          >
+            <!--Item-->
+            <div
+              v-for="item in filteredData"
+              :key="item.id"
+              class="list-view-item"
             >
-              <!--Item-->
-              <div
-                v-for="item in filteredData"
-                :key="item.id"
-                class="list-view-item"
-              >
-                <div class="list-view-item-inner">
-                  <img
-                    class="avatar"
-                    :src="item.logo"
-                    alt=""
-                    @error.once="onceError($event, 150)"
-                  >
-                  <div class="meta-left">
-                    <h3>
-                      {{ item.title }}
-                    </h3>
-                    <span>
-                      <VIcon
-                        icon="lucide:map-pin"
-                      />
-                      <span>{{ item.location }}</span>
-                      <i
-                        aria-hidden="true"
-                        class="fas fa-circle icon-separator"
-                      />
-                      <VIcon
-                        icon="lucide:clock"
-                      />
-                      <span>{{ item.duration }}</span>
-                      <i
-                        aria-hidden="true"
-                        class="fas fa-circle icon-separator"
-                      />
-                      <VIcon
-                        icon="lucide:check-circle"
-                      />
-                      <span>{{ item.requirements }}</span>
-                    </span>
-                  </div>
-                  <div class="meta-right">
-                    <div class="buttons">
-                      <VButton
-                        color="primary"
-                        outlined
-                        raised
-                      >
-                        Apply Now
-                      </VButton>
+              <div class="list-view-item-inner">
+                <img
+                  class="avatar"
+                  :src="item.logo"
+                  alt=""
+                  @error.once="onceError($event, 150)"
+                >
+                <div class="meta-left">
+                  <h3>
+                    {{ item.title }}
+                  </h3>
+                  <span>
+                    <VIcon
+                      icon="lucide:map-pin"
+                    />
+                    <span>{{ item.location }}</span>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    />
+                    <VIcon
+                      icon="lucide:clock"
+                    />
+                    <span>{{ item.duration }}</span>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    />
+                    <VIcon
+                      icon="lucide:check-circle"
+                    />
+                    <span>{{ item.requirements }}</span>
+                  </span>
+                </div>
+                <div class="meta-right">
+                  <div class="buttons">
+                    <VButton
+                      color="primary"
+                      outlined
+                      raised
+                    >
+                      Apply Now
+                    </VButton>
 
-                      <VIconButton
-                        icon="lucide:bookmark"
-                        class="hint--bubble hint--primary hint--top"
-                        data-hint="Save"
-                        light
-                        circle
-                      />
-                    </div>
+                    <VIconButton
+                      icon="lucide:bookmark"
+                      class="hint--bubble hint--primary hint--top"
+                      data-hint="Save"
+                      light
+                      circle
+                    />
                   </div>
                 </div>
               </div>
-            </TransitionGroup>
-          </div>
-
-          <VFlexPagination
-            v-if="filteredData.length > 5"
-            :item-per-page="10"
-            :total-items="873"
-            :current-page="42"
-            :max-links-displayed="7"
-          />
+            </div>
+          </TransitionGroup>
         </div>
 
-        <!--Inactive Tab-->
-        <div v-else-if="activeTab === 'saved'">
-          <div class="list-view-inner">
-            <!--Empty placeholder-->
-            <VPlaceholderPage
-              title="No saved jobs."
-              subtitle="Looks like you don't have any saved jobs for the moment. It's
-                  also possible that some of your saved items expired."
-            >
-              <template #image>
-                <img
-                  class="light-image"
-                  src="/@src/assets/illustrations/placeholders/thinking-canvas.svg"
-                  alt=""
-                >
-                <img
-                  class="dark-image"
-                  src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg"
-                  alt=""
-                >
-              </template>
-            </VPlaceholderPage>
-          </div>
+        <VFlexPagination
+          v-if="filteredData.length > 5"
+          :item-per-page="10"
+          :total-items="873"
+          :current-page="42"
+          :max-links-displayed="7"
+        />
+      </div>
+
+      <!--Inactive Tab-->
+      <div v-else-if="activeTab === 'saved'">
+        <div class="list-view-inner">
+          <!--Empty placeholder-->
+          <VPlaceholderPage
+            title="No saved jobs."
+            subtitle="Looks like you don't have any saved jobs for the moment. It's
+                also possible that some of your saved items expired."
+          >
+            <template #image>
+              <img
+                class="light-image"
+                src="/@src/assets/illustrations/placeholders/thinking-canvas.svg"
+                alt=""
+              >
+              <img
+                class="dark-image"
+                src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg"
+                alt=""
+              >
+            </template>
+          </VPlaceholderPage>
         </div>
       </div>
     </div>

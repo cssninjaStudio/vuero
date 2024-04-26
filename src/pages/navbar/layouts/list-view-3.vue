@@ -15,8 +15,6 @@ useHead({
   <div
     class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-navbar-lg"
   >
-    <div class="page-content-inner">
-      <ViewListV3 :active-tab="activeTab" />
-    </div>
+    <ViewListV3 :active-tab="activeTab" />
   </div>
 </template>

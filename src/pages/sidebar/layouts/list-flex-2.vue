@@ -12,7 +12,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <FlexListV2 :active-tab="activeTab" />
-  </div>
+  <FlexListV2 :active-tab="activeTab" />
 </template>

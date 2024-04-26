@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
+  <div>
     <VBreadcrumb
       with-icons
       separator="bullet"

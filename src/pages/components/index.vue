@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner card-hub">
+  <main class="card-hub">
     <div class="columns">
       <div class="column is-12">
         <div class="hub-wrapper">
@@ -272,7 +272,7 @@ useHead({
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">

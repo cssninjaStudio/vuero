@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <ActionPageV2 />
-  </div>
+  <ActionPageV2 />
 </template>

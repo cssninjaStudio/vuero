@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <CardsGridV1 />
-  </div>
+  <CardsGridV1 />
 </template>

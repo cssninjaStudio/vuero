@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <OnboardingV2 />
-  </div>
+  <OnboardingV2 />
 </template>

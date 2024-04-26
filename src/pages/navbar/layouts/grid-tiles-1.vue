@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <TilesGridV1 />
-  </div>
+  <TilesGridV1 />
 </template>

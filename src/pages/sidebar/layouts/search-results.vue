@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <FacetSearch />
-  </div>
+  <FacetSearch />
 </template>

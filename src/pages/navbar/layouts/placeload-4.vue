@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <PlaceloadV4 />
-  </div>
+  <PlaceloadV4 />
 </template>

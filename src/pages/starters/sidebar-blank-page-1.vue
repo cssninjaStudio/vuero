@@ -24,14 +24,11 @@ useHead({
 
 <template>
   <Layout>
-    <!-- Content Wrapper -->
-    <div class="page-content-inner">
-      <!--
-          Page content goes here
+    <!--
+      Page content goes here
 
-          You can see pages content samples from
-          files in /src/components/pages directory
-        -->
-    </div>
+      You can see pages content samples from
+      files in /src/components/pages directory
+    -->
   </Layout>
 </template>

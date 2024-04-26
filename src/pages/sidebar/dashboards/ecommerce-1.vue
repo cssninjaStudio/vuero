@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <EcommerceDashboardV1 />
-  </div>
+  <EcommerceDashboardV1 />
 </template>

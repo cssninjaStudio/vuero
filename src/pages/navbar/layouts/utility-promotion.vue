@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <Promotion />
-  </div>
+  <Promotion />
 </template>

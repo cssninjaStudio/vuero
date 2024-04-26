@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <ProjectsViewV3 />
-  </div>
+  <ProjectsViewV3 />
 </template>

@@ -9,7 +9,5 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content-inner">
-    <FormLayoutStacked class="is-navbar" />
-  </div>
+  <FormLayoutStacked class="is-navbar" />
 </template>

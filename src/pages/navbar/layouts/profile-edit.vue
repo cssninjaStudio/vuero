@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content-inner">
+  <div>
     <!--Edit Profile-->
     <div class="account-wrapper">
       <div class="columns">
