@@ -1,0 +1,95 @@
+/*! _theme-switch.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Theme Switch
+
+*/
+
+/* ==========================================================================
+1. Theme Switch
+========================================================================== */
+
+$nightBtn: #ffd22e;
+$dayBtn: #ffb62e;
+
+.dark-mode {
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+
+  &:focus-visible {
+    border-radius: 50px;
+    outline-offset: 20px;
+    outline-width: 2px;
+  }
+
+  input {
+    display: none;
+
+    & + span {
+      display: block;
+      border-radius: var(--radius-rounded);
+      width: 36px;
+      height: 36px;
+      position: relative;
+      box-shadow: inset 16px -16px 0 0 $nightBtn;
+      transform: scaleY(1) rotate(-2deg);
+      transition:
+        box-shadow 0.5s ease 0s,
+        transform 0.4s ease 0.1s;
+
+      &::before {
+        content: '';
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        position: absolute;
+        inset-inline-start: 0;
+        top: 0;
+        backface-visibility: hidden;
+        transition: background-color 0.3s ease;
+      }
+
+      &::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: var(--radius-rounded);
+        margin-top: -4px;
+        margin-inline-start: -4px;
+        position: absolute;
+        top: 50%;
+        inset-inline-start: 50%;
+        box-shadow:
+          0 -23px 0 $dayBtn,
+          0 23px 0 $dayBtn,
+          23px 0 0 $dayBtn,
+          -23px 0 0 $dayBtn,
+          15px 15px 0 $dayBtn,
+          -15px 15px 0 $dayBtn,
+          15px -15px 0 $dayBtn,
+          -15px -15px 0 $dayBtn;
+        transform: scale(0);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:checked + span {
+      box-shadow: inset 32px -32px 0 0 $nightBtn;
+      transform: scale(0.5) rotate(0deg);
+      transition:
+        transform 0.3s ease 0.1s,
+        box-shadow 0.2s ease 0s;
+
+      &::before {
+        background: $dayBtn;
+        backface-visibility: hidden;
+        transition: background-color 0.3s ease 0.1s;
+      }
+
+      &::after {
+        transform: scale(1.5);
+        transition: transform 0.5s ease 0.15s;
+      }
+    }
+  }
+}

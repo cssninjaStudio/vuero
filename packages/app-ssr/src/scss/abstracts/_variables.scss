@@ -1,0 +1,32 @@
+/*! _variables.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+Theses variables are used to map bulma variables to our css variables
+Some colors are not here because they are overriden with bulma-css-var package.
+*/
+
+/* ==========================================================================
+2. Global colors
+========================================================================== */
+
+$body-color: var(--body-color);
+$border: var(--border);
+
+/* ==========================================================================
+4. Fonts
+========================================================================== */
+
+$font: var(--font);
+$font-alt: var(--font-alt);
+$font-monospace: var(--font-monospace);
+
+/* ==========================================================================
+5. Layout
+========================================================================== */
+
+$fullhd-enabled: false;
+$body-size: var(--font-size);
+$radius-small: var(--radius-small);
+$radius: var(--radius);
+$radius-large: var(--radius-large);
+$radius-rounded: var(--radius-rounded);

@@ -1,0 +1,335 @@
+/*! _list-view.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. List View Toolbar
+    2. List Flex Toolbar
+    3. Card grid Toolbar
+    4. Tile grid Toolbar
+    5. User grid Toolbar
+*/
+
+/* ==========================================================================
+1. List View Toolbar
+========================================================================== */
+
+.list-view-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-end: 0;
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-end: 10px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .control {
+    margin-inline-end: 10px;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .v-button {
+      margin-bottom: 0;
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .list-view-toolbar {
+    .list-info {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .list-view-toolbar {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+2. List Flex Toolbar
+========================================================================== */
+
+.list-flex-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-end: 0;
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-end: 10px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .control {
+    margin-inline-end: 10px;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .v-button {
+      margin-bottom: 0;
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}
+
+/* ==========================================================================
+3. Card grid Toolbar
+========================================================================== */
+
+.card-grid-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-end: 0;
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-end: 10px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .control {
+    margin-inline-end: 10px;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .field {
+      min-width: 180px;
+    }
+
+    .field,
+    .v-button {
+      margin-bottom: 0;
+
+      .h-select {
+        min-width: 190px;
+      }
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}
+
+/* ==========================================================================
+4. Tile grid Toolbar
+========================================================================== */
+
+.tile-grid-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-end: 0;
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-end: 10px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .control {
+    margin-inline-end: 10px;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .field {
+      min-width: 180px;
+    }
+
+    .field,
+    .v-button {
+      margin-bottom: 0;
+
+      .h-select {
+        min-width: 190px;
+      }
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}
+
+/* ==========================================================================
+5. User grid Toolbar
+========================================================================== */
+
+.user-grid-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-end: 0;
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-end: 10px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .control {
+    margin-inline-end: 10px;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .field {
+      min-width: 180px;
+    }
+
+    .field,
+    .v-button {
+      margin-bottom: 0;
+
+      .h-select {
+        min-width: 190px;
+      }
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}

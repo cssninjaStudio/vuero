@@ -1,0 +1,288 @@
+/*! _layout.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. App Layout
+    2. View Wrapper
+    3. Page Content
+    4. Page Title / Toolbar
+    5. Minimal Wrapper
+    6. Media Queries
+*/
+
+/* ==========================================================================
+1. App layout
+========================================================================== */
+
+body {
+  background: var(--background-grey);
+
+  &.opened {
+    background: var(--white);
+  }
+
+  &.is-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    inset-inline-start: 0;
+    top: 0;
+    overflow: hidden;
+  }
+
+  &.is-curved {
+    background: #f2f2f2;
+  }
+}
+
+.app-overlay {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0 0 0);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+
+  &.is-active {
+    opacity: 0.4;
+    z-index: 20;
+  }
+}
+
+.overlay-highlight {
+  position: relative;
+  z-index: 99999 !important;
+}
+
+/* ==========================================================================
+4. Page Title / Toolbar
+========================================================================== */
+
+.is-navbar {
+  .page-title {
+    display: none;
+    margin-bottom: 0;
+  }
+}
+
+.page-title {
+  position: relative;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+
+  .title-wrap {
+    margin-inline-start: 1rem;
+
+    h1 {
+      text-align: inset-inline-start;
+      margin-bottom: 0;
+    }
+
+    p {
+      line-height: 1;
+      color: var(--light-text);
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.toolbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  margin-inline-start: auto;
+
+  .control {
+    min-width: 280px;
+    margin-inline-end: 1rem;
+  }
+
+  .dark-mode {
+    transform: scale(0.55);
+    margin-inline-start: auto;
+  }
+
+  .toolbar-notifications {
+    margin: 0 4px;
+
+    .dropdown {
+      &:hover {
+        .is-trigger {
+          background: var(--white);
+          border-color: var(--fade-grey);
+          border-radius: var(--radius-rounded);
+          box-shadow: var(--light-box-shadow);
+        }
+      }
+
+      .is-trigger {
+        position: relative;
+        height: 34px;
+        width: 34px;
+        
+        .iconify {
+          font-size: 20px;
+        }
+
+        .new-indicator {
+          position: absolute;
+          top: 1px;
+          inset-inline-end: 1px;
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: var(--radius-rounded);
+          background: var(--danger);
+        }
+      }
+
+      .dropdown-menu {
+        .dropdown-content {
+          top: 2.5rem;
+          line-height: 1.5;
+          color: var(--dark-text);
+          width: 20rem;
+          background: var(--white);
+          border-radius: 5px;
+          box-shadow: var(--light-box-shadow);
+          padding-top: 0;
+
+          .heading {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 0.01rem solid var(--light-grey);
+            margin-bottom: 0;
+
+            .heading-left {
+              h6 {
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: var(--light-text);
+                line-height: 1.6;
+              }
+            }
+
+            .heading-right {
+              .notification-link {
+                margin: 0.4rem 0;
+                color: var(--primary);
+                font-weight: 500;
+              }
+            }
+          }
+
+          .notification-list {
+            list-style-type: none;
+            padding: 0.5rem 1rem;
+            margin: 0;
+
+            .notification-item {
+              display: flex;
+              padding: 0.65rem 0;
+
+              .img-left {
+                img {
+                  display: inline-block;
+                  vertical-align: middle;
+                  height: 2.25rem;
+                  width: 2.25rem;
+                  margin-inline-end: 0.5rem;
+                  border-radius: var(--radius-rounded);
+                  max-width: 100%;
+                }
+              }
+
+              .user-content {
+                text-align: start;
+                font-family: var(--font);
+
+                .user-info {
+                  color: var(--dark-text);
+                  font-size: 0.95rem;
+
+                  span {
+                    font-weight: 500;
+                  }
+                }
+
+                .time {
+                  margin: 0;
+                  font-size: 0.85rem;
+                  color: var(--light-text);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .toolbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+    border-radius: var(--radius-rounded);
+    margin: 0 4px;
+    transition: all 0.3s; // transition-all test
+
+    &:hover {
+      background: var(--white);
+      border-color: var(--fade-grey);
+      box-shadow: var(--light-box-shadow);
+    }
+
+    &:focus {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
+    }
+
+    .iconify {
+      font-size: 20px;
+      color: var(--light-text);
+    }
+
+    img {
+      display: block;
+      height: 24px;
+      width: 24px;
+      min-width: 24px;
+      border-radius: var(--radius-rounded);
+    }
+  }
+}
+
+/* ==========================================================================
+6. Media Queries
+========================================================================== */
+
+@media (width <= 767px) {
+  .page-title {
+    .toolbar {
+      .control {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .page-title {
+    .title-wrap {
+      margin-inline-start: 0;
+    }
+  }
+}
