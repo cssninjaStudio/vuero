@@ -200,7 +200,7 @@ declare global {
   const useI18n: typeof import('vue-i18n')['useI18n']
   const useIdle: typeof import('@vueuse/core')['useIdle']
   const useImage: typeof import('@vueuse/core')['useImage']
-  const useImageError: typeof import('../src/composables/via-placeholder')['useImageError']
+  const useImageError: typeof import('../src/composables/image-error')['useImageError']
   const useInfiniteScroll: typeof import('@vueuse/core')['useInfiniteScroll']
   const useIntersectionObserver: typeof import('@vueuse/core')['useIntersectionObserver']
   const useInterval: typeof import('@vueuse/core')['useInterval']

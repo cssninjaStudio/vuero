@@ -2,10 +2,9 @@ name: deploy-edge
 on:
   workflow_dispatch:
   push:
-    paths-ignore:
-      - '.vscode/**'
-      - 'cypress/**'
-      - 'scripts/**'
+    paths:
+      - '.github/**'
+      - 'packages/demo/**'
     branches:
       - edge
 
@@ -40,6 +39,7 @@ jobs:
         uses: docker/build-push-action@v5
         timeout-minutes: 60
         with:
+          context: ./packages/demo
           push: true
           tags: ${{ env.dockertags }}
           cache-from: type=gha
