@@ -171,12 +171,12 @@ const searchLabel = computed(() => {
     >
       <div class="demo-section-title">
         <img
-          class="light-image-block-l"
+          class="light-image-block"
           src="/images/icons/components/layout-1.svg"
           alt=""
         >
         <img
-          class="dark-image-block-l"
+          class="dark-image-block"
           src="/images/icons/components/layout-1-dark.svg"
           alt=""
         >
@@ -203,13 +203,13 @@ const searchLabel = computed(() => {
                 class="new-tag"
               >New</span>
               <img
-                class="light-image-block-l"
+                class="light-image-block"
                 :src="item.screenshot.light"
                 alt=""
                 loading="lazy"
               >
               <img
-                class="dark-image-block-l"
+                class="dark-image-block"
                 :src="item.screenshot.dark"
                 alt=""
                 loading="lazy"
@@ -263,12 +263,12 @@ const searchLabel = computed(() => {
     >
       <div class="demo-section-title">
         <img
-          class="light-image-block-l"
+          class="light-image-block"
           src="/images/icons/components/layout-2.svg"
           alt=""
         >
         <img
-          class="dark-image-block-l"
+          class="dark-image-block"
           src="/images/icons/components/layout-2-dark.svg"
           alt=""
         >
@@ -295,13 +295,13 @@ const searchLabel = computed(() => {
                 class="new-tag"
               >New</span>
               <img
-                class="light-image-block-l"
+                class="light-image-block"
                 :src="item.screenshot.light"
                 alt=""
                 loading="lazy"
               >
               <img
-                class="dark-image-block-l"
+                class="dark-image-block"
                 :src="item.screenshot.dark"
                 alt=""
                 loading="lazy"
@@ -355,12 +355,12 @@ const searchLabel = computed(() => {
     >
       <div class="demo-section-title">
         <img
-          class="light-image-block-l"
+          class="light-image-block"
           src="/images/icons/components/layout-3.svg"
           alt=""
         >
         <img
-          class="dark-image-block-l"
+          class="dark-image-block"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
         >
@@ -387,13 +387,13 @@ const searchLabel = computed(() => {
                 class="new-tag"
               >New</span>
               <img
-                class="light-image-block-l"
+                class="light-image-block"
                 :src="item.screenshot.light"
                 alt=""
                 loading="lazy"
               >
               <img
-                class="dark-image-block-l"
+                class="dark-image-block"
                 :src="item.screenshot.dark"
                 alt=""
                 loading="lazy"
@@ -447,12 +447,12 @@ const searchLabel = computed(() => {
     >
       <div class="demo-section-title">
         <img
-          class="light-image-block-l"
+          class="light-image-block"
           src="/images/icons/components/layout-3.svg"
           alt=""
         >
         <img
-          class="dark-image-block-l"
+          class="dark-image-block"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
         >
@@ -479,13 +479,13 @@ const searchLabel = computed(() => {
                 class="new-tag"
               >New</span>
               <img
-                class="light-image-block-l"
+                class="light-image-block"
                 :src="item.screenshot.light"
                 alt=""
                 loading="lazy"
               >
               <img
-                class="dark-image-block-l"
+                class="dark-image-block"
                 :src="item.screenshot.dark"
                 alt=""
                 loading="lazy"
@@ -539,12 +539,12 @@ const searchLabel = computed(() => {
     >
       <div class="demo-section-title">
         <img
-          class="light-image-block-l"
+          class="light-image-block"
           src="/images/icons/components/layout-3.svg"
           alt=""
         >
         <img
-          class="dark-image-block-l"
+          class="dark-image-block"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
         >
@@ -571,13 +571,13 @@ const searchLabel = computed(() => {
                 class="new-tag"
               >New</span>
               <img
-                class="light-image-block-l"
+                class="light-image-block"
                 :src="item.screenshot.light"
                 alt=""
                 loading="lazy"
               >
               <img
-                class="dark-image-block-l"
+                class="dark-image-block"
                 :src="item.screenshot.dark"
                 alt=""
                 loading="lazy"
@@ -839,28 +839,26 @@ const searchLabel = computed(() => {
 }
 
 .is-dark {
-  .landing-page-wrapper {
-    .vuero-demos {
-      .demo-section {
-        .demo-section-title {
-          .title-meta {
-            h3 {
-              color: var(--dark-dark-text);
-            }
+  .vuero-demos {
+    .demo-section {
+      .demo-section-title {
+        .title-meta {
+          h3 {
+            color: var(--dark-dark-text);
           }
         }
       }
+    }
 
-      .vuero-demo-wrapper {
-        border-color: var(--dark-sidebar-light-12);
+    .vuero-demo-wrapper {
+      border-color: var(--dark-sidebar-light-12);
 
-        .circle-overlay {
-          background: var(--primary);
-        }
+      .circle-overlay {
+        background: var(--primary);
+      }
 
-        .demo-title {
-          border-color: var(--primary-light-10);
-        }
+      .demo-title {
+        border-color: var(--primary-light-10);
       }
     }
   }

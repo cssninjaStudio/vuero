@@ -34,23 +34,6 @@
     max-width: 1140px;
   }
 
-  .light-image-l {
-    display: inline-block !important;
-  }
-
-  .dark-image-l {
-    display: none !important;
-  }
-
-  .light-image-block-l {
-    display: block !important;
-  }
-
-  .dark-image-block-l {
-    display: none !important;
-  }
-  
-
   .vuero-components {
     .tabs-wrapper {
       display: flex;
@@ -69,31 +52,6 @@
 .is-dark {
   .landing-page-wrapper {
     background: var(--landing-xxx);
-
-    .light-image-l {
-      display: none !important;
-    }
-
-    .dark-image-l {
-      display: inline-block !important;
-    }
-
-    .light-image-block-l {
-      display: none !important;
-    }
-
-    .dark-image-block-l {
-      display: block !important;
-    }
-
-    #backtotop {
-      &.visible {
-        a {
-          background: var(--primary) !important;
-          color: var(--smoke-white) !important;
-        }
-      }
-    }
   }
 }
 
@@ -115,15 +73,6 @@
     100% {
       background-position: 0% 50%;
     }
-  }
-
-  // Canvas
-  #demo-canvas {
-    position: absolute;
-    bottom: 20%;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
   }
 
   .hero {

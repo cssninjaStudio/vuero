@@ -1,151 +1,98 @@
 <script setup lang="ts">
+import Layout from '/@src/layouts/landing.vue'
+
 useHead({
   title: 'Vuero - A complete Vue 3 design system',
 })
 </script>
 
 <template>
-  <MinimalLayout theme="light">
-    <div class="landing-page-wrapper">
-      <LandingGrids />
-      <!-- Hero and Navbar -->
-      <div class="hero marketing-hero is-left is-fullheight">
-        <!-- Navbar partial -->
-        <LandingNavigation />
-
-        <!--Hexagon shapes-->
-        <img
-          class="hexagon hexagon-1 light-image-l"
-          src="/images/icons/hexagons/accent.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-1 dark-image-l"
-          src="/images/icons/hexagons/accent-heavy.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-2 light-image-l"
-          src="/images/icons/hexagons/accent.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-2 dark-image-l"
-          src="/images/icons/hexagons/accent-heavy.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-3 light-image-l"
-          src="/images/icons/hexagons/green.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-3 dark-image-l"
-          src="/images/icons/hexagons/green-heavy.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-4 light-image-l"
-          src="/images/icons/hexagons/purple.svg"
-          alt=""
-        >
-        <img
-          class="hexagon hexagon-4 dark-image-l"
-          src="/images/icons/hexagons/purple-heavy.svg"
-          alt=""
-        >
-
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns is-vcentered">
-              <div class="column is-5">
-                <h1 class="title is-1 is-bold">
-                  Easier development. Beautiful projects
-                </h1>
-                <h3 class="subtitle is-4 pt-2 light-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne
-                  improbos quidem.
-                </h3>
-                <div class="buttons">
-                  <VButton
-                    color="primary"
-                    bold
-                    rounded
-                    raised
-                  >
-                    Get Started
-                  </VButton>
-                  <VButton
-                    color="primary"
-                    outlined
-                    bold
-                    rounded
-                    raised
-                  >
-                    14-day Trial
-                  </VButton>
-                </div>
+  <Layout>
+    <div class="hero marketing-hero is-left is-fullheight">
+      <LandingHexagons />
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5">
+              <h1 class="title is-1 is-bold">
+                Easier development. Beautiful projects
+              </h1>
+              <h3 class="subtitle is-4 pt-2 light-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne
+                improbos quidem.
+              </h3>
+              <div class="buttons">
+                <VButton
+                  color="primary"
+                  bold
+                  rounded
+                  raised
+                >
+                  Get Started
+                </VButton>
+                <VButton
+                  color="primary"
+                  outlined
+                  bold
+                  rounded
+                  raised
+                >
+                  14-day Trial
+                </VButton>
               </div>
-              <div class="column is-6 is-offset-1">
-                <div class="hero-mockup">
-                  <img
-                    class="light-image-block-l"
-                    src="/@src/assets/illustrations/landing/app-1.webp"
-                    alt=""
-                  >
-                  <img
-                    class="dark-image-block-l"
-                    src="/@src/assets/illustrations/landing/app-1.webp"
-                    alt=""
-                  >
-                </div>
+            </div>
+            <div class="column is-6 is-offset-1">
+              <div class="hero-mockup">
+                <img
+                  class="light-image-block"
+                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  alt=""
+                >
+                <img
+                  class="dark-image-block"
+                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  alt=""
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!--Feature boxes section-->
-      <MarketingFeaturesIcons />
-
-      <!--Mockup Section-->
-      <MarketingMockup />
-
-      <!--Side Features Section-->
-      <MarketingSideFeatures />
-
-      <!--About section-->
-      <MarketingAbout />
-
-      <!--Pricing section-->
-      <MarketingPricings />
-
-      <!--Boxed CTA-->
-      <MarketingCTA />
-
-      <!-- Footer -->
-      <LandingFooter />
-
-      <!-- Back To Top Button -->
-      <div id="backtotop">
-        <a
-          href="#"
-          aria-label="back to top"
-        >
-          <i
-            aria-hidden="true"
-            class="fas fa-angle-up"
-          />
-        </a>
-      </div>
     </div>
-  </MinimalLayout>
+
+    <MarketingFeaturesIcons />
+    <MarketingMockup />
+    <MarketingSideFeatures
+      title="Awesome Features"
+      subtitle="Show and tell why people need your product."
+      :features="[
+        {
+          title: 'Lorem ipsum',
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
+          image: '/@src/assets/illustrations/landing/feature-4.svg',
+          darkImage: '/@src/assets/illustrations/landing/feature-4-dark.svg',
+        },
+        {
+          title: 'Lorem ipsum',
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
+          image: '/@src/assets/illustrations/landing/feature-5.svg',
+          darkImage: '/@src/assets/illustrations/landing/feature-5-dark.svg',
+        },
+        {
+          title: 'Lorem ipsum',
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
+          image: '/@src/assets/illustrations/landing/feature-6.svg',
+          darkImage: '/@src/assets/illustrations/landing/feature-6-dark.svg',
+        },
+      ]"
+    />
+    <MarketingAbout />
+    <MarketingPricings />
+    <MarketingCTA />
+  </Layout>
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/all';
-@import '/@src/scss/_demo/landing';
-
 .marketing-hero {
   &.is-left {
     .hero-body {
@@ -198,93 +145,8 @@ useHead({
     }
   }
 
-  &.is-left,
-  &.is-centered {
-    .hexagon {
-      position: absolute;
-      animation: rotating 15s infinite;
-      animation-timing-function: linear;
-
-      &.hexagon-1 {
-        top: -180px;
-        inset-inline-start: -180px;
-        height: 450px;
-        width: 450px;
-        transform: rotate(calc(var(--transform-direction) * 39deg));
-      }
-
-      &.hexagon-2 {
-        bottom: 80px;
-        inset-inline-end: 80px;
-        height: 360px;
-        width: 360px;
-        transform: rotate(calc(var(--transform-direction) * 75deg));
-        animation-delay: 2s;
-      }
-
-      &.hexagon-3 {
-        bottom: 40px;
-        inset-inline-start: 40px;
-        height: 190px;
-        width: 190px;
-        transform: rotate(calc(var(--transform-direction) * 95deg));
-        animation-delay: 0.5s;
-      }
-
-      &.hexagon-4 {
-        top: -155px;
-        inset-inline-start: 50%;
-        height: 230px;
-        width: 230px;
-        transform: rotate(calc(var(--transform-direction) * 135deg));
-        animation-delay: 1s;
-      }
-    }
-  }
-
   &.is-right {
     background: var(--widget-grey);
-
-    .hexagon {
-      position: absolute;
-      animation: rotating 15s infinite;
-      animation-timing-function: linear;
-
-      &.hexagon-1 {
-        top: -180px;
-        inset-inline-end: -180px;
-        height: 450px;
-        width: 450px;
-        transform: rotate(calc(var(--transform-direction) * 39deg));
-      }
-
-      &.hexagon-2 {
-        bottom: 80px;
-        inset-inline-start: 80px;
-        height: 360px;
-        width: 360px;
-        transform: rotate(calc(var(--transform-direction) * 75deg));
-        animation-delay: 2s;
-      }
-
-      &.hexagon-3 {
-        bottom: 40px;
-        inset-inline-end: 40px;
-        height: 190px;
-        width: 190px;
-        transform: rotate(calc(var(--transform-direction) * 95deg));
-        animation-delay: 0.5s;
-      }
-
-      &.hexagon-4 {
-        top: -155px;
-        inset-inline-start: 50%;
-        height: 230px;
-        width: 230px;
-        transform: rotate(calc(var(--transform-direction) * 135deg));
-        animation-delay: 1s;
-      }
-    }
   }
 
   .hero-body {
@@ -309,10 +171,6 @@ useHead({
     &.is-right,
     &.is-centered {
       background: var(--landing-xxx-dark-2);
-
-      .hexagon {
-        opacity: 0.3;
-      }
 
       .hero-body {
         .hero-mockup {
@@ -349,72 +207,7 @@ useHead({
   }
 }
 
-.centered-mockup-wrapper {
-  margin: 2rem auto;
-  max-width: 740px;
-
-  .mockup-container {
-    position: relative;
-
-    .hexagon {
-      position: absolute;
-      animation: rotating 15s infinite;
-
-      &.hexagon-1 {
-        top: -110px;
-        inset-inline-start: -110px;
-        height: 230px;
-        width: 230px;
-        transform: rotate(calc(var(--transform-direction) * 39deg));
-        animation-delay: 2s;
-      }
-
-      &.hexagon-2 {
-        bottom: 160px;
-        inset-inline-end: -80px;
-        height: 160px;
-        width: 160px;
-        transform: rotate(calc(var(--transform-direction) * 75deg));
-        z-index: 2;
-        animation-delay: 0.5s;
-      }
-
-      &.hexagon-3 {
-        bottom: 60px;
-        inset-inline-start: -180px;
-        height: 100px;
-        width: 100px;
-        transform: rotate(calc(var(--transform-direction) * 125deg));
-        z-index: 2;
-        animation-delay: 1s;
-      }
-    }
-  }
-
-  img:not(.hexagon) {
-    position: relative;
-    border-radius: 0.75rem;
-    z-index: 1;
-
-    &.light-image-l {
-      box-shadow: var(--light-box-shadow);
-      border: 1px solid var(--border);
-    }
-
-    &.dark-image-l {
-      box-shadow: var(--light-box-shadow);
-      border: 1px solid var(--dark-sidebar-light-12);
-    }
-  }
-}
-
 .is-dark {
-  .centered-mockup-wrapper {
-    .title {
-      color: var(--white) !important;
-    }
-  }
-
   .video-section {
     .title {
       color: var(--white) !important;
@@ -816,34 +609,6 @@ useHead({
     &.is-right,
     &.is-centered {
       text-align: center;
-
-      .hexagon {
-        &.hexagon-1 {
-          top: -110px;
-          inset-inline-start: -80px;
-          height: 230px;
-          width: 230px;
-        }
-
-        &.hexagon-2 {
-          bottom: 45px;
-          inset-inline-end: -80px;
-          height: 220px;
-          width: 220px;
-        }
-
-        &.hexagon-3 {
-          bottom: 50%;
-          inset-inline-start: -110px;
-        }
-
-        &.hexagon-4 {
-          top: -165px;
-          inset-inline-start: 70%;
-          height: 230px;
-          width: 230px;
-        }
-      }
     }
 
     .hero-body {
@@ -869,17 +634,6 @@ useHead({
       .hero-mockup {
         max-width: 100% !important;
         margin: 0 auto;
-      }
-    }
-  }
-
-  .centered-mockup-wrapper {
-    .hexagon {
-      &.hexagon-2 {
-        bottom: 120px !important;
-        inset-inline-end: -40px !important;
-        height: 80px !important;
-        width: 80px !important;
       }
     }
   }
@@ -943,50 +697,14 @@ useHead({
   .marketing-hero {
     &.is-centered {
       text-align: center;
-
-      .hexagon {
-        &.hexagon-2 {
-          bottom: 45px;
-          inset-inline-end: -80px;
-        }
-
-        &.hexagon-3 {
-          bottom: 50%;
-          inset-inline-start: -110px;
-        }
-      }
     }
 
     &.is-left {
       text-align: center;
-
-      .hexagon {
-        &.hexagon-2 {
-          bottom: 45px;
-          inset-inline-end: -80px;
-        }
-
-        &.hexagon-3 {
-          bottom: 50%;
-          inset-inline-start: -110px;
-        }
-      }
     }
 
     &.is-right {
       text-align: center;
-
-      .hexagon {
-        &.hexagon-2 {
-          bottom: 45px;
-          inset-inline-end: -80px;
-        }
-
-        &.hexagon-3 {
-          bottom: 50%;
-          inset-inline-start: -110px;
-        }
-      }
     }
 
     .hero-body {
@@ -1018,14 +736,6 @@ useHead({
     .column {
       min-width: 50%;
       width: 50%;
-    }
-  }
-
-  .centered-mockup-wrapper {
-    max-width: 640px;
-
-    .columns {
-      display: flex;
     }
   }
 

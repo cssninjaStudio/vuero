@@ -28,13 +28,13 @@ const props = withDefaults(
         >
           <div class="component">
             <img
-              class="light-image-l"
+              class="light-image"
               :src="item.media.light"
               alt=""
               loading="lazy"
             >
             <img
-              class="dark-image-l"
+              class="dark-image"
               :src="item.media.dark"
               alt=""
               loading="lazy"
@@ -65,13 +65,13 @@ const props = withDefaults(
         >
           <div class="component">
             <img
-              class="light-image-l"
+              class="light-image"
               :src="item.media.light"
               alt=""
               loading="lazy"
             >
             <img
-              class="dark-image-l"
+              class="dark-image"
               :src="item.media.dark"
               alt=""
               loading="lazy"
@@ -101,13 +101,13 @@ const props = withDefaults(
         >
           <div class="component">
             <img
-              class="light-image-l"
+              class="light-image"
               :src="item.media.light"
               alt=""
               loading="lazy"
             >
             <img
-              class="dark-image-l"
+              class="dark-image"
               :src="item.media.dark"
               alt=""
               loading="lazy"
@@ -137,13 +137,13 @@ const props = withDefaults(
         >
           <div class="component">
             <img
-              class="light-image-l"
+              class="light-image"
               :src="item.media.light"
               alt=""
               loading="lazy"
             >
             <img
-              class="dark-image-l"
+              class="dark-image"
               :src="item.media.dark"
               alt=""
               loading="lazy"

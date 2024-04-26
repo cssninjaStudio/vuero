@@ -13,44 +13,44 @@
         <div class="mockup-container mb-6">
           <!--Hexagon shapes-->
           <img
-            class="hexagon hexagon-1 light-image-l"
+            class="hexagon hexagon-1 light-image"
             src="/images/icons/hexagons/green.svg"
             alt=""
           >
           <img
-            class="hexagon hexagon-1 dark-image-l"
+            class="hexagon hexagon-1 dark-image"
             src="/images/icons/hexagons/green-heavy.svg"
             alt=""
           >
           <img
-            class="hexagon hexagon-2 light-image-l"
+            class="hexagon hexagon-2 light-image"
             src="/images/icons/hexagons/orange.svg"
             alt=""
           >
           <img
-            class="hexagon hexagon-2 dark-image-l"
+            class="hexagon hexagon-2 dark-image"
             src="/images/icons/hexagons/orange-heavy.svg"
             alt=""
           >
           <img
-            class="hexagon hexagon-3 light-image-l"
+            class="hexagon hexagon-3 light-image"
             src="/images/icons/hexagons/accent.svg"
             alt=""
           >
           <img
-            class="hexagon hexagon-3 dark-image-l"
+            class="hexagon hexagon-3 dark-image"
             src="/images/icons/hexagons/accent-heavy.svg"
             alt=""
           >
 
           <!--Mockup-->
           <img
-            class="light-image-l centered-mockup"
+            class="light-image centered-mockup"
             src="/@src/assets/illustrations/landing/app-1.webp"
             alt=""
           >
           <img
-            class="dark-image-l centered-mockup"
+            class="dark-image centered-mockup"
             src="/@src/assets/illustrations/landing/app-1-dark.webp"
             alt=""
           >
@@ -231,3 +231,94 @@
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+.centered-mockup-wrapper {
+  margin: 2rem auto;
+  max-width: 740px;
+
+  .mockup-container {
+    position: relative;
+
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+
+      &.hexagon-1 {
+        top: -110px;
+        inset-inline-start: -110px;
+        height: 230px;
+        width: 230px;
+        transform: rotate(calc(var(--transform-direction) * 39deg));
+        animation-delay: 2s;
+      }
+
+      &.hexagon-2 {
+        bottom: 160px;
+        inset-inline-end: -80px;
+        height: 160px;
+        width: 160px;
+        transform: rotate(calc(var(--transform-direction) * 75deg));
+        z-index: 2;
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-3 {
+        bottom: 60px;
+        inset-inline-start: -180px;
+        height: 100px;
+        width: 100px;
+        transform: rotate(calc(var(--transform-direction) * 125deg));
+        z-index: 2;
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  img:not(.hexagon) {
+    position: relative;
+    border-radius: 0.75rem;
+    z-index: 1;
+
+    &.light-image {
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--border);
+    }
+
+    &.dark-image {
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--dark-sidebar-light-12);
+    }
+  }
+}
+
+.is-dark {
+  .centered-mockup-wrapper {
+    .title {
+      color: var(--white) !important;
+    }
+  }
+}
+@media (width <= 767px) {
+  .centered-mockup-wrapper {
+    .hexagon {
+      &.hexagon-2 {
+        bottom: 120px !important;
+        inset-inline-end: -40px !important;
+        height: 80px !important;
+        width: 80px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .centered-mockup-wrapper {
+    max-width: 640px;
+
+    .columns {
+      display: flex;
+    }
+  }
+}
+</style>
