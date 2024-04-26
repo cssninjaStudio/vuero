@@ -151,6 +151,7 @@ const { onceError } = useImageError()
     min-width: 40px;
     height: 40px;
     object-fit: cover;
+    border: 2px solid var(--white);
 
     &.is-squared {
       border-radius: 10px !important;
@@ -274,6 +275,7 @@ const { onceError } = useImageError()
       justify-content: center;
       align-items: center;
       border-radius: var(--radius-rounded);
+      border-width: 0;
 
       .inner {
         width: 40px;
@@ -282,16 +284,17 @@ const { onceError } = useImageError()
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 2px solid var(--white);
         border-radius: var(--radius-rounded);
         background: var(--fade-grey-light-2);
-        border: 1px solid var(--fade-grey);
+        // border: 1px solid var(--fade-grey);
 
         span {
           line-height: 1;
           position: relative;
 
           // top: -1px;
-          inset-inline-start: -3px;
+          inset-inline-start: -2px;
           display: block;
           font-size: 0.9rem;
           font-weight: 500;
@@ -354,9 +357,9 @@ const { onceError } = useImageError()
         height: 32px;
 
         .inner {
-          width: 30px;
-          min-width: 30px;
-          height: 30px;
+          width: 32px;
+          min-width: 32px;
+          height: 32px;
         }
 
         span {
@@ -594,12 +597,6 @@ const { onceError } = useImageError()
           }
         }
       }
-
-      img,
-      .is-fake,
-      .is-more .inner {
-        border: 2px solid var(--white);
-      }
     }
 
     &.is-medium {
@@ -614,12 +611,6 @@ const { onceError } = useImageError()
           }
         }
       }
-
-      img,
-      .is-fake,
-      .is-more .inner {
-        border: 4px solid var(--white);
-      }
     }
 
     &:not(:first-child) {
@@ -631,128 +622,120 @@ const { onceError } = useImageError()
         }
       }
     }
-
-    img,
-    .is-fake,
-    .is-more .inner {
-      border: 2px solid var(--white);
-    }
   }
 }
 
 .is-dark {
-  .v-avatar {
-    .avatar {
+  .avatar {
+    border-color: var(--dark-sidebar-light-6);
+
+    &.is-fake {
+      &.is-primary {
+        background: var(--primary);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-accent {
+        background: var(--primary);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-success {
+        background: var(--success);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-info {
+        background: var(--info);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-warning {
+        background: var(--warning);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-danger {
+        background: var(--danger);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-purple {
+        background: var(--purple);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-orange {
+        background: var(--orange);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-blue {
+        background: var(--blue);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-red {
+        background: var(--red);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-green {
+        background: var(--green);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      &.is-h-yellow {
+        background: var(--yellow);
+
+        span {
+          color: var(--white);
+        }
+      }
+    }
+
+    &.is-more {
+      border-color: var(--dark-sidebar-dark-12);
+      .inner {
+        background: var(--dark-sidebar-light-10);
+      }
+    }
+
+    &.is-fake {
       border-color: var(--dark-sidebar-light-6);
-
-      &.is-fake {
-        &.is-primary {
-          background: var(--primary);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-accent {
-          background: var(--primary);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-success {
-          background: var(--success);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-info {
-          background: var(--info);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-warning {
-          background: var(--warning);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-danger {
-          background: var(--danger);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-purple {
-          background: var(--purple);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-orange {
-          background: var(--orange);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-blue {
-          background: var(--blue);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-red {
-          background: var(--red);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-green {
-          background: var(--green);
-
-          span {
-            color: var(--white);
-          }
-        }
-
-        &.is-h-yellow {
-          background: var(--yellow);
-
-          span {
-            color: var(--white);
-          }
-        }
-      }
-
-      &.is-more {
-        .inner {
-          background: var(--dark-sidebar-light-10);
-          border-color: var(--dark-sidebar-dark-2);
-        }
-      }
-
-      &.is-fake {
-        border-color: var(--dark-sidebar-light-6);
-      }
     }
   }
 }
