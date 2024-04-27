@@ -24,7 +24,6 @@
     "lib": ["esnext", "dom"],
     "types": [
       "vite/client",
-      "vite-plugin-pwa/client",
       "unplugin-vue-router/client",
     ],
     "paths": {
@@ -36,6 +35,7 @@
     }
   },
   "include": [
+    "electron",
     "vite-plugin/**/*.ts",
     "server/**/*.ts",
     "types/**/*.d.ts",

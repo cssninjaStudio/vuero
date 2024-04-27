@@ -1,4 +1,11 @@
 {
+  "bumpFiles": [
+    "package.json",
+    "packages/app/package.json",
+    "packages/app-electron/package.json",
+    "packages/app-ssr/package.json",
+    "packages/demo/package.json"
+  ],
   "types": [
     {"type": "feat", "section": "🚀 Features"},
     {"type": "fix", "section": "🩹 Bug Fixes"},

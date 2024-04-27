@@ -4,15 +4,19 @@
   "private": true,
   "type": "module",
   "main": "dist-electron/main/index.js",
+  "author": {
+    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+  },
   "engines": {
     "node": ">=18",
     "npm": ">=10"
   },
   "scripts": {
     "dev": "vite",
-    "build": "run-s build:update-bulma-colors build:client",
+    "build": "run-s build:update-bulma-colors build:client build:electron",
     "build:update-bulma-colors": "bulma-css-vars",
     "build:client": "cross-env NODE_ENV=production vite build",
+    "build:electron": "electron-builder build",
     "start": "cross-env NODE_ENV=production serve dist -s -p 5000"
   },
   "dependencies": {

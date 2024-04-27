@@ -1,3 +1,6 @@
-window.ipcRenderer.on('main-process-message', (_event, ...args) => {
-  console.log('[Receive Main-process message]:', ...args)
-})
+if ('ipcRenderer' in window) {
+  window.ipcRenderer.on('main-process-message', (_event, ...args) => {
+    console.log('[Receive Main-process message]:', ...args)
+  })
+}
+

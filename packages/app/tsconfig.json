@@ -31,7 +31,6 @@
     }
   },
   "include": [
-    "electron",
     "types/**/*.d.ts",
     "src/**/*.js",
     "src/**/*.ts",
