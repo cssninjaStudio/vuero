@@ -135,7 +135,12 @@ export function VueroMarkdownDoc(options: PluginOptions) {
     },
     async transform(raw, id) {
       if (id.endsWith('.md') && id.startsWith(pathPrefix)) {
-        return await markdownToVue(id, raw)
+        const code = await markdownToVue(id, raw)
+
+        return {
+          code,
+          map: null,
+        }
       }
     },
   } satisfies Plugin
