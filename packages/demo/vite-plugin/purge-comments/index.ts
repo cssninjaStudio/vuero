@@ -1,11 +1,7 @@
 import type { Plugin } from 'vite'
 import MagicString from 'magic-string'
 
-function parseId(id: string) {
-  const index = id.indexOf('?')
-  if (index < 0) return id
-  else return id.slice(0, index)
-}
+const commentRe = /<!--(?:.{2,}?)-->/sg
 
 /**
  * This plugin removes HTML comments from your code.
@@ -19,12 +15,11 @@ export function PurgeComments() {
       sourcemap = config.build.sourcemap
     },
     transform: (code, id) => {
-      const parsedId = parseId(id)
       if (
         !(
-          parsedId.endsWith('.vue')
-          || parsedId.endsWith('.html')
-          || parsedId.endsWith('.svg')
+          id.endsWith('.vue')
+          || id.endsWith('.html')
+          || id.endsWith('.svg')
         )
       ) {
         return
@@ -34,12 +29,12 @@ export function PurgeComments() {
       }
 
       const s = new MagicString(code)
-      s.replace(/<!--[\w\W\s]*?-->/g, '')
+      s.replace(commentRe, '')
 
       if (s.hasChanged()) {
         return {
           code: s.toString(),
-          map: sourcemap && (s.generateMap({ source: id, includeContent: true }) as any),
+          map: sourcemap ? s.generateMap() : null,
         }
       }
     },
