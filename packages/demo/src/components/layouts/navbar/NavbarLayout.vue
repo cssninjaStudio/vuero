@@ -239,3 +239,8 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     <slot name="extra" v-bind="contextRx" />
   </div>
 </template>
+
+<style lang="scss">
+@import '/@src/scss/abstracts/all';
+@import '/@src/scss/layout/navbar';
+</style>
