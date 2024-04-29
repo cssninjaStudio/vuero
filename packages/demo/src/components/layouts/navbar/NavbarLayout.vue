@@ -97,8 +97,6 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
 
 <template>
   <div class="navbar-layout">
-    <div class="app-overlay" />
-
     <!-- Mobile navigation -->
     <MobileNavbar v-model="isMobileSidebarOpen">
       <template #logo>
@@ -141,7 +139,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     <!-- /Mobile navigation -->
 
     <!-- Desktop navigation -->
-    <Navbar :theme="props.theme">
+    <Navbar>
       <template #title>
         <slot name="logo" v-bind="contextRx" />
 

@@ -130,18 +130,20 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    minify: 'terser',
+    minify: false,
+    sourcemap: true,
     rollupOptions: {
       output: {
         entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/[hash].mjs',
-        assetFileNames: 'assets/[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].mjs',
+        assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
   },
   plugins: [
+
     /**
      * Shows a quick overview of your app, including the Vue version, pages and components.
      *

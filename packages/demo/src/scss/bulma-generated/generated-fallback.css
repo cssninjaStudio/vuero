@@ -3117,11 +3117,6 @@ code {
   background: rgb(255, 255, 255);
 }
 
-#backtotop.visible a:hover {
-  background: rgb(42, 172, 142);
-  color: rgb(255, 255, 255);
-}
-
 .r-card {
   background-color: rgb(255, 255, 255);
 }

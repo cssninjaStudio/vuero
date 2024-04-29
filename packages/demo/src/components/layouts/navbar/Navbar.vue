@@ -20,15 +20,12 @@ const isScrolling = computed(() => {
   >
     <div class="navbar-navbar-inner">
       <div class="left">
-        <!-- Title slot -->
         <slot name="title" />
       </div>
       <div class="center">
-        <!-- Links slot -->
         <slot name="links" />
       </div>
       <div class="right">
-        <!-- Toolbar slot -->
         <slot name="toolbar" />
       </div>
     </div>
@@ -36,10 +33,6 @@ const isScrolling = computed(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/all';
-@import '/@src/scss/layout/navbar';
-@import '/@src/scss/layout/responsive';
-
 .navbar-navbar {
   position: fixed;
   top: 0;

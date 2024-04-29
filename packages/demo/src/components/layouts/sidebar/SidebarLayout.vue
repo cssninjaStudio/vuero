@@ -15,7 +15,7 @@ const props = withDefaults(
   {
     links: () => [],
     bottomLinks: () => [],
-    defaultSidebar: 'dashboard',
+    defaultSidebar: '',
     theme: 'default',
     size: 'default',
   },
