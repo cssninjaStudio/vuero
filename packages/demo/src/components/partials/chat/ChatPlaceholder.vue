@@ -6,7 +6,7 @@ const { onceError } = useImageError()
   <div class="is-chat-placeholder animated preFadeInUp fadeInUp is-hidden">
     <div class="caption">
       <img
-        src="/@src/assets/illustrations/placeholders/having-coffee.svg"
+        src="/images/illustrations/placeholders/having-coffee.svg"
         alt=""
         @error.once="onceError($event, 150)"
       >

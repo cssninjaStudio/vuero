@@ -51,12 +51,12 @@ const activeTab = ref<TabId>('all')
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-7.svg"
+            src="/images/illustrations/placeholders/search-7.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
+            src="/images/illustrations/placeholders/search-7-dark.svg"
             alt=""
           >
         </template>

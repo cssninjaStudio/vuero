@@ -6,14 +6,6 @@ import {
 } from '/@src/data/widgets/ui/socialButtonList'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { products } from '/@src/data/widgets/ui/productList'
-
-import Widget1 from '/@src/assets/illustrations/widgets/1.svg'
-import Widget2 from '/@src/assets/illustrations/widgets/2.svg'
-import Widget3 from '/@src/assets/illustrations/widgets/3.svg'
-import Widget4 from '/@src/assets/illustrations/widgets/4.svg'
-import Widget5 from '/@src/assets/illustrations/widgets/5.svg'
-import Widget7 from '/@src/assets/illustrations/widgets/7.svg'
-import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 </script>
 
 <template>
@@ -24,9 +16,9 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         class="illustration-widget-v1"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        :picture="Widget1"
-        :badge-left="Widget2"
-        :badge-right="Widget3"
+        picture="/images/illustrations/widgets/1.svg"
+        badge-left="/images/illustrations/widgets/2.svg"
+        badge-right="/images/illustrations/widgets/3.svg"
       />
 
       <!--Widget-->
@@ -45,7 +37,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        :picture="Widget7"
+        picture="/images/illustrations/widgets/7.svg"
       />
 
       <!--Widget-->
@@ -61,7 +53,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        :picture="Widget4"
+        picture="/images/illustrations/widgets/4.svg"
       />
 
       <!--Widget-->
@@ -113,7 +105,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         class="illustration-widget-v3"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        :picture="Widget5"
+        picture="/images/illustrations/widgets/5.svg"
       />
 
       <!--Widget-->
@@ -162,7 +154,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 
       <!--Widget-->
       <CallWidget
-        picture="/@src/assets/illustrations/widgets/6.svg"
+        picture="/images/illustrations/widgets/6.svg"
         badge="https://media.cssninja.io/content/avatars/7.jpg"
         username="Alice"
       />
@@ -172,7 +164,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        :picture="Widget8"
+        picture="/images/illustrations/widgets/8.svg"
       />
     </div>
   </div>

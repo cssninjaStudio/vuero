@@ -42,12 +42,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/buttons.svg"
+                    src="/images/illustrations/components/buttons.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/buttons-dark.svg"
+                    src="/images/illustrations/components/buttons-dark.svg"
                     alt=""
                   >
                 </template>
@@ -65,12 +65,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/icons.svg"
+                    src="/images/illustrations/components/icons.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/icons-dark.svg"
+                    src="/images/illustrations/components/icons-dark.svg"
                     alt=""
                   >
                 </template>
@@ -88,12 +88,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/dropdown.svg"
+                    src="/images/illustrations/components/dropdown.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/dropdown-dark.svg"
+                    src="/images/illustrations/components/dropdown-dark.svg"
                     alt=""
                   >
                 </template>
@@ -111,12 +111,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/modal.svg"
+                    src="/images/illustrations/components/modal.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/modal-dark.svg"
+                    src="/images/illustrations/components/modal-dark.svg"
                     alt=""
                   >
                 </template>
@@ -134,12 +134,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/progress.svg"
+                    src="/images/illustrations/components/progress.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/progress-dark.svg"
+                    src="/images/illustrations/components/progress-dark.svg"
                     alt=""
                   >
                 </template>
@@ -157,12 +157,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/forms.svg"
+                    src="/images/illustrations/components/forms.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/forms-dark.svg"
+                    src="/images/illustrations/components/forms-dark.svg"
                     alt=""
                   >
                 </template>
@@ -180,12 +180,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/checkboxes.svg"
+                    src="/images/illustrations/components/checkboxes.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/checkboxes-dark.svg"
+                    src="/images/illustrations/components/checkboxes-dark.svg"
                     alt=""
                   >
                 </template>
@@ -203,12 +203,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/switches.svg"
+                    src="/images/illustrations/components/switches.svg"
                     alt=""
                   >
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/switches-dark.svg"
+                    src="/images/illustrations/components/switches-dark.svg"
                     alt=""
                   >
                 </template>

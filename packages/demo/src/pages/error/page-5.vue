@@ -17,12 +17,12 @@ useHead({
         </div>
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-5.svg"
+          src="/images/illustrations/placeholders/error-5.svg"
           alt=""
         >
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-5-dark.svg"
+          src="/images/illustrations/placeholders/error-5-dark.svg"
           alt=""
         >
         <h3 class="dark-inverted">

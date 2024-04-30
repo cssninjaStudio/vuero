@@ -13,12 +13,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-1.svg"
+            src="/images/illustrations/onboarding/set2-1.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-1-dark.svg"
+            src="/images/illustrations/onboarding/set2-1-dark.svg"
             alt=""
           >
           <div class="onboarding-content">
@@ -44,12 +44,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-2.svg"
+            src="/images/illustrations/onboarding/set2-2.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-2-dark.svg"
+            src="/images/illustrations/onboarding/set2-2-dark.svg"
             alt=""
           >
           <div class="onboarding-content">
@@ -75,12 +75,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-3.svg"
+            src="/images/illustrations/onboarding/set2-3.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-3-dark.svg"
+            src="/images/illustrations/onboarding/set2-3-dark.svg"
             alt=""
           >
           <div class="onboarding-content">

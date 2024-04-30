@@ -18,7 +18,7 @@ const { progressChartOptions } = useProgressChart()
     <div class="illustration-header">
       <div class="header-image">
         <img
-          src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg"
+          src="/images/illustrations/dashboards/lifestyle/doctor.svg"
           alt=""
         >
       </div>

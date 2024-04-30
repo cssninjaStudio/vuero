@@ -52,12 +52,12 @@ useHead({
           <template #image>
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-1.svg"
+              src="/images/illustrations/placeholders/search-1.svg"
               alt=""
             >
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-1-dark.svg"
+              src="/images/illustrations/placeholders/search-1-dark.svg"
               alt=""
             >
           </template>

@@ -48,12 +48,12 @@ useHead({
             <div class="hero-mockup">
               <img
                 class="light-image-block"
-                src="/@src/assets/illustrations/landing/app-1.webp"
+                src="/images/illustrations/landing/app-1.webp"
                 alt=""
               >
               <img
                 class="dark-image-block"
-                src="/@src/assets/illustrations/landing/app-1-dark.webp"
+                src="/images/illustrations/landing/app-1-dark.webp"
                 alt=""
               >
             </div>
@@ -507,20 +507,20 @@ useHead({
         {
           title: 'Incredible UI',
           content: `Vuero's UI has been carefully thought and designed, and is simply one of the best you'll find on the market. It's visual power and its modularity will let you build great apps seamlessly.`,
-          image: '/@src/assets/illustrations/landing/feature-1.webp',
-          darkImage: '/@src/assets/illustrations/landing/feature-1-dark.webp',
+          image: '/images/illustrations/landing/feature-1.webp',
+          darkImage: '/images/illustrations/landing/feature-1-dark.webp',
         },
         {
           title: 'Playful Vectors',
           content: `Vuero ships with a lot of svg illustrations representing various elements that can be used in a website, following very high quality standards.`,
-          image: '/@src/assets/illustrations/landing/feature-2.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-2-dark.svg',
+          image: '/images/illustrations/landing/feature-2.svg',
+          darkImage: '/images/illustrations/landing/feature-2-dark.svg',
         },
         {
           title: 'Handcrafted UI',
           content: `Vuero ships with it's own component library based on the Bulma.io CSS framework. Each component has been carefully handcrafted and natively supports dark mode.`,
-          image: '/@src/assets/illustrations/landing/feature-3.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-3-dark.svg',
+          image: '/images/illustrations/landing/feature-3.svg',
+          darkImage: '/images/illustrations/landing/feature-3-dark.svg',
         },
       ]"
     >
@@ -681,20 +681,20 @@ useHead({
         {
           title: 'Professional',
           content: `Vuero is a professional product to build professional applications. You'll find everything you need to build a project that is up to the highest standards of web development.`,
-          image: '/@src/assets/illustrations/landing/feature-4.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-4-dark.svg',
+          image: '/images/illustrations/landing/feature-4.svg',
+          darkImage: '/images/illustrations/landing/feature-4-dark.svg',
         },
         {
           title: 'Fast Development',
           content: `Vuero ships with a Vitejs development server that will assist you when customizing the template. It handles .vue files compilation as well as SCSS and Typescript code. The page is refreshed each time you hit the save trigger in your favorite editor.`,
-          image: '/@src/assets/illustrations/landing/feature-5.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-5-dark.svg',
+          image: '/images/illustrations/landing/feature-5.svg',
+          darkImage: '/images/illustrations/landing/feature-5-dark.svg',
         },
         {
           title: 'Extensive Documentation',
           content: `Vuero's documentation will be a precious ally, as the template has a large codebase, and a lot of files. Read carefully the docs, all you need to know for an optimal development experience is there, even if you still are a beginner.`,
-          image: '/@src/assets/illustrations/landing/feature-6.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-6-dark.svg',
+          image: '/images/illustrations/landing/feature-6.svg',
+          darkImage: '/images/illustrations/landing/feature-6-dark.svg',
         },
       ]"
     >

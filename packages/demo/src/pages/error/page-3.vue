@@ -14,12 +14,12 @@ useHead({
       <div class="error-inner has-text-centered">
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-3.svg"
+          src="/images/illustrations/placeholders/error-3.svg"
           alt=""
         >
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-3-dark.svg"
+          src="/images/illustrations/placeholders/error-3-dark.svg"
           alt=""
         >
         <h3 class="dark-inverted">

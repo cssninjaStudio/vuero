@@ -184,12 +184,12 @@ onMounted(() => {
               >
                 <img
                   class="empty-state theme-image light-image"
-                  src="/@src/assets/illustrations/projects/board/new.svg"
+                  src="/images/illustrations/projects/board/new.svg"
                   alt=""
                 >
                 <img
                   class="empty-state theme-image dark-image"
-                  src="/@src/assets/illustrations/projects/board/new-dark.svg"
+                  src="/images/illustrations/projects/board/new-dark.svg"
                   alt=""
                 >
                 <p class="empty-text">
@@ -300,12 +300,12 @@ onMounted(() => {
               >
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/progress.svg"
+                  src="/images/illustrations/projects/board/progress.svg"
                   alt=""
                 >
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/progress-dark.svg"
+                  src="/images/illustrations/projects/board/progress-dark.svg"
                   alt=""
                 >
                 <p class="empty-text">
@@ -402,12 +402,12 @@ onMounted(() => {
                 <!-- Empty state image / text -->
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/ready.svg"
+                  src="/images/illustrations/projects/board/ready.svg"
                   alt=""
                 >
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/ready-dark.svg"
+                  src="/images/illustrations/projects/board/ready-dark.svg"
                   alt=""
                 >
                 <p class="empty-text">
@@ -510,12 +510,12 @@ onMounted(() => {
                 <!-- Empty state image / text -->
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/test.svg"
+                  src="/images/illustrations/projects/board/test.svg"
                   alt=""
                 >
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/test-dark.svg"
+                  src="/images/illustrations/projects/board/test-dark.svg"
                   alt=""
                 >
                 <p class="empty-text">
@@ -612,12 +612,12 @@ onMounted(() => {
               >
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/complete.svg"
+                  src="/images/illustrations/projects/board/complete.svg"
                   alt=""
                 >
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/complete-dark.svg"
+                  src="/images/illustrations/projects/board/complete-dark.svg"
                   alt=""
                 >
                 <p class="empty-text">

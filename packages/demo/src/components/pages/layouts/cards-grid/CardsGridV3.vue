@@ -86,12 +86,12 @@ function getAvatarData(user: any): VAvatarProps {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-3.svg"
+            src="/images/illustrations/placeholders/search-3.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
+            src="/images/illustrations/placeholders/search-3-dark.svg"
             alt=""
           >
         </template>

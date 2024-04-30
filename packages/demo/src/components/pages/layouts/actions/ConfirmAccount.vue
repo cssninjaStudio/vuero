@@ -24,12 +24,12 @@ const confirm = async () => {
           <div class="box-content">
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/launch.svg"
+              src="/images/illustrations/placeholders/launch.svg"
               alt=""
             >
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/launch-dark.svg"
+              src="/images/illustrations/placeholders/launch-dark.svg"
               alt=""
             >
             <h3 class="dark-inverted">

@@ -25,12 +25,12 @@ wizard.setStep({
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/wizard/finish.svg"
+            src="/images/illustrations/wizard/finish.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/wizard/finish-dark.svg"
+            src="/images/illustrations/wizard/finish-dark.svg"
             alt=""
           >
         </template>

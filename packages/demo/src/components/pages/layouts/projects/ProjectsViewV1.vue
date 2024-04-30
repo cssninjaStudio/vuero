@@ -284,7 +284,7 @@ const exampleColumns = {
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@src/assets/illustrations/dashboards/flights/company1.svg"
+            src="/images/illustrations/dashboards/flights/company1.svg"
             alt=""
             @error.once="onceError($event, 150)"
           >

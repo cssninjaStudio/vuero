@@ -212,12 +212,12 @@ watch(previewTemplate, () => {
         <template #image>
           <img
             class="light-image is-rounded"
-            src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
+            src="/images/illustrations/wizard/upload-placeholder.svg"
             alt=""
           >
           <img
             class="dark-image is-rounded"
-            src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
+            src="/images/illustrations/wizard/upload-placeholder.svg"
             alt=""
           >
         </template>

@@ -28,7 +28,7 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
           <div class="column is-4">
             <div class="wizard-card">
               <img
-                src="/@src/assets/illustrations/wizard/type-1.svg"
+                src="/images/illustrations/wizard/type-1.svg"
                 alt=""
               >
               <h3 class="dark-inverted">
@@ -58,7 +58,7 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
           <div class="column is-4">
             <div class="wizard-card">
               <img
-                src="/@src/assets/illustrations/wizard/type-2.svg"
+                src="/images/illustrations/wizard/type-2.svg"
                 alt=""
               >
               <h3 class="dark-inverted">
@@ -88,7 +88,7 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
           <div class="column is-4">
             <div class="wizard-card">
               <img
-                src="/@src/assets/illustrations/wizard/type-3.svg"
+                src="/images/illustrations/wizard/type-3.svg"
                 alt=""
               >
               <h3 class="dark-inverted">

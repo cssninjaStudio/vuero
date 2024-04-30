@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 
-import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
-
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
@@ -68,7 +66,7 @@ onUnmounted(() => {
       <div class="left-header">
         <div class="header-image">
           <img
-            src="/@src/assets/illustrations/dashboards/food/header.svg"
+            src="/images/illustrations/dashboards/food/header.svg"
             alt=""
           >
         </div>
@@ -296,12 +294,12 @@ onUnmounted(() => {
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                src="/images/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
               >
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                src="/images/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
               >
             </template>
@@ -374,7 +372,7 @@ onUnmounted(() => {
             class="illustration-widget-v2"
             title="You unlocked 2 new Achievements"
             text="Congrats, your efforts have been rewarded. Keep up like this!"
-            :picture="FoodWidget"
+            picture="/images/illustrations/dashboards/food/widget.svg"
           />
         </div>
 

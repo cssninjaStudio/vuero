@@ -647,7 +647,7 @@ const validateStep = async () => {
                 </div>
                 <div class="box-illustration">
                   <img
-                    src="/@src/assets/illustrations/plants/1.svg"
+                    src="/images/illustrations/plants/1.svg"
                     alt=""
                   >
                 </div>

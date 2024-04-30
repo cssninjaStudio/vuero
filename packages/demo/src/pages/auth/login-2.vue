@@ -41,12 +41,12 @@ useHead({
           <div class="is-flex is-justify-content-center is-fullwidth">
             <img
               class="light-image has-light-shadow has-light-border"
-              src="/@src/assets/illustrations/apps/vuero-banking-light.webp"
+              src="/images/illustrations/apps/vuero-banking-light.webp"
               alt=""
             >
             <img
               class="dark-image has-light-shadow"
-              src="/@src/assets/illustrations/apps/vuero-banking-dark.webp"
+              src="/images/illustrations/apps/vuero-banking-dark.webp"
               alt=""
             >
           </div>

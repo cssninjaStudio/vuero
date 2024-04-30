@@ -17,12 +17,12 @@ useHead({
               <div class="hero-mockup">
                 <img
                   class="light-image-block"
-                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  src="/images/illustrations/landing/app-1.webp"
                   alt=""
                 >
                 <img
                   class="dark-image-block"
-                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  src="/images/illustrations/landing/app-1.webp"
                   alt=""
                 >
               </div>
@@ -69,20 +69,20 @@ useHead({
         {
           title: 'Lorem ipsum',
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
-          image: '/@src/assets/illustrations/landing/feature-4.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-4-dark.svg',
+          image: '/images/illustrations/landing/feature-4.svg',
+          darkImage: '/images/illustrations/landing/feature-4-dark.svg',
         },
         {
           title: 'Lorem ipsum',
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
-          image: '/@src/assets/illustrations/landing/feature-5.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-5-dark.svg',
+          image: '/images/illustrations/landing/feature-5.svg',
+          darkImage: '/images/illustrations/landing/feature-5-dark.svg',
         },
         {
           title: 'Lorem ipsum',
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue, felis sed tristique porttitor, purus lacus interdum ligula, non scelerisque justo est sit amet erat.`,
-          image: '/@src/assets/illustrations/landing/feature-6.svg',
-          darkImage: '/@src/assets/illustrations/landing/feature-6-dark.svg',
+          image: '/images/illustrations/landing/feature-6.svg',
+          darkImage: '/images/illustrations/landing/feature-6-dark.svg',
         },
       ]"
     />

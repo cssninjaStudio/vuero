@@ -12,7 +12,7 @@ const { onceError } = useImageError()
             <div class="illustration-header-2">
               <div class="header-image">
                 <img
-                  src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg"
+                  src="/images/illustrations/dashboards/lifestyle/reading.svg"
                   alt=""
                 >
               </div>

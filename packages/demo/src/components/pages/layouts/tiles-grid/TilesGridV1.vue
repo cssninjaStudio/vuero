@@ -87,12 +87,12 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-6.svg"
+            src="/images/illustrations/placeholders/search-6.svg"
             alt=""
           >
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-6-dark.svg"
+            src="/images/illustrations/placeholders/search-6-dark.svg"
             alt=""
           >
         </template>

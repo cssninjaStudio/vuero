@@ -155,7 +155,7 @@ const userStack = userData.userStack as VAvatarProps[]
 
           <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
             <img
-              src="/@src/assets/illustrations/dashboards/personal/interviews.svg"
+              src="/images/illustrations/dashboards/personal/interviews.svg"
               alt=""
             >
           </div>

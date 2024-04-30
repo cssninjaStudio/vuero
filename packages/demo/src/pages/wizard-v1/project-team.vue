@@ -103,12 +103,12 @@ watchEffect(() => {
         <template #image>
           <img
             class="light-image is-rounded"
-            src="/@src/assets/illustrations/wizard/team-placeholder.svg"
+            src="/images/illustrations/wizard/team-placeholder.svg"
             alt=""
           >
           <img
             class="dark-image is-rounded"
-            src="/@src/assets/illustrations/wizard/team-placeholder.svg"
+            src="/images/illustrations/wizard/team-placeholder.svg"
             alt=""
           >
         </template>

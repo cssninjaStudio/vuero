@@ -109,7 +109,7 @@ useHead({
       <img
         :class="[step > 0 && 'is-hidden']"
         class="card-bg"
-        src="/@src/assets/backgrounds/signup/vuero-signup.webp"
+        src="/images/backgrounds/signup/vuero-signup.webp"
         alt=""
       >
 

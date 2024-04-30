@@ -60,12 +60,12 @@ const props = defineProps<{
           >
             <img
               class="light-image featured-image"
-              src="/@src/assets/illustrations/landing/feature-2.svg"
+              src="/images/illustrations/landing/feature-2.svg"
               alt=""
             >
             <img
               class="dark-image featured-image"
-              src="/@src/assets/illustrations/landing/feature-2-dark.svg"
+              src="/images/illustrations/landing/feature-2-dark.svg"
               alt=""
             >
           </div>

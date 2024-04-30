@@ -429,12 +429,12 @@ const democheck = ref(['value_2'])
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy.svg"
+                src="/images/illustrations/placeholders/chart-guy.svg"
                 alt=""
               >
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
+                src="/images/illustrations/placeholders/chart-guy-dark.svg"
                 alt=""
               >
             </template>
