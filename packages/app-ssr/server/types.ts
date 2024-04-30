@@ -11,7 +11,6 @@ export interface VueroInitialState extends Record<string, any> {
 export type VueroServerRender = (ctx: {
   event: H3Event
   manifest: Record<string, any>
-  initialState?: VueroInitialState
   template: string
 }) => Promise<string | ReadableStream>
 

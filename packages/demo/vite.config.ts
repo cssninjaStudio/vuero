@@ -296,43 +296,7 @@ export default defineConfig({
          *
          * @see https://vite-pwa-org.netlify.app/guide/service-worker-precache.html
          */
-        globPatterns: ['**/*.{js,css,ico,png,svg,webp,jpg,jpeg}'],
-
-        /**
-         * add external cache of google fonts
-         *
-         * @see https://vite-pwa-org.netlify.app/workbox/generate-sw.html
-         */
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'google-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'gstatic-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
+        globPatterns: ['**/*.{js,mjs,css,ico,png,svg,webp,jpg,jpeg,html}'],
       },
     }),
 
