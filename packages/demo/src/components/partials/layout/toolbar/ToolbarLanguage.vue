@@ -34,6 +34,8 @@ const localFlagSrc = computed(() => {
     <img
       :src="localFlagSrc"
       alt=""
+      width="24"
+      height="24"
     >
   </a>
 </template>

@@ -97,7 +97,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <VPageContent class="kanban-content">
+  <PageContent class="kanban-content">
     <div class="kanban-toolbar">
       <VField raw>
         <VControl icon="lucide:search">
@@ -655,7 +655,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </VPageContent>
+  </PageContent>
 </template>
 
 <style lang="scss">

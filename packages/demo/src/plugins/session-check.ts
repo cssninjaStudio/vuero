@@ -8,13 +8,12 @@ import { definePlugin } from '/@src/utils/plugins'
  * routes declaration (see /@src/router.ts)
  * or by adding a <route> tag into .vue files (see /@src/pages/sidebar/dashboards.ts)
  *
- * <route lang="yaml">
- * meta:
- *   requiresAuth: true
- * </route>
- *
  * <script setup lang="ts">
- *  // TS script
+ * definePage({
+ *   meta: {
+ *     requiresAuth: true,
+ *   },
+ * })
  * </script>
  *
  * <template>
@@ -44,6 +43,7 @@ export default definePlugin(async ({ router, pinia, event }) => {
   // 2. If the page requires auth, check if user is logged in
   // if not, redirect to login page.
   router.beforeEach((to) => {
+    const token = useUserToken()
     if (to.meta.requiresAuth && !token.value) {
       return {
         name: '/auth/login',

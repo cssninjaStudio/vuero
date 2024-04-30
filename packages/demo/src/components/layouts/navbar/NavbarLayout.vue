@@ -194,7 +194,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     </div>
     <!-- /Desktop navigation -->
 
-    <VViewWrapper full top-nav>
+    <ViewWrapper full top-nav>
       <template v-if="props.size === 'full'">
         <div class="is-navbar-md">
           <slot name="page-heading">
@@ -214,8 +214,8 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
           <slot v-bind="contextRx" />
         </div>
       </template>
-      <VPageContentWrapper v-else :size="props.size">
-        <VPageContent class="is-relative">
+      <PageContentWrapper v-else :size="props.size">
+        <PageContent class="is-relative">
           <div class="is-navbar-md">
             <slot name="page-heading">
               <NavbarPageTitleMobile>
@@ -232,15 +232,10 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
             </slot>
             <slot v-bind="contextRx" />
           </div>
-        </VPageContent>
-      </VPageContentWrapper>
-    </VViewWrapper>
+        </PageContent>
+      </PageContentWrapper>
+    </ViewWrapper>
 
     <slot name="extra" v-bind="contextRx" />
   </div>
 </template>
-
-<style lang="scss">
-@import '/@src/scss/abstracts/all';
-@import '/@src/scss/layout/navbar';
-</style>

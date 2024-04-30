@@ -102,11 +102,11 @@ useHead({
           }
         "
       />
-      <VViewWrapper
+      <ViewWrapper
         id="vuero-messaging"
       >
-        <VPageContentWrapper>
-          <VPageContent class="chat-content">
+        <PageContentWrapper>
+          <PageContent class="chat-content">
             <div class="page-title has-text-centered is-hidden">
               <div
                 class="vuero-hamburger nav-trigger push-resize"
@@ -219,9 +219,9 @@ useHead({
             </ChatCard>
 
             <ChatPlaceholder />
-          </VPageContent>
-        </VPageContentWrapper>
-      </VViewWrapper>
+          </PageContent>
+        </PageContentWrapper>
+      </ViewWrapper>
 
       <ChatSideFab />
     </template>

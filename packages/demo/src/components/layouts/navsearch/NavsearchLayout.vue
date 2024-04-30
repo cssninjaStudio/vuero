@@ -160,7 +160,7 @@ watch(
     </Navsearch>
     <!-- /Desktop navigation -->
 
-    <VViewWrapper top-nav>
+    <ViewWrapper top-nav>
       <template v-if="props.size === 'full'">
         <div class="is-navbar-lg">
           <slot name="page-heading">
@@ -180,8 +180,8 @@ watch(
           <slot v-bind="contextRx" />
         </div>
       </template>
-      <VPageContentWrapper v-else :size="props.size">
-        <VPageContent
+      <PageContentWrapper v-else :size="props.size">
+        <PageContent
           class="is-relative"
         >
           <div class="is-navbar-lg">
@@ -201,9 +201,9 @@ watch(
 
             <slot v-bind="contextRx" />
           </div>
-        </VPageContent>
-      </VPageContentWrapper>
-    </VViewWrapper>
+        </PageContent>
+      </PageContentWrapper>
+    </ViewWrapper>
 
     <slot v-bind="contextRx" name="extra" />
   </div>

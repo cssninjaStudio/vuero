@@ -51,7 +51,7 @@ export default defineConfig({
     port: 3000,
   },
   ssr: {
-    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-router'],
+    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-i18n', 'vue-router'],
   },
   define: {
     // compile time flags - allow to tree shake code
@@ -74,6 +74,7 @@ export default defineConfig({
       '@vee-validate/zod',
       '@vueuse/core',
       '@vueuse/router',
+      '@vueuse/integrations/useCookies',
       '@vueform/multiselect',
       '@vueform/slider',
       'billboard.js',
@@ -109,6 +110,7 @@ export default defineConfig({
       'vue-i18n',
       'vue-router',
       'unplugin-vue-router/runtime',
+      ' unplugin-vue-router/data-loaders/basic',
       'scule',
       // 'simplebar',
       'tiny-slider/src/tiny-slider',
@@ -137,8 +139,16 @@ export default defineConfig({
         entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/[hash].mjs',
+        chunkFileNames: 'assets/_/[hash].mjs',
         assetFileNames: 'assets/[hash][extname]',
+        manualChunks(id) {
+          if (id.endsWith('scss/main.scss')) {
+            return 'layouts'
+          }
+          if (id.endsWith('.scss') && id.match(/components\/layouts\/(?:.*?)scss$/)) {
+            return 'layouts'
+          }
+        },
       },
     },
   },

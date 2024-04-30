@@ -191,7 +191,7 @@ watch(
     </Transition>
     <!-- /Desktop navigation -->
 
-    <VViewWrapper
+    <ViewWrapper
       :class="[
         activeSubsidebar && isDesktopSidebarOpen && 'is-pushed-full',
       ]"
@@ -215,8 +215,8 @@ watch(
 
         <slot v-bind="contextRx" />
       </template>
-      <VPageContentWrapper v-else :size="props.size">
-        <VPageContent
+      <PageContentWrapper v-else :size="props.size">
+        <PageContent
           class="is-relative"
         >
           <slot name="page-heading">
@@ -236,9 +236,9 @@ watch(
           </slot>
 
           <slot v-bind="contextRx" />
-        </VPageContent>
-      </VPageContentWrapper>
-    </VViewWrapper>
+        </PageContent>
+      </PageContentWrapper>
+    </ViewWrapper>
 
     <slot
       name="extra"
