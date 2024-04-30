@@ -1340,6 +1340,7 @@ const bottomLinks = ref<SidebarItem[]>([
   <SidebarLayout
     :links
     :bottom-links="bottomLinks"
+    default-sidebar="dashboard"
   >
     <!-- Propagating the context to the default slot -->
     <template #default="context">

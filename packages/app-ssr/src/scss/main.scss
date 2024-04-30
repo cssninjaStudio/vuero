@@ -8,7 +8,6 @@ SCSS Imports
 
 @import './bulma-generated/generated-vars.sass';
 @import './css-variables/all';
-@import './abstracts/ltr';
 @import './abstracts/all';
 
 // Here we import bulma-css-vars instead of bulma
@@ -27,7 +26,6 @@ SCSS Imports
 @import './components/nprogress';
 @import './components/datepicker';
 @import './components/divider';
-@import './components/editors';
 @import './components/charts';
 @import './components/toggles';
 @import './components/placeload';
