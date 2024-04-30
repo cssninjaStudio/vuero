@@ -222,7 +222,7 @@ const searchLabel = computed(() => {
                     <span>{{ item.name }}</span>
                   </div>
                   <div class="demo-link">
-                    <a role="button">
+                    <span>
                       Go to demo
                       <VIcon
                         class="rtl-hidden"
@@ -232,7 +232,7 @@ const searchLabel = computed(() => {
                         class="ltr-hidden"
                         icon="lucide:arrow-left"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -314,7 +314,7 @@ const searchLabel = computed(() => {
                     <span>{{ item.name }}</span>
                   </div>
                   <div class="demo-link">
-                    <a role="button">
+                    <span>
                       Go to demo
                       <VIcon
                         class="rtl-hidden"
@@ -324,7 +324,7 @@ const searchLabel = computed(() => {
                         class="ltr-hidden"
                         icon="lucide:arrow-left"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -406,7 +406,7 @@ const searchLabel = computed(() => {
                     <span>{{ item.name }}</span>
                   </div>
                   <div class="demo-link">
-                    <a role="button">
+                    <span>
                       Go to demo
                       <VIcon
                         class="rtl-hidden"
@@ -416,7 +416,7 @@ const searchLabel = computed(() => {
                         class="ltr-hidden"
                         icon="lucide:arrow-left"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -498,7 +498,7 @@ const searchLabel = computed(() => {
                     <span>{{ item.name }}</span>
                   </div>
                   <div class="demo-link">
-                    <a role="button">
+                    <span>
                       Go to demo
                       <VIcon
                         class="rtl-hidden"
@@ -508,7 +508,7 @@ const searchLabel = computed(() => {
                         class="ltr-hidden"
                         icon="lucide:arrow-left"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -590,7 +590,7 @@ const searchLabel = computed(() => {
                     <span>{{ item.name }}</span>
                   </div>
                   <div class="demo-link">
-                    <a role="button">
+                    <span>
                       Go to demo
                       <VIcon
                         class="rtl-hidden"
@@ -600,7 +600,7 @@ const searchLabel = computed(() => {
                         class="ltr-hidden"
                         icon="lucide:arrow-left"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -782,7 +782,7 @@ const searchLabel = computed(() => {
       color 0.3s;
     transition-delay: 0.2s;
 
-    a {
+    > span {
       display: inline-flex;
       align-items: center;
       font-family: var(--font);

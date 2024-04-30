@@ -51,7 +51,7 @@ export default defineConfig({
     port: 3000,
   },
   ssr: {
-    noExternal: isProd ? [] : ['vue-router'],
+    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-router'],
   },
   define: {
     // compile time flags - allow to tree shake code
@@ -130,20 +130,19 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    minify: false,
-    sourcemap: true,
+    minify: 'terser',
     rollupOptions: {
       output: {
+        format: 'esm',
         entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/[name]-[hash].mjs',
-        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[hash].mjs',
+        assetFileNames: 'assets/[hash][extname]',
       },
     },
   },
   plugins: [
-
     /**
      * Shows a quick overview of your app, including the Vue version, pages and components.
      *

@@ -9,8 +9,9 @@ export default definePlugin(async ({ event, router }) => {
   ] as const)
 
   const url = getRequestURL(event)
-  const route = router.resolve(url.pathname)
+  if (!url?.pathname) return
 
+  const route = router.resolve(url.pathname)
   if (!route) return
 
   if (route.meta.requiresAuth) {

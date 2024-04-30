@@ -174,7 +174,7 @@ const social = ref<LandingSocialItem[]>([
           Buy <strong>Vuero</strong> on Themeforest
         </VButton>
         <VLink
-          href="https://go.cssninja.io/discord"
+          to="https://go.cssninja.io/discord"
           class="has-text-primary is-flex is-align-items-center ml-5"
         >
           <span>Join us on Discord</span>

@@ -285,9 +285,6 @@ importers:
       iconify-icon:
         specifier: 2.1.0
         version: 2.1.0
-      jiti:
-        specifier: 1.21.0
-        version: 1.21.0
       listhen:
         specifier: 1.7.2
         version: 1.7.2
@@ -300,6 +297,9 @@ importers:
       tslib:
         specifier: 2.6.2
         version: 2.6.2
+      tsx:
+        specifier: 4.7.3
+        version: 4.7.3
       ufo:
         specifier: 1.5.3
         version: 1.5.3
@@ -343,9 +343,6 @@ importers:
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
-      esno:
-        specifier: 4.7.0
-        version: 4.7.0
       html-minifier-terser:
         specifier: 7.2.0
         version: 7.2.0
@@ -499,9 +496,6 @@ importers:
       imask:
         specifier: 7.6.0
         version: 7.6.0
-      jiti:
-        specifier: 1.21.0
-        version: 1.21.0
       listhen:
         specifier: 1.7.2
         version: 1.7.2
@@ -574,6 +568,9 @@ importers:
       tslib:
         specifier: 2.6.2
         version: 2.6.2
+      tsx:
+        specifier: 4.7.3
+        version: 4.7.3
       ufo:
         specifier: 1.5.3
         version: 1.5.3
@@ -710,9 +707,6 @@ importers:
       eslint-plugin-vuejs-accessibility:
         specifier: 2.3.0
         version: 2.3.0(eslint@8.57.0)
-      esno:
-        specifier: 4.7.0
-        version: 4.7.0
       fs-extra:
         specifier: 11.2.0
         version: 11.2.0
@@ -4036,10 +4030,6 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    hasBin: true
-
-  esno@4.7.0:
-    resolution: {integrity: sha512-81owrjxIxOwqcABt20U09Wn8lpBo9K6ttqbGvQcB3VYNLJyaV1fvKkDtpZd3Rj5BX3WXiGiJCjUevKQGNICzJg==}
     hasBin: true
 
   espree@6.2.1:
@@ -11640,10 +11630,6 @@ snapshots:
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
-
-  esno@4.7.0:
-    dependencies:
-      tsx: 4.7.3
 
   espree@6.2.1:
     dependencies:

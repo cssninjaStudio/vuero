@@ -25,11 +25,3 @@ export function generateStaticParams(): StaticParams {
     // },
   }
 }
-
-// https://vuejs.org/api/compile-time-flags.html
-// @ts-ignore - vue feature flags
-globalThis.__VUE_OPTIONS_API__ = false
-// @ts-ignore - vue feature flags
-globalThis.__VUE_PROD_DEVTOOLS__ = false
-// @ts-ignore - vue feature flags
-globalThis.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = false

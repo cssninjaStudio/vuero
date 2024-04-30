@@ -31,10 +31,10 @@ const props = defineProps<{
         <!-- Column -->
         <div v-if="'default' in $slots || props.social?.length" class="column is-4">
           <slot />
-          <div v-if="props.social">
+          <div v-if="props.social?.length">
             <div class="social-links p-b-10">
               <VLink
-                v-for="item in social"
+                v-for="item in props.social"
                 :key="item.icon"
                 :to="item.link"
               >
@@ -46,7 +46,7 @@ const props = defineProps<{
         <!-- Column -->
         <div
           class="column"
-          :class="'default' in $slots || props.social?.length ? 'is-6 is-offset-2' : 'is-12 has-text-centered'"
+          :class="'default' in $slots || props.links?.length ? 'is-6 is-offset-2' : 'is-12 has-text-centered'"
         >
           <div class="columns is-flex-tablet-p">
             <!-- Column -->

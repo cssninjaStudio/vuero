@@ -45,7 +45,7 @@ export default defineConfig({
     port: 3000,
   },
   ssr: {
-    noExternal: isProd ? [] : ['vue-router'],
+    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-router'],
   },
   // Predefine dependencies in order to prevent reloading them in the browser during development.
   optimizeDeps: {
@@ -60,6 +60,7 @@ export default defineConfig({
     minify: 'terser',
     rollupOptions: {
       output: {
+        format: 'esm',
         entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
