@@ -153,7 +153,7 @@
     "@types/html-minifier-terser": "^7.0.2",
     "@types/js-yaml": "4.0.9",
     "@types/mapbox-gl": "2.7.19",
-    "@types/mapbox__mapbox-gl-geocoder": "4.7.7",
+    "@types/mapbox__mapbox-gl-geocoder": "5.0.0",
     "@types/node": "20.11.5",
     "@types/nprogress": "0.2.3",
     "@types/photoswipe": "4.1.6",
