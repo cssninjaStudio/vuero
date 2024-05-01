@@ -2,7 +2,7 @@
 import type { NavsearchItem } from '/@src/components/layouts/navsearch/navsearch.types'
 
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
-import type { UserPopover } from '/@src/models/users'
+import type { UserPopover } from '/@src/types/users'
 import { popovers } from '/@src/data/users/userPopovers'
 
 function getAvatarData(user: UserPopover): any {
@@ -94,7 +94,7 @@ const links = ref<NavsearchItem[]>([
       </RouterLink>
     </template>
 
-    <template #title>
+    <template #navbar-start>
       <ProjectsQuickDropdown />
       <h1 class="title is-5">
         {{ pageTitle }}
@@ -111,7 +111,7 @@ const links = ref<NavsearchItem[]>([
       </div>
     </template>
 
-    <template #search>
+    <template #navbar-content>
       <NavsearchInput
         v-slot="{ item }"
         v-model="search"
@@ -127,7 +127,7 @@ const links = ref<NavsearchItem[]>([
     </template>
 
     <template #subnav-start>
-      <span>February 22, 2021</span>
+      <span>February 22, 2024</span>
     </template>
     <template #subnav-end>
       <VAvatarStack

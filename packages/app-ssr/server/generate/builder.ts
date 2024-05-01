@@ -16,6 +16,9 @@ export async function buildApp({
   config.logger.info(colors.green('[SSG] Build for client...'))
   await viteBuild(
     mergeConfig(viteConfig, {
+      define: {
+        __VUERO_SSR_BUILD__: true,
+      },
       build: {
         ssrManifest: true,
         outDir: outStatic,
@@ -28,6 +31,9 @@ export async function buildApp({
   config.logger.info(colors.green('[SSG] Build for server...'))
   await viteBuild(
     mergeConfig(viteConfig, {
+      define: {
+        __VUERO_SSR_BUILD__: 'true',
+      },
       build: {
         ssr: 'src/entry-server.ts',
         outDir: outServer,

@@ -5,7 +5,7 @@ import { injectionKey } from './sidebar.context'
 const props = withDefaults(
   defineProps<{
     links?: SidebarItem[]
-    bottomLinks?: SidebarItem[]
+    linksBottom?: SidebarItem[]
     theme?: SidebarTheme
     size?: 'default' | 'large' | 'wide' | 'full'
     defaultSidebar?: string
@@ -14,7 +14,7 @@ const props = withDefaults(
   }>(),
   {
     links: () => [],
-    bottomLinks: () => [],
+    linksBottom: () => [],
     defaultSidebar: '',
     theme: 'default',
     size: 'default',
@@ -55,7 +55,7 @@ function toggleSubsidebar(id: string) {
 // provide context to children
 const context: SidebarLayoutContext = {
   links: computed(() => props.links),
-  bottomLinks: computed(() => props.bottomLinks),
+  linksBottom: computed(() => props.linksBottom),
   theme: computed(() => props.theme),
   defaultSidebar: computed(() => props.defaultSidebar),
   closeOnChange: computed(() => props.closeOnChange),
@@ -106,23 +106,27 @@ watch(
       :class="[activeSubsidebar && isMobileSidebarOpen && 'is-active']"
     >
       <template v-if="props.links.length" #links>
-        <li
-          v-for="link in props.links"
-          :key="link.id"
-          :class="[link.hideMobile ? 'is-hidden-mobile' : '']"
-        >
-          <SidebarItem :link />
-        </li>
+        <slot name="sidebar-links-mobile" v-bind="contextRx">
+          <li
+            v-for="link in props.links"
+            :key="link.id"
+            :class="[link.hideMobile ? 'is-hidden-mobile' : '']"
+          >
+            <SidebarItem :link />
+          </li>
+        </slot>
       </template>
 
-      <template v-if="props.bottomLinks.length" #bottom-links>
-        <li
-          v-for="link in props.bottomLinks"
-          :key="link.id"
-          :class="[link.hideMobile ? 'is-hidden-mobile' : '']"
-        >
-          <SidebarItem :link />
-        </li>
+      <template v-if="props.linksBottom.length" #links-bottom>
+        <slot name="sidebar-links-bottom-mobile" v-bind="contextRx">
+          <li
+            v-for="link in props.linksBottom"
+            :key="link.id"
+            :class="[link.hideMobile ? 'is-hidden-mobile' : '']"
+          >
+            <SidebarItem :link />
+          </li>
+        </slot>
       </template>
     </MobileSidebar>
     <Transition name="fade">
@@ -158,21 +162,25 @@ watch(
         <slot name="logo" v-bind="contextRx" />
       </template>
       <template v-if="props.links.length" #links>
-        <li
-          v-for="link in props.links"
-          :key="link.id"
-        >
-          <SidebarItem :link />
-        </li>
+        <slot name="sidebar-links" v-bind="contextRx">
+          <li
+            v-for="link in props.links"
+            :key="link.id"
+          >
+            <SidebarItem :link />
+          </li>
+        </slot>
       </template>
 
-      <template v-if="props.bottomLinks.length" #bottom-links>
-        <li
-          v-for="link in props.bottomLinks"
-          :key="link.id"
-        >
-          <SidebarItem :link />
-        </li>
+      <template v-if="props.linksBottom.length" #links-bottom>
+        <slot name="sidebar-links-bottom" v-bind="contextRx">
+          <li
+            v-for="link in props.linksBottom"
+            :key="link.id"
+          >
+            <SidebarItem :link />
+          </li>
+        </slot>
       </template>
     </Sidebar>
 
@@ -197,7 +205,7 @@ watch(
       ]"
     >
       <template v-if="props.size === 'full'">
-        <slot name="page-heading">
+        <slot name="page-heading" v-bind="contextRx">
           <SidebarPageHeading
             :open="activeSubsidebar && isDesktopSidebarOpen"
             @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"
@@ -219,7 +227,7 @@ watch(
         <PageContent
           class="is-relative"
         >
-          <slot name="page-heading">
+          <slot name="page-heading" v-bind="contextRx">
             <SidebarPageHeading
               :open="activeSubsidebar && isDesktopSidebarOpen"
               @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"

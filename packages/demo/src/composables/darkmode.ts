@@ -1,4 +1,4 @@
-import { injectionKey } from '../plugins/darkmode'
+import { injectionKey } from '/@src/plugins/darkmode'
 
 export const useDarkmode = () => {
   return inject(injectionKey, {

@@ -9,7 +9,7 @@
       </ul>
 
       <ul class="bottom-icon-side-menu">
-        <slot name="bottom-links" />
+        <slot name="links-bottom" />
       </ul>
     </div>
   </div>

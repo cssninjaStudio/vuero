@@ -30,6 +30,7 @@ const modelValue = defineModel<boolean>({
   z-index: 100;
   box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
   transition: all 0.3s; // transition-all test
+  margin: 0;
 
   &.no-shadow {
     box-shadow: none !important;

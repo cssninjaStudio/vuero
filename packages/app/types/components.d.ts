@@ -19,6 +19,8 @@ declare module 'vue' {
     MobileNavbar: typeof import('./../src/components/layouts/shared/mobile/MobileNavbar.vue')['default']
     MobileOverlay: typeof import('./../src/components/layouts/shared/mobile/MobileOverlay.vue')['default']
     MobileSidebar: typeof import('./../src/components/layouts/shared/mobile/MobileSidebar.vue')['default']
+    PageContent: typeof import('./../src/components/layouts/shared/PageContent.vue')['default']
+    PageContentWrapper: typeof import('./../src/components/layouts/shared/PageContentWrapper.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sideblock: typeof import('./../src/components/layouts/sideblock/Sideblock.vue')['default']
@@ -64,6 +66,7 @@ declare module 'vue' {
     VIconBox: typeof import('./../src/components/base/VIconBox.vue')['default']
     VIconButton: typeof import('./../src/components/base/VIconButton.vue')['default']
     VIconWrap: typeof import('./../src/components/base/VIconWrap.vue')['default']
+    ViewWrapper: typeof import('./../src/components/layouts/shared/ViewWrapper.vue')['default']
     VInput: typeof import('./../src/components/base/VInput.vue')['default']
     VLabel: typeof import('./../src/components/base/VLabel.vue')['default']
     VLink: typeof import('./../src/components/base/VLink.vue')['default']
@@ -72,8 +75,6 @@ declare module 'vue' {
     VModal: typeof import('./../src/components/base/VModal.vue')['default']
     VOptgroup: typeof import('./../src/components/base/VOptgroup.vue')['default']
     VOption: typeof import('./../src/components/base/VOption.vue')['default']
-    VPageContent: typeof import('./../src/components/base/VPageContent.vue')['default']
-    VPageContentWrapper: typeof import('./../src/components/base/VPageContentWrapper.vue')['default']
     VPeity: typeof import('./../src/components/base/VPeity.vue')['default']
     VPlaceholderPage: typeof import('./../src/components/base/VPlaceholderPage.vue')['default']
     VPlaceholderSection: typeof import('./../src/components/base/VPlaceholderSection.vue')['default']
@@ -93,6 +94,5 @@ declare module 'vue' {
     VTags: typeof import('./../src/components/base/VTags.vue')['default']
     VTextarea: typeof import('./../src/components/base/VTextarea.vue')['default']
     VTextEllipsis: typeof import('./../src/components/base/VTextEllipsis.vue')['default']
-    VViewWrapper: typeof import('./../src/components/base/VViewWrapper.vue')['default']
   }
 }

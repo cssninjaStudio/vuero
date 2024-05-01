@@ -24,25 +24,19 @@
     "lib": ["esnext", "dom"],
     "types": [
       "vite/client",
-      "vite-plugin-pwa/client",
       "unplugin-vue-router/client",
     ],
     "paths": {
-      "v-calendar": [
-        "./node_modules/v-calendar/dist/types/src/index.d.ts"
-      ],
       "/@src/*": ["./src/*"],
       "/@server/*": ["./server/*"]
     }
   },
   "include": [
-    "vite-plugin/**/*.ts",
     "server/**/*.ts",
     "types/**/*.d.ts",
     "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.vue",
-    "scripts/**/*.ts",
     "*.config.ts"
   ],
   "exclude": ["bulma-colors.ts"]

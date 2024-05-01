@@ -13,6 +13,9 @@
     "build:update-bulma-colors": "bulma-css-vars",
     "build:client": "cross-env NODE_ENV=production vite build --ssrManifest --outDir dist/client",
     "build:server": "cross-env NODE_ENV=production vite build --ssr src/entry-server.ts --outDir dist/server",
+    "ssg:build": "pnpm build:update-bulma-colors && NODE_ENV=production cross-env tsx server/generate.ts",
+    "generate": "run-s build:update-bulma-colors generate:build",
+    "generate:build": "NODE_ENV=production cross-env tsx server/generate.ts",
     "start": "cross-env NODE_ENV=production tsx server/serve.ts"
   },
   "dependencies": {
@@ -43,7 +46,7 @@
     "universal-cookie": "7.1.4",
     "unplugin-vue-router": "0.8.6",
     "vee-validate": "4.12.6",
-    "vue": "3.4.25",
+    "vue": "3.4.26",
     "vue-router": "4.3.2"
   },
   "devDependencies": {
@@ -54,14 +57,17 @@
     "@vitejs/plugin-vue": "5.0.4",
     "@vueuse/integrations": "10.9.0",
     "cross-env": "7.0.3",
+    "fast-glob": "^3.3.2",
     "html-minifier-terser": "7.2.0",
     "npm-run-all": "4.1.5",
+    "picocolors": "^1.0.0",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",
+    "std-env": "3.7.0",
     "typescript": "5.4.5",
     "unplugin-auto-import": "0.17.5",
     "unplugin-vue-components": "0.26.0",
     "vite": "5.2.10",
-    "vite-plugin-vue-devtools": "7.1.2"
+    "vite-plugin-vue-devtools": "7.1.3"
   }
 }

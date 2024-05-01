@@ -32,8 +32,8 @@ module.exports = {
       },
       rules: {
         ...customized.rules,
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
+        'no-debugger': 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
 
@@ -53,8 +53,8 @@ module.exports = {
       },
       rules: {
         ...customized.rules,
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
+        'no-debugger': 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
 
@@ -77,8 +77,8 @@ module.exports = {
       },
       rules: {
         ...customized.rules,
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
+        'no-debugger': 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
 
@@ -110,8 +110,8 @@ module.exports = {
       },
       rules: {
         ...customized.rules,
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
+        'no-debugger': 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
 
@@ -162,8 +162,8 @@ module.exports = {
       },
       rules: {
         ...customized.rules,
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
+        'no-debugger': 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
 

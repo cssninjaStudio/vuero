@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { SideblockLayoutContext, SideblockItem, SideblockTheme } from './sideblock.types'
 import { injectionKey } from './sideblock.context'
+import SideblockItemMobile from './SideblockItemMobile.vue'
 
 const props = withDefaults(
   defineProps<{
@@ -67,7 +68,20 @@ watch(
       <SideblockSubsidebarMobile
         v-if="isMobileSideblockOpen"
         :items="props.links"
-      />
+      >
+        <template #default>
+          <slot name="sideblock-title-mobile" />
+        </template>
+        <template #links>
+          <slot name="sideblock-links-mobile" v-bind="contextRx">
+            <SideblockItemMobile
+              v-for="(link, key) in props.links"
+              :key
+              :link
+            />
+          </slot>
+        </template>
+      </SideblockSubsidebarMobile>
     </Transition>
     <Transition name="fade">
       <MobileOverlay
@@ -87,28 +101,30 @@ watch(
           <slot name="logo" v-bind="contextRx" />
         </template>
         <template #links>
-          <SideblockItem
-            v-for="(link, key) in props.links"
-            :key
-            :link
-          />
+          <slot name="sideblock-links" v-bind="contextRx">
+            <SideblockItem
+              v-for="(link, key) in props.links"
+              :key
+              :link
+            />
+          </slot>
         </template>
 
-        <template #bottom-links>
-          <slot name="bottom-links" v-bind="contextRx" />
+        <template #links-bottom>
+          <slot name="sideblock-end" v-bind="contextRx" />
         </template>
       </Sideblock>
     </Transition>
     <!-- /Desktop navigation -->
 
-    <VViewWrapper
+    <ViewWrapper
       full
       :class="[
         isDesktopSideblockOpen && 'is-pushed-block',
       ]"
     >
       <template v-if="props.size === 'full'">
-        <slot name="page-heading">
+        <slot name="page-heading" v-bind="contextRx">
           <SideblockPageHeading
             :open="isDesktopSideblockOpen"
             @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
@@ -126,11 +142,11 @@ watch(
 
         <slot v-bind="contextRx" />
       </template>
-      <VPageContentWrapper v-else :size="props.size">
-        <VPageContent
+      <PageContentWrapper v-else :size="props.size">
+        <PageContent
           class="is-relative"
         >
-          <slot name="page-heading">
+          <slot name="page-heading" v-bind="contextRx">
             <SideblockPageHeading
               :open="isDesktopSideblockOpen"
               @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
@@ -147,9 +163,9 @@ watch(
           </slot>
 
           <slot v-bind="contextRx" />
-        </VPageContent>
-      </VPageContentWrapper>
-    </VViewWrapper>
+        </PageContent>
+      </PageContentWrapper>
+    </ViewWrapper>
 
     <slot name="extra" />
   </div>

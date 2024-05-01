@@ -1,5 +1,3 @@
-import { resolve, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -13,21 +11,12 @@ import Electron from 'vite-plugin-electron/simple'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import pkg from './package.json'
 
-const isProd = process.env.NODE_ENV === 'production'
-
 /**
  * This is the main configuration file for vitejs
  *
  * @see https://vitejs.dev/config
  */
 export default defineConfig({
-  // Project root directory (where index.html is located).
-  root: process.cwd(),
-  // Base public path when served in development or production.
-  // You also need to add this base like `history: createWebHistory('my-subdirectory')`
-  // in ./src/router.ts
-  // base: '/my-subdirectory/',
-  base: '/',
   publicDir: 'public',
   logLevel: 'info',
   resolve: {
@@ -60,6 +49,7 @@ export default defineConfig({
     ],
   },
   build: {
+    assetsDir: '',
     target: 'esnext',
     minify: 'terser',
     rollupOptions: {

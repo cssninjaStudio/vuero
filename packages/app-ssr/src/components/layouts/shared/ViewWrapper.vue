@@ -1,10 +1,8 @@
 <script setup lang="ts">
-export interface VViewWrapperProps {
+const props = defineProps<{
   topNav?: boolean
   full?: boolean
-}
-
-const props = defineProps<VViewWrapperProps>()
+}>()
 </script>
 
 <template>

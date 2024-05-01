@@ -20,36 +20,14 @@ const props = defineProps<{
         class="submenu has-slimscroll"
       >
         <template v-for="item of props.items">
-          <VCollapseLinks v-if="'children' in item" :key="item.id">
-            <template #header>
-              {{ item.label }}
-              <VIcon
-                class="rtl-hidden"
-                icon="lucide:chevron-right"
-              />
-              <VIcon
-                class="ltr-hidden"
-                icon="lucide:chevron-left"
-              />
-            </template>
-
-            <VLink
-              v-for="child of item.children"
-              :key="child.to"
-              :to="child.to"
-              class="is-submenu"
-            >
-              <span>{{ child.label }}</span>
-              <VTag
-                v-if="child.tag"
-                :label="child.tag"
-                color="primary"
-                size="tiny"
-                outlined
-              />
-            </VLink>
+          <VCollapseLinks
+            v-if="'children' in item"
+            :key="item.id"
+            :links="item.children"
+          >
+            {{ item.label }}
           </VCollapseLinks>
-          <li v-else-if="'to' in item" :key="item.to">
+          <li v-else-if="'to' in item" :key="item.label">
             <VLink :to="item.to">
               {{ item.label }}
             </VLink>

@@ -100,6 +100,12 @@ code {
   font-family: var(--font-monospace);
 }
 
+
+.font-mono {
+  white-space: pre;
+  font-family: var(--font-monospace);
+}
+
 pre {
   border-radius: 0.75rem;
 

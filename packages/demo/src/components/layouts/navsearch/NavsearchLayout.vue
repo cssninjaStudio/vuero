@@ -99,7 +99,11 @@ watch(
         v-if="isMobileSidebarOpen"
         :items="props.links"
       >
-        <slot name="search" v-bind="contextRx" />
+        <slot name="navbar-content" v-bind="contextRx" />
+
+        <template #links>
+          <slot name="navbar-links-mobile" />
+        </template>
       </NavsearchSubsidebarMobile>
     </Transition>
     <Transition name="fade">
@@ -120,7 +124,7 @@ watch(
       <template #title>
         <slot name="logo" v-bind="contextRx" />
         <div v-if="'logo' in $slots" class="separator" />
-        <slot name="title" v-bind="contextRx">
+        <slot name="navbar-title" v-bind="contextRx">
           <h1 class="title is-6">
             {{ pageTitle }}
           </h1>
@@ -128,7 +132,7 @@ watch(
       </template>
 
       <template #search>
-        <slot name="search" v-bind="contextRx" />
+        <slot name="navbar-content" v-bind="contextRx" />
       </template>
 
       <template #toolbar>
@@ -142,16 +146,18 @@ watch(
       </template>
 
       <template #links>
-        <div class="buttons">
-          <VLink
-            v-for="link in props.links"
-            :key="link.to"
-            :to="link.to"
-            class="button"
-          >
-            {{ link.label }}
-          </VLink>
-        </div>
+        <slot name="subnav-links" v-bind="contextRx">
+          <div class="buttons">
+            <VLink
+              v-for="link in props.links"
+              :key="link.to"
+              :to="link.to"
+              class="button"
+            >
+              {{ link.label }}
+            </VLink>
+          </div>
+        </slot>
       </template>
 
       <template v-if="'subnav-end' in $slots" #toolbar-bottom>

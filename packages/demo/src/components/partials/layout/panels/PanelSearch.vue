@@ -2,7 +2,7 @@
 import { FocusTrap } from 'focus-trap-vue'
 
 import type { VAvatarProps, VAvatarColor } from '/@src/components/base/VAvatar.vue'
-import type { UserPopover } from '/@src/models/users'
+import type { UserPopover } from '/@src/types/users'
 
 import { popovers } from '/@src/data/users/userPopovers'
 

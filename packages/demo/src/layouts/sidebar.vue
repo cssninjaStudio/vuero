@@ -1303,7 +1303,7 @@ const links = ref<SidebarItem[]>([
   },
 ])
 
-const bottomLinks = ref<SidebarItem[]>([
+const linksBottom = ref<SidebarItem[]>([
   {
     id: 'layout-switcher',
     type: 'component',
@@ -1339,7 +1339,7 @@ const bottomLinks = ref<SidebarItem[]>([
 <template>
   <SidebarLayout
     :links
-    :bottom-links="bottomLinks"
+    :links-bottom="linksBottom"
     default-sidebar="dashboard"
   >
     <!-- Propagating the context to the default slot -->

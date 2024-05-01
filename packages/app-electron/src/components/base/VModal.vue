@@ -100,7 +100,7 @@ onUnmounted(() => {
             </header>
             <div
               class="modal-card-body"
-              :class="[props.tabs && 'has-tabs']"
+              :class="[props.tabs && 'has-tabs has-slimscroll']"
             >
               <div class="inner-content">
                 <slot name="content" />
@@ -280,6 +280,7 @@ onUnmounted(() => {
           .iconify {
             width: 22px;
             height: 22px;
+            font-size: 20px;
             color: var(--muted-grey);
           }
         }

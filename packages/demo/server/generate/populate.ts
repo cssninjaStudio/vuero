@@ -1,7 +1,8 @@
 import type { ResolvedConfig } from 'vite'
 import colors from 'picocolors'
 import { generateStaticParams } from '../config'
-import { routeParamRe } from '../utils'
+
+export const routeParamRe = /(\[.*?\])/g
 
 interface PrerenderPage {
   url: string

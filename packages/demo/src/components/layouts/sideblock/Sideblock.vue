@@ -30,9 +30,8 @@ const themeClasses = computed(() => {
         <slot name="links" />
       </ul>
     </div>
-    <!-- User account -->
     <div class="sidebar-block-footer">
-      <slot name="bottom-links" />
+      <slot name="links-bottom" />
     </div>
   </div>
 </template>

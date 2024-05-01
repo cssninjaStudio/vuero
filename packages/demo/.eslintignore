@@ -13,3 +13,4 @@ bulma-colors.js
 types/components.d.ts
 types/router.d.ts
 types/imports.d.ts
+components-meta.ts

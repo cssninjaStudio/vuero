@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
+import type { WizardTeammate, WizardTeammateRole } from '/@src/types/wizard'
 import { users } from '/@src/data/wizard'
 
 const search = ref('')

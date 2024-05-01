@@ -2959,56 +2959,6 @@ body.opened {
   background: rgb(255, 255, 255);
 }
 
-.navbar-subnavbar {
-  background: rgb(255, 255, 255);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tabs ul li.is-active a {
-  color: rgb(42, 172, 142);
-  background: rgb(255, 255, 255);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tabs ul li.is-active:hover a {
-  background: rgb(255, 255, 255);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder {
-  background-color: rgb(255, 255, 255);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder.is-primary {
-  background: rgb(42, 172, 142);
-  border-color: rgb(42, 172, 142);
-  color: rgb(255, 255, 255);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:hover,
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:focus {
-  border-color: rgb(42, 172, 142);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:hover h3,
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:focus h3 {
-  color: rgb(42, 172, 142);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li:hover a,
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li:focus a {
-  color: rgb(42, 172, 142);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li.is-active a .iconify {
-  fill: rgb(42, 172, 142);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li .router-link-exact-active .iconify {
-  fill: rgb(42, 172, 142);
-}
-
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li a .iconify {
-  fill: rgb(42, 172, 142);
-}
-
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .navbar-brand .is-notification .navbar-dropdown {
     background: rgb(255, 255, 255);
@@ -3392,15 +3342,6 @@ code {
 .is-divider[data-content]::after,
 .is-divider-vertical[data-content]::after {
   background: rgb(255, 255, 255);
-}
-
-.note-modal .note-modal-content .note-modal-footer .btn-primary {
-  background: rgb(42, 172, 142);
-}
-
-.note-modal .note-modal-content .note-modal-footer .btn-primary {
-  background: rgb(42, 172, 142);
-  border-color: rgb(42, 172, 142);
 }
 
 .is-dark .apexcharts-subtitle-text {

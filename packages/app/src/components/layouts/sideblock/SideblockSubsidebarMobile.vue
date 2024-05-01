@@ -19,28 +19,7 @@ const props = defineProps<{
       <ul
         class="submenu has-slimscroll"
       >
-        <template v-for="(item, idx) of props.items">
-          <li
-            v-if="item.type === 'divider'"
-            :key="`divider-${idx}`"
-            class="divider"
-            :class="[item.label ? 'with-label' : '']"
-          >
-            <span v-if="item.label" class="divider-label">{{ item.label }}</span>
-          </li>
-          <li v-else-if="item.type === 'link'" :key="`link-${idx}`">
-            <VLink :to="item.to">
-              {{ item.label }}
-            </VLink>
-          </li>
-          <VCollapseLinks
-            v-else-if="item.type === 'collapse'"
-            :key="`collapse-${item.id}`"
-            :links="item.children"
-          >
-            {{ item.label }}
-          </VCollapseLinks>
-        </template>
+        <slot name="links" />
       </ul>
     </div>
   </div>

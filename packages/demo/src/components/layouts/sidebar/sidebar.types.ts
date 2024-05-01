@@ -86,7 +86,7 @@ export type SidebarTheme =
 
 export interface SidebarLayoutContext {
   links: ComputedRef<SidebarItem[]>
-  bottomLinks: ComputedRef<SidebarItem[]>
+  linksBottom: ComputedRef<SidebarItem[]>
   theme: ComputedRef<SidebarTheme>
 
   defaultSidebar: ComputedRef<string>

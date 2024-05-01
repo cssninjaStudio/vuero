@@ -1,12 +1,4 @@
 <script setup lang="ts">
-import type { LandingNavItem } from './landing.types'
-
-const props = withDefaults(defineProps<{
-  links: LandingNavItem[]
-}>(), {
-  links: () => [],
-})
-
 const isMobileNavOpen = ref(false)
 
 const { y } = useWindowScroll()
@@ -41,19 +33,7 @@ watchEffect(() => {
         :class="[isMobileNavOpen && 'is-active']"
       >
         <div class="navbar-start">
-          <div
-            v-for="link in props.links"
-            :key="link.label"
-            class="navbar-item"
-          >
-            <VLink
-              :to="link.to"
-              class="nav-link"
-              :class="[link.active && 'is-active']"
-            >
-              {{ link.label }}
-            </VLink>
-          </div>
+          <slot />
         </div>
 
         <div class="navbar-end">

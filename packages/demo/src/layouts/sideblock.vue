@@ -222,7 +222,7 @@ const links = ref<SideblockItem[]>([
       <ToolbarUserProfile />
     </template>
 
-    <template #bottom-links>
+    <template #sideblock-end>
       <ToolbarUserProfile end />
       <LayoutSwitcher class="search-link" />
       <ToolbarSearch />

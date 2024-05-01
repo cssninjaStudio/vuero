@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WizardCustomer } from '/@src/models/wizard'
+import type { WizardCustomer } from '/@src/types/wizard'
 import { customers } from '/@src/data/wizard'
 
 const search = ref('')

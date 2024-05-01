@@ -1,7 +1,7 @@
-import { isProd } from '../utils'
+import { isProduction, isDebug } from 'std-env'
 
 export function registerProcessHandlers() {
-  if (!isProd) {
+  if (!isProduction || isDebug) {
     process.on('unhandledRejection', error =>
       console.error('[dev] [unhandledRejection]', error),
     )

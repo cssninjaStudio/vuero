@@ -1,4 +1,4 @@
-# Vuero Vue3 - Multipurpose Admin and Webapp Template
+# Vuero Vue - Multipurpose Admin and Webapp Template
 
 [![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
 
@@ -8,10 +8,9 @@ First of all, Thank you so much for purchasing this template and for being our l
 
 ### Prerequisites
 
-1. A recent web browser (Chrome, Edge, Firefox, ...)
-2. [Nodejs LTS](https://nodejs.org/en/) _(LTS or Current version)_ installed
-3. Knowledge with [Typescript](https://github.com/microsoft/typescript) (should not be installed globally)
-4. (recommended) [VSCode](https://code.visualstudio.com/) with [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar)
+1. [Nodejs LTS](https://nodejs.org/en/) _(LTS or Current version)_ installed
+2. Knowledge with [Typescript](https://github.com/microsoft/typescript) (should not be installed globally)
+3. (recommended) [VSCode](https://code.visualstudio.com/) with [Vue Extension](https://marketplace.visualstudio.com/items?itemName=vue.volar)
 
 #### Install nodejs
 

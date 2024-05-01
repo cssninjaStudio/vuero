@@ -14,13 +14,29 @@ const props = withDefaults(defineProps<{
       <LandingGrids />
 
       <div class="hero">
-        <LandingNavigation :links="props.links">
+        <LandingNavigation>
           <template #logo>
             <slot name="logo" />
           </template>
           <template #end>
             <slot name="nav-end" />
           </template>
+
+          <slot name="nav-links">
+            <div
+              v-for="link in props.links"
+              :key="link.label"
+              class="navbar-item"
+            >
+              <VLink
+                :to="link.to"
+                class="nav-link"
+                :class="[link.active && 'is-active']"
+              >
+                {{ link.label }}
+              </VLink>
+            </div>
+          </slot>
         </LandingNavigation>
       </div>
 

@@ -49,8 +49,7 @@
     "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.vue",
-    "scripts/**/*.ts",
     "*.config.ts"
   ],
-  "exclude": ["bulma-colors.ts"]
+  "exclude": ["bulma-colors.ts", "components-meta.ts"]
 }

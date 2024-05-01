@@ -6,6 +6,7 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import { type ResolvedConfig, type InlineConfig, resolveConfig } from 'vite'
 import colors from 'picocolors'
+import { env } from 'std-env'
 
 import { createRenderer } from './generate/renderer'
 import { buildApp } from './generate/builder'
@@ -14,7 +15,7 @@ import { populateRouteParams } from './generate/populate'
 import { renderToFile } from './generate/render-to-file'
 
 async function build() {
-  const mode = process.env.MODE || process.env.NODE_ENV || 'production'
+  const mode = env.MODE || env.NODE_ENV || 'production'
 
   const viteConfig: InlineConfig = {}
   const config = await resolveConfig(viteConfig, 'build', mode)
@@ -90,7 +91,7 @@ async function build() {
         out.replace(cwd, '.'),
       )} directory with a static file server.`,
       `Example:`,
-      `  ${colors.green('pnpm ssg:serve')}`,
+      `  ${colors.green('npx serve dist -p 3000')}`,
     ].join('\n'),
   )
   process.exit(0)

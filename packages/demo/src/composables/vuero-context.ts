@@ -1,5 +1,5 @@
 import type { MaybeRefOrGetter } from 'vue'
-import { injectionKey } from '../plugins/vuero-context'
+import { injectionKey } from '/@src/plugins/vuero-context'
 
 export const useVueroContext = ({
   pageTitle,

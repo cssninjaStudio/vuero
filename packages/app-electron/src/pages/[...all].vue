@@ -1,162 +1,124 @@
 <script setup lang="ts">
-import { useSSRContext } from 'vue'
+definePage({
+  alias: ['/'],
+})
+
+const isLoading = ref(false)
+const router = useRouter()
+const route = useRoute()
+const token = useUserToken()
+
+const handleLogin = async () => {
+  token.value = 'logged-in'
+}
 
 useHead({
-  title: `Page not found`,
-  meta: [
-    {
-      name: 'robots',
-      content: 'noindex',
-    },
-  ],
+  title: 'Login',
+})
+
+watch(token, (value) => {
+  if (value === 'logged-in') {
+    if (route?.query?.redirect) {
+      // @ts-ignore
+      router.push(route.query.redirect)
+    }
+    else {
+      router.push('/app')
+    }
+  }
+}, {
+  immediate: true,
 })
 </script>
 
 <template>
-  <MinimalLayout>
-    <div class="error-container">
-      <div class="error-nav">
-        <VDarkmodeToggle />
+  <AuthLayout>
+    <div class="auth-wrapper-inner is-single">
+      <LandingGrids class="is-contrasted" />
+      <div class="auth-nav">
+        <div class="left" />
+        <div class="center">
+          <RouterLink
+            to="/"
+            class="header-item"
+          >
+            <!-- Your logo -->
+          </RouterLink>
+        </div>
+        <div class="right">
+          <VDarkmodeToggle />
+        </div>
       </div>
 
-      <div class="error-wrapper">
-        <div class="error-inner has-text-centered">
-          <div class="bg-number">
-            404
+      <div class="single-form-wrap is-relative">
+        <div class="inner-wrap">
+          <div class="auth-head">
+            <h2>Welcome Back.</h2>
+            <p>Please sign in to your account</p>
+            <RouterLink to="/signup">
+              I do not have an account yet
+            </RouterLink>
           </div>
 
-          <div class="p-t-100">
-            <h3 class="p-t-50">We couldn't find that page</h3>
-            <p>
-              Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists.
-            </p>
-          </div>
-          <div class="button-wrap">
-            <VButton
-              color="primary"
-              elevated
-              to="/"
+          <div class="form-card">
+            <form
+              method="post"
+              novalidate
+              @submit.prevent="handleLogin"
             >
-              Take me Back
-            </VButton>
+              <div class="login-form">
+                <VField>
+                  <VControl icon="lucide:user">
+                    <VInput
+                      type="text"
+                      placeholder="Username"
+                      autocomplete="username"
+                    />
+                  </VControl>
+                </VField>
+                <VField>
+                  <VControl icon="lucide:lock">
+                    <VInput
+                      type="password"
+                      placeholder="Password"
+                      autocomplete="current-password"
+                    />
+                  </VControl>
+                </VField>
+
+                <!-- Switch -->
+                <VField>
+                  <VControl class="setting-item">
+                    <VCheckbox
+                      label="Remember me"
+                      color="primary"
+                      paddingless
+                    />
+                  </VControl>
+                </VField>
+
+                <!-- Submit -->
+                <div class="login">
+                  <VButton
+                    :loading="isLoading"
+                    type="submit"
+                    color="primary"
+                    bold
+                    fullwidth
+                    raised
+                  >
+                    Sign In
+                  </VButton>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="forgot-link has-text-centered">
+            <a>Forgot Password?</a>
           </div>
         </div>
       </div>
     </div>
-  </MinimalLayout>
+  </AuthLayout>
 </template>
-
-<style lang="scss">
-.error-container {
-  width: 100vw;
-  min-height: 100vh;
-
-  .error-nav {
-    .dark-mode {
-      position: absolute;
-      inset-inline-end: 0;
-      top: 0;
-      display: inline-block;
-      transform: scale(0.5);
-    }
-  }
-
-  .error-wrapper {
-    max-width: 840px;
-    margin: 0 auto;
-    padding-top: 40px;
-
-    .error-inner {
-      position: relative;
-      max-width: 540px;
-      margin: 0 auto;
-
-      .bg-number {
-        font-family: var(--font);
-        position: absolute;
-        top: -58px;
-        inset-inline-start: -50px;
-        inset-inline-end: 0;
-        margin: 0 auto;
-        font-size: 28rem;
-        font-weight: 600;
-        opacity: 0.15;
-        z-index: 0;
-      }
-
-      img,
-      svg,
-      h3,
-      p,
-      .button-wrap {
-        position: relative;
-        z-index: 1;
-      }
-
-      img,
-      .iconify {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-      }
-
-      h3 {
-        font-size: 1.5rem;
-        font-family: var(--font-alt);
-        color: var(--dark-text);
-        font-weight: 600;
-        margin-top: 10px;
-      }
-
-      p {
-        font-family: var(--font);
-        font-size: 1.1rem;
-        margin-bottom: 16px;
-      }
-
-      .button-wrap {
-        .button {
-          min-width: 220px;
-          min-height: 50px;
-        }
-      }
-    }
-  }
-}
-
-.is-dark {
-  .error-container {
-    .error-wrapper {
-      .error-inner {
-        .bg-number {
-          opacity: 0.09;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (width <= 767px) {
-  .error-container {
-    .error-wrapper {
-      padding-top: 60px;
-
-      .error-inner {
-        padding: 10px;
-
-        .bg-number {
-          top: -35px;
-          inset-inline-start: -18px;
-          inset-inline-end: 0;
-          font-size: 13rem;
-        }
-
-        img,
-        .iconify {
-          max-width: 345px;
-        }
-      }
-    }
-  }
-}
-</style>

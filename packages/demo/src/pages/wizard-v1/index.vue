@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WizardRelatedTo } from '/@src/models/wizard'
+import type { WizardRelatedTo } from '/@src/types/wizard'
 
 const wizard = useWizard()
 const router = useRouter()

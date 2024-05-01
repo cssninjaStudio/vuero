@@ -1117,7 +1117,7 @@ const links = ref<NavbarItem[]>([
       </RouterLink>
     </template>
 
-    <template #title>
+    <template #navbar-title>
       <ProjectsQuickDropdown />
       <h1 class="title is-6">
         {{ pageTitle }}

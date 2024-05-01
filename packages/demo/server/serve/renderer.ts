@@ -4,17 +4,18 @@ import { readFileSync } from 'node:fs'
 import type { ViteDevServer } from 'vite'
 
 import type { VueroServerRender } from '../types.js'
-import { root, isProd, resolve } from '../utils.js'
+import { isProduction } from 'std-env'
+import { resolve } from '../utils.js'
 
 export async function createRenderer() {
   let vite: ViteDevServer | undefined
   let render: VueroServerRender
 
-  if (!isProd) {
+  if (!isProduction) {
     const createServer = await import('vite').then(m => m.createServer)
 
     vite = await createServer({
-      root,
+      root: process.cwd(),
       logLevel: 'info',
       appType: 'custom',
       server: {
@@ -48,7 +49,7 @@ export async function createRenderer() {
 }
 
 export async function loadAssets() {
-  const manifest: Record<string, any> = isProd
+  const manifest: Record<string, any> = isProduction
     ? await import(
       // @ts-ignore - file present only when built
       '../../dist/client/.vite/ssr-manifest.json',
@@ -56,7 +57,7 @@ export async function loadAssets() {
     )
     : {}
 
-  const template = isProd
+  const template = isProduction
     ? readFileSync(resolve('../dist/client/index.html'), 'utf-8')
     : ''
 

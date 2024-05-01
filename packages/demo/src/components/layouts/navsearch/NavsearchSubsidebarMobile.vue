@@ -18,11 +18,13 @@ const props = defineProps<{
       <ul
         class="submenu has-slimscroll"
       >
-        <li v-for="item of props.items" :key="item.to">
-          <VLink :to="item.to">
-            {{ item.label }}
-          </VLink>
-        </li>
+        <slot name="links">
+          <li v-for="item of props.items" :key="item.to">
+            <VLink :to="item.to">
+              {{ item.label }}
+            </VLink>
+          </li>
+        </slot>
       </ul>
     </div>
   </div>

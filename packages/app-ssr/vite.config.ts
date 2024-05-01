@@ -1,5 +1,4 @@
-import { resolve, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { isProduction } from 'std-env'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -10,8 +9,6 @@ import PurgeCSS from 'rollup-plugin-purgecss'
 import Unhead from '@unhead/addons/vite'
 import DevTools from 'vite-plugin-vue-devtools'
 import { unheadVueComposablesImports } from '@unhead/vue'
-
-import { isProd } from '/@server/utils'
 
 /**
  * This is the main configuration file for vitejs
@@ -45,15 +42,7 @@ export default defineConfig({
     port: 3000,
   },
   ssr: {
-    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-router'],
-  },
-  // Predefine dependencies in order to prevent reloading them in the browser during development.
-  optimizeDeps: {
-    include: [
-      'ufo',
-      'vee-validate',
-      'defu',
-    ],
+    noExternal: isProduction ? ['vue', 'vue-router'] : ['vue-router'],
   },
   build: {
     target: 'esnext',
@@ -163,4 +152,12 @@ export default defineConfig({
       },
     }),
   ],
+  // Predefine dependencies in order to prevent reloading them in the browser during development.
+  optimizeDeps: {
+    include: [
+      'ufo',
+      'vee-validate',
+      'defu',
+    ],
+  },
 })

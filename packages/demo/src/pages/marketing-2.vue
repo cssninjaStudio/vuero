@@ -9,7 +9,7 @@ useHead({
 <template>
   <Layout>
     <div class="hero marketing-hero is-right is-fullheight">
-      <LandingHexagons />
+      <MarketingHexagons />
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">

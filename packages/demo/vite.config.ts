@@ -1,6 +1,7 @@
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
+import { isProduction, isDebug, env } from 'std-env'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
@@ -16,8 +17,6 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 // local vite plugin
 import { VueroMarkdownDoc } from './vite-plugin/vuero-doc'
 import { PurgeComments } from './vite-plugin/purge-comments'
-
-import { isProd } from '/@server/utils'
 
 /**
  * This is the main configuration file for vitejs
@@ -51,96 +50,43 @@ export default defineConfig({
     port: 3000,
   },
   ssr: {
-    noExternal: isProd ? ['vue', 'vue-i18n', 'vue-router'] : ['vue-i18n', 'vue-router'],
+    // adding those dependencies to the ssr build allow to use compile time flags
+    noExternal: isProduction
+      ? ['vue', 'vue-i18n', 'vue-router']
+      : ['vue-i18n', 'vue-router'],
   },
   define: {
-    // compile time flags - allow to tree shake code
-    __VUERO_SSR_BUILD__: `${process.env.SSR_BUILD}`,
+    // compile time flags - allow to tree shake ssr code if not needed
+    __VUERO_SSR_BUILD__: env.SSR_BUILD
+      ? 'true'
+      : 'false',
     // https://vuejs.org/api/compile-time-flags.html
     __VUE_OPTIONS_API__: 'true',
-    __VUE_PROD_DEVTOOLS__: 'false',
-    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
-    // https://vue-i18n.intlify.dev/guide/advanced/optimization#feature-build-flags
-    __VUE_I18N_FULL_INSTALL__: 'false',
-    __VUE_I18N_LEGACY_API__: 'false',
-  },
-  // Predefine dependencies in order to prevent reloading them in the browser during development.
-  optimizeDeps: {
-    include: [
-      '@ckeditor/ckeditor5-vue',
-      '@ckeditor/ckeditor5-build-classic',
-      '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
-      '@shikijs/rehype',
-      '@vee-validate/zod',
-      '@vueuse/core',
-      '@vueuse/router',
-      '@vueuse/integrations/useCookies',
-      '@vueform/multiselect',
-      '@vueform/slider',
-      'billboard.js',
-      'dayjs',
-      'dropzone',
-      'dragula',
-      'defu',
-      'filepond',
-      'filepond-plugin-file-validate-size',
-      'filepond-plugin-file-validate-type',
-      'filepond-plugin-image-exif-orientation',
-      'filepond-plugin-image-crop',
-      'filepond-plugin-image-edit',
-      'filepond-plugin-image-preview',
-      'filepond-plugin-image-resize',
-      'filepond-plugin-image-transform',
-      'focus-trap-vue',
-      'imask',
-      'nprogress',
-      'notyf',
-      'mapbox-gl',
-      'ofetch',
-      'photoswipe/lightbox',
-      'photoswipe',
-      'plyr',
-      'ufo',
-      'v-calendar',
-      'vee-validate',
-      'vue',
-      'vue-scrollto',
-      'vue3-apexcharts',
-      'vue-tippy',
-      'vue-i18n',
-      'vue-router',
-      'unplugin-vue-router/runtime',
-      ' unplugin-vue-router/data-loaders/basic',
-      'scule',
-      // 'simplebar',
-      'tiny-slider/src/tiny-slider',
-      'vue-accessible-color-picker',
-      'zod',
-      'rehype-external-links',
-      'rehype-raw',
-      'rehype-sanitize',
-      'rehype-stringify',
-      'rehype-slug',
-      'rehype-autolink-headings',
-      'remark-gfm',
-      'remark-parse',
-      'remark-rehype',
-      'unified',
-      'workbox-window',
-      'textarea-markdown-editor/dist/esm/bootstrap',
-    ],
+    __VUE_PROD_DEVTOOLS__: isDebug
+      ? 'true'
+      : 'false',
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: isDebug
+      ? 'true'
+      : 'false',
   },
   build: {
     target: 'esnext',
-    minify: 'terser',
+    minify: isDebug
+      ? false
+      : 'terser',
+    sourcemap: isDebug,
     rollupOptions: {
       output: {
         format: 'esm',
         entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
-        // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/_/[hash].mjs',
-        assetFileNames: 'assets/[hash][extname]',
+        chunkFileNames: isDebug
+          ? 'assets/_/[name].mjs'
+          : 'assets/_/[hash].mjs',
+        assetFileNames: isDebug
+          ? 'assets/[name][extname]'
+          : 'assets/[hash][extname]',
+        // Using manualChunks to group layout scss in one chunk to avoid Cumulative Layout Shift (CLS)
         manualChunks(id) {
           if (id.endsWith('scss/main.scss')) {
             return 'layouts'
@@ -297,8 +243,9 @@ export default defineConfig({
           },
         ],
       },
-      mode: isProd ? 'production' : 'development',
-      // registerType: 'autoUpdate',
+      mode: isProduction
+        ? 'production'
+        : 'development',
       workbox: {
         /**
          * precache files that match the glob pattern
@@ -334,4 +281,69 @@ export default defineConfig({
       },
     }),
   ],
+  // Predefine dependencies in order to prevent reloading them in the browser during development.
+  optimizeDeps: {
+    include: [
+      '@ckeditor/ckeditor5-vue',
+      '@ckeditor/ckeditor5-build-classic',
+      '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
+      '@shikijs/rehype',
+      '@vee-validate/zod',
+      '@vueuse/core',
+      '@vueuse/router',
+      '@vueuse/integrations/useCookies',
+      '@vueform/multiselect',
+      '@vueform/slider',
+      'billboard.js',
+      'dayjs',
+      'dropzone',
+      'dragula',
+      'defu',
+      'filepond',
+      'filepond-plugin-file-validate-size',
+      'filepond-plugin-file-validate-type',
+      'filepond-plugin-image-exif-orientation',
+      'filepond-plugin-image-crop',
+      'filepond-plugin-image-edit',
+      'filepond-plugin-image-preview',
+      'filepond-plugin-image-resize',
+      'filepond-plugin-image-transform',
+      'focus-trap-vue',
+      'imask',
+      'nprogress',
+      'notyf',
+      'mapbox-gl',
+      'ofetch',
+      'photoswipe/lightbox',
+      'photoswipe',
+      'plyr',
+      'ufo',
+      'v-calendar',
+      'vee-validate',
+      'vue',
+      'vue-scrollto',
+      'vue3-apexcharts',
+      'vue-tippy',
+      'vue-i18n',
+      'vue-router',
+      'unplugin-vue-router/runtime',
+      'scule',
+      // 'simplebar',
+      'tiny-slider/src/tiny-slider',
+      'vue-accessible-color-picker',
+      'zod',
+      'rehype-external-links',
+      'rehype-raw',
+      'rehype-sanitize',
+      'rehype-stringify',
+      'rehype-slug',
+      'rehype-autolink-headings',
+      'remark-gfm',
+      'remark-parse',
+      'remark-rehype',
+      'unified',
+      'workbox-window',
+      'textarea-markdown-editor/dist/esm/bootstrap',
+    ],
+  },
 })

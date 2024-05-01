@@ -3,19 +3,13 @@
     class="navbar-navbar-clean"
   >
     <div class="navbar-navbar-inner">
-      <!-- Title slot -->
       <div class="left">
-        <slot name="title">
-          <h1 class="title is-6">
-            Page Title
-          </h1>
-        </slot>
+        <slot name="title" />
       </div>
       <div class="center">
         <slot name="search" />
       </div>
       <div class="right">
-        <!-- Toolbar slot -->
         <slot name="toolbar" />
       </div>
     </div>
@@ -38,14 +32,7 @@
           'subtitle' in $slots && 'center',
         ]"
       >
-        <slot name="links">
-          <div class="buttons">
-            <a
-              href="/"
-              class="button"
-            >Homepage</a>
-          </div>
-        </slot>
+        <slot name="links" />
       </div>
       <div
         v-if="'toolbar-bottom' in $slots"
@@ -58,9 +45,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/all';
-@import '/@src/scss/layout/responsive';
-
 .navbar-navbar-clean {
   position: fixed;
   top: 0;

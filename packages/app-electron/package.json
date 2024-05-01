@@ -15,9 +15,14 @@
     "dev": "vite",
     "build": "run-s build:update-bulma-colors build:client build:electron",
     "build:update-bulma-colors": "bulma-css-vars",
-    "build:client": "cross-env NODE_ENV=production vite build",
+    "build:client": "rimraf dist-electron && cross-env NODE_ENV=production vite build",
     "build:electron": "electron-builder build",
     "start": "cross-env NODE_ENV=production serve dist -s -p 5000"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344/"
+    }
   },
   "dependencies": {
     "@cssninja/bulma-css-vars": "0.9.2",
@@ -35,13 +40,13 @@
     "focus-trap-vue": "4.0.3",
     "iconify-icon": "2.1.0",
     "pinia": "2.1.7",
-    "serve": "14.2.2",
+    "serve": "14.2.3",
     "tslib": "2.6.2",
     "ufo": "1.5.3",
     "unhead": "1.9.7",
     "unplugin-vue-router": "0.8.6",
     "vee-validate": "4.12.6",
-    "vue": "3.4.25",
+    "vue": "3.4.26",
     "vue-router": "4.3.2"
   },
   "devDependencies": {
@@ -51,14 +56,15 @@
     "electron": "30.0.1",
     "electron-builder": "24.13.3",
     "npm-run-all": "4.1.5",
+    "rimraf": "5.0.5",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",
     "typescript": "5.4.5",
     "unplugin-auto-import": "0.17.5",
     "unplugin-vue-components": "0.26.0",
     "vite": "5.2.10",
-    "vite-plugin-electron": "0.28.6",
+    "vite-plugin-electron": "0.28.7",
     "vite-plugin-electron-renderer": "0.14.5",
-    "vite-plugin-vue-devtools": "7.1.2"
+    "vite-plugin-vue-devtools": "7.1.3"
   }
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type UserPopover } from '/@src/models/users'
+import { type UserPopover } from '/@src/types/users'
 
 const props = defineProps<{
   user: UserPopover

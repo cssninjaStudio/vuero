@@ -5,7 +5,8 @@ import {
 } from 'h3'
 import { listen } from 'listhen'
 
-import { isProd, resolve } from './utils'
+import { isProduction, env } from 'std-env'
+import { resolve } from './utils'
 import { createRenderer, loadAssets } from './serve/renderer'
 import { createEventHandler } from './serve/event'
 import { extendH3App } from './config'
@@ -13,7 +14,7 @@ import { registerProcessHandlers } from './serve/process-handlers'
 
 async function createServer() {
   const app = createApp({
-    debug: !isProd,
+    debug: !isProduction,
   })
 
   const { vite, render } = await createRenderer()
@@ -27,11 +28,11 @@ async function createServer() {
 
   // During dev, we use vite's connect instance as middleware
   // @see https://vitejs.dev/guide/ssr.html
-  if (!isProd && vite) {
+  if (!isProduction && vite) {
     app.use(fromNodeMiddleware(vite.middlewares))
   }
 
-  if (isProd) {
+  if (isProduction) {
     const [
       compression,
       serveStatic,
@@ -63,12 +64,11 @@ async function createServer() {
 }
 
 // start h3 server
+const port = env.PORT || 3000
 createServer()
-  .then(({ app }) => {
-    return listen(toNodeListener(app), { port: process.env.PORT || 3000 })
-  })
+  .then(({ app }) => listen(toNodeListener(app), { port }))
   .catch((error) => {
-    if (!isProd) {
+    if (!isProduction) {
       console.error('[dev] [serverError] ', error)
     }
     else {

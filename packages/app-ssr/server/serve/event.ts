@@ -6,10 +6,11 @@ import {
   getRequestURL,
   eventHandler,
 } from 'h3'
+import { isProduction, isDebug } from 'std-env'
 import type { ViteDevServer } from 'vite'
 
 import type { VueroServerRender } from '../types'
-import { isProd, resolve } from '../utils'
+import { resolve } from '../utils'
 
 export function createEventHandler({
   vite,
@@ -26,7 +27,7 @@ export function createEventHandler({
     try {
       // load template and render function from vue app
       let template = baseTemplate
-      if (!isProd && vite) {
+      if (!isProduction && vite) {
         const url = getRequestURL(event)
         // always read fresh template in dev
         template = readFileSync(resolve('../index.html'), 'utf-8')
@@ -45,7 +46,7 @@ export function createEventHandler({
     }
     catch (error: any) {
       // handle error 500 page
-      if (!isProd) {
+      if (!isProduction || isDebug) {
         setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
         setResponseStatus(event, 500)
 
