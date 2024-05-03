@@ -164,7 +164,7 @@
     "commitlint": "18.5.0",
     "cross-env": "7.0.3",
     "cypress": "13.6.3",
-    "eslint": "8.56.0",
+    "eslint": "9.2.0",
     "eslint-plugin-frontmatter": "0.0.8",
     "eslint-plugin-md": "1.0.19",
     "eslint-plugin-sonarjs": "^0.23.0",
