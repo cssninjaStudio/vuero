@@ -18,6 +18,7 @@ export default definePlugin(async ({ router, pinia, event }) => {
   }
 
   router.beforeEach((to) => {
+    const token = useUserToken(event)
     if (to.meta.requiresAuth && !token.value) {
       return {
         name: '/auth',

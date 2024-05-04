@@ -17,8 +17,6 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const options = ref(['Option 2', 'Option 7'])
 </script>
 

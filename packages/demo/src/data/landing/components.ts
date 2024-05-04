@@ -1,11 +1,119 @@
-export const elements = [
+export const components = [
   {
-    id: 1,
-    link: '/elements/colors',
-    name: 'Colors',
+    id: 101,
+    link: '/components/avatar/',
+    name: 'VAvatar',
     media: {
-      light: '/images/icons/components/colors.svg',
-      dark: '/images/icons/components/colors-dark.svg',
+      light: '/images/icons/components/avatar.svg',
+      dark: '/images/icons/components/avatar-dark.svg',
+    },
+  },
+  {
+    id: 103,
+    link: '/components/accordion/',
+    name: 'VAccordion',
+    media: {
+      light: '/images/icons/components/accordion.svg',
+      dark: '/images/icons/components/accordion-dark.svg',
+    },
+  },
+  {
+    id: 104,
+    link: '/components/collapse',
+    name: 'VCollapse',
+    media: {
+      light: '/images/icons/components/accordion.svg',
+      dark: '/images/icons/components/accordion-dark.svg',
+    },
+  },
+  {
+    id: 107,
+    link: '/components/breadcrumb',
+    name: 'VBreadcrumb',
+    media: {
+      light: '/images/icons/components/breadcrumb.svg',
+      dark: '/images/icons/components/breadcrumb-dark.svg',
+    },
+  },
+  {
+    id: 108,
+    link: '/components/button',
+    name: 'VButton',
+    media: {
+      light: '/images/icons/components/buttons.svg',
+      dark: '/images/icons/components/buttons-dark.svg',
+    },
+  },
+  {
+    id: 112,
+    link: '/components/dropdown',
+    name: 'VDropdown',
+    media: {
+      light: '/images/icons/components/dropdowns.svg',
+      dark: '/images/icons/components/dropdowns-dark.svg',
+    },
+  },
+  {
+    id: 113,
+    link: '/components/icon-box',
+    name: 'VIconBox',
+    media: {
+      light: '/images/icons/components/icon-box.svg',
+      dark: '/images/icons/components/icon-box-dark.svg',
+    },
+  },
+  {
+    id: 114,
+    link: '/components/message',
+    name: 'VMessage',
+    media: {
+      light: '/images/icons/components/messages.svg',
+      dark: '/images/icons/components/messages-dark.svg',
+    },
+  },
+  {
+    id: 115,
+    link: '/components/modal',
+    name: 'VModal',
+    media: {
+      light: '/images/icons/components/modals.svg',
+      dark: '/images/icons/components/modals-dark.svg',
+    },
+  },
+  {
+    id: 116,
+    link: '/components/progress',
+    name: 'VProgress',
+    media: {
+      light: '/images/icons/components/progress.svg',
+      dark: '/images/icons/components/progress-dark.svg',
+    },
+  },
+  {
+    id: 117,
+    link: '/components/flextable/',
+    name: 'VFlexTable',
+    media: {
+      light: '/images/icons/components/flex-tables.svg',
+      dark: '/images/icons/components/flex-tables-dark.svg',
+    },
+  },
+  {
+    id: 118,
+    link: '/components/tag',
+    name: 'VTag',
+    media: {
+      light: '/images/icons/components/badges.svg',
+      dark: '/images/icons/components/badges-dark.svg',
+    },
+  },
+  {
+    id: 119,
+    link: '/components/snack',
+    name: 'VSnack',
+    media: {
+      light: '/images/icons/components/snacks.svg',
+      dark: '/images/icons/components/snacks-dark.svg',
     },
   },
   {
@@ -19,7 +127,7 @@ export const elements = [
   },
   {
     id: 3,
-    link: '/elements/button',
+    link: '/components/button',
     name: 'VButton',
     media: {
       light: '/images/icons/components/buttons.svg',
@@ -27,45 +135,9 @@ export const elements = [
     },
   },
   {
-    id: 4,
-    link: '/components/content',
-    name: 'Content',
-    media: {
-      light: '/images/icons/components/content.svg',
-      dark: '/images/icons/components/content-dark.svg',
-    },
-  },
-  {
-    id: 5,
-    link: '/elements/icons/font-awesome',
-    name: 'Font Awesome',
-    media: {
-      light: '/images/icons/components/font-awesome.svg',
-      dark: '/images/icons/components/font-awesome-dark.svg',
-    },
-  },
-  {
-    id: 6,
-    link: '/elements/icons/iconify',
-    name: 'Feather Icons',
-    media: {
-      light: '/images/icons/components/feather-icons.svg',
-      dark: '/images/icons/components/feather-icons-dark.svg',
-    },
-  },
-  {
-    id: 7,
-    link: '/elements/icons/line-icons-regular',
-    name: 'Line Icons',
-    media: {
-      light: '/images/icons/components/line-icons.svg',
-      dark: '/images/icons/components/line-icons-dark.svg',
-    },
-  },
-  {
     id: 8,
-    link: '/elements/icons/line-icons-light',
-    name: 'Line Icons Light',
+    link: '/components/icons/iconify',
+    name: 'Iconify',
     media: {
       light: '/images/icons/components/line-icons.svg',
       dark: '/images/icons/components/line-icons-dark.svg',
@@ -100,7 +172,7 @@ export const elements = [
   },
   {
     id: 13,
-    link: '/elements/tooltip',
+    link: '/components/tooltip',
     name: 'VTooltip',
     media: {
       light: '/images/icons/components/tooltip.svg',
@@ -112,7 +184,7 @@ export const elements = [
 export const forms = [
   {
     id: 20,
-    link: '/elements/forms/field',
+    link: '/components/forms/field',
     name: 'VField',
     media: {
       light: '/images/icons/components/inputs-addons.svg',
@@ -120,17 +192,8 @@ export const forms = [
     },
   },
   {
-    id: 2,
-    link: '/elements/forms/control',
-    name: 'VControl',
-    media: {
-      light: '/images/icons/components/inputs-addons.svg',
-      dark: '/images/icons/components/inputs-addons-dark.svg',
-    },
-  },
-  {
     id: 1,
-    link: '/elements/forms/inputs',
+    link: '/components/forms/inputs',
     name: 'VInput',
     media: {
       light: '/images/icons/components/inputs.svg',
@@ -139,7 +202,7 @@ export const forms = [
   },
   {
     id: 3,
-    link: '/elements/forms/textarea',
+    link: '/components/forms/textarea',
     name: 'VTextarea',
     media: {
       light: '/images/icons/components/textarea.svg',
@@ -148,7 +211,7 @@ export const forms = [
   },
   {
     id: 4,
-    link: '/elements/forms/selects',
+    link: '/components/forms/selects',
     name: 'VSelect',
     media: {
       light: '/images/icons/components/selects.svg',
@@ -157,7 +220,7 @@ export const forms = [
   },
   {
     id: 5,
-    link: '/elements/forms/file',
+    link: '/components/forms/file',
     name: 'File Input',
     media: {
       light: '/images/icons/components/file-input.svg',
@@ -166,7 +229,7 @@ export const forms = [
   },
   {
     id: 6,
-    link: '/elements/checkbox',
+    link: '/components/checkbox',
     name: 'VCheckbox',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -175,7 +238,7 @@ export const forms = [
   },
   {
     id: 7,
-    link: '/elements/radio',
+    link: '/components/radio',
     name: 'VRadio',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -184,7 +247,7 @@ export const forms = [
   },
   {
     id: 8,
-    link: '/elements/switch-block',
+    link: '/components/switch-block',
     name: 'VSwitchBlock',
     media: {
       light: '/images/icons/components/switch.svg',
@@ -229,180 +292,6 @@ export const forms = [
   },
 ]
 
-export const components = [
-  {
-    id: 1,
-    link: '/components/avatar/',
-    name: 'VAvatar',
-    media: {
-      light: '/images/icons/components/avatar.svg',
-      dark: '/images/icons/components/avatar-dark.svg',
-    },
-  },
-  {
-    id: 2,
-    link: '/components/avatar/stack',
-    name: 'VAvatarStack',
-    media: {
-      light: '/images/icons/components/avatar.svg',
-      dark: '/images/icons/components/avatar-dark.svg',
-    },
-  },
-  {
-    id: 3,
-    link: '/components/accordion/',
-    name: 'VAccordion',
-    media: {
-      light: '/images/icons/components/accordion.svg',
-      dark: '/images/icons/components/accordion-dark.svg',
-    },
-  },
-  {
-    id: 4,
-    link: '/components/collapse',
-    name: 'VCollapse',
-    media: {
-      light: '/images/icons/components/accordion.svg',
-      dark: '/images/icons/components/accordion-dark.svg',
-    },
-  },
-  {
-    id: 5,
-    link: '/components/accordion/image',
-    name: 'VAccordionImages',
-    media: {
-      light: '/images/icons/components/accordion.svg',
-      dark: '/images/icons/components/accordion-dark.svg',
-    },
-  },
-  {
-    id: 6,
-    link: '/components/block',
-    name: 'VBlock',
-    media: {
-      light: '/images/icons/components/blocks.svg',
-      dark: '/images/icons/components/blocks-dark.svg',
-    },
-  },
-  {
-    id: 7,
-    link: '/components/breadcrumb',
-    name: 'VBreadcrumb',
-    media: {
-      light: '/images/icons/components/breadcrumb.svg',
-      dark: '/images/icons/components/breadcrumb-dark.svg',
-    },
-  },
-  {
-    id: 8,
-    link: '/elements/button',
-    name: 'VButton',
-    media: {
-      light: '/images/icons/components/buttons.svg',
-      dark: '/images/icons/components/buttons-dark.svg',
-    },
-  },
-  {
-    id: 9,
-    link: '/components/card/advanced',
-    name: 'VCardAdvanced',
-    media: {
-      light: '/images/icons/components/cards.svg',
-      dark: '/images/icons/components/cards-dark.svg',
-    },
-  },
-  {
-    id: 10,
-    link: '/components/card/media',
-    name: 'VCardMedia',
-    media: {
-      light: '/images/icons/components/cards.svg',
-      dark: '/images/icons/components/cards-dark.svg',
-    },
-  },
-  {
-    id: 11,
-    link: '/components/card/social',
-    name: 'VCardSocial',
-    media: {
-      light: '/images/icons/components/cards.svg',
-      dark: '/images/icons/components/cards-dark.svg',
-    },
-  },
-  {
-    id: 12,
-    link: '/elements/dropdown',
-    name: 'VDropdown',
-    media: {
-      light: '/images/icons/components/dropdowns.svg',
-      dark: '/images/icons/components/dropdowns-dark.svg',
-    },
-  },
-  {
-    id: 13,
-    link: '/components/icon-box',
-    name: 'VIconBox',
-    media: {
-      light: '/images/icons/components/icon-box.svg',
-      dark: '/images/icons/components/icon-box-dark.svg',
-    },
-  },
-  {
-    id: 14,
-    link: '/elements/message',
-    name: 'VMessage',
-    media: {
-      light: '/images/icons/components/messages.svg',
-      dark: '/images/icons/components/messages-dark.svg',
-    },
-  },
-  {
-    id: 15,
-    link: '/elements/modal',
-    name: 'VModal',
-    media: {
-      light: '/images/icons/components/modals.svg',
-      dark: '/images/icons/components/modals-dark.svg',
-    },
-  },
-  {
-    id: 16,
-    link: '/elements/progress',
-    name: 'VProgress',
-    media: {
-      light: '/images/icons/components/progress.svg',
-      dark: '/images/icons/components/progress-dark.svg',
-    },
-  },
-  {
-    id: 17,
-    link: '/components/flextable/',
-    name: 'VFlexTable',
-    media: {
-      light: '/images/icons/components/flex-tables.svg',
-      dark: '/images/icons/components/flex-tables-dark.svg',
-    },
-  },
-  {
-    id: 18,
-    link: '/components/tag',
-    name: 'VTag',
-    media: {
-      light: '/images/icons/components/badges.svg',
-      dark: '/images/icons/components/badges-dark.svg',
-    },
-  },
-  {
-    id: 19,
-    link: '/components/snack',
-    name: 'VSnack',
-    media: {
-      light: '/images/icons/components/snacks.svg',
-      dark: '/images/icons/components/snacks-dark.svg',
-    },
-  },
-]
-
 export const plugins = [
   {
     id: 1,
@@ -424,7 +313,7 @@ export const plugins = [
   },
   {
     id: 3,
-    link: '/elements/addons/calendar',
+    link: '/components/addons/calendar',
     name: 'VCalendar',
     media: {
       light: '/images/icons/components/datepicker.svg',
@@ -442,7 +331,7 @@ export const plugins = [
   },
   {
     id: 5,
-    link: '/elements/addons/vueform-multiselect',
+    link: '/components/addons/vueform-multiselect',
     name: 'VMultiselect',
     media: {
       light: '/images/icons/components/selects.svg',
@@ -451,7 +340,7 @@ export const plugins = [
   },
   {
     id: 6,
-    link: '/elements/addons/vueform-slider',
+    link: '/components/addons/vueform-slider',
     name: 'VSlider',
     media: {
       light: '/images/icons/components/slider.svg',
@@ -469,7 +358,7 @@ export const plugins = [
   },
   {
     id: 8,
-    link: '/elements/addons/ckeditor',
+    link: '/components/addons/ckeditor',
     name: 'CKEditor 5',
     media: {
       light: '/images/icons/components/textarea.svg',

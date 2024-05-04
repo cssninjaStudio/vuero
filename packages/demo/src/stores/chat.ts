@@ -8,7 +8,6 @@
  * @see /src/utils/api/chat
  */
 
-import { ref, computed } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import type { $Fetch } from 'ofetch'
 

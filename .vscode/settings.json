@@ -1,19 +1,10 @@
 {
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "editor.formatOnSave": false,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
   "[markdown]": {
     "editor.rulers": [80]
   },
-  "eslint.alwaysShowStatus": true,
-  "prettier.enable": false,
-  // "eslint.format.enable": true,
-  "eslint.lintTask.options": "-c ./packages/demo/.eslintrc.cjs .",
   "eslint.validate": [
     "javascript",
     "javascriptreact",

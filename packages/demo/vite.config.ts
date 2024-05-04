@@ -71,6 +71,9 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    cssMinify: isDebug
+      ? false
+      : 'esbuild',
     minify: isDebug
       ? false
       : 'terser',

@@ -215,6 +215,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
       .iconify {
         height: 20px;
         width: 20px;
+        font-size:  20px;
         stroke-width: 1.8px;
         color: var(--light-text);
         transition: stroke 0.3s;

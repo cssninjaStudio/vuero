@@ -50,16 +50,6 @@ const props = withDefaults(defineProps<VIconProps>(), {
   }
 }
 
-.icon-boxes {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-
-  .v-icon {
-    margin: 0 0.25rem 0.5rem 0;
-  }
-}
-
 .v-icon {
   position: relative;
   display: flex;

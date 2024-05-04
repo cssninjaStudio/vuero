@@ -1,4 +1,4 @@
-### Feather icons
+### Lucide Icons
 
 Vuero provides a `<VSnack />` component than can be used
 to show a pill with an icon. Use the available `slots` prop

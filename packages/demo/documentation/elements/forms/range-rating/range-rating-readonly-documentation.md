@@ -14,7 +14,6 @@ disabled by disabling value changes.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref(2)
 </script>

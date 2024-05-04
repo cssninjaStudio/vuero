@@ -12,7 +12,6 @@ previewer. Check the code for more details.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const flipped = ref(null)
 </script>

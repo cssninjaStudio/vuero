@@ -16,7 +16,6 @@ theme `$primary` color. Available color classes modifiers are: `is-slider-info`,
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const value = ref(0)
 </script>

@@ -14,7 +14,6 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const textarea = ref('')
 </script>

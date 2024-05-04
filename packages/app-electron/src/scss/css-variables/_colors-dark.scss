@@ -4,14 +4,12 @@
   --background-grey: var(--dark-sidebar-light-5);
   --border: var(--dark-sidebar-light-12);
 
-  // override primary dark HSL (#29ab8d) // hsl(166, 61%, 42%)
-  --primary-h: 166; /* Hue        */
-  --primary-s: 61%; /* Saturation */
-  --primary-l: 42%; /* Lightness  */
+  // override primary dark HSL (#28A487) // hsl(166, 61%, 38%)
+  @include colorHsl('primary', 166, 61%, 38%);
 
   // override dark-text dark HSL (#fcfcfc) // hsl(0, 0%, 99%)
   @include colorHsl('dark-text', 0, 0%, 99%);
 
-  // override red HSL (#f92b60) // hsl(345, 94%, 57%)
+  // override red HSL (#FF42B4) // hsl(324, 100%, 63%)
   @include colorHsl('red', 324, 100%, 63%);
 }

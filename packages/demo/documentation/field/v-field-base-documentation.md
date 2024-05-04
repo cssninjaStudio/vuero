@@ -13,7 +13,6 @@ The component `VField` will keep track of an unique input.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref('')
 </script>

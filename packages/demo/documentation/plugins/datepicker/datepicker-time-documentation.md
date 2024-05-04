@@ -12,7 +12,6 @@ code example for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const date = ref(new Date())
 </script>

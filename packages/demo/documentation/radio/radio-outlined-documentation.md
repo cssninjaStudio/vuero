@@ -13,7 +13,6 @@ The available modifiers are `primary`, `success`,`info`, `warning`, `danger`.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const selected = ref('value_2')
 </script>

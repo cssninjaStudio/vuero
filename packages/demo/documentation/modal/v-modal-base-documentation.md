@@ -9,7 +9,6 @@ Check the code example for more details.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 const centeredActionsOpen = ref(false)
 </script>
 

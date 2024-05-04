@@ -19,7 +19,6 @@ you should wrap this other input with `<VControl subcontrol>` or
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const currency = ref('$')
 </script>

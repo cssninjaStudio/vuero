@@ -13,8 +13,6 @@ If so, use the `VSwitchSegment` component, which provides `labelTrue` and
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const value = ref(true)
 </script>
 

@@ -9,7 +9,6 @@ Please refer to the code example for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const textarea = ref('')
 const loading = ref(true)

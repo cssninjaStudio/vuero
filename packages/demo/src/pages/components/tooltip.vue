@@ -1,0 +1,61 @@
+<script setup lang="ts">
+const markdownContainer = ref<HTMLElement>()
+const toc = useMarkdownToc(markdownContainer)
+
+useVueroContext({
+  pageTitle: 'VTooltip',
+})
+
+useHead({
+  title: 'VTooltip - Elements - Vuero',
+})
+</script>
+
+<template>
+  <div>
+    <VBreadcrumb
+      with-icons
+      separator="bullet"
+      :items="[
+        {
+          label: 'Vuero',
+          hideLabel: true,
+          icon: 'lucide:home',
+          to: '/',
+        },
+        {
+          label: 'Elements',
+          to: '/components/',
+        },
+        {
+          label: 'VTooltip',
+          to: '/components/tooltip',
+        },
+      ]"
+    />
+
+    <div class="columns">
+      <div
+        ref="markdownContainer"
+        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+        class="column doc-column stay-focus-container"
+      >
+        <!-- @TODO -->
+        <!--Default Tooltip-->
+        <TooltipBaseDocumentation />
+
+        <!--Tooltip Colors-->
+        <TooltipColorsDocumentation />
+
+        <!--Tooltip Shapes-->
+        <TooltipShapesDocumentation />
+      </div>
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
+        <DocumentationToc :toc="toc" />
+      </div>
+    </div>
+  </div>
+</template>

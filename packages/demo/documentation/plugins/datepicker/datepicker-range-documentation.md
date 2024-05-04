@@ -14,8 +14,6 @@ code example for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { reactive } from 'vue'
-
 const range = reactive({
   start: new Date(),
   end: new Date(),

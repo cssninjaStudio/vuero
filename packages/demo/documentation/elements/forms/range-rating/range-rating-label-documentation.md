@@ -12,7 +12,6 @@ use the `label` slot to customize the label.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref(2)
 </script>

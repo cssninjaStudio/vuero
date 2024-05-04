@@ -34,7 +34,6 @@ images radius: `is-curved` and `is-rounded`.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const selectSlotValue = ref()
 const selectSlotOptions = [

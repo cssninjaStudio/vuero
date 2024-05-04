@@ -2,8 +2,7 @@
 import Layout from '/@src/layouts/landing.vue'
 import packageJson from '../../package.json'
 
-type TabId = 'elements' | 'components' | 'forms' | 'plugins'
-const activeTab = ref<TabId>('elements')
+const activeTab = ref<'components' | 'forms' | 'plugins'>('components')
 
 useHead({
   title: 'Vuero - A complete Vue 3 design system',
@@ -642,13 +641,7 @@ useHead({
           <div class="vertical-tabs-wrapper">
             <VTabs
               v-model:selected="activeTab"
-              type="rounded"
-              slider
               :tabs="[
-                {
-                  label: 'Elements',
-                  value: 'elements',
-                },
                 {
                   label: 'Components',
                   value: 'components',

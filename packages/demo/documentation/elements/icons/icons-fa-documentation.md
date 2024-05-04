@@ -5,6 +5,9 @@ Everyone likes Font Awesome icons and they are widely used
 accross a large variety of websites.
 Please refer to the code example for more details about usage.
 
+**Usage:**
+`<VIcon name="fas icon-name" />`
+
 <!--code-->
 
 ```vue

@@ -9,7 +9,6 @@ if the user click on the background overlay.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 const isOpen = ref(false)
 </script>
 

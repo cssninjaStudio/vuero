@@ -75,7 +75,6 @@ declare module 'vue' {
     VModal: typeof import('./../src/components/base/VModal.vue')['default']
     VOptgroup: typeof import('./../src/components/base/VOptgroup.vue')['default']
     VOption: typeof import('./../src/components/base/VOption.vue')['default']
-    VPeity: typeof import('./../src/components/base/VPeity.vue')['default']
     VPlaceholderPage: typeof import('./../src/components/base/VPlaceholderPage.vue')['default']
     VPlaceholderSection: typeof import('./../src/components/base/VPlaceholderSection.vue')['default']
     VPlaceload: typeof import('./../src/components/base/VPlaceload.vue')['default']

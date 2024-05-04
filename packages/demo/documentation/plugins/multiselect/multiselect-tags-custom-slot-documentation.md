@@ -34,7 +34,6 @@ the select class modifier.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const tagsSlotValue = ref([])
 const tagsSlotOptions = [

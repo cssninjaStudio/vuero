@@ -10,7 +10,6 @@ chose one and keep on with it. Other available layouts can be found [here](https
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 import CKE from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 

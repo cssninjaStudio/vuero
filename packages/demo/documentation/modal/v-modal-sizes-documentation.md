@@ -8,7 +8,6 @@ prop to change the modal size. Available sizes are: `small`, default,
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 const centeredActionsOpen = ref(false)
 </script>
 

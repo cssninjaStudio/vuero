@@ -626,6 +626,14 @@ const { onceError } = useImageError()
 }
 
 .is-dark {
+  .v-avatar {
+    &.has-dot {
+      &::after {
+        border-color: var(--dark-sidebar-light-6);
+      }
+    }
+  }
+
   .avatar {
     border-color: var(--dark-sidebar-light-6);
 

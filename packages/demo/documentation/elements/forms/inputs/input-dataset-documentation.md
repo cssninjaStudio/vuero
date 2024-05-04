@@ -17,7 +17,6 @@ This is a great way to provide a list of options to your users.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const color = ref('#8b5cf6')
 const cake = ref('')

@@ -13,8 +13,6 @@ by using the `bold` and `rounded` props on the component.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const clicked = ref(0)
 </script>
 

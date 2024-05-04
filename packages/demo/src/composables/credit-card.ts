@@ -1,6 +1,5 @@
 import type { InputMask, MaskedDateOptions } from 'imask'
 import { MaskedRange } from 'imask'
-import { ref } from 'vue'
 
 export type VCreditCardColor =
   | 'grey'

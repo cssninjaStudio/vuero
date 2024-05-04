@@ -824,228 +824,6 @@ const links = ref<SidebarItem[]>([
     },
   },
   {
-    id: 'elements',
-    label: 'Elements',
-    icon: 'lucide:box',
-
-    type: 'subsidebar',
-    subsidebar: {
-      label: 'Elements',
-      items: [
-        {
-          type: 'link',
-          to: '/elements/',
-          label: 'Elements Hub',
-        },
-        {
-          type: 'link',
-          to: '/elements/colors',
-          label: 'Colors',
-        },
-        {
-          type: 'link',
-          to: '/elements/helpers',
-          label: 'Helpers',
-        },
-        {
-          type: 'collapse',
-          id: 'icons',
-          label: 'Icons',
-          children: [
-            {
-              to: '/elements/icons/iconify',
-              label: 'Iconify',
-              icon: 'lucide:circle',
-            },
-            {
-              to: '/elements/icons/line-icons-light',
-              label: 'Line Icons Light',
-              icon: 'lucide:circle',
-            },
-            {
-              to: '/elements/icons/line-icons-regular',
-              label: 'Line Icons Regular',
-              icon: 'lucide:circle',
-            },
-            {
-              to: '/elements/icons/font-awesome',
-              label: 'Font Awesome 5',
-              icon: 'lucide:circle',
-            },
-          ],
-        },
-        {
-          type: 'divider',
-          label: 'Interaction',
-        },
-        {
-          type: 'link',
-          to: '/elements/dropdown',
-          label: 'VDropdown',
-        },
-        {
-          type: 'link',
-          to: '/elements/loader',
-          label: 'VLoader',
-        },
-        {
-          type: 'link',
-          to: '/elements/placeload/',
-          label: 'VPlaceload',
-        },
-        {
-          type: 'link',
-          to: '/elements/placeload/text',
-          label: 'VPlaceloadText',
-        },
-        {
-          type: 'link',
-          to: '/elements/placeload/avatar',
-          label: 'VPlaceloadAvatar',
-        },
-        {
-          type: 'link',
-          to: '/elements/message',
-          label: 'VMessage',
-        },
-        {
-          type: 'link',
-          to: '/elements/modal',
-          label: 'VModal',
-        },
-        {
-          type: 'link',
-          to: '/elements/progress',
-          label: 'VProgress',
-        },
-        {
-          type: 'link',
-          to: '/elements/tooltip',
-          label: 'VTootlip',
-        },
-        {
-          type: 'collapse',
-          id: 'buttons',
-          label: 'Buttons',
-          children: [
-            {
-              to: '/elements/button',
-              label: 'VButton',
-            },
-            {
-              to: '/elements/action',
-              label: 'VAction',
-            },
-            {
-              to: '/elements/icon-button',
-              label: 'VIconButton',
-            },
-          ],
-        },
-        {
-          type: 'collapse',
-          id: 'forms',
-          label: 'Forms',
-          children: [
-            {
-              to: '/elements/forms/field',
-              label: 'VField',
-            },
-            {
-              to: '/elements/forms/control',
-              label: 'VControl',
-            },
-            {
-              to: '/elements/forms/inputs',
-              label: 'VInput',
-            },
-            {
-              to: '/elements/forms/textarea',
-              label: 'VTextarea',
-            },
-            {
-              to: '/elements/forms/selects',
-              label: 'VSelect',
-            },
-            {
-              to: '/elements/checkbox',
-              label: 'VCheckbox',
-            },
-            {
-              to: '/elements/radio',
-              label: 'VRadio',
-            },
-            {
-              to: '/elements/forms/range-rating',
-              label: 'VRangeRating',
-            },
-            {
-              to: '/elements/forms/file',
-              label: 'File Input',
-            },
-          ],
-        },
-        {
-          type: 'collapse',
-          id: 'switches',
-          label: 'Switches',
-          children: [
-            {
-              to: '/elements/animated-checkbox',
-              label: 'VAnimatedCheckbox',
-            },
-            {
-              to: '/elements/switch-block',
-              label: 'VSwitchBlock',
-            },
-            {
-              to: '/elements/switch-segment',
-              label: 'VSwitchSegment',
-            },
-          ],
-        },
-        {
-          type: 'divider',
-        },
-        {
-          type: 'collapse',
-          id: 'addons',
-          label: 'Addons',
-          children: [
-            {
-              to: '/elements/addons/calendar',
-              label: 'VCalendar & VDatePicker',
-            },
-            {
-              to: '/elements/addons/imask-input',
-              label: 'VIMaskInput',
-            },
-            {
-              to: '/elements/addons/filepond',
-              label: 'VFilePond',
-            },
-            {
-              to: '/elements/addons/credit-card',
-              label: 'VCreditCard',
-            },
-            {
-              to: '/elements/addons/vueform-multiselect',
-              label: '@vueform/multiselect',
-            },
-            {
-              to: '/elements/addons/vueform-slider',
-              label: '@vueform/slider',
-            },
-            {
-              to: '/elements/addons/ckeditor',
-              label: 'CKEditor 5',
-            },
-          ],
-        },
-      ],
-    },
-  },
-  {
     id: 'components',
     label: 'Components',
     icon: 'lucide:cpu',
@@ -1061,6 +839,16 @@ const links = ref<SidebarItem[]>([
         },
         {
           type: 'link',
+          to: '/components/colors',
+          label: 'Colors',
+        },
+        {
+          type: 'link',
+          to: '/components/helpers',
+          label: 'Helpers',
+        },
+        {
+          type: 'link',
           to: '/components/content',
           label: 'Content',
         },
@@ -1068,6 +856,163 @@ const links = ref<SidebarItem[]>([
           type: 'link',
           to: '/components/table',
           label: 'Table',
+        },
+        {
+          type: 'collapse',
+          id: 'icons',
+          label: 'Icons',
+          children: [
+            {
+              to: '/components/icons/iconify',
+              label: 'Iconify',
+              icon: 'lucide:circle',
+            },
+            {
+              to: '/components/icons/line-icons-light',
+              label: 'Line Icons Light',
+              icon: 'lucide:circle',
+            },
+            {
+              to: '/components/icons/line-icons-regular',
+              label: 'Line Icons Regular',
+              icon: 'lucide:circle',
+            },
+            {
+              to: '/components/icons/font-awesome',
+              label: 'Font Awesome 5',
+              icon: 'lucide:circle',
+            },
+          ],
+        },
+        {
+          type: 'divider',
+          label: 'Interaction',
+        },
+        {
+          type: 'link',
+          to: '/components/dropdown',
+          label: 'VDropdown',
+        },
+        {
+          type: 'link',
+          to: '/components/loader',
+          label: 'VLoader',
+        },
+        {
+          type: 'link',
+          to: '/components/placeload/',
+          label: 'VPlaceload',
+        },
+        {
+          type: 'link',
+          to: '/components/placeload/text',
+          label: 'VPlaceloadText',
+        },
+        {
+          type: 'link',
+          to: '/components/placeload/avatar',
+          label: 'VPlaceloadAvatar',
+        },
+        {
+          type: 'link',
+          to: '/components/message',
+          label: 'VMessage',
+        },
+        {
+          type: 'link',
+          to: '/components/modal',
+          label: 'VModal',
+        },
+        {
+          type: 'link',
+          to: '/components/progress',
+          label: 'VProgress',
+        },
+        {
+          type: 'link',
+          to: '/components/tooltip',
+          label: 'VTootlip',
+        },
+        {
+          type: 'collapse',
+          id: 'buttons',
+          label: 'Buttons',
+          children: [
+            {
+              to: '/components/button',
+              label: 'VButton',
+            },
+            {
+              to: '/components/action',
+              label: 'VAction',
+            },
+            {
+              to: '/components/icon-button',
+              label: 'VIconButton',
+            },
+          ],
+        },
+        {
+          type: 'collapse',
+          id: 'forms',
+          label: 'Forms',
+          children: [
+            {
+              to: '/components/forms/field',
+              label: 'VField',
+            },
+            {
+              to: '/components/forms/control',
+              label: 'VControl',
+            },
+            {
+              to: '/components/forms/inputs',
+              label: 'VInput',
+            },
+            {
+              to: '/components/forms/textarea',
+              label: 'VTextarea',
+            },
+            {
+              to: '/components/forms/selects',
+              label: 'VSelect',
+            },
+            {
+              to: '/components/checkbox',
+              label: 'VCheckbox',
+            },
+            {
+              to: '/components/radio',
+              label: 'VRadio',
+            },
+            {
+              to: '/components/forms/range-rating',
+              label: 'VRangeRating',
+            },
+            {
+              to: '/components/forms/file',
+              label: 'File Input',
+            },
+          ],
+        },
+        {
+          type: 'collapse',
+          id: 'switches',
+          label: 'Switches',
+          children: [
+            {
+              to: '/components/animated-checkbox',
+              label: 'VAnimatedCheckbox',
+            },
+            {
+              to: '/components/switch-block',
+              label: 'VSwitchBlock',
+            },
+            {
+              to: '/components/switch-segment',
+              label: 'VSwitchSegment',
+            },
+          ],
         },
         {
           type: 'divider',
@@ -1109,10 +1054,6 @@ const links = ref<SidebarItem[]>([
           label: 'VTag',
         },
         {
-          type: 'divider',
-          label: 'Layout',
-        },
-        {
           type: 'link',
           to: '/components/flex',
           label: 'VFlex',
@@ -1138,16 +1079,6 @@ const links = ref<SidebarItem[]>([
           label: 'VFlexPagination',
         },
         {
-          type: 'link',
-          to: '/components/markdown-preview',
-          label: 'VMarkdownPreview',
-        },
-        {
-          type: 'link',
-          to: '/components/markdown-editor',
-          label: 'VMarkdownEditor',
-        },
-        {
           type: 'collapse',
           label: 'VFlexTable',
           id: 'flextable',
@@ -1155,32 +1086,26 @@ const links = ref<SidebarItem[]>([
             {
               to: '/components/flextable/',
               label: 'Basic usage',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/flextable/columns',
               label: 'Customize columns',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/flextable/slots',
               label: 'Slots usage',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/flextable/render',
               label: 'Render functions (advanced)',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/flextable/wrapper/',
               label: 'VFlexTableWrapper',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/flextable/wrapper/async',
               label: 'Async data (advanced)',
-              icon: 'lucide:circle',
             },
           ],
         },
@@ -1192,17 +1117,14 @@ const links = ref<SidebarItem[]>([
             {
               to: '/components/accordion/',
               label: 'VAccordion',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/collapse',
               label: 'VCollapse',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/accordion/image',
               label: 'VAccordionImage',
-              icon: 'lucide:circle',
             },
           ],
         },
@@ -1214,27 +1136,22 @@ const links = ref<SidebarItem[]>([
             {
               to: '/components/card/',
               label: 'VCard',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/card/action',
               label: 'VCardAction',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/card/advanced',
               label: 'VCardAdvanced',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/card/media',
               label: 'VCardMedia',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/card/social',
               label: 'VCardSocial',
-              icon: 'lucide:circle',
             },
           ],
         },
@@ -1246,12 +1163,10 @@ const links = ref<SidebarItem[]>([
             {
               to: '/components/placeholder-page',
               label: 'VPlaceholderPage',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/placeholder-section',
               label: 'VPlaceholderSection',
-              icon: 'lucide:circle',
             },
           ],
         },
@@ -1259,34 +1174,68 @@ const links = ref<SidebarItem[]>([
           type: 'divider',
         },
         {
+          type: 'divider',
+        },
+        {
           type: 'collapse',
-          label: 'Plugins',
-          id: 'plugins',
+          id: 'addons',
+          label: 'Addons',
           children: [
             {
               to: '/components/plugins/notif',
               label: 'Notyf',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/plugins/tippy',
               label: 'Tippy',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/plugins/billboard-js',
               label: 'VBillboardJS',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/plugins/photos-swipe',
               label: 'VPhotosSwipe',
-              icon: 'lucide:circle',
             },
             {
               to: '/components/plugins/plyr',
               label: 'VPlyr',
-              icon: 'lucide:circle',
+            },
+            {
+              to: '/components/markdown-preview',
+              label: 'VMarkdownPreview',
+            },
+            {
+              to: '/components/markdown-editor',
+              label: 'VMarkdownEditor',
+            },
+            {
+              to: '/components/addons/calendar',
+              label: 'VCalendar & VDatePicker',
+            },
+            {
+              to: '/components/addons/imask-input',
+              label: 'VIMaskInput',
+            },
+            {
+              to: '/components/addons/filepond',
+              label: 'VFilePond',
+            },
+            {
+              to: '/components/addons/credit-card',
+              label: 'VCreditCard',
+            },
+            {
+              to: '/components/addons/vueform-multiselect',
+              label: '@vueform/multiselect',
+            },
+            {
+              to: '/components/addons/vueform-slider',
+              label: '@vueform/slider',
+            },
+            {
+              to: '/components/addons/ckeditor',
+              label: 'CKEditor 5',
             },
           ],
         },
@@ -1319,13 +1268,6 @@ const linksBottom = ref<SidebarItem[]>([
     onClick() {
       panels.setActive('search')
     },
-  },
-  {
-    type: 'link',
-    to: '/sidebar/layouts/profile-settings',
-    id: 'settings',
-    label: 'Settings',
-    icon: 'lucide:settings',
   },
   {
     id: 'user-profile-dropdown',

@@ -14,7 +14,6 @@ to the target textarea element.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const textarea = ref('')
 const disabled = ref(true)

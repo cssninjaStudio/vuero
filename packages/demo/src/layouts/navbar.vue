@@ -661,11 +661,12 @@ const links = ref<NavbarItem[]>([
   },
   {
     type: 'megamenu',
-    label: 'Elements',
-    id: 'elements',
-    icon: 'lucide:box',
+    label: 'Components',
+    id: 'components',
+    icon: 'lucide:cpu',
 
     children: [
+
       {
         id: 'general',
         label: 'General',
@@ -673,31 +674,23 @@ const links = ref<NavbarItem[]>([
         children: [
           {
             label: 'Elements Hub',
-            to: '/elements/',
+            to: '/components/',
           },
           {
             label: 'Colors',
-            to: '/elements/colors',
+            to: '/components/colors',
           },
           {
             label: 'Helpers',
-            to: '/elements/helpers',
+            to: '/components/helpers',
           },
           {
-            to: '/elements/icons/iconify',
-            label: 'Iconify',
+            to: '/components/content',
+            label: 'Content',
           },
           {
-            to: '/elements/icons/line-icons-light',
-            label: 'Line Icons Light',
-          },
-          {
-            to: '/elements/icons/line-icons-regular',
-            label: 'Line Icons Regular',
-          },
-          {
-            to: '/elements/icons/font-awesome',
-            label: 'Font Awesome 5',
+            to: '/components/table',
+            label: 'Table',
           },
         ],
       },
@@ -708,54 +701,38 @@ const links = ref<NavbarItem[]>([
         children: [
           {
             label: 'VLoader',
-            to: '/elements/loader',
+            to: '/components/loader',
           },
           {
             label: 'VPlaceload',
-            to: '/elements/placeload/',
+            to: '/components/placeload/',
           },
           {
             label: 'VPlaceloadText',
-            to: '/elements/placeload/text',
+            to: '/components/placeload/text',
           },
           {
             label: 'VPlaceloadAvatar',
-            to: '/elements/placeload/avatar',
+            to: '/components/placeload/avatar',
           },
         ],
       },
       {
-        id: 'interaction',
-        label: 'Basic Interaction',
-        icon: 'lucide:mouse-pointer-click',
+        label: 'Accordions',
+        id: 'accordions',
+        icon: 'lucide:square-split-vertical',
         children: [
           {
-            to: '/elements/message',
-            label: 'VMessage',
+            to: '/components/accordion/',
+            label: 'VAccordion',
           },
           {
-            to: '/elements/dropdown',
-            label: 'VDropdown',
+            to: '/components/collapse',
+            label: 'VCollapse',
           },
           {
-            label: 'VPlaceloadText',
-            to: '/elements/placeload/text',
-          },
-          {
-            label: 'VPlaceloadAvatar',
-            to: '/elements/placeload/avatar',
-          },
-          {
-            to: '/elements/modal',
-            label: 'VModal',
-          },
-          {
-            to: '/elements/progress',
-            label: 'VProgress',
-          },
-          {
-            to: '/elements/tooltip',
-            label: 'VTootlip',
+            to: '/components/accordion/image',
+            label: 'VAccordionImage',
           },
         ],
       },
@@ -765,59 +742,31 @@ const links = ref<NavbarItem[]>([
         icon: 'lucide:square-play',
         children: [
           {
-            to: '/elements/button',
+            to: '/components/button',
             label: 'VButton',
           },
           {
-            to: '/elements/action',
+            to: '/components/action',
             label: 'VAction',
           },
           {
-            to: '/elements/icon-button',
+            to: '/components/icon-button',
             label: 'VIconButton',
           },
         ],
       },
       {
-        id: 'forms',
-        label: 'Forms',
-        icon: 'lucide:text-cursor-input',
+        label: 'Placeholders',
+        id: 'placeholders',
+        icon: 'lucide:square-dashed-kanban',
         children: [
           {
-            to: '/elements/forms/field',
-            label: 'VField',
+            to: '/components/placeholder-page',
+            label: 'VPlaceholderPage',
           },
           {
-            to: '/elements/forms/control',
-            label: 'VControl',
-          },
-          {
-            to: '/elements/forms/inputs',
-            label: 'VInput',
-          },
-          {
-            to: '/elements/forms/textarea',
-            label: 'VTextarea',
-          },
-          {
-            to: '/elements/forms/selects',
-            label: 'VSelect',
-          },
-          {
-            to: '/elements/checkbox',
-            label: 'VCheckbox',
-          },
-          {
-            to: '/elements/radio',
-            label: 'VRadio',
-          },
-          {
-            to: '/elements/forms/range-rating',
-            label: 'VRangeRating',
-          },
-          {
-            to: '/elements/forms/file',
-            label: 'File Input',
+            to: '/components/placeholder-section',
+            label: 'VPlaceholderSection',
           },
         ],
       },
@@ -827,79 +776,16 @@ const links = ref<NavbarItem[]>([
         icon: 'lucide:square-check-big',
         children: [
           {
-            to: '/elements/animated-checkbox',
+            to: '/components/animated-checkbox',
             label: 'VAnimatedCheckbox',
           },
           {
-            to: '/elements/switch-block',
+            to: '/components/switch-block',
             label: 'VSwitchBlock',
           },
           {
-            to: '/elements/switch-segment',
+            to: '/components/switch-segment',
             label: 'VSwitchSegment',
-          },
-        ],
-      },
-      {
-        id: 'addons',
-        label: 'Addons',
-        icon: 'lucide:puzzle',
-        children: [
-          {
-            to: '/elements/addons/calendar',
-            label: 'VCalendar & VDatePicker',
-          },
-          {
-            to: '/elements/addons/imask-input',
-            label: 'VIMaskInput',
-          },
-          {
-            to: '/elements/addons/filepond',
-            label: 'VFilePond',
-          },
-          {
-            to: '/elements/addons/credit-card',
-            label: 'VCreditCard',
-          },
-          {
-            to: '/elements/addons/vueform-multiselect',
-            label: '@vueform/multiselect',
-          },
-          {
-            to: '/elements/addons/vueform-slider',
-            label: '@vueform/slider',
-          },
-          {
-            to: '/elements/addons/ckeditor',
-            label: 'CKEditor 5',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: 'megamenu',
-    label: 'Components',
-    id: 'components',
-    icon: 'lucide:cpu',
-
-    children: [
-      {
-        id: 'general',
-        label: 'General',
-        icon: 'lucide:home',
-        children: [
-          {
-            to: '/components/',
-            label: 'Components Hub',
-          },
-          {
-            to: '/components/content',
-            label: 'Content',
-          },
-          {
-            to: '/components/table',
-            label: 'Table',
           },
         ],
       },
@@ -936,32 +822,21 @@ const links = ref<NavbarItem[]>([
             to: '/components/tag',
             label: 'VTag',
           },
-        ],
-      },
-      {
-        id: 'plugins',
-        label: 'Plugins',
-        icon: 'lucide:puzzle',
-        children: [
           {
-            to: '/components/plugins/notif',
-            label: 'Notyf',
+            to: '/components/icons/iconify',
+            label: 'Iconify',
           },
           {
-            to: '/components/plugins/tippy',
-            label: 'Tippy',
+            to: '/components/icons/line-icons-light',
+            label: 'Line Icons Light',
           },
           {
-            to: '/components/plugins/billboard-js',
-            label: 'VBillboardJS',
+            to: '/components/icons/line-icons-regular',
+            label: 'Line Icons Regular',
           },
           {
-            to: '/components/plugins/photos-swipe',
-            label: 'VPhotosSwipe',
-          },
-          {
-            to: '/components/plugins/plyr',
-            label: 'VPlyr',
+            to: '/components/icons/font-awesome',
+            label: 'Font Awesome 5',
           },
         ],
       },
@@ -1032,36 +907,135 @@ const links = ref<NavbarItem[]>([
         ],
       },
       {
-        label: 'Accordions',
-        id: 'accordions',
-        icon: 'lucide:square-split-vertical',
+        id: 'interaction',
+        label: 'Basic Interaction',
+        icon: 'lucide:mouse-pointer-click',
         children: [
           {
-            to: '/components/accordion/',
-            label: 'VAccordion',
+            to: '/components/message',
+            label: 'VMessage',
           },
           {
-            to: '/components/collapse',
-            label: 'VCollapse',
+            to: '/components/dropdown',
+            label: 'VDropdown',
           },
           {
-            to: '/components/accordion/image',
-            label: 'VAccordionImage',
+            label: 'VPlaceloadText',
+            to: '/components/placeload/text',
+          },
+          {
+            label: 'VPlaceloadAvatar',
+            to: '/components/placeload/avatar',
+          },
+          {
+            to: '/components/modal',
+            label: 'VModal',
+          },
+          {
+            to: '/components/progress',
+            label: 'VProgress',
+          },
+          {
+            to: '/components/tooltip',
+            label: 'VTootlip',
           },
         ],
       },
       {
-        label: 'Placeholders',
-        id: 'placeholders',
-        icon: 'lucide:square-dashed-kanban',
+        id: 'forms',
+        label: 'Forms',
+        icon: 'lucide:text-cursor-input',
         children: [
           {
-            to: '/components/placeholder-page',
-            label: 'VPlaceholderPage',
+            to: '/components/forms/field',
+            label: 'VField',
           },
           {
-            to: '/components/placeholder-section',
-            label: 'VPlaceholderSection',
+            to: '/components/forms/control',
+            label: 'VControl',
+          },
+          {
+            to: '/components/forms/inputs',
+            label: 'VInput',
+          },
+          {
+            to: '/components/forms/textarea',
+            label: 'VTextarea',
+          },
+          {
+            to: '/components/forms/selects',
+            label: 'VSelect',
+          },
+          {
+            to: '/components/checkbox',
+            label: 'VCheckbox',
+          },
+          {
+            to: '/components/radio',
+            label: 'VRadio',
+          },
+          {
+            to: '/components/forms/range-rating',
+            label: 'VRangeRating',
+          },
+          {
+            to: '/components/forms/file',
+            label: 'File Input',
+          },
+        ],
+      },
+      {
+        id: 'addons',
+        label: 'Addons',
+        icon: 'lucide:puzzle',
+        children: [
+          {
+            to: '/components/addons/calendar',
+            label: 'VCalendar & VDatePicker',
+          },
+          {
+            to: '/components/addons/imask-input',
+            label: 'VIMaskInput',
+          },
+          {
+            to: '/components/addons/filepond',
+            label: 'VFilePond',
+          },
+          {
+            to: '/components/addons/credit-card',
+            label: 'VCreditCard',
+          },
+          {
+            to: '/components/addons/vueform-multiselect',
+            label: '@vueform/multiselect',
+          },
+          {
+            to: '/components/addons/vueform-slider',
+            label: '@vueform/slider',
+          },
+          {
+            to: '/components/addons/ckeditor',
+            label: 'CKEditor 5',
+          },
+          {
+            to: '/components/plugins/notif',
+            label: 'Notyf',
+          },
+          {
+            to: '/components/plugins/tippy',
+            label: 'Tippy',
+          },
+          {
+            to: '/components/plugins/billboard-js',
+            label: 'VBillboardJS',
+          },
+          {
+            to: '/components/plugins/photos-swipe',
+            label: 'VPhotosSwipe',
+          },
+          {
+            to: '/components/plugins/plyr',
+            label: 'VPlyr',
           },
         ],
       },

@@ -19,8 +19,6 @@ The available colors are `primary`, `success`, `info`,
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const option1 = ref(true)
 const option2 = ref(false)
 const option3 = ref(false)

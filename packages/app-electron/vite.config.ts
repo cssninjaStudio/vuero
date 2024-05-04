@@ -156,6 +156,11 @@ export default defineConfig({
       },
     }),
 
+    /**
+     * vite-plugin-electron allows you to build your Electron app with Vite.
+     * 
+     * @see https://github.com/electron-vite/vite-plugin-electron
+     */
     Electron({
       main: {
         // Shortcut of `build.lib.entry`

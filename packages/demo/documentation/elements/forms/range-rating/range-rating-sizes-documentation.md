@@ -11,7 +11,6 @@ You can adjust the size of the rating component by using the `size` prop which
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref(2)
 </script>

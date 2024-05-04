@@ -16,8 +16,6 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-
 const selectedRowsId = ref<number[]>([])
 const editCompanyIndex = ref<number>()
 

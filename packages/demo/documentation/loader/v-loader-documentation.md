@@ -9,7 +9,6 @@ to the `active` prop. You can change the loader size using the `size` prop.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 const isLoaderActive = ref(false)
 
 const toggleLoaders = () => {

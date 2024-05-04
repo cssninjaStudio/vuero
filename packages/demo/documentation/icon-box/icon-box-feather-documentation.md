@@ -1,8 +1,8 @@
-### Feather Icons
+### Lucide Icons
 
 The Vuero `<VIconBox />` component works also very well with
-the `Feather Icons` icon set. Use the same markup and
-just replace the existing icons with some from Feather Icons.
+the `Lucide Icons` icon set. Use the same markup and
+just replace the existing icons with some from Lucide Icons.
 
 <!--code-->
 
@@ -92,7 +92,7 @@ just replace the existing icons with some from Feather Icons.
 
 <!--example-->
 
-<div class="icon-boxes">
+<div class="is-flex is-gap-0.5 is-flex-wrap-wrap is-align-items-flex-end">
     <VIconBox size="medium" color="primary" rounded>
         <VIcon icon="lucide:award"/>
     </VIconBox>

@@ -92,7 +92,7 @@ just replace the existing icons with some from Font Awesome.
 
 <!--example-->
 
-<div class="icon-boxes">
+<div class="is-flex is-gap-0.5 is-flex-wrap-wrap is-align-items-flex-end">
     <VIconBox size="medium" color="primary" rounded>
         <i class="fas fa-atom"></i>
     </VIconBox>

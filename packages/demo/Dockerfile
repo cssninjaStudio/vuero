@@ -20,11 +20,12 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
+COPY package.json ./
+RUN pnpm install --no-lockfile --prod
+
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/json-server ./json-server
 COPY --from=build /app/server ./server
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/package.json ./package.json
 
 EXPOSE 3000 8080
 

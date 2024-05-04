@@ -14,7 +14,6 @@ The available modifiers are `is-primary`, `is-success`, `is-info`,
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const selected = ref('value_2')
 </script>

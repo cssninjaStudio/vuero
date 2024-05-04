@@ -1,55 +1,19 @@
 <script setup lang="ts">
-import { elements, components, forms, plugins } from '/@src/data/landing/components'
+import { components, forms, plugins } from '/@src/data/landing/components'
 
 const props = withDefaults(
   defineProps<{
-    activeTab?: 'elements' | 'components' | 'forms' | 'plugins'
+    activeTab?: 'components' | 'forms' | 'plugins'
   }>(),
   {
-    activeTab: 'elements',
+    activeTab: 'components',
   },
 )
 </script>
 
 <template>
   <div
-    v-if="props.activeTab === 'elements'"
-    class="tab-content has-text-left"
-  >
-    <div class="columns is-multiline">
-      <div
-        v-for="item in elements"
-        :key="item.id"
-        class="column is-3"
-      >
-        <RouterLink
-          :to="item.link"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image"
-              :src="item.media.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image"
-              :src="item.media.dark"
-              alt=""
-              loading="lazy"
-            >
-          </div>
-          <div class="component-title">
-            {{ item.name }}
-          </div>
-        </RouterLink>
-      </div>
-    </div>
-  </div>
-
-  <div
-    v-else-if="props.activeTab === 'components'"
+    v-if="props.activeTab === 'components'"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">

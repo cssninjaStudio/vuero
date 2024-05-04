@@ -17,7 +17,6 @@ component's `:merge` prop.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const value = ref([20, 50, 70])
 const merge = 10

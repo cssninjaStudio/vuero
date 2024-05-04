@@ -57,7 +57,7 @@ useHead({
         <!--Box Colors-->
         <IconBoxRoundedBorderDocumentation />
 
-        <!--Feather Icons-->
+        <!--Lucide Icons-->
         <IconBoxFeatherDocumentation />
 
         <!--Font Awesome-->

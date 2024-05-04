@@ -47,5 +47,5 @@ const props = withDefaults(defineProps<{
 
 <style lang="scss">
 @import '/@src/scss/abstracts/all';
-@import '/@src/scss/_demo/landing';
+@import '/@src/scss/layout/landing';
 </style>

@@ -17,7 +17,6 @@ using the `#multiplelabel` custom slot to configure your message.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 import Multiselect from '@vueform/multiselect'
 const valueMultipleObject = ref(['robin'])
 const optionMultipleObject = ref({

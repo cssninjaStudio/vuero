@@ -12,7 +12,6 @@ property. You can return the tooltip value with the format that you want.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const value = ref(54)
 const format = (value) => {

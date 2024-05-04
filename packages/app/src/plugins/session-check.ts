@@ -1,8 +1,8 @@
 import { definePlugin } from '/@src/utils/plugins'
 
-export default definePlugin(async ({ router, pinia, event }) => {
+export default definePlugin(async ({ router, pinia }) => {
   const userSession = useUserSession(pinia)
-  const token = useUserToken(event)
+  const token = useUserToken()
 
   if (token.value && !userSession.user) {
     try {
@@ -18,6 +18,7 @@ export default definePlugin(async ({ router, pinia, event }) => {
   }
 
   router.beforeEach((to) => {
+    const token = useUserToken()
     if (to.meta.requiresAuth && !token.value) {
       return {
         name: '/auth',

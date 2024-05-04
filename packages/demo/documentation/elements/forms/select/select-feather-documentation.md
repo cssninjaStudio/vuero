@@ -3,17 +3,16 @@ state:
   input: ''
 ---
 
-### Feather Icons
+### Lucide Icons
 
 Vuero `VSelect` can have icons attached to them. They work pretty well with
-Feather Icons. You can add an icon element inside the select.
+Lucide Icons. You can add an icon element inside the select.
 Please refer to the code example for more details about usage.
 
 <!--code-->
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref('')
 </script>

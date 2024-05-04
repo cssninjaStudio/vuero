@@ -1,4 +1,4 @@
-### Feather Icons
+### Lucide Icons
 
 Vuero `VInput` are fully compatible with any icons from [icones.js](https://icones.js.org/).
 Use the `icon` or `iconify` propson the `<VControl />`

@@ -9,7 +9,6 @@ to inject any kind of content inside the modal.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 const smallFormOpen = ref(false)
 </script>
 

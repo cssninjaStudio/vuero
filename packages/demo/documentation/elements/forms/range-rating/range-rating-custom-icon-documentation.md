@@ -14,7 +14,6 @@ You can use default slot to customize the icon.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const hears = ref(2)
 const water = ref(3)

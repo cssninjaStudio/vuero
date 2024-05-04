@@ -15,7 +15,6 @@ to build forms quickly and efficiently.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const textarea = ref('')
 </script>

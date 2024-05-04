@@ -1,10 +1,4 @@
-/**
- * useDropdown Composition API
- */
-
 import type { Ref } from 'vue'
-import { reactive, ref, watchEffect } from 'vue'
-import { onClickOutside } from '@vueuse/core'
 
 export interface DropdownOptions {
   clickOutside?: boolean

@@ -34,7 +34,7 @@ the `size` prop. Available sizes are `small`, `medium`, `large`,
 
 <!--example-->
 
-<div class="icon-boxes">
+<div class="is-flex is-gap-0.5 is-flex-wrap-wrap is-align-items-flex-end">
     <VIconBox size="small">
         <i class="lnil lnil-vector-pen"></i>
     </VIconBox>

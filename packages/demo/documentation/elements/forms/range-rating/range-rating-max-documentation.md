@@ -12,7 +12,6 @@ which defaults to `5`.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const input = ref(2)
 </script>

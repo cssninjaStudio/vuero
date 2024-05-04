@@ -1,4 +1,4 @@
-### Feather icons
+### Lucide Icons
 
 `<VButton />` components work well with Font Awesome Icons.
 Add an icon name inside the `icon` prop to set a Font Awesome icon.

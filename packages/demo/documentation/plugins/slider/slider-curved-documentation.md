@@ -12,7 +12,6 @@ curved shaped tooltip. Supports bigger values than the rounded tooltip.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 
 const value = ref(0)
 </script>

@@ -1,5 +1,4 @@
 import type { Ref } from 'vue'
-import { ref, watchEffect } from 'vue'
 
 const HEADER_SELECTORS = [
   'h1[id]',
@@ -17,12 +16,12 @@ export type TocItem = {
   level: number
 }
 
-export function useMarkdownToc(container: Ref<HTMLElement | undefined>) {
+export function useMarkdownToc(target: Ref<HTMLElement | undefined>) {
   const toc = ref<TocItem[]>([])
 
   watchEffect(() => {
-    if (container.value) {
-      const anchors = container.value.querySelectorAll(HEADER_SELECTORS.join(', '))
+    if (target.value) {
+      const anchors = target.value.querySelectorAll(HEADER_SELECTORS.join(', '))
       anchors.forEach((anchor) => {
         if (anchor.classList.contains('toc-ignore')) return
 

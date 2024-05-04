@@ -12,9 +12,9 @@
 import { useMediaQuery } from '@vueuse/core'
 
 export function useScreenSize() {
-  const isLargeScreen = useMediaQuery('(min-width: 1023px)')
-  const isMediumScreen = useMediaQuery('(min-width: 767px)')
-  const isMobileScreen = useMediaQuery('(max-width: 767px)')
+  const isLargeScreen = useMediaQuery('(width >= 1024px)')
+  const isMediumScreen = useMediaQuery('(width >= 768px)')
+  const isMobileScreen = useMediaQuery('(width <= 767px)')
 
   return {
     isLargeScreen,

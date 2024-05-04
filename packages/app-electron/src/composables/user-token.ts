@@ -2,6 +2,6 @@ import { useStorage } from '@vueuse/core'
 
 const tokenKey = 'token'
 
-export function useUserToken(event?: H3Event) {
+export function useUserToken() {
   return useStorage(tokenKey, '')
 }
