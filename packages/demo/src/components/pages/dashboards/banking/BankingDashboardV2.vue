@@ -1,47 +1,36 @@
 <script setup lang="ts">
-import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-
 import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
   valueSingle,
   optionsSingle,
 } from '/@src/data/dashboards/banking-v2/dashboardData'
 
-let slider: TinySliderInstance
-
 const { expensesOptions } = useExpensesAreaChart()
 
 const sliderElement = ref<HTMLElement>()
-onMounted(async () => {
-  if (sliderElement.value) {
-    const tns = await import('tiny-slider/src/tiny-slider').then(m => m.tns)
-
-    slider = tns({
-      container: sliderElement.value,
-      controls: false,
-      nav: true,
-      mouseDrag: true,
+const { slider } = useTinySlider(sliderElement, {
+  controls: false,
+  nav: true,
+  mouseDrag: true,
+  items: 1.9,
+  center: false,
+  loop: false,
+  responsive: {
+    320: {
+      items: 1.7,
+    },
+    700: {
       items: 1.9,
-      center: false,
-      loop: false,
-      responsive: {
-        320: {
-          items: 1.7,
-        },
-        700: {
-          items: 1.9,
-        },
-        900: {
-          items: 1.9,
-        },
-      },
-    })
-  }
+    },
+    900: {
+      items: 1.9,
+    },
+  },
 })
 
 const goto = (index: number) => {
-  if (slider) {
-    slider.goTo(index)
+  if (slider.value) {
+    slider.value.goTo(index)
   }
 }
 </script>

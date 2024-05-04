@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
@@ -9,7 +7,6 @@ const { onceError } = useImageError()
 
 const activeSection = ref('cart')
 
-let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement>()
 const nextButtonElement = ref<HTMLElement>()
 const prevButtonElement = ref<HTMLElement>()
@@ -23,40 +20,31 @@ const onIndexChanged = (info: any) => {
   info.slideItems[indexPrev].classList.remove('active')
   info.slideItems[indexCurrent].classList.add('active')
 }
-onMounted(async () => {
-  if (sliderElement.value && nextButtonElement.value && prevButtonElement.value) {
-    const tns = await import('tiny-slider/src/tiny-slider').then(m => m.tns)
 
-    slider = tns({
-      container: sliderElement.value,
-      controls: true,
-      nav: false,
-      mouseDrag: true,
-      nextButton: nextButtonElement.value,
-      prevButton: prevButtonElement.value,
-      fixedWidth: 98,
-      swipeAngle: false,
-      items: 1,
-      center: false,
-      loop: true,
-    })
+const { slider } = useTinySlider(sliderElement, () => ({
+  controls: true,
+  nav: false,
+  mouseDrag: true,
+  nextButton: nextButtonElement.value,
+  prevButton: prevButtonElement.value,
+  fixedWidth: 98,
+  swipeAngle: false,
+  items: 1,
+  center: false,
+  loop: true,
+}))
 
-    slider.events.on('indexChanged', onIndexChanged)
+watch(slider, (value) => {
+  if (value) {
+    value.events.on('indexChanged', onIndexChanged)
   }
 })
 
 const goTo = (index: number) => {
-  if (slider) {
-    slider.goTo(index)
+  if (slider.value) {
+    slider.value.goTo(index)
   }
 }
-
-onUnmounted(() => {
-  if (slider) {
-    slider.events.off('indexChanged', onIndexChanged)
-    slider.destroy()
-  }
-})
 </script>
 
 <template>
