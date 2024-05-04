@@ -25,6 +25,9 @@ Available color values are `primary`, `info`, `success`, `warning`,
     <VButton color="danger">
       Button
     </VButton>
+    <VButton color="dark">
+      Button
+    </VButton>
     <VButton color="white">
       Button
     </VButton>
@@ -51,6 +54,9 @@ Available color values are `primary`, `info`, `success`, `warning`,
     </VButton>
     <VButton color="danger">
         Button
+    </VButton>
+    <VButton color="dark">
+      Button
     </VButton>
     <VButton color="white">
         Button

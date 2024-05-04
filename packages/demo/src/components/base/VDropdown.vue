@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<VDropdownProps>(), {
 })
 
 const dropdownElement = ref<HTMLElement>()
-const dropdown = useDropdown(dropdownElement, props.options)
+const dropdown = useDropdownContext(dropdownElement, props.options)
 
 defineExpose({
   ...dropdown,
@@ -44,6 +44,7 @@ defineExpose({
       props.icon && 'is-dots',
       props.modern && 'is-modern',
       props.spaced && 'is-spaced',
+      dropdown.isOpen && 'is-active',
       ...(typeof props.classes?.wrapper === 'string'
         ? [props.classes?.wrapper]
         : props.classes?.wrapper ?? ''),

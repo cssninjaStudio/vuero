@@ -436,6 +436,7 @@ export default defineComponent({
       .iconify {
         height: 16px;
         width: 16px;
+        font-size: 16px;
       }
     }
 
@@ -447,6 +448,7 @@ export default defineComponent({
     .iconify {
       height: 18px;
       width: 18px;
+      font-size: 18px;
     }
   }
 
@@ -454,6 +456,7 @@ export default defineComponent({
     .iconify {
       height: 14px;
       width: 14px;
+      font-size: 14px;
     }
   }
 }

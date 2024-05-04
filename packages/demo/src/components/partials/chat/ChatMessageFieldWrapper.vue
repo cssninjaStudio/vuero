@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const dropdownElement = ref<HTMLElement>()
-const dropdown = useDropdown(dropdownElement)
+const dropdown = useDropdownContext(dropdownElement)
 </script>
 
 <template>

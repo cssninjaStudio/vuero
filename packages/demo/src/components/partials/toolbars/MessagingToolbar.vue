@@ -6,7 +6,7 @@ const { onceError } = useImageError()
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement>()
-const dropdown = useDropdown(dropdownElement)
+const dropdown = useDropdownContext(dropdownElement)
 
 const localFlagSrc = computed(() => {
   switch (locale.value) {

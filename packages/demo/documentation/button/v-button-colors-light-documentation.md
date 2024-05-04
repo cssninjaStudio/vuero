@@ -24,6 +24,9 @@ use the `light` modifier prop to make a light colored button.
     <VButton color="danger" light>
       Button
     </VButton>
+    <VButton color="dark" light>
+      Button
+    </VButton>
     <VButton light>
       Button
     </VButton>
@@ -41,6 +44,7 @@ use the `light` modifier prop to make a light colored button.
   <VButton color="success" light> Button </VButton>
   <VButton color="warning" light> Button </VButton>
   <VButton color="danger" light> Button </VButton>
+  <VButton color="dark" light> Button </VButton>
   <VButton light> Button </VButton>
 </VButtons>
 

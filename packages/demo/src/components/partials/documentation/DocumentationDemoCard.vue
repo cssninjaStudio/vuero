@@ -339,7 +339,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         .is-null,
         .is-undefined {
           code {
-            color: var(--light-blue);
+            color: var(--blue);
           }
         }
 

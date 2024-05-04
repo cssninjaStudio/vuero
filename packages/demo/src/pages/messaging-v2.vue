@@ -141,7 +141,7 @@ const selectedConversation = computed(() => {
 })
 
 const dropdownElement2 = ref<HTMLElement>()
-const dropdown2 = useDropdown(dropdownElement2)
+const dropdown2 = useDropdownContext(dropdownElement2)
 
 useHead({
   title: 'Messaging chat - Navbar - Vuero',
@@ -304,6 +304,7 @@ useHead({
               <div
                 ref="dropdownElement2"
                 class="dropdown dropdown-trigger is-up"
+                :class="[dropdown2.isOpen && 'is-active']"
               >
                 <div>
                   <div

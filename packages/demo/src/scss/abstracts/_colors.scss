@@ -3,9 +3,24 @@
 /**
  * This mixin create CSS variables with distinct HSL layers.
  */
-@mixin colorHsl($color, $hue, $saturation, $lightness) {
-  --#{$color}-h: #{$hue};
-  --#{$color}-s: #{$saturation};
-  --#{$color}-l: #{$lightness};
+@mixin colorHsl($color, $h, $s, $l, $shades: 0) {
+  --#{$color}-h: #{$h};
+  --#{$color}-s: #{$s};
+  --#{$color}-l: #{$l};
   --#{$color}: hsl(var(--#{$color}-h) var(--#{$color}-s) var(--#{$color}-l));
+
+  @if $shades != 0 {
+    @include colorShades($color, $shades);
+  }
+}
+
+@mixin colorShades($color, $shades) {
+  @for $i from 1 through $shades {
+    --#{$color}-dark-#{$i}: hsl(
+      var(--#{$color}-h) var(--#{$color}-s) calc(var(--#{$color}-l) - #{$i}%)
+    );
+    --#{$color}-light-#{$i}: hsl(
+      var(--#{$color}-h) var(--#{$color}-s) calc(var(--#{$color}-l) + #{$i}%)
+    );
+  }
 }

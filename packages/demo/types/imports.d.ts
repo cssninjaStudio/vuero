@@ -176,6 +176,8 @@ declare global {
   const useDraggable: typeof import('@vueuse/core')['useDraggable']
   const useDropZone: typeof import('@vueuse/core')['useDropZone']
   const useDropdown: typeof import('../src/composables/dropdown')['useDropdown']
+  const useDropdownContext: typeof import('../src/composables/dropdown')['useDropdownContext']
+  const useDropdownContextContext: typeof import('../src/composables/dropdown')['useDropdownContextContext']
   const useElementBounding: typeof import('@vueuse/core')['useElementBounding']
   const useElementByPoint: typeof import('@vueuse/core')['useElementByPoint']
   const useElementHover: typeof import('@vueuse/core')['useElementHover']

@@ -22,12 +22,6 @@ const toggleSelection = () => {
   }
 }
 
-const dropdownElement1 = ref<HTMLElement>()
-const dropdown1 = useDropdown(dropdownElement1)
-
-const dropdownElement2 = ref<HTMLElement>()
-const dropdown2 = useDropdown(dropdownElement2)
-
 watch(selectedConversationId, () => {
   mobileMessageOpen.value = true
 })
@@ -62,14 +56,12 @@ useHead({
 
               <VDarkmodeToggle />
             </div>
-            <div
-              ref="dropdownElement1"
-              class="dropdown inbox-dropdown dropdown-trigger is-right"
-            >
-              <div>
+
+            <VDropdown right class="inbox-dropdown">
+              <template #button="{ toggle }">
                 <button
                   class="button"
-                  @click="dropdown1.toggle"
+                  @click="toggle"
                 >
                   <span class="icon is-small">
                     <VIcon
@@ -77,36 +69,35 @@ useHead({
                     />
                   </span>
                 </button>
-              </div>
-              <div class="dropdown-menu">
-                <div class="dropdown-content">
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:refresh-cw"
-                    />
-                    <span>Refresh</span>
-                  </a>
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:bell"
-                    />
-                    <span>Notifications</span>
-                  </a>
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:user-plus"
-                    />
-                    <span>Invite People</span>
-                  </a>
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:settings"
-                    />
-                    <span>Settings</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+              </template>
+
+              <template #content>
+                <a class="dropdown-item">
+                  <VIcon
+                    icon="lucide:refresh-cw"
+                  />
+                  <span>Refresh</span>
+                </a>
+                <a class="dropdown-item">
+                  <VIcon
+                    icon="lucide:bell"
+                  />
+                  <span>Notifications</span>
+                </a>
+                <a class="dropdown-item">
+                  <VIcon
+                    icon="lucide:user-plus"
+                  />
+                  <span>Invite People</span>
+                </a>
+                <a class="dropdown-item">
+                  <VIcon
+                    icon="lucide:settings"
+                  />
+                  <span>Settings</span>
+                </a>
+              </template>
+            </VDropdown>
             <a
               class="inbox-action inbox-close-sidebar-mobile"
               aria-label="Close"
@@ -371,14 +362,11 @@ useHead({
                 </div>
               </div>
 
-              <div
-                ref="dropdownElement2"
-                class="dropdown inbox-dropdown dropdown-trigger is-right"
-              >
-                <div>
+              <VDropdown right class="inbox-dropdown">
+                <template #button="{ toggle }">
                   <button
                     class="button"
-                    @click="dropdown2.toggle"
+                    @click="toggle"
                   >
                     <span class="icon is-small">
                       <VIcon
@@ -386,37 +374,36 @@ useHead({
                       />
                     </span>
                   </button>
-                </div>
-                <div class="dropdown-menu">
-                  <div class="dropdown-content">
-                    <a class="dropdown-item">
-                      <VIcon
-                        icon="lucide:check"
-                      />
-                      <span>Mark all as read</span>
-                    </a>
-                    <a class="dropdown-item">
-                      <VIcon
-                        icon="lucide:eye-off"
-                      />
-                      <span>Hide read</span>
-                    </a>
-                    <hr class="dropdown-divider">
-                    <a class="dropdown-item">
-                      <VIcon
-                        icon="lucide:calendar"
-                      />
-                      <span>Sort by date</span>
-                    </a>
-                    <a class="dropdown-item">
-                      <VIcon
-                        icon="lucide:user"
-                      />
-                      <span>Sort by user</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                </template>
+
+                <template #content>
+                  <a class="dropdown-item">
+                    <VIcon
+                      icon="lucide:check"
+                    />
+                    <span>Mark all as read</span>
+                  </a>
+                  <a class="dropdown-item">
+                    <VIcon
+                      icon="lucide:eye-off"
+                    />
+                    <span>Hide read</span>
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a class="dropdown-item">
+                    <VIcon
+                      icon="lucide:calendar"
+                    />
+                    <span>Sort by date</span>
+                  </a>
+                  <a class="dropdown-item">
+                    <VIcon
+                      icon="lucide:user"
+                    />
+                    <span>Sort by user</span>
+                  </a>
+                </template>
+              </VDropdown>
             </div>
           </div>
           <!--Messages-->
@@ -552,7 +539,7 @@ useHead({
           label {
             display: block;
             margin-inline-start: auto;
-            transform: scale(0.65);
+            transform: scale(0.45);
           }
         }
 
@@ -1302,7 +1289,7 @@ useHead({
 ========================================================================== */
 
 .inbox-dropdown {
-  div > .button {
+   .button {
     height: 36px;
     width: 36px;
     padding: 0;
@@ -1720,13 +1707,13 @@ Dark mode
 
   .inbox-dropdown {
     &:hover {
-      div > .button {
+      .button {
         background: var(--dark-sidebar-light-2) !important;
         border-color: var(--dark-sidebar-light-12) !important;
       }
     }
 
-    div > .button {
+    .button {
       background: transparent !important;
       border-color: transparent !important;
     }

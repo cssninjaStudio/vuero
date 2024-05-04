@@ -8,7 +8,7 @@
   --medium-grey: #ddd;
   --light-grey: #eee;
   --white: #fff;
-  --border: hsl(0deg 0% 86%);
+  --border: #dbdbdb;
 
   // placeload colors
   --placeload-nuance-from: rgb(0 0 0 / 7%);
@@ -16,93 +16,99 @@
   --placeload-dark-nuance-from: rgb(255 255 255 / 15%);
   --placeload-dark-nuance-to: rgb(255 255 255 / 24%);
 
-  // sidebar HSL (#344258) // hsl(217, 26%, 27%)
-  @include colorHsl('sidebar', 217, 26%, 27%);
 
-  // primary HSL (#29ab8d) // hsl(166, 61%, 42%)
-  @include colorHsl('primary', 166, 61%, 42%);
+  // Bulma colors
+  @include colorHsl('primary', 166, 61%, 42%, $shades: 60); // hsl(166, 61%, 42%)
+  --primary--color-invert: var(--primary-light-60);
+  --primary--dark-color: var(--primary-dark-5);
+  --primary--light-color: var(--primary-light-50);
+  @include colorHsl('link', 229, 53%, 53%, $shades: 60);  // hsl(229, 53%, 53%)
+  --link--color-invert: var(--link-light-60);
+  --link--dark-color: var(--link-dark-5);
+  --link--light-color: var(--link-light-50);
+  @include colorHsl('info', 200, 97%, 45%, $shades: 60); // hsl(200, 97%, 45%)
+  --info--color-invert: var(--info-light-60);
+  --info--dark-color: var(--info-dark-5);
+  --info--light-color: var(--info-light-50);
+  @include colorHsl('success', 164, 95%, 43%, $shades: 60); // hsl(164, 95%, 43%)
+  --success--color-invert: var(--success-light-60);
+  --success--dark-color: var(--success-dark-10);
+  --success--light-color: var(--success-light-50);
+  @include colorHsl('warning', 35, 95%, 62%, $shades: 60); // hsl(35, 95%, 62%)
+  --warning--color-invert: var(--warning-light-60);
+  --warning--dark-color: var(--warning-dark-15);
+  --warning--light-color: var(--warning-light-32);
+  @include colorHsl('danger', 341, 79%, 53%, $shades: 60); // hsl(341, 79%, 53%)
+  --danger--color-invert: var(--danger-light-60);
+  --danger--dark-color: var(--danger-dark-15);
+  --danger--light-color: var(--danger-light-40);
+  @include colorHsl('dark', 240, 4%, 14%, $shades: 90); // hsl(240, 4%, 14%)
+  --dark--color-invert: var(--dark-light-60);
+  --dark--dark-color: var(--dark-dark-15);
+  --dark--light-color: var(--dark-light-90);
 
-  // primary-grey HSL (#ccc) // hsl(0, 0%, 80%)
-  @include colorHsl('primary-grey', 0, 0%, 80%);
+  // Layout colors
+  @include colorHsl('sidebar', 217, 26%, 27%, $shades: 25); // hsl(217, 26%, 27%)
+  @include colorHsl('dark-sidebar', 240, 4%, 14%, $shades: 15); // hsl(240, 4%, 14%)
 
-  // secondary HSL (#346beb) // hsl(222, 82%, 56%)
-  @include colorHsl('secondary', 222, 82%, 56%);
+  @include colorHsl('landing-xxx', 225, 25%, 6%, $shades: 20);  // hsl(225, 25%, 6%)
+  @include colorHsl('landing-yyy', 230, 26%, 13%, $shades: 20); // hsl(230, 26%, 13%)
 
-  // purple HSL (#8269b2) // hsl(261, 32%, 55%)
-  @include colorHsl('purple', 261, 32%, 55%);
+  @include colorHsl('smoke-white', 0, 0%, 99%, $shades: 25); // hsl(0, 0%, 99%)
+  @include colorHsl('primary-grey', 0, 0%, 80%, $shades: 40); // hsl(0, 0%, 80%)
+  @include colorHsl('muted-grey', 0, 0%, 60%, $shades: 25); // hsl(0, 0%, 60%)
+  @include colorHsl('fade-grey', 0, 0%, 93%, $shades: 10); // hsl(0, 0%, 93%)
+  @include colorHsl('widget-grey', 228, 33%, 97%, $shades: 15); // hsl(228, 33%, 97%)
+  @include colorHsl('placeholder', 0, 0%, 81%, $shades: 10); // hsl(0, 0%, 81%)
 
-  // blue HSL (#37c3ff) // hsl(198, 100%, 61%)
-  @include colorHsl('blue', 198, 100%, 61%);
+  @include colorHsl('dark-dark-text', 240, 6%, 68%, $shades: 15); // hsl(240, 6%, 68%)
+  @include colorHsl('dark-text', 226, 34%, 24%, $shades: 40); // hsl(226, 34%, 24%)
+  @include colorHsl('light-text', 232, 14%, 68%, $shades: 25); // hsl(232, 14%, 68%)
 
-  // red HSL (#f92b60) // hsl(345, 94%, 57%)
-  @include colorHsl('red', 345, 94%, 57%);
+  // Additional colors
+  @include colorHsl('secondary', 222, 61%, 56%, $shades: 60); // hsl(222, 82%, 56%)
+  @include colorHsl('purple', 261, 32%, 55%, $shades: 60); // hsl(261, 32%, 55%)
+  @include colorHsl('blue', 198, 100%, 61%, $shades: 60); // hsl(198, 100%, 61%)
+  @include colorHsl('red', 345, 94%, 57%, $shades: 60);// hsl(345, 94%, 57%)
+  @include colorHsl('orange', 19, 100%, 75%, $shades: 60); // hsl(19, 100%, 75%)
+  @include colorHsl('yellow', 43, 100%, 72%, $shades: 60); // hsl(43, 100%, 72%)
+  @include colorHsl('green', 113, 59%, 71%, $shades: 60); // hsl(113, 59%, 71%)
+  @include colorHsl('pink', 344, 100%, 81%, $shades: 60);// hsl(344, 100%, 81%)
+  // @include colorHsl('light-blue', 196, 84%, 71%, $shades: 60);// hsl(196, 84%, 71%)
+  @include colorHsl('lime', 168, 56%, 72%, $shades: 60); // hsl(168, 56%, 72%)
 
-  // orange HSL (#ffa981) // hsl(19, 100%, 75%)
-  @include colorHsl('orange', 19, 100%, 75%);
+  
+  // Brands colors
+  // @include colorHsl('javascript', 53, 93%, 54%);
+  // @include colorHsl('angular', 2, 82%, 48%);
+  // @include colorHsl('reactjs', 189, 100%, 50%);
+  // @include colorHsl('android', 74, 55%, 50%);
+  // @include colorHsl('swift', 4, 86%, 56%);
+  // @include colorHsl('vuejs', 152, 44%, 52%);
+  // @include colorHsl('wordpress', 199, 65%, 37%);
+  // @include colorHsl('csharp', 305, 36%, 45%);
+  // @include colorHsl('nodejs', 103, 50%, 53%);
+  // @include colorHsl('html', 18, 88%, 55%);
+  // @include colorHsl('facebook', 221, 44%, 41%);
+  // @include colorHsl('twitter', 194, 100%, 56%);
+  // @include colorHsl('linkedin', 199, 100%, 36%);
+  // @include colorHsl('tumblr', 214, 27%, 28%);
+  // @include colorHsl('github', 0, 0%, 27%);
+  // @include colorHsl('dribbble', 337, 79%, 61%);
+  // @include colorHsl('google-plus', 7, 64%, 52%);
+  // @include colorHsl('youtube', 358, 79%, 45%);
+  // @include colorHsl('reddit', 16, 100%, 50%);
+  // @include colorHsl('invision', 345, 100%, 60%);
+  // @include colorHsl('amazon', 36, 100%, 50%);
+  // @include colorHsl('instagram', 340, 75%, 54%);
+}
 
-  // yellow HSL (#ffd66e) // hsl(43, 100%, 72%)
-  @include colorHsl('yellow', 43, 100%, 72%);
+.is-dark {
+  --background-grey: var(--dark-sidebar-light-5);
+  --border: var(--dark-sidebar-light-12);
 
-  // green HSL (#93e088) // hsl(113, 59%, 71%)
-  @include colorHsl('green', 113, 59%, 71%);
-
-  // pink HSL (#ff9eb8) // hsl(344, 100%, 81%)
-  @include colorHsl('pink', 344, 100%, 81%);
-
-  // light-blue HSL (#77d2f3) // hsl(196, 84%, 71%)
-  @include colorHsl('light-blue', 196, 84%, 71%);
-
-  // lime HSL (#90e0d0) // hsl(168, 56%, 72%)
-  @include colorHsl('lime', 168, 56%, 72%);
-
-  // dark HSL (#283252) // hsl(226, 34%, 24%)
-  @include colorHsl('dark', 226, 34%, 24%);
-
-  // link HSL (#485fc7) // hsl(229, 53%, 53%)
-  @include colorHsl('link', 229, 53%, 53%);
-
-  // info HSL (#039be5) // hsl(200, 97%, 45%)
-  @include colorHsl('info', 200, 97%, 45%);
-
-  // success HSL (#06d6a0) // hsl(164, 95%, 43%)
-  @include colorHsl('success', 164, 95%, 43%);
-
-  // warning HSL (#faae42) // hsl(35, 95%, 62%)
-  @include colorHsl('warning', 35, 95%, 62%);
-
-  // danger HSL (#e62965) // hsl(341, 79%, 53%)
-  @include colorHsl('danger', 341, 79%, 53%);
-
-  // smoke-white HSL (#fcfcfc) // hsl(0, 0%, 99%)
-  @include colorHsl('smoke-white', 0, 0%, 99%);
-
-  // placeholder HSL (#cecece) // hsl(0, 0%, 81%)
-  @include colorHsl('placeholder', 0, 0%, 81%);
-
-  // muted-grey HSL (#999) // hsl(0, 0%, 60%)
-  @include colorHsl('muted-grey', 0, 0%, 60%);
-
-  // fade-grey HSL (#ededed) // hsl(0, 0%, 93%)
-  @include colorHsl('fade-grey', 0, 0%, 93%);
-
-  // widget-grey HSL (#f5f6fa) // hsl(228, 33%, 97%)
-  @include colorHsl('widget-grey', 228, 33%, 97%);
-
-  // dark-dark-text HSL (#aaaab3) // hsl(240, 6%, 68%)
-  @include colorHsl('dark-dark-text', 240, 6%, 68%);
-
-  // dark-text HSL (#283252) // hsl(226, 34%, 24%)
-  @include colorHsl('dark-text', 226, 34%, 24%);
-
-  // light-text HSL (#a2a5b9) // hsl(232, 14%, 68%)
-  @include colorHsl('light-text', 232, 14%, 68%);
-
-  // dark-sidebar HSL (#232326) // hsl(240, 4%, 14%)
-  @include colorHsl('dark-sidebar', 240, 4%, 14%);
-
-  // landing-xxx HSL (#0c0e14) // hsl(225, 25%, 6%)
-  @include colorHsl('landing-xxx', 225, 25%, 6%);
-
-  // landing-yyy HSL (#191c2b) // hsl(230, 26%, 13%)
-  @include colorHsl('landing-yyy', 230, 26%, 13%);
+  // override colors for dark mode
+  @include colorHsl('primary', 166, 61%, 38%); // hsl(166, 61%, 38%)
+  @include colorHsl('dark-text', 0, 0%, 99%); // hsl(0, 0%, 99%)
+  @include colorHsl('red', 324, 100%, 63%); // hsl(324, 100%, 63%)
 }

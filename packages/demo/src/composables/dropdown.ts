@@ -7,14 +7,14 @@ export interface DropdownOptions {
 /**
  * Generate refs to handle a dropdown state
  */
-export function useDropdown(
-  container: Ref<HTMLElement | undefined>,
+export function useDropdownContext(
+  target: Ref<HTMLElement | undefined>,
   options: DropdownOptions = { clickOutside: true },
 ) {
   const isOpen = ref(false)
 
   if (options.clickOutside) {
-    onClickOutside(container, () => {
+    onClickOutside(target, () => {
       isOpen.value = false
     })
   }
@@ -31,18 +31,18 @@ export function useDropdown(
     isOpen.value = !isOpen.value
   }
 
-  watchEffect(() => {
-    if (!container.value) {
-      return
-    }
+  // watchEffect(() => {
+  //   if (!target.value) {
+  //     return
+  //   }
 
-    if (isOpen.value) {
-      container.value.classList.add('is-active')
-    }
-    else {
-      container.value.classList.remove('is-active')
-    }
-  })
+  //   if (isOpen.value) {
+  //     target.value.classList.add('is-active')
+  //   }
+  //   else {
+  //     target.value.classList.remove('is-active')
+  //   }
+  // })
 
   return reactive({
     isOpen,

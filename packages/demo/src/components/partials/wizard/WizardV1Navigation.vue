@@ -2,7 +2,7 @@
 const { onceError } = useImageError()
 
 const dropdownElement = ref<HTMLElement>()
-const dropdown = useDropdown(dropdownElement)
+const dropdown = useDropdownContext(dropdownElement)
 
 const wizard = useWizard()
 </script>

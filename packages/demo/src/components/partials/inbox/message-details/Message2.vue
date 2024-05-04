@@ -9,12 +9,6 @@ const props = defineProps<{
 
 const { onceError } = useImageError()
 const { isMediumScreen } = useScreenSize()
-
-const dropdownElement1 = ref<HTMLElement>()
-const dropdown1 = useDropdown(dropdownElement1)
-
-const dropdownElement2 = ref<HTMLElement>()
-const dropdown2 = useDropdown(dropdownElement2)
 </script>
 
 <template>
@@ -42,48 +36,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         />
         <span>4</span>
       </div>
-      <div
-        ref="dropdownElement1"
-        class="dropdown inbox-dropdown dropdown-trigger is-right"
-      >
-        <div>
-          <button
-            class="button"
-            tabindex="0"
-            @keydown.enter.prevent="dropdown1.toggle"
-            @click="dropdown1.toggle"
-          >
-            <span class="icon is-small">
-              <VIcon
-                icon="lucide:more-vertical"
-              />
-            </span>
-          </button>
-        </div>
-        <div class="dropdown-menu">
-          <div class="dropdown-content">
-            <a class="dropdown-item">
-              <VIcon
-                icon="lucide:bookmark"
-              />
-              <span>Bookmark</span>
-            </a>
-            <a class="dropdown-item">
-              <VIcon
-                icon="lucide:share-2"
-              />
-              <span>Share message</span>
-            </a>
-            <hr class="dropdown-divider">
-            <a class="dropdown-item">
-              <VIcon
-                icon="lucide:thumbs-down"
-              />
-              <span>Mark as spam</span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <InboxHeaderDropdown />
       <a
         class="inbox-action inbox-close-details-mobile"
         role="button"
@@ -206,47 +159,8 @@ const dropdown2 = useDropdown(dropdownElement2)
               <span>Reply as</span>
               <span>erik@vuero.io</span>
             </div>
-            <div
-              ref="dropdownElement2"
-              class="dropdown inbox-dropdown dropdown-trigger is-right"
-            >
-              <div>
-                <button
-                  class="button"
-                  tabindex="0"
-                  @keydown.enter.prevent="dropdown2.toggle"
-                  @click="dropdown2.toggle"
-                >
-                  <span class="icon is-small">
-                    <VIcon
-                      icon="lucide:more-vertical"
-                    />
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu">
-                <div class="dropdown-content">
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:refresh-cw"
-                    />
-                    <span>Reset</span>
-                  </a>
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:align-left"
-                    />
-                    <span>Spelling</span>
-                  </a>
-                  <a class="dropdown-item">
-                    <VIcon
-                      icon="lucide:at-sign"
-                    />
-                    <span>Mention</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+
+            <InboxMessageDropdown />
           </div>
           <!--textarea-->
           <div class="control">
