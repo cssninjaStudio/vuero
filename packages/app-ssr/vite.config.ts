@@ -15,7 +15,7 @@ import { unheadVueComposablesImports } from '@unhead/vue'
  *
  * @see https://vitejs.dev/config
  */
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   // Project root directory (where index.html is located).
   root: process.cwd(),
   // Base public path when served in development or production.
@@ -50,10 +50,10 @@ export default defineConfig({
     rollupOptions: {
       output: {
         format: 'esm',
-        entryFileNames: '[name].mjs',
+        entryFileNames: isSsrBuild ? '[name].mjs' : 'assets/[hash].js',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/[hash].mjs',
+        chunkFileNames: `assets/_/[name].${isSsrBuild ? 'mjs' : 'js'}`,
         assetFileNames: 'assets/[hash][extname]',
       },
     },
@@ -160,4 +160,4 @@ export default defineConfig({
       'defu',
     ],
   },
-})
+}))

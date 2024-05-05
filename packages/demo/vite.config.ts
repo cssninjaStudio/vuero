@@ -23,7 +23,7 @@ import { PurgeComments } from './vite-plugin/purge-comments'
  *
  * @see https://vitejs.dev/config
  */
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   // Project root directory (where index.html is located).
   root: process.cwd(),
   // Base public path when served in development or production.
@@ -81,11 +81,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         format: 'esm',
-        entryFileNames: '[name].mjs',
+        entryFileNames: isSsrBuild ? '[name].mjs' : 'assets/[hash].js',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         chunkFileNames: isDebug
-          ? 'assets/_/[name].mjs'
-          : 'assets/_/[hash].mjs',
+          ? `assets/_/[name].${isSsrBuild ? 'mjs' : 'js'}`
+          : `assets/_/[hash].${isSsrBuild ? 'mjs' : 'js'}`,
         assetFileNames: isDebug
           ? 'assets/[name][extname]'
           : 'assets/[hash][extname]',
@@ -349,4 +349,4 @@ export default defineConfig({
       'textarea-markdown-editor/dist/esm/bootstrap',
     ],
   },
-})
+}))

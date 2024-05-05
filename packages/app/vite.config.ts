@@ -53,10 +53,10 @@ export default defineConfig({
     minify: 'terser',
     rollupOptions: {
       output: {
-        entryFileNames: '[name].mjs',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: 'assets/[hash].mjs',
+        entryFileNames: 'assets/[hash].js',
+        chunkFileNames: 'assets/_/[name].js',
         assetFileNames: 'assets/[hash][extname]',
       },
     },
