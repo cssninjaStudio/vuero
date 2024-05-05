@@ -7,7 +7,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VTooltip - Elements - Vuero',
+  title: 'VTooltip - Components - Vuero',
 })
 </script>
 
@@ -24,7 +24,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

@@ -12,7 +12,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VLoader - Elements - Vuero',
+  title: 'VLoader - Components - Vuero',
 })
 </script>
 
@@ -29,7 +29,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

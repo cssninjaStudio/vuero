@@ -29,7 +29,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VModal - Elements - Vuero',
+  title: 'VModal - Components - Vuero',
 })
 </script>
 
@@ -46,7 +46,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

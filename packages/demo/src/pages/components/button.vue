@@ -9,7 +9,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VButton - Elements - Vuero',
+  title: 'VButton - Components - Vuero',
 })
 </script>
 
@@ -26,7 +26,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

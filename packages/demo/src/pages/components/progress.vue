@@ -9,7 +9,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VProgress - Elements - Vuero',
+  title: 'VProgress - Components - Vuero',
 })
 </script>
 
@@ -26,7 +26,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

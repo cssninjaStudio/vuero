@@ -16,7 +16,7 @@ const breadcrumb = [
     to: '/',
   },
   {
-    label: 'Elements',
+    label: 'Components',
     to: '/components/',
   },
   {
@@ -29,7 +29,7 @@ const breadcrumb = [
 ]
 
 useHead({
-  title: 'VControl - Elements - Vuero',
+  title: 'VControl - Components - Vuero',
 })
 </script>
 

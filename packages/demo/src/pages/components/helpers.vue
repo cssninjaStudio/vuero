@@ -4,7 +4,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'Helpers - Elements - Vuero',
+  title: 'Helpers - Components - Vuero',
 })
 </script>
 
@@ -21,7 +21,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

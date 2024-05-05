@@ -4,7 +4,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'Colors - Elements - Vuero',
+  title: 'Colors - Components - Vuero',
 })
 
 const bulmaColors = [
@@ -60,7 +60,7 @@ const layoutColors = [
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

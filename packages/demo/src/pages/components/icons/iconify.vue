@@ -26,7 +26,7 @@ useVueroContext({
   pageTitle: 'Iconify Icons',
 })
 useHead({
-  title: 'Iconify Icons - Elements - Vuero',
+  title: 'Iconify Icons - Components - Vuero',
 })
 </script>
 
@@ -43,7 +43,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

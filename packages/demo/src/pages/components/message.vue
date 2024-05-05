@@ -9,7 +9,7 @@ useVueroContext({
 })
 
 useHead({
-  title: 'VMessage - Elements - Vuero',
+  title: 'VMessage - Components - Vuero',
 })
 </script>
 
@@ -26,7 +26,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

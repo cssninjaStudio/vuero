@@ -28,7 +28,7 @@ useVueroContext({
   pageTitle: 'Line Icons Icons',
 })
 useHead({
-  title: 'Line Icons Icons - Elements - Vuero',
+  title: 'Line Icons Icons - Components - Vuero',
 })
 </script>
 
@@ -45,7 +45,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {

@@ -26,7 +26,7 @@ useVueroContext({
   pageTitle: 'Font Awesome Icons',
 })
 useHead({
-  title: 'Font Awesome Icons - Elements - Vuero',
+  title: 'Font Awesome Icons - Components - Vuero',
 })
 </script>
 
@@ -43,7 +43,7 @@ useHead({
           to: '/',
         },
         {
-          label: 'Elements',
+          label: 'Components',
           to: '/components/',
         },
         {
