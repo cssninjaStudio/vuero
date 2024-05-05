@@ -29,7 +29,7 @@ export function useProgressChart() {
       width: [2, 2, 2],
       curve: 'smooth',
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     yaxis: {
       opposite: true,

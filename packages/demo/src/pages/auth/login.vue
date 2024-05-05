@@ -377,7 +377,7 @@ useHead({
           transition: all 0.3s; // transition-all test
 
           &:focus {
-            background: var(--fade-grey-light-6);
+            background: color-mix(in oklab, var(--fade-grey), white 6%);
             border-color: var(--placeholder);
 
             ~ .auth-label,
@@ -680,11 +680,11 @@ Dark mode
     background: var(--dark-sidebar);
 
     .underlay {
-      background: var(--dark-sidebar-light-10);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
     }
 
     .is-image {
-      border-color: var(--dark-sidebar-light-10);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
     }
 
     .is-form {
@@ -703,7 +703,7 @@ Dark mode
           }
 
           .input {
-            background: var(--dark-sidebar-light-4);
+            background: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
             &:focus {
               border-color: var(--primary);
@@ -748,10 +748,10 @@ Dark mode
     }
 
     .toggler {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       > span {
-        background: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
   }

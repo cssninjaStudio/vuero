@@ -20,7 +20,7 @@ const notyf = new Notyf({
   types: [
     {
       type: 'primary',
-      background: themeColors.primary,
+      background: themeColors.lime,
       icon: {
         className: 'fas fa-check',
         tagName: 'i',

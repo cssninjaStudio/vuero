@@ -34,7 +34,7 @@ export function useShippingCharts() {
         show: false,
       },
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     plotOptions: {
       radialBar: {
         hollow: {

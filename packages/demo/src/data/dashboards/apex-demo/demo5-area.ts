@@ -25,7 +25,7 @@ export function useDemo5Area() {
           show: false,
         },
       },
-      colors: [themeColors.primary, themeColors.info, themeColors.purple],
+      colors: [themeColors.lime, themeColors.info, themeColors.purple],
       title: {
         text: 'Multiple Area',
         align: 'left',

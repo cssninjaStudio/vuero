@@ -989,7 +989,7 @@
           tr td {
             .table-action {
               &:hover {
-                background: var(--dark-sidebar-light-2) !important;
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
               }
             }
           }

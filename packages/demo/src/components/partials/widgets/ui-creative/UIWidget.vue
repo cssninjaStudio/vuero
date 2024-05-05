@@ -64,7 +64,7 @@ const props = defineProps<{
       width: 32px;
       min-width: 32px;
       border-radius: var(--radius-rounded);
-      color: var(--light-text-light-12);
+      color: color-mix(in oklab, var(--light-text), white 12%);
       transition: all 0.3s; // transition-all test
 
       &.has-indicator {
@@ -110,7 +110,7 @@ const props = defineProps<{
     width: 32px;
     min-width: 32px;
     border-radius: var(--radius-rounded);
-    color: var(--light-text-light-12);
+    color: color-mix(in oklab, var(--light-text), white 12%);
     transition: all 0.3s; // transition-all test
 
     .iconify {
@@ -159,7 +159,7 @@ const props = defineProps<{
   }
 
   .calendar tbody td:hover {
-    background: var(--fade-grey-light-3);
+    background: color-mix(in oklab, var(--fade-grey), white 3%);
     color: var(--primary);
   }
 
@@ -193,7 +193,7 @@ const props = defineProps<{
         border-color: var(--widget-grey);
 
         &:focus {
-          border-color: var(--fade-grey-dark-3);
+          border-color: color-mix(in oklab, var(--fade-grey), black 3%);
           background: var(--white);
         }
       }
@@ -284,11 +284,11 @@ const props = defineProps<{
         font-size: 18px;
         min-width: 32px;
         border-radius: var(--radius-rounded);
-        color: var(--light-text-light-12);
+        color: color-mix(in oklab, var(--light-text), white 12%);
         transition: all 0.3s; // transition-all test
 
         &:hover:not(.is-active) {
-          background: var(--fade-grey-light-3);
+          background: color-mix(in oklab, var(--fade-grey), white 3%);
           color: var(--light-text);
         }
 
@@ -505,8 +505,8 @@ const props = defineProps<{
         width: 42px;
         border: none;
         border-radius: 10px;
-        background: var(--widget-grey-dark-2);
-        color: var(--light-text-dark-6);
+        background: color-mix(in oklab, var(--widget-grey), black 2%);
+        color: color-mix(in oklab, var(--light-text), black 6%);
         transition: all 0.3s; // transition-all test
 
         .iconify {
@@ -521,8 +521,8 @@ const props = defineProps<{
         }
 
         &.is-placeholder {
-          background: var(--fade-grey-light-2);
-          border: 1px solid var(--fade-grey-dark-3);
+          background: color-mix(in oklab, var(--fade-grey), white 2%);
+          border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           color: var(--light-text);
 
           .iconify {
@@ -643,7 +643,7 @@ const props = defineProps<{
     .exerpt {
       padding: 10px;
       border-radius: 10px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       font-family: var(--font);
 
       h5 {
@@ -795,19 +795,19 @@ const props = defineProps<{
       align-items: center;
       padding: 10px;
       border-radius: 10px;
-      background: var(--fade-grey-light-3);
+      background: color-mix(in oklab, var(--fade-grey), white 3%);
       margin-bottom: 8px;
 
       &.is-orange {
-        background: var(--orange-light-20);
+        background: color-mix(in oklab, var(--orange), white 20%);
       }
 
       &.is-purple {
-        background: var(--purple-light-38);
+        background: color-mix(in oklab, var(--purple), white 38%);
       }
 
       &.is-green {
-        background: var(--success-light-48);
+        background: color-mix(in oklab, var(--success), white 48%);
       }
 
       .meta {
@@ -848,11 +848,11 @@ const props = defineProps<{
         width: 32px;
         min-width: 32px;
         border-radius: 8px;
-        color: var(--light-text-light-12);
+        color: color-mix(in oklab, var(--light-text), white 12%);
         transition: all 0.3s; // transition-all test
 
         &:hover:not(.is-active) {
-          background: var(--fade-grey-light-3);
+          background: color-mix(in oklab, var(--fade-grey), white 3%);
           color: var(--light-text);
         }
 
@@ -978,9 +978,9 @@ const props = defineProps<{
       width: 36px;
       min-width: 36px;
       border-radius: var(--radius-rounded);
-      color: var(--light-text-light-12);
+      color: color-mix(in oklab, var(--light-text), white 12%);
       margin: 0 6px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       box-shadow: var(--light-box-shadow);
       transition: all 0.3s; // transition-all test
 
@@ -1021,7 +1021,7 @@ const props = defineProps<{
         border-color: var(--widget-grey);
 
         &:focus {
-          border-color: var(--fade-grey-dark-3);
+          border-color: color-mix(in oklab, var(--fade-grey), black 3%);
           background: var(--white);
         }
       }
@@ -1059,7 +1059,7 @@ const props = defineProps<{
       transition: all 0.3s; // transition-all test
 
       &:hover {
-        background: var(--fade-grey-light-3);
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
       }
 
       .meta {
@@ -1190,8 +1190,8 @@ const props = defineProps<{
   .creative-list-widget {
     .creative-list {
       .creative-list-item {
-        background: var(--dark-sidebar-light-2);
-        border: 1px solid var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .meta {
           color: var(--smoke-white);
@@ -1204,8 +1204,8 @@ const props = defineProps<{
     .field {
       .control {
         .input {
-          background: var(--dark-sidebar-light-3);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 3%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .searcv-button {
@@ -1223,7 +1223,7 @@ const props = defineProps<{
     .avatar-list {
       .avatar-list-item {
         &:hover {
-          background: var(--dark-sidebar-light-8);
+          background: color-mix(in oklab, var(--dark-sidebar), white 8%);
         }
 
         .meta {
@@ -1257,8 +1257,8 @@ const props = defineProps<{
     }
 
     .exerpt {
-      background: var(--dark-sidebar-light-4);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       h5 {
         color: var(--primary);
@@ -1288,8 +1288,8 @@ const props = defineProps<{
         }
 
         .icon-wrap {
-          background: var(--dark-sidebar-light-3);
-          color: var(--light-text-light-2);
+          background: color-mix(in oklab, var(--dark-sidebar), white 3%);
+          color: color-mix(in oklab, var(--light-text), white 2%);
         }
       }
     }
@@ -1309,11 +1309,11 @@ const props = defineProps<{
     .icon-toolbar {
       .toolbar-icon {
         .inner-icon {
-          color: var(--light-text-dark-12);
+          color: color-mix(in oklab, var(--light-text), black 12%);
 
           &:hover,
           &:focus:not(.is-active) {
-            background: var(--dark-sidebar-light-3);
+            background: color-mix(in oklab, var(--dark-sidebar), white 3%);
           }
 
           &.is-active {
@@ -1340,8 +1340,8 @@ const props = defineProps<{
     .field {
       .control {
         .input {
-          background: var(--dark-sidebar-light-3);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 3%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .searcv-button {
@@ -1366,7 +1366,7 @@ const props = defineProps<{
       .right-icon {
         &.has-indicator {
           &::after {
-            border-color: var(--dark-sidebar-light-6);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
           }
         }
       }
@@ -1380,14 +1380,14 @@ const props = defineProps<{
 
     .img-container {
       .badge {
-        border-color: var(--dark-sidebar-light-6);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
       }
     }
 
     .actions {
       .action {
-        background: var(--dark-sidebar-light-2);
-        border: 1px solid var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
         color: var(--dark-dark-text);
 
         &:hover,
@@ -1404,7 +1404,7 @@ const props = defineProps<{
       .social-button {
         .inner-button {
           &:hover:not(.is-active) {
-            background: var(--dark-sidebar-light-2);
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%);
             color: var(--light-text);
           }
         }
@@ -1422,7 +1422,7 @@ const props = defineProps<{
       }
 
       td:hover {
-        background: var(--dark-sidebar-light-3);
+        background: color-mix(in oklab, var(--dark-sidebar), white 3%);
         color: var(--primary);
       }
     }
@@ -1436,8 +1436,8 @@ const props = defineProps<{
     .channels {
       .channel {
         .channel-icon {
-          background: var(--dark-sidebar-light-2);
-          border: 1px solid var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
     }

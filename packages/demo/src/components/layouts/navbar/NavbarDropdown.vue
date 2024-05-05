@@ -95,7 +95,7 @@ function onHidden() {
     transition: background-color 0.2s;
     font-family: var(--font);
     font-size: 0.9rem;
-    color: var(--light-text-dark-5);
+    color: color-mix(in oklab, var(--light-text), black 5%);
 
     &:focus,
     &:hover {

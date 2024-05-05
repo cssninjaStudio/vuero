@@ -37,9 +37,9 @@ export function useDemo8Bar() {
         },
       },
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
       ],
       dataLabels: {

@@ -276,7 +276,7 @@ const filteredData = computed(() => {
 
       .list-view-item-inner {
         > img {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .meta-left {
@@ -289,8 +289,8 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:nth-child(2) {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-8);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
                 color: var(--dark-dark-text);
                 transition:
                   color 0.3s,

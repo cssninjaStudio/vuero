@@ -37,7 +37,7 @@ const props = defineProps<{
     }
 
     h4 {
-      color: var(--light-text-dark-2);
+      color: color-mix(in oklab, var(--light-text), black 2%);
     }
 
     h3 {
@@ -107,7 +107,7 @@ const props = defineProps<{
       justify-content: space-between;
 
       h4 {
-        color: var(--light-text-dark-2);
+        color: color-mix(in oklab, var(--light-text), black 2%);
       }
     }
 

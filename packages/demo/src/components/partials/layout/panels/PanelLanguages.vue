@@ -326,7 +326,7 @@ watch(locale, () => {
               }
 
               .language-option-inner {
-                border-color: var(--dark-sidebar-light-12);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
                 background: var(--dark-sidebar);
 
                 .indicator {

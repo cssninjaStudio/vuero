@@ -24,7 +24,7 @@ export function useDemo1Line() {
           show: false,
         },
       },
-      colors: [themeColors.primary],
+      colors: [themeColors.lime],
       dataLabels: {
         enabled: false,
       },

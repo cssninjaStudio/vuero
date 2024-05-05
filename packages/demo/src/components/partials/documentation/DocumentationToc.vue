@@ -127,7 +127,7 @@ onMounted(() => {
 }
 
 ul {
-  border-inline-start: 1px solid var(--fade-grey-dark-6);
+  border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 6%);
 
   li {
     padding: 0.25rem 0;
@@ -192,7 +192,7 @@ a {
   }
 
   ul {
-    border-color: var(--dark-sidebar-light-22);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 22%);
   }
 
   a {

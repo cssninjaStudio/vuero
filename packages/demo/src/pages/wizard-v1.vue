@@ -107,7 +107,7 @@ useHead({
   margin: 0 auto;
   max-width: 306px;
   background: var(--white);
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   border-radius: 14px;
   transform: translateY(120px);
   transition: all 0.3s; // transition-all test
@@ -223,7 +223,7 @@ useHead({
             width: 30px;
             border-radius: var(--radius-rounded);
             background: var(--white);
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             z-index: 1;
             transition: all 0.3s; // transition-all test
 
@@ -306,7 +306,7 @@ useHead({
             height: 24px;
             width: 24px;
             border-radius: var(--radius-rounded);
-            background: var(--fade-grey-light-3);
+            background: color-mix(in oklab, var(--fade-grey), white 3%);
             opacity: 0;
             pointer-events: none;
             cursor: pointer;
@@ -425,7 +425,7 @@ useHead({
         .tool-card-inner {
           padding: 12px;
           background: var(--white);
-          border: 1px solid var(--fade-grey-dark-3);
+          border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           border-radius: 10px;
 
           .media-flex-center {
@@ -436,7 +436,7 @@ useHead({
                 align-items: center;
                 height: 28px;
                 width: 28px;
-                border: 1px solid var(--fade-grey-dark-3);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                 border-radius: var(--radius-rounded);
                 box-shadow: var(--light-box-shadow);
                 opacity: 0;
@@ -517,7 +517,7 @@ useHead({
             align-items: center;
             background: var(--white);
             padding: 12px;
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: 12px;
             margin-bottom: 12px;
             text-align: inset-inline-start;
@@ -617,7 +617,7 @@ useHead({
                 align-items: center;
                 height: 34px;
                 width: 34px;
-                border: 1px solid var(--fade-grey-dark-3);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                 box-shadow: var(--light-box-shadow);
                 background: var(--white);
                 padding: 0;
@@ -737,7 +737,7 @@ useHead({
                 width: 32px;
                 min-width: 32px;
                 border-radius: var(--radius-rounded);
-                color: var(--light-text-light-12);
+                color: color-mix(in oklab, var(--light-text), white 12%);
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -750,7 +750,7 @@ useHead({
 
                 &:hover,
                 &:focus:not(.is-active) {
-                  background: var(--fade-grey-light-3);
+                  background: color-mix(in oklab, var(--fade-grey), white 3%);
                   color: var(--light-text);
                 }
 
@@ -789,7 +789,7 @@ useHead({
             height: 120px;
             border-radius: 3px;
             padding: 8px;
-            border: 2px dashed var(--fade-grey-dark-4);
+            border: 2px dashed color-mix(in oklab, var(--fade-grey), black 4%);
             cursor: pointer;
             transition: all 0.3s; // transition-all test
 
@@ -927,7 +927,7 @@ useHead({
                 width: 32px;
                 min-width: 32px;
                 border-radius: var(--radius-rounded);
-                color: var(--light-text-light-12);
+                color: color-mix(in oklab, var(--light-text), white 12%);
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -940,7 +940,7 @@ useHead({
 
                 &:hover,
                 &:focus:not(.is-active) {
-                  background: var(--fade-grey-light-3);
+                  background: color-mix(in oklab, var(--fade-grey), white 3%);
                   color: var(--light-text);
                 }
 
@@ -1031,7 +1031,7 @@ useHead({
     .project-dates {
       background: var(--white);
       padding: 16px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1053,7 +1053,7 @@ useHead({
         .separator {
           height: 25px;
           width: 2px;
-          border-inline-end: 1px solid var(--fade-grey-dark-3);
+          border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           margin: 0 12px;
         }
 
@@ -1095,7 +1095,7 @@ useHead({
     .project-budget {
       background: var(--white);
       padding: 16px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1125,16 +1125,16 @@ useHead({
             height: 32px;
             width: 65px;
             min-width: 50px;
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: 12px;
             font-family: var(--font);
             font-size: 0.9rem;
-            color: var(--light-text-light-12);
+            color: color-mix(in oklab, var(--light-text), white 12%);
             margin: 0 8px;
             transition: all 0.3s; // transition-all test
 
             &:hover:not(.is-active) {
-              // background: var(--fade-grey-light-3);
+              // background: color-mix(in oklab, var(--fade-grey), white 3%);
               color: var(--light-text);
             }
 
@@ -1152,7 +1152,7 @@ useHead({
     .project-customer {
       background: var(--white);
       padding: 16px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1183,7 +1183,7 @@ useHead({
       .media-flex-center {
         .v-avatar {
           .avatar {
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           }
         }
       }
@@ -1204,7 +1204,7 @@ useHead({
 
         &:hover {
           background: var(--white);
-          border-color: var(--fade-grey-light-3);
+          border-color: color-mix(in oklab, var(--fade-grey), white 3%);
           box-shadow: var(--light-box-shadow);
 
           .learn-more-link {
@@ -1279,12 +1279,12 @@ useHead({
 
 .is-dark {
   .wizard-navigation {
-    background: var(--dark-sidebar-dark-2);
-    border-color: var(--dark-sidebar-light-12);
+    background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
     .navbar-item {
       &.is-wizard-title {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .title-wrap {
           color: var(--dark-dark-text);
@@ -1293,8 +1293,8 @@ useHead({
 
       &.is-dark-mode {
         .navbar-icon {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
     }
@@ -1302,19 +1302,19 @@ useHead({
     .wizard-dropdown,
     .user-dropdown {
       .dropdown-menu {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
   }
 
   .wizard-buttons {
-    background: var(--dark-sidebar-light-1);
-    border-color: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), white 1%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
     .button {
       &.is-light {
-        background: var(--dark-sidebar-light-4);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         color: var(--dark-dark-text);
 
         &:hover,
@@ -1330,14 +1330,14 @@ useHead({
     .step-content {
       .project-preview-wrapper {
         .project-preview-loader {
-          background: var(--dark-sidebar-light-10);
+          background: color-mix(in oklab, var(--dark-sidebar), white 10%);
         }
 
         .project-preview-header {
           .v-avatar {
             .edit-icon {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 6%);
             }
           }
         }
@@ -1351,8 +1351,8 @@ useHead({
             }
 
             .edit-icon {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-2);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
               .iconify {
                 color: var(--light-text);
@@ -1379,14 +1379,14 @@ useHead({
           }
 
           .tool-card-inner {
-            border-color: var(--dark-sidebar-light-12);
-            background: var(--dark-sidebar-light-6);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
             .media-flex-center {
               .flex-end {
                 .checkmark {
-                  border-color: var(--dark-sidebar-light-12);
-                  background: var(--dark-sidebar-light-2);
+                  border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 2%);
                   color: var(--primary);
                 }
               }
@@ -1399,15 +1399,15 @@ useHead({
         .project-team-body {
           .members-list {
             .invited-member {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
               .actions {
                 .permissions {
                   .permission-levels {
                     .permission-level {
                       .permission-level-inner {
-                        background: var(--dark-sidebar-light-18);
+                        background: color-mix(in oklab, var(--dark-sidebar), white 18%);
 
                         &.is-active {
                           background: var(--primary);
@@ -1429,7 +1429,7 @@ useHead({
               .uploader-action {
                 .inner-action {
                   &:hover {
-                    background: var(--dark-sidebar-light-14);
+                    background: color-mix(in oklab, var(--dark-sidebar), white 14%);
                   }
                 }
               }
@@ -1440,8 +1440,8 @@ useHead({
         .uploader-container {
           .upload-wrapper {
             .upload-box {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-2);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
               &:hover,
               &:focus {
@@ -1460,8 +1460,8 @@ useHead({
         .template-list {
           .template-list-item {
             .preview-box {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
               .list-item-meta {
                 .name {
@@ -1475,14 +1475,14 @@ useHead({
                 }
 
                 .progress {
-                  background: var(--dark-sidebar-light-2);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 2%);
                 }
               }
 
               .list-item-actions {
                 .list-item-action {
                   &:hover {
-                    background: var(--dark-sidebar-light-12);
+                    background: color-mix(in oklab, var(--dark-sidebar), white 12%);
                   }
                 }
               }
@@ -1504,8 +1504,8 @@ useHead({
 
           &:hover,
           &:focus {
-            background: var(--dark-sidebar-light-6);
-            border-color: var(--dark-sidebar-light-12);
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
           }
         }
       }
@@ -1516,7 +1516,7 @@ useHead({
             .filepond-profile-wrap {
               /* stylelint-disable-next-line selector-class-pattern */
               .filepond--drop-label {
-                background: var(--dark-sidebar-light-2);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
               }
             }
           }
@@ -1524,38 +1524,38 @@ useHead({
       }
 
       .project-customer {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .media-flex-center {
           .v-avatar {
             .avatar {
-              border-color: var(--dark-sidebar-light-12);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
             }
           }
         }
       }
 
       .project-dates {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .project-dates-inner {
           .separator {
-            border-color: var(--dark-sidebar-light-20);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
           }
         }
       }
 
       .project-budget {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .project-budget-inner {
           .budget-item {
             .budget-item-inner {
-              background: var(--dark-sidebar-light-4);
-              border-color: var(--dark-sidebar-light-12);
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               &.is-active {
                 border-color: var(--primary);

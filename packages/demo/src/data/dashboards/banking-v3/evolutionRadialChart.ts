@@ -7,7 +7,7 @@ export function useEvolutionRadialChart() {
       height: 220,
       type: 'radialBar',
     },
-    colors: [themeColors.accent, themeColors.orange, themeColors.orange],
+    colors: [themeColors.purple, themeColors.orange, themeColors.orange],
     title: {
       text: 'Bitcoin (BTC) Evolution',
       align: 'left',
@@ -19,13 +19,13 @@ export function useEvolutionRadialChart() {
             offsetY: 15,
             fontSize: '13px',
             fontFamily: '"Roboto Flex Variable", sans-serif',
-            color: themeColors.lightText,
+            color: themeColors.grey,
             formatter: function () {
               return ['(30 days)']
             },
           },
           value: {
-            color: themeColors.accent,
+            color: themeColors.purple,
             offsetY: -20,
             fontSize: '16px',
             fontFamily: '"Roboto Flex Variable", sans-serif',

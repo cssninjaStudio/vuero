@@ -43,12 +43,12 @@ const props = withDefaults(defineProps<VMessageProps>(), {
 <style lang="scss">
 .message {
   position: relative;
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   box-shadow: var(--light-box-shadow);
   padding-inline-end: 20px;
 
   &.is-primary {
-    border-color: var(--primary-light-24);
+    border-color: color-mix(in oklab, var(--primary), white 24%);
 
     .delete {
       &::before,
@@ -59,7 +59,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   }
 
   &.is-info {
-    border-color: var(--info-light-24);
+    border-color: color-mix(in oklab, var(--info), white 24%);
 
     .delete {
       &::before,
@@ -70,7 +70,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   }
 
   &.is-success {
-    border-color: var(--success-light-24);
+    border-color: color-mix(in oklab, var(--success), white 24%);
 
     .delete {
       &::before,
@@ -81,7 +81,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   }
 
   &.is-warning {
-    border-color: var(--warning-light-24);
+    border-color: color-mix(in oklab, var(--warning), white 24%);
 
     .delete {
       &::before,
@@ -92,7 +92,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   }
 
   &.is-danger {
-    border-color: var(--danger-light-24);
+    border-color: color-mix(in oklab, var(--danger), white 24%);
 
     .delete {
       &::before,
@@ -129,7 +129,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   .message {
     &:not(.is-primary, .is-info, .is-success, .is-warning, .is-danger) {
       background-color: var(--dark-sidebar);
-      border-color: var(--dark-sidebar-light-3);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 3%);
 
       .message-body {
         color: var(--light-text);

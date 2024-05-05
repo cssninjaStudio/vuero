@@ -170,7 +170,7 @@ const activeTab = ref<TabId>('overview')
 
 .is-dark {
   .lifestyle-dashboard-bg {
-    background: var(--dark-sidebar-light-6);
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
   }
 
   .lifestyle-dashboard-v1 {

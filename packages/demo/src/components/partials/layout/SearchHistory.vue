@@ -50,7 +50,7 @@
 
 .search-history-links {
   :deep(a) {
-    color: var(--light-text-dark-10);
+    color: color-mix(in oklab, var(--light-text), black 10%);
     display: block;
     transition: color 0.3s;
 
@@ -63,7 +63,7 @@
 
 .is-dark {
   .search-history {
-    background: var(--dark-sidebar-dark-4);
+    background: color-mix(in oklab, var(--dark-sidebar), black 4%);
   }
 }
 </style>

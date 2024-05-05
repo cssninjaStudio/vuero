@@ -323,14 +323,14 @@
 
 .is-dark {
   .chat-body {
-    background: var(--dark-sidebar-light-7);
+    background: color-mix(in oklab, var(--dark-sidebar), white 7%);
 
     .divider span {
-      color: var(--dark-sidebar-light-22) !important;
+      color: color-mix(in oklab, var(--dark-sidebar), white 22%) !important;
 
       &::before,
       &::after {
-        border-color: var(--dark-sidebar-light-15) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 15%) !important;
       }
     }
 
@@ -351,15 +351,15 @@
       &.self {
         .msg {
           .msg-inner {
-            background: var(--dark-sidebar-light-15) !important;
-            color: var(--primary-grey-dark-10) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 15%) !important;
+            color: color-mix(in oklab, var(--primary-grey), black 10%) !important;
           }
 
           time {
-            color: var(--primary-grey-dark-10) !important;
+            color: color-mix(in oklab, var(--primary-grey), black 10%) !important;
 
             .iconify {
-              color: var(--primary-grey-dark-10) !important;
+              color: color-mix(in oklab, var(--primary-grey), black 10%) !important;
             }
           }
         }
@@ -371,7 +371,7 @@
         border-radius: 10px;
 
         .link-body {
-          background: var(--dark-sidebar-light-5);
+          background: color-mix(in oklab, var(--dark-sidebar), white 5%);
           border-radius: 0 0 6px 6px;
 
           .link-title,
@@ -382,11 +382,11 @@
       }
 
       &.is-link {
-        background: var(--dark-sidebar-light-3);
+        background: color-mix(in oklab, var(--dark-sidebar), white 3%);
         border-radius: var(--radius-large);
 
         .icon-wrapper {
-          border-color: var(--dark-sidebar-light-5);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 5%);
           background: var(--primary);
         }
 

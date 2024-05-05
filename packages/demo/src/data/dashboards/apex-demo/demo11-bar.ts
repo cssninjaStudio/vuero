@@ -21,7 +21,7 @@ export function useDemo11Bar() {
           show: false,
         },
       },
-      colors: [themeColors.primary],
+      colors: [themeColors.lime],
       plotOptions: {
         bar: {
           horizontal: true,

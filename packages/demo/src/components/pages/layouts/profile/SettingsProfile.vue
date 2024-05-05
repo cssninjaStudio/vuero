@@ -235,7 +235,7 @@
         padding: 16px;
         margin: 8px;
         border-radius: 8px;
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         transition: all 0.3s; // transition-all test
         cursor: pointer;
 
@@ -282,7 +282,7 @@
           height: 18px;
           width: 18px;
           border-radius: var(--radius-rounded);
-          background: var(--fade-grey-light-3);
+          background: color-mix(in oklab, var(--fade-grey), white 3%);
           opacity: 0;
           pointer-events: none;
           transition: all 0.3s; // transition-all test
@@ -304,7 +304,7 @@
 
           .iconify {
             font-size: 2.7rem;
-            color: var(--light-text-light-12);
+            color: color-mix(in oklab, var(--light-text), white 12%);
             margin-bottom: 4px;
             transition: color 0.3s;
           }
@@ -342,8 +342,8 @@
     .profile-body {
       .settings-section {
         .settings-box {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           &:hover,
           &:focus {
@@ -369,7 +369,7 @@
           }
 
           .edit-icon {
-            background: var(--dark-sidebar-light-2);
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
             .iconify {
               color: var(--primary);
@@ -380,7 +380,7 @@
             background: none !important;
 
             .iconify {
-              color: var(--light-text-dark-20);
+              color: color-mix(in oklab, var(--light-text), black 20%);
 
               &.is-solid {
                 color: var(--primary);

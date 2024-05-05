@@ -197,13 +197,13 @@ const optionsSingle = [
 .card-grid-v2 {
   .card-grid-item {
     .card {
-      border: 1px solid var(--fade-grey-dark-4);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
       box-shadow: none;
       border-radius: var(--radius-large);
 
       .card-header {
         box-shadow: none;
-        border-bottom: 1px solid var(--fade-grey-dark-4);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
 
         .card-header-title {
           display: flex;
@@ -240,7 +240,7 @@ const optionsSingle = [
       }
 
       .card-content {
-        border-top: 1px solid var(--fade-grey-dark-4);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         padding: 1rem;
 
         .card-content-flex {
@@ -279,7 +279,7 @@ const optionsSingle = [
           transition: all 0.3s; // transition-all test
 
           &:hover {
-            background: var(--fade-grey-light-4);
+            background: color-mix(in oklab, var(--fade-grey), white 4%);
             color: var(--primary);
           }
         }
@@ -291,35 +291,35 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v2 {
     .card-grid-item {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .card {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .card-header {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .card-content {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .avatar-stack {
             .avatar {
-              border-color: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
             }
           }
         }
 
         .card-footer {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           a {
-            border-color: var(--dark-sidebar-light-12);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             &:hover,
             &:focus {
-              background: var(--dark-sidebar-light-2);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
               color: var(--primary);
             }
           }

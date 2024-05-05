@@ -15,7 +15,7 @@ export function useInterviewsChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.orange],
+    colors: [themeColors.purple, themeColors.info, themeColors.orange],
     title: {
       text: 'Interviews',
       align: 'left',

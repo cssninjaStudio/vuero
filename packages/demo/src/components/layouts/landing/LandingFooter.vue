@@ -92,7 +92,7 @@ const props = defineProps<{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--fade-grey-dark-4);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
 
     .head-text {
       h3 {
@@ -202,10 +202,10 @@ const props = defineProps<{
 .is-dark {
   .landing-page-wrapper {
     .vuero-footer {
-      background: var(--landing-xxx-light-8);
+      background: color-mix(in oklab, var(--landing-xxx), white 8%);
 
       .footer-head {
-        border-color: var(--landing-xxx-light-18);
+        border-color: color-mix(in oklab, var(--landing-xxx), white 18%);
 
         .head-text {
           h3 {

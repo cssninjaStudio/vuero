@@ -205,12 +205,12 @@ function loadLayers() {
     type: 'circle',
     source: 'places',
     paint: {
-      'circle-color': isDark ? themeColors.accent : themeColors.primary,
+      'circle-color': isDark ? themeColors.purple : themeColors.lime,
       'circle-radius': 6,
       'circle-stroke-width': 2,
       'circle-stroke-color': isDark
-        ? themeColors.accentLight
-        : themeColors.primaryMedium,
+        ? '#b8ccff'
+        : '#b4e4ce',
     },
   })
 
@@ -714,12 +714,12 @@ watch(
   .dashboard-map-wrapper {
     .dashboard-map-wrapper-inner {
       .content-section {
-        background: var(--dark-sidebar-dark-3);
+        background: color-mix(in oklab, var(--dark-sidebar), black 3%);
 
         .content-section-body {
           .map-box {
-            background: var(--dark-sidebar-light-3);
-            border-color: var(--dark-sidebar-light-10);
+            background: color-mix(in oklab, var(--dark-sidebar), white 3%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
             &.is-active {
               border-color: var(--primary) !important;
@@ -733,31 +733,31 @@ watch(
   .mapboxgl-popup {
     &.mapboxgl-popup-anchor-bottom {
       .mapboxgl-popup-tip {
-        border-top-color: var(--dark-sidebar-dark-3);
+        border-top-color: color-mix(in oklab, var(--dark-sidebar), black 3%);
       }
     }
 
     &.mapboxgl-popup-anchor-top {
       .mapboxgl-popup-tip {
-        border-bottom-color: var(--dark-sidebar-dark-3);
+        border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 3%);
       }
     }
 
     &.mapboxgl-popup-anchor-left {
       .mapboxgl-popup-tip {
-        border-inline-end-color: var(--dark-sidebar-dark-3);
+        border-inline-end-color: color-mix(in oklab, var(--dark-sidebar), black 3%);
       }
     }
 
     &.mapboxgl-popup-anchor-right {
       .mapboxgl-popup-tip {
-        border-inline-start-color: var(--dark-sidebar-dark-3);
+        border-inline-start-color: color-mix(in oklab, var(--dark-sidebar), black 3%);
       }
     }
 
     .mapboxgl-popup-content {
-      background: var(--dark-sidebar-dark-3);
-      border-color: var(--dark-sidebar-light-10);
+      background: color-mix(in oklab, var(--dark-sidebar), black 3%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
       .mapboxgl-popup-close-button {
         color: var(--dark-dark-text) !important;
@@ -768,30 +768,30 @@ watch(
   .mapboxgl-marker {
     .iconify {
       circle {
-        fill: var(--dark-sidebar-light-3) !important;
+        fill: color-mix(in oklab, var(--dark-sidebar), white 3%) !important;
       }
     }
   }
 
   .mapboxgl-ctrl-geocoder {
-    background: var(--dark-sidebar-dark-3);
-    border-color: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), black 3%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
     input {
       color: var(--white);
-      background: var(--dark-sidebar-dark-3);
+      background: color-mix(in oklab, var(--dark-sidebar), black 3%);
     }
 
     .suggestions-wrapper {
       .suggestions {
-        background: var(--dark-sidebar-dark-3);
-        border-color: var(--dark-sidebar-light-10);
+        background: color-mix(in oklab, var(--dark-sidebar), black 3%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
       }
     }
 
     .suggestions > .active > a,
     .suggestions > li > a:hover {
-      background: var(--dark-sidebar-dark-6);
+      background: color-mix(in oklab, var(--dark-sidebar), black 6%);
     }
 
     .mapboxgl-ctrl-geocoder--suggestion-title {

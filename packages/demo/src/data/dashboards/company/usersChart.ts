@@ -26,7 +26,7 @@ export function useUsersChart() {
         enabled: true,
       },
     },
-    colors: [themeColors.primary, themeColors.accent, themeColors.info],
+    colors: [themeColors.lime, themeColors.purple, themeColors.info],
     grid: {
       show: false,
       padding: {

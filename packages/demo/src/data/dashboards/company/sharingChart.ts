@@ -17,7 +17,7 @@ export function useSharingChart() {
         enabled: true,
       },
     },
-    colors: [themeColors.accent, themeColors.primary, themeColors.info],
+    colors: [themeColors.purple, themeColors.lime, themeColors.info],
     plotOptions: {
       bar: {
         columnWidth: '30px',

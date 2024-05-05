@@ -159,7 +159,7 @@ const localFlagSrc = computed(() => {
     top: 0;
     inset-inline-end: 0;
     z-index: -2;
-    background-color: var(--primary-dark-5);
+    background-color: color-mix(in oklab, var(--primary), black 5%);
     box-shadow: var(--primary-box-shadow);
     transition: all 0.3s ease;
   }
@@ -168,7 +168,7 @@ const localFlagSrc = computed(() => {
     width: 3.5em;
     height: 3.5em;
     border-radius: var(--radius-rounded);
-    background-color: var(--primary-light-3);
+    background-color: color-mix(in oklab, var(--primary), white 3%);
     box-shadow: var(--primary-box-shadow);
     color: var(--smoke-white);
     display: flex;
@@ -247,7 +247,7 @@ const localFlagSrc = computed(() => {
 .is-dark {
   .circular-menu {
     &::after {
-      background: var(--dark-sidebar-dark-2);
+      background: color-mix(in oklab, var(--dark-sidebar), black 2%);
       box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%) !important;
     }
 
@@ -258,7 +258,7 @@ const localFlagSrc = computed(() => {
     }
 
     .floating-btn {
-      background: var(--dark-sidebar-light-2);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
       box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%) !important;
     }
   }

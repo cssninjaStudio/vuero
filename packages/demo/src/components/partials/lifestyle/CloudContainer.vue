@@ -209,7 +209,7 @@
           font-size: 1.5rem;
           padding: 18px;
           border-radius: 0.75rem;
-          color: var(--dark-text-light-18);
+          color: color-mix(in oklab, var(--dark-text), white 18%);
 
           &:hover,
           &:focus {
@@ -272,7 +272,7 @@
       }
 
       &.size-3 {
-        color: var(--dark-text-light-25) !important;
+        color: color-mix(in oklab, var(--dark-text), white 25%) !important;
       }
 
       &.size-4 {

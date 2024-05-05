@@ -84,7 +84,7 @@ const props = withDefaults(
 
   .widget-content {
     display: flex;
-    border-bottom: 1px solid var(--fade-grey-dark-3);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     margin-bottom: 16px;
     padding-bottom: 16px;
 
@@ -153,7 +153,7 @@ const props = withDefaults(
     @include vuero-card--dark;
 
     .widget-content {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .right {
         h3 {

@@ -526,13 +526,13 @@ onMounted(async () => {
     display: flex;
     padding: 20px;
     background: var(--white);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     border-radius: var(--radius-large);
     margin-bottom: 1.5rem;
 
     .header-item {
       width: 25%;
-      border-inline-end: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       &:last-child {
         border-inline-end: none;
@@ -608,7 +608,7 @@ onMounted(async () => {
         display: flex;
         padding-top: 20px;
         margin-top: 20px;
-        border-top: 1px solid var(--fade-grey-dark-3);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         .company-stat {
           width: 33.3%;
@@ -649,7 +649,7 @@ onMounted(async () => {
         .revenue-stats {
           display: flex;
           padding-bottom: 20px;
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
           .revenue-stat {
             margin-inline-end: 30px;
@@ -694,7 +694,7 @@ onMounted(async () => {
           + .media-flex {
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 1px solid var(--fade-grey-dark-3);
+            border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           }
 
           .flex-meta {
@@ -702,7 +702,7 @@ onMounted(async () => {
               &:nth-child(2) {
                 font-size: 1rem;
                 margin: 4px 0;
-                color: var(--light-text-dark-20);
+                color: color-mix(in oklab, var(--light-text), black 20%);
                 max-width: 430px;
               }
 

@@ -898,8 +898,8 @@ const participants = [
       .project-features {
         display: flex;
         padding: 25px 0;
-        border-top: 1px solid var(--fade-grey-dark-3);
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         .project-feature {
           margin-inline-end: 20px;
@@ -950,7 +950,7 @@ const participants = [
           transition: all 0.3s; // transition-all test
 
           &:hover {
-            border-color: var(--fade-grey-dark-3);
+            border-color: color-mix(in oklab, var(--fade-grey), black 3%);
             box-shadow: var(--light-box-shadow);
           }
 
@@ -1025,11 +1025,11 @@ const participants = [
         padding: 1.5rem;
 
         &:nth-child(odd) {
-          border-inline-end: 1px solid var(--fade-grey-dark-3);
+          border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
 
         &.has-border-bottom {
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
       }
     }
@@ -1152,7 +1152,7 @@ const participants = [
         }
 
         .project-features {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .project-feature {
             .iconify {
@@ -1171,11 +1171,11 @@ const participants = [
           }
 
           .file-box {
-            background: var(--dark-sidebar-light-3);
+            background: color-mix(in oklab, var(--dark-sidebar), white 3%);
 
             &:hover,
             &:focus {
-              border-color: var(--dark-sidebar-light-10);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
             }
 
             .meta {
@@ -1201,7 +1201,7 @@ const participants = [
         @include vuero-card--dark;
 
         .column {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
 
@@ -1212,8 +1212,8 @@ const participants = [
           }
 
           .filter {
-            background: var(--dark-sidebar-light-1) !important;
-            border-color: var(--dark-sidebar-light-4) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
 
             > span {
               color: var(--dark-dark-text);

@@ -71,7 +71,7 @@ const currentTab = ref(props.activeTab)
       width: 32px;
       min-width: 32px;
       border-radius: var(--radius-rounded);
-      color: var(--light-text-light-12);
+      color: color-mix(in oklab, var(--light-text), white 12%);
       transition: all 0.3s; // transition-all test
 
       &.has-indicator {
@@ -117,7 +117,7 @@ const currentTab = ref(props.activeTab)
     width: 32px;
     min-width: 32px;
     border-radius: var(--radius-rounded);
-    color: var(--light-text-light-12);
+    color: color-mix(in oklab, var(--light-text), white 12%);
     transition: all 0.3s; // transition-all test
 
     .iconify {
@@ -139,7 +139,7 @@ const currentTab = ref(props.activeTab)
       .right-icon {
         &.has-indicator {
           &::after {
-            border-color: var(--dark-sidebar-light-6);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
           }
         }
       }

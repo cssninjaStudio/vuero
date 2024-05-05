@@ -20,9 +20,9 @@ export function useDemo19RadialBar() {
         },
       },
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
         themeColors.orange,
       ],

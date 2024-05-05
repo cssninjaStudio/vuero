@@ -35,7 +35,7 @@ export function useDemo4Area() {
         width: [2, 2, 2],
         curve: 'straight',
       },
-      colors: [themeColors.primary],
+      colors: [themeColors.lime],
       title: {
         text: 'Area Chart',
         align: 'left',

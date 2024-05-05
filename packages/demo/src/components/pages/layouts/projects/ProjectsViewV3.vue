@@ -545,7 +545,7 @@ const filterProjects = ref(0)
         align-items: center;
         padding: 20px;
         background: var(--white);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         border-radius: var(--radius-large);
 
         .stat-item {
@@ -625,7 +625,7 @@ const filterProjects = ref(0)
       align-items: center;
       padding: 20px;
       background: var(--white);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: 8px;
       transition: all 0.3s; // transition-all test
 
@@ -690,7 +690,7 @@ const filterProjects = ref(0)
         justify-content: space-between;
         padding: 26px;
         background: var(--white);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         border-radius: 8px;
         transition: all 0.3s; // transition-all test
 
@@ -783,8 +783,8 @@ const filterProjects = ref(0)
     .illustration-header {
       .header-stats {
         .stats-inner {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .stat-item {
             span {
@@ -797,8 +797,8 @@ const filterProjects = ref(0)
 
     .recent-projects {
       .project-box {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         h3 {
           color: var(--dark-dark-text);
@@ -813,8 +813,8 @@ const filterProjects = ref(0)
         }
 
         .filter {
-          background: var(--dark-sidebar-light-1) !important;
-          border-color: var(--dark-sidebar-light-4) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
 
           > span {
             color: var(--dark-dark-text);
@@ -824,8 +824,8 @@ const filterProjects = ref(0)
 
       .grid-body {
         .grid-item {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .item-title {
             h3 {
@@ -835,7 +835,7 @@ const filterProjects = ref(0)
 
           .v-avatar {
             img {
-              border-color: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
             }
           }
         }

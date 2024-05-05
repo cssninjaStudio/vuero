@@ -32,18 +32,18 @@
 .is-dark {
   .is-chat {
     border: none !important;
-    background: var(--dark-sidebar-light-3) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 3%) !important;
 
     .chat-loader {
-      background: var(--dark-sidebar-light-2);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
 
     #chat-input {
-      background: var(--dark-sidebar-light-2) !important;
-      color: var(--primary-grey-dark-10) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+      color: color-mix(in oklab, var(--primary-grey), black 10%) !important;
 
       &::placeholder {
-        color: var(--primary-grey-dark-15) !important;
+        color: color-mix(in oklab, var(--primary-grey), black 15%) !important;
       }
     }
   }

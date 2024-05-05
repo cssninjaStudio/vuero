@@ -129,8 +129,8 @@
 
 .is-dark {
   .mobile-main-sidebar {
-    background: var(--dark-sidebar-dark-6);
-    border-color: var(--dark-sidebar-light-1) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), black 6%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
 
     .inner {
       .icon-side-menu {

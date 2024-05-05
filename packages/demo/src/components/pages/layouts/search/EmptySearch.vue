@@ -139,7 +139,7 @@ const activeTab = ref<TabId>('all')
       .group-header {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid var(--fade-grey-dark-6);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 6%);
         padding: 0 0 12px;
         margin-bottom: 12px;
 
@@ -210,10 +210,10 @@ const activeTab = ref<TabId>('all')
         }
 
         .group-header {
-          border-color: var(--dark-sidebar-light-20);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
 
           .icon-wrap {
-            background: var(--dark-sidebar-light-2);
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%);
             border-color: var(--primary);
             color: var(--primary);
           }

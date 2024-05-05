@@ -104,8 +104,8 @@ const props = withDefaults(
 .is-dark {
   .list-widget {
     .go-icon {
-      background: var(--dark-sidebar-light-3);
-      border: 1px solid var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 3%);
+      border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 }

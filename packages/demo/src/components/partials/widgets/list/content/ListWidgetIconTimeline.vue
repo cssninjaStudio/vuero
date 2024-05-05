@@ -60,7 +60,7 @@ const { onceError } = useImageError()
         inset-inline-start: 18px;
         width: 1px;
         height: calc(100% - 36px);
-        border-inline-start: 1px solid var(--fade-grey-dark-3);
+        border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       }
 
       .timeline-icon {
@@ -71,7 +71,7 @@ const { onceError } = useImageError()
         justify-content: center;
         align-items: center;
         background: var(--white);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         border-radius: var(--radius-rounded);
         color: var(--light-text);
         box-shadow: var(--light-box-shadow);
@@ -83,7 +83,7 @@ const { onceError } = useImageError()
           inset-inline-start: 40px;
           width: 20px;
           height: 1px;
-          border-top: 1px solid var(--fade-grey-dark-3);
+          border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
 
         &.is-squared {
@@ -183,17 +183,17 @@ const { onceError } = useImageError()
     .icon-timeline {
       .timeline-item {
         &::after {
-          border-color: var(--dark-sidebar-light-12) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
 
         .timeline-icon:not(.is-primary, .is-info, .is-success, .is-orange, .is-yellow) {
-          background: var(--dark-sidebar-light-3) !important;
-          border-color: var(--dark-sidebar-light-12) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 3%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
 
         .timeline-icon {
           &::after {
-            border-color: var(--dark-sidebar-light-12) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
           }
 
           &.is-primary {

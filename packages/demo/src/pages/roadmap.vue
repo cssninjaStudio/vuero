@@ -592,7 +592,7 @@ useHead({
 
     a {
       font-family: var(--font);
-      color: var(--light-text-dark-8);
+      color: color-mix(in oklab, var(--light-text), black 8%);
       padding: 0 10px;
       transition: color 0.3s;
 

@@ -202,18 +202,18 @@ onClickOutside(target, () => (open.value = false))
     .dropdown-menu {
       .dropdown-content {
         background: var(--dark-sidebar) !important;
-        border-color: var(--dark-sidebar-light-8) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
 
         .dropdown-item {
           color: var(--light-text);
 
           &:hover {
-            background: var(--dark-sidebar-light-10) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
           }
         }
 
         .dropdown-divider {
-          background-color: var(--dark-sidebar-light-12);
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
     }

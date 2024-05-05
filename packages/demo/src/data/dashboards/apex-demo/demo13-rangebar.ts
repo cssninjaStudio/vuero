@@ -11,7 +11,7 @@ export function useDemo13RangeBar() {
           {
             x: 'Analysis',
             y: [new Date('2019-02-27').getTime(), new Date('2019-03-04').getTime()],
-            fillColor: themeColors.accent,
+            fillColor: themeColors.purple,
           },
           {
             x: 'Design',
@@ -21,7 +21,7 @@ export function useDemo13RangeBar() {
           {
             x: 'Coding',
             y: [new Date('2019-03-07').getTime(), new Date('2019-03-10').getTime()],
-            fillColor: themeColors.primary,
+            fillColor: themeColors.lime,
           },
           {
             x: 'Testing',
@@ -53,9 +53,9 @@ export function useDemo13RangeBar() {
         },
       },
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
         themeColors.orange,
       ],

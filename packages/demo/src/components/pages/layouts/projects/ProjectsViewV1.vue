@@ -367,7 +367,7 @@ const exampleColumns = {
 
       &:hover,
       &:focus {
-        border-color: var(--fade-grey-dark-6);
+        border-color: color-mix(in oklab, var(--fade-grey), black 6%);
         box-shadow: var(--light-box-shadow);
 
         .project-avatar {
@@ -424,7 +424,7 @@ const exampleColumns = {
       .header-item {
         width: 100%;
         border-inline-end: none;
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         padding: 16px 0;
 
         &:last-child {

@@ -24,6 +24,12 @@ use the `outlined` modifier prop to make an outlined button.
     <VButton color="danger" outlined>
       Button
     </VButton>
+    <VButton color="dark" outlined>
+      Button
+    </VButton>
+    <VButton outlined>
+      Button
+    </VButton>
   </VButtons>
 </template>
 ```
@@ -38,6 +44,12 @@ use the `outlined` modifier prop to make an outlined button.
   <VButton color="success" outlined> Button </VButton>
   <VButton color="warning" outlined> Button </VButton>
   <VButton color="danger" outlined> Button </VButton>
+  <VButton color="dark" outlined>
+    Button
+  </VButton>
+  <VButton outlined>
+    Button
+  </VButton>
 </VButtons>
 
 <!--/example-->

@@ -171,7 +171,7 @@ const filteredData = computed(() => {
         width: 100%;
         max-width: 180px;
         margin: 0 auto;
-        border: 1px solid var(--fade-grey-dark-4);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         border-radius: 8px;
         background: var(--white);
         box-shadow: var(--light-box-shadow);
@@ -202,8 +202,8 @@ const filteredData = computed(() => {
             }
 
             &:nth-child(2) {
-              border-inline-start: 1px solid var(--fade-grey-dark-4);
-              border-inline-end: 1px solid var(--fade-grey-dark-4);
+              border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
+              border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
 
               &.is-active ~ .icon-tabs-naver {
                 margin-inline-start: 33% !important;
@@ -290,7 +290,7 @@ const filteredData = computed(() => {
 
         &:hover,
         &:focus {
-          border-color: var(--fade-grey-dark-4);
+          border-color: color-mix(in oklab, var(--fade-grey), black 4%);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);
         }
@@ -306,12 +306,12 @@ const filteredData = computed(() => {
 
       .icon-tabs-wrapper {
         .icon-tabs {
-          background: var(--dark-sidebar-light-2);
-          border-color: var(--dark-sidebar-light-10);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
           .icon-tabs-inner {
             .tab-item {
-              border-color: var(--dark-sidebar-light-10);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
               &.is-active {
                 color: var(--primary);

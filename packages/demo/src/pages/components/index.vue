@@ -495,7 +495,7 @@ useHead({
       .hub-card {
         background-color: var(--white);
         border-radius: var(--radius-large);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
         margin: 10px;
@@ -548,7 +548,7 @@ useHead({
         }
 
         .hub-card-foot {
-          border-top: 1px dashed var(--fade-grey-dark-4);
+          border-top: 1px dashed color-mix(in oklab, var(--fade-grey), black 4%);
           border-top-width: 1.6px;
           padding: 18px 24px;
 
@@ -588,7 +588,7 @@ useHead({
     .hub-header {
       .v-avatar {
         .badge {
-          border-color: var(--dark-sidebar-light-6) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
       }
     }
@@ -596,11 +596,11 @@ useHead({
     .hub-body {
       .body-inner {
         .hub-card {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .hub-card-foot {
-            border-color: var(--muted-grey-dark-25);
+            border-color: color-mix(in oklab, var(--muted-grey), black 25%);
 
             a {
               color: var(--primary);

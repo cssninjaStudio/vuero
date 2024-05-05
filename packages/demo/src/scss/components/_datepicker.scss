@@ -65,7 +65,7 @@
 
 .vc-popover-content-wrapper {
   .vc-nav-popover-container {
-    background: var(--sidebar);
+    background: var(--dark);
 
     .vc-nav-container {
       padding: 0.75rem;
@@ -112,7 +112,7 @@
       .vc-nav-items {
         .vc-nav-item {
           color: var(--white);
-          background: var(--sidebar);
+          background: var(--dark);
           font-family: var(--font);
           font-weight: 400;
           font-size: 0.75rem;
@@ -155,11 +155,11 @@
 ========================================================================== */
 
 .is-dark {
-  --vc-border: var(--dark-sidebar-light-8) !important;
+  --vc-border: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
 
   .vc-popover-content {
     background: var(--dark-sidebar) !important;
-    border-color: var(--dark-sidebar-light-8) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
   }
 
   .vc-container {
@@ -181,7 +181,7 @@
 
     .vc-arrow {
       &:hover {
-        background: var(--dark-sidebar-light-4) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
       }
     }
   }
@@ -190,19 +190,19 @@
     .vc-highlight-base-start,
     .vc-highlight-base-middle,
     .vc-highlight-base-end {
-      background-color: var(--primary-light-1) !important;
+      background-color: color-mix(in oklab, var(--primary), white 1%) !important;
     }
 
     .vc-nav-popover-container {
-      background: var(--dark-sidebar-dark-4) !important;
-      border-color: var(--dark-sidebar-light-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
 
       .vc-nav-container {
         .vc-nav-header {
           .vc-nav-title,
           .vc-nav-arrow {
             &:hover {
-              background: var(--dark-sidebar-light-2) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
             }
           }
         }
@@ -210,10 +210,10 @@
         .vc-nav-items {
           .vc-nav-item {
             color: var(--white);
-            background: var(--dark-sidebar-dark-4) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
 
             &:not(.is-active):hover {
-              background: var(--dark-sidebar-light-2) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
             }
 
             &.is-active {
@@ -248,7 +248,7 @@
     }
 
     .vc-am-pm {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
 
       > button {
         color: var(--white) !important;
@@ -256,7 +256,7 @@
     }
 
     &.vc-attached {
-      border-color: var(--dark-sidebar-light-12) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
     }
   }
 }

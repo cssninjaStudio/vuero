@@ -162,7 +162,7 @@ const accept = async () => {
           .sender-message {
             text-align: inset-inline-start;
             padding: 20px;
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             max-width: 360px;
             margin: 0 auto;
             border-radius: var(--radius-large);

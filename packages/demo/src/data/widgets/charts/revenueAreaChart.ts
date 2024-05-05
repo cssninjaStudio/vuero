@@ -24,7 +24,7 @@ export function useRevenueAreaChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.primary],
+    colors: [themeColors.purple, themeColors.info, themeColors.lime],
     legend: {
       position: 'bottom',
       horizontalAlign: 'center',

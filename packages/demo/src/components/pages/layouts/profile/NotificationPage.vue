@@ -373,7 +373,7 @@
               width: 8px;
               min-width: 8px;
               border-radius: var(--radius-rounded);
-              background: var(--light-text-light-15);
+              background: color-mix(in oklab, var(--light-text), white 15%);
               margin: 0 16px 0 0;
             }
 
@@ -388,7 +388,7 @@
                 line-height: 1.2;
 
                 p {
-                  color: var(--light-text-dark-10);
+                  color: color-mix(in oklab, var(--light-text), black 10%);
 
                   span {
                     font-family: var(--font-alt);
@@ -458,7 +458,7 @@
       .timeline-container {
         .timeline-item {
           &::before {
-            background: var(--dark-sidebar-light-20);
+            background: color-mix(in oklab, var(--dark-sidebar), white 20%);
           }
 
           .content-wrap {
@@ -466,7 +466,7 @@
 
             .content-box {
               .status {
-                background: var(--dark-sidebar-light-20);
+                background: color-mix(in oklab, var(--dark-sidebar), white 20%);
               }
 
               .box-text {
@@ -489,7 +489,7 @@
 
       .load-more-wrap {
         .button {
-          background: var(--dark-sidebar-light-2) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
         }
       }
     }

@@ -1174,9 +1174,6 @@ const links = ref<SidebarItem[]>([
           type: 'divider',
         },
         {
-          type: 'divider',
-        },
-        {
           type: 'collapse',
           id: 'addons',
           label: 'Addons',

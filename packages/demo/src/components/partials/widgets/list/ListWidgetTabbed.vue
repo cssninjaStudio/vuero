@@ -96,7 +96,7 @@ const toggleTabs = () => {
         display: flex;
         min-width: 140px;
         height: 32px;
-        background: var(--widget-grey-dark-2);
+        background: color-mix(in oklab, var(--widget-grey), black 2%);
         font-family: var(--font);
         border-radius: 8px;
 
@@ -184,7 +184,7 @@ const toggleTabs = () => {
     &.tabbed-widget {
       .widget-head {
         .tabbed-controls {
-          background: var(--dark-sidebar-light-3);
+          background: color-mix(in oklab, var(--dark-sidebar), white 3%);
 
           .tabbed-naver {
             background: var(--primary);

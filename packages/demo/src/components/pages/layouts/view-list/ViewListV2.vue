@@ -416,8 +416,8 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:first-child {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-8);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
                 color: var(--dark-dark-text);
               }
             }

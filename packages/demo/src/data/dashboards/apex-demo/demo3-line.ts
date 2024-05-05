@@ -25,7 +25,7 @@ export function useDemo3Line() {
         width: [2, 2, 2],
         curve: 'stepline',
       },
-      colors: [themeColors.primary],
+      colors: [themeColors.lime],
       dataLabels: {
         enabled: false,
       },

@@ -34,7 +34,7 @@ export function useDemo2Line() {
           show: false,
         },
       },
-      colors: [themeColors.accent, themeColors.info, themeColors.primary],
+      colors: [themeColors.purple, themeColors.info, themeColors.lime],
       dataLabels: {
         enabled: false,
       },

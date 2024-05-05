@@ -112,7 +112,7 @@ const selectedProject = ref(projects[1])
 
         &:hover,
         &:focus {
-          background: var(--fade-grey-light-4);
+          background: color-mix(in oklab, var(--fade-grey), white 4%);
         }
 
         .meta {

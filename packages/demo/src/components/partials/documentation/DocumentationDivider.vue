@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<DocumentationDividerProps>(), {})
 .is-dark {
   .is-divider {
     &::after {
-      background: var(--dark-sidebar-light-10);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
     }
   }
 }

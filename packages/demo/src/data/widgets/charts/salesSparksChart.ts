@@ -33,7 +33,7 @@ export function useSalesSparksCharts() {
         enabled: true,
       },
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     stroke: {
       width: [2],
       curve: 'straight',
@@ -63,7 +63,7 @@ export function useSalesSparksCharts() {
       style: {
         fontSize: '24px',
         cssClass: 'apexcharts-yaxis-title',
-        color: themeColors.lightText,
+        color: themeColors.grey,
       },
     },
     subtitle: {
@@ -117,7 +117,7 @@ export function useSalesSparksCharts() {
       style: {
         fontSize: '24px',
         cssClass: 'apexcharts-yaxis-title',
-        color: themeColors.lightText,
+        color: themeColors.grey,
       },
     },
     subtitle: {
@@ -141,7 +141,7 @@ export function useSalesSparksCharts() {
         enabled: true,
       },
     },
-    colors: [themeColors.accent],
+    colors: [themeColors.purple],
     stroke: {
       width: [2],
       curve: 'straight',
@@ -171,7 +171,7 @@ export function useSalesSparksCharts() {
       style: {
         fontSize: '24px',
         cssClass: 'apexcharts-yaxis-title',
-        color: themeColors.lightText,
+        color: themeColors.grey,
       },
     },
     subtitle: {
@@ -225,7 +225,7 @@ export function useSalesSparksCharts() {
       style: {
         fontSize: '24px',
         cssClass: 'apexcharts-yaxis-title',
-        color: themeColors.lightText,
+        color: themeColors.grey,
       },
     },
     subtitle: {

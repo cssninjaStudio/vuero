@@ -165,7 +165,7 @@ const props = withDefaults(defineProps<{
         border-radius: 0;
 
         a {
-          color: var(--primary-dark-14);
+          color: color-mix(in oklab, var(--primary), black 14%);
 
           .iconify {
             opacity: 1;
@@ -175,7 +175,7 @@ const props = withDefaults(defineProps<{
       }
 
       .router-link-exact-active {
-        color: var(--primary-dark-14);
+        color: color-mix(in oklab, var(--primary), black 14%);
 
         .iconify {
           opacity: 1;
@@ -186,7 +186,7 @@ const props = withDefaults(defineProps<{
       a {
         display: flex;
         align-items: center;
-        color: var(--light-text-light-5);
+        color: color-mix(in oklab, var(--light-text), white 5%);
         gap: 0.225rem;
 
         span {
@@ -240,6 +240,6 @@ const props = withDefaults(defineProps<{
 }
 
 .is-dark .navbar-subnavbar-inner {
-  background: var(--dark-sidebar-dark-2);
+  background: color-mix(in oklab, var(--dark-sidebar), black 2%);
 }
 </style>

@@ -64,9 +64,9 @@ export function useDemo14Bubble() {
         },
       },
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
         themeColors.orange,
       ],

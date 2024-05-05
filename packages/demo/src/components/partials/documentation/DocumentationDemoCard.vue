@@ -84,7 +84,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
     justify-content: center;
     align-items: center;
     border-radius: var(--radius-rounded);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     box-shadow: var(--light-box-shadow);
     transition: all 0.3s; // transition-all test
 
@@ -95,7 +95,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
     }
 
     &.is-active {
-      border-color: var(--fade-grey-dark-6);
+      border-color: color-mix(in oklab, var(--fade-grey), black 6%);
       transform: rotate(calc(var(--transform-direction) * 180deg));
 
       .iconify {
@@ -186,7 +186,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 
         &:hover,
         &:focus {
-          background-color: var(--fade-grey-light-5);
+          background-color: color-mix(in oklab, var(--fade-grey), white 5%);
 
           .lnil,
           .lnir,
@@ -365,7 +365,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
       .code-trigger,
       .report-issue,
       .code-edit {
-        border-color: var(--dark-sidebar-light-14);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 14%);
 
         &:hover,
         &:focus {
@@ -375,8 +375,8 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         }
 
         &.is-active {
-          border-color: var(--dark-sidebar-light-16);
-          background: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 16%);
+          background: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .iconify {
             color: var(--primary);
@@ -387,7 +387,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 
     .demo-icon-list {
       li:hover {
-        background-color: var(--dark-sidebar-light-10) !important;
+        background-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
 
         .lnil,
         .lnir,
@@ -407,7 +407,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         td {
           .is-array {
             code {
-              color: var(--primary-grey-light-10);
+              color: color-mix(in oklab, var(--primary-grey), white 10%);
             }
           }
         }

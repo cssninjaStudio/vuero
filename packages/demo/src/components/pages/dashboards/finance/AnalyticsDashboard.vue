@@ -527,14 +527,14 @@ const { optionsCircle } = useGrowthRadialChart()
         margin-top: auto;
         display: flex;
         padding-top: 20px;
-        border-top: 1px solid var(--fade-grey-dark-3);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         .radial-stat {
           width: 50%;
           text-align: center;
 
           &:first-child {
-            border-inline-end: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           }
 
           span {

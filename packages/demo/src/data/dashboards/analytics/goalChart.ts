@@ -7,7 +7,7 @@ export function useGoalCharts() {
       type: 'radialBar',
       offsetY: -10,
     },
-    colors: [themeColors.accent, themeColors.primary],
+    colors: [themeColors.purple, themeColors.lime],
     plotOptions: {
       radialBar: {
         startAngle: -135,
@@ -24,7 +24,7 @@ export function useGoalCharts() {
           value: {
             show: true,
             fontWeight: 600,
-            color: themeColors.lightText,
+            color: themeColors.grey,
             fontSize: '16px',
             offsetY: -5,
           },
@@ -32,7 +32,7 @@ export function useGoalCharts() {
             show: true,
             fontSize: '14px',
             fontWeight: 500,
-            color: themeColors.lightText,
+            color: themeColors.grey,
           },
         },
         hollow: {

@@ -128,7 +128,7 @@
       .separator {
         height: 38px;
         width: 2px;
-        border-inline-end: 1px solid var(--fade-grey-dark-4);
+        border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         margin: 0 20px 0 16px;
       }
     }
@@ -211,7 +211,7 @@
           &:hover,
           &:focus,
           &.router-link-exact-active {
-            background: var(--widget-grey-dark-2);
+            background: color-mix(in oklab, var(--widget-grey), black 2%);
             color: var(--dark-text);
             box-shadow: none;
           }
@@ -254,8 +254,8 @@
 .is-dark {
   .navbar-navbar-clean {
     &:not(.is-colored) {
-      background: var(--dark-sidebar-dark-2);
-      border-color: var(--dark-sidebar-light-1);
+      background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 1%);
 
       &.is-transparent {
         background: transparent;
@@ -264,8 +264,8 @@
 
         &.is-solid,
         &.is-scrolled {
-          background: var(--dark-sidebar-dark-2);
-          border-color: var(--dark-sidebar-light-1);
+          background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 1%);
         }
 
         &:not(.is-scrolled) {
@@ -280,8 +280,8 @@
                 }
 
                 .button:hover {
-                  background: var(--dark-sidebar-dark-2) !important;
-                  border-color: var(--dark-sidebar-dark-2) !important;
+                  background: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
+                  border-color: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
                 }
               }
             }
@@ -293,7 +293,7 @@
     .navbar-navbar-inner {
       .left {
         .separator {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
 
@@ -303,7 +303,7 @@
 
           &:hover,
           &:focus {
-            background: var(--landing-yyy-dark-12);
+            background: color-mix(in oklab, var(--landing-yyy), black 12%);
           }
 
           > .iconify {
@@ -320,13 +320,13 @@
         .left,
         .center {
           .button {
-            background: var(--dark-sidebar-dark-2) !important;
-            border-color: var(--dark-sidebar-dark-2) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
 
             &:hover,
             &:focus {
-              background: var(--dark-sidebar-light-4) !important;
-              border-color: var(--dark-sidebar-light-4) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
               color: var(--white) !important;
             }
           }

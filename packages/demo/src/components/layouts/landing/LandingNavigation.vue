@@ -72,7 +72,7 @@ watchEffect(() => {
             height: 64px;
             width: 64px;
             background: var(--white);
-            border-color: var(--fade-grey-dark-3);
+            border-color: color-mix(in oklab, var(--fade-grey), black 3%);
           }
         }
       }
@@ -180,22 +180,22 @@ watchEffect(() => {
 .is-dark {
   .navbar {
     &:not(.is-docked) {
-      background: var(--landing-xxx-light-8);
-      border-color: var(--landing-xxx-light-14);
+      background: color-mix(in oklab, var(--landing-xxx), white 8%);
+      border-color: color-mix(in oklab, var(--landing-xxx), white 14%);
     }
 
     &.is-docked {
       .navbar-brand {
         .brand-icon {
-          background: var(--landing-yyy-light-8) !important;
-          border-color: var(--landing-yyy-light-18) !important;
+          background: color-mix(in oklab, var(--landing-yyy), white 8%) !important;
+          border-color: color-mix(in oklab, var(--landing-yyy), white 18%) !important;
         }
       }
     }
 
     &.is-solid {
-      background: var(--landing-xxx-light-8) !important;
-      border-color: var(--landing-xxx-light-14) !important;
+      background: color-mix(in oklab, var(--landing-xxx), white 8%) !important;
+      border-color: color-mix(in oklab, var(--landing-xxx), white 14%) !important;
 
       .navbar-brand {
         .brand-icon {
@@ -206,8 +206,8 @@ watchEffect(() => {
 
       .navbar-menu {
         &.is-active {
-          background: var(--landing-xxx-light-12);
-          border-color: var(--landing-xxx-light-14);
+          background: color-mix(in oklab, var(--landing-xxx), white 12%);
+          border-color: color-mix(in oklab, var(--landing-xxx), white 14%);
         }
       }
     }

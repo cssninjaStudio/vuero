@@ -1079,7 +1079,7 @@ const validateStep = async () => {
         padding: 0.75rem;
         border-radius: 0.5rem;
         border: 1px solid var(--border);
-        background: var(--widget-grey-dark-3);
+        background: color-mix(in oklab, var(--widget-grey), black 3%);
 
         .fieldset-separator {
           margin: 1.5rem 0;
@@ -1127,7 +1127,7 @@ const validateStep = async () => {
         width: 100%;
         border: 2px dashed var(--border);
         border-radius: 0.65rem;
-        background: var(--widget-grey-dark-3);
+        background: color-mix(in oklab, var(--widget-grey), black 3%);
         display: flex;
         align-items: center;
         padding-inline-start: calc(0.75em - 1px);
@@ -1358,7 +1358,7 @@ const validateStep = async () => {
 
               &:hover,
               &:focus {
-                background: var(--widget-grey-dark-1);
+                background: color-mix(in oklab, var(--widget-grey), black 1%);
               }
 
               .iconify {
@@ -1532,8 +1532,8 @@ const validateStep = async () => {
         }
 
         .input-button {
-          background-color: var(--dark-sidebar-light-2) !important;
-          border-color: var(--dark-sidebar-light-12) !important;
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
           color: var(--dark-dark-text);
 
           &:hover,
@@ -1544,12 +1544,12 @@ const validateStep = async () => {
         }
 
         .fieldset {
-          background: var(--dark-sidebar-dark-2);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .fieldset-separator {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .flex-label h4 {
@@ -1579,8 +1579,8 @@ const validateStep = async () => {
             }
 
             .option-inner {
-              background-color: var(--dark-sidebar-light-2) !important;
-              border-color: var(--dark-sidebar-light-12) !important;
+              background-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
               h4 {
                 color: var(--dark-dark-text);
@@ -1590,8 +1590,8 @@ const validateStep = async () => {
         }
 
         .validation-box {
-          background-color: var(--dark-sidebar-light-2) !important;
-          border-color: var(--dark-sidebar-light-12) !important;
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
           .box-content h3 {
             color: var(--dark-dark-text);
@@ -1600,8 +1600,8 @@ const validateStep = async () => {
 
         .form-section-output {
           .output {
-            background-color: var(--dark-sidebar-light-2) !important;
-            border-color: var(--dark-sidebar-light-12) !important;
+            background-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
             color: var(--dark-dark-text);
 
             > span {
@@ -1611,7 +1611,7 @@ const validateStep = async () => {
             .action {
               button {
                 &:hover {
-                  background: var(--dark-sidebar-light-5);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 5%);
                 }
 
                 .iconify {
@@ -1635,17 +1635,17 @@ const validateStep = async () => {
         .steps-segment {
           &.is-active {
             ~ .steps-segment::after {
-              background: var(--dark-sidebar-dark-5);
+              background: color-mix(in oklab, var(--dark-sidebar), black 5%);
             }
 
             ~ .steps-segment {
               .steps-marker:not(.is-hollow) {
-                background: var(--dark-sidebar-dark-5);
+                background: color-mix(in oklab, var(--dark-sidebar), black 5%);
               }
             }
 
             &::after {
-              background: var(--dark-sidebar-dark-5);
+              background: color-mix(in oklab, var(--dark-sidebar), black 5%);
             }
 
             .steps-content {

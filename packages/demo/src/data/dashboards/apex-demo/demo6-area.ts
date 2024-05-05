@@ -99,7 +99,7 @@ export function useDemo6Area() {
           formatter: toDate('DD MMM YYYY'),
         },
       },
-      colors: [themeColors.accent, themeColors.info, themeColors.primary],
+      colors: [themeColors.purple, themeColors.info, themeColors.lime],
       title: {
         text: 'Multiple Areas',
         align: 'left',

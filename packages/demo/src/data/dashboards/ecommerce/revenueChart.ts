@@ -17,7 +17,7 @@ export function useRevenueChart() {
         show: false,
       },
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     dataLabels: {
       enabled: false,
     },

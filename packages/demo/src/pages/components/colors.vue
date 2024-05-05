@@ -6,6 +6,45 @@ useVueroContext({
 useHead({
   title: 'Colors - Elements - Vuero',
 })
+
+const bulmaColors = [
+  'primary',
+  'secondary',
+  'danger',
+  'success',
+  'info',
+  'warning',
+  'dark',
+  'link',
+]
+
+const additionalColors = [
+  'purple',
+  'blue',
+  'red',
+  'orange',
+  'yellow',
+  'pink',
+  'green',
+  'lime',
+]
+
+const layoutColors = [
+  'dark-sidebar',
+  'body-color',
+  'background-grey',
+  // 'medium-grey',
+  // 'light-grey',
+  // 'primary-grey',
+  // 'muted-grey',
+  'fade-grey',
+  // 'widget-grey',
+  // 'smoke-white',
+  'white',
+  // 'border',
+  // 'placeholder',
+  'light-text',
+]
 </script>
 
 <template>
@@ -37,63 +76,35 @@ useHead({
         <ColorsDocumentation />
 
         <div class="columns is-multiline">
-          <div class="column is-4">
-            <DocumentationColor color="primary" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="secondary" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="dark" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="success" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="warning" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="danger" />
+          <div
+            v-for="color in bulmaColors"
+            :key="color"
+            class="column is-4"
+          >
+            <DocumentationColor :color />
           </div>
         </div>
 
         <ThemeDocumentation />
+
         <div class="columns is-multiline">
-          <div class="column is-4">
-            <DocumentationColor color="purple" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="blue" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="light-blue" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="red" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="orange" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="yellow" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="pink" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="green" />
+          <div
+            v-for="color in layoutColors"
+            :key="color"
+            class="column is-4"
+          >
+            <DocumentationColor :color />
           </div>
         </div>
+
         <ThemingDocumentation />
         <div class="columns is-multiline">
-          <div class="column is-4">
-            <DocumentationColor color="primary-grey" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="placeholder" />
-          </div>
-          <div class="column is-4">
-            <DocumentationColor color="smoke-white" />
+          <div
+            v-for="color in additionalColors"
+            :key="color"
+            class="column is-4"
+          >
+            <DocumentationColor :color />
           </div>
         </div>
       </div>

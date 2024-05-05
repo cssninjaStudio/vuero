@@ -139,12 +139,12 @@
 .is-dark {
   .auth-wrapper-inner {
     .hero-banner {
-      background: var(--dark-sidebar-light-4);
+      background: color-mix(in oklab, var(--dark-sidebar), white 4%);
     }
 
     .hero {
       &.is-white {
-        background: var(--dark-sidebar-dark-4);
+        background: color-mix(in oklab, var(--dark-sidebar), black 4%);
       }
 
       .hero-body {
@@ -254,7 +254,7 @@
 
       .form-card {
         background: var(--white);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         border-radius: 10px;
         padding: 50px;
         margin-bottom: 16px;
@@ -270,7 +270,7 @@
 .is-dark {
   .auth-wrapper-inner {
     &.is-single {
-      background: var(--dark-sidebar-light-4);
+      background: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
       .single-form-wrap {
         .inner-wrap {
@@ -285,8 +285,8 @@
           }
 
           .form-card {
-            background: var(--dark-sidebar-dark-4);
-            border-color: var(--dark-sidebar-light-1);
+            background: color-mix(in oklab, var(--dark-sidebar), black 4%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 1%);
           }
         }
       }

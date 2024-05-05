@@ -404,22 +404,22 @@ const filteredData = computed(() => {
 .is-dark {
   .datatable-wrapper {
     .datatable-container {
-      border-color: var(--dark-sidebar-light-12);
-      background: var(--dark-sidebar-light-6);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
     }
   }
 
   .datatable-table {
-    border-color: var(--dark-sidebar-light-12);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
     th,
     td {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
     }
 
     .drinks-icon {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 }

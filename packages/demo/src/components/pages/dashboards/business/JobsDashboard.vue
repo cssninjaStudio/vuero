@@ -388,8 +388,8 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 }
 
 .is-dark {
-  --header-bg-color: var(--dark-sidebar-light-2);
-  --search-border-color: var(--dark-sidebar-light-8);
+  --header-bg-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+  --search-border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
   --input-color: var(--white);
 }
 
@@ -673,7 +673,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 
       .job-time {
         .job-number {
-          background: var(--dark-sidebar-light-2);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
         }
       }
     }

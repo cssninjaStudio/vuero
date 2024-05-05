@@ -60,11 +60,11 @@ export function useDemo10RangeBar() {
         },
       },
       colors: [
-        themeColors.accent,
-        themeColors.primary,
+        themeColors.purple,
+        themeColors.lime,
         themeColors.orange,
         themeColors.purple,
-        themeColors.primary,
+        themeColors.lime,
       ],
       title: {
         text: 'Range Column',

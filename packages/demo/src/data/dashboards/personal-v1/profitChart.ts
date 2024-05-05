@@ -72,7 +72,7 @@ export function useProfitChart() {
         },
       },
     },
-    colors: [themeColors.primary, themeColors.secondary, themeColors.orange],
+    colors: [themeColors.lime, themeColors.secondary, themeColors.orange],
     title: {
       text: 'Profit Evolution',
       align: 'left',

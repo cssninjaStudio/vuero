@@ -476,7 +476,7 @@ const activeTab = ref<TabId>('team')
             height: 34px;
             width: 34px;
             background: var(--white);
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: var(--radius-rounded);
             transition: all 0.3s; // transition-all test
 
@@ -543,7 +543,7 @@ const activeTab = ref<TabId>('team')
               height: 34px;
               width: 34px;
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               border-radius: var(--radius-rounded);
               transition:
                 color 0.3s,
@@ -606,7 +606,7 @@ const activeTab = ref<TabId>('team')
               inset-inline-start: 18px;
               width: 1px;
               height: calc(100% - 36px);
-              border-inline-start: 1px solid var(--fade-grey-dark-3);
+              border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             }
 
             .timeline-icon {
@@ -617,7 +617,7 @@ const activeTab = ref<TabId>('team')
               justify-content: center;
               align-items: center;
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               border-radius: var(--radius-rounded);
               color: var(--light-text);
               box-shadow: var(--light-box-shadow);
@@ -629,7 +629,7 @@ const activeTab = ref<TabId>('team')
                 inset-inline-start: 40px;
                 width: 20px;
                 height: 1px;
-                border-top: 1px solid var(--fade-grey-dark-3);
+                border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               }
 
               img {
@@ -686,8 +686,8 @@ const activeTab = ref<TabId>('team')
         .project-card {
           @include vuero-card--dark;
 
-          background: var(--dark-sidebar-light-2) !important;
-          border-color: var(--dark-sidebar-light-8) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
         }
 
         .team-card,
@@ -701,8 +701,8 @@ const activeTab = ref<TabId>('team')
           }
 
           .link {
-            background: var(--dark-sidebar-light-6) !important;
-            border-color: var(--dark-sidebar-light-12) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
             &:hover,
             &:focus {
@@ -718,15 +718,15 @@ const activeTab = ref<TabId>('team')
         .icon-timeline {
           .timeline-item {
             &::after {
-              border-color: var(--dark-sidebar-light-12) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
             }
 
             .timeline-icon {
-              background: var(--dark-sidebar-light-6) !important;
-              border-color: var(--dark-sidebar-light-12) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
               &::after {
-                border-color: var(--dark-sidebar-light-12) !important;
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
               }
             }
           }

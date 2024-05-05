@@ -59,7 +59,7 @@
   .projects-toolbar {
     .avatar-stack {
       .avatar {
-        border-color: var(--dark-sidebar-light-3);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 3%);
       }
     }
   }

@@ -17,7 +17,7 @@ export function useTeamGaugeChart() {
       },
     },
     colors: [
-      themeColors.accent,
+      themeColors.purple,
       themeColors.secondary,
       themeColors.orange,
       themeColors.purple,

@@ -87,7 +87,7 @@ export function useDemo7Bar() {
           formatter: asPercent,
         },
       },
-      colors: [themeColors.primary, themeColors.secondary, themeColors.orange],
+      colors: [themeColors.lime, themeColors.secondary, themeColors.orange],
       title: {
         text: 'Bar Chart',
         align: 'left',

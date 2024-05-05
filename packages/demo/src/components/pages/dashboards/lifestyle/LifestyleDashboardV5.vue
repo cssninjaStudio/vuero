@@ -469,7 +469,7 @@ import {
                     display: block;
                     font-size: 0.82rem;
                     font-weight: 500;
-                    color: var(--smoke-white-dark-8);
+                    color: color-mix(in oklab, var(--smoke-white), black 8%);
                     transition: color 0.3s;
 
                     &.is-hoverable:hover {
@@ -481,7 +481,7 @@ import {
                     padding: 0 10px;
                     font-size: 0.8rem;
 
-                    // color: var(--smoke-white-dark-10);
+                    // color: color-mix(in oklab, var(--smoke-white), black 10%);
                     opacity: 0.6;
                     text-align: center;
                     color: var(--smoke-white);
@@ -518,7 +518,7 @@ import {
 
             .avatar {
               &.is-fake {
-                background: var(--dark-sidebar-light-2);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
               }
             }
           }

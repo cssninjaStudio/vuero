@@ -557,7 +557,7 @@ const userStack = userData.userStack as VAvatarProps[]
   }
 
   .calendar tbody td:hover {
-    background: var(--fade-grey-light-3);
+    background: color-mix(in oklab, var(--fade-grey), white 3%);
     color: var(--primary);
   }
 
@@ -585,7 +585,7 @@ const userStack = userData.userStack as VAvatarProps[]
       }
 
       td:hover {
-        background: var(--dark-sidebar-light-3);
+        background: color-mix(in oklab, var(--dark-sidebar), white 3%);
         color: var(--primary);
       }
     }

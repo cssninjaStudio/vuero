@@ -19,7 +19,7 @@ export function useIncomeHistoryChart() {
         show: false,
       },
     },
-    colors: [themeColors.primary, themeColors.info, themeColors.orange],
+    colors: [themeColors.lime, themeColors.info, themeColors.orange],
     title: {
       text: 'History',
       align: 'left',

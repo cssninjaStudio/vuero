@@ -65,7 +65,7 @@ label[for] {
   }
 
   &:focus {
-    border-color: var(--fade-grey-dark-4);
+    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
     box-shadow: var(--light-box-shadow);
 
     &.is-primary-focus {
@@ -98,7 +98,7 @@ label[for] {
   transition: all 0.3s; // transition-all test
 
   &:focus {
-    border-color: var(--fade-grey-dark-4);
+    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
     box-shadow: var(--light-box-shadow);
 
     &.is-primary-focus {
@@ -137,17 +137,17 @@ label[for] {
 .is-dark {
   .input,
   .textarea {
-    background-color: var(--dark-sidebar-light-2);
-    border-color: var(--dark-sidebar-light-4);
+    background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
     color: var(--dark-dark-text);
 
     &:hover,
     &:focus {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     &:focus {
-      border-color: var(--dark-sidebar-light-8);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
 
       + .form-icon .iconify {
         color: var(--primary) !important;
@@ -155,7 +155,7 @@ label[for] {
     }
 
     &::placeholder {
-      color: var(--primary-grey-dark-30) !important;
+      color: color-mix(in oklab, var(--primary-grey), black 30%) !important;
     }
 
     &.is-primary-focus {
@@ -274,7 +274,7 @@ label[for] {
 }
 
 .select:not(.is-multiple, .is-loading)::after {
-  border-color: var(--muted-grey-light-14);
+  border-color: color-mix(in oklab, var(--muted-grey), white 14%);
   border-width: 1.4px;
 }
 
@@ -314,7 +314,7 @@ select {
 
   &:focus {
     box-shadow: none !important;
-    border-color: var(--fade-grey-dark-6) !important;
+    border-color: color-mix(in oklab, var(--fade-grey), black 6%) !important;
   }
 }
 
@@ -407,7 +407,7 @@ select {
       border-end-start-radius: 0;
       border-end-end-radius: 0;
       border-bottom: none;
-      border-color: var(--fade-grey-dark-2) !important;
+      border-color: color-mix(in oklab, var(--fade-grey), black 2%) !important;
       box-shadow: var(--light-box-shadow);
     }
 
@@ -419,7 +419,7 @@ select {
       padding: 12px 8px;
       background: var(--white);
       border-radius: 0 0 4px 4px;
-      border: 1px solid var(--fade-grey-dark-2);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 2%);
       border-top: none;
       box-shadow: var(--light-box-shadow);
     }
@@ -608,7 +608,7 @@ select {
     overflow-y: auto;
     background: var(--white);
     opacity: 0;
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     border-radius: var(--radius);
     pointer-events: none;
     transform: translateY(5px);
@@ -663,7 +663,7 @@ select {
       }
 
       &:hover {
-        background: var(--fade-grey-light-4);
+        background: color-mix(in oklab, var(--fade-grey), white 4%);
       }
 
       .v-avatar {
@@ -712,12 +712,12 @@ select {
   .field {
     &.has-textarea-addon {
       .textarea {
-        border-color: var(--dark-sidebar-light-4) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
       }
 
       .is-textarea-addon {
-        background-color: var(--dark-sidebar-light-2);
-        border-color: var(--dark-sidebar-light-4);
+        background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
       }
     }
   }
@@ -745,7 +745,7 @@ select {
 
       .form-icon {
         &.iconify {
-          color: var(--light-text-dark-5);
+          color: color-mix(in oklab, var(--light-text), black 5%);
         }
 
         &.fas,
@@ -754,7 +754,7 @@ select {
         &.fab,
         &.lnir,
         &.lnil {
-          color: var(--light-text-dark-5);
+          color: color-mix(in oklab, var(--light-text), black 5%);
         }
       }
     }
@@ -770,19 +770,19 @@ select {
     }
 
     select {
-      background-color: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12) !important;
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
       color: var(--dark-dark-text);
     }
   }
 
   .search-results {
-    background: var(--dark-sidebar-dark-2);
-    border-color: var(--dark-sidebar-light-4) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
 
     .search-result {
       &:hover {
-        background: var(--dark-sidebar-light-2);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
       }
 
       .meta {
@@ -810,7 +810,7 @@ select {
 
     .file-cta {
       background: var(--white);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       transition: all 0.3s; // transition-all test
     }
   }
@@ -824,15 +824,15 @@ select {
   .file {
     &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger) {
       .file-cta {
-        background: var(--dark-sidebar-light-10);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         color: var(--dark-dark-text);
       }
     }
 
     .file-name {
-      background-color: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-4);
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
     }
   }
 }
@@ -855,7 +855,7 @@ select {
   }
 
   .filepond--root {
-    border: 2px dashed var(--fade-grey-dark-4);
+    border: 2px dashed color-mix(in oklab, var(--fade-grey), black 4%);
     border-radius: var(--radius);
     min-height: 70px;
     cursor: pointer;
@@ -899,7 +899,7 @@ select {
     }
 
     .filepond--root {
-      border-color: dashed var(--fade-grey-dark-6);
+      border-color: dashed color-mix(in oklab, var(--fade-grey), black 6%);
     }
   }
 
@@ -911,7 +911,7 @@ select {
   }
 
   .filepond--root {
-    border: 2px dashed var(--fade-grey-dark-4);
+    border: 2px dashed color-mix(in oklab, var(--fade-grey), black 4%);
     cursor: pointer;
     transition: all 0.3s; // transition-all test
   }
@@ -938,11 +938,11 @@ select {
     }
 
     .filepond--root {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     .filepond--drop-label {
-      background: var(--dark-sidebar-light-2);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
       label {
         color: var(--dark-dark-text);

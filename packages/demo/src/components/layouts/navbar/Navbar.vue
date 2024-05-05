@@ -71,7 +71,7 @@ const isScrolling = computed(() => {
     .navbar-navbar-inner {
       .left {
         .separator {
-          border-color: var(--landing-yyy-light-18);
+          border-color: color-mix(in oklab, var(--landing-yyy), white 18%);
         }
 
         .title {
@@ -83,7 +83,7 @@ const isScrolling = computed(() => {
         .centered-links {
           .centered-link {
             &:hover {
-              background: var(--landing-yyy-dark-6);
+              background: color-mix(in oklab, var(--landing-yyy), black 6%);
 
               .iconify {
                 color: var(--smoke-white);
@@ -95,12 +95,12 @@ const isScrolling = computed(() => {
             }
 
             &.is-active {
-              // background: var(--landing-yyy-dark-12);
-              // border-color: var(--landing-yyy-light-6);
+              // background: color-mix(in oklab, var(--landing-yyy), black 12%);
+              // border-color: color-mix(in oklab, var(--landing-yyy), white 6%);
 
               &:hover,
               &:focus {
-                background: var(--landing-yyy-dark-12);
+                background: color-mix(in oklab, var(--landing-yyy), black 12%);
               }
 
               .iconify {
@@ -128,7 +128,7 @@ const isScrolling = computed(() => {
               &:hover {
                 .is-trigger {
                   .button {
-                    background: var(--landing-yyy-dark-6);
+                    background: color-mix(in oklab, var(--landing-yyy), black 6%);
                     color: var(--smoke-white);
                   }
                 }
@@ -137,8 +137,8 @@ const isScrolling = computed(() => {
               &.is-active {
                 .is-trigger {
                   .button {
-                    background: var(--landing-yyy-dark-12);
-                    border-color: var(--landing-yyy-light-6);
+                    background: color-mix(in oklab, var(--landing-yyy), black 12%);
+                    border-color: color-mix(in oklab, var(--landing-yyy), white 6%);
                   }
                 }
               }
@@ -163,7 +163,7 @@ const isScrolling = computed(() => {
 
               &:hover,
               &:focus {
-                background: var(--landing-yyy-dark-6);
+                background: color-mix(in oklab, var(--landing-yyy), black 6%);
                 color: var(--smoke-white);
               }
             }
@@ -174,12 +174,12 @@ const isScrolling = computed(() => {
           .field {
             .control {
               .input {
-                background: var(--primary-dark-10);
-                border-color: var(--primary-dark-6);
+                background: color-mix(in oklab, var(--primary), black 10%);
+                border-color: color-mix(in oklab, var(--primary), black 6%);
                 color: var(--smoke-white);
 
                 &::placeholder {
-                  color: var(--primary-light-2);
+                  color: color-mix(in oklab, var(--primary), white 2%);
                 }
 
                 &:focus ~ .form-icon.iconify {
@@ -188,7 +188,7 @@ const isScrolling = computed(() => {
               }
 
               .form-icon.iconify {
-                color: var(--primary-light-6);
+                color: color-mix(in oklab, var(--primary), white 6%);
               }
             }
           }
@@ -199,8 +199,8 @@ const isScrolling = computed(() => {
         .toolbar {
           .toolbar-link {
             &:hover {
-              background: var(--landing-yyy-dark-12);
-              border-color: var(--landing-yyy-dark-12);
+              background: color-mix(in oklab, var(--landing-yyy), black 12%);
+              border-color: color-mix(in oklab, var(--landing-yyy), black 12%);
             }
 
             > .iconify {
@@ -211,16 +211,16 @@ const isScrolling = computed(() => {
           .dropdown {
             &:hover {
               .is-trigger {
-                background: var(--landing-yyy-dark-12);
-                border-color: var(--landing-yyy-dark-12);
+                background: color-mix(in oklab, var(--landing-yyy), black 12%);
+                border-color: color-mix(in oklab, var(--landing-yyy), black 12%);
               }
             }
 
             &.is-dots {
               &.is-active {
                 .is-trigger {
-                  background: var(--landing-yyy-dark-12);
-                  border-color: var(--landing-yyy-dark-12);
+                  background: color-mix(in oklab, var(--landing-yyy), black 12%);
+                  border-color: color-mix(in oklab, var(--landing-yyy), black 12%);
                 }
               }
             }
@@ -236,7 +236,7 @@ const isScrolling = computed(() => {
 
           &:hover,
           &:focus {
-            background: var(--landing-yyy-dark-12);
+            background: color-mix(in oklab, var(--landing-yyy), black 12%);
           }
 
           > .iconify {
@@ -284,7 +284,7 @@ const isScrolling = computed(() => {
       .separator {
         height: 38px;
         width: 2px;
-        border-inline-end: 1px solid var(--fade-grey-dark-4);
+        border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         margin: 0 20px 0 16px;
       }
     }
@@ -319,7 +319,7 @@ const isScrolling = computed(() => {
           white-space: nowrap;
 
           &:hover {
-            background: var(--fade-grey-light-4);
+            background: color-mix(in oklab, var(--fade-grey), white 4%);
           }
 
           &.is-active {
@@ -328,13 +328,13 @@ const isScrolling = computed(() => {
             }
 
             span {
-              color: var(--primary-dark-8);
+              color: color-mix(in oklab, var(--primary), black 8%);
             }
           }
 
           .iconify {
             font-size: 20px;
-            color: var(--light-text-light-6);
+            color: color-mix(in oklab, var(--light-text), white 6%);
             stroke-width: 1.6px;
             transition: stroke 0.3s;
           }
@@ -397,8 +397,8 @@ const isScrolling = computed(() => {
 
 .is-dark {
   .navbar-navbar:not(.is-colored) {
-    background: var(--dark-sidebar-dark-2);
-    border-color: var(--dark-sidebar-light-1);
+    background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 1%);
 
     &.is-transparent {
       background: transparent;
@@ -407,15 +407,15 @@ const isScrolling = computed(() => {
 
       &.is-solid,
       &.is-scrolled {
-        background: var(--dark-sidebar-dark-2);
-        border-color: var(--dark-sidebar-light-1);
+        background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 1%);
       }
     }
 
     .navbar-navbar-inner {
       .left {
         .separator {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
 
@@ -423,16 +423,16 @@ const isScrolling = computed(() => {
         .centered-links {
           .centered-link {
             &:hover {
-              background: var(--dark-sidebar-light-2);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
             }
 
             &.is-active {
-              // background: var(--dark-sidebar-light-2);
-              // border-color: var(--dark-sidebar-light-12);
+              // background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+              // border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               // &:hover,
               // &:focus {
-              //   background: var(--dark-sidebar-light-2);
+              //   background: color-mix(in oklab, var(--dark-sidebar), white 2%);
               // }
 
               span {
@@ -450,11 +450,11 @@ const isScrolling = computed(() => {
       .right {
 
         .icon-link {
-          background: var(--dark-sidebar-dark-2);
+          background: color-mix(in oklab, var(--dark-sidebar), black 2%);
 
           &:hover,
           &:focus {
-            background: var(--dark-sidebar-light-2);
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%);
           }
         }
       }
@@ -526,8 +526,8 @@ const isScrolling = computed(() => {
 
                         .category-selector-inner {
                           .category-item {
-                            background: var(--dark-sidebar-light-4);
-                            border-color: var(--dark-sidebar-light-12);
+                            background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+                            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
                             &:hover,
                             &:focus {
@@ -548,7 +548,7 @@ const isScrolling = computed(() => {
                         .dropdown-item-group {
                           .column-heading {
                             color: var(--dark-dark-text);
-                            border-color: var(--dark-sidebar-light-12);
+                            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
                           }
 
                           .column-content {
@@ -598,8 +598,8 @@ const isScrolling = computed(() => {
           .toolbar {
             .toolbar-link {
               &:hover {
-                background: var(--landing-yyy-dark-12) !important;
-                border-color: var(--landing-yyy-dark-12) !important;
+                background: color-mix(in oklab, var(--landing-yyy), black 12%) !important;
+                border-color: color-mix(in oklab, var(--landing-yyy), black 12%) !important;
               }
 
               > .iconify {
@@ -610,8 +610,8 @@ const isScrolling = computed(() => {
             .dropdown {
               .is-trigger {
                 &:hover {
-                  background: var(--landing-yyy-dark-12) !important;
-                  border-color: var(--landing-yyy-dark-12) !important;
+                  background: color-mix(in oklab, var(--landing-yyy), black 12%) !important;
+                  border-color: color-mix(in oklab, var(--landing-yyy), black 12%) !important;
                 }
 
                 .iconify {

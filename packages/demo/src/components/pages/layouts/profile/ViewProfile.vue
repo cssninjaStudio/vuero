@@ -758,7 +758,7 @@ const { onceError } = useImageError()
 
         &:not(:last-child) {
           margin-bottom: 20px;
-          border-bottom: 1px solid var(--fade-grey-dark-4);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         }
 
         &.no-padding {
@@ -823,7 +823,7 @@ const { onceError } = useImageError()
                 min-width: 50px;
                 height: 50px;
                 border-radius: var(--radius-rounded);
-                border: 1px solid var(--fade-grey-dark-4);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
               }
 
               .meta {
@@ -896,7 +896,7 @@ const { onceError } = useImageError()
                   min-width: 32px;
                   height: 32px;
                   border-radius: var(--radius-rounded);
-                  border: 1px solid var(--fade-grey-dark-4);
+                  border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
                 }
               }
 
@@ -948,8 +948,8 @@ const { onceError } = useImageError()
                 border: 1px solid var(--primary);
 
                 &.has-icon {
-                  background: var(--fade-grey-light-2);
-                  border: 1px solid var(--fade-grey-dark-3);
+                  background: color-mix(in oklab, var(--fade-grey), white 2%);
+                  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                   color: var(--light-text);
 
                   .iconify {
@@ -963,7 +963,7 @@ const { onceError } = useImageError()
                   min-width: 34px;
                   height: 34px;
                   border-radius: var(--radius-rounded);
-                  border: 1px solid var(--fade-grey-dark-4);
+                  border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
                 }
 
                 .count {
@@ -1030,7 +1030,7 @@ const { onceError } = useImageError()
             .recommendations-item {
               width: calc(50% - 16px);
               margin: 8px;
-              background: var(--fade-grey-light-3);
+              background: color-mix(in oklab, var(--fade-grey), white 3%);
               text-align: center;
               padding: 30px 20px;
               border-radius: var(--radius);
@@ -1211,7 +1211,7 @@ const { onceError } = useImageError()
     .profile-header {
       .v-avatar {
         .badge {
-          border-color: var(--dark-sidebar-light-6);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
         }
       }
     }
@@ -1221,7 +1221,7 @@ const { onceError } = useImageError()
         @include vuero-card--dark;
 
         .profile-card-section {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .section-title {
             h4 {
@@ -1236,14 +1236,14 @@ const { onceError } = useImageError()
           .section-content {
             .icon-wrap {
               > img {
-                border-color: var(--dark-sidebar-light-12) !important;
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
               }
             }
 
             .experience-wrapper {
               .experience-item {
                 > img {
-                  border-color: var(--dark-sidebar-light-12);
+                  border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
                 }
 
                 .meta {
@@ -1263,8 +1263,8 @@ const { onceError } = useImageError()
 
                   &.has-icon,
                   &.has-img {
-                    background: var(--dark-sidebar-light-2) !important;
-                    border-color: var(--dark-sidebar-light-12) !important;
+                    background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+                    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
                   }
                 }
 
@@ -1272,8 +1272,8 @@ const { onceError } = useImageError()
                   .v-avatar {
                     &:last-child {
                       .is-fake {
-                        background: var(--dark-sidebar-light-2);
-                        border: 1px solid var(--dark-sidebar-light-12);
+                        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                        border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
                       }
                     }
                   }
@@ -1283,8 +1283,8 @@ const { onceError } = useImageError()
 
             .recommendations-wrapper {
               .recommendations-item {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
                 .meta {
                   span {
@@ -1298,8 +1298,8 @@ const { onceError } = useImageError()
 
             .more-button {
               .button {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
               }
             }
           }
@@ -1310,8 +1310,8 @@ const { onceError } = useImageError()
 
   .icon-wrap,
   .icon-wrap.is-placeholder {
-    background: var(--dark-sidebar-light-2) !important;
-    border-color: var(--dark-sidebar-light-12) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
   }
 }
 

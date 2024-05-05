@@ -77,9 +77,9 @@ export function useDemo15Scatter() {
         },
       },
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
         themeColors.orange,
       ],

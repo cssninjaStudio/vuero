@@ -290,7 +290,7 @@ const optionsSingle = [
 
         &:hover,
         &:focus {
-          border-color: var(--fade-grey-dark-4);
+          border-color: color-mix(in oklab, var(--fade-grey), black 4%);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);
         }
@@ -299,7 +299,7 @@ const optionsSingle = [
   }
 
   .grid-item-wrap {
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     border-radius: var(--radius-large);
     transition: all 0.3s; // transition-all test
 
@@ -337,7 +337,7 @@ const optionsSingle = [
           width: 28px;
           min-width: 28px;
           border-radius: var(--radius-rounded);
-          border: 1px solid var(--fade-grey-dark-3);
+          border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -379,7 +379,7 @@ const optionsSingle = [
 
           &:hover,
           &:focus {
-            border-color: var(--fade-grey-dark-4);
+            border-color: color-mix(in oklab, var(--fade-grey), black 4%);
             color: var(--primary);
             box-shadow: var(--light-box-shadow);
           }
@@ -404,10 +404,10 @@ const optionsSingle = [
 
   .user-grid-v2 {
     .grid-item-wrap {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .grid-item-head {
-        background: var(--dark-sidebar-light-4);
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%);
       }
     }
   }

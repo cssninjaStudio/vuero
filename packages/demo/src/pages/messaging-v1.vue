@@ -231,20 +231,20 @@ useHead({
 <style lang="scss">
 .is-dark {
   .collapsed-messaging {
-    background: var(--dark-sidebar-light-5);
-    border-color: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
 
     .collapsed-conversations {
       li {
         &.is-active {
-          background: var(--dark-sidebar-light-2);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
           border-color: var(--primary) !important;
         }
 
         .user-container {
           .is-badge,
           .is-count {
-            border-color: var(--dark-sidebar-light-5) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
           }
         }
       }
@@ -301,7 +301,7 @@ useHead({
   .collapsed-messaging {
     &.is-active {
       inset-inline-start: 60px !important;
-      border-inline-start: 1px var(--fade-grey-dark-3);
+      border-inline-start: 1px color-mix(in oklab, var(--fade-grey), black 3%);
     }
   }
   .is-pushed-messages {

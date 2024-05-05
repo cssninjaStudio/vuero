@@ -55,14 +55,14 @@ onMounted(async () => {
 
 .bb-axis line,
 .bb-axis .domain {
-  color: var(--fade-grey-dark-4);
-  stroke: var(--fade-grey-dark-4);
+  color: color-mix(in oklab, var(--fade-grey), black 4%);
+  stroke: color-mix(in oklab, var(--fade-grey), black 4%);
   fill: none;
 }
 
 .tick {
   text tspan {
-    fill: var(--light-text-dark-5);
+    fill: color-mix(in oklab, var(--light-text), black 5%);
   }
 }
 
@@ -73,15 +73,15 @@ onMounted(async () => {
 
   .bb-axis line,
   .bb-axis .domain {
-    color: var(--dark-sidebar-light-20) !important;
-    stroke: var(--dark-sidebar-light-20) !important;
+    color: color-mix(in oklab, var(--dark-sidebar), white 20%) !important;
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 20%) !important;
   }
 
   .bb-legend {
     .bb-legend-background rect {
-      fill: var(--dark-sidebar-dark-2) !important;
-      color: var(--dark-sidebar-light-12) !important;
-      stroke: var(--dark-sidebar-light-12) !important;
+      fill: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
     }
 
     .bb-legend-item {
@@ -92,8 +92,8 @@ onMounted(async () => {
   }
 
   .bb-chart-arc path {
-    color: var(--dark-sidebar-light-12) !important;
-    stroke: var(--dark-sidebar-light-12) !important;
+    color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
   }
 
   .bb-chart-arc .bb-gauge-value {
@@ -101,9 +101,9 @@ onMounted(async () => {
   }
 
   .bb-chart-arcs .bb-chart-arcs-background {
-    color: var(--dark-sidebar-light-10) !important;
-    fill: var(--dark-sidebar-dark-2) !important;
-    stroke: var(--dark-sidebar-dark-2) !important;
+    color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+    fill: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
+    stroke: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
   }
 
   .bb-chart-arcs-title,
@@ -113,13 +113,13 @@ onMounted(async () => {
   }
 
   .bb-tooltip {
-    border: 1px solid var(--dark-sidebar-light-10) !important;
+    border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
 
     // background-color: var(--white);
 
     th {
-      border-color: var(--dark-sidebar-light-10) !important;
-      background-color: var(--dark-sidebar-dark-2) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+      background-color: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
       color: #fffdfd !important;
       font-family: var(--font) !important;
       font-weight: 400 !important;
@@ -132,17 +132,17 @@ onMounted(async () => {
     }
 
     tr {
-      border-color: var(--dark-sidebar-light-10) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
     }
 
     td {
-      background-color: var(--dark-sidebar-dark-2) !important;
-      border-color: var(--dark-sidebar-light-10) !important;
+      background-color: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
       color: var(--light-text) !important;
 
       > span,
       > .iconify {
-        border-color: var(--dark-sidebar-light-10) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
         fill: var(--white) !important;
         color: var(--white) !important;
       }

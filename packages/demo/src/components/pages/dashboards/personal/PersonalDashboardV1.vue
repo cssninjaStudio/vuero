@@ -297,8 +297,8 @@ const { profitChartOptions } = useProfitChart()
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(--primary-light-8);
-        border-color: var(--primary-light-8);
+        background: color-mix(in oklab, var(--primary), white 8%);
+        border-color: color-mix(in oklab, var(--primary), white 8%);
         padding: 20px 40px;
         min-height: 320px;
         border-radius: var(--radius-large);
@@ -384,8 +384,8 @@ const { profitChartOptions } = useProfitChart()
         .quick-stats {
           .quick-stats-inner {
             .quick-stat {
-              background: var(--dark-sidebar-light-2);
-              border: 1px solid var(--dark-sidebar-light-12);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+              border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               .media-flex-center {
                 .flex-meta {

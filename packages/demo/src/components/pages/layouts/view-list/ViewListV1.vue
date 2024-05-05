@@ -267,7 +267,7 @@ const filteredData = computed(() => {
           .separator {
             height: 25px;
             width: 2px;
-            border-inline-end: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             margin: 0 16px;
           }
         }
@@ -317,7 +317,7 @@ const filteredData = computed(() => {
             }
 
             .separator {
-              border-color: var(--dark-sidebar-light-16) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
             }
           }
         }

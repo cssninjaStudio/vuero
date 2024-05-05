@@ -194,7 +194,7 @@ const links = ref<SideblockItem[]>([
 </script>
 
 <template>
-  <SideblockLayout :links>
+  <SideblockLayout :links class="my-layout">
     <!-- Propagating the context to the default slot -->
     <template #default="context">
       <slot v-bind="context" />

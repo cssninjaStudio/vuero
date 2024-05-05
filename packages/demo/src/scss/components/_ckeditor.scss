@@ -13,8 +13,8 @@
   --ck-custom-border: hsl(300deg 1% 22%);
   --ck-custom-white: hsl(0deg 0% 100%);
   --ck-color-base-active: var(--primary);
-  --ck-color-base-active-focus: var(--primary-dark-10);
-  --ck-color-base-focus: var(--primary-dark-10);
+  --ck-color-base-active-focus: color-mix(in oklab, var(--primary), black 10%);
+  --ck-color-base-focus: color-mix(in oklab, var(--primary), black 10%);
   --ck-color-button-on-color: var(--primary);
   --ck-color-focus-border: var(--primary);
   --ck-focus-ring: 1px solid var(--ck-color-focus-border);
@@ -140,12 +140,12 @@
   .ck-editor {
     .ck-editor__main {
       .ck-editor__editable {
-        border-color: var(--dark-sidebar-light-12) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
       }
 
       .ck-content {
-        background: var(--dark-sidebar-light-6) !important;
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
 

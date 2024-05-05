@@ -3,53 +3,45 @@
 import { ColorPicker } from 'vue-accessible-color-picker'
 import 'vue-accessible-color-picker/styles'
 
-export type AvailableColors =
-  // states
-  | 'primary'
-  | 'secondary'
-  | 'dark'
-  | 'link'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
-  // colors
-  | 'purple'
-  | 'blue'
-  | 'red'
-  | 'orange'
-  | 'yellow'
-  | 'green'
-  | 'pink'
-  | 'light-blue'
-  // states
-  | 'primary-grey'
-  | 'smoke-white'
-  | 'placeholder'
-
 const props = withDefaults(
   defineProps<{
-    color: AvailableColors
+    color: string
     shrink?: boolean
   }>(),
   {},
 )
 const colorVarName = computed(() => `--${props.color}`)
-const colorHueVarName = computed(() => `--${props.color}-h`)
-const colorSaturationVarName = computed(() => `--${props.color}-s`)
-const colorLuminanceVarName = computed(() => `--${props.color}-l`)
+const colorSnippet = computed(() => `${colorVarName.value}: ${colorVar.value}`)
 
-const colorHueVar = useCssVar(colorHueVarName.value)
-const colorSaturationVar = useCssVar(colorSaturationVarName.value)
-const colorLuminanceVar = useCssVar(colorLuminanceVarName.value)
-const colorHslCss = computed(
-  () =>
-    `hsl(${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value})`,
-)
-const colorSnippet = computed(
-  () =>
-    `@include colorHsl('${props.color}', ${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value});`,
-)
+const { isDark } = useDarkmode()
+
+let initialValue: string
+const internal = ref('')
+const contrast = ref(false)
+const colorVar = computed({
+  get() {
+    return internal.value
+  },
+  set(value) {
+    internal.value = value
+    document.documentElement.style.setProperty(colorVarName.value, value)
+  },
+})
+watch([
+  colorVarName,
+  isDark,
+], () => {
+  internal.value = window.getComputedStyle(window?.document?.documentElement).getPropertyValue(colorVarName.value)?.trim()
+  if (!initialValue) {
+    initialValue = internal.value
+  }
+}, { immediate: true })
+
+useMutationObserver(window?.document?.documentElement, () => {
+  internal.value = window.getComputedStyle(window?.document?.documentElement).getPropertyValue(colorVarName.value)?.trim()
+}, {
+  attributeFilter: ['style', 'class'],
+})
 
 const { text, copy, copied } = useClipboard()
 
@@ -58,39 +50,72 @@ const toggle = () => {
   isOpen.value = !isOpen.value
 }
 function updateColor({ colors }: any) {
-  const { h, s, l } = colors.hsl
-  colorHueVar.value = `${Math.round(h)}`
-  colorSaturationVar.value = `${Math.round(s * 100) / 100}%`
-  colorLuminanceVar.value = `${Math.round(l * 100) / 100}%`
+  colorVar.value = colors.hex
+  contrast.value = colors.hsl.l > 70
+}
+
+function reset() {
+  colorVar.value = initialValue
 }
 </script>
 
 <template>
   <div class="color-card">
     <div v-if="!props.shrink" class="color-card-header">
-      <div class="color-dot is-primary" />
-      <div f class="meta">
-        <span>var({{ colorVarName }})</span>
-        <span>{{ colorHslCss }}</span>
-      </div>
+      <a
+        role="button"
+        tabindex="-1"
+        class="color-card-header-meta"
+        @keydown.enter.prevent="toggle"
+        @click="toggle"
+      >
+        <div
+          class="color-dot is-primary"
+          :class="{
+            'is-contrasted': contrast,
+          }"
+        >
+          <VIcon
+            icon="lucide:paint-bucket"
+            class="is-size-5"
+          />
+        </div>
+        <div class="meta">
+          <span>
+            var({{ colorVarName }})
+            <VIcon
+              v-if="isOpen"
+              class="is-size-7"
+              icon="lucide:chevron-up"
+            />
+            <VIcon
+              v-else
+              class="is-size-7"
+              icon="lucide:chevron-down"
+            />
+          </span>
+          <span>{{ colorVar }}</span>
+        </div>
+      </a>
       <div class="actions">
         <VAction
+          v-if="initialValue && colorVar !== initialValue"
           tabindex="0"
-          @keydown.enter.prevent="toggle"
-          @click="toggle"
+          class="mr-2"
+          @keydown.enter.prevent="reset"
+          @click="reset"
         >
-          <span v-if="isOpen">Close</span>
-          <span v-else>Customize</span>
+          <VIcon icon="ph:arrow-counter-clockwise-fill" class="is-size-5" />
         </VAction>
       </div>
     </div>
-    <div v-if="isOpen || props.shrink">
+    <div v-show="isOpen || props.shrink">
       <div v-if="!props.shrink" class="is-divider" />
       <div class="color-picker">
         <ColorPicker
           :id="props.color"
           class="hide-alpha hide-copy"
-          :color="`hsl(${colorHueVar}, ${colorSaturationVar}, ${colorLuminanceVar})`"
+          :color="colorVar"
           @color-change="updateColor"
         >
           <template #hue-range-input-label>
@@ -111,30 +136,6 @@ function updateColor({ colors }: any) {
           </template>
         </ColorPicker>
       </div>
-      <template v-if="!props.shrink">
-        <div class="is-divider" />
-        <dl>
-          <dt>
-            <span>Hue</span>
-            <small>var({{ colorHueVarName }})</small>
-          </dt>
-          <dd>{{ colorHueVar }}</dd>
-        </dl>
-        <dl>
-          <dt>
-            <span>Saturation</span>
-            <small>var({{ colorSaturationVarName }})</small>
-          </dt>
-          <dd>{{ colorSaturationVar }}</dd>
-        </dl>
-        <dl>
-          <dt>
-            <span>Luminance</span>
-            <small>var({{ colorLuminanceVarName }})</small>
-          </dt>
-          <dd>{{ colorLuminanceVar }}</dd>
-        </dl>
-      </template>
       <div>
         <VButton
           fullwidth
@@ -176,7 +177,7 @@ function updateColor({ colors }: any) {
   }
 
   .is-divider {
-    border-top-color: var(--widget-grey-dark-8);
+    border-top-color: color-mix(in oklab, var(--widget-grey), black 8%);
   }
 
   dl {
@@ -186,7 +187,7 @@ function updateColor({ colors }: any) {
     align-items: center;
 
     &:not(:last-child) {
-      border-bottom: solid 1px var(--widget-grey-dark-4);
+      border-bottom: solid 1px color-mix(in oklab, var(--widget-grey), black 4%);
       padding-bottom: 0.5rem;
       margin-bottom: 0.5rem;
     }
@@ -205,7 +206,31 @@ function updateColor({ colors }: any) {
     height: 40px;
     width: 40px;
     border-radius: var(--radius-rounded);
-    background-color: v-bind(colorHslCss);
+    background-color: v-bind(colorVar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffffAA;
+    transition: color 0.2s;
+
+    &.is-contrasted {
+      color: #00000077;
+    }
+  }
+  .color-card-header-meta {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    &:hover {
+      .color-dot {
+        color: #fff;
+
+        &.is-contrasted {
+          color: #000000AA;
+        }
+      }
+    }
   }
 
   .meta {
@@ -234,12 +259,12 @@ function updateColor({ colors }: any) {
     @include vuero-card--dark;
 
     .is-divider {
-      border-top-color: var(--dark-sidebar-light-12);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     dl {
       &:not(:last-child) {
-        border-bottom: solid 1px var(--dark-sidebar-light-16);
+        border-bottom: solid 1px color-mix(in oklab, var(--dark-sidebar), white 16%);
       }
     }
 

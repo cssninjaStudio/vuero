@@ -225,8 +225,8 @@ export function useScatterSimple() {
         ],
       ],
       colors: {
-        setosa_x: themeColors.accent,
-        versicolor_x: themeColors.primary,
+        setosa_x: themeColors.purple,
+        versicolor_x: themeColors.lime,
         setosa: themeColors.orange,
         versicolor: themeColors.purple,
         virginica_x: themeColors.info,

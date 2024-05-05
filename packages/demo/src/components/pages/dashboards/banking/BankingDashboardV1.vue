@@ -563,7 +563,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           padding: 20px;
 
           &:not(:first-child) {
-            border-top: 1.6px dashed var(--fade-grey-dark-4);
+            border-top: 1.6px dashed color-mix(in oklab, var(--fade-grey), black 4%);
           }
 
           .credit-card {

@@ -320,14 +320,14 @@ const internal = computed({
       }
 
       &::after {
-        background: var(--dark-sidebar-light-22) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 22%) !important;
       }
     }
 
     input {
       &:checked + i {
         &::after {
-          background: var(--dark-sidebar-light-55) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 55%) !important;
         }
       }
     }
@@ -352,7 +352,7 @@ const internal = computed({
 
   &.is-primary {
     .input:checked ~ .slider {
-      background: var(--primary-light-20);
+      background: color-mix(in oklab, var(--primary), white 40%);
 
       &::after {
         background: var(--primary);
@@ -363,7 +363,7 @@ const internal = computed({
 
   &.is-success {
     .input:checked ~ .slider {
-      background: var(--success-light-20);
+      background: color-mix(in oklab, var(--success), white 40%);
 
       &::after {
         background: var(--success);
@@ -374,7 +374,7 @@ const internal = computed({
 
   &.is-info {
     .input:checked ~ .slider {
-      background: var(--info-light-20);
+      background: color-mix(in oklab, var(--info), white 40%);
 
       &::after {
         background: var(--info);
@@ -385,7 +385,7 @@ const internal = computed({
 
   &.is-warning {
     .input:checked ~ .slider {
-      background: var(--warning-light-20);
+      background: color-mix(in oklab, var(--warning), white 40%);
 
       &::after {
         background: var(--warning);
@@ -396,7 +396,7 @@ const internal = computed({
 
   &.is-danger {
     .input:checked ~ .slider {
-      background: var(--danger-light-20);
+      background: color-mix(in oklab, var(--danger), white 40%);
 
       &::after {
         background: var(--danger);
@@ -477,7 +477,7 @@ const internal = computed({
   .thin-switch {
     &.is-primary {
       .input:checked ~ .slider {
-        background: var(--primary-light-20);
+        background: color-mix(in oklab, var(--primary), white 20%);
 
         &::after {
           background: var(--primary);
@@ -526,14 +526,14 @@ const internal = computed({
       background: var(--dark-sidebar);
 
       &::after {
-        background: var(--dark-sidebar-light-22);
+        background: color-mix(in oklab, var(--dark-sidebar), white 22%);
       }
     }
 
     .input:checked ~ .slider {
       &::after {
-        background: var(--dark-sidebar-light-55);
-        border: var(--dark-sidebar-light-55);
+        background: color-mix(in oklab, var(--dark-sidebar), white 55%);
+        border: color-mix(in oklab, var(--dark-sidebar), white 55%);
       }
     }
   }

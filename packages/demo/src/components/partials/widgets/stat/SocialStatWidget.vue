@@ -58,7 +58,7 @@ const props = defineProps<{
         border-radius: var(--radius-rounded);
         background: var(--white);
         color: var(--primary);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         box-shadow: var(--light-box-shadow);
 
         &.is-squared {
@@ -137,8 +137,8 @@ const props = defineProps<{
     &.followers-stat-widget-v1 {
       .follow-block {
         .follow-icon:not(.is-primary) {
-          background: var(--dark-sidebar-light-2);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
           color: var(--primary);
         }
 
@@ -151,8 +151,8 @@ const props = defineProps<{
       }
 
       .go-icon {
-        background: var(--dark-sidebar-light-2);
-        border: 1px solid var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
   }

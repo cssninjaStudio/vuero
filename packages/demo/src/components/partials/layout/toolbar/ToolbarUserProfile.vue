@@ -185,16 +185,16 @@ function logout() {
   .profile-dropdown {
     .dropdown-content, :deep(.dropdown-content) {
       .dropdown-head {
-        background: var(--dark-sidebar-light-2) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
 
         &:hover,
         &:focus {
-          background: var(--dark-sidebar-light-2) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
         }
 
         .meta {
           &:hover {
-            background: var(--dark-sidebar-light-2) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
           }
 
           span {

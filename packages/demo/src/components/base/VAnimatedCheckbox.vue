@@ -354,7 +354,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       }
 
       .shadow-circle {
-        border-color: var(--dark-sidebar-light-20);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
       }
     }
   }

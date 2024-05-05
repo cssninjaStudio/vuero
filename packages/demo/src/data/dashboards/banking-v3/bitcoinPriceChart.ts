@@ -40,7 +40,7 @@ export function useBitcoinPriceChart() {
         opacity: 0.06,
       },
     },
-    colors: [themeColors.primary, themeColors.accent, themeColors.primary],
+    colors: [themeColors.lime, themeColors.purple, themeColors.lime],
     stroke: {
       curve: 'smooth',
       width: 3,

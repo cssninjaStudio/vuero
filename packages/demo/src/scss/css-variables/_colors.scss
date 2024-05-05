@@ -1,7 +1,47 @@
 /*! colors.scss | Vuero | Css ninja 2020-2024 */
 
 :root {
-  // layout colors
+  // placeload colors
+  --placeload-nuance-from: rgb(0 0 0 / 7%);
+  --placeload-nuance-to: rgb(0 0 0 / 15%);
+
+  // bulma colors
+  --primary: oklch(66.67% 0.146 173.07);
+  --primary--color-invert: color-mix(in oklab, var(--primary), white 90%);
+  --primary--dark-color: color-mix(in oklab, var(--primary), black 5%);
+  --primary--light-color: color-mix(in oklab, var(--primary), white 90%);
+
+  --link: #485fc7;
+  --link--color-invert: color-mix(in oklab, var(--link), white 85%);
+  --link--dark-color: color-mix(in oklab, var(--link), black 5%);
+  --link--light-color: color-mix(in oklab, var(--link), white 90%);
+
+  --info: #0398e2;
+  --info--color-invert: color-mix(in oklab, var(--info), white 85%);
+  --info--dark-color: color-mix(in oklab, var(--info), black 5%);
+  --info--light-color: color-mix(in oklab, var(--info), white 90%);
+
+  --success: #05d69e;
+  --success--color-invert: color-mix(in oklab, var(--success), white 85%);
+  --success--dark-color: color-mix(in oklab, var(--success), black 20%);
+  --success--light-color: color-mix(in oklab, var(--success), white 90%);
+
+  --warning: #faad42;
+  --warning--color-invert: color-mix(in oklab, var(--warning), white 85%);
+  --warning--dark-color: color-mix(in oklab, var(--warning), black 20%);
+  --warning--light-color: color-mix(in oklab, var(--warning), white 90%);
+
+  --danger: #e62864;
+  --danger--color-invert: color-mix(in oklab, var(--danger), white 85%);
+  --danger--dark-color: color-mix(in oklab, var(--danger), black 15%);
+  --danger--light-color: color-mix(in oklab, var(--danger), white 90%);
+
+  --dark: #222225;
+  --dark--color-invert: color-mix(in oklab, var(--dark), white 85%);
+  --dark--dark-color: color-mix(in oklab, var(--dark), black 15%);
+  --dark--light-color: color-mix(in oklab, var(--dark), white 90%);
+
+  // Layout colors
   --body-color: #f4f4f5;
   --title-grey: #a9abac;
   --background-grey: #fafafa;
@@ -9,106 +49,46 @@
   --light-grey: #eee;
   --white: #fff;
   --border: #dbdbdb;
+  --dark-sidebar: #222225;
 
-  // placeload colors
-  --placeload-nuance-from: rgb(0 0 0 / 7%);
-  --placeload-nuance-to: rgb(0 0 0 / 15%);
-  --placeload-dark-nuance-from: rgb(255 255 255 / 15%);
-  --placeload-dark-nuance-to: rgb(255 255 255 / 24%);
+  --landing-xxx: #0b0d13;
+  --landing-yyy: #191b2a;
+  
+  --smoke-white: #fcfcfc;
+  --primary-grey: #cccccc;
+  --muted-grey: #999999;
+  --fade-grey: #ededed;
+  --widget-grey: #f5f6fa;
+  --placeholder: #cfcfcf;
 
-
-  // Bulma colors
-  @include colorHsl('primary', 166, 61%, 42%, $shades: 60); // hsl(166, 61%, 42%)
-  --primary--color-invert: var(--primary-light-60);
-  --primary--dark-color: var(--primary-dark-5);
-  --primary--light-color: var(--primary-light-50);
-  @include colorHsl('link', 229, 53%, 53%, $shades: 60);  // hsl(229, 53%, 53%)
-  --link--color-invert: var(--link-light-60);
-  --link--dark-color: var(--link-dark-5);
-  --link--light-color: var(--link-light-50);
-  @include colorHsl('info', 200, 97%, 45%, $shades: 60); // hsl(200, 97%, 45%)
-  --info--color-invert: var(--info-light-60);
-  --info--dark-color: var(--info-dark-5);
-  --info--light-color: var(--info-light-50);
-  @include colorHsl('success', 164, 95%, 43%, $shades: 60); // hsl(164, 95%, 43%)
-  --success--color-invert: var(--success-light-60);
-  --success--dark-color: var(--success-dark-10);
-  --success--light-color: var(--success-light-50);
-  @include colorHsl('warning', 35, 95%, 62%, $shades: 60); // hsl(35, 95%, 62%)
-  --warning--color-invert: var(--warning-light-60);
-  --warning--dark-color: var(--warning-dark-15);
-  --warning--light-color: var(--warning-light-32);
-  @include colorHsl('danger', 341, 79%, 53%, $shades: 60); // hsl(341, 79%, 53%)
-  --danger--color-invert: var(--danger-light-60);
-  --danger--dark-color: var(--danger-dark-15);
-  --danger--light-color: var(--danger-light-40);
-  @include colorHsl('dark', 240, 4%, 14%, $shades: 90); // hsl(240, 4%, 14%)
-  --dark--color-invert: var(--dark-light-60);
-  --dark--dark-color: var(--dark-dark-15);
-  --dark--light-color: var(--dark-light-90);
-
-  // Layout colors
-  @include colorHsl('sidebar', 217, 26%, 27%, $shades: 25); // hsl(217, 26%, 27%)
-  @include colorHsl('dark-sidebar', 240, 4%, 14%, $shades: 15); // hsl(240, 4%, 14%)
-
-  @include colorHsl('landing-xxx', 225, 25%, 6%, $shades: 20);  // hsl(225, 25%, 6%)
-  @include colorHsl('landing-yyy', 230, 26%, 13%, $shades: 20); // hsl(230, 26%, 13%)
-
-  @include colorHsl('smoke-white', 0, 0%, 99%, $shades: 25); // hsl(0, 0%, 99%)
-  @include colorHsl('primary-grey', 0, 0%, 80%, $shades: 40); // hsl(0, 0%, 80%)
-  @include colorHsl('muted-grey', 0, 0%, 60%, $shades: 25); // hsl(0, 0%, 60%)
-  @include colorHsl('fade-grey', 0, 0%, 93%, $shades: 10); // hsl(0, 0%, 93%)
-  @include colorHsl('widget-grey', 228, 33%, 97%, $shades: 15); // hsl(228, 33%, 97%)
-  @include colorHsl('placeholder', 0, 0%, 81%, $shades: 10); // hsl(0, 0%, 81%)
-
-  @include colorHsl('dark-dark-text', 240, 6%, 68%, $shades: 15); // hsl(240, 6%, 68%)
-  @include colorHsl('dark-text', 226, 34%, 24%, $shades: 40); // hsl(226, 34%, 24%)
-  @include colorHsl('light-text', 232, 14%, 68%, $shades: 25); // hsl(232, 14%, 68%)
+  --dark-dark-text: #a9a9b2;
+  --dark-text: #283252;
+  --light-text: #a2a5b9;
 
   // Additional colors
-  @include colorHsl('secondary', 222, 61%, 56%, $shades: 60); // hsl(222, 82%, 56%)
-  @include colorHsl('purple', 261, 32%, 55%, $shades: 60); // hsl(261, 32%, 55%)
-  @include colorHsl('blue', 198, 100%, 61%, $shades: 60); // hsl(198, 100%, 61%)
-  @include colorHsl('red', 345, 94%, 57%, $shades: 60);// hsl(345, 94%, 57%)
-  @include colorHsl('orange', 19, 100%, 75%, $shades: 60); // hsl(19, 100%, 75%)
-  @include colorHsl('yellow', 43, 100%, 72%, $shades: 60); // hsl(43, 100%, 72%)
-  @include colorHsl('green', 113, 59%, 71%, $shades: 60); // hsl(113, 59%, 71%)
-  @include colorHsl('pink', 344, 100%, 81%, $shades: 60);// hsl(344, 100%, 81%)
-  // @include colorHsl('light-blue', 196, 84%, 71%, $shades: 60);// hsl(196, 84%, 71%)
-  @include colorHsl('lime', 168, 56%, 72%, $shades: 60); // hsl(168, 56%, 72%)
-
-  
-  // Brands colors
-  // @include colorHsl('javascript', 53, 93%, 54%);
-  // @include colorHsl('angular', 2, 82%, 48%);
-  // @include colorHsl('reactjs', 189, 100%, 50%);
-  // @include colorHsl('android', 74, 55%, 50%);
-  // @include colorHsl('swift', 4, 86%, 56%);
-  // @include colorHsl('vuejs', 152, 44%, 52%);
-  // @include colorHsl('wordpress', 199, 65%, 37%);
-  // @include colorHsl('csharp', 305, 36%, 45%);
-  // @include colorHsl('nodejs', 103, 50%, 53%);
-  // @include colorHsl('html', 18, 88%, 55%);
-  // @include colorHsl('facebook', 221, 44%, 41%);
-  // @include colorHsl('twitter', 194, 100%, 56%);
-  // @include colorHsl('linkedin', 199, 100%, 36%);
-  // @include colorHsl('tumblr', 214, 27%, 28%);
-  // @include colorHsl('github', 0, 0%, 27%);
-  // @include colorHsl('dribbble', 337, 79%, 61%);
-  // @include colorHsl('google-plus', 7, 64%, 52%);
-  // @include colorHsl('youtube', 358, 79%, 45%);
-  // @include colorHsl('reddit', 16, 100%, 50%);
-  // @include colorHsl('invision', 345, 100%, 60%);
-  // @include colorHsl('amazon', 36, 100%, 50%);
-  // @include colorHsl('instagram', 340, 75%, 54%);
+  --secondary: #336aeb;
+  --purple: #8168b1;
+  --blue: #38c3ff;
+  --red: #f82a5e;
+  --orange: #ffa880;
+  --yellow: #ffd770;
+  --green: #94e189;
+  --pink: #ff9eb8;
+  --lime: #90e0d0;
 }
 
+// override colors for dark mode
 .is-dark {
-  --background-grey: var(--dark-sidebar-light-5);
-  --border: var(--dark-sidebar-light-12);
+  --background-grey: color-mix(in oklab, var(--dark-sidebar), white 5%);
+  --border: color-mix(in oklab, var(--dark-sidebar), white 12%);
+  --dark-text: #fcfcfc;
+  
+  --placeload-nuance-from: rgb(255 255 255 / 15%);
+  --placeload-nuance-to: rgb(255 255 255 / 24%);
 
-  // override colors for dark mode
-  @include colorHsl('primary', 166, 61%, 38%); // hsl(166, 61%, 38%)
-  @include colorHsl('dark-text', 0, 0%, 99%); // hsl(0, 0%, 99%)
-  @include colorHsl('red', 324, 100%, 63%); // hsl(324, 100%, 63%)
+  --primary: oklch(59.02% 0.146 172.62);
+  --primary--color-invert: color-mix(in oklab, var(--primary), white 80%);
+  --success: #1dc598;
+  --warning: #e0a654;
+  --danger: #ee3c74;
 }

@@ -79,7 +79,7 @@ const themeClasses = computed(() => {
     &:not(.is-bordered) {
       border-start-end-radius: 20px;
       border-end-end-radius: 20px;
-      border-inline-end: 1px solid var(--fade-grey-dark-4) !important;
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 4%) !important;
 
       .sidebar-brand {
         border-start-end-radius: 20px;
@@ -88,7 +88,7 @@ const themeClasses = computed(() => {
   }
 
   &.is-colored {
-    border-color: var(--landing-yyy-light-2);
+    border-color: color-mix(in oklab, var(--landing-yyy), white 2%);
     background: var(--landing-yyy);
 
     .sidebar-inner {
@@ -424,7 +424,7 @@ const themeClasses = computed(() => {
 
     &.is-curved {
       &:not(.is-bordered) {
-        border-color: var(--dark-sidebar-light-16) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
       }
     }
 
@@ -463,7 +463,7 @@ const themeClasses = computed(() => {
         }
 
         .iconify {
-          color: var(--primary-grey-light-3);
+          color: color-mix(in oklab, var(--primary-grey), white 3%);
         }
 
         .status-indicator {
@@ -490,8 +490,8 @@ const themeClasses = computed(() => {
 
   .main-sidebar {
     &.is-colored {
-      // background: var(--primary-dark-2);
-      // border-color: var(--primary-dark-2) !important;
+      // background: color-mix(in oklab, var(--primary), black 2%);
+      // border-color: color-mix(in oklab, var(--primary), black 2%) !important;
 
       .sidebar-inner {
         .naver {
@@ -512,7 +512,7 @@ const themeClasses = computed(() => {
               }
 
               .sidebar-svg {
-                color: var(--smoke-white-light-2);
+                color: color-mix(in oklab, var(--smoke-white), white 2%);
                 opacity: 0.5;
               }
             }

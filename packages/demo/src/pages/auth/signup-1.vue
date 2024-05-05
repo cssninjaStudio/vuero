@@ -747,7 +747,7 @@ useHead({
 
         &.is-agree {
           span {
-            color: var(--placeholder-dark-8);
+            color: color-mix(in oklab, var(--placeholder), black 8%);
 
             a {
               color: var(--muted-grey);
@@ -770,7 +770,7 @@ useHead({
           transition: all 0.3s; // transition-all test
 
           &:focus {
-            background: var(--fade-grey-light-6);
+            background: color-mix(in oklab, var(--fade-grey), white 6%);
             border-color: var(--placeholder);
 
             ~ .auth-label,
@@ -1002,7 +1002,7 @@ useHead({
           align-items: center;
           padding: 12px;
           background: var(--white);
-          border: 1px solid var(--fade-grey-dark-3);
+          border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           border-radius: var(--radius-large);
           transition: all 0.3s; // transition-all test
 
@@ -1093,7 +1093,7 @@ useHead({
         align-items: center;
         background: var(--white);
         border-radius: var(--radius-rounded);
-        border: 1px solid var(--fade-grey-dark-4);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
         z-index: 5;
         transition: all 0.3s; // transition-all test
         cursor: pointer;
@@ -1220,7 +1220,7 @@ useHead({
     }
 
     &:hover {
-      border-color: var(--fade-grey-dark-4);
+      border-color: color-mix(in oklab, var(--fade-grey), black 4%);
       color: var(--white);
       box-shadow: var(--light-box-shadow);
     }
@@ -1246,14 +1246,14 @@ useHead({
 
 .is-dark {
   .signup-wrapper {
-    background: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
   }
 
   .signup-steps {
     .steps-container {
       .progress {
         &::-webkit-progress-bar {
-          background-color: var(--dark-sidebar-light-2);
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
         }
 
         &::-webkit-progress-value {
@@ -1270,10 +1270,10 @@ useHead({
       }
 
       .step-icon {
-        background: var(--dark-sidebar-light-7);
+        background: color-mix(in oklab, var(--dark-sidebar), white 7%);
 
         &.is-active {
-          background: var(--dark-sidebar-light-16);
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%);
 
           .inner {
             background: var(--primary);
@@ -1291,8 +1291,8 @@ useHead({
         }
 
         .inner {
-          background: var(--dark-sidebar-light-9);
-          border-color: var(--dark-sidebar-light-9);
+          background: color-mix(in oklab, var(--dark-sidebar), white 9%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 9%);
         }
 
         .step-label {
@@ -1312,8 +1312,8 @@ useHead({
 
         .input {
           &:focus {
-            background: var(--dark-sidebar-dark-4);
-            border-color: var(--dark-sidebar-light-12);
+            background: color-mix(in oklab, var(--dark-sidebar), black 4%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             ~ .auth-label,
             ~ .auth-icon .iconify {
@@ -1342,8 +1342,8 @@ useHead({
           }
 
           .signup-box {
-            background-color: var(--dark-sidebar-light-2);
-            border-color: var(--dark-sidebar-light-4);
+            background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
             .meta {
               span:first-child {
@@ -1372,12 +1372,12 @@ useHead({
     .picture-selector {
       .image-container {
         img {
-          border-color: var(--dark-sidebar-light-10);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
         }
 
         .upload-button {
-          background-color: var(--dark-sidebar-light-2);
-          border-color: var(--dark-sidebar-light-10);
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
           .iconify {
             color: var(--light-text);
@@ -1393,7 +1393,7 @@ useHead({
       span {
         &::before,
         &::after {
-          border-color: var(--dark-sidebar-light-18);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
         }
       }
     }
@@ -1409,8 +1409,8 @@ useHead({
     }
 
     .slick-custom {
-      background-color: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-10);
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
       &::before,
       &::after {

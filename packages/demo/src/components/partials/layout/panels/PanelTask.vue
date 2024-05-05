@@ -207,7 +207,7 @@ const panels = usePanels()
         .task-group {
           margin-bottom: 20px;
           padding-bottom: 20px;
-          border-bottom: 1.6px dashed var(--fade-grey-dark-3) h3 {
+          border-bottom: 1.6px dashed color-mix(in oklab, var(--fade-grey), black 3%) h3 {
             text-transform: uppercase;
             font-family: var(--font-alt);
             font-size: 0.8rem;
@@ -352,7 +352,7 @@ const panels = usePanels()
 
               &:hover,
               &:focus {
-                border-color: var(--fade-grey-dark-3);
+                border-color: color-mix(in oklab, var(--fade-grey), black 3%);
                 box-shadow: var(--light-box-shadow);
               }
 
@@ -422,7 +422,7 @@ const panels = usePanels()
 
                   &:hover,
                   &:focus {
-                    border-color: var(--fade-grey-dark-4);
+                    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
                     box-shadow: var(--light-box-shadow);
                     color: var(--primary);
                   }
@@ -451,7 +451,7 @@ const panels = usePanels()
       .right-panel {
         .right-panel-body {
           .task-group {
-            border-color: var(--dark-sidebar-light-12) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
             h3 {
               color: var(--primary);

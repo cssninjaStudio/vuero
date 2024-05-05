@@ -11,7 +11,7 @@ export function useCustomerEngagementChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.secondary],
+    colors: [themeColors.purple, themeColors.secondary],
     plotOptions: {
       radialBar: {
         startAngle: -135,
@@ -20,7 +20,7 @@ export function useCustomerEngagementChart() {
           name: {
             fontSize: '13px',
             fontWeight: '600',
-            color: themeColors.lightText,
+            color: themeColors.grey,
             show: false,
           },
           value: {

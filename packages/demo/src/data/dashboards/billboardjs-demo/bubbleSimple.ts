@@ -12,8 +12,8 @@ export function useBubbleSimple() {
         ['data3', 160, 153, 85, 80, 250, 120, 5, 84, 99, 175],
       ],
       colors: {
-        data1: themeColors.accent,
-        data2: themeColors.primary,
+        data1: themeColors.purple,
+        data2: themeColors.lime,
         data3: themeColors.info,
         data4: themeColors.purple,
       },

@@ -212,7 +212,7 @@ const wizard = useWizard()
   .navbar-item {
     &.is-wizard-title {
       margin-inline-start: 15px;
-      border-inline-start: 1px solid var(--muted-grey-light-15);
+      border-inline-start: 1px solid color-mix(in oklab, var(--muted-grey), white 15%);
       padding-bottom: 6px;
       padding-top: 6px;
       font-family: var(--font);
@@ -250,7 +250,7 @@ const wizard = useWizard()
 
     .dropdown-menu,
     :deep(.dropdown-menu) {
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       box-shadow: var(--light-box-shadow);
       border-radius: 8px;
       padding-top: 0;
@@ -275,7 +275,7 @@ const wizard = useWizard()
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-rounded);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       box-shadow: var(--light-box-shadow);
       background: var(--white);
       transition: all 0.3s; // transition-all test
@@ -325,7 +325,7 @@ const wizard = useWizard()
 
     .dropdown-menu {
       top: 52px;
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       box-shadow: var(--light-box-shadow);
       border-radius: 8px;
       padding-top: 0;

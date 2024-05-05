@@ -189,8 +189,8 @@
 
 .is-dark {
   .chat-header {
-    // background: var(--dark-sidebar-light-2);
-    // border-color: var(--dark-sidebar-light-2);
+    // background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    // border-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
     .is-badge {
       border-color: var(--dark-sidebar) !important;
@@ -199,7 +199,7 @@
     .recipient-meta {
       span {
         &:first-child {
-          color: var(--primary-grey-light-6) !important;
+          color: color-mix(in oklab, var(--primary-grey), white 6%) !important;
         }
       }
     }
@@ -221,15 +221,15 @@
       #users-autocpl {
         background: none;
         border-color: none;
-        color: var(--primary-grey-dark-4);
+        color: color-mix(in oklab, var(--primary-grey), black 4%);
 
         &::placeholder {
-          color: var(--primary-grey-dark-30) !important;
+          color: color-mix(in oklab, var(--primary-grey), black 30%) !important;
         }
       }
 
       .iconify {
-        color: var(--primary-grey-dark-30) !important;
+        color: color-mix(in oklab, var(--primary-grey), black 30%) !important;
       }
 
       .icon span {
@@ -247,14 +247,14 @@
             border-color: var(--dark-sidebar) !important;
 
             &.selected {
-              background: var(--dark-sidebar-light-2);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
             }
 
             .entry-text {
-              color: var(--primary-grey-dark-10);
+              color: color-mix(in oklab, var(--primary-grey), black 10%);
 
               span {
-                color: var(--primary-grey-dark-40) !important;
+                color: color-mix(in oklab, var(--primary-grey), black 40%) !important;
               }
             }
           }

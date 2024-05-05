@@ -198,7 +198,7 @@ const accept = async () => {
           border: none;
           background: none;
           border-radius: 0;
-          border-inline-end: 1px solid var(--fade-grey-dark-3);
+          border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
       }
 
@@ -233,7 +233,7 @@ const accept = async () => {
                 min-width: 32px;
                 border-radius: var(--radius-rounded);
                 background: var(--white);
-                border: 1px solid var(--fade-grey-dark-3);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                 box-shadow: var(--light-box-shadow);
                 color: var(--primary);
 
@@ -288,7 +288,7 @@ const accept = async () => {
           .sender-message {
             text-align: inset-inline-start;
             padding: 20px;
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             max-width: 360px;
             margin: 0 auto;
             border-radius: var(--radius-large);
@@ -373,7 +373,7 @@ const accept = async () => {
           .action-box {
             padding: 20px 20px 40px;
             border-inline-end: none;
-            border-bottom: 1px solid var(--fade-grey-dark-3);
+            border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
             .box-content {
               .buttons {

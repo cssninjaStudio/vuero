@@ -10,7 +10,7 @@ export function useGrowthRadialChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent],
+    colors: [themeColors.purple],
     plotOptions: {
       radialBar: {
         hollow: {
@@ -23,7 +23,7 @@ export function useGrowthRadialChart() {
             fontSize: '14px',
             fontWeight: 500,
             offsetY: -10,
-            color: themeColors.lightText,
+            color: themeColors.grey,
           },
           value: {
             show: true,

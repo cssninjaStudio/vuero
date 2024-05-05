@@ -367,7 +367,7 @@ useHead({
   .status-block {
     background: var(--white);
     margin-bottom: 40px;
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     border-radius: var(--radius-large);
 
     .status-header {
@@ -397,8 +397,8 @@ useHead({
     }
 
     .status-uptime {
-      border-top: 1px solid var(--fade-grey-dark-3);
-      border-bottom: 1px solid var(--fade-grey-dark-3);
+      border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+      border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       padding: 16px 40px;
       font-family: var(--font);
 
@@ -435,7 +435,7 @@ useHead({
           min-width: 54px;
           border-radius: var(--radius-rounded);
           background: var(--white);
-          border: 1px solid var(--fade-grey-dark-3);
+          border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           box-shadow: var(--light-box-shadow);
           color: var(--primary);
           margin-inline-end: 12px;
@@ -483,7 +483,7 @@ useHead({
         height: 40px;
         width: 40px;
         border-radius: 12px;
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         box-shadow: var(--light-box-shadow);
 
         span {
@@ -500,7 +500,7 @@ useHead({
     display: flex;
     align-items: center;
     padding: 24px 40px;
-    border-bottom: 1px solid var(--fade-grey-dark-3);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
     .iconify, .fab {
       font-size: 1.6rem;
@@ -560,7 +560,7 @@ useHead({
 
     a {
       font-family: var(--font);
-      color: var(--light-text-dark-8);
+      color: color-mix(in oklab, var(--light-text), black 8%);
       padding: 0 10px;
       transition: color 0.3s;
 
@@ -582,16 +582,16 @@ useHead({
 .is-dark {
   .status-page-wrapper {
     .status-block {
-      background: var(--dark-sidebar-light-6);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .status-uptime {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
 
       .status-list {
         hr {
-          background-color: var(--dark-sidebar-light-12);
+          background-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
           height: 1px;
         }
 
@@ -599,8 +599,8 @@ useHead({
           .progress-wrap {
             .progress-wrap-inner {
               .amount {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
                 span {
                   color: var(--dark-dark-text);
@@ -612,7 +612,7 @@ useHead({
       }
 
       .tweets-header {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
 
       .status-tweets {

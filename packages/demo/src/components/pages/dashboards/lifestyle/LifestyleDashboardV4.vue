@@ -317,7 +317,7 @@ const { onceError } = useImageError()
 
       p {
         font-weight: 400;
-        color: var(--smoke-white-dark-2);
+        color: color-mix(in oklab, var(--smoke-white), black 2%);
         margin-bottom: 16px;
         max-width: 320px;
       }
@@ -444,7 +444,7 @@ const { onceError } = useImageError()
         justify-content: space-between;
         margin-bottom: 16px;
         padding-bottom: 16px;
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         &:last-child {
           margin-bottom: 0;
@@ -586,7 +586,7 @@ const { onceError } = useImageError()
     }
 
     .articles-feed {
-      background: var(--dark-sidebar-light-8);
+      background: color-mix(in oklab, var(--dark-sidebar), white 8%);
 
       .articles-feed-subheader {
         .selector {

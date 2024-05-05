@@ -228,7 +228,7 @@ const { onceError } = useImageError()
           }
 
           > span {
-            color: var(--light-text-dark-5);
+            color: color-mix(in oklab, var(--light-text), black 5%);
           }
         }
 
@@ -267,7 +267,7 @@ const { onceError } = useImageError()
         max-width: 640px;
 
         p {
-          color: var(--light-text-dark-5);
+          color: color-mix(in oklab, var(--light-text), black 5%);
         }
       }
 
@@ -290,17 +290,17 @@ const { onceError } = useImageError()
 
           &.is-primary {
             color: var(--primary);
-            background: var(--primary-light-45);
+            background: color-mix(in oklab, var(--primary), white 45%);
           }
 
           &.is-yellow {
             color: var(--yellow);
-            background: var(--yellow-light-22);
+            background: color-mix(in oklab, var(--yellow), white 22%);
           }
 
           &.is-danger {
             color: var(--danger);
-            background: var(--danger-light-40);
+            background: color-mix(in oklab, var(--danger), white 40%);
           }
         }
       }

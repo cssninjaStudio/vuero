@@ -18,10 +18,10 @@ export function useProgressChart() {
     },
     color: {
       pattern: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
         themeColors.orange,
-        themeColors.primary,
+        themeColors.lime,
       ],
       threshold: {
         values: [30, 60, 90, 100],

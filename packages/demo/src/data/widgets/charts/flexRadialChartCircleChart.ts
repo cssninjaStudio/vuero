@@ -24,7 +24,7 @@ export function useFlexRadialChartCircle() {
             fontSize: '12px',
             fontWeight: 400,
             offsetY: 5,
-            color: themeColors.lightText,
+            color: themeColors.grey,
           },
           value: {
             show: true,

@@ -473,7 +473,7 @@ const democheck = ref(['value_2'])
 
     .user-meta {
       padding: 0 3rem;
-      border-inline-end: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       h3 {
         max-width: 180px;
@@ -489,7 +489,7 @@ const democheck = ref(['value_2'])
       flex-grow: 2;
       max-width: 275px;
       margin-inline-start: auto;
-      background: var(--primary-light-8);
+      background: color-mix(in oklab, var(--primary), white 8%);
       padding: 20px;
       border-radius: var(--radius-large);
       box-shadow: var(--primary-box-shadow);
@@ -559,7 +559,7 @@ const democheck = ref(['value_2'])
 
     .home-header {
       .cta {
-        background: var(--primary-light-2);
+        background: color-mix(in oklab, var(--primary), white 2%);
         box-shadow: var(--primary-box-shadow);
       }
     }

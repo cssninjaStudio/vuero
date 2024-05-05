@@ -699,7 +699,7 @@ onMounted(() => {
         font-size: 0.85rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: var(--light-text-dark-8);
+        color: color-mix(in oklab, var(--light-text), black 8%);
       }
 
       .input {
@@ -733,7 +733,7 @@ onMounted(() => {
           .iconify {
             height: 18px;
             width: 18px;
-            color: var(--light-text-dark-8);
+            color: color-mix(in oklab, var(--light-text), black 8%);
           }
         }
       }
@@ -1018,13 +1018,13 @@ onMounted(() => {
 
 .is-dark {
   .kanban-column {
-    background: var(--dark-sidebar-light-15);
-    border-color: var(--dark-sidebar-light-15);
+    background: color-mix(in oklab, var(--dark-sidebar), white 15%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 15%);
 
     .collapsed-content {
       .expand-button {
-        background: var(--dark-sidebar-light-6) !important;
-        border-color: var(--dark-sidebar-light-12) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
         &:hover,
         &:focus {
@@ -1066,12 +1066,12 @@ onMounted(() => {
       }
 
       .dropdown-divider {
-        background: var(--dark-sidebar-light-5);
+        background: color-mix(in oklab, var(--dark-sidebar), white 5%);
       }
 
       a:hover,
       div:hover {
-        background: var(--dark-sidebar-light-5) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
       }
     }
 
@@ -1081,26 +1081,26 @@ onMounted(() => {
 
     .kanban-card,
     .gu-transit {
-      background: var(--dark-sidebar-light-6) !important;
-      border-color: var(--dark-sidebar-light-6) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
 
       &.is-new {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-6);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
         .card-title {
-          color: var(--primary-grey-light-2);
+          color: color-mix(in oklab, var(--primary-grey), white 2%);
         }
 
         .card-footer,
         .card-footer-item {
-          border-color: var(--dark-sidebar-light-20);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
           color: var(--body-color);
         }
       }
 
       .card-title {
-        color: var(--primary-grey-light-2);
+        color: color-mix(in oklab, var(--primary-grey), white 2%);
       }
     }
   }

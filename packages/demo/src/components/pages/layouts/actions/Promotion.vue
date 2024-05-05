@@ -119,7 +119,7 @@
         border: none;
         background: none;
         border-radius: 0;
-        border-inline-end: 1px solid var(--fade-grey-dark-3);
+        border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         .price {
           text-align: center;
@@ -185,7 +185,7 @@
               min-width: 32px;
               border-radius: var(--radius-rounded);
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               box-shadow: var(--light-box-shadow);
               color: var(--primary);
 
@@ -289,7 +289,7 @@
         .action-box {
           padding: 20px 20px 40px;
           border-inline-end: none;
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
           .box-content {
             .buttons {

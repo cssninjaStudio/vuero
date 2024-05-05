@@ -438,7 +438,7 @@ const selected = ref('value_2')
   .plans-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--fade-grey-dark-4);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
     padding-bottom: 20px;
     margin-bottom: 20px;
 
@@ -549,7 +549,7 @@ const selected = ref('value_2')
               min-width: 32px;
               border-radius: var(--radius-rounded);
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               box-shadow: var(--light-box-shadow);
               color: var(--success);
 
@@ -737,7 +737,7 @@ const selected = ref('value_2')
         padding: 20px 30px;
         background: var(--white);
         border-radius: var(--radius);
-        border: 1px solid var(--fade-grey-dark-3);
+        border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         .form-header {
           display: flex;
@@ -802,7 +802,7 @@ const selected = ref('value_2')
 .is-dark {
   .saas-billing-wrapper {
     .plans-wrapper {
-      border-color: var(--dark-sidebar-light-20);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
 
       .left {
         .inner-wrap {
@@ -829,8 +829,8 @@ const selected = ref('value_2')
               }
 
               .checkmark {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
               }
             }
           }
@@ -894,8 +894,8 @@ const selected = ref('value_2')
 
       .right {
         .payment-form {
-          background: var(--dark-sidebar-light-6);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .form-header {
             h3 {

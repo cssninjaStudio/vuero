@@ -31,8 +31,8 @@ export function useAreaLineRangeChart() {
         ['data2', [130, 130, 130], [340, 340, 340], [200, 200, 200], [500, 500, 500], [250, 250, 250], [350, 350, 350]],
       ],
       colors: {
-        data1: themeColors.accent,
-        data2: themeColors.primary,
+        data1: themeColors.purple,
+        data2: themeColors.lime,
         data3: themeColors.info,
         data4: themeColors.purple,
       },

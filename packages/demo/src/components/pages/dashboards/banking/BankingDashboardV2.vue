@@ -428,7 +428,7 @@ const goto = (index: number) => {
         .column {
           &:first-child {
             .inner-box {
-              border-inline-end: 1px solid var(--fade-grey-dark-3);
+              border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             }
           }
         }
@@ -532,9 +532,9 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      var(--primary-dark-8) 0%,
-                      var(--primary-dark-2) 48%,
-                      var(--primary-light-12) 100%
+                      color-mix(in oklab, var(--primary), black 8%) 0%,
+                      color-mix(in oklab, var(--primary), black 2%) 48%,
+                      color-mix(in oklab, var(--primary), white 12%) 100%
                     );
                     box-shadow: var(--primary-box-shadow);
 
@@ -678,7 +678,7 @@ const goto = (index: number) => {
                   height: 30px;
                   width: 30px;
                   border-radius: var(--radius-rounded);
-                  background: var(--fade-grey-light-2);
+                  background: color-mix(in oklab, var(--fade-grey), white 2%);
 
                   &.is-up {
                     transform: rotate(calc(var(--transform-direction) * -45deg));
@@ -718,7 +718,7 @@ const goto = (index: number) => {
         .monthly-summary-wrap {
           .monthly-summary {
             padding: 0 20px;
-            border: 1px solid var(--fade-grey-dark-5);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 5%);
             border-radius: var(--radius-large);
 
             .monthly-summary-item {
@@ -726,7 +726,7 @@ const goto = (index: number) => {
               font-family: var(--font);
 
               &:first-child {
-                border-bottom: 1px solid var(--fade-grey-dark-5);
+                border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 5%);
               }
 
               span {
@@ -806,10 +806,10 @@ const goto = (index: number) => {
       @include vuero-card--dark;
 
       &.is-card-panel {
-        background: var(--dark-sidebar-light-6);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
         .inner-box {
-          border-color: var(--dark-sidebar-light-12) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
           .box-title {
             h3 {
@@ -820,7 +820,7 @@ const goto = (index: number) => {
           .cards-carousel {
             .tns-nav {
               [aria-controls] {
-                background: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 12%);
               }
             }
 
@@ -830,9 +830,9 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      var(--primary-dark-8) 0%,
-                      var(--primary-dark-2) 48%,
-                      var(--primary-light-12) 100%
+                      color-mix(in oklab, var(--primary), black 8%) 0%,
+                      color-mix(in oklab, var(--primary), black 2%) 48%,
+                      color-mix(in oklab, var(--primary), white 12%) 100%
                     );
                     box-shadow: var(--primary-box-shadow);
 
@@ -845,7 +845,7 @@ const goto = (index: number) => {
                 }
 
                 .ccard {
-                  background: var(--dark-sidebar-light-2);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
                   .top {
                     .inactive.dark-image {
@@ -874,7 +874,7 @@ const goto = (index: number) => {
               .card-balance-stat {
                 .stat-block {
                   .stat-icon {
-                    background: var(--dark-sidebar-light-2);
+                    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
                   }
 
                   .stat-text {
@@ -887,11 +887,11 @@ const goto = (index: number) => {
 
           .monthly-summary-wrap {
             .monthly-summary {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-4);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
               .monthly-summary-item {
-                border-color: var(--dark-sidebar-light-12);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
               }
             }
           }

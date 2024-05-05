@@ -137,8 +137,8 @@ const props = withDefaults(
   }
 
   .circle-chart__background {
-    color: var(--dark-sidebar-dark-2);
-    stroke: var(--dark-sidebar-dark-2);
+    color: color-mix(in oklab, var(--dark-sidebar), black 2%);
+    stroke: color-mix(in oklab, var(--dark-sidebar), black 2%);
   }
 }
 </style>

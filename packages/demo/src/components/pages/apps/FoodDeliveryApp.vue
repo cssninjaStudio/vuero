@@ -441,7 +441,7 @@ const goTo = (index: number) => {
       align-items: center;
       padding: 10px;
       border-radius: 16px;
-      background: var(--primary-light-30);
+      background: color-mix(in oklab, var(--primary), white 30%);
       font-family: var(--font);
 
       .header-image {
@@ -469,7 +469,7 @@ const goTo = (index: number) => {
 
         p {
           font-weight: 400;
-          color: var(--primary-dark-14);
+          color: color-mix(in oklab, var(--primary), black 14%);
           margin-bottom: 8px;
         }
 
@@ -522,7 +522,7 @@ const goTo = (index: number) => {
             max-width: 80px;
             height: 170px;
             background: var(--white);
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: 500px;
             padding: 10px;
             margin: 0 10px;
@@ -549,7 +549,7 @@ const goTo = (index: number) => {
               width: 60px;
               height: 80px;
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               border-radius: 500px;
 
               img {
@@ -624,7 +624,7 @@ const goTo = (index: number) => {
           }
 
           &:hover {
-            border-color: var(--fade-grey-dark-4);
+            border-color: color-mix(in oklab, var(--fade-grey), black 4%);
             background: var(--white);
             box-shadow: var(--light-box-shadow);
           }
@@ -688,7 +688,7 @@ const goTo = (index: number) => {
                 &:nth-child(2) {
                   font-size: 0.7rem;
                   text-transform: uppercase;
-                  color: var(--primary-light-40);
+                  color: color-mix(in oklab, var(--primary), white 40%);
                 }
               }
             }
@@ -708,7 +708,7 @@ const goTo = (index: number) => {
               height: 46px;
               max-height: 46px;
               background: var(--white);
-              border: 1px solid var(--fade-grey-dark-3);
+              border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               border-radius: 500px;
 
               img {
@@ -799,7 +799,7 @@ const goTo = (index: number) => {
 
         .cart-items {
           height: calc(100% - 160px);
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           padding-bottom: 40px;
           overflow-y: auto;
 
@@ -849,7 +849,7 @@ const goTo = (index: number) => {
   .food-delivery-dashboard {
     .left {
       .left-header {
-        background: var(--dark-sidebar-light-2) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
 
         .header-meta {
           h3 {
@@ -875,8 +875,8 @@ const goTo = (index: number) => {
           .food-pills {
             .food-pills-inner {
               .food-pill {
-                background: var(--dark-sidebar-light-2) !important;
-                border-color: var(--dark-sidebar-light-12) !important;
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
                 span {
                   color: var(--dark-dark-text);
@@ -892,8 +892,8 @@ const goTo = (index: number) => {
                 }
 
                 .food-pill-icon {
-                  background: var(--fade-grey-light-3);
-                  border-color: var(--fade-grey-light-3);
+                  background: color-mix(in oklab, var(--fade-grey), white 3%);
+                  border-color: color-mix(in oklab, var(--fade-grey), white 3%);
                 }
               }
 
@@ -914,8 +914,8 @@ const goTo = (index: number) => {
 
               .slick-custom {
                 &:hover {
-                  border-color: var(--dark-sidebar-light-2);
-                  background: var(--dark-sidebar-light-2);
+                  border-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 2%);
                   box-shadow: var(--light-box-shadow);
                 }
               }
@@ -936,7 +936,7 @@ const goTo = (index: number) => {
 
                   span {
                     &:nth-child(2) {
-                      color: var(--primary-light-18);
+                      color: color-mix(in oklab, var(--primary), white 18%);
                     }
                   }
                 }
@@ -944,8 +944,8 @@ const goTo = (index: number) => {
 
               .meta-container {
                 .meta-icon {
-                  background: var(--fade-grey-light-3);
-                  border-color: var(--fade-grey-light-3);
+                  background: color-mix(in oklab, var(--fade-grey), white 3%);
+                  border-color: color-mix(in oklab, var(--fade-grey), white 3%);
                 }
 
                 .meta-content {
@@ -969,7 +969,7 @@ const goTo = (index: number) => {
     .right {
       .cart-widget {
         .cart-items {
-          border-color: var(--dark-sidebar-light-12) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
 
         .cart-button {

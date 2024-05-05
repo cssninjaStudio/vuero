@@ -117,8 +117,8 @@ const props = defineProps<{
 
 .is-dark {
   .view-wrapper {
-    background: var(--dark-sidebar-light-10);
-    border-color: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
   }
 }
 

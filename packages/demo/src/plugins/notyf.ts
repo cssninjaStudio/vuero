@@ -48,7 +48,7 @@ async function initNotyfService() {
         },
         {
           type: 'accent',
-          background: themeColors.accent,
+          background: themeColors.purple,
           icon: {
             className: 'fas fa-car-crash',
             tagName: 'i',
@@ -75,7 +75,7 @@ async function initNotyfService() {
         },
         {
           type: 'green',
-          background: themeColors.primary,
+          background: themeColors.lime,
           icon: {
             className: 'fas fa-check',
             tagName: 'i',

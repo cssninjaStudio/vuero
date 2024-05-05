@@ -10,7 +10,7 @@ export function useReputationChart() {
         show: false,
       },
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     plotOptions: {
       radialBar: {
         hollow: {
@@ -23,13 +23,13 @@ export function useReputationChart() {
             fontSize: '12px',
             fontWeight: 400,
             offsetY: 5,
-            color: themeColors.lightText,
+            color: themeColors.grey,
           },
           value: {
             show: true,
             fontWeight: 600,
             fontFamily: '"Roboto Flex Variable", sans-serif',
-            color: themeColors.primary,
+            color: themeColors.lime,
             fontSize: '16px',
             offsetY: 5,
           },

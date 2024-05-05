@@ -879,8 +879,8 @@ const options = ref(['All Flights', 'All Options'])
     .booking-bar-wrapper {
       @include vuero-card--dark;
 
-      background: var(--dark-sidebar-light-4);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       box-shadow: var(--light-box-shadow);
     }
 

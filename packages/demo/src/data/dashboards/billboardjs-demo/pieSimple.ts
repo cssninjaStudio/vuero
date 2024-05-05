@@ -11,8 +11,8 @@ export function usePieSimple() {
         ['data2', 120],
       ],
       colors: {
-        data1: themeColors.accent,
-        data2: themeColors.primary,
+        data1: themeColors.purple,
+        data2: themeColors.lime,
         data3: themeColors.orange,
         data4: themeColors.purple,
         setosa: themeColors.orange,

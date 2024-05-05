@@ -21,9 +21,9 @@ export function useGaugeSimple() {
     gauge: {},
     color: {
       pattern: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
       ],
       threshold: {

@@ -51,7 +51,7 @@ export function useEnergyChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.primary, themeColors.purple],
+    colors: [themeColors.purple, themeColors.lime, themeColors.purple],
     dataLabels: {
       enabled: false,
       show: false,

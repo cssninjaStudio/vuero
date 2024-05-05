@@ -20,7 +20,7 @@ export function useInfluenceChart() {
           name: {
             fontSize: '13px',
             fontWeight: '600',
-            color: themeColors.lightText,
+            color: themeColors.grey,
             show: false,
           },
           value: {

@@ -17,9 +17,9 @@ export function useDemo17Donuts() {
       chart: {},
       labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
       colors: [
-        themeColors.accent,
+        themeColors.purple,
         themeColors.info,
-        themeColors.primary,
+        themeColors.lime,
         themeColors.purple,
         themeColors.orange,
       ],

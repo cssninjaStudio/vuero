@@ -182,7 +182,7 @@ const optionsSingle = [
     width: 100%;
     background-color: var(--white);
     border-radius: 6px;
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     transition: all 0.3s; // transition-all test
 
     .card-grid-item-body {
@@ -190,7 +190,7 @@ const optionsSingle = [
       align-items: center;
       justify-content: space-between;
       padding: 20px;
-      border-bottom: 1px solid var(--fade-grey-dark-3);
+      border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       .left {
         display: flex;
@@ -233,7 +233,7 @@ const optionsSingle = [
             width: 32px;
             min-width: 32px;
             border-radius: 50%;
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             margin: 0 4px;
             color: var(--primary);
             box-shadow: var(--light-box-shadow);
@@ -312,16 +312,16 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v1 {
     .card-grid-item {
-      background: var(--dark-sidebar-light-6);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .card-grid-item-body {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .left {
           .v-avatar {
             .badge {
-              border-color: var(--dark-sidebar-light-6);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
             }
           }
         }
@@ -329,8 +329,8 @@ const optionsSingle = [
         .right {
           .social-links {
             .social-link {
-              background: var(--dark-sidebar-light-2);
-              border-color: var(--dark-sidebar-light-12);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
               color: var(--dark-dark-text);
 
               &:hover,

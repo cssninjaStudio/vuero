@@ -287,7 +287,7 @@
 
     &.dark-image {
       box-shadow: var(--light-box-shadow);
-      border: 1px solid var(--dark-sidebar-light-12);
+      border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 }

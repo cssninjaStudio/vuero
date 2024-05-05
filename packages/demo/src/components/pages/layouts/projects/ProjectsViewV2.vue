@@ -562,13 +562,13 @@
     display: flex;
     padding: 20px;
     background: var(--white);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     border-radius: var(--radius-large);
     margin-bottom: 1.5rem;
 
     .header-item {
       width: 25%;
-      border-inline-end: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       &:last-child {
         border-inline-end: none;
@@ -607,7 +607,7 @@
       min-height: 220px;
       padding: 20px;
       background: var(--white);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: var(--radius-large);
 
       .top-section {
@@ -642,7 +642,7 @@
           .heading {
             font-family: var(--font-alt);
             font-size: 0.75rem;
-            color: var(--light-text-dark-22);
+            color: color-mix(in oklab, var(--light-text), black 22%);
           }
 
           > p {
@@ -665,11 +665,11 @@
 .is-dark {
   .all-projects {
     .all-projects-header {
-      background: var(--dark-sidebar-light-6);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .header-item {
-        border-color: var(--dark-sidebar-light-18);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
 
         span {
           color: var(--dark-dark-text);
@@ -683,8 +683,8 @@
 
     .projects-card-grid {
       .grid-item {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .top-section {
           .head {
@@ -697,7 +697,7 @@
         .bottom-section {
           .foot-block {
             .heading {
-              color: var(--light-text-dark-12);
+              color: color-mix(in oklab, var(--light-text), black 12%);
             }
           }
         }

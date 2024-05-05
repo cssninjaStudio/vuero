@@ -73,11 +73,11 @@ const { onceError } = useImageError()
 
 .is-dark {
   .is-chat-placeholder {
-    background: var(--dark-sidebar-light-5) !important;
-    border-color: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
 
     h3 {
-      color: var(--primary-grey-dark-15) !important;
+      color: color-mix(in oklab, var(--primary-grey), black 15%) !important;
     }
   }
 }

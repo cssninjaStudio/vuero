@@ -128,7 +128,7 @@ const props = withDefaults(
     display: block;
     text-align: center;
     background: var(--white);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 0;
@@ -179,8 +179,8 @@ const props = withDefaults(
 .is-dark {
   .landing-page-wrapper {
     .component-box {
-      background: var(--landing-yyy-dark-6);
-      border-color: var(--landing-yyy-light-2);
+      background: color-mix(in oklab, var(--landing-yyy), black 6%);
+      border-color: color-mix(in oklab, var(--landing-yyy), white 2%);
 
       &:hover,
       &:focus {

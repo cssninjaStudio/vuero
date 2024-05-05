@@ -259,7 +259,7 @@ const onSubmit = () => {
 
           .left {
             position: relative;
-            border-inline-end: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
             .operator {
               position: absolute;
@@ -307,7 +307,7 @@ const onSubmit = () => {
                 width: 60px;
                 height: 40px;
                 background: var(--white);
-                border: 1px solid var(--fade-grey-dark-3);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                 border-radius: 8px;
                 font-family: var(--font);
                 font-weight: 600;
@@ -334,7 +334,7 @@ const onSubmit = () => {
         .form-body {
           .form-section {
             &.is-grey {
-              background: var(--dark-sidebar-light-4) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
             }
 
             h3 {
@@ -342,10 +342,10 @@ const onSubmit = () => {
             }
 
             .left {
-              border-color: var(--dark-sidebar-light-12) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
               .operator {
-                background: var(--dark-sidebar-light-6) !important;
+                background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
                 color: var(--dark-dark-text);
               }
 
@@ -361,8 +361,8 @@ const onSubmit = () => {
                   }
 
                   .radio-pill-inner {
-                    background: var(--dark-sidebar-light-2);
-                    border-color: var(--dark-sidebar-light-12);
+                    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
                     color: var(--dark-dark-text);
                   }
                 }
@@ -394,7 +394,7 @@ const onSubmit = () => {
 
             .left {
               border-inline-end: none;
-              border-bottom: 1px solid var(--fade-grey-dark-3);
+              border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
               padding-bottom: 40px;
 
               .operator {

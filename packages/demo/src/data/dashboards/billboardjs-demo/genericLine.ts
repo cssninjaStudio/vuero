@@ -12,8 +12,8 @@ export function useGenericLine() {
         ['data2', 50, 20, 10, 40, 15, 25],
       ],
       colors: {
-        data1: themeColors.accent,
-        data2: themeColors.primary,
+        data1: themeColors.purple,
+        data2: themeColors.lime,
         data3: themeColors.info,
       },
     },

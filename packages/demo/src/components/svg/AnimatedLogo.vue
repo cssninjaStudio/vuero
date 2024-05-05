@@ -52,7 +52,7 @@ if (!import.meta.env.SSR) {
 
 <style lang="scss" scoped>
 .right {
-  fill: var(--primary-dark-7);
+  fill: color-mix(in oklab, var(--primary), black 20%);
 }
 
 .bottom {
@@ -60,7 +60,7 @@ if (!import.meta.env.SSR) {
 }
 
 .left {
-  fill: var(--primary-light-15);
+  fill: color-mix(in oklab, var(--primary), white 25%);
 }
 
 .is-roll,
@@ -103,19 +103,19 @@ svg:hover {
 
 @keyframes is-roll-right {
   0% {
-    fill: var(--primary-dark-7);
+    fill: color-mix(in oklab, var(--primary), black 7%);
   }
 
   33% {
-    fill: var(--primary-light-8);
+    fill: color-mix(in oklab, var(--primary), white 8%);
   }
 
   66% {
-    fill: var(--primary-light-40);
+    fill: color-mix(in oklab, var(--primary), white 40%);
   }
 
   100% {
-    fill: var(--primary-dark-7);
+    fill: color-mix(in oklab, var(--primary), black 7%);
   }
 }
 
@@ -125,11 +125,11 @@ svg:hover {
   }
 
   33% {
-    fill: var(--primary-light-24); // darken(#1ee8c0, 7%);
+    fill: color-mix(in oklab, var(--primary), white 24%); // darken(#1ee8c0, 7%);
   }
 
   66% {
-    fill: var(--primary-light-20);
+    fill: color-mix(in oklab, var(--primary), white 20%);
   }
 
   100% {
@@ -139,19 +139,19 @@ svg:hover {
 
 @keyframes is-roll-left {
   0% {
-    fill: var(--primary-light-15);
+    fill: color-mix(in oklab, var(--primary), white 15%);
   }
 
   33% {
-    fill: var(--primary-light-12); // lighten(#1ee8c0, 15%);
+    fill: color-mix(in oklab, var(--primary), white 12%); // lighten(#1ee8c0, 15%);
   }
 
   66% {
-    fill: var(--primary-light-15);
+    fill: color-mix(in oklab, var(--primary), white 15%);
   }
 
   100% {
-    fill: var(--primary-light-15);
+    fill: color-mix(in oklab, var(--primary), white 15%);
   }
 }
 </style>

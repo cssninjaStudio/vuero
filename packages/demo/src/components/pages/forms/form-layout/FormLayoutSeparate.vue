@@ -350,7 +350,7 @@ const onSubmit = () => {
 
                 .radio-box-inner {
                   background: var(--white);
-                  border: 1px solid var(--fade-grey-dark-3);
+                  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                   text-align: center;
                   border-radius: var(--radius);
                   font-family: var(--font);
@@ -459,8 +459,8 @@ const onSubmit = () => {
                   }
 
                   .radio-box-inner {
-                    background: var(--dark-sidebar-light-2);
-                    border-color: var(--dark-sidebar-light-12);
+                    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
                     .fee {
                       color: var(--dark-dark-text);

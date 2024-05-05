@@ -13,7 +13,7 @@ export function useSupportCharts() {
         show: false,
       },
     },
-    colors: [themeColors.accent],
+    colors: [themeColors.purple],
     plotOptions: {
       radialBar: {
         startAngle: -90,
@@ -73,7 +73,7 @@ export function useSupportCharts() {
         show: false,
       },
     },
-    colors: [themeColors.primary],
+    colors: [themeColors.lime],
     plotOptions: {
       radialBar: {
         startAngle: -90,

@@ -18,7 +18,7 @@ export function useLineStatsWidgetCharts() {
         show: false,
       },
     },
-    colors: [themeColors.accent],
+    colors: [themeColors.purple],
     dataLabels: {
       enabled: false,
     },

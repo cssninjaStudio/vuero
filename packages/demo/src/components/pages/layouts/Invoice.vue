@@ -233,7 +233,7 @@ const totalColumns = {
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--fade-grey-dark-4);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
 
     .left {
       h3 {
@@ -262,7 +262,7 @@ const totalColumns = {
 
           &:hover {
             color: var(--dark-text);
-            background: var(--fade-grey-dark-4);
+            background: color-mix(in oklab, var(--fade-grey), black 4%);
           }
 
           .iconify {
@@ -339,12 +339,12 @@ const totalColumns = {
         }
 
         &.is-bordered {
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
 
         .v-avatar {
           &.is-customer {
-            border: 1.6px solid var(--fade-grey-dark-3);
+            border: 1.6px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: var(--radius-rounded);
             box-shadow: var(--light-box-shadow);
           }
@@ -379,7 +379,7 @@ const totalColumns = {
 .is-dark {
   .invoice-wrapper {
     .invoice-header {
-      border-color: var(--dark-sidebar-light-20);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 20%);
 
       .left {
         h3 {
@@ -394,7 +394,7 @@ const totalColumns = {
 
             &:hover,
             &:focus {
-              background: var(--dark-sidebar-light-2);
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%);
               border-color: var(--primary);
               color: var(--primary);
             }
@@ -410,11 +410,11 @@ const totalColumns = {
     }
 
     .invoice-section {
-      border-color: var(--dark-sidebar-light-12) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
       &.is-flex {
         .v-avatar {
-          border-color: var(--dark-sidebar-light-12) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
 
         .meta,

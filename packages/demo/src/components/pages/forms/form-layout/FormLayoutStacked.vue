@@ -520,7 +520,7 @@ const onSubmit = () => {
 
         .form-section {
           padding: 40px;
-          border-bottom: 1px solid var(--fade-grey-dark-4);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
 
           &.is-grey {
             background: #fafafa;
@@ -530,7 +530,7 @@ const onSubmit = () => {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid var(--fade-grey-dark-4);
+            border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
             padding-bottom: 20px;
             margin-bottom: 30px;
 
@@ -718,14 +718,14 @@ const onSubmit = () => {
       .form-outer {
         .form-body {
           .form-section {
-            border-color: var(--dark-sidebar-light-12);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             &.is-grey {
-              background: var(--dark-sidebar-light-4);
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%);
             }
 
             .form-section-header {
-              border-color: var(--dark-sidebar-light-12);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               .left {
                 h3 {
@@ -741,7 +741,7 @@ const onSubmit = () => {
 
               .color-codes {
                 .color-code {
-                  background: var(--dark-sidebar-light-6);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
                   &.is-primary {
                     border-color: var(--primary);

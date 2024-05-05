@@ -148,11 +148,11 @@ useHead({
     &.is-left,
     &.is-right,
     &.is-centered {
-      background: var(--landing-xxx-dark-2);
+      background: color-mix(in oklab, var(--landing-xxx), black 2%);
 
       .hero-body {
         .hero-mockup {
-          border-color: var(--landing-xxx-light-8);
+          border-color: color-mix(in oklab, var(--landing-xxx), white 8%);
         }
 
         .buttons {
@@ -341,8 +341,8 @@ useHead({
 .is-dark {
   .pricing-wrapper {
     .pricing-plan {
-      border-color: var(--landing-xxx-light-12);
-      background: var(--landing-xxx-light-6);
+      border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+      background: color-mix(in oklab, var(--landing-xxx), white 6%);
 
       &.is-featured {
         border-color: var(--primary);
@@ -362,12 +362,12 @@ useHead({
 
       .trial {
         color: var(--primary);
-        border-color: var(--landing-xxx-light-12);
-        background: var(--landing-xxx-light-2);
+        border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+        background: color-mix(in oklab, var(--landing-xxx), white 2%);
       }
 
       hr {
-        background: var(--landing-xxx-light-12);
+        background: color-mix(in oklab, var(--landing-xxx), white 12%);
       }
 
       li {
@@ -399,12 +399,12 @@ useHead({
 
 .is-dark {
   .card-icon-box {
-    border-color: var(--landing-xxx-light-12);
-    background: var(--landing-xxx-light-4);
+    border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+    background: color-mix(in oklab, var(--landing-xxx), white 4%);
 
     .v-icon {
       background: transparent;
-      border: 2px solid var(--landing-xxx-light-12);
+      border: 2px solid color-mix(in oklab, var(--landing-xxx), white 12%);
     }
 
     .title {
@@ -426,10 +426,10 @@ useHead({
   .has-bg-dots {
     background-image: radial-gradient(
         circle,
-        var(--landing-xxx-light-4) 10%,
+        color-mix(in oklab, var(--landing-xxx), white 4%) 10%,
         transparent 15%
       ),
-      radial-gradient(circle, var(--landing-xxx-light-4) 10%, transparent 15%);
+      radial-gradient(circle, color-mix(in oklab, var(--landing-xxx), white 4%) 10%, transparent 15%);
     background-size: 50px 50px;
     background-position:
       0 0,
@@ -536,7 +536,7 @@ useHead({
     }
 
     .avatar {
-      border: 4px solid var(--primary-light-8);
+      border: 4px solid color-mix(in oklab, var(--primary), white 8%);
     }
   }
 
@@ -570,7 +570,7 @@ useHead({
 
     .v-avatar {
       .avatar {
-        border-color: var(--primary-light-8);
+        border-color: color-mix(in oklab, var(--primary), white 8%);
       }
     }
 

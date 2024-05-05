@@ -111,17 +111,17 @@
       var(--primary-grey-h) var(--primary-grey-s) var(--primary-grey-l) + 10 / 100%
     ) !important;
 
-    background: var(--dark-sidebar-light-6);
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
     .vacp-color-input {
-      background-color: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-12) !important;
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
       color: var(--dark-dark-text);
     }
 
     .vacp-format-switch-button {
-      background-color: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-12) !important;
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
       color: var(--dark-dark-text);
 
       &:hover,
@@ -133,19 +133,19 @@
     .vacp-range-input--alpha {
       --vacp-tiled-background-image: linear-gradient(
           45deg,
-          var(--dark-sidebar-light-8) 25%,
+          color-mix(in oklab, var(--dark-sidebar), white 8%) 25%,
           transparent 25%,
           transparent 75%,
-          var(--dark-sidebar-light-8) 75%,
-          var(--dark-sidebar-light-8)
+          color-mix(in oklab, var(--dark-sidebar), white 8%) 75%,
+          color-mix(in oklab, var(--dark-sidebar), white 8%)
         ),
         linear-gradient(
           45deg,
-          var(--dark-sidebar-light-8) 25%,
+          color-mix(in oklab, var(--dark-sidebar), white 8%) 25%,
           transparent 25%,
           transparent 75%,
-          var(--dark-sidebar-light-8) 75%,
-          var(--dark-sidebar-light-8)
+          color-mix(in oklab, var(--dark-sidebar), white 8%) 75%,
+          color-mix(in oklab, var(--dark-sidebar), white 8%)
         );
 
       background-color: var(--dark-sidebar);

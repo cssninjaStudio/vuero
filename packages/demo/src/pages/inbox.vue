@@ -505,7 +505,7 @@ useHead({
       height: 100%;
       width: 20%;
       background: var(--white);
-      border-inline-end: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       .header-area {
         height: 80px;
@@ -513,7 +513,7 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         padding: 0 20px;
 
         .inbox-title {
@@ -589,7 +589,7 @@ useHead({
                   border-radius: 100px;
 
                   &.is-active {
-                    background: var(--fade-grey-light-3);
+                    background: color-mix(in oklab, var(--fade-grey), white 3%);
 
                     span,
                     .iconify {
@@ -738,7 +738,7 @@ useHead({
 
               &:hover,
               &:focus {
-                background: var(--fade-grey-light-3);
+                background: color-mix(in oklab, var(--fade-grey), white 3%);
               }
 
               img {
@@ -781,7 +781,7 @@ useHead({
       height: 100%;
       width: 32%;
       background: var(--white);
-      border-inline-end: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
       .header-area {
         height: 80px;
@@ -789,7 +789,7 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         padding: 0 20px;
 
         .actions {
@@ -842,7 +842,7 @@ useHead({
         .inbox-message {
           display: flex;
           align-items: stretch;
-          border-bottom: 1px solid var(--fade-grey-dark-3);
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
           padding: 20px;
           cursor: pointer;
 
@@ -854,7 +854,7 @@ useHead({
           }
 
           &.is-selected {
-            background: var(--fade-grey-light-4);
+            background: color-mix(in oklab, var(--fade-grey), white 4%);
           }
 
           &.is-unread {
@@ -944,7 +944,7 @@ useHead({
         width: 100%;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         padding: 0 20px;
         background: var(--white);
 
@@ -1145,7 +1145,7 @@ useHead({
           .reply-bubble {
             position: relative;
             padding: 20px;
-            border: 1px solid var(--fade-grey-dark-5);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 5%);
             border-radius: var(--radius-large);
             background: var(--white);
             width: 100%;
@@ -1260,7 +1260,7 @@ useHead({
   transition: all 0.3s; // transition-all test
 
   &:hover {
-    border-color: var(--fade-grey-dark-4);
+    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
     box-shadow: var(--light-box-shadow);
 
     .iconify {
@@ -1269,7 +1269,7 @@ useHead({
   }
 
   &.is-checked {
-    border-color: var(--fade-grey-dark-3);
+    border-color: color-mix(in oklab, var(--fade-grey), black 3%);
     box-shadow: var(--light-box-shadow);
   }
 
@@ -1303,7 +1303,7 @@ useHead({
 
     &:hover,
     &:focus {
-      border-color: var(--fade-grey-dark-4);
+      border-color: color-mix(in oklab, var(--fade-grey), black 4%);
       box-shadow: var(--light-box-shadow) !important;
     }
 
@@ -1372,7 +1372,7 @@ useHead({
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--fade-grey-dark-3);
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     padding: 0 20px;
 
     .panel-title {
@@ -1457,7 +1457,7 @@ useHead({
             justify-content: center;
             align-items: center;
             background: var(--white);
-            border: 1px solid var(--fade-grey-dark-3);
+            border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             border-radius: var(--radius-rounded);
             transition: all 0.3s; // transition-all test
 
@@ -1489,7 +1489,7 @@ Dark mode
 
         .header-area {
           background: var(--dark-sidebar);
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .inbox-title {
             color: var(--dark-dark-text);
@@ -1497,11 +1497,11 @@ Dark mode
         }
 
         .sidebar-inner {
-          background: var(--dark-sidebar-light-4);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .inner-menu {
-            border-color: var(--dark-sidebar-light-12);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             .compose-button {
               background: var(--primary) !important;
@@ -1517,7 +1517,7 @@ Dark mode
             .inbox-menu {
               ul li a {
                 &.is-active {
-                  background: var(--dark-sidebar-light-8);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 8%);
 
                   span {
                     color: var(--smoke-white);
@@ -1536,7 +1536,7 @@ Dark mode
           }
 
           .scroll-menu {
-            border-color: var(--dark-sidebar-light-12);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             .title-wrap {
               h3 {
@@ -1552,7 +1552,7 @@ Dark mode
             .contact-list {
               .contact-block {
                 &:hover {
-                  background: var(--dark-sidebar-light-8);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 8%);
                 }
 
                 .contact-meta {
@@ -1569,22 +1569,22 @@ Dark mode
       }
 
       .inbox-messages {
-        border-color: var(--dark-sidebar-light-12);
-        border-inline-start: 1px solid var(--dark-sidebar-light-12) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+        border-inline-start: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
         .header-area {
           background: var(--dark-sidebar);
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .messages-list {
-          background: var(--dark-sidebar-light-4);
+          background: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
           .inbox-message {
-            border-color: var(--dark-sidebar-light-12);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             &.is-selected {
-              background: var(--dark-sidebar-light-8);
+              background: color-mix(in oklab, var(--dark-sidebar), white 8%);
             }
 
             .message-meta {
@@ -1600,11 +1600,11 @@ Dark mode
       }
 
       .inbox-message-details {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .header-area {
           background: var(--dark-sidebar);
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .message-meta {
             span {
@@ -1622,14 +1622,14 @@ Dark mode
         }
 
         .message-wrapper {
-          background: var(--dark-sidebar-light-14);
+          background: color-mix(in oklab, var(--dark-sidebar), white 14%);
 
           .message-inner {
-            background: var(--dark-sidebar-light-4);
-            border-color: var(--dark-sidebar-light-12);
+            background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
             .message-head {
-              border-color: var(--dark-sidebar-light-12);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               .info {
                 span {
@@ -1642,15 +1642,15 @@ Dark mode
 
             .attachments-list {
               .attachment {
-                background: var(--dark-sidebar-light-2);
-                border-color: var(--dark-sidebar-light-12);
+                background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+                border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
                 span {
                   color: var(--dark-dark-text);
                 }
 
                 .download-icon {
-                  border-color: var(--dark-sidebar-light-8);
+                  border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
 
                   .iconify {
                     color: var(--smoke-white);
@@ -1662,12 +1662,12 @@ Dark mode
 
           .reply-box-wrap {
             .reply-bubble {
-              background-color: var(--dark-sidebar-light-2);
-              border-color: var(--dark-sidebar-light-4);
+              background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
               &::before,
               &::after {
-                border-bottom-color: var(--dark-sidebar-light-2) !important;
+                border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
               }
 
               .reply-as {
@@ -1696,8 +1696,8 @@ Dark mode
 
   .inbox-action {
     &:hover {
-      background: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .iconify {
         color: var(--primary);
@@ -1708,8 +1708,8 @@ Dark mode
   .inbox-dropdown {
     &:hover {
       .button {
-        background: var(--dark-sidebar-light-2) !important;
-        border-color: var(--dark-sidebar-light-12) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
       }
     }
 

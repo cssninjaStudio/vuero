@@ -535,8 +535,8 @@ $overlay-bg: linear-gradient(
 $overlay-bg-dark: linear-gradient(
   to bottom,
   rgb(255 255 255 / 0%) 0%,
-  hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 100%) 65%,
-  hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 100%) 100%
+  var(--dark-sidebar) 65%,
+  var(--dark-sidebar) 100%
 );
 
 .chat-app-wrapper {
@@ -585,7 +585,7 @@ $overlay-bg-dark: linear-gradient(
               height: 20px;
               width: 20px;
               font-size: 20px;
-              color: var(--light-text-dark-5);
+              color: color-mix(in oklab, var(--light-text), black 5%);
             }
           }
 
@@ -630,8 +630,8 @@ $overlay-bg-dark: linear-gradient(
 .is-dark {
   .chat-app-wrapper {
     .chat-app-header {
-      background: var(--dark-sidebar-dark-2);
-      border-color: var(--dark-sidebar-light-2);
+      background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
       .search-bar {
         .field {
@@ -757,8 +757,8 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .conversation-area {
-        background: var(--dark-sidebar-light-4);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .overlay {
           background: $overlay-bg-dark;
@@ -766,11 +766,11 @@ $overlay-bg-dark: linear-gradient(
 
         .conversation {
           &:hover {
-            background: var(--dark-sidebar-light-6);
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
           }
 
           &.active {
-            background: var(--dark-sidebar-light-1);
+            background: color-mix(in oklab, var(--dark-sidebar), white 1%);
             border-color: var(--primary);
           }
 
@@ -862,7 +862,7 @@ $overlay-bg-dark: linear-gradient(
           > span {
             width: 32px;
             height: 32px;
-            background-color: var(--primary-light-48);
+            background-color: color-mix(in oklab, var(--primary), white 48%);
             color: var(--primary);
             border-radius: var(--radius-rounded);
             display: flex;
@@ -1017,7 +1017,7 @@ $overlay-bg-dark: linear-gradient(
 
           &:focus {
             background: var(--white);
-            border-color: var(--fade-grey-dark-3);
+            border-color: color-mix(in oklab, var(--fade-grey), black 3%);
             box-shadow: var(--light-box-shadow);
           }
         }
@@ -1158,11 +1158,11 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .chat-area {
-        background: var(--dark-sidebar-light-10);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .chat-area-header {
-          background: var(--dark-sidebar-light-10);
+          background: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
           .trigger {
             .iconify {
@@ -1176,13 +1176,13 @@ $overlay-bg-dark: linear-gradient(
 
           .chat-area-group {
             img {
-              border-color: var(--dark-sidebar-light-10);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
             }
 
             > span {
-              border-color: var(--dark-sidebar-light-10);
-              color: var(--primary-dark-5);
-              background: var(--primary-light-20);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+              color: color-mix(in oklab, var(--primary), black 5%);
+              background: color-mix(in oklab, var(--primary), white 20%);
             }
           }
         }
@@ -1192,7 +1192,7 @@ $overlay-bg-dark: linear-gradient(
             &.owner {
               .chat-msg-content {
                 .chat-msg-text {
-                  background: var(--primary-dark-4);
+                  background: color-mix(in oklab, var(--primary), black 4%);
                   color: var(--smoke-white);
                 }
               }
@@ -1200,7 +1200,7 @@ $overlay-bg-dark: linear-gradient(
 
             .chat-msg-content {
               .chat-msg-text {
-                background: var(--dark-sidebar-light-6);
+                background: color-mix(in oklab, var(--dark-sidebar), white 6%);
                 color: var(--dark-dark-text);
               }
             }
@@ -1208,13 +1208,13 @@ $overlay-bg-dark: linear-gradient(
         }
 
         .chat-area-footer {
-          background: var(--dark-sidebar-light-10);
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           .add-content .dropdown {
             &:hover {
               > div > .button {
-                background: var(--dark-sidebar-light-6) !important;
+                background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
 
                 .iconify {
                   color: var(--primary);
@@ -1238,7 +1238,7 @@ $overlay-bg-dark: linear-gradient(
           .add-emoji {
             &:hover {
               .button {
-                background: var(--dark-sidebar-light-6) !important;
+                background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
 
                 .iconify {
                   color: var(--primary);
@@ -1248,12 +1248,12 @@ $overlay-bg-dark: linear-gradient(
           }
 
           input {
-            background: var(--dark-sidebar-light-6);
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
             color: var(--dark-dark-text);
 
             &:focus {
-              border-color: var(--dark-sidebar-light-12);
-              background: var(--dark-sidebar-light-4);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+              background: color-mix(in oklab, var(--dark-sidebar), white 4%);
             }
           }
         }
@@ -1381,8 +1381,8 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .detail-area {
-        background: var(--dark-sidebar-light-4);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         .chat-side-content {
           .user-name {

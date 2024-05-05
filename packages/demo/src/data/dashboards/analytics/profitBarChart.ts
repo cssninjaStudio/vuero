@@ -31,7 +31,7 @@ export function useProfitBarChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.purple, themeColors.primary],
+    colors: [themeColors.purple, themeColors.purple, themeColors.lime],
     legend: {
       position: 'top',
     },

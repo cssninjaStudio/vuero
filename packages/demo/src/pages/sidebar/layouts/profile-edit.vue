@@ -143,7 +143,7 @@
 
           &.router-link-exact-active {
             box-shadow: var(--light-box-shadow);
-            border-color: var(--fade-grey-dark-3);
+            border-color: color-mix(in oklab, var(--fade-grey), black 3%);
 
             span,
             .lnil {
@@ -157,7 +157,7 @@
 
           &:not(.router-link-exact-active) {
             &:hover {
-              background: var(--fade-grey-light-3);
+              background: color-mix(in oklab, var(--fade-grey), white 3%);
             }
           }
 
@@ -207,13 +207,13 @@
       }
 
       .form-head {
-        border-bottom: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         transition: all 0.3s; // transition-all test
 
         &.is-stuck {
           background: var(--white);
           padding-inline-end: 80px;
-          border-inline-start: 1px solid var(--fade-grey-dark-3);
+          border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
         }
 
         .left {
@@ -230,7 +230,7 @@
       }
 
       .form-foot {
-        border-top: 1px solid var(--fade-grey-dark-3);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       }
 
       .form-body {
@@ -290,8 +290,8 @@
                 min-width: 50px;
                 height: 50px;
                 border-radius: var(--radius-rounded);
-                background: var(--fade-grey-light-2);
-                border: 1px solid var(--fade-grey-dark-3);
+                background: color-mix(in oklab, var(--fade-grey), white 2%);
+                border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
                 color: var(--light-text);
 
                 &.has-img {
@@ -375,8 +375,8 @@
         .account-menu {
           .account-menu-item {
             &.router-link-exact-active {
-              background: var(--dark-sidebar-light-8);
-              border-color: var(--dark-sidebar-light-12);
+              background: color-mix(in oklab, var(--dark-sidebar), white 8%);
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
               i,
               span {
@@ -386,7 +386,7 @@
 
             &:not(.router-link-exact-active) {
               &:hover {
-                background: var(--dark-sidebar-light-10);
+                background: color-mix(in oklab, var(--dark-sidebar), white 10%);
               }
             }
 
@@ -400,13 +400,13 @@
       &.is-form {
         .form-head,
         .form-foot {
-          border-color: var(--dark-sidebar-light-12);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
 
         .form-head {
           &.is-stuck {
             background: var(--dark-sidebar);
-            border-color: var(--dark-sidebar-light-6);
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
           }
 
           .left {
@@ -429,11 +429,11 @@
                 > img,
                 > .icon-wrap,
                 > .icon-wrap img {
-                  border-color: var(--dark-sidebar-light-12);
+                  border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
                 }
 
                 > .icon-wrap {
-                  background: var(--dark-sidebar-light-2);
+                  background: color-mix(in oklab, var(--dark-sidebar), white 2%);
                 }
 
                 .meta {

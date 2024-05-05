@@ -679,7 +679,7 @@ const searchLabel = computed(() => {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid var(--fade-grey-dark-5);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 5%);
   min-height: 205px;
 
   &::after {
@@ -754,7 +754,7 @@ const searchLabel = computed(() => {
     opacity: 0;
     margin-bottom: 12px;
     padding-bottom: 12px;
-    border-bottom: 1px solid var(--primary-light-20);
+    border-bottom: 1px solid color-mix(in oklab, var(--primary), white 20%);
     transform: translateY(20px);
     transition: all 0.3s; // transition-all test
     transition-delay: 0.1s;
@@ -851,14 +851,14 @@ const searchLabel = computed(() => {
     }
 
     .vuero-demo-wrapper {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       .circle-overlay {
         background: var(--primary);
       }
 
       .demo-title {
-        border-color: var(--primary-light-10);
+        border-color: color-mix(in oklab, var(--primary), white 10%);
       }
     }
   }

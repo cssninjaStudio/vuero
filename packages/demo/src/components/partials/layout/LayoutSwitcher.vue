@@ -129,7 +129,7 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
               </VControl>
             </VField>
 
-            <DocumentationColor shrink color="primary" />
+            <DocumentationColor color="primary" />
           </div>
           <VTabs
             v-model:selected="selectedSlug"
@@ -1004,9 +1004,9 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
 
   .layout-size {
     padding: 1rem;
-    width: 280px;
-    max-width: 280px;
-    border-inline-end: 1px solid var(--fade-grey-dark-3);
+    width: 300px;
+    max-width: 300px;
+    border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     gap: 1rem;
     flex-grow: 1;
     flex-shrink: 0;
@@ -1024,7 +1024,7 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
       width: 100%;
       max-width: none;
       border-inline-end: 0;
-      border-top: 1px solid var(--fade-grey-dark-3);
+      border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     }
   }
 }
@@ -1036,14 +1036,14 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
 .is-dark {
   .switcher-modal-content {
     .layout-size {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
   .layout-selector {
     .layout-item {
       &.is-active {
         .indicator {
-          border-color: var(--dark-sidebar-light-6) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
       }
 

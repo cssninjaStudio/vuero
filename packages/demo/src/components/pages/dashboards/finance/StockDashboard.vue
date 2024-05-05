@@ -775,8 +775,8 @@
 .is-dark {
   .stock-dashboard {
     .graph {
-      background: var(--dark-sidebar-light-6) !important;
-      border-color: var(--dark-sidebar-light-12) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
     }
 
     .stock {
@@ -810,8 +810,8 @@
         .asset {
           .asset-logo {
             &::before {
-              background: var(--dark-sidebar-light-6) !important;
-              border-color: var(--dark-sidebar-light-12) !important;
+              background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
             }
           }
         }

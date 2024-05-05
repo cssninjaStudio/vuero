@@ -263,8 +263,8 @@ const { onceError } = useImageError()
 
 .is-dark {
   .chat-side {
-    background: var(--dark-sidebar-light-4);
-    border-color: var(--dark-sidebar-light-2);
+    background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
     .user-name {
       color: var(--primary-grey);
@@ -272,7 +272,7 @@ const { onceError } = useImageError()
 
     .chat-side-content {
       .is-badge {
-        border-color: var(--dark-sidebar-light-4);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
       }
 
       .detail-photos {

@@ -173,7 +173,7 @@ const optionsSingle = [
 
         &:hover,
         &:focus {
-          border-color: var(--fade-grey-dark-4);
+          border-color: color-mix(in oklab, var(--fade-grey), black 4%);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);
         }

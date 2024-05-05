@@ -112,7 +112,7 @@ export function useUsersBarChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.primary],
+    colors: [themeColors.purple, themeColors.lime],
     dataLabels: {
       enabled: false,
     },

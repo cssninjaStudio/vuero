@@ -461,7 +461,7 @@ const { progressChartOptions } = useProgressChart()
     align-items: center;
     padding: 10px;
     border-radius: 16px;
-    background: var(--primary-dark-24);
+    background: color-mix(in oklab, var(--primary), black 24%);
     font-family: var(--font);
     margin-bottom: 30px;
 
@@ -491,7 +491,7 @@ const { progressChartOptions } = useProgressChart()
 
       p {
         font-weight: 400;
-        color: var(--smoke-white-dark-16);
+        color: color-mix(in oklab, var(--smoke-white), black 16%);
         margin-bottom: 16px;
       }
 
@@ -512,7 +512,7 @@ const { progressChartOptions } = useProgressChart()
             }
 
             &:nth-child(2) {
-              color: var(--primary-light-18);
+              color: color-mix(in oklab, var(--primary), white 18%);
               font-size: 0.85rem;
             }
           }
@@ -661,7 +661,7 @@ const { progressChartOptions } = useProgressChart()
     .health-tile {
       padding: 20px;
       background: var(--white);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: 10px;
     }
   }
@@ -669,8 +669,8 @@ const { progressChartOptions } = useProgressChart()
   .is-dark {
     .lifestyle-dashboard-v3 {
       .health-tile {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
   }

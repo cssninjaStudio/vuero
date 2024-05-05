@@ -25,7 +25,7 @@ export function useDemo12Bar() {
           show: false,
         },
       },
-      colors: [themeColors.info, themeColors.primary],
+      colors: [themeColors.info, themeColors.lime],
       title: {
         text: 'Horizontal Bar Multiple',
         align: 'left',

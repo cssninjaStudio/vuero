@@ -403,7 +403,7 @@ export default defineComponent({
 <style lang="scss">
 .flex-table-wrapper {
   background: var(--white);
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   border-radius: 8px;
   padding: 20px;
 
@@ -437,8 +437,8 @@ export default defineComponent({
 
 .is-dark {
   .flex-table-wrapper {
-    background: var(--dark-sidebar-light-6);
-    border-color: var(--dark-sidebar-light-12);
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
   }
 }
 

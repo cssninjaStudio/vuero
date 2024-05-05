@@ -498,7 +498,7 @@ const columns = {
       width: 40%;
       padding-inline-end: 30px;
       margin-inline-end: 30px;
-      border-inline-end: 1px solid var(--primary-light-10);
+      border-inline-end: 1px solid color-mix(in oklab, var(--primary), white 10%);
 
       .block-text {
         margin-bottom: 16px;
@@ -589,7 +589,7 @@ const columns = {
 
       p {
         font-weight: 400;
-        color: var(--smoke-white-dark-2);
+        color: color-mix(in oklab, var(--smoke-white), black 2%);
         margin-bottom: 16px;
         max-width: 320px;
       }
@@ -777,11 +777,11 @@ const columns = {
       box-shadow: none;
 
       .center {
-        border-color: var(--dark-sidebar-light-10);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
         .candidates {
           button {
-            background: var(--dark-sidebar-light-10);
+            background: color-mix(in oklab, var(--dark-sidebar), white 10%);
             border: 1px solid transparent;
             transition: all 0.3s; // transition-all test
 
