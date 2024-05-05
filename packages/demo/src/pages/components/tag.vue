@@ -5,10 +5,9 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const pageTitle = useVueroContext('page-title')
-pageTitle.value = 'VTag'
-// onMounted(() => {
-//   pageTitle.value = 'VTag'
-// })
+onMounted(() => {
+  pageTitle.value = 'VTag'
+})
 
 useHead({
   title: 'VTag - Components - Vuero',
