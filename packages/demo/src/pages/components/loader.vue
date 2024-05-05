@@ -7,8 +7,9 @@ const toggleLoaders = () => {
   isLoaderActive.value = !isLoaderActive.value
 }
 
-useVueroContext({
-  pageTitle: 'VLoader',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VLoader'
 })
 
 useHead({

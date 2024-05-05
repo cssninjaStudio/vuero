@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useVueroContext({
-  pageTitle: 'List View 2',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'List View 2'
 })
 
 useHead({

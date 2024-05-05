@@ -4,8 +4,9 @@ import { VTabsMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VTabs',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VTabs'
 })
 
 useHead({

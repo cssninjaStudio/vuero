@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
-useVueroContext({
-  pageTitle: 'VAccordion',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VAccordion'
 })
 
 useHead({

@@ -4,8 +4,10 @@ import { VDropdownMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VDropdown',
+const pageTitle = useVueroContext('page-title')
+// pageTitle.value = 'VDropdown'
+onMounted(() => {
+  pageTitle.value = 'VDropdown'
 })
 
 useHead({

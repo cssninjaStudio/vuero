@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { flexRowsContacts } from '/@src/data/documentation/table'
 
-useVueroContext({
-  pageTitle: 'Slots usage',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Slots usage'
 })
 useHead({
   title: 'Slots usage - VFlexTable - Components - Vuero',

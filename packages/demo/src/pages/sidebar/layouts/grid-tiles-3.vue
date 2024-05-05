@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useVueroContext({
-  pageTitle: 'Grid Tiles 3',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Grid Tiles 3'
 })
 
 useHead({

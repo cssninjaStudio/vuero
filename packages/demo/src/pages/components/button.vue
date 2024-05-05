@@ -4,8 +4,9 @@ import { VButtonMeta, VButtonsMeta } from '/@src/data/documentation/components-m
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VButton',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VButton'
 })
 
 useHead({

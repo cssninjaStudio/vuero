@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useVueroContext({
-  pageTitle: 'Onboarding Page 3',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Onboarding Page 3'
 })
 
 useHead({

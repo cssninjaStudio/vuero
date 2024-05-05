@@ -4,8 +4,9 @@ import { VGridMeta, VGridItemMeta } from '/@src/data/documentation/components-me
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VGrid',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VGrid'
 })
 
 useHead({

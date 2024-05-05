@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useVueroContext({
-  pageTitle: 'Table List 3',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Table List 3'
 })
 
 useHead({

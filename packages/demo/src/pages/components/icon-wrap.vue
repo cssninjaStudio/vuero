@@ -4,8 +4,9 @@ import { VIconWrapMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VIconWrap',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VIconWrap'
 })
 
 useHead({

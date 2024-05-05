@@ -24,8 +24,9 @@ const bigFormOpen = ref(false)
 const noscrollOpen = ref(false)
 const nocloseOpen = ref(false)
 
-useVueroContext({
-  pageTitle: 'VModal',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VModal'
 })
 
 useHead({

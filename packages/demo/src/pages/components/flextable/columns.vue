@@ -4,8 +4,9 @@ import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/tab
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'Customize columns',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Customize columns'
 })
 useHead({
   title: 'Customize columns - VFlexTable - Components - Vuero',

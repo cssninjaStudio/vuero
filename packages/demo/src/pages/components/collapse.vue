@@ -19,8 +19,9 @@ const data = [
   },
 ]
 
-useVueroContext({
-  pageTitle: 'VCollapse',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VCollapse'
 })
 
 useHead({

@@ -22,8 +22,9 @@ function getSnippet(icon: any) {
   return `<VIcon icon="lucide:${icon.name}" />`
 }
 
-useVueroContext({
-  pageTitle: 'Iconify Icons',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Iconify Icons'
 })
 useHead({
   title: 'Iconify Icons - Components - Vuero',

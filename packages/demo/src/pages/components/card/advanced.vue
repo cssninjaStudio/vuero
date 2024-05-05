@@ -5,8 +5,9 @@ import * as userStacks from '/@src/data/users/userStacks'
 import { VCardAdvancedMeta } from '/@src/data/documentation/components-meta'
 
 const userStack2 = userStacks.userStack2 as VAvatarProps[]
-useVueroContext({
-  pageTitle: 'VCardAdvanced',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VCardAdvanced'
 })
 
 useHead({

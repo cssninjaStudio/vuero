@@ -13,8 +13,9 @@ import Layout from '/@src/layouts/navsearch.vue'
  * @see /src/router.ts
  */
 
-useVueroContext({
-  pageTitle: 'Blank Page 8',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Blank Page 8'
 })
 
 useHead({

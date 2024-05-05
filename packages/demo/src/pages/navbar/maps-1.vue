@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const layoutSwitcher = useLayoutSwitcher()
-useVueroContext({
-  pageTitle: 'Maps 1',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Maps 1'
 })
 
 useHead({

@@ -12,8 +12,9 @@ const currentPage = computed(() => {
   return 1
 })
 
-useVueroContext({
-  pageTitle: 'VFlexPagination',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VFlexPagination'
 })
 
 useHead({

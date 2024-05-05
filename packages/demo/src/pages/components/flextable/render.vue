@@ -6,8 +6,9 @@ import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDrop
 import VFlexTableSortColumn from '/@src/components/base/VFlexTableSortColumn.vue'
 import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 
-useVueroContext({
-  pageTitle: 'Render functions (advanced)',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Render functions (advanced)'
 })
 useHead({
   title: 'Render functions (advanced) - VFlexTable - Components - Vuero',

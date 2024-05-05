@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'vueform/slider',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'vueform/slider'
 })
 
 useHead({

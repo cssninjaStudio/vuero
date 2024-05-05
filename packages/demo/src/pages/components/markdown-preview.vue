@@ -10,8 +10,9 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-useVueroContext({
-  pageTitle: 'VMarkdownPreview',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VMarkdownPreview'
 })
 
 useHead({
@@ -57,7 +58,6 @@ useHead({
             <VMarkdownPreview
               size="medium"
               max-width="small"
-              :placeholder="{ height: '500px' }"
               :source="demoMarkdown"
             />
           </div>

@@ -2,8 +2,9 @@
 type TabId = 'active' | 'closed'
 const activeTab = ref<TabId>('active')
 
-useVueroContext({
-  pageTitle: 'List Flex 2',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'List Flex 2'
 })
 
 useHead({

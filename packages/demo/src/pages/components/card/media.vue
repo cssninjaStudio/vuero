@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { VCardMediaMeta } from '/@src/data/documentation/components-meta'
 
-useVueroContext({
-  pageTitle: 'VCardMedia',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VCardMedia'
 })
 
 useHead({

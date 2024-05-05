@@ -13,7 +13,7 @@ function getAvatarData(user: UserPopover): any {
   }
 }
 
-const { pageTitle } = useVueroContext()
+const pageTitle = useVueroContext('page-title')
 
 const search = ref('')
 const suggestions = computed(() => {

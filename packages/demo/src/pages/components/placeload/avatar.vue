@@ -4,8 +4,9 @@ import { VPlaceloadAvatarMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VPlaceloadAvatar',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VPlaceloadAvatar'
 })
 
 useHead({

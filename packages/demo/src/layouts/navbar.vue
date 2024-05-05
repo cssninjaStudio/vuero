@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NavbarItem } from '/@src/components/layouts/navbar/navbar.types'
 
-const { pageTitle } = useVueroContext()
+const pageTitle = useVueroContext('page-title')
 
 const links = ref<NavbarItem[]>([
   {

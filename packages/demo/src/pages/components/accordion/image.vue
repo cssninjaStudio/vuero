@@ -34,8 +34,9 @@ const data = [
   },
 ]
 
-useVueroContext({
-  pageTitle: 'VAccordionImage',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VAccordionImage'
 })
 
 useHead({

@@ -2,8 +2,9 @@
 type TabId = 'all' | 'team'
 const activeTab = ref<TabId>('all')
 
-useVueroContext({
-  pageTitle: 'Grid Users 3',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Grid Users 3'
 })
 
 useHead({

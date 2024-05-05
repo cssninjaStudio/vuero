@@ -13,8 +13,9 @@ import Layout from '/@src/layouts/navbar.vue'
  * @see /src/router.ts
  */
 
-useVueroContext({
-  pageTitle: 'Blank Page 3',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Blank Page 3'
 })
 
 useHead({

@@ -18,7 +18,7 @@ const props = withDefaults(
   },
 )
 
-const { pageTitle } = useVueroContext()
+const pageTitle = useVueroContext('page-title')
 const route = useRoute()
 
 const isMobileSideblockOpen = ref(false)

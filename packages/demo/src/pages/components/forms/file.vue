@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'File Input',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'File Input'
 })
 
 useHead({

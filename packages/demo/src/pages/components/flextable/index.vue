@@ -10,8 +10,9 @@ const rowClick = (row: any) => {
   console.log(row)
 }
 
-useVueroContext({
-  pageTitle: 'VFlexTable',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'VFlexTable'
 })
 
 useHead({

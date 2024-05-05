@@ -24,8 +24,9 @@ function getSnippet(icon: any) {
   return ` <i class="lnir ${icon.className}" aria-hidden="true"></i>`
 }
 
-useVueroContext({
-  pageTitle: 'Line Icons Regular Icons',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Line Icons Regular Icons'
 })
 useHead({
   title: 'Line Icons Regular Icons - Components - Vuero',

@@ -22,8 +22,9 @@ function getSnippet(icon: any) {
   return `<i class="fas fa-${icon.name}" aria-hidden="true"></i>`
 }
 
-useVueroContext({
-  pageTitle: 'Font Awesome Icons',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'Font Awesome Icons'
 })
 useHead({
   title: 'Font Awesome Icons - Components - Vuero',

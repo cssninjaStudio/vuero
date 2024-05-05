@@ -21,7 +21,7 @@ const props = withDefaults(
   },
 )
 
-const { pageTitle } = useVueroContext()
+const pageTitle = useVueroContext('page-title')
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 const isDesktopSidebarOpen = ref(props.openOnMounted)
@@ -210,7 +210,7 @@ watch(
             :open="activeSubsidebar && isDesktopSidebarOpen"
             @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"
           >
-            {{ pageTitle }}
+            <span>{{ pageTitle }}</span>
 
             <template #toolbar>
               <slot
@@ -232,7 +232,7 @@ watch(
               :open="activeSubsidebar && isDesktopSidebarOpen"
               @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
-              {{ pageTitle }}
+              <span>{{ pageTitle }}</span>
 
               <template #toolbar>
                 <slot

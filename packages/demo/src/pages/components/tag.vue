@@ -4,9 +4,11 @@ import { VTagMeta, VTagsMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-useVueroContext({
-  pageTitle: 'VTag',
-})
+const pageTitle = useVueroContext('page-title')
+pageTitle.value = 'VTag'
+// onMounted(() => {
+//   pageTitle.value = 'VTag'
+// })
 
 useHead({
   title: 'VTag - Components - Vuero',

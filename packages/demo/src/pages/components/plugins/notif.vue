@@ -8,8 +8,9 @@ onMounted(() => {
   notyf?.success('This toast is displayed when the page is mounted')
 })
 
-useVueroContext({
-  pageTitle: 'notyf',
+const pageTitle = useVueroContext('page-title')
+onMounted(() => {
+  pageTitle.value = 'notyf'
 })
 
 useHead({

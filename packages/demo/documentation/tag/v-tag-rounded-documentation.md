@@ -79,7 +79,7 @@ Use the `rounded` prop to change the component shape.
 <!--example-->
 
 <VTags>
-  <VTag label="Tag Label" />
+  <VTag label="Tag Label" rounded />
   <VTag color="white" label="Tag Label" rounded />
   <VTag color="light" label="Tag Label" rounded />
   <VTag color="solid" label="Tag Label" rounded />
