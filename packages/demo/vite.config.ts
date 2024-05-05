@@ -81,7 +81,7 @@ export default defineConfig(({ isSsrBuild }) => ({
     rollupOptions: {
       output: {
         format: 'esm',
-        entryFileNames: isSsrBuild ? '[name].mjs' : 'assets/[hash].js',
+        entryFileNames: isSsrBuild ? '[name].mjs' : '[name]-[hash].js',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         chunkFileNames: isDebug
           ? `assets/_/[name].${isSsrBuild ? 'mjs' : 'js'}`
