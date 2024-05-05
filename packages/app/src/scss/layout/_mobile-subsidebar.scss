@@ -212,11 +212,11 @@
 
       &.is-active {
         border-inline-start-color: var(--primary);
-        background: var(--primary-light-51);
+        background: color-mix(in oklab, var(--primary), white 51%);
 
         &:hover,
         &:focus {
-          background: var(--primary-light-51);
+          background: color-mix(in oklab, var(--primary), white 51%);
         }
       }
 
@@ -369,7 +369,7 @@
 
       &.is-active {
         opacity: 1;
-        background: var(--primary-light-51);
+        background: color-mix(in oklab, var(--primary), white 51%);
         border-inline-start-color: var(--primary);
 
         &.is-eth {
@@ -483,8 +483,8 @@
 
 .is-dark {
   .mobile-subsidebar {
-    background: var(--dark-sidebar-light-2);
-    border-color: var(--dark-sidebar-light-4);
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
     .submenu {
       li {
@@ -509,7 +509,7 @@
     &.is-messaging {
       ul li {
         &.is-active {
-          background: var(--dark-sidebar-dark-4);
+          background: color-mix(in oklab, var(--dark-sidebar), black 4%);
           border-inline-start-color: var(--primary) !important;
         }
 
@@ -525,7 +525,7 @@
         .user-group {
           img,
           span {
-            border-color: var(--dark-sidebar-light-2) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
           }
         }
       }

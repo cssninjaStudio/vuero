@@ -197,7 +197,7 @@ function isStarSelected(index: number) {
     display: inline-flex;
 
     .rating-star {
-      color: var(--widget-grey-dark-8);
+      color: color-mix(in oklab, var(--widget-grey), black 8%);
 
       &.is-rating-star-selected {
         color: var(--yellow) !important;
@@ -215,7 +215,7 @@ function isStarSelected(index: number) {
 .is-dark .rating-wrap {
   .rating {
     .rating-star {
-      color: var(--dark-sidebar-light-22);
+      color: color-mix(in oklab, var(--dark-sidebar), white 22%);
     }
   }
 }

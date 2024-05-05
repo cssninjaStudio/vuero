@@ -8,13 +8,13 @@
 
     .form-header {
       padding: 12px 20px;
-      border-bottom: 1px solid var(--fade-grey-dark-3);
+      border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       transition: all 0.3s; // transition-all test
 
       &.is-stuck {
         background: var(--white);
         padding-inline-end: 80px;
-        border-inline-start: 1px solid var(--fade-grey-dark-3);
+        border-inline-start: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       }
 
       .form-header-inner {
@@ -49,11 +49,11 @@
       @include vuero-card--dark;
 
       .form-header {
-        border-color: var(--dark-sidebar-light-12);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
         &.is-stuck {
           background: var(--dark-sidebar);
-          border-color: var(--dark-sidebar-light-6);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
         }
 
         .left {

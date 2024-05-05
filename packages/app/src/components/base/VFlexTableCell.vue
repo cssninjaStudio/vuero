@@ -246,7 +246,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 
     .dot {
       font-size: 8px;
-      color: var(--light-text-light-6);
+      color: color-mix(in oklab, var(--light-text), white 6%);
       margin: 0 6px;
 
       &.active {
@@ -280,7 +280,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     &.is-media {
       .v-avatar {
         .badge {
-          border-color: var(--dark-sidebar-light-6) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
       }
     }
@@ -304,12 +304,12 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     .avatar-stack {
       .v-avatar {
         .avatar {
-          border-color: var(--dark-sidebar-light-6) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
 
         .is-more {
           .inner {
-            border-color: var(--dark-sidebar-light-6) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
           }
         }
       }

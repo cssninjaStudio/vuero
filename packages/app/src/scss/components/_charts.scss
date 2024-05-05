@@ -58,7 +58,7 @@
 
 .is-dark {
   .apexcharts-ycrosshairs {
-    stroke: var(--dark-sidebar-light-12) !important;
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
   }
 
   .apexcharts-title-text {
@@ -80,8 +80,8 @@
 
   .apexcharts-svg {
     line {
-      color: var(--dark-sidebar-light-12) !important;
-      stroke: var(--dark-sidebar-light-12) !important;
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
     }
 
     .apexcharts-inner,
@@ -95,16 +95,16 @@
         }
 
         line {
-          color: var(--dark-sidebar-light-12) !important;
-          stroke: var(--dark-sidebar-light-12) !important;
+          color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+          stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
       }
 
       .apexcharts-grid {
         .apexcharts-gridlines-horizontal {
           .apexcharts-gridline {
-            color: var(--dark-sidebar-light-12);
-            stroke: var(--dark-sidebar-light-12);
+            color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+            stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
           }
         }
       }
@@ -113,27 +113,27 @@
 
   .apexcharts-gridlines-vertical {
     .apexcharts-gridline {
-      color: var(--dark-sidebar-light-12);
-      stroke: var(--dark-sidebar-light-12);
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 
   .apexcharts-series-markers,
   .apexcharts-series-bubble {
     .apexcharts-marker {
-      color: var(--dark-sidebar-light-2);
-      stroke: var(--dark-sidebar-light-2);
+      color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
   }
 
   .apexcharts-pie-area,
   .apexcharts-pie-slice-0 {
-    color: var(--dark-sidebar-light-12);
-    stroke: var(--dark-sidebar-light-12);
+    color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
   }
 
   .apexcharts-radialbar-area {
-    // color: var(--dark-sidebar-light-2);
+    // color: color-mix(in oklab, var(--dark-sidebar), white 2%);
   }
 
   .apexcharts-datalabels-group {
@@ -154,16 +154,16 @@
   .apexcharts-yaxis,
   .apexcharts-xaxis-inversed {
     line {
-      color: var(--dark-sidebar-light-12);
-      stroke: var(--dark-sidebar-light-12);
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 
   .apexcharts-radialbar-track,
   .apexcharts-track {
     .apexcharts-radialbar-area {
-      color: var(--dark-sidebar-light-2);
-      stroke: var(--dark-sidebar-light-2);
+      color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
   }
 
@@ -172,8 +172,8 @@
     > polygon,
     > line {
       fill: none !important;
-      color: var(--dark-sidebar-light-12);
-      stroke: var(--dark-sidebar-light-12);
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
 
@@ -191,7 +191,7 @@
   }
 
   .apexcharts-bar-area {
-    color: var(--dark-sidebar-light-12);
+    color: color-mix(in oklab, var(--dark-sidebar), white 12%);
   }
 
   .apexcharts-slices {
@@ -204,13 +204,13 @@
     box-shadow: 2px 2px 6px -4px var(--dark-sidebar) !important;
 
     &.apexcharts-theme-light {
-      border: 1px solid var(--dark-sidebar-light-12);
-      background: var(--dark-sidebar-light-2);
+      border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
       color: var(--dark-dark-text) !important;
 
       .apexcharts-tooltip-title {
-        background: var(--dark-sidebar-light-2);
-        border-bottom: 1px solid var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border-bottom: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
         color: var(--dark-dark-text);
       }
 
@@ -233,24 +233,24 @@
   }
 
   .apexcharts-xaxistooltip {
-    border: 1px solid var(--dark-sidebar-light-12);
-    background: var(--dark-sidebar-light-2);
+    border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
     color: var(--dark-dark-text) !important;
 
     &.apexcharts-xaxistooltip-bottom::after {
-      border-bottom-color: var(--dark-sidebar-light-2);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
 
     &.apexcharts-xaxistooltip-bottom::before {
-      border-bottom-color: var(--dark-sidebar-light-12);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     &.apexcharts-xaxistooltip-top::after {
-      border-top-color: var(--dark-sidebar-light-2);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
 
     &.apexcharts-xaxistooltip-top::before {
-      border-top-color: var(--dark-sidebar-light-12);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     * {

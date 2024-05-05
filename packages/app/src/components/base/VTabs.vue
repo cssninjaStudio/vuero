@@ -275,16 +275,16 @@ watch(activeValue, (value) => {
         &.is-active {
           a,
           a:hover {
-            background: var(--dark-sidebar-light-1) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
           }
         }
 
         a {
-          border-color: var(--dark-sidebar-light-16) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
 
           &:hover,
           &:focus {
-            background: var(--dark-sidebar-light-4) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
           }
         }
       }
@@ -302,18 +302,18 @@ watch(activeValue, (value) => {
         }
 
         a {
-          border-color: var(--dark-sidebar-light-16) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
 
           &:hover,
           &:focus {
-            background: var(--dark-sidebar-light-4) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
           }
         }
       }
     }
 
     ul {
-      border-bottom-color: var(--dark-sidebar-light-16);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 16%);
     }
 
     li {
@@ -375,7 +375,7 @@ watch(activeValue, (value) => {
 
     > .tabs-inner > .tabs {
       position: relative;
-      background: var(--fade-grey-light-2);
+      background: color-mix(in oklab, var(--fade-grey), white 2%);
       border: 1px solid var(--fade-grey);
       max-width: 185px;
       height: 35px;
@@ -484,7 +484,7 @@ watch(activeValue, (value) => {
 
     > .tabs-inner > .tabs {
       position: relative;
-      background: var(--fade-grey-light-2);
+      background: color-mix(in oklab, var(--fade-grey), white 2%);
       border: 1px solid var(--fade-grey);
       max-width: 280px;
       height: 35px;
@@ -584,14 +584,14 @@ watch(activeValue, (value) => {
     &.is-triple-slider {
       &.is-inverted {
         > .tabs-inner > .tabs {
-          border: 1px solid var(--dark-sidebar-light-16) !important;
-          background: var(--dark-sidebar-light-2) !important;
+          border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
         }
       }
 
       > .tabs-inner > .tabs {
-        border: 1px solid var(--dark-sidebar-light-16) !important;
-        background: var(--dark-sidebar-light-2) !important;
+        border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
 
         .tab-naver {
           background: var(--primary) !important;

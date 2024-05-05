@@ -102,10 +102,10 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
 .is-dark {
   .has-loader {
     .v-loader-wrapper {
-      background: var(--dark-sidebar-light-6);
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
       &.is-grey {
-        background: var(--dark-sidebar-light-10);
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
       }
     }
   }

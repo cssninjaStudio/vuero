@@ -165,7 +165,7 @@ const { onceError } = useImageError()
       border-radius: var(--radius-rounded);
 
       &.is-primary {
-        background: var(--primary-light-42);
+        background: color-mix(in oklab, var(--primary), white 80%);
 
         span {
           color: var(--primary);
@@ -173,7 +173,7 @@ const { onceError } = useImageError()
       }
 
       &.is-accent {
-        background: var(--primary-light-36);
+        background: color-mix(in oklab, var(--primary), white 80%);
 
         span {
           color: var(--primary);
@@ -181,7 +181,7 @@ const { onceError } = useImageError()
       }
 
       &.is-success {
-        background: var(--success-light-45);
+        background: color-mix(in oklab, var(--success), white 80%);
 
         span {
           color: var(--success);
@@ -189,7 +189,7 @@ const { onceError } = useImageError()
       }
 
       &.is-info {
-        background: var(--info-light-45);
+        background: color-mix(in oklab, var(--info), white 80%);
 
         span {
           color: var(--info);
@@ -197,7 +197,7 @@ const { onceError } = useImageError()
       }
 
       &.is-warning {
-        background: var(--warning-light-32);
+        background: color-mix(in oklab, var(--warning), white 80%);
 
         span {
           color: var(--warning);
@@ -205,7 +205,7 @@ const { onceError } = useImageError()
       }
 
       &.is-danger {
-        background: var(--danger-light-36);
+        background: color-mix(in oklab, var(--danger), white 80%);
 
         span {
           color: var(--danger);
@@ -213,7 +213,7 @@ const { onceError } = useImageError()
       }
 
       &.is-h-purple {
-        background: var(--purple-light-36);
+        background: color-mix(in oklab, var(--purple), white 80%);
 
         span {
           color: var(--purple);
@@ -221,7 +221,7 @@ const { onceError } = useImageError()
       }
 
       &.is-h-orange {
-        background: var(--orange-light-18);
+        background: color-mix(in oklab, var(--orange), white 80%);
 
         span {
           color: var(--orange);
@@ -229,7 +229,7 @@ const { onceError } = useImageError()
       }
 
       &.is-h-blue {
-        background: var(--blue-light-32);
+        background: color-mix(in oklab, var(--blue), white 80%);
 
         span {
           color: var(--blue);
@@ -237,7 +237,7 @@ const { onceError } = useImageError()
       }
 
       &.is-h-red {
-        background: var(--red-light-38);
+        background: color-mix(in oklab, var(--red), white 80%);
 
         span {
           color: var(--red);
@@ -245,7 +245,7 @@ const { onceError } = useImageError()
       }
 
       &.is-h-green {
-        background: var(--green-light-22);
+        background: color-mix(in oklab, var(--green), white 80%);
 
         span {
           color: var(--green);
@@ -253,10 +253,10 @@ const { onceError } = useImageError()
       }
 
       &.is-h-yellow {
-        background: var(--yellow-light-22);
+        background: color-mix(in oklab, var(--yellow), white 80%);
 
         span {
-          color: var(--yellow-dark-8);
+          color: color-mix(in oklab, var(--yellow), black 8%);
         }
       }
 
@@ -286,7 +286,7 @@ const { onceError } = useImageError()
         align-items: center;
         border: 2px solid var(--white);
         border-radius: var(--radius-rounded);
-        background: var(--fade-grey-light-2);
+        background: color-mix(in oklab, var(--fade-grey), white 2%);
         // border: 1px solid var(--fade-grey);
 
         span {
@@ -629,13 +629,13 @@ const { onceError } = useImageError()
   .v-avatar {
     &.has-dot {
       &::after {
-        border-color: var(--dark-sidebar-light-6);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
       }
     }
   }
 
   .avatar {
-    border-color: var(--dark-sidebar-light-6);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
     &.is-fake {
       &.is-primary {
@@ -736,14 +736,14 @@ const { onceError } = useImageError()
     }
 
     &.is-more {
-      border-color: var(--dark-sidebar-dark-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), black 12%);
       .inner {
-        background: var(--dark-sidebar-light-10);
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
       }
     }
 
     &.is-fake {
-      border-color: var(--dark-sidebar-light-6);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
     }
   }
 }

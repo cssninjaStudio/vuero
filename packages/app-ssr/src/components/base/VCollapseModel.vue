@@ -118,7 +118,7 @@ const toggle = (key: number) => {
 
   &[open] {
     .collapse-icon {
-      border-color: var(--fade-grey-dark-3) !important;
+      border-color: color-mix(in oklab, var(--fade-grey), black 3%) !important;
       box-shadow: var(--light-box-shadow);
     }
   }
@@ -182,8 +182,8 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          background: var(--dark-sidebar-light-2);
-          border-color: var(--dark-sidebar-light-4) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
         }
       }
     }
@@ -194,8 +194,8 @@ const toggle = (key: number) => {
       }
 
       .collapse-icon {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-6);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
       }
     }
   }

@@ -95,7 +95,7 @@ const internal = computed({
     vertical-align: middle;
     width: 1.4em;
     height: 1.4em;
-    border: 1px solid var(--fade-grey-dark-8);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 8%);
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 
@@ -155,7 +155,7 @@ const internal = computed({
 
   &.is-solid {
     input + span {
-      background: var(--fade-grey-light-3);
+      background: color-mix(in oklab, var(--fade-grey), white 3%);
     }
 
     &.is-primary {
@@ -304,8 +304,8 @@ const internal = computed({
 .is-dark {
   %controller {
     input + span {
-      background-color: var(--dark-sidebar-light-2);
-      border-color: var(--dark-sidebar-light-4);
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
       &::after {
         color: var(--dark-dark-text);
@@ -313,7 +313,7 @@ const internal = computed({
     }
 
     input + span {
-      border-color: var(--dark-sidebar-light-16);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 16%);
     }
   }
 

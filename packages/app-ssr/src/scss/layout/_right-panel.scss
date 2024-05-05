@@ -128,7 +128,7 @@
 
         .close-panel {
           &:hover {
-            background: var(--dark-sidebar-light-6);
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
 
             .iconify {
               color: var(--primary);

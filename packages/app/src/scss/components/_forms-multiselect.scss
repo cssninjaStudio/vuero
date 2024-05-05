@@ -86,7 +86,7 @@
       font-size: 0.9rem;
       font-weight: 400;
       padding: 1px 0 1px 8px;
-      background: var(--widget-grey-dark-4);
+      background: color-mix(in oklab, var(--widget-grey), black 4%);
       color: var(--dark-text);
 
       .iconify {
@@ -132,7 +132,7 @@
       transition: background-color 0.3s;
 
       &.is-pointed {
-        background: var(--widget-grey-dark-1);
+        background: color-mix(in oklab, var(--widget-grey), black 1%);
       }
 
       &.is-selected {
@@ -189,19 +189,19 @@
     .multiselect {
       .multiselect-tag {
         img {
-          border-color: var(--dark-sidebar-light-2) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
         }
       }
     }
   }
 
   .multiselect {
-    background-color: var(--dark-sidebar-light-2);
-    border-color: var(--dark-sidebar-light-4);
+    background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
     color: var(--dark-dark-text);
 
     .multiselect-clear {
-      background-color: var(--dark-sidebar-light-2);
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
     }
 
     .multiselect-single-label {
@@ -222,7 +222,7 @@
 
     .multiselect-tags {
       .multiselect-tag {
-        background-color: var(--dark-sidebar-light-10);
+        background-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
         color: var(--white);
 
         i::before {
@@ -234,14 +234,14 @@
     }
 
     .multiselect-dropdown {
-      background-color: var(--dark-sidebar-dark-2);
-      border-color: var(--dark-sidebar-light-4);
+      background-color: color-mix(in oklab, var(--dark-sidebar), black 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
       .multiselect-option {
         color: var(--light-text);
 
         &.is-pointed {
-          background: var(--dark-sidebar-light-6);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
         }
 
         &.is-selected {
@@ -249,7 +249,7 @@
         }
 
         &.is-disabled {
-          background: var(--dark-sidebar-light-2);
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
           cursor: not-allowed;
         }
       }

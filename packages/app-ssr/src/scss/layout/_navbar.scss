@@ -17,7 +17,7 @@
   opacity: 0;
   pointer-events: none;
   z-index: 99;
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   box-shadow: var(--light-box-shadow);
   transition-property: height, opacity;
   transition-duration: 0.1s, 0.2s;
@@ -81,7 +81,7 @@
               font-weight: 600;
               color: var(--primary);
               background: var(--white);
-              border-color: var(--fade-grey-dark-3);
+              border-color: color-mix(in oklab, var(--fade-grey), black 3%);
               box-shadow: var(--light-box-shadow);
             }
 
@@ -94,7 +94,7 @@
 
           &:hover {
             a {
-              background: var(--fade-grey-light-4);
+              background: color-mix(in oklab, var(--fade-grey), white 4%);
             }
           }
 
@@ -134,7 +134,7 @@
 
           .column {
             &:not(:last-child) {
-              border-inline-end: 1px solid var(--fade-grey-dark-3);
+              border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
             }
           }
 
@@ -202,7 +202,7 @@
                 border-radius: 0;
 
                 a {
-                  color: var(--primary-dark-14);
+                  color: color-mix(in oklab, var(--primary), black 14%);
 
                   .iconify {
                     opacity: 1;
@@ -212,7 +212,7 @@
               }
 
               .router-link-exact-active {
-                color: var(--primary-dark-14);
+                color: color-mix(in oklab, var(--primary), black 14%);
 
                 .iconify {
                   opacity: 1;
@@ -223,7 +223,7 @@
               a {
                 display: flex;
                 align-items: center;
-                color: var(--light-text-light-5);
+                color: color-mix(in oklab, var(--light-text), white 5%);
 
                 span {
                   font-family: var(--font);
@@ -277,8 +277,8 @@
 
 .is-dark {
   .navbar-subnavbar {
-    background: var(--dark-sidebar-light-2);
-    border-color: var(--dark-sidebar-light-4);
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
     .navbar-subnavbar-inner {
       .tab-content {
@@ -286,7 +286,7 @@
           .center {
             .column {
               &:not(:last-child) {
-                border-inline-end: 1px solid var(--dark-sidebar-light-12) !important;
+                border-inline-end: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
               }
             }
 

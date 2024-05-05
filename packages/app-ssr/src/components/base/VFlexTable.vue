@@ -315,7 +315,7 @@ const columns = computed(() => {
     width: 100%;
     min-height: 60px;
     background: var(--white);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     padding: 8px;
     margin-bottom: 6px;
 
@@ -414,7 +414,7 @@ const columns = computed(() => {
     .flex-table-item {
       .flex-table-cell {
         &:not(:first-of-type) {
-          border-inline-start: dashed 1px var(--fade-grey-dark-3);
+          border-inline-start: dashed 1px color-mix(in oklab, var(--fade-grey), black 3%);
         }
       }
     }
@@ -429,8 +429,8 @@ const columns = computed(() => {
   .flex-table {
     &:not(.sub-table) {
       .flex-table-item {
-        background: var(--dark-sidebar-light-6);
-        border-color: var(--dark-sidebar-light-12);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       }
     }
 
@@ -438,7 +438,7 @@ const columns = computed(() => {
       .flex-table-item {
         .flex-table-cell {
           &:not(:first-of-type) {
-            border-inline-start: dashed 1px var(--dark-sidebar-light-12);
+            border-inline-start: dashed 1px color-mix(in oklab, var(--dark-sidebar), white 12%);
           }
         }
       }
@@ -448,7 +448,7 @@ const columns = computed(() => {
       .flex-table-item {
         &:hover,
         &:focus-within {
-          background: var(--dark-sidebar-light-12) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
         }
       }
     }

@@ -75,7 +75,7 @@ const { onceError } = useImageError()
   min-width: 32px;
   border-radius: var(--radius-rounded);
   background: var(--white);
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   box-shadow: var(--light-box-shadow);
   color: var(--primary);
   font-size: 1rem;
@@ -122,8 +122,8 @@ const { onceError } = useImageError()
   }
 
   &.is-placeholder {
-    background-color: var(--fade-grey-light-2) !important;
-    border-color: var(--fade-grey-dark-3) !important;
+    background-color: color-mix(in oklab, var(--fade-grey), white 2%) !important;
+    border-color: color-mix(in oklab, var(--fade-grey), black 3%) !important;
     color: var(--light-text);
 
     .iconify {

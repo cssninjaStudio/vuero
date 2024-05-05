@@ -67,8 +67,8 @@
     cursor: pointer;
 
     &:checked ~ .toggler {
-      background: var(--placeholder-light-10);
-      border-color: var(--placeholder-light-10);
+      background: color-mix(in oklab, var(--placeholder), white 10%);
+      border-color: color-mix(in oklab, var(--placeholder), white 10%);
 
       .active,
       .inactive {
@@ -145,16 +145,16 @@
   .h-toggle {
     input {
       &:checked ~ .toggler {
-        background: var(--dark-sidebar-light-2);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
       }
     }
 
     .toggler {
-      border-color: var(--dark-sidebar-light-25) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 25%) !important;
 
       .active,
       .inactive {
-        background: var(--dark-sidebar-light-2);
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
       }
     }
   }

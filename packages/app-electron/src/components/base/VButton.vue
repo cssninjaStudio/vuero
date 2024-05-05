@@ -304,7 +304,7 @@ export default defineComponent({
     &:active,
     &:focus {
       box-shadow: none !important;
-      border-color: var(--fade-grey-dark-2);
+      border-color: color-mix(in oklab, var(--fade-grey), black 2%);
     }
 
     &:not(
@@ -436,6 +436,7 @@ export default defineComponent({
       .iconify {
         height: 16px;
         width: 16px;
+        font-size: 16px;
       }
     }
 
@@ -447,6 +448,7 @@ export default defineComponent({
     .iconify {
       height: 18px;
       width: 18px;
+      font-size: 18px;
     }
   }
 
@@ -454,6 +456,7 @@ export default defineComponent({
     .iconify {
       height: 14px;
       width: 14px;
+      font-size: 14px;
     }
   }
 }
@@ -469,23 +472,23 @@ export default defineComponent({
         .is-light,
         .is-white
       ) {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
 
       &:hover,
       &:focus {
-        border-color: var(--dark-sidebar-light-18);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
       }
     }
 
     &.is-light {
       border: none;
-      background: var(--dark-sidebar-light-10) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
       color: var(--smoke-white) !important;
 
       &:hover {
-        background: var(--dark-sidebar-light-16) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
       }
     }
 
@@ -516,68 +519,68 @@ export default defineComponent({
 
       &.is-light {
         border: none;
-        background: var(--dark-sidebar-light-10) !important;
-        color: var(--primary-light-20) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--primary), white 20%) !important;
 
         &:hover {
-          background: var(--dark-sidebar-light-16) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
         }
       }
     }
 
     &.is-info {
       &.is-light {
-        background: var(--dark-sidebar-light-10) !important;
-        color: var(--info-light-20) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--info), white 20%) !important;
 
         &:hover {
-          background: var(--dark-sidebar-light-16) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
         }
       }
     }
 
     &.is-success {
       &.is-light {
-        background: var(--dark-sidebar-light-10) !important;
-        color: var(--success-light-20) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--success), white 20%) !important;
 
         &:hover {
-          background: var(--dark-sidebar-light-16) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
         }
       }
     }
 
     &.is-warning {
       &.is-light {
-        background: var(--dark-sidebar-light-10) !important;
-        color: var(--warning-light-20) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--warning), white 20%) !important;
 
         &:hover {
-          background: var(--dark-sidebar-light-16) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
         }
       }
     }
 
     &.is-danger {
       &.is-light {
-        background: var(--dark-sidebar-light-10) !important;
-        color: var(--danger-light-20) !important;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--danger), white 20%) !important;
 
         &:hover {
-          background: var(--dark-sidebar-light-16) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
         }
       }
     }
 
     &.is-white {
-      background: var(--dark-sidebar-light-6) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
       border-color: var(--muted-grey) !important;
       color: var(--muted-grey) !important;
     }
 
     &.is-dark-outlined {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
 
       &:hover,
@@ -598,13 +601,13 @@ export default defineComponent({
         .is-light,
         .is-white
       ) {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
 
       &:hover,
       &:focus {
-        border-color: var(--dark-sidebar-light-18);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
       }
     }
 
@@ -614,14 +617,14 @@ export default defineComponent({
     }
 
     &.is-white {
-      background: var(--dark-sidebar-light-6) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
       border-color: var(--muted-grey) !important;
       color: var(--muted-grey) !important;
     }
 
     &.is-dark-outlined {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
 
       &:hover,

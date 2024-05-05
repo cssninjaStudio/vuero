@@ -73,13 +73,13 @@
       height: 32px;
       width: 32px;
       border-radius: var(--radius-rounded);
-      color: var(--light-text-light-15);
+      color: color-mix(in oklab, var(--light-text), white 15%);
       font-size: 0.9rem;
       transition: all 0.3s; // transition-all test
 
       &:hover {
         color: var(--light-text);
-        background: var(--fade-grey-light-3);
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
       }
     }
   }
@@ -93,7 +93,7 @@
   .user-list {
     .user-list-icons {
       a:hover {
-        background: var(--dark-sidebar-light-10);
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
       }
     }
   }

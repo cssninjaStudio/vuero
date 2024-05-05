@@ -214,7 +214,7 @@ onUnmounted(() => {
   }
 
   &::backdrop {
-    background: hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l));
+    background: var(--dark-sidebar);
   }
 
   .modal-content {
@@ -240,7 +240,7 @@ onUnmounted(() => {
         align-items: center;
         padding: 15px 20px;
         background: var(--white);
-        border-bottom-color: var(--fade-grey-dark-3);
+        border-bottom-color: color-mix(in oklab, var(--fade-grey), black 3%);
 
         &.no-border {
           border-bottom-color: transparent;
@@ -317,7 +317,7 @@ onUnmounted(() => {
       .modal-card-foot {
         background-color: var(--white);
         padding: 15px 20px;
-        border-top: 1px solid var(--fade-grey-dark-3);
+        border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
 
         &.no-border {
           border-top-color: transparent;
@@ -352,8 +352,8 @@ onUnmounted(() => {
     .modal-content {
       .modal-card {
         .modal-card-head {
-          background: var(--dark-sidebar-light-6) !important;
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
           h3 {
             color: var(--dark-dark-text);
@@ -369,12 +369,12 @@ onUnmounted(() => {
         }
 
         .modal-card-body {
-          background: var(--dark-sidebar-light-6) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
 
         .modal-card-foot {
-          background: var(--dark-sidebar-light-6) !important;
-          border-color: var(--dark-sidebar-light-12);
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
         }
       }
     }

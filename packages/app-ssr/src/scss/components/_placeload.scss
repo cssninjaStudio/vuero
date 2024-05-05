@@ -43,19 +43,3 @@
   }
 }
 
-/* ==========================================================================
-2. Placeload dark styles
-========================================================================== */
-
-.is-dark {
-  .loads {
-    background: var(--placeload-dark-nuance-from);
-    background: linear-gradient(
-      to right,
-      var(--placeload-dark-nuance-from) 8%,
-      var(--placeload-dark-nuance-to) 18%,
-      var(--placeload-dark-nuance-from) 33%
-    );
-    background-size: 1200px 104px;
-  }
-}

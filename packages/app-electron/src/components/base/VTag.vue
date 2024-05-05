@@ -88,7 +88,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
 
   &.is-solid {
     background: var(--white);
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
     color: var(--light-text);
   }
 
@@ -242,8 +242,8 @@ const props = withDefaults(defineProps<VTagProps>(), {
         .is-blue,
         .is-purple
       ) {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-10);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
       color: var(--dark-dark-text);
     }
 
@@ -256,7 +256,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
       }
 
       &.is-light {
-        background: var(--primary-light-22);
+        background: color-mix(in oklab, var(--primary), white 22%);
         color: var(--primary);
       }
     }

@@ -772,11 +772,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-top-color: var(--dark-sidebar-dark-4);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -790,11 +790,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-top-color: var(--dark-sidebar-dark-4);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -808,11 +808,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-top-color: var(--dark-sidebar-dark-4);
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -826,11 +826,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-bottom-color: var(--dark-sidebar-dark-4);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -844,11 +844,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-bottom-color: var(--dark-sidebar-dark-4);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -862,11 +862,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-bottom-color: var(--dark-sidebar-dark-4);
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -880,11 +880,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-inline-start-color: var(--dark-sidebar-dark-4);
+      border-inline-start-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 
@@ -898,11 +898,11 @@
       .hint--primary
     ) {
     &::after {
-      background: var(--dark-sidebar-dark-4) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
     }
 
     &::before {
-      border-inline-end-color: var(--dark-sidebar-dark-4);
+      border-inline-end-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
     }
   }
 

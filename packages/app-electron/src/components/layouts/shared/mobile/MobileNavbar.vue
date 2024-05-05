@@ -251,7 +251,7 @@ const modelValue = defineModel<boolean>({
 
     .navbar-item,
     .navbar-link {
-      color: var(--sidebar);
+      color: var(--dark);
     }
 
     .navbar-link {
@@ -285,7 +285,7 @@ const modelValue = defineModel<boolean>({
         &.is-heading {
           font-size: 12px;
           font-weight: 500;
-          color: var(--sidebar);
+          color: var(--dark);
           letter-spacing: 1px;
           text-transform: uppercase;
         }
@@ -333,7 +333,7 @@ const modelValue = defineModel<boolean>({
       &.is-active,
       &:hover {
         color: var(--primary);
-        background: var(--placeholder-light-16);
+        background: color-mix(in oklab, var(--placeholder), white 16%);
       }
     }
   }
@@ -348,11 +348,11 @@ const modelValue = defineModel<boolean>({
     background: var(--dark-sidebar);
 
     .navbar-menu.is-active {
-      background: var(--dark-sidebar-light-3);
+      background: color-mix(in oklab, var(--dark-sidebar), white 3%);
 
       .navbar-link {
         .is-heading {
-          color: var(--primary-grey-light-10);
+          color: color-mix(in oklab, var(--primary-grey), white 10%);
         }
 
         .iconify {
@@ -361,17 +361,17 @@ const modelValue = defineModel<boolean>({
       }
 
       .navbar-item.has-icon {
-        border-bottom-color: var(--dark-sidebar-light-10) !important;
+        border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
       }
 
       .navbar-dropdown .navbar-item {
-        color: var(--primary-grey-dark-5) !important;
+        color: color-mix(in oklab, var(--primary-grey), black 5%) !important;
       }
 
       .is-search .control {
         input {
-          background: var(--dark-sidebar-light-10) !important;
-          border-color: var(--dark-sidebar-light-10) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
           color: var(--primary-grey);
 
           &:focus {
@@ -398,7 +398,7 @@ const modelValue = defineModel<boolean>({
       border-color: var(--dark-sidebar) !important;
 
       .heading {
-        border-color: var(--dark-sidebar-light-12) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
 
         .heading-right {
           .notification-link {

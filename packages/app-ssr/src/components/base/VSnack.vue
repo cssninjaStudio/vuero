@@ -70,11 +70,11 @@ function placeholderHandler(event: Event) {
 
 .snack {
   display: inline-block;
-  background: var(--fade-grey-light-2);
+  background: color-mix(in oklab, var(--fade-grey), white 2%);
   height: 38px;
   width: auto;
   border-radius: 500px;
-  border: 1px solid var(--fade-grey-dark-3);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   transition: all 0.3s; // transition-all test
 
   &:hover {
@@ -148,7 +148,7 @@ function placeholderHandler(event: Event) {
       height: 38px;
       width: 38px;
       background: var(--white);
-      border: 1px solid var(--fade-grey-dark-3);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
       border-radius: var(--radius-rounded);
 
       &.is-solid {
@@ -355,13 +355,13 @@ function placeholderHandler(event: Event) {
 
 .is-dark {
   .snack {
-    background: var(--dark-sidebar-light-2);
-    border-color: var(--dark-sidebar-light-4);
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
 
     .snack-media {
       &.is-icon {
         &:not(.is-solid) {
-          background: var(--dark-sidebar-light-4);
+          background: color-mix(in oklab, var(--dark-sidebar), white 4%);
         }
 
         &.is-primary:not(.is-solid) {

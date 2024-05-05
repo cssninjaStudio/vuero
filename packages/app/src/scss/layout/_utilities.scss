@@ -427,13 +427,13 @@ var {
 
 .is-dark {
   .ajs-dialog {
-    background: var(--dark-sidebar-light-6) !important;
-    border-color: var(--dark-sidebar-light-2) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
   }
 
   .ajs-header {
-    background: var(--dark-sidebar-light-6) !important;
-    border-color: var(--dark-sidebar-light-6) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
     color: var(--primary-grey) !important;
   }
 
@@ -450,16 +450,16 @@ var {
   }
 
   .ajs-footer {
-    background: var(--dark-sidebar-light-6) !important;
-    border-color: var(--dark-sidebar-light-6) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
 
     .ajs-ok {
       background: var(--primary) !important;
     }
 
     .ajs-cancel {
-      background: var(--dark-sidebar-light-2) !important;
-      border-color: var(--dark-sidebar-light-2) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
       color: var(--muted-grey) !important;
     }
   }
@@ -496,7 +496,7 @@ var {
   &.one-line {
     &::before,
     &::after {
-      background: var(--fade-grey-dark-5);
+      background: color-mix(in oklab, var(--fade-grey), black 5%);
     }
   }
 }

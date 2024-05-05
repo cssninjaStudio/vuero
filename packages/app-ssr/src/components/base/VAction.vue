@@ -98,8 +98,8 @@ const props = withDefaults(defineProps<VActionProps>(), {
     }
 
     &.is-grey {
-      background: var(--fade-grey-light-2);
-      border-color: var(--fade-grey-light-2);
+      background: color-mix(in oklab, var(--fade-grey), white 2%);
+      border-color: color-mix(in oklab, var(--fade-grey), white 2%);
       color: var(--muted-grey);
     }
 
@@ -115,8 +115,8 @@ const props = withDefaults(defineProps<VActionProps>(), {
 .is-dark {
   .button {
     &.v-action {
-      background: var(--dark-sidebar-light-10);
-      border-color: var(--dark-sidebar-light-12);
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
       color: var(--dark-dark-text);
 
       &:hover,
@@ -135,7 +135,7 @@ const props = withDefaults(defineProps<VActionProps>(), {
         background: var(--primary) !important;
         border-color: var(--primary) !important;
         box-shadow: var(--primary-box-shadow) !important;
-        color: var(--dark-sidebar-dark-2) !important;
+        color: color-mix(in oklab, var(--dark-sidebar), black 2%) !important;
         text-shadow: none;
       }
     }

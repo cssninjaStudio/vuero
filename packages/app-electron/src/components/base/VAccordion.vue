@@ -146,16 +146,16 @@ const toggle = (key: number) => {
 
 .is-dark {
   .single-accordion {
-    background: var(--dark-sidebar-light-4);
-    border-color: var(--dark-sidebar-light-12);
+    background: color-mix(in oklab, var(--dark-sidebar), white 4%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
     .accordion-header {
       color: var(--dark-dark-text);
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
       &:hover,
       &:focus {
-        background: var(--dark-sidebar-light-6);
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
       }
 
       &::before {
@@ -171,7 +171,7 @@ const toggle = (key: number) => {
 
     .accordion-content {
       background: var(--dark-sidebar);
-      border-color: var(--dark-sidebar-light-8);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
     }
   }
 }

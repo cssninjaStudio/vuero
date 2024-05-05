@@ -9,27 +9,27 @@
 ========================================================================== */
 
 .is-dark {
-  background: var(--dark-sidebar-light-10);
+  background: color-mix(in oklab, var(--dark-sidebar), white 10%);
 
   &.is-chat-side-collapsed {
-    background: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
   }
 
   &.opened {
-    background: var(--dark-sidebar-light-5);
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%);
   }
 
   .pageloader {
-    background: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
   }
 
   .infraloader {
-    background: var(--dark-sidebar-light-15) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 15%) !important;
   }
 
   .page-title {
     h1 {
-      color: var(--primary-grey-light-3);
+      color: color-mix(in oklab, var(--primary-grey), white 3%);
     }
   }
 
@@ -39,7 +39,7 @@
   }
 
   .zoom-overlay {
-    background: var(--dark-sidebar-light-10);
-    border-color: var(--dark-sidebar-light-10);
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
   }
 }

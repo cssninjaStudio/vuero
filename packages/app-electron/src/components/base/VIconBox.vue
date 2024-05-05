@@ -62,22 +62,40 @@ const props = withDefaults(defineProps<VIconProps>(), {
   background: var(--fade-grey);
   transition: all 0.3s; // transition-all test
 
+  :deep(.fas),
+  :deep(.fab),
+  :deep(.far),
+  :deep(.fal) {
+    font-size: 1.2rem;
+    color: var(--muted-grey);
+    transition: color 0.3s;
+  }
+
+  :deep(.lnil),
+  :deep(.lnir) {
+    font-size: 1.4rem;
+    color: var(--muted-grey);
+    transition: color 0.3s;
+  }
+
+  :deep(.iconify) {
+    font-size: 20px;
+  }
+
   &.is-small {
     height: 32px;
     width: 32px;
     min-width: 32px;
 
-    .fas,
-    .fab,
-    .far,
-    .fal {
+    :deep(.fas),
+    :deep(.fab),
+    :deep(.far),
+    :deep(.fal) {
       font-size: 1rem;
     }
 
-    .lnil,
-    .lnir,
-    .fas,
-    .fab {
+    :deep(.lnil),
+    :deep(.lnir) {
       font-size: 1.2rem;
     }
 
@@ -103,9 +121,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
     }
 
     :deep(.lnil),
-    :deep(.lnir),
-    :deep(.fas),
-    :deep(.fab) {
+    :deep(.lnir) {
       font-size: 1.7rem;
     }
 
@@ -131,9 +147,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
     }
 
     :deep(.lnil),
-    :deep(.lnir),
-    :deep(.fas),
-    :deep(.fab) {
+    :deep(.lnir) {
       font-size: 2.2rem;
     }
 
@@ -159,9 +173,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
     }
 
     :deep(.lnil),
-    :deep(.lnir),
-    :deep(.fas),
-    :deep(.fab) {
+    :deep(.lnir) {
       font-size: 2.6rem;
     }
 
@@ -190,9 +202,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
     }
 
     :deep(.lnil),
-    :deep(.lnir),
-    :deep(.fas),
-    :deep(.fab) {
+    :deep(.lnir) {
       font-size: 3.4rem;
     }
 
@@ -209,209 +219,235 @@ const props = withDefaults(defineProps<VIconProps>(), {
   }
 
   &.is-primary {
-    background: var(--primary-light-42);
+    background: color-mix(in oklab, var(--primary), white 82%);
 
     &.is-bordered {
       border-color: var(--primary);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--primary);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--primary);
     }
   }
 
   &.is-secondary {
-    background: var(--secondary-light-42);
+    background: color-mix(in oklab, var(--secondary), white 82%);
 
     &.is-bordered {
       border-color: var(--secondary);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--secondary);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--secondary);
     }
   }
 
   &.is-accent {
-    background: var(--primary-light-36);
+    background: color-mix(in oklab, var(--primary), white 76%);
 
     &.is-bordered {
       border-color: var(--primary);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--primary);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--primary);
     }
   }
 
   &.is-success {
-    background: var(--success-light-45);
+    background: color-mix(in oklab, var(--success), white 80%);
 
     &.is-bordered {
       border-color: var(--success);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--success);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--success);
     }
   }
 
   &.is-info {
-    background: var(--info-light-45);
+    background: color-mix(in oklab, var(--info), white 80%);
 
     &.is-bordered {
       border-color: var(--info);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--info);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--info);
     }
   }
 
   &.is-warning {
-    background: var(--warning-light-32);
+    background: color-mix(in oklab, var(--warning), white 80%);
 
     &.is-bordered {
       border-color: var(--warning);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--warning);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--warning);
     }
   }
 
   &.is-danger {
-    background: var(--danger-light-36);
+    background: color-mix(in oklab, var(--danger), white 80%);
 
     &.is-bordered {
       border-color: var(--danger);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--danger);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--danger);
     }
   }
 
   &.is-purple {
-    background: var(--purple-light-36);
+    background: color-mix(in oklab, var(--purple), white 80%);
 
     &.is-bordered {
       border-color: var(--purple);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--purple);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--purple);
     }
   }
 
   &.is-blue {
-    background: var(--blue-light-34);
+    background: color-mix(in oklab, var(--blue), white 80%);
 
     &.is-bordered {
       border-color: var(--blue);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--blue);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--blue);
     }
   }
 
   &.is-yellow {
-    background: var(--yellow-light-22);
+    background: color-mix(in oklab, var(--yellow), white 80%);
 
     &.is-bordered {
       border-color: var(--yellow);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--yellow);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--yellow);
     }
   }
 
   &.is-orange {
-    background: var(--orange-light-20);
+    background: color-mix(in oklab, var(--orange), white 80%);
 
     &.is-bordered {
       border-color: var(--orange);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--orange);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--orange);
     }
   }
 
   &.is-green {
-    background: var(--green-light-23);
+    background: color-mix(in oklab, var(--green), white 80%);
 
     &.is-bordered {
       border-color: var(--green);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--green);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--green);
     }
   }
 
   &.is-red {
-    background: var(--red-light-38);
+    background: color-mix(in oklab, var(--red), white 80%);
 
     &.is-bordered {
       border-color: var(--red);
     }
 
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
-      color: var(--red);
-    }
-
-    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+    :deep(.iconify),
+    :deep(.fas),
+    :deep(.far),
+    :deep(.fal),
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fab) {
       color: var(--red);
     }
   }
@@ -419,33 +455,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
   &.is-bordered {
     border: 1px solid var(--muted-grey);
   }
-
-  :deep(.fas),
-  :deep(.fab),
-  :deep(.far),
-  :deep(.fal) {
-    font-size: 1.2rem;
-    color: var(--muted-grey);
-    transition: color 0.3s;
-  }
-
-  :deep(.lnil),
-  :deep(.lnir),
-  :deep(.fas),
-  :deep(.fab) {
-    font-size: 1.4rem;
-    color: var(--muted-grey);
-    transition: color 0.3s;
-  }
-
-  :deep(.iconify) {
-    font-size: 20px;
-  }
 }
 
 .is-dark {
   .v-icon {
-    background-color: var(--dark-sidebar-light-2);
+    background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
 
     &.is-primary {
       background: var(--primary);
@@ -455,13 +469,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -474,13 +490,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -493,13 +511,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -512,13 +532,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -531,13 +553,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -550,13 +574,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -569,13 +595,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -588,13 +616,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -607,13 +637,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -626,13 +658,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      .iconify {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -645,13 +679,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      .iconify {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }
@@ -664,13 +700,15 @@ const props = withDefaults(defineProps<VIconProps>(), {
       }
 
       :deep(.lnil),
-      :deep(.lnir),
-      :deep(.fas),
-      :deep(.fab) {
+      :deep(.lnir) {
         color: var(--white);
       }
 
-      .iconify {
+      :deep(.iconify),
+      :deep(.fas),
+      :deep(.far),
+      :deep(.fal),
+      :deep(.fab) {
         color: var(--smoke-white);
       }
     }

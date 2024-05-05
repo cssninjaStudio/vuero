@@ -462,8 +462,8 @@ const themeClasses = computed(() => {
 
 .is-dark {
   .sidebar-block {
-    background: var(--dark-sidebar-light-5);
-    border-color: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
 
     .panel-close {
       .iconify {
@@ -478,14 +478,14 @@ const themeClasses = computed(() => {
     }
 
     .sidebar-block-inner {
-      background: var(--dark-sidebar-light-5);
+      background: color-mix(in oklab, var(--dark-sidebar), white 5%);
 
       li {
         &.has-children {
           &.active {
             .collapse-wrap > a {
               color: var(--smoke-white);
-              background: var(--dark-sidebar-light-8);
+              background: color-mix(in oklab, var(--dark-sidebar), white 8%);
 
               .icon {
                 color: var(--accent);
@@ -514,7 +514,7 @@ const themeClasses = computed(() => {
       .single-link {
         &:hover,
         &.active {
-          background: var(--dark-sidebar-light-8);
+          background: color-mix(in oklab, var(--dark-sidebar), white 8%);
           color: var(--smoke-white);
 
           .icon {
@@ -540,7 +540,7 @@ const themeClasses = computed(() => {
 
         &:hover,
         &:focus {
-          background: var(--dark-sidebar-light-8);
+          background: color-mix(in oklab, var(--dark-sidebar), white 8%);
           color: var(--accent);
         }
       }
@@ -567,8 +567,8 @@ const themeClasses = computed(() => {
 html:not(.is-dark) {
   .sidebar-block {
     &.is-colored {
-      background: var(--sidebar-dark-12) !important;
-      border-color: var(--sidebar-light-5) !important;
+      background: color-mix(in oklab, var(--dark), black 12%) !important;
+      border-color: color-mix(in oklab, var(--dark), white 5%) !important;
 
       .panel-close {
         .iconify {
@@ -583,14 +583,14 @@ html:not(.is-dark) {
       }
 
       .sidebar-block-inner {
-        background: var(--sidebar-dark-12) !important;
+        background: color-mix(in oklab, var(--dark), black 12%) !important;
 
         li {
           &.has-children {
             &.active {
               .collapse-wrap > a {
                 color: var(--smoke-white) !important;
-                background: var(--sidebar-dark-7) !important;
+                background: color-mix(in oklab, var(--dark), black 7%) !important;
 
                 .icon {
                   color: var(--primary) !important;
@@ -619,7 +619,7 @@ html:not(.is-dark) {
         .single-link {
           &:hover,
           &.active {
-            background: var(--sidebar-dark-7) !important;
+            background: color-mix(in oklab, var(--dark), black 7%) !important;
             color: var(--smoke-white) !important;
 
             .icon {
@@ -645,7 +645,7 @@ html:not(.is-dark) {
 
           &:hover,
           &:focus {
-            background: var(--sidebar-dark-7) !important;
+            background: color-mix(in oklab, var(--dark), black 7%) !important;
             color: var(--primary) !important;
           }
         }

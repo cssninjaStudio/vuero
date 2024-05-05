@@ -63,28 +63,28 @@
   .r-card-advanced,
   .s-card-advanced,
   .l-card-advanced {
-    background: var(--dark-sidebar-light-6);
-    border-color: var(--dark-sidebar-light-12);
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
 
     .card-head,
     .card-foot {
-      border-color: var(--dark-sidebar-light-12);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
 
     .v-avatar {
       img {
-        border-color: var(--dark-sidebar-light-6) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
       }
     }
 
     .avatar-stack {
       .v-avatar {
-        border-color: var(--dark-sidebar-light-6) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
 
         .avatar {
           &.is-more {
             .inner {
-              border-color: var(--dark-sidebar-light-6) !important;
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
             }
           }
         }

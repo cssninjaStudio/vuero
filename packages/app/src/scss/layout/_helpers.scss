@@ -143,7 +143,7 @@ iconify-icon {
   box-shadow: var(--light-box-shadow);
 
   &.has-light-border {
-    border: 1px solid var(--fade-grey-dark-3);
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
   }
 }
 
@@ -155,7 +155,7 @@ iconify-icon {
   // Card border helper
   .is-dark-card-bordered,
   .is-dark-bordered-12 {
-    border-color: var(--dark-sidebar-light-12) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
   }
 
   // Primary Helper
@@ -169,27 +169,27 @@ iconify-icon {
 
   // BG Helpers
   .is-dark-bg-1 {
-    background: var(--dark-sidebar-light-1) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
   }
 
   .is-dark-bg-2 {
-    background: var(--dark-sidebar-light-2) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
   }
 
   .is-dark-bg-3 {
-    background: var(--dark-sidebar-light-3) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 3%) !important;
   }
 
   .is-dark-bg-4 {
-    background: var(--dark-sidebar-light-4) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
   }
 
   .is-dark-bg-5 {
-    background: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
   }
 
   .is-dark-bg-6 {
-    background: var(--dark-sidebar-light-6) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
   }
 }
 

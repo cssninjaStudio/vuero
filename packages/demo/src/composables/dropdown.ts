@@ -31,19 +31,6 @@ export function useDropdownContext(
     isOpen.value = !isOpen.value
   }
 
-  // watchEffect(() => {
-  //   if (!target.value) {
-  //     return
-  //   }
-
-  //   if (isOpen.value) {
-  //     target.value.classList.add('is-active')
-  //   }
-  //   else {
-  //     target.value.classList.remove('is-active')
-  //   }
-  // })
-
   return reactive({
     isOpen,
     open,

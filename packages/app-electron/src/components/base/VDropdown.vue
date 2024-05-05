@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<VDropdownProps>(), {
 })
 
 const dropdownElement = ref<HTMLElement>()
-const dropdown = useDropdown(dropdownElement, props.options)
+const dropdown = useDropdownContext(dropdownElement, props.options)
 
 defineExpose({
   ...dropdown,
@@ -44,6 +44,7 @@ defineExpose({
       props.icon && 'is-dots',
       props.modern && 'is-modern',
       props.spaced && 'is-spaced',
+      dropdown.isOpen && 'is-active',
       ...(typeof props.classes?.wrapper === 'string'
         ? [props.classes?.wrapper]
         : props.classes?.wrapper ?? ''),
@@ -132,10 +133,10 @@ defineExpose({
     &:hover,
     &.is-active {
       .is-trigger {
-        background: var(--fade-grey-light-2);
+        background: color-mix(in oklab, var(--fade-grey), white 2%);
 
         .iconify {
-          color: var(--light-text-dark-4);
+          color: color-mix(in oklab, var(--light-text), black 4%);
         }
       }
     }
@@ -229,7 +230,7 @@ defineExpose({
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
-        background: var(--fade-grey-light-3);
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
         color: var(--dark-text);
       }
 
@@ -319,7 +320,7 @@ defineExpose({
       font-family: var(--font);
 
       &:focus {
-        border-color: var(--fade-grey-dark-4);
+        border-color: color-mix(in oklab, var(--fade-grey), black 4%);
         box-shadow: var(--light-box-shadow);
       }
 
@@ -351,7 +352,7 @@ defineExpose({
       }
 
       &.is-active {
-        background: var(--fade-grey-light-3);
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
 
         // color: var(--white);
       }
@@ -441,7 +442,7 @@ defineExpose({
 .is-dark {
   .toolbar-link {
     &:hover {
-      background: var(--dark-sidebar-light-2) !important;
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
     }
 
     .iconify {
@@ -455,7 +456,7 @@ defineExpose({
       &:hover,
       &.is-active {
         .is-trigger {
-          background: var(--dark-sidebar-light-2) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
 
           .iconify {
             color: var(--dark-dark-text);
@@ -466,10 +467,10 @@ defineExpose({
       .dropdown-menu {
         .dropdown-content {
           background: var(--dark-sidebar) !important;
-          border-color: var(--dark-sidebar-light-8) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
 
           .heading {
-            border-color: var(--dark-sidebar-light-8) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
 
             &:hover,
             &:focus,
@@ -558,24 +559,24 @@ defineExpose({
     .dropdown-menu {
       .dropdown-content {
         background: var(--dark-sidebar);
-        border-color: var(--dark-sidebar-light-8) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
 
         .dropdown-item {
           color: var(--light-text);
 
           &.is-active {
-            background: var(--dark-sidebar-light-2) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
 
             // color: var(--white) !important;
           }
         }
 
         .dropdown-divider {
-          background: var(--dark-sidebar-light-5);
+          background: color-mix(in oklab, var(--dark-sidebar), white 5%);
         }
 
         a:hover {
-          background: var(--dark-sidebar-light-5) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
         }
       }
     }
@@ -584,12 +585,12 @@ defineExpose({
   .child-dropdown {
     .inner {
       background: var(--dark-sidebar) !important;
-      border-color: var(--dark-sidebar-light-4) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
 
       &:hover,
       &:focus {
         background: var(--dark-sidebar) !important;
-        border-color: var(--dark-sidebar-light-4) !important;
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
       }
 
       ul {

@@ -61,8 +61,8 @@
 
 .is-dark {
   .sidebar-panel {
-    background: var(--dark-sidebar-light-5);
-    border-color: var(--dark-sidebar-light-5) !important;
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
 
     .panel-close {
       .iconify {
@@ -71,11 +71,11 @@
     }
 
     .subpanel-header {
-      background: var(--dark-sidebar-light-5);
+      background: color-mix(in oklab, var(--dark-sidebar), white 5%);
     }
 
     .inner {
-      background: var(--dark-sidebar-light-5);
+      background: color-mix(in oklab, var(--dark-sidebar), white 5%);
     }
   }
 }
@@ -400,7 +400,7 @@
 
               &:hover {
                 .collapse-wrap > a {
-                  color: var(--dark-dark-text-light-14);
+                  color: color-mix(in oklab, var(--dark-dark-text), white 14%);
                 }
               }
             }
@@ -670,11 +670,11 @@
 
         &.is-active {
           border-inline-start-color: var(--primary);
-          background: var(--primary-light-51);
+          background: color-mix(in oklab, var(--primary), white 51%);
 
           &:hover,
           &:focus {
-            background: var(--primary-light-51);
+            background: color-mix(in oklab, var(--primary), white 51%);
           }
         }
 
@@ -844,26 +844,26 @@
     &.is-messages {
       li {
         &.is-active {
-          background: var(--dark-sidebar-light-10) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
 
           &:hover,
           &:focus {
-            background: var(--dark-sidebar-light-10) !important;
+            background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
           }
 
           img,
           .more-indicator {
-            border-color: var(--dark-sidebar-light-10) !important;
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
           }
         }
 
         &:hover {
-          background: var(--dark-sidebar-light-6) !important;
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
 
         img,
         .more-indicator {
-          border-color: var(--dark-sidebar-light-6) !important;
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
         }
 
         .more-indicator {
@@ -873,11 +873,11 @@
         .recipient-meta {
           span {
             &:first-child {
-              color: var(--primary-grey-light-6) !important;
+              color: color-mix(in oklab, var(--primary-grey), white 6%) !important;
             }
 
             &.is-unread {
-              color: var(--primary-grey-light-6) !important;
+              color: color-mix(in oklab, var(--primary-grey), white 6%) !important;
             }
           }
         }
@@ -965,11 +965,11 @@
 
         &.is-active {
           border-inline-start-color: var(--primary);
-          background: var(--primary-light-51);
+          background: color-mix(in oklab, var(--primary), white 51%);
 
           &:hover,
           &:focus {
-            background: var(--primary-light-51);
+            background: color-mix(in oklab, var(--primary), white 51%);
           }
         }
 
