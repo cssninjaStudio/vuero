@@ -50,9 +50,9 @@ async function main() {
     )} as const`,
     ``,
     ...Object.entries(sorted).map(([name, meta]) => {
-      return `export const ${name}Meta = ${JSON.stringify(
+      return `export const ${name}Meta: ComponentMeta = ${JSON.stringify(
         meta,
-      )} satisfies ComponentMeta`
+      )} as const`
     }),
   ].join('\n')
 

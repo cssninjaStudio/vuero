@@ -1,9 +1,6 @@
 <script lang="ts">
 import type { BuiltinLanguage, BuiltinTheme } from 'shiki'
 import { h, type PropType } from 'vue'
-import VPlaceload, {
-  type VPlaceloadProps,
-} from '/@src/components/base/VPlaceload.vue'
 
 async function loadModules() {
   const [
@@ -81,19 +78,12 @@ export default defineComponent({
         langs: ['vue', 'vue-html', 'typescript', 'bash', 'scss'],
       }),
     },
-    placeholder: {
-      type: Object as PropType<VPlaceloadProps>,
-      default: () => ({
-        height: '100px',
-      }),
-    },
   },
-  setup(props) {
+  async setup(props) {
     const processor = ref<any>()
-    const rendered = ref(false)
     const html = ref('')
 
-    watchEffect(async () => {
+    const loadProcessors = async () => {
       const langs = props.shiki.langs
       const themes = {
         light:
@@ -160,19 +150,27 @@ export default defineComponent({
           },
         })
         .use(rehypeStringify)
-    })
+    }
 
-    watchEffect(async () => {
+    const processMd = async () => {
       const _source = unref(props.source)
       const _processor = unref(processor)
       if (!_processor) return
       if (!_source) return
 
       const result = (await _processor.process(_source)).toString()
-      rendered.value = true
 
       html.value = result
-    })
+    }
+
+    if (import.meta.env.SSR) {
+      await loadProcessors()
+      await processMd()
+    }
+    else {
+      watchEffect(loadProcessors)
+      watchEffect(processMd)
+    }
 
     const classes = computed(() => {
       return {
@@ -187,16 +185,6 @@ export default defineComponent({
     })
 
     return () => {
-      if (!rendered.value) {
-        return h(VPlaceload, {
-          ...props.placeholder,
-          class: {
-            'is-max-width-fullwidth': props.maxWidth === 'fullwidth',
-            'is-max-width-medium': props.maxWidth === 'medium',
-            'is-max-width-small': props.maxWidth === 'small',
-          },
-        })
-      }
       return h('div', {
         class: classes.value,
         innerHTML: html.value,

@@ -8,6 +8,7 @@ import type {
 
 import { join, basename } from 'pathe'
 import { compileTemplate, parse } from '@vue/compiler-sfc'
+import MagicString from 'magic-string'
 
 import { createProcessor } from './markdown'
 import { transformExampleMarkup, transformSlots } from './transform'
@@ -72,7 +73,10 @@ export function VueroMarkdownDoc(options: PluginOptions) {
     // parse template with vue sfc compiler
     const result = parse(sfc, {
       filename: path,
-      sourceMap: true,
+      sourceMap: Boolean(config?.build?.sourcemap),
+      templateParseOptions: {
+        isCustomElement: tag => ['iconify-icon'].includes(tag),
+      },
     })
 
     if (result.errors.length || result.descriptor.template === null) {
@@ -82,12 +86,20 @@ export function VueroMarkdownDoc(options: PluginOptions) {
     }
 
     // compile template with vue sfc compiler
+    const isSSR = Boolean(config?.build?.ssr)
     const { code, errors } = compileTemplate({
       filename: path,
       id: path,
+      ast: result.descriptor.template.ast,
       source: result.descriptor.template.content,
       preprocessLang: result.descriptor.template.lang,
+      ssr: isSSR,
+      ssrCssVars: result.descriptor?.cssVars,
       transformAssetUrls: false,
+      isProd: config?.isProduction,
+      compilerOptions: {
+        isCustomElement: tag => ['iconify-icon'].includes(tag),
+      },
     })
 
     if (errors.length) {
@@ -107,24 +119,60 @@ export function VueroMarkdownDoc(options: PluginOptions) {
       })
     }
 
-    // inject frontmatter/darkmode and hmrId into the compiled render function
-    return [
-      `import { reactive } from 'vue'`,
-      `import { useDarkmode } from '/@src/composables/darkmode'`,
+    const s = new MagicString(code, {
+      filename: path,
+    })
 
-      code.replace('export function render', 'function render'),
+    s.prepend(`import { reactive } from 'vue'\n`)
+    s.prepend(`import { useDarkmode } from '/@src/composables/darkmode'\n`)
 
-      `const __frontmatter = ${JSON.stringify(frontmatter)};`,
-      `const setup = () => ({`,
-      `  frontmatter: reactive(__frontmatter),`,
-      `  darkmode: useDarkmode(),`,
-      `  sourceMeta: ${sourceMeta},`,
-      `});`,
-      `const __script = { render, setup };`,
+    if (isSSR) {
+      s.replace('export function ssrRender', 'function ssrRender')
+    }
+    else {
+      s.replace('export function render', 'function render')
+    }
 
-      config?.isProduction ? '' : `__script.__hmrId = ${JSON.stringify(path)};`,
-      `export default __script;`,
-    ].join('\n')
+    s.append(`const __frontmatter = ${JSON.stringify(frontmatter)};\n`)
+    s.append(`const setup = () => ({\n`)
+    s.append(`  frontmatter: reactive(__frontmatter),\n`)
+    s.append(`  darkmode: useDarkmode(),\n`)
+    s.append(`  sourceMeta: ${sourceMeta},\n`)
+    s.append(`});\n`)
+
+    if (isSSR) {
+      s.append(`const __script = { ssrRender, setup };\n`)
+    }
+    else {
+      s.append(`const __script = { render, setup };\n`)
+    }
+
+    if (!config?.isProduction) {
+      s.append([
+        `__script.__hmrId = ${JSON.stringify(path)};`,
+        'if (import.meta.hot) {',
+        '  typeof __VUE_HMR_RUNTIME__ !== "undefined" && __VUE_HMR_RUNTIME__.createRecord(__script.__hmrId, __script);',
+        '  import.meta.hot.accept((mod) => {',
+        '    if (!mod)',
+        '      return;',
+        '    const { default: updated, _rerender_only: _rerender_only2 } = mod;',
+        '    if (_rerender_only2) {',
+        '      __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render);',
+        '    } else {',
+        '      __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated);',
+        '    }',
+        '  });',
+        '}',
+        '',
+      ].join('\n'))
+    }
+
+    s.append(`export default __script;\n`)
+
+    return {
+      code: s.toString(),
+      map: config?.build?.sourcemap ? s.generateMap() : null,
+    }
   }
 
   return {
@@ -133,14 +181,9 @@ export function VueroMarkdownDoc(options: PluginOptions) {
     configResolved(_config) {
       config = _config
     },
-    async transform(raw, id) {
+    transform(raw, id) {
       if (id.endsWith('.md') && id.startsWith(pathPrefix)) {
-        const code = await markdownToVue(id, raw)
-
-        return {
-          code,
-          map: null,
-        }
+        return markdownToVue(id, raw)
       }
     },
   } satisfies Plugin

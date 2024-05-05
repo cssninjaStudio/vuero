@@ -64,18 +64,12 @@ const props = defineProps<{
                 <VMarkdownPreview
                   size="small"
                   :source="'```ts\n' + prop.default + '\n```'"
-                  :placeholder="{
-                    height: '28px',
-                  }"
                 />
               </td>
               <td>
                 <VMarkdownPreview
                   size="small"
                   :source="'```ts\n' + prop.type + '\n```'"
-                  :placeholder="{
-                    height: '28px',
-                  }"
                 />
               </td>
             </tr>
@@ -117,9 +111,6 @@ const props = defineProps<{
                 <VMarkdownPreview
                   size="small"
                   :source="'```ts\n' + prop.type + '\n```'"
-                  :placeholder="{
-                    height: '28px',
-                  }"
                 />
               </td>
             </tr>
@@ -161,9 +152,6 @@ const props = defineProps<{
                 <VMarkdownPreview
                   size="small"
                   :source="'```ts\n' + prop.type + '\n```'"
-                  :placeholder="{
-                    height: '28px',
-                  }"
                 />
               </td>
             </tr>
@@ -205,9 +193,6 @@ const props = defineProps<{
                 <VMarkdownPreview
                   size="small"
                   :source="'```ts\n' + prop.type + '\n```'"
-                  :placeholder="{
-                    height: '28px',
-                  }"
                 />
               </td>
             </tr>
