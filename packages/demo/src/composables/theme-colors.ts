@@ -14,7 +14,7 @@ export const useThemeColors = () => {
   const orange = useCssVar('--orange')
   const lime = useCssVar('--lime')
   const pink = useCssVar('--pink')
-  const grey = useCssVar('--fade-grey')
+  const grey = useCssVar('--muted-grey')
 
   return reactive({
     primary,
