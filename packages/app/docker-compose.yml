@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 3000:8080
+    develop:
+      watch:
+        - action: sync
+          path: ./nginx/spa.conf
+          target: /opt/bitnami/nginx/conf/server_blocks/spa.conf
+        - action: rebuild
+          path: ./src
+        - action: rebuild
+          path: ./public
+        - action: rebuild
+          path: index.html
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: vite.config.ts
