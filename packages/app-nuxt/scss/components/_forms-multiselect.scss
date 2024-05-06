@@ -1,0 +1,601 @@
+/*! _forms-multiselect.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    0. Multiselect base styles
+    1. Rounded Select
+    2. Curved Select
+    3. Image / Icon select
+    4. Image tags select
+
+*/
+
+/* ==========================================================================
+0. Multiselect base styles
+========================================================================== */
+
+.multiselect {
+  font-family: var(--font);
+  min-width: initial;
+  width: 100%;
+  max-width: 100%;
+  border-color: var(--border);
+  outline-offset: 0;
+  transition: all 0.3s; // transition-all test
+
+  &:focus,
+  &:focus-within {
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-color: var(--accessibility-focus-outline-color);
+    outline-style: var(--accessibility-focus-outline-style);
+  }
+
+  &.is-active {
+    box-shadow: none;
+  }
+
+  .multiselect-caret {
+    margin-inline-end: 0.85rem;
+  }
+
+  .multiselect-dropdown {
+    overflow: hidden;
+    border-color: var(--border);
+  }
+
+  .multiselect-clear {
+    height: 32px;
+    width: 32px;
+
+    &::after,
+    &::before {
+      top: 10px;
+    }
+
+    .multiselect-clear-icon {
+      margin-top: 0.6rem;
+    }
+  }
+
+  .multiselect-input {
+    background: var(--white);
+    min-height: 38px;
+  }
+
+  .multiselect-single-label {
+    font-family: var(--font);
+    font-size: 0.9rem;
+
+    .select-label-text {
+      font-family: var(--font);
+      font-size: 0.9rem;
+      color: var(--dark-text);
+    }
+  }
+
+  .multiselect-placeholder,
+  .multiselect-multiple-label {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    padding-inline-start: 1rem;
+  }
+
+  .multiselect-tags {
+    .multiselect-tag {
+      font-family: var(--font);
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 1px 0 1px 8px;
+      background: color-mix(in oklab, var(--widget-grey), black 4%);
+      color: var(--dark-text);
+
+      .iconify {
+        padding-inline-end: 4px;
+
+        &::before {
+          color: var(--light-text);
+        }
+
+        &:hover {
+          background: transparent;
+
+          &::before {
+            color: var(--dark-text);
+          }
+        }
+      }
+    }
+  }
+
+  .multiselect-search {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: var(--dark-text);
+  }
+
+  .multiselect-options {
+    overflow-x: hidden;
+    padding: 1rem 0.75rem;
+
+    &::-webkit-scrollbar {
+      width: 6px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px !important;
+      background: rgb(0 0 0 / 20%) !important;
+    }
+
+    .multiselect-option {
+      position: relative;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+
+      &.is-pointed {
+        background: color-mix(in oklab, var(--widget-grey), black 1%);
+      }
+
+      &.is-selected {
+        background: transparent !important;
+        color: var(--dark-text);
+
+        &::after {
+          position: absolute;
+          top: 12px;
+          inset-inline-end: 15px;
+          content: '\f00c';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-size: 0.9rem;
+          color: var(--light-text);
+        }
+      }
+
+      > span {
+        font-size: 0.9rem;
+      }
+    }
+
+    > span {
+      width: 100%;
+    }
+
+    .multiselect-no-options,
+    .multiselect-no-results {
+      width: 100%;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      color: var(--light-text);
+    }
+  }
+}
+
+.is-dark {
+  .is-image-tags {
+    &:not(.is-stacked) {
+      .multiselect {
+        .multiselect-tag {
+          .iconify {
+            &:hover {
+              &::before {
+                color: var(--white) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .multiselect {
+      .multiselect-tag {
+        img {
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+        }
+      }
+    }
+  }
+
+  .multiselect {
+    background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+    color: var(--dark-dark-text);
+
+    .multiselect-clear {
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    }
+
+    .multiselect-single-label {
+      color: var(--dark-dark-text);
+    }
+
+    .multiselect-tags-search,
+    .multiselect-search {
+      background: transparent;
+      color: var(--light-text);
+    }
+
+    .multiselect-single-label {
+      .select-label-text {
+        color: var(--white);
+      }
+    }
+
+    .multiselect-tags {
+      .multiselect-tag {
+        background-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+        color: var(--white);
+
+        i::before {
+          &:hover {
+            color: var(--white) !important;
+          }
+        }
+      }
+    }
+
+    .multiselect-dropdown {
+      background-color: color-mix(in oklab, var(--dark-sidebar), black 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+
+      .multiselect-option {
+        color: var(--light-text);
+
+        &.is-pointed {
+          background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+        }
+
+        &.is-selected {
+          color: var(--white);
+        }
+
+        &.is-disabled {
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+1. Rounded Select
+========================================================================== */
+
+.is-rounded-select {
+  .multiselect {
+    border-radius: 500px;
+
+    .multiselect-clear {
+      border-radius: 500px;
+    }
+
+    .multiselect-input,
+    .multiselect-search {
+      border-radius: 500px;
+
+      &::before {
+        inset-inline-end: 20px;
+      }
+
+      .multiselect-tags {
+        .multiselect-tag {
+          border-radius: 15rem;
+        }
+      }
+    }
+
+    .multiselect-options {
+      border-radius: 0.75rem;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+/* ==========================================================================
+2. Curved Select
+========================================================================== */
+
+.is-curved-select {
+  .multiselect {
+    border-radius: 0.5rem;
+
+    .multiselect-clear {
+      border-radius: 0.5rem;
+    }
+
+    .multiselect-input,
+    .multiselect-search {
+      border-radius: 0.5rem;
+
+      .multiselect-tags {
+        .multiselect-tag {
+          border-radius: 0.35rem;
+        }
+      }
+    }
+
+    .multiselect-options {
+      border-radius: 0.75rem;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+/* ==========================================================================
+3. Image / Icon select
+========================================================================== */
+
+.is-image-select,
+.is-icon-select {
+  --ms-px: 0.3rem;
+
+  &.has-curved-images {
+    .multiselect {
+      .select-option-icon,
+      .select-option-icon-wrap,
+      .select-label-icon,
+      .select-label-icon-wrap {
+        border-radius: 0.35rem;
+      }
+    }
+  }
+
+  &.has-rounded-images {
+    .multiselect {
+      .select-option-icon,
+      .select-option-icon-wrap,
+      .select-label-icon,
+      .select-label-icon-wrap {
+        border-radius: var(--radius-rounded);
+      }
+    }
+  }
+
+  .multiselect {
+    .multiselect-input {
+      .multiselect-single-label {
+        padding-inline-start: 6px;
+      }
+    }
+
+    .select-option-icon {
+      margin-inline-end: 6px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 0.15rem;
+    }
+
+    .select-option-icon-wrap {
+      margin-inline-end: 6px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 0.15rem;
+      font-size: 1rem;
+      color: var(--light-text);
+    }
+
+    .select-option-text {
+      font-family: var(--font);
+      font-size: 0.9rem;
+      color: var(--light-text);
+    }
+
+    .select-label-text {
+      font-family: var(--font);
+      font-size: 0.9rem;
+      color: var(--dark-text);
+    }
+
+    .select-label-icon {
+      margin-inline-end: 6px;
+      height: 26px;
+      min-width: 26px;
+      border-radius: 0.15rem;
+    }
+
+    .select-label-icon-wrap {
+      margin-inline-end: 6px;
+      height: 26px;
+      min-width: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.15rem;
+      font-size: 1.1rem;
+      color: var(--light-text);
+    }
+
+    .select-option-label {
+      font-family: var(--font);
+    }
+
+    .select-option-icon,
+    .select-label-icon {
+      &.is-curved {
+        border-radius: 0.35rem;
+      }
+
+      &.is-rounded {
+        border-radius: var(--radius-rounded);
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Image tags select
+========================================================================== */
+
+.is-image-tags {
+  &:not(.is-curved-select, .is-rounded-select) {
+    .multiselect {
+      .multiselect-tag {
+        &.is-user,
+        &.is-image,
+        &.is-icon {
+          border-radius: var(--radius);
+
+          // padding-inline-start: 4px;
+
+          img {
+            border-radius: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-curved-select {
+    .multiselect {
+      .multiselect-tag {
+        &.is-user,
+        &.is-image,
+        &.is-icon {
+          border-radius: 0.45rem;
+
+          // padding-inline-start: 4px;
+
+          img {
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-rounded-select {
+    .multiselect {
+      .multiselect-input {
+        border-radius: 0.5rem !important;
+      }
+
+      .multiselect-tag {
+        &.is-user,
+        &.is-image,
+        &.is-icon {
+          // padding-inline-start: 4px;
+        }
+      }
+    }
+  }
+
+  &.is-stacked {
+    &.is-rounded-select {
+      .multiselect {
+        .multiselect-tags > span {
+          &:not(:first-child) {
+            margin-inline-start: -12px !important;
+          }
+        }
+      }
+    }
+
+    .multiselect {
+      .multiselect-tag {
+        padding: 0 !important;
+        background: none !important;
+        margin-inline-start: 0 !important;
+        margin-inline-end: 0 !important;
+
+        &:hover,
+        &:focus {
+          i::before {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+
+        img {
+          border: 2px solid var(--white);
+          margin: 0 !important;
+        }
+
+        i::before {
+          position: absolute;
+          top: -2px;
+          inset-inline-end: 0;
+          background: var(--white);
+          height: 14px;
+          width: 14px;
+          min-width: 14px !important;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.3s;
+        }
+      }
+    }
+  }
+
+  .multiselect {
+    .multiselect-tags {
+      padding-inline-start: 4px;
+    }
+
+    .multiselect-tag {
+      position: relative;
+
+      &.is-user,
+      &.is-image,
+      &.is-icon {
+        padding: 4px 6px;
+        border-radius: 22px;
+        margin: 3px 3px 8px;
+
+        img {
+          min-width: 26px;
+          border-radius: var(--radius-rounded);
+          height: 26px;
+          margin-inline-end: 8px;
+          margin-top: 2px;
+          margin-bottom: 2px;
+        }
+
+        i::before {
+          color: var(--light-text);
+          border-radius: var(--radius-rounded);
+          margin-inline-start: 0.5rem;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 22px;
+          transition: color 0.3s background-color 0.3s;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Autocomplete select
+========================================================================== */
+
+.is-autocomplete-select {
+  .multiselect {
+    .multiselect-single-label,
+    .multiselect-placeholder {
+      padding-inline-start: 40px !important;
+    }
+
+    .multiselect-search {
+      padding-inline-start: 40px !important;
+    }
+  }
+}
+
+/* ==========================================================================
+6. Minimal select
+========================================================================== */
+
+.is-minimal-select {
+  .multiselect {
+    .multiselect-input {
+      border: none;
+      background: none;
+    }
+  }
+}

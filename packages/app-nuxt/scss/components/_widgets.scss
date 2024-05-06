@@ -1,0 +1,55 @@
+/*! _widgets.scss | Vuero | Css ninja 2020-2024 */
+
+/* ==========================================================================
+Stat Widgets
+========================================================================== */
+
+/*
+    1. Stat Widget Base
+*/
+
+/* ==========================================================================
+1. Stat Widget Base
+========================================================================== */
+
+.stat-widget {
+  @include vuero-l-card;
+
+  padding: 30px;
+  font-family: var(--font);
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  .widget-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 10px;
+
+    h3 {
+      font-family: var(--font-alt);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark-text);
+    }
+  }
+
+  .inner-list {
+    padding: 10px 0;
+
+    .inner-list-item {
+      + .inner-list-item {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .stat-widget {
+    @include vuero-card--dark;
+  }
+}

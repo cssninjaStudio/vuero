@@ -1,0 +1,45 @@
+/*! _toasts.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Notyf Toasts
+*/
+
+/* ==========================================================================
+1. Notyf Toasts
+========================================================================== */
+
+.notyf {
+  .notyf__toast {
+    .notyf__wrapper {
+      .notyf__icon {
+        .fas,
+        .fal,
+        .far,
+        .fad,
+        .fab {
+          color: var(--white) !important;
+          font-size: 1.6rem !important;
+        }
+      }
+
+      .notyf__message {
+        font-family: var(--font);
+        color: var(--white) !important;
+      }
+    }
+  }
+}
+
+.disable-notyf {
+  .notyf {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1;
+    margin: -1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1;
+    outline: 0;
+  }
+}

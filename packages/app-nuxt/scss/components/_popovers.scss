@@ -1,0 +1,608 @@
+/*! _popovers.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Web UI Popover
+    2. Web UI Popover Dark mode
+    3. User profile popovers
+    4. User profile popovers Dark mode
+    5. Simple popover
+*/
+
+/* ==========================================================================
+1. Web UI Popover
+========================================================================== */
+
+.tippy-box[data-theme~='light'] {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--light-box-shadow);
+
+  .tippy-content {
+    // padding: 0 !important;
+    // border: none
+  }
+}
+
+.v-popover {
+  box-shadow: rgb(0 0 0 / 4%) 0 3px 10px 4px !important;
+  background: var(--white) !important;
+  color: var(--dark-text) !important;
+  margin-top: -20px !important;
+  border: 1px solid var(--fade-grey);
+
+  &.top > .webui-arrow {
+    border-top-color: var(--white) !important;
+  }
+
+  &.bottom-right > .webui-arrow {
+    border-inline-end-color: transparent !important;
+    border-bottom-color: transparent !important;
+  }
+
+  &.top-right > .webui-arrow {
+    border-inline-end-color: transparent !important;
+
+    &::after {
+      border-top-color: var(--white) !important;
+    }
+  }
+
+  &.top-left > .webui-arrow {
+    border-top-color: var(--white) !important;
+  }
+
+  &.left > .webui-arrow {
+    border-inline-start-color: transparent !important;
+  }
+
+  .webui-arrow {
+    border-top-color: transparent !important;
+    border-inline-end-color: transparent !important;
+
+    &::after {
+      border-top-color: transparent !important;
+    }
+  }
+
+  .v-popover-title {
+    background-color: var(--white) !important;
+    border-bottom: none !important;
+    font-weight: 500;
+  }
+}
+
+.v-popover-content {
+  font-size: 0.75rem !important;
+
+  &.is-text {
+    max-width: 200px;
+    padding: 8px 5px 4px;
+    font-size: 0.9rem !important;
+  }
+
+  .popover-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .v-avatar,
+    .v-icon {
+      margin-inline-end: 10px;
+    }
+
+    h4 {
+      font-family: var(--font-alt);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--dark);
+      margin-bottom: 0;
+    }
+  }
+
+  .popover-body {
+    padding: 0;
+
+    p {
+      font-family: var(--font);
+      font-size: 0.9rem;
+      color: var(--light-text);
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .popover-flex-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+
+    .staff-avatar {
+      height: 38px;
+      width: 38px;
+      border-radius: var(--radius-rounded);
+    }
+
+    .content-block {
+      margin-inline-start: 10px;
+
+      label,
+      span {
+        display: block;
+      }
+
+      label {
+        color: color-mix(in oklab, var(--dark-text), white 35%);
+        text-transform: uppercase;
+        font-size: 70%;
+      }
+    }
+
+    .fa.fa-star,
+    .fa.fa-star-half {
+      color: #ffd700;
+    }
+
+    .icon-block {
+      height: 38px;
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .iconify {
+        height: 18px;
+        width: 18px;
+        color: var(--dark-text);
+        stroke-width: 1.3px;
+
+        &.is-medium {
+          height: 26px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Web UI Popover Dark mode
+========================================================================== */
+
+.is-dark {
+  .v-popover {
+    background: var(--dark-sidebar) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
+
+    &.top {
+      .webui-arrow {
+        border-top-color: var(--dark-sidebar) !important;
+      }
+    }
+
+    &.right {
+      .webui-arrow {
+        border-top-color: transparent !important;
+        border-inline-end-color: var(--dark-sidebar) !important;
+
+        &::after {
+          border-inline-end-color: var(--dark-sidebar) !important;
+        }
+      }
+    }
+
+    &.left {
+      .webui-arrow {
+        &::after {
+          border-inline-start-color: var(--dark-sidebar) !important;
+        }
+      }
+    }
+
+    &.bottom {
+      .webui-arrow {
+        &::after {
+          border-bottom-color: var(--dark-sidebar) !important;
+        }
+      }
+    }
+
+    &.bottom-right,
+    &.bottom-left {
+      .webui-arrow {
+        &::after {
+          border-bottom-color: var(--dark-sidebar) !important;
+        }
+      }
+    }
+
+    &.top-right {
+      .webui-arrow {
+        &::after {
+          border-top-color: var(--dark-sidebar) !important;
+        }
+      }
+    }
+
+    &.top-left {
+      .webui-arrow {
+        border-top-color: var(--dark-sidebar) !important;
+      }
+    }
+
+    .v-popover-inner {
+      background: var(--dark-sidebar) !important;
+      border-color: var(--dark-sidebar) !important;
+    }
+
+    .title {
+      color: color-mix(in oklab, var(--primary-grey), black 5%) !important;
+    }
+
+    .country img,
+    .primary-skill img {
+      border-color: var(--dark-sidebar) !important;
+    }
+
+    .notification-content {
+      a {
+        color: var(--primary) !important;
+      }
+
+      span {
+        color: color-mix(in oklab, var(--primary-grey), black 10%) !important;
+      }
+    }
+
+    .media + .media {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+    }
+
+    .loader-overlay {
+      background: rgb(42 42 44 / 95%) !important;
+    }
+  }
+}
+
+/* ==========================================================================
+3. User profile popovers
+========================================================================== */
+
+.v-popover-profile {
+  .profile-popover-block,
+  .skill-popover-block {
+    max-width: 260px;
+    text-align: inset-inline-start;
+
+    .profile-popover-wrapper,
+    .skill-popover-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 11px 6px;
+
+      .popover-avatar,
+      .popover-fake-avatar {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        z-index: 0;
+
+        img {
+          display: block;
+        }
+
+        .avatar {
+          width: 44px;
+          height: 44px;
+          border-radius: var(--radius-rounded);
+        }
+
+        .badge {
+          position: absolute;
+          inset-inline-end: -2px;
+          bottom: 0;
+          width: 20px;
+          height: 20px;
+          border: 1.6px solid var(--white);
+          border-radius: var(--radius-rounded);
+        }
+      }
+
+      .popover-fake-avatar {
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-rounded);
+
+        &.is-primary {
+          background: color-mix(in oklab, var(--primary), white 42%);
+
+          span {
+            color: var(--primary);
+          }
+        }
+
+        &.is-accent {
+          background: color-mix(in oklab, var(--primary), white 36%);
+
+          span {
+            color: var(--primary);
+          }
+        }
+
+        &.is-success {
+          background: color-mix(in oklab, var(--success), white 45%);
+
+          span {
+            color: var(--success);
+          }
+        }
+
+        &.is-info {
+          background: color-mix(in oklab, var(--info), white 45%);
+
+          span {
+            color: var(--info);
+          }
+        }
+
+        &.is-warning {
+          background: color-mix(in oklab, var(--warning), white 32%);
+
+          span {
+            color: var(--warning);
+          }
+        }
+
+        &.is-danger {
+          background: color-mix(in oklab, var(--danger), white 36%);
+
+          span {
+            color: var(--danger);
+          }
+        }
+
+        &.is-h-purple {
+          background: color-mix(in oklab, var(--purple), white 36%);
+
+          span {
+            color: var(--purple);
+          }
+        }
+
+        &.is-h-orange {
+          background: color-mix(in oklab, var(--orange), white 18%);
+
+          span {
+            color: var(--orange);
+          }
+        }
+
+        &.is-h-blue {
+          background: color-mix(in oklab, var(--blue), white 32%);
+
+          span {
+            color: var(--blue);
+          }
+        }
+
+        &.is-h-red {
+          background: color-mix(in oklab, var(--red), white 38%);
+
+          span {
+            color: var(--red);
+          }
+        }
+
+        &.is-h-green {
+          background: color-mix(in oklab, var(--green), white 22%);
+
+          span {
+            color: var(--green);
+          }
+        }
+
+        &.is-h-yellow {
+          background: color-mix(in oklab, var(--yellow), white 22%);
+
+          span {
+            color: color-mix(in oklab, var(--yellow), black 8%);
+          }
+        }
+
+        span {
+          font-size: 1.1rem;
+          font-family: var(--font);
+          text-transform: uppercase;
+          font-weight: 500;
+          color: var(--dark-text);
+        }
+      }
+
+      .popover-meta {
+        margin-inline-start: 16px;
+
+        span {
+          display: block;
+
+          &.user-meta,
+          &.skill-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .username,
+            .skill-name {
+              display: block;
+              font-family: var(--font-alt);
+              line-height: 1.2;
+              font-size: 0.9rem;
+              font-weight: 600;
+            }
+
+            .location {
+              font-size: 0.75rem;
+              color: var(--light-text);
+            }
+          }
+
+          &.job-title,
+          &.skill-type {
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 500;
+          }
+
+          &.bio,
+          &.skill-description {
+            font-size: 0.8rem;
+            color: var(--light-text);
+          }
+        }
+      }
+    }
+
+    .popover-actions {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 8px 12px 12px;
+
+      .button {
+        height: 26px;
+      }
+
+      .popover-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        margin: 0 2px;
+        border-radius: var(--radius-rounded);
+        transition: all 0.3s; // transition-all test
+        cursor: pointer;
+        pointer-events: all !important;
+
+        &:hover,
+        &:focus {
+          background: color-mix(in oklab, var(--fade-grey), white 3%);
+
+          .iconify {
+            color: var(--light-text);
+          }
+        }
+
+        .iconify {
+          width: 16px;
+          height: 16px;
+          color: var(--light-text);
+        }
+      }
+    }
+
+    .loader-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      margin: 0 auto;
+      display: flex;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      background: rgb(255 255 255 / 95%);
+      opacity: 0;
+      transition: all 0.3s; // transition-all test
+      z-index: 0;
+      pointer-events: none;
+
+      &.is-active {
+        opacity: 1;
+        z-index: 1;
+        pointer-events: all;
+      }
+
+      .loader {
+        &.is-loading {
+          height: 24px;
+          width: 24px;
+          min-height: 24px;
+          min-width: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. User profile popovers Dark mode
+========================================================================== */
+
+.is-dark {
+  .tippy-box {
+    background: var(--dark-sidebar) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: var(--dark-sidebar) !important;
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: var(--dark-sidebar) !important;
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='left'] > .tippy-arrow::before {
+    border-inline-start-color: var(--dark-sidebar) !important;
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='right'] > .tippy-arrow::before {
+    border-inline-end-color: var(--dark-sidebar) !important;
+  }
+
+  .tippy-profile {
+    background: var(--dark-sidebar) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
+  }
+
+  .v-popover-profile {
+    background: var(--dark-sidebar) !important;
+
+    .profile-popover-block {
+      .badge {
+        border-color: var(--dark-sidebar) !important;
+      }
+
+      .user-meta,
+      .skill-meta {
+        .username,
+        .skill-name {
+          color: color-mix(in oklab, var(--primary-grey), black 5%);
+        }
+      }
+
+      .job-title,
+      .skill-type {
+        color: var(--primary) !important;
+      }
+
+      .popover-actions .popover-icon:hover {
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+
+        .iconify {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,944 @@
+/*! _tooltips.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. CSS Tooltips
+    2. CSS Tooltips Dark mode
+*/
+
+/* ==========================================================================
+1. CSS Tooltips
+========================================================================== */
+
+[class*='hint--'] {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+[class*='hint--']:focus-visible {
+  outline-offset: var(--accessibility-focus-outline-offset);
+  outline-width: var(--accessibility-focus-outline-width);
+  outline-style: var(--accessibility-focus-outline-style);
+  outline-color: var(--accessibility-focus-outline-color);
+}
+
+[class*='hint--']::before,
+[class*='hint--']::after {
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000000;
+  pointer-events: none;
+  transition: 0.3s ease;
+  transition-delay: 0ms;
+}
+
+[class*='hint--']:hover::before,
+[class*='hint--']:hover::after,
+[class*='hint--']:focus-visible::before,
+[class*='hint--']:focus-visible::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+[class*='hint--']:focus-visible::before,
+[class*='hint--']:focus-visible::after,
+[class*='hint--']:hover::before,
+[class*='hint--']:hover::after {
+  transition-delay: 100ms;
+}
+
+[class*='hint--']::before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  border: 6px solid transparent;
+  z-index: 1000001;
+}
+
+[class*='hint--']::after {
+  background: #383838;
+  color: white;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+[class*='hint--'][aria-label]::after {
+  content: attr(aria-label);
+}
+
+[class*='hint--'][data-hint]::after {
+  content: attr(data-hint);
+}
+
+[aria-label='']::before,
+[aria-label='']::after,
+[data-hint='']::before,
+[data-hint='']::after {
+  display: none !important;
+}
+
+// Tooltip arrows
+.hint--top-left::before {
+  border-top-color: #383838;
+}
+
+.hint--top-right::before {
+  border-top-color: #383838;
+}
+
+.hint--top::before {
+  border-top-color: #383838;
+}
+
+.hint--bottom-left::before {
+  border-bottom-color: #383838;
+}
+
+.hint--bottom-right::before {
+  border-bottom-color: #383838;
+}
+
+.hint--bottom::before {
+  border-bottom-color: #383838;
+}
+
+.hint--left::before {
+  border-inline-start-color: #383838;
+}
+
+.hint--right::before {
+  border-inline-end-color: #383838;
+}
+
+// Top placement
+.hint--top::before {
+  margin-bottom: -11px;
+}
+
+.hint--top::before,
+.hint--top::after {
+  bottom: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--top::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--top::after {
+  transform: translateX(calc(var(--transform-direction) * -50%));
+}
+
+.hint--top:hover::before,
+.hint--top:focus-visible::before {
+  transform: translateY(-8px);
+}
+
+.hint--top:hover::after,
+.hint--top:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * -50%)) translateY(-8px);
+}
+
+// Bottom placement
+.hint--bottom::before {
+  margin-top: -11px;
+}
+
+.hint--bottom::before,
+.hint--bottom::after {
+  top: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--bottom::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--bottom::after {
+  transform: translateX(calc(var(--transform-direction) * -50%));
+}
+
+.hint--bottom:hover::before,
+.hint--bottom:focus-visible::before {
+  transform: translateY(8px);
+}
+
+.hint--bottom:hover::after,
+.hint--bottom:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * -50%)) translateY(8px);
+}
+
+// Right placement
+.hint--right::before {
+  margin-inline-start: -11px;
+  margin-bottom: -6px;
+}
+
+.hint--right::after {
+  margin-bottom: -14px;
+}
+
+.hint--right::before,
+.hint--right::after {
+  inset-inline-start: 100%;
+  bottom: 50%;
+}
+
+.hint--right:hover::before,
+.hint--right:focus-visible::before {
+  transform: translateX(calc(var(--transform-direction) * 8px));
+}
+
+.hint--right:hover::after,
+.hint--right:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * 8px));
+}
+
+// Left placement
+.hint--left::before {
+  margin-inline-end: -11px;
+  margin-bottom: -6px;
+}
+
+.hint--left::after {
+  margin-bottom: -14px;
+}
+
+.hint--left::before,
+.hint--left::after {
+  inset-inline-end: 100%;
+  bottom: 50%;
+}
+
+.hint--left:hover::before,
+.hint--left:focus-visible::before {
+  transform: translateX(calc(var(--transform-direction) * -8px));
+}
+
+.hint--left:hover::after,
+.hint--left:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * -8px));
+}
+
+// Top left placement
+.hint--top-left::before {
+  margin-bottom: -11px;
+}
+
+.hint--top-left::before,
+.hint--top-left::after {
+  bottom: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--top-left::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--top-left::after {
+  transform: translateX(calc(var(--transform-direction) * -100%));
+}
+
+.hint--top-left::after {
+  margin-inline-start: 12px;
+}
+
+.hint--top-left:hover::before,
+.hint--top-left:focus-visible::before {
+  transform: translateY(-8px);
+}
+
+.hint--top-left:hover::after,
+.hint--top-left:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * -100%)) translateY(-8px);
+}
+
+// Top right placement
+.hint--top-right::before {
+  margin-bottom: -11px;
+}
+
+.hint--top-right::before,
+.hint--top-right::after {
+  bottom: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--top-right::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--top-right::after {
+  transform: translateX(calc(var(--transform-direction) * 0));
+}
+
+.hint--top-right::after {
+  margin-inline-start: -12px;
+}
+
+.hint--top-right:hover::before,
+.hint--top-right:focus-visible::before {
+  transform: translateY(-8px);
+}
+
+.hint--top-right:hover::after,
+.hint--top-right:focus-visible::after {
+  transform: translateY(-8px);
+}
+
+// Bottom left placement
+.hint--bottom-left::before {
+  margin-top: -11px;
+}
+
+.hint--bottom-left::before,
+.hint--bottom-left::after {
+  top: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--bottom-left::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--bottom-left::after {
+  transform: translateX(calc(var(--transform-direction) * -100%));
+}
+
+.hint--bottom-left::after {
+  margin-inline-start: 12px;
+}
+
+.hint--bottom-left:hover::before,
+.hint--bottom-left:focus-visible::before {
+  transform: translateY(8px);
+}
+
+.hint--bottom-left:hover::after,
+.hint--bottom-left:focus-visible::after {
+  transform: translateX(calc(var(--transform-direction) * -100%)) translateY(8px);
+}
+
+// Bottom right placement
+.hint--bottom-right::before {
+  margin-top: -11px;
+}
+
+.hint--bottom-right::before,
+.hint--bottom-right::after {
+  top: 100%;
+  inset-inline-start: 50%;
+}
+
+.hint--bottom-right::before {
+  inset-inline-start: calc(50% - 6px);
+}
+
+.hint--bottom-right::after {
+  transform: translateX(calc(var(--transform-direction) * 0));
+}
+
+.hint--bottom-right::after {
+  margin-inline-start: -12px;
+}
+
+.hint--bottom-right:hover::before,
+.hint--bottom-right:focus-visible::before {
+  transform: translateY(8px);
+}
+
+.hint--bottom-right:hover::after,
+.hint--bottom-right:focus-visible::after {
+  transform: translateY(8px);
+}
+
+// Defines tooltip sizes.
+.hint--small::after,
+.hint--medium::after,
+.hint--large::after {
+  white-space: normal;
+  line-height: 1.4em;
+  word-wrap: break-word;
+}
+
+.hint--small::after {
+  width: 80px;
+}
+
+.hint--medium::after {
+  width: 150px;
+}
+
+.hint--large::after {
+  width: 300px;
+}
+
+// Defines a basic theme.
+[class*='hint--'] {
+  /**
+	 * tooltip body
+	 */
+}
+
+[class*='hint--']::after {
+  box-shadow: var(--light-box-shadow);
+}
+
+// Defines a primary tooltip.
+.hint--primary::after {
+  background-color: var(--primary);
+}
+
+.hint--primary.hint--top-left::before {
+  border-top-color: var(--primary);
+}
+
+.hint--primary.hint--top-right::before {
+  border-top-color: var(--primary);
+}
+
+.hint--primary.hint--top::before {
+  border-top-color: var(--primary);
+}
+
+.hint--primary.hint--bottom-left::before {
+  border-bottom-color: var(--primary);
+}
+
+.hint--primary.hint--bottom-right::before {
+  border-bottom-color: var(--primary);
+}
+
+.hint--primary.hint--bottom::before {
+  border-bottom-color: var(--primary);
+}
+
+.hint--primary.hint--left::before {
+  border-inline-start-color: var(--primary);
+}
+
+.hint--primary.hint--right::before {
+  border-inline-end-color: var(--primary);
+}
+
+// Defines an error tooltip.
+.hint--error::after {
+  background-color: var(--danger);
+}
+
+.hint--error.hint--top-left::before {
+  border-top-color: var(--danger);
+}
+
+.hint--error.hint--top-right::before {
+  border-top-color: var(--danger);
+}
+
+.hint--error.hint--top::before {
+  border-top-color: var(--danger);
+}
+
+.hint--error.hint--bottom-left::before {
+  border-bottom-color: var(--danger);
+}
+
+.hint--error.hint--bottom-right::before {
+  border-bottom-color: var(--danger);
+}
+
+.hint--error.hint--bottom::before {
+  border-bottom-color: var(--danger);
+}
+
+.hint--error.hint--left::before {
+  border-inline-start-color: var(--danger);
+}
+
+.hint--error.hint--right::before {
+  border-inline-end-color: var(--danger);
+}
+
+// Defines a warning tooltip.
+.hint--warning::after {
+  background-color: var(--warning);
+}
+
+.hint--warning.hint--top-left::before {
+  border-top-color: var(--warning);
+}
+
+.hint--warning.hint--top-right::before {
+  border-top-color: var(--warning);
+}
+
+.hint--warning.hint--top::before {
+  border-top-color: var(--warning);
+}
+
+.hint--warning.hint--bottom-left::before {
+  border-bottom-color: var(--warning);
+}
+
+.hint--warning.hint--bottom-right::before {
+  border-bottom-color: var(--warning);
+}
+
+.hint--warning.hint--bottom::before {
+  border-bottom-color: var(--warning);
+}
+
+.hint--warning.hint--left::before {
+  border-inline-start-color: var(--warning);
+}
+
+.hint--warning.hint--right::before {
+  border-inline-end-color: var(--warning);
+}
+
+// Defines an info tooltip.
+.hint--info::after {
+  background-color: var(--info);
+}
+
+.hint--info.hint--top-left::before {
+  border-top-color: var(--info);
+}
+
+.hint--info.hint--top-right::before {
+  border-top-color: var(--info);
+}
+
+.hint--info.hint--top::before {
+  border-top-color: var(--info);
+}
+
+.hint--info.hint--bottom-left::before {
+  border-bottom-color: var(--info);
+}
+
+.hint--info.hint--bottom-right::before {
+  border-bottom-color: var(--info);
+}
+
+.hint--info.hint--bottom::before {
+  border-bottom-color: var(--info);
+}
+
+.hint--info.hint--left::before {
+  border-inline-start-color: var(--info);
+}
+
+.hint--info.hint--right::before {
+  border-inline-end-color: var(--info);
+}
+
+// Defines a success tooltip.
+.hint--success::after {
+  background-color: var(--success);
+}
+
+.hint--success.hint--top-left::before {
+  border-top-color: var(--success);
+}
+
+.hint--success.hint--top-right::before {
+  border-top-color: var(--success);
+}
+
+.hint--success.hint--top::before {
+  border-top-color: var(--success);
+}
+
+.hint--success.hint--bottom-left::before {
+  border-bottom-color: var(--success);
+}
+
+.hint--success.hint--bottom-right::before {
+  border-bottom-color: var(--success);
+}
+
+.hint--success.hint--bottom::before {
+  border-bottom-color: var(--success);
+}
+
+.hint--success.hint--left::before {
+  border-inline-start-color: var(--success);
+}
+
+.hint--success.hint--right::before {
+  border-inline-end-color: var(--success);
+}
+
+// Defines a light tooltip.
+.hint--light::after {
+  background-color: var(--white);
+  color: var(--dark-text) !important;
+  box-shadow: 0 5px 15px 0 rgb(39 26 54 / 15%);
+}
+
+.hint--light.hint--top-left::before {
+  border-top-color: var(--white);
+}
+
+.hint--light.hint--top-right::before {
+  border-top-color: var(--white);
+}
+
+.hint--light.hint--top::before {
+  border-top-color: var(--white);
+}
+
+.hint--light.hint--bottom-left::before {
+  border-bottom-color: var(--white);
+}
+
+.hint--light.hint--bottom-right::before {
+  border-bottom-color: var(--white);
+}
+
+.hint--light.hint--bottom::before {
+  border-bottom-color: var(--white);
+}
+
+.hint--light.hint--left::before {
+  border-inline-start-color: var(--white);
+}
+
+.hint--light.hint--right::before {
+  border-inline-end-color: var(--white);
+}
+
+// Defines a bubble shape tooltip.
+.hint--bubble::after {
+  // background-color: var(--primary);
+  border-radius: 100px !important;
+  font-size: 0.6rem !important;
+  text-transform: uppercase !important;
+}
+
+.hint--bubble.hint--top-left::before {
+  display: none;
+}
+
+.hint--bubble.hint--top-right::before {
+  display: none;
+}
+
+.hint--bubble.hint--top::before {
+  display: none;
+}
+
+.hint--bubble.hint--bottom-left::before {
+  display: none;
+}
+
+.hint--bubble.hint--bottom-right::before {
+  display: none;
+}
+
+.hint--bubble.hint--bottom::before {
+  display: none;
+}
+
+.hint--bubble.hint--left::before {
+  display: none;
+}
+
+.hint--bubble.hint--right::before {
+  display: none;
+}
+
+// Defines a persisted tooltip which shows always.
+.hint--always::after,
+.hint--always::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hint--always.hint--top::before {
+  transform: translateY(-8px);
+}
+
+.hint--always.hint--top::after {
+  transform: translateX(calc(var(--transform-direction) * -50%)) translateY(-8px);
+}
+
+.hint--always.hint--top-left::before {
+  transform: translateY(-8px);
+}
+
+.hint--always.hint--top-left::after {
+  transform: translateX(calc(var(--transform-direction) * -100%)) translateY(-8px);
+}
+
+.hint--always.hint--top-right::before {
+  transform: translateY(-8px);
+}
+
+.hint--always.hint--top-right::after {
+  transform: translateY(-8px);
+}
+
+.hint--always.hint--bottom::before {
+  transform: translateY(8px);
+}
+
+.hint--always.hint--bottom::after {
+  transform: translateX(calc(var(--transform-direction) * -50%)) translateY(8px);
+}
+
+.hint--always.hint--bottom-left::before {
+  transform: translateY(8px);
+}
+
+.hint--always.hint--bottom-left::after {
+  transform: translateX(calc(var(--transform-direction) * -100%)) translateY(8px);
+}
+
+.hint--always.hint--bottom-right::before {
+  transform: translateY(8px);
+}
+
+.hint--always.hint--bottom-right::after {
+  transform: translateY(8px);
+}
+
+.hint--always.hint--left::before {
+  transform: translateX(calc(var(--transform-direction) * -8px));
+}
+
+.hint--always.hint--left::after {
+  transform: translateX(calc(var(--transform-direction) * -8px));
+}
+
+.hint--always.hint--right::before {
+  transform: translateX(calc(var(--transform-direction) * 8px));
+}
+
+.hint--always.hint--right::after {
+  transform: translateX(calc(var(--transform-direction) * 8px));
+}
+
+// Defines slightly rounded corner tooltips.
+.hint--rounded::after {
+  border-radius: var(--radius);
+}
+
+// Defines various transition effects for the tooltips.
+.hint--no-animate::before,
+.hint--no-animate::after {
+  transition-duration: 0ms;
+}
+
+.hint--bounce::before,
+.hint--bounce::after {
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.hint--no-shadow::before,
+.hint--no-shadow::after {
+  text-shadow: initial;
+  box-shadow: initial;
+}
+
+/* ==========================================================================
+2. CSS Tooltips Dark mode
+========================================================================== */
+
+.is-dark {
+  .hint--top-left:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--top-right:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--top:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--bottom-left:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--bottom-right:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--bottom:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--left:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-inline-start-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--right:not(
+      .hint--light,
+      .hint--info,
+      .hint--success,
+      .hint--warning,
+      .hint--error,
+      .hint--bubble,
+      .hint--primary
+    ) {
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+    }
+
+    &::before {
+      border-inline-end-color: color-mix(in oklab, var(--dark-sidebar), black 4%);
+    }
+  }
+
+  .hint--primary::after {
+    background-color: var(--primary);
+  }
+
+  .hint--primary.hint--top-left::before {
+    border-top-color: var(--primary);
+  }
+
+  .hint--primary.hint--top-right::before {
+    border-top-color: var(--primary);
+  }
+
+  .hint--primary.hint--top::before {
+    border-top-color: var(--primary);
+  }
+
+  .hint--primary.hint--bottom-left::before {
+    border-bottom-color: var(--primary);
+  }
+
+  .hint--primary.hint--bottom-right::before {
+    border-bottom-color: var(--primary);
+  }
+
+  .hint--primary.hint--bottom::before {
+    border-bottom-color: var(--primary);
+  }
+
+  .hint--primary.hint--left::before {
+    border-inline-start-color: var(--primary);
+  }
+
+  .hint--primary.hint--right::before {
+    border-inline-end-color: var(--primary);
+  }
+}

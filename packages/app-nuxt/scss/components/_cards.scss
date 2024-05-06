@@ -1,0 +1,116 @@
+/*! _cards.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Simple Cards
+    2. Simple Cards Dark mode
+*/
+
+/* ==========================================================================
+1. Simple Cards
+========================================================================== */
+
+.r-card {
+  @include vuero-r-card;
+}
+
+.s-card {
+  @include vuero-s-card;
+}
+
+.l-card {
+  @include vuero-l-card;
+}
+
+/* ==========================================================================
+2. Simple Cards Dark mode
+========================================================================== */
+
+.is-dark {
+  .r-card,
+  .s-card,
+  .l-card {
+    @include vuero-card--dark;
+  }
+}
+
+/* ==========================================================================
+3. Advanced Cards
+========================================================================== */
+
+.l-card-advanced {
+  border-radius: 16px;
+}
+
+.r-card-advanced {
+  border-radius: 10px;
+}
+
+.s-card-advanced {
+  border-radius: var(--radius-large);
+}
+
+.r-card-advanced,
+.s-card-advanced,
+.l-card-advanced {
+  @include vuero-card--advanced;
+}
+
+/* ==========================================================================
+4. Advanced Cards Dark mode
+========================================================================== */
+
+.is-dark {
+  .r-card-advanced,
+  .s-card-advanced,
+  .l-card-advanced {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+
+    .card-head,
+    .card-foot {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    .v-avatar {
+      img {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+      }
+    }
+
+    .avatar-stack {
+      .v-avatar {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+
+        .avatar {
+          &.is-more {
+            .inner {
+              border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Bulma Cards
+========================================================================== */
+
+.card {
+  &.v-card {
+    @include vuero-v-card;
+  }
+}
+
+/* ==========================================================================
+6. Bulma Cards Dark mode
+========================================================================== */
+
+.is-dark {
+  .card {
+    &.v-card {
+      @include vuero-v-card--dark;
+    }
+  }
+}

@@ -1,0 +1,290 @@
+/*! mixins.scss | Vuero | Css ninja 2020-2024 */
+
+@mixin vuero-card() {
+  &.has-margin-bottom {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-flat {
+    box-shadow: none;
+  }
+
+  &.is-raised {
+    box-shadow: var(--light-box-shadow);
+  }
+
+  &.is-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary--color-invert);
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  &.is-secondary {
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  &.is-info {
+    background: var(--info) !important;
+    border-color: var(--info) !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  &.is-success {
+    background: var(--success) !important;
+    border-color: var(--success) !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  &.is-warning {
+    background: var(--warning) !important;
+    border-color: var(--warning) !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  &.is-danger {
+    background: var(--danger) !important;
+    border-color: var(--danger) !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: var(--smoke-white) !important;
+    }
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+    }
+
+    .left {
+      .title {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .right {
+      justify-content: flex-end;
+    }
+  }
+
+  .card-inner {
+    padding-top: 1.75rem;
+  }
+}
+
+@mixin vuero-card--dark() {
+  background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+  border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+
+  .v-avatar {
+    img {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    }
+  }
+
+  .avatar-stack {
+    .v-avatar {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+
+      .avatar {
+        &.is-more {
+          .inner {
+            border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin vuero-card--advanced() {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  transition: all 0.3s; // transition-all test
+
+  .card-head,
+  .card-foot {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .card-head {
+    border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  }
+
+  .card-foot {
+    border-top: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+@mixin vuero-v-card() {
+  box-shadow: none;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+
+  .card-header {
+    box-shadow: none;
+
+    .card-header-title {
+      font-family: var(--font-alt);
+      font-weight: 600;
+    }
+  }
+
+  .card-image {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .card-footer {
+    a {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+}
+
+@mixin vuero-v-card--dark() {
+  background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+  border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+
+  .card-header {
+    .card-header-title {
+      color: var(--dark-dark-text);
+    }
+  }
+
+  .card-footer {
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+
+    a {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+  }
+
+  .v-avatar {
+    .badge {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    }
+  }
+}
+
+@mixin vuero-r-card() {
+  @include vuero-card;
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  transition: all 0.3s; // transition-all test
+}
+
+@mixin vuero-s-card() {
+  @include vuero-card;
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  transition: all 0.3s; // transition-all test
+}
+
+@mixin vuero-l-card() {
+  @include vuero-card;
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  transition: all 0.3s; // transition-all test
+}

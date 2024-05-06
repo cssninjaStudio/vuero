@@ -1,0 +1,472 @@
+/*! _animations.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Base Class
+    2. pulsate
+    3. Infinite rotate
+    4. Fade In Up
+    5. Fade In Down
+    6. Fade In Left
+    7. Scale in
+    8. Scale out
+    9. Scale In Circle
+    10. Gelatine
+    11. Wave
+    12. Levitate
+    13. Glowing
+    14. Translate Left
+*/
+
+/* ==========================================================================
+1. Base Class
+========================================================================== */
+
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+
+.no-transition * {
+  transition-property: none !important;
+  transition-duration: 0 !important;
+}
+
+/* ==========================================================================
+2. Pulsate
+========================================================================== */
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+.pulsate {
+  animation: pulsate 1.5s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+/* ==========================================================================
+3. Infinite rotate
+========================================================================== */
+
+@keyframes rotating {
+  from {
+    transform: rotate(calc(var(--transform-direction) * 0deg));
+  }
+
+  to {
+    transform: rotate(calc(var(--transform-direction) * 360deg));
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(calc(var(--transform-direction) * 0deg));
+  }
+
+  to {
+    transform: rotate(calc(var(--transform-direction) * 360deg));
+  }
+}
+
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+
+/* ==========================================================================
+4. Fade In Up
+========================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.preFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+
+/* ==========================================================================
+5. Fade In Down
+========================================================================== */
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.preFadeInDown {
+  opacity: 0;
+}
+
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+}
+
+/* ==========================================================================
+6. Fade In Left
+========================================================================== */
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.preFadeInLeft {
+  opacity: 0;
+}
+
+.fadeInLeft {
+  opacity: 0;
+  animation-name: fadeInLeft;
+}
+
+/* ==========================================================================
+7. Scale in
+========================================================================== */
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.scaleIn {
+  animation: scaleIn 0.5s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.scaleInTooltip {
+  animation: scaleIn 0.3s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* ==========================================================================
+8. Scale out
+========================================================================== */
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.scaleOut {
+  animation: scaleOut 0.5s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.scaleOutTooltip {
+  animation: scaleOut 0.3s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* ==========================================================================
+9. Scale in circle (used for modal popup)
+========================================================================== */
+
+@keyframes scaleInCircle {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(7);
+  }
+}
+
+@keyframes scaleInCircle {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(7);
+  }
+}
+
+.scaleInCircle {
+  animation: scaleInCircle 0.6s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* ==========================================================================
+10. Gelatine
+========================================================================== */
+
+@keyframes gelatine {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes gelatine {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.gelatine {
+  animation: gelatine 0.6s;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+/* ==========================================================================
+11. Wave
+========================================================================== */
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4.5);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+12. Levitate
+========================================================================== */
+
+@keyframes levitate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.levitate {
+  animation-name: levitate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* ==========================================================================
+13. Glowing
+========================================================================== */
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #fafafa;
+  }
+
+  40% {
+    box-shadow: 0 0 20px #fafafa;
+  }
+
+  60% {
+    box-shadow: 0 0 20px #fafafa;
+  }
+
+  100% {
+    box-shadow: 0 0 -10px #fafafa;
+  }
+}
+
+/* ==========================================================================
+14. Translate Left
+========================================================================== */
+
+@keyframes translateLeft {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes translateLeft {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.translateLeft {
+  animation-name: translateLeft;
+  animation-duration: 0.3s;
+  transition: all 500ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+
+/* ==========================================================================
+15. View transition
+========================================================================== */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-old(root),
+.is-dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.is-dark::view-transition-old(root) {
+  z-index: 9999;
+}

@@ -1,0 +1,952 @@
+/*! _forms-general.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. labels
+    2. Inputs and textareas
+    3. Inputs and textareas dark-mode
+    4. Radio List
+    5. Fieldset | Field | Controls
+    6. Fieldset | Field | Controls Dark mode
+    7. File inputs
+    8. File inputs Dark mode
+    9. Filepond
+    10. Filepond Dark mode
+*/
+
+/* ==========================================================================
+1. Labels
+========================================================================== */
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark-text);
+
+  &.is-smaller {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  &.is-narrow {
+    margin-bottom: 0;
+  }
+}
+
+.sub-label {
+  font-size: 0.8rem;
+  color: var(--muted-grey);
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+2. Inputs and textareas
+========================================================================== */
+
+.input,
+.input:focus,
+.textarea,
+.textarea:focus {
+  box-shadow: none;
+}
+
+.input {
+  transition: all 0.3s; // transition-all test
+
+  &:focus-visible {
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-style: var(--accessibility-focus-outline-style);
+    outline-color: var(--accessibility-focus-outline-color);
+  }
+
+  &:focus {
+    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
+    box-shadow: var(--light-box-shadow);
+
+    &.is-primary-focus {
+      border-color: var(--primary) !important;
+    }
+
+    &.is-success-focus {
+      border-color: var(--success) !important;
+    }
+
+    &.is-info-focus {
+      border-color: var(--info) !important;
+    }
+
+    &.is-warning-focus {
+      border-color: var(--warning) !important;
+    }
+
+    &.is-danger-focus {
+      border-color: var(--danger) !important;
+    }
+  }
+
+  &.v-input {
+    height: 38px;
+  }
+}
+
+.textarea {
+  transition: all 0.3s; // transition-all test
+
+  &:focus {
+    border-color: color-mix(in oklab, var(--fade-grey), black 4%);
+    box-shadow: var(--light-box-shadow);
+
+    &.is-primary-focus {
+      border-color: var(--primary) !important;
+    }
+
+    &.is-success-focus {
+      border-color: var(--success) !important;
+    }
+
+    &.is-info-focus {
+      border-color: var(--info) !important;
+    }
+
+    &.is-warning-focus {
+      border-color: var(--warning) !important;
+    }
+
+    &.is-danger-focus {
+      border-color: var(--danger) !important;
+    }
+  }
+
+  &:focus-visible {
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-style: var(--accessibility-focus-outline-style);
+    outline-color: var(--accessibility-focus-outline-color);
+  }
+}
+
+/* ==========================================================================
+3. Inputs and textareas dark-mode
+========================================================================== */
+
+.is-dark {
+  .input,
+  .textarea {
+    background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+    color: var(--dark-dark-text);
+
+    &:hover,
+    &:focus {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    &:focus {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 8%);
+
+      + .form-icon .iconify {
+        color: var(--primary) !important;
+      }
+    }
+
+    &::placeholder {
+      color: color-mix(in oklab, var(--primary-grey), black 30%) !important;
+    }
+
+    &.is-primary-focus {
+      &:focus {
+        border-color: var(--primary) !important;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Radio List
+========================================================================== */
+
+.radio-list {
+  padding: 6px 4px;
+
+  li {
+    label {
+      position: relative;
+      display: block;
+
+      input {
+        position: absolute;
+        top: 0;
+        inset-inline-start: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked + .k-radio {
+          .radio-knob {
+            border-color: var(--primary);
+
+            .knob-inner {
+              transform: scale(1);
+            }
+          }
+
+          .label-text {
+            color: var(--dark-text);
+          }
+        }
+      }
+
+      span {
+        display: block;
+      }
+
+      .k-radio {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+
+        .radio-knob {
+          height: 20px;
+          width: 20px;
+          border: 1px solid var(--primary-grey);
+          border-radius: var(--radius-rounded);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .knob-inner {
+            height: 8px;
+            width: 8px;
+            border-radius: var(--radius-rounded);
+            background: var(--primary);
+            transition: all 0.3s; // transition-all test
+            transform: scale(0);
+          }
+        }
+
+        .label-text {
+          margin-inline-start: 10px;
+          color: var(--muted-grey);
+          font-size: 0.9rem;
+          font-weight: 500;
+          line-height: 0;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Fieldset | Field | Controls
+========================================================================== */
+
+.form-fieldset {
+  padding: 20px 0;
+  max-width: 480px;
+  margin: 0 auto;
+
+  .fieldset-heading {
+    margin-bottom: 20px;
+
+    h4 {
+      font-family: var(--font-alt);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .columns {
+    .column {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+.select:not(.is-multiple, .is-loading)::after {
+  border-color: color-mix(in oklab, var(--muted-grey), white 14%);
+  border-width: 1.4px;
+}
+
+.select {
+  width: 100%;
+
+  &:not(.is-multiple) {
+    &:not(.is-loading) {
+      &::after {
+        border-color: var(--primary);
+      }
+    }
+  }
+
+  &.is-loading {
+    &::after {
+      inset-inline-end: 0.75em;
+      top: 0.75em;
+    }
+  }
+
+  + .icon {
+    .iconify {
+      font-size: 18px;
+    }
+
+    .lnil,
+    .lnir {
+      font-size: 16px;
+    }
+  }
+}
+
+select {
+  width: 100%;
+  font-family: var(--font);
+
+  &:focus {
+    box-shadow: none !important;
+    border-color: color-mix(in oklab, var(--fade-grey), black 6%) !important;
+  }
+}
+
+.select select {
+  &:focus-visible {
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-style: var(--accessibility-focus-outline-style);
+    outline-color: var(--accessibility-focus-outline-color);
+  }
+}
+
+.file-label {
+  overflow: initial;
+}
+
+.file-input {
+  &:focus-visible,
+  &:focus {
+    & + .file-cta {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
+    }
+  }
+}
+
+.field {
+  &.is-horizontal {
+    .field-label {
+      .label {
+        font-family: var(--font);
+        font-size: 0.9rem;
+        color: var(--light-text) !important;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &.has-addons {
+    display: block;
+  }
+
+  &.is-grouped {
+    display: flex;
+  }
+
+  &.has-addons,
+  &.is-grouped {
+    .field-addon-label {
+      .label {
+        font-family: var(--font);
+        font-size: 0.9rem;
+        color: var(--light-text) !important;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .field-addon-body {
+      display: flex;
+
+      .control {
+        .button {
+          height: 38px;
+        }
+
+        .select,
+        .input {
+          height: 38px;
+
+          &.currency-select {
+            select {
+              font-family: var(--font);
+              font-weight: 600;
+            }
+          }
+
+          select {
+            height: 38px;
+          }
+        }
+      }
+    }
+  }
+
+  &.has-textarea-addon {
+    .textarea {
+      border-end-start-radius: 0;
+      border-end-end-radius: 0;
+      border-bottom: none;
+      border-color: color-mix(in oklab, var(--fade-grey), black 2%) !important;
+      box-shadow: var(--light-box-shadow);
+    }
+
+    .is-textarea-addon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 12px 8px;
+      background: var(--white);
+      border-radius: 0 0 4px 4px;
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 2%);
+      border-top: none;
+      box-shadow: var(--light-box-shadow);
+    }
+  }
+
+  > label {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: var(--light-text) !important;
+    font-weight: 400;
+  }
+}
+
+.control {
+  &.is-loading {
+    &::after {
+      inset-inline-end: 0.75em;
+      top: 0.75em;
+    }
+
+    .select {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &.has-icon {
+    position: relative;
+
+    .form-icon {
+      position: absolute;
+      top: 0;
+      inset-inline-start: 0;
+      height: 38px;
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.iconify {
+        font-size: 18px;
+        color: var(--placeholder);
+        transition: all 0.3s; // transition-all test
+      }
+
+      &.fas,
+      &.far,
+      &.fal,
+      &.fab {
+        color: var(--placeholder);
+        transition: all 0.3s; // transition-all test
+      }
+
+      &.lnil,
+      &.lnir {
+        font-size: 1.2rem;
+        color: var(--placeholder);
+        transition: all 0.3s; // transition-all test
+      }
+    }
+
+    .input {
+      height: 38px;
+      padding-inline-start: 38px;
+      transition: all 0.3s; // transition-all test
+
+      &:focus {
+        + .form-icon {
+          &.iconify {
+            color: var(--primary);
+          }
+
+          &.fas,
+          &.far,
+          &.fal,
+          &.fab {
+            color: var(--primary);
+          }
+
+          &.lnil,
+          &.lnir {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  &.has-validation {
+    &.has-success {
+      input {
+        border-color: var(--success) !important;
+        box-shadow: var(--light-box-shadow);
+        transition: all 0.3s; // transition-all test
+      }
+
+      .validation-icon.is-success,
+      .form-icon {
+        opacity: 1 !important;
+
+        &.iconify,
+        .form-icon.iconify {
+          color: var(--success) !important;
+        }
+      }
+    }
+
+    &.has-error {
+      input,
+      select {
+        border-color: var(--danger) !important;
+        box-shadow: var(--light-box-shadow);
+      }
+
+      .validation-icon.is-error,
+      .form-icon {
+        opacity: 1 !important;
+
+        &.iconify,
+        .form-icon.iconify {
+          color: var(--danger) !important;
+        }
+      }
+
+      .help-text span {
+        &.info {
+          display: none;
+        }
+
+        &.error {
+          display: block;
+        }
+      }
+    }
+
+    .input {
+      padding-inline-end: 40px;
+    }
+
+    .validation-icon {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+      height: 38px;
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.3s; // transition-all test
+
+      .iconify {
+        height: 18px;
+        width: 18px;
+        color: var(--placeholder);
+        transition: all 0.3s; // transition-all test
+      }
+    }
+  }
+
+  .help-text {
+    display: block;
+    color: var(--muted-grey);
+    margin-top: 10px;
+    font-size: 0.8rem;
+
+    span {
+      &.info {
+        display: block;
+      }
+
+      &.error {
+        display: none;
+        color: var(--danger);
+      }
+    }
+  }
+
+  .search-results {
+    position: absolute;
+    top: 64px;
+    inset-inline-start: 0;
+    width: 100%;
+    max-height: 285px;
+    overflow-y: auto;
+    background: var(--white);
+    opacity: 0;
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+    border-radius: var(--radius);
+    pointer-events: none;
+    transform: translateY(5px);
+    box-shadow: var(--light-box-shadow);
+    z-index: 10;
+    transition: all 0.3s; // transition-all test
+
+    &.is-active {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+
+    .placeholder-wrap {
+      min-height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+
+      .placeholder-content {
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100px;
+        }
+
+        h3 {
+          font-family: var(--font);
+          font-weight: 600;
+          color: var(--dark-text);
+          padding: 0;
+        }
+
+        p {
+          color: var(--light-text);
+          font-size: 0.95rem;
+          max-width: 420px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .search-result {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      transition: all 0.3s; // transition-all test
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: color-mix(in oklab, var(--fade-grey), white 4%);
+      }
+
+      .v-avatar {
+        .article {
+          border-radius: var(--radius-small);
+        }
+      }
+
+      .meta {
+        margin-inline-start: 12px;
+
+        span {
+          display: block;
+          line-height: 1.3;
+
+          &:first-child {
+            font-family: var(--font);
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--dark-text);
+          }
+
+          &:nth-child(2) {
+            font-size: 0.85rem;
+            color: var(--light-text);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+6. Fieldset | Field | Controls Dark mode
+========================================================================== */
+
+.is-dark {
+  .form-fieldset {
+    .fieldset-heading {
+      h4 {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+
+  .field {
+    &.has-textarea-addon {
+      .textarea {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+      }
+
+      .is-textarea-addon {
+        background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+      }
+    }
+  }
+
+  .control {
+    &.has-icon {
+      .input {
+        &:focus {
+          ~ .form-icon {
+            &.iconify {
+              color: var(--primary);
+            }
+
+            &.fas,
+            &.fal,
+            &.far,
+            &.fab,
+            &.lnir,
+            &.lnil {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+
+      .form-icon {
+        &.iconify {
+          color: color-mix(in oklab, var(--light-text), black 5%);
+        }
+
+        &.fas,
+        &.fal,
+        &.far,
+        &.fab,
+        &.lnir,
+        &.lnil {
+          color: color-mix(in oklab, var(--light-text), black 5%);
+        }
+      }
+    }
+  }
+
+  .select {
+    &:not(.is-multiple, .is-loading) {
+      &:hover {
+        &::after {
+          border-color: var(--dark-dark-text) !important;
+        }
+      }
+    }
+
+    select {
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+      color: var(--dark-dark-text);
+    }
+  }
+
+  .search-results {
+    background: color-mix(in oklab, var(--dark-sidebar), black 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+
+    .search-result {
+      &:hover {
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      }
+
+      .meta {
+        span {
+          &:first-child {
+            color: var(--dark-dark-text);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+7. File inputs
+========================================================================== */
+
+.file {
+  &.is-default {
+    &:hover {
+      .file-cta {
+        box-shadow: var(--light-box-shadow) !important;
+      }
+    }
+
+    .file-cta {
+      background: var(--white);
+      border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+      transition: all 0.3s; // transition-all test
+    }
+  }
+}
+
+/* ==========================================================================
+8. File inputs Dark mode
+========================================================================== */
+
+.is-dark {
+  .file {
+    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger) {
+      .file-cta {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+        color: var(--dark-dark-text);
+      }
+    }
+
+    .file-name {
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+    }
+  }
+}
+
+/* ==========================================================================
+9. Filepond
+========================================================================== */
+
+.filepond-uploader {
+  &.is-two-grid {
+    .filepond--item {
+      width: calc(50% - 0.5em);
+    }
+  }
+
+  &.is-three-grid {
+    .filepond--item {
+      width: calc(33.3% - 0.5em);
+    }
+  }
+
+  .filepond--root {
+    border: 2px dashed color-mix(in oklab, var(--fade-grey), black 4%);
+    border-radius: var(--radius);
+    min-height: 70px;
+    cursor: pointer;
+    transition: all 0.3s; // transition-all test
+  }
+}
+
+.filepond-profile-wrap,
+.filepond-square-wrap {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+
+  &.is-tiny {
+    height: 68px;
+    width: 68px;
+    max-height: 68px;
+    max-width: 68px;
+
+    .lnil {
+      font-size: 1.8rem;
+    }
+  }
+
+  &.is-small {
+    height: 80px;
+    width: 80px;
+    max-height: 80px;
+    max-width: 80px;
+
+    .lnil {
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    .lnil {
+      color: var(--primary);
+    }
+
+    .filepond--root {
+      border-color: dashed color-mix(in oklab, var(--fade-grey), black 6%);
+    }
+  }
+
+  .lnil {
+    pointer-events: none;
+    font-size: 2.4rem;
+    color: var(--light-text);
+    transition: color 0.3s;
+  }
+
+  .filepond--root {
+    border: 2px dashed color-mix(in oklab, var(--fade-grey), black 4%);
+    cursor: pointer;
+    transition: all 0.3s; // transition-all test
+  }
+}
+
+.filepond-square-wrap {
+  .filepond--root {
+    border-radius: var(--radius);
+  }
+}
+
+/* ==========================================================================
+10. Filepond Dark mode
+========================================================================== */
+
+.is-dark {
+  .filepond-uploader,
+  .filepond-profile-wrap,
+  .filepond-square-wrap {
+    &:hover {
+      .lnil {
+        color: var(--primary);
+      }
+    }
+
+    .filepond--root {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    .filepond--drop-label {
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+
+      label {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+}

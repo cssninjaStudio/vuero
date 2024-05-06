@@ -1,0 +1,303 @@
+/*! _typography.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Titles
+    2. Titles Dark mode
+    3. Typography Helpers
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+}
+
+/* ==========================================================================
+1. Titles
+========================================================================== */
+
+.title {
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+
+  &.is-narrow {
+    margin-bottom: 0;
+  }
+
+  &.is-thin {
+    font-weight: 300;
+  }
+
+  &.is-heavy {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-bolder {
+    font-weight: 800;
+  }
+}
+
+.subtitle {
+  font-family: var(--font);
+  color: var(--dark-text);
+
+  &.is-narrow {
+    margin-bottom: 0;
+  }
+
+  &.is-thin {
+    font-weight: 300;
+  }
+
+  &.is-heavy {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-bolder {
+    font-weight: 800;
+  }
+}
+
+p {
+  font-family: var(--font);
+  font-weight: 300;
+  color: var(--light-text);
+
+  &.white-text {
+    color: var(--white);
+  }
+}
+
+div {
+  color: var(--dark-text);
+}
+
+var {
+  font-style: normal;
+}
+
+.font-size-base {
+  font-size: 1rem;
+}
+
+.has-dark-text {
+  color: var(--dark-text);
+}
+
+code {
+  white-space: pre;
+  color: var(--primary);
+  background: transparent;
+  font-family: var(--font-monospace);
+}
+
+
+.font-mono {
+  white-space: pre;
+  font-family: var(--font-monospace);
+}
+
+pre {
+  border-radius: 0.75rem;
+
+  &.shiki {
+    background: #f5f5f5 !important;
+  }
+}
+
+.is-dark {
+  pre,
+  code {
+    background: #1a1a1f;
+    color: #c0c0d1;
+  }
+
+  pre.shiki {
+    background: #1a1a1f !important;
+  }
+}
+
+a,
+select,
+textarea,
+input,
+label,
+button,
+.is-trigger {
+  &:focus-visible {
+    border-radius: 4px;
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-style: var(--accessibility-focus-outline-style);
+    outline-color: var(--accessibility-focus-outline-color);
+  }
+}
+
+/* ==========================================================================
+2. Titles Dark mode
+========================================================================== */
+
+.is-dark {
+  .title,
+  .dark-inverted {
+    color: var(--dark-dark-text) !important;
+  }
+
+  .dark-white {
+    color: var(--white) !important;
+  }
+
+  .subtitle {
+    color: var(--light-text);
+  }
+
+  a {
+    &.dark-inverted {
+      color: var(--primary) !important;
+    }
+
+    &.dark-inverted-hover:hover {
+      color: var(--primary) !important;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--dark-dark-text);
+  }
+
+  code {
+    color: var(--primary);
+  }
+}
+
+.content {
+  .title {
+    font-family: var(--font-alt);
+  }
+}
+
+/* ==========================================================================
+3. Typography Helpers
+========================================================================== */
+
+.is-font {
+  font-family: var(--font);
+}
+
+.is-font-alt {
+  font-family: var(--font-alt) !important;
+}
+
+.is-weight-300 {
+  font-weight: 300 !important;
+}
+
+.is-weight-400 {
+  font-weight: 400 !important;
+}
+
+.is-weight-500 {
+  font-weight: 500 !important;
+}
+
+.is-weight-600 {
+  font-weight: 600 !important;
+}
+
+.is-weight-700 {
+  font-weight: 700 !important;
+}
+
+.is-weight-500 {
+  font-weight: 500 !important;
+}
+
+.is-weight-900 {
+  font-weight: 900 !important;
+}
+
+.rem-70 {
+  font-size: 0.7rem;
+}
+
+.rem-75 {
+  font-size: 0.75rem;
+}
+
+.rem-80 {
+  font-size: 0.8rem;
+}
+
+.rem-85 {
+  font-size: 0.85rem;
+}
+
+.rem-90 {
+  font-size: 0.9rem;
+}
+
+.rem-95 {
+  font-size: 0.95rem;
+}
+
+.rem-100 {
+  font-size: 1rem;
+}
+
+.rem-110 {
+  font-size: 1.1rem;
+}
+
+.rem-120 {
+  font-size: 1.2rem;
+}
+
+.rem-130 {
+  font-size: 1.3rem;
+}
+
+.rem-140 {
+  font-size: 1.4rem;
+}
+
+.rem-150 {
+  font-size: 1.5rem;
+}
+
+.rem-160 {
+  font-size: 1.6rem;
+}
+
+.rem-170 {
+  font-size: 1.7rem;
+}
+
+.rem-180 {
+  font-size: 1.8rem;
+}
+
+.rem-190 {
+  font-size: 1.9rem;
+}
+
+.rem-200 {
+  font-size: 2rem;
+}
+
+.is-capitalize {
+  text-transform: capitalize;
+}

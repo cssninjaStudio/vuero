@@ -1,0 +1,161 @@
+/*! _checkboxes.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Checkbox List
+    2. H Toggle
+    3. H Toggle Dark mode
+*/
+
+/* ==========================================================================
+1. Checkbox list
+========================================================================== */
+
+.checkboxes-list {
+  .list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0;
+    border: none;
+
+    .animated-checkbox {
+      .checkmark-wrap {
+        position: relative;
+      }
+    }
+
+    .item-meta {
+      margin-inline-start: 1rem;
+
+      span {
+        display: block;
+        line-height: 1.4;
+
+        &:first-child {
+          font-family: var(--font-alt);
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--dark-text);
+        }
+
+        &:nth-child(2) {
+          font-family: var(--font);
+          font-size: 0.9rem;
+          color: var(--light-text);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. H Toggle
+========================================================================== */
+
+.h-toggle {
+  margin: 0 auto;
+  width: 76px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .toggler {
+      background: color-mix(in oklab, var(--placeholder), white 10%);
+      border-color: color-mix(in oklab, var(--placeholder), white 10%);
+
+      .active,
+      .inactive {
+        transform: translateX(calc(var(--transform-direction) * 80%))
+          rotate(calc(var(--transform-direction) * 360deg));
+      }
+
+      .active {
+        opacity: 1;
+      }
+
+      .inactive {
+        opacity: 0;
+      }
+    }
+  }
+
+  .toggler {
+    position: relative;
+    display: block;
+    height: 16px;
+    width: 50px;
+    border: 1.6px solid var(--placeholder);
+    border-radius: 100px;
+    transition: all 0.3s; // transition-all test
+
+    .active,
+    .inactive {
+      position: absolute;
+      top: -14px;
+      inset-inline-start: -10px;
+      height: 40px;
+      width: 40px;
+      border-radius: var(--radius-rounded);
+      background: var(--white);
+      border: 1.6px solid transparent;
+      box-shadow: var(--light-box-shadow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(calc(var(--transform-direction) * 0))
+        rotate(calc(var(--transform-direction) * 0));
+      transition: all 0.3s ease;
+
+      .iconify {
+        // color: var(--white);
+        font-size: 18px;
+      }
+    }
+
+    .inactive {
+      background: var(--white);
+      border-color: var(--success);
+      color: var(--success);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .active {
+      background: var(--white);
+      border-color: var(--light-text);
+      color: var(--light-text);
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+3. H Toggle Dark mode
+========================================================================== */
+
+.is-dark {
+  .h-toggle {
+    input {
+      &:checked ~ .toggler {
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      }
+    }
+
+    .toggler {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 25%) !important;
+
+      .active,
+      .inactive {
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+/*! colors.scss | Vuero | Css ninja 2020-2024 */
+
+:root {
+  // placeload colors
+  --placeload-nuance-from: rgb(0 0 0 / 7%);
+  --placeload-nuance-to: rgb(0 0 0 / 15%);
+
+  // bulma colors
+  --primary: oklch(66.67% 0.146 173.07);
+  --primary--color-invert: color-mix(in oklab, var(--primary), white 90%);
+  --primary--dark-color: color-mix(in oklab, var(--primary), black 5%);
+  --primary--light-color: color-mix(in oklab, var(--primary), white 90%);
+
+  --link: #485fc7;
+  --link--color-invert: color-mix(in oklab, var(--link), white 85%);
+  --link--dark-color: color-mix(in oklab, var(--link), black 5%);
+  --link--light-color: color-mix(in oklab, var(--link), white 90%);
+
+  --info: #0398e2;
+  --info--color-invert: color-mix(in oklab, var(--info), white 85%);
+  --info--dark-color: color-mix(in oklab, var(--info), black 5%);
+  --info--light-color: color-mix(in oklab, var(--info), white 90%);
+
+  --success: #05d69e;
+  --success--color-invert: color-mix(in oklab, var(--success), white 85%);
+  --success--dark-color: color-mix(in oklab, var(--success), black 20%);
+  --success--light-color: color-mix(in oklab, var(--success), white 90%);
+
+  --warning: #faad42;
+  --warning--color-invert: color-mix(in oklab, var(--warning), white 85%);
+  --warning--dark-color: color-mix(in oklab, var(--warning), black 20%);
+  --warning--light-color: color-mix(in oklab, var(--warning), white 90%);
+
+  --danger: #e62864;
+  --danger--color-invert: color-mix(in oklab, var(--danger), white 85%);
+  --danger--dark-color: color-mix(in oklab, var(--danger), black 15%);
+  --danger--light-color: color-mix(in oklab, var(--danger), white 90%);
+
+  --dark: #222225;
+  --dark--color-invert: color-mix(in oklab, var(--dark), white 85%);
+  --dark--dark-color: color-mix(in oklab, var(--dark), black 15%);
+  --dark--light-color: color-mix(in oklab, var(--dark), white 90%);
+
+  // Layout colors
+  --body-color: #f4f4f5;
+  --title-grey: #a9abac;
+  --background-grey: #fafafa;
+  --medium-grey: #ddd;
+  --light-grey: #eee;
+  --white: #fff;
+  --border: #dbdbdb;
+  --dark-sidebar: #222225;
+
+  --landing-xxx: #0b0d13;
+  --landing-yyy: #191b2a;
+  
+  --smoke-white: #fcfcfc;
+  --primary-grey: #cccccc;
+  --muted-grey: #999999;
+  --fade-grey: #ededed;
+  --widget-grey: #f5f6fa;
+  --placeholder: #cfcfcf;
+
+  --dark-dark-text: #a9a9b2;
+  --dark-text: #283252;
+  --light-text: #a2a5b9;
+
+  // Additional colors
+  --secondary: #336aeb;
+  --purple: #8168b1;
+  --blue: #38c3ff;
+  --red: #f82a5e;
+  --orange: #ffa880;
+  --yellow: #ffd770;
+  --green: #94e189;
+  --pink: #ff9eb8;
+  --lime: #90e0d0;
+}
+
+// override colors for dark mode
+.is-dark {
+  --background-grey: color-mix(in oklab, var(--dark-sidebar), white 5%);
+  --border: color-mix(in oklab, var(--dark-sidebar), white 12%);
+  --dark-text: #fcfcfc;
+  
+  --placeload-nuance-from: rgb(255 255 255 / 15%);
+  --placeload-nuance-to: rgb(255 255 255 / 24%);
+
+  --primary: oklch(59.02% 0.146 172.62);
+  --primary--color-invert: color-mix(in oklab, var(--primary), white 80%);
+  --success: #1dc598;
+  --warning: #e0a654;
+  --danger: #ee3c74;
+}

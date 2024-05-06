@@ -1,0 +1,301 @@
+/*! _navbar.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Webapp Subnavbar
+    2. Webapp Subnavbar Dark mode
+*/
+
+/* ==========================================================================
+1. Webapp Subnavbar
+========================================================================== */
+
+.navbar-subnavbar {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  background: var(--white);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  box-shadow: var(--light-box-shadow);
+  transition-property: height, opacity;
+  transition-duration: 0.1s, 0.2s;
+  top: 64px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  margin: 0 auto;
+
+  &.is-active {
+    height: calc(100% - 64px);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &.is-dropdown {
+    position: absolute;
+    top: 100%;
+    min-width: 400px;
+    max-width: 800px;
+    width: max-content;
+    padding: 1rem;
+    height: auto;
+    border-radius: var(--radius-large);
+  }
+
+  .navbar-subnavbar-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+
+    .tabs {
+      margin: 0 auto 10px;
+
+      &.is-3 {
+        max-width: 410px;
+      }
+
+      &.is-2 {
+        max-width: 280px;
+      }
+
+      &.is-4 {
+        max-width: 460px;
+      }
+
+      ul {
+        display: flex;
+        border: none !important;
+        padding: 10px 0;
+
+        li {
+          flex: 1 1 0;
+
+          &.is-active {
+            a {
+              font-weight: 600;
+              color: var(--primary);
+              background: var(--white);
+              border-color: color-mix(in oklab, var(--fade-grey), black 3%);
+              box-shadow: var(--light-box-shadow);
+            }
+
+            &:hover {
+              a {
+                background: var(--white);
+              }
+            }
+          }
+
+          &:hover {
+            a {
+              background: color-mix(in oklab, var(--fade-grey), white 4%);
+            }
+          }
+
+          a {
+            text-transform: uppercase;
+            font-family: var(--font-alt);
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            padding: 10px 16px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            margin: 0 10px;
+            transition: all 0.3s; // transition-all test
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 0 20px;
+
+      .tab-content-inner {
+        display: flex;
+        align-items: stretch;
+        min-height: 220px;
+
+        .center {
+          flex-grow: 2;
+          max-width: 940px;
+          max-height: 220px;
+          margin: 0 auto;
+          padding: 10px 20px 0;
+
+          .columns {
+            height: 100%;
+          }
+
+          .column {
+            &:not(:last-child) {
+              border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+            }
+          }
+
+          .column-heading {
+            font-family: var(--font-alt);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+          }
+
+          .column-placeholder {
+            @include vuero-r-card;
+
+            text-align: center;
+            padding: 16px !important;
+            margin-top: 4px;
+            margin-bottom: 10px;
+
+            &:hover,
+            &:focus {
+              border-color: var(--primary);
+              box-shadow: var(--light-box-shadow);
+
+              h3 {
+                color: var(--primary);
+              }
+            }
+
+            > img {
+              display: block;
+              width: 100%;
+              max-width: 34px;
+              margin: 0 auto 6px;
+            }
+
+            h3 {
+              font-family: var(--font-alt);
+              font-size: 0.85rem;
+              font-weight: 600;
+              color: var(--dark-text);
+              transition: color 0.3s;
+            }
+          }
+
+          ul {
+            li {
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
+              margin-bottom: 6px;
+
+              &:hover,
+              &:focus {
+                a {
+                  color: var(--primary);
+                }
+              }
+
+              &.is-active {
+                border-radius: 0;
+
+                a {
+                  color: color-mix(in oklab, var(--primary), black 14%);
+
+                  .iconify {
+                    opacity: 1;
+                    fill: var(--primary);
+                  }
+                }
+              }
+
+              .router-link-exact-active {
+                color: color-mix(in oklab, var(--primary), black 14%);
+
+                .iconify {
+                  opacity: 1;
+                  fill: var(--primary);
+                }
+              }
+
+              a {
+                display: flex;
+                align-items: center;
+                color: color-mix(in oklab, var(--light-text), white 5%);
+
+                span {
+                  font-family: var(--font);
+                  font-size: 0.9rem;
+                }
+
+                .lnil,
+                .lnir,
+                .fas,
+                .fal,
+                .fab,
+                .far {
+                  margin-inline-end: 10px;
+                }
+
+                .tag {
+                  line-height: 1.6;
+                  height: 1.7em;
+                  font-size: 0.65rem;
+                  margin-inline-start: 0.25rem;
+                }
+
+                .iconify {
+                  opacity: 0;
+                  position: relative;
+                  top: 0;
+                  margin-inline-start: 12px;
+                  height: 6px;
+                  width: 6px;
+                  stroke-width: 2px;
+                  fill: var(--primary);
+                  transition:
+                    color 0.3s,
+                    background-color 0.3s,
+                    border-color 0.3s,
+                    height 0.3s,
+                    width 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Webapp Subnavbar Dark mode
+========================================================================== */
+
+.is-dark {
+  .navbar-subnavbar {
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+
+    .navbar-subnavbar-inner {
+      .tab-content {
+        .tab-content-inner {
+          .center {
+            .column {
+              &:not(:last-child) {
+                border-inline-end: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+              }
+            }
+
+            .column-placeholder {
+              @include vuero-card--dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

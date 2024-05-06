@@ -1,0 +1,261 @@
+/*! _charts.scss | Vuero | Css Ninja 2020-2024 */
+
+/*
+    1. Apex Charts
+*/
+
+/* ==========================================================================
+1. Apex Charts
+========================================================================== */
+
+.apexcharts-title-text {
+  font-family: var(--font-alt) !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--dark-text);
+}
+
+.apexcharts-legend {
+  .apexcharts-legend-text {
+    font-family: var(--font) !important;
+  }
+}
+
+.apexcharts-xaxis,
+.apexcharts-yaxis {
+  .apexcharts-xaxis-texts-g,
+  .apexcharts-yaxis-texts-g {
+    .apexcharts-text {
+      font-family: var(--font) !important;
+    }
+  }
+}
+
+.apexcharts-datalabels-group {
+  .apexcharts-text {
+    font-family: var(--font) !important;
+    font-weight: 600;
+  }
+}
+
+[dir='rtl'] {
+  .apexcharts-legend-text {
+    padding-right: 4px !important;
+  }
+
+  .apexcharts-title-text,
+  .apexcharts-subtitle-text {
+    transform: translateX(calc(100% - 20px));
+  }
+
+  div[class*='apexchartssparkline'] {
+    .apexcharts-title-text,
+    .apexcharts-subtitle-text {
+      transform: translateX(calc(100% - 40px));
+    }
+  }
+}
+
+.is-dark {
+  .apexcharts-ycrosshairs {
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+  }
+
+  .apexcharts-title-text {
+    fill: var(--dark-dark-text) !important;
+  }
+
+  .apexcharts-subtitle-text {
+    fill: var(--primary);
+  }
+
+  .apexcharts-yaxis {
+    .apexcharts-yaxis-texts-g {
+      .apexcharts-text,
+      .apexcharts-yaxis-label {
+        fill: var(--dark-dark-text);
+      }
+    }
+  }
+
+  .apexcharts-svg {
+    line {
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+    }
+
+    .apexcharts-inner,
+    .apexcharts-graphical {
+      .apexcharts-xaxis {
+        .apexcharts-xaxis-texts-g {
+          .apexcharts-text,
+          .apexcharts-xaxis-label {
+            fill: var(--dark-dark-text);
+          }
+        }
+
+        line {
+          color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+          stroke: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+        }
+      }
+
+      .apexcharts-grid {
+        .apexcharts-gridlines-horizontal {
+          .apexcharts-gridline {
+            color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+            stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
+          }
+        }
+      }
+    }
+  }
+
+  .apexcharts-gridlines-vertical {
+    .apexcharts-gridline {
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+  }
+
+  .apexcharts-series-markers,
+  .apexcharts-series-bubble {
+    .apexcharts-marker {
+      color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    }
+  }
+
+  .apexcharts-pie-area,
+  .apexcharts-pie-slice-0 {
+    color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
+  }
+
+  .apexcharts-radialbar-area {
+    // color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+  }
+
+  .apexcharts-datalabels-group {
+    .apexcharts-text,
+    .apexcharts-datalabel-value {
+      fill: var(--dark-dark-text);
+    }
+  }
+
+  .apexcharts-legend {
+    .apexcharts-legend-series {
+      .apexcharts-legend-text {
+        color: var(--dark-dark-text) !important;
+      }
+    }
+  }
+
+  .apexcharts-yaxis,
+  .apexcharts-xaxis-inversed {
+    line {
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+  }
+
+  .apexcharts-radialbar-track,
+  .apexcharts-track {
+    .apexcharts-radialbar-area {
+      color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    }
+  }
+
+  .apexcharts-radar-series,
+  .apexcharts-plot-series {
+    > polygon,
+    > line {
+      fill: none !important;
+      color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      stroke: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+  }
+
+  .apexcharts-text,
+  .apexcharts-yaxis-title-text {
+    fill: var(--dark-dark-text);
+    font-family: var(--font);
+    font-weight: 400;
+  }
+
+  .apexcharts-data-labels text {
+    fill: #fafafa;
+    font-family: var(--font);
+    font-weight: 400;
+  }
+
+  .apexcharts-bar-area {
+    color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+  }
+
+  .apexcharts-slices {
+    .apexcharts-pie-label {
+      fill: #fafafa !important;
+    }
+  }
+
+  .apexcharts-tooltip {
+    box-shadow: 2px 2px 6px -4px var(--dark-sidebar) !important;
+
+    &.apexcharts-theme-light {
+      border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      color: var(--dark-dark-text) !important;
+
+      .apexcharts-tooltip-title {
+        background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+        border-bottom: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
+        color: var(--dark-dark-text);
+      }
+
+      .apexcharts-tooltip-text-value,
+      .apexcharts-tooltip-text-z-value,
+      .apexcharts-tooltip-series-group,
+      .apexcharts-tooltip-marker {
+        color: var(--dark-dark-text) !important;
+      }
+    }
+
+    * {
+      font-family: var(--font);
+      color: inherit;
+    }
+
+    .apexcharts-yaxistooltip-text {
+      color: var(--dark-dark-text) !important;
+    }
+  }
+
+  .apexcharts-xaxistooltip {
+    border: 1px solid color-mix(in oklab, var(--dark-sidebar), white 12%);
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    color: var(--dark-dark-text) !important;
+
+    &.apexcharts-xaxistooltip-bottom::after {
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    }
+
+    &.apexcharts-xaxistooltip-bottom::before {
+      border-bottom-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    &.apexcharts-xaxistooltip-top::after {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+    }
+
+    &.apexcharts-xaxistooltip-top::before {
+      border-top-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    * {
+      font-family: var(--font);
+      color: inherit;
+    }
+  }
+}

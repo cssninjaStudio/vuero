@@ -1,0 +1,100 @@
+/*! _lists.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. User List
+    2. User List Dark mode
+*/
+
+/* ==========================================================================
+1. User List
+========================================================================== */
+
+.user-list {
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .user-list-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+  }
+
+  .user-list-info {
+    margin: 0 10px;
+
+    .name {
+      font-family: var(--font-alt);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark-text);
+    }
+
+    .position {
+      font-family: var(--font);
+      font-size: 12px;
+      color: var(--light-text);
+    }
+  }
+
+  .user-list-status {
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background: var(--fade-grey);
+    margin-inline-start: auto;
+    margin-inline-end: 1rem;
+
+    &.is-offline {
+      background: var(--fade-grey);
+    }
+
+    &.is-online {
+      background: var(--success);
+    }
+
+    &.is-busy {
+      background: var(--warning);
+    }
+  }
+
+  .user-list-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-inline-start: auto;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      width: 32px;
+      border-radius: var(--radius-rounded);
+      color: color-mix(in oklab, var(--light-text), white 15%);
+      font-size: 0.9rem;
+      transition: all 0.3s; // transition-all test
+
+      &:hover {
+        color: var(--light-text);
+        background: color-mix(in oklab, var(--fade-grey), white 3%);
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. User List Dark mode
+========================================================================== */
+
+.is-dark {
+  .user-list {
+    .user-list-icons {
+      a:hover {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      }
+    }
+  }
+}

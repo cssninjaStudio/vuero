@@ -1,0 +1,218 @@
+/*! _helpers.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Spacing helpers
+    2. Color helpers
+    3. Shadow helpers
+    4. Dark helpers
+    5. Radius helpers
+*/
+
+/* ==========================================================================
+1. Spacing helpers
+========================================================================== */
+
+$spaceamounts: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100;
+$sides: top, bottom, left, right;
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+.no-padding-all {
+  padding: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.no-padding-left {
+  padding-inline-start: 0 !important;
+}
+
+.no-padding-right {
+  padding-inline-end: 0 !important;
+}
+
+.no-margin-all {
+  margin: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-left {
+  margin-inline-start: 0 !important;
+}
+
+.is-block {
+  display: block !important;
+}
+
+.is-inline-block {
+  display: inline-block !important;
+}
+
+.is-rounded {
+  border-radius: var(--radius);
+}
+
+.no-margin-right {
+  margin-inline-end: 0 !important;
+}
+
+.has-fullheight {
+  height: 100%;
+}
+
+.has-fullwidth {
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.has-help-cursor {
+  cursor: help;
+}
+
+.zero-height {
+  height: 0;
+}
+
+.max-h-60 {
+  max-height: 60px;
+}
+
+.max-h-280 {
+  max-height: 280px;
+}
+
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.iconify {
+  &.is-inline {
+    vertical-align: -1px;
+  }
+}
+
+/* ==========================================================================
+2. Color helpers
+========================================================================== */
+
+.has-text-secondary {
+  color: var(--secondary) !important;
+}
+
+.has-text-light {
+  color: var(--light-text) !important;
+}
+
+.has-background-secondary {
+  background-color: var(--secondary) !important;
+}
+
+// /* ==========================================================================
+// 3. Shadow helpers
+// ========================================================================== */
+
+.has-light-shadow {
+  box-shadow: var(--light-box-shadow);
+
+  &.has-light-border {
+    border: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+  }
+}
+
+/* ==========================================================================
+4. Dark helpers
+========================================================================== */
+
+.is-dark {
+  // Card border helper
+  .is-dark-card-bordered,
+  .is-dark-bordered-12 {
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+  }
+
+  // Primary Helper
+  .is-dark-primary {
+    color: var(--primary) !important;
+  }
+
+  .is-dark-primary-hover:hover {
+    color: var(--primary) !important;
+  }
+
+  // BG Helpers
+  .is-dark-bg-1 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 1%) !important;
+  }
+
+  .is-dark-bg-2 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+  }
+
+  .is-dark-bg-3 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 3%) !important;
+  }
+
+  .is-dark-bg-4 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+  }
+
+  .is-dark-bg-5 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
+  }
+
+  .is-dark-bg-6 {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+  }
+}
+
+/* ==========================================================================
+4. Radius helpers
+========================================================================== */
+
+.radius-5 {
+  border-radius: 0.5rem;
+}
+
+.radius-75 {
+  border-radius: 0.75rem;
+}
+
+.radius-full {
+  border-radius: var(--radius-rounded);
+}
+
+/* ==========================================================================
+5. Size helpers
+========================================================================== */
+
+.max-w-540 {
+  max-width: 540px;
+}

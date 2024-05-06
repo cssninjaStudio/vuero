@@ -1,0 +1,597 @@
+/*! _responsive.scss | Vuero | Css ninja 2020-2024 */
+
+/* ==========================================================================
+Responsive styles
+========================================================================== */
+
+/*
+    1. Tablet Landscape
+    2. Tablet portrait
+    3. Mobile Only
+    4. Custom
+    5. Responsive Helpers
+*/
+
+/* ==========================================================================
+1. Tablet Landscape
+========================================================================== */
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
+  .pageloader,
+  .infraloader {
+    width: calc(100% - 60px) !important;
+    inset-inline-start: 60px !important;
+  }
+
+  .navbar-brand {
+    align-items: center;
+  }
+
+  .main-sidebar {
+    width: 60px !important;
+
+    &.has-labels {
+      .sidebar-inner {
+        .icon-menu,
+        .bottom-menu {
+          overflow-x: hidden;
+
+          ul {
+            overflow-x: hidden;
+          }
+
+          li {
+            a {
+              &::after {
+                inset-inline-start: -30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.is-float {
+      width: 56px !important;
+      margin-inline-start: 4px;
+
+      &:not(.is-bordered) {
+        .sidebar-brand {
+          width: 56px !important;
+        }
+
+        .sidebar-inner {
+          .icon-menu,
+          .bottom-menu {
+            overflow-x: hidden;
+
+            ul {
+              overflow-x: hidden;
+            }
+
+            li {
+              width: 56px !important;
+            }
+          }
+        }
+      }
+
+      &.is-bordered {
+        width: 60px !important;
+
+        .sidebar-brand {
+          width: 60px !important;
+        }
+
+        .sidebar-inner {
+          .icon-menu,
+          .bottom-menu {
+            overflow-x: hidden;
+
+            ul {
+              overflow-x: hidden;
+            }
+
+            li {
+              width: 60px !important;
+            }
+          }
+        }
+      }
+
+      .sidebar-inner {
+        .bottom-menu {
+          padding-bottom: 0 !important;
+          bottom: -3px !important;
+        }
+      }
+    }
+
+    .sidebar-brand {
+      width: 60px !important;
+    }
+
+    .sidebar-inner {
+      li {
+        width: 60px !important;
+      }
+
+      .icon-menu {
+        max-height: calc(100vh - 60px - 64px) !important;
+        overflow-x: hidden;
+
+        ul {
+          overflow-x: hidden;
+        }
+      }
+    }
+  }
+
+  .mobile-main-sidebar,
+  .mobile-overlay,
+  .mobile-subsidebar {
+    display: none !important;
+  }
+
+  .sidebar-panel {
+    box-shadow: var(--light-box-shadow);
+
+    .panel-close {
+      display: block !important;
+    }
+  }
+
+  .sidebar-panel,
+  .sidebar-search {
+    inset-inline-start: 60px !important;
+  }
+
+  .is-navbar {
+    .view-wrapper {
+      .is-stuck {
+        margin-inline-start: 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  .page-title {
+    &.is-project-details {
+      .vuero-hamburger {
+        margin-inline-start: -4px !important;
+      }
+    }
+
+    &.is-pulled-lg {
+      .vuero-hamburger {
+        margin-inline-start: 0 !important;
+      }
+    }
+  }
+
+  .is-stuck {
+    margin-inline-start: 60px !important;
+    width: calc(100% - 60px) !important;
+  }
+}
+
+/* ==========================================================================
+2. Tablet portrait
+========================================================================== */
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .infraloader,
+  .pageloader {
+    width: 100% !important;
+    inset-inline-start: 0 !important;
+  }
+
+  .navbar-navbar,
+  .circular-menu,
+  .navbar-navbar-clean {
+    display: none;
+  }
+
+  .navbar-brand {
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    .brand-start {
+      width: 90px;
+    }
+
+    .is-brand {
+      padding: 0 !important;
+    }
+
+    .brand-end {
+      display: flex;
+      align-items: center;
+      width: 90px;
+      margin-inline-end: 20px;
+    }
+
+    .is-notification {
+      &.is-active,
+      &:hover {
+        .navbar-link {
+          background: transparent !important;
+        }
+
+        .navbar-dropdown {
+          display: block !important;
+        }
+      }
+
+      .navbar-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 3;
+        background: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey);
+        box-shadow:
+          0 8px 8px rgb(10 10 10 / 10%),
+          0 0 0 1px rgb(10 10 10 / 10%);
+      }
+    }
+  }
+
+  // Toolbar
+  .toolbar {
+    .toolbar-notifications {
+      display: none;
+    }
+  }
+
+  .vuero-hamburger:not(.is-visible) {
+    display: none !important;
+  }
+
+  // Sidebars
+  .main-sidebar,
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-panel {
+    display: none !important;
+    inset-inline-start: 0 !important;
+    z-index: 100 !important;
+    box-shadow: var(--light-box-shadow);
+
+    .panel-close {
+      display: flex !important;
+    }
+  }
+
+  .page-title {
+    margin-top: 0;
+    padding-top: 20px;
+
+    &.is-project-details {
+      .vuero-hamburger {
+        margin-inline-start: 7px !important;
+      }
+    }
+  }
+
+  .is-navbar {
+    .view-wrapper {
+      padding-top: 70px !important;
+      margin-top: 0 !important;
+    }
+
+    .page-title {
+      display: flex !important;
+      margin-top: 0;
+    }
+  }
+
+  .is-stuck {
+    top: 60px !important;
+    margin-inline-start: 0 !important;
+    width: 100% !important;
+    padding-inline-end: 20px !important;
+  }
+
+  .widget-demo-columns {
+    display: flex;
+
+    &.half-columns {
+      > .column {
+        width: 50% !important;
+        max-width: 50% !important;
+        min-width: 50%;
+      }
+    }
+
+    > .column {
+      width: 33.3%;
+      max-width: 33.3%;
+    }
+  }
+}
+
+/* ==========================================================================
+3. Mobile Only
+========================================================================== */
+
+@media (width <= 767px) {
+  .infraloader,
+  .pageloader {
+    width: 100% !important;
+    inset-inline-start: 0 !important;
+  }
+
+  .navbar-navbar,
+  .circular-menu,
+  .navbar-navbar-clean {
+    display: none;
+  }
+
+  .navbar-brand {
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    .brand-start {
+      width: 90px;
+    }
+
+    .is-brand {
+      padding: 0 !important;
+    }
+
+    .brand-end {
+      display: flex;
+      align-items: center;
+      width: 90px;
+      margin-inline-end: 20px;
+    }
+
+    .is-notification {
+      &.is-active,
+      &:hover {
+        .navbar-link {
+          background: transparent !important;
+        }
+
+        .navbar-dropdown {
+          display: block !important;
+        }
+      }
+
+      .navbar-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 3;
+        background: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey);
+        box-shadow:
+          0 8px 8px rgb(10 10 10 / 10%),
+          0 0 0 1px rgb(10 10 10 / 10%);
+      }
+    }
+  }
+
+  .toolbar {
+    .toolbar-notifications {
+      display: none;
+    }
+  }
+
+  .vuero-hamburger:not(.is-visible) {
+    display: none !important;
+  }
+
+  .sidebar-panel {
+    display: none !important;
+    inset-inline-start: 0 !important;
+    z-index: 100 !important;
+    border-inline-end: 1px solid var(--fade-grey) !important;
+    box-shadow: var(--light-box-shadow);
+
+    .subpanel-header {
+      height: 60px !important;
+      background: #fafafa;
+
+      .iconify {
+        color: var(--muted-grey);
+      }
+    }
+  }
+
+  .main-sidebar,
+  .sidebar {
+    display: none;
+  }
+
+  .page-title {
+    margin-top: 0;
+    padding-top: 20px;
+
+    &.is-project-details {
+      .vuero-hamburger {
+        margin-inline-start: -4px !important;
+      }
+    }
+
+    .title-wrap {
+      margin-inline-start: 0;
+    }
+  }
+
+  .is-navbar {
+    .view-wrapper {
+      padding-top: 0 !important;
+    }
+
+    .page-title {
+      display: flex !important;
+      margin-top: 0;
+    }
+  }
+
+  .is-stuck {
+    top: 59px !important;
+    margin-inline-start: 0 !important;
+    width: 100% !important;
+    padding-inline-end: 20px !important;
+  }
+}
+
+/* ==========================================================================
+4. Custom
+========================================================================== */
+
+@media only screen and (width >= 1025px) and (orientation: landscape) {
+  .panel-close {
+    display: none !important;
+  }
+
+  .mobile-main-sidebar,
+  .mobile-overlay,
+  .mobile-subsidebar {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+5. Responsive Helpers
+========================================================================== */
+
+@media only screen and (width <= 767px) {
+  .h-hidden-mobile {
+    display: none !important;
+  }
+
+  .h-only-mobile {
+    display: block !important;
+  }
+
+  .h-only-mobile-flex {
+    display: flex !important;
+  }
+
+  .is-half-mobile-p {
+    display: flex !important;
+
+    .column {
+      width: 50%;
+      min-width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .h-hidden-tablet-p {
+    display: none !important;
+  }
+
+  .is-flex-tablet-p {
+    display: flex !important;
+
+    &.is-half-tablet-p {
+      .column {
+        width: 50%;
+        min-width: 50%;
+      }
+    }
+  }
+
+  .h-only-tablet-p {
+    display: block !important;
+  }
+
+  .h-only-tablet-p-flex {
+    display: flex !important;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
+  .h-hidden-tablet-l {
+    display: none !important;
+  }
+
+  .is-flex-tablet-l {
+    display: flex !important;
+  }
+
+  .h-only-tablet-l {
+    display: block !important;
+  }
+}
+
+@media only screen and (width >= 768px) and (orientation: landscape) {
+  .h-only-mobile {
+    display: block !important;
+  }
+
+  .h-only-mobile-flex {
+    display: none !important;
+  }
+
+  .h-only-tablet-p {
+    display: none !important;
+  }
+
+  .h-only-tablet-p-flex {
+    display: none !important;
+  }
+}
+
+@media only screen and (width >= 1025px) {
+  .h-hidden-desktop {
+    display: none !important;
+  }
+
+  .is-overlay-desktop {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+  }
+
+  .mx-3-desktop {
+    margin-inline-start: 0.75rem !important;
+    margin-inline-end: 0.75rem !important;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .mobile-navbar .navbar-item.is-notification .navbar-dropdown {
+    width: 280px !important;
+    position: absolute !important;
+    inset-inline-start: initial !important;
+  }
+}
+
+@media only screen and (width <= 1024px) and (orientation: portrait) {
+  .mobile-navbar .navbar-item.is-notification {
+    display: flex !important;
+  }
+
+  .mobile-navbar {
+    display: flex !important;
+
+    > .container {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    .navbar-brand {
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      width: 100%;
+      margin-inline-start: 0 !important;
+    }
+  }
+}

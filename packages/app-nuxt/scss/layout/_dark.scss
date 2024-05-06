@@ -1,0 +1,45 @@
+/*! _dark.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Layout Dark mode
+*/
+
+/* ==========================================================================
+1. Layout Dark mode
+========================================================================== */
+
+.is-dark {
+  background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+
+  &.is-chat-side-collapsed {
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%) !important;
+  }
+
+  &.opened {
+    background: color-mix(in oklab, var(--dark-sidebar), white 5%);
+  }
+
+  .pageloader {
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+  }
+
+  .infraloader {
+    background: color-mix(in oklab, var(--dark-sidebar), white 15%) !important;
+  }
+
+  .page-title {
+    h1 {
+      color: color-mix(in oklab, var(--primary-grey), white 3%);
+    }
+  }
+
+  .menu-toggle .iconify {
+    background: var(--primary);
+    color: var(--primary--color-invert);
+  }
+
+  .zoom-overlay {
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+  }
+}

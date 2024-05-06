@@ -1,0 +1,120 @@
+/*! _content.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Content
+    2. Content Dark mode
+*/
+
+/* ==========================================================================
+1. Content
+========================================================================== */
+
+.content {
+  ol,
+  ul {
+    color: var(--light-text);
+    font-family: var(--font);
+
+    &.is-light {
+      color: var(--light-text);
+    }
+  }
+
+  hr {
+    background-color: var(--background-grey);
+  }
+
+  blockquote {
+    color: var(--light-text);
+
+    &.is-primary {
+      border-color: var(--primary);
+    }
+
+    &.is-success {
+      border-color: var(--success);
+    }
+
+    &.is-info {
+      border-color: var(--info);
+    }
+
+    &.is-warning {
+      border-color: var(--warning);
+    }
+
+    &.is-danger {
+      border-color: var(--danger);
+    }
+  }
+
+  table {
+    th {
+      color: var(--dark-text);
+      font-family: var(--font-alt);
+    }
+
+    td {
+      color: var(--light-text);
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ==========================================================================
+2. Content Dark mode
+========================================================================== */
+
+.is-dark {
+  .content {
+    ol,
+    ul {
+      &:not(.is-light) {
+        color: var(--dark-dark-text);
+      }
+    }
+
+    hr {
+      background-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+    }
+
+    blockquote {
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+
+      &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger) {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      }
+
+      &.is-primary {
+        border-color: var(--primary);
+      }
+    }
+
+    table {
+      th {
+        color: var(--dark-dark-text);
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 14%);
+      }
+
+      td {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 14%);
+      }
+    }
+  }
+
+  .is-divider,
+  .is-divider-vertical {
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 14%);
+
+    &::before {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 14%);
+    }
+
+    &::after {
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*! stay-focus.scss | Vuero | Css ninja 2020-2024 */
+
+.stay-focus-container {
+  &:hover {
+    .stay-focus-element:not(:hover) {
+      transition: all 10s ease-in;
+      transition-delay: 2s;
+      filter: blur(4px);
+    }
+  }
+}

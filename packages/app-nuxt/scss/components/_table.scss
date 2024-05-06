@@ -1,0 +1,270 @@
+/*! _table.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Table Pagination
+    2. Table Pagination Dark mode
+    3. Flex Table Advanced wrapper
+    4. Flex Table Advanced wrapper Dark mode
+    5. Bulma Table
+    6. Bulma Table Dark mode
+    7. Media Queries
+*/
+
+/* ==========================================================================
+1. Table Pagination
+========================================================================== */
+
+.flex-pagination {
+  padding: 12px 0;
+
+  .pagination-next,
+  .pagination-previous,
+  .pagination-list {
+    order: initial;
+  }
+
+  .pagination-next,
+  .pagination-previous {
+    background: var(--white);
+    min-width: 85px;
+
+    &.has-chevron {
+      min-width: 55px;
+
+      .iconify {
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+        stroke-width: 3px;
+        color: var(--primary);
+      }
+    }
+
+    &:focus-visible {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
+      border-color: var(--border);
+    }
+  }
+
+  .pagination-list {
+    li {
+      .pagination-link {
+        background: var(--white);
+        font-family: var(--font);
+        font-size: 0.9em;
+
+        &.is-current {
+          background: var(--primary);
+          border-color: var(--primary);
+          box-shadow: var(--primary-box-shadow);
+        }
+
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-style: var(--accessibility-focus-outline-style);
+          outline-color: var(--accessibility-focus-outline-color);
+          border-color: var(--border);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Table Pagination Dark mode
+========================================================================== */
+
+.is-dark {
+  .flex-pagination {
+    .pagination-next,
+    .pagination-previous {
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+      color: var(--dark-dark-text);
+
+      .iconify {
+        color: var(--primary);
+      }
+    }
+
+    .pagination-list {
+      li {
+        .pagination-link {
+          background: color-mix(in oklab, var(--dark-sidebar), white 2%);
+          border-color: color-mix(in oklab, var(--dark-sidebar), white 4%);
+          color: var(--dark-dark-text);
+
+          &.is-current {
+            background: var(--primary);
+            color: var(--smoke-white);
+            border-color: var(--primary);
+            box-shadow: var(--primary-box-shadow);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+7. Bulma Table
+========================================================================== */
+
+.demo-table {
+  margin-bottom: 3rem;
+}
+
+.table {
+  &.is-striped {
+    tr:not(.is-selected) {
+      &:nth-child(even) {
+        background: color-mix(in oklab, var(--widget-grey), white 1%) !important;
+      }
+    }
+  }
+
+  &.is-hoverable {
+    tbody {
+      tr:not(.is-selected) {
+        &:hover {
+          background: color-mix(in oklab, var(--widget-grey), white 1%);
+        }
+      }
+    }
+  }
+
+  tbody {
+    th {
+      font-family: var(--font);
+      color: var(--dark-text);
+
+      &.is-media {
+        width: 40px;
+      }
+
+      &.is-end {
+        > div {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    td {
+      font-family: var(--font);
+      vertical-align: middle;
+      color: var(--light-text);
+
+      &.is-media {
+        width: 40px;
+      }
+
+      &.is-end {
+        > div {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  th {
+    font-family: var(--font-alt);
+  }
+
+  td {
+    font-family: var(--font);
+    vertical-align: middle;
+  }
+}
+
+/* ==========================================================================
+6. Bulma Table Dark mode
+========================================================================== */
+
+.is-dark {
+  .table {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+
+    &.is-hoverable {
+      tbody {
+        tr:not(.is-selected) {
+          &:hover {
+            background: color-mix(in oklab, var(--dark-sidebar), white 9%);
+          }
+        }
+      }
+    }
+
+    &.is-striped {
+      tr:not(.is-selected) {
+        &:nth-child(even) {
+          background: color-mix(in oklab, var(--dark-sidebar), white 9%) !important;
+        }
+      }
+    }
+
+    tbody {
+      th,
+      td {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      }
+
+      th {
+        color: var(--dark-dark-text);
+      }
+
+      td {
+        &:first-child {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+
+    th,
+    td {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+    }
+
+    th {
+      color: var(--dark-dark-text);
+    }
+
+    td {
+      color: var(--dark-dark-text);
+    }
+  }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media (width <= 767px) {
+  .pagination-next,
+  .pagination-previous {
+    &.has-chevron {
+      min-width: 55px;
+      max-width: 55px;
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .pagination-next,
+  .pagination-previous {
+    &.has-chevron {
+      min-width: 55px;
+      max-width: 55px;
+    }
+  }
+
+  .pagination-next {
+    margin-inline-end: auto;
+  }
+}

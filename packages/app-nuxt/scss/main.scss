@@ -1,0 +1,41 @@
+/*! main.scss | Vuero | Css ninja 2020-2024 */
+
+/* ==========================================================================
+SCSS Imports
+========================================================================== */
+
+@import './bulma-generated/generated-vars.sass';
+@import './abstracts/all';
+@import './css-variables/all';
+
+// Here we import bulma-css-vars instead of bulma
+// because we want to use the variables defined in the file
+@import '@cssninja/bulma-css-vars/bulma-cv-lib.sass';
+@import './layout/all';
+@import './components/cards';
+@import './components/content';
+@import './components/forms-general';
+@import './components/forms-checkboxes';
+@import './components/forms-slider';
+@import './components/forms-multiselect';
+@import './components/steps';
+@import './components/links';
+@import './components/lists';
+@import './components/nprogress';
+@import './components/datepicker';
+@import './components/divider';
+@import './components/charts';
+@import './components/toggles';
+@import './components/placeload';
+@import './components/popovers';
+@import './components/shiki';
+@import './components/stay-focus';
+@import './components/theme-switch';
+@import './components/table';
+@import './components/toasts';
+@import './components/toolbar';
+@import './components/tooltips';
+@import './components/ckeditor';
+@import './components/color-picker';
+@import './components/credit-card';
+@import './components/widgets';

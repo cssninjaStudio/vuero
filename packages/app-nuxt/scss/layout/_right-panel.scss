@@ -1,0 +1,154 @@
+/*! _right-panel.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Right Panel Base
+    2. Right Panel Base Dark mode
+    3. Media Queries
+
+*/
+
+/* ==========================================================================
+1. Right Panel Base
+========================================================================== */
+
+.right-panel-wrapper {
+  &.is-active {
+    .panel-overlay {
+      opacity: 0.8;
+      pointer-events: all;
+    }
+
+    .right-panel {
+      transform: translateX(calc(var(--transform-direction) * 0));
+    }
+  }
+
+  &.is-left {
+    &.is-active {
+      .right-panel {
+        transform: translateX(calc(var(--transform-direction) * 0)) !important;
+      }
+    }
+
+    .right-panel {
+      inset-inline-end: unset;
+      inset-inline-start: 0;
+      transform: translateX(calc(var(--transform-direction) * -100%));
+    }
+  }
+
+  .panel-overlay {
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-sidebar);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 101;
+    transition: all 0.3s; // transition-all test
+  }
+
+  .right-panel {
+    position: fixed;
+    top: 0;
+    inset-inline-end: 0;
+    width: 360px;
+    height: 100%;
+    background: var(--white);
+    transform: translateX(calc(var(--transform-direction) * 100%));
+    z-index: 102;
+    transition: all 0.3s; // transition-all test
+
+    .right-panel-head {
+      position: relative;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      h3 {
+        color: var(--muted-grey);
+        font-family: var(--font-alt);
+        font-size: 1.2rem;
+      }
+
+      > img {
+        max-width: 36px;
+      }
+
+      .close-panel {
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-rounded);
+        transition: all 0.3s; // transition-all test
+
+        &:hover {
+          background: var(--fade-grey);
+
+          .iconify {
+            color: var(--primary);
+          }
+        }
+
+        .iconify {
+          color: var(--light-text);
+          font-size: 22px;
+        }
+      }
+    }
+
+    .right-panel-body {
+      position: relative;
+      height: calc(100% - 60px);
+      width: 100%;
+    }
+  }
+}
+
+/* ==========================================================================
+2. Right Panel Base Dark mode
+========================================================================== */
+
+.is-dark {
+  .right-panel-wrapper {
+    .right-panel {
+      background: var(--dark-sidebar);
+
+      .right-panel-head {
+        h3 {
+          color: var(--dark-dark-text);
+        }
+
+        .close-panel {
+          &:hover {
+            background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+
+            .iconify {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+
+@media only screen and (width <= 767px) {
+  .right-panel-wrapper {
+    .right-panel {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

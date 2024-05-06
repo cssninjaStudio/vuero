@@ -1,0 +1,45 @@
+/*! _placeload.scss | Huro | Css ninja 2020-2024 */
+
+/*
+    1. Placeload base styles
+    2. Placeload dark styles
+*/
+
+/* ==========================================================================
+1. Placeload base styles
+========================================================================== */
+
+.content-shape {
+  height: 10px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+.loads {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeload;
+  animation-timing-function: linear;
+  background: var(--placeload-nuance-from);
+  background: linear-gradient(
+    to right,
+    var(--placeload-nuance-from) 8%,
+    var(--placeload-nuance-to) 18%,
+    var(--placeload-nuance-from) 33%
+  );
+  background-size: 1200px 104px;
+  position: relative;
+}
+
+@keyframes placeload {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+

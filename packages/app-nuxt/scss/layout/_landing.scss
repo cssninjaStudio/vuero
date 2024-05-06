@@ -1,0 +1,1095 @@
+/*! _landing.scss | vuero | Css ninja 2020-2024 */
+
+/*
+    1. Landing page defaults
+    2. Navigation
+    3. Navigation Dark mode
+    4. Hero
+    5. Hero Dark mode
+    6. Stacks
+    7. Boxed Features
+    8. Boxed Features Dark mode
+    9. Sections
+    10. Sections Dark mode
+    11. CTA block
+    12. CTA block Dark mode
+    13. Demos 
+    14. Demos Dark mode
+    15. Footer 
+    16. Footer Dark mode
+    17. Night Switch
+    18. CTA Section
+    19. CTA Section Dark mode
+    20. Media Queries
+*/
+
+/* ==========================================================================
+1. Defaults
+========================================================================== */
+
+.landing-page-wrapper {
+  overflow-x: hidden;
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .vuero-components {
+    .tabs-wrapper {
+      display: flex;
+    }
+
+    .tabs-inner {
+      width: 25% !important;
+    }
+
+    .tab-content.is-active {
+      width: 75% !important;
+    }
+  }
+}
+
+.is-dark {
+  .landing-page-wrapper {
+    background: var(--landing-xxx);
+  }
+}
+
+/* ==========================================================================
+4. Hero
+========================================================================== */
+
+.landing-page-wrapper {
+  /* stylelint-disable-next-line keyframes-name-pattern */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .hero {
+    position: relative;
+    background: var(--wrap-muted-color);
+    overflow: hidden;
+
+    .hero-body {
+      position: relative;
+      z-index: 1;
+
+      .switch-wrapper {
+        margin: 80px auto 0;
+      }
+
+      .title {
+        margin-top: 80px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        color: var(--title-color);
+        max-width: 640px;
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      .subtitle {
+        color: var(--light-text);
+        margin-bottom: 1.5rem;
+      }
+
+      .tag {
+        position: relative;
+        top: -2px;
+        left: 2px;
+        line-height: 2;
+        font-weight: 500;
+        max-height: 20px;
+      }
+
+      .hero-mockup-wrap {
+        position: relative;
+
+        .hero-mockup-gradient {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+          width: 1240px;
+          height: 65%;
+          margin: 0 auto;
+          background: linear-gradient(90deg, #d9e7ff 0%, #e3fff8 100%);
+          filter: blur(70px);
+          border-radius: 8rem;
+          z-index: 1;
+        }
+      }
+
+      .hero-mockup {
+        position: relative;
+        display: block;
+        max-width: 940px;
+        margin: 0 auto;
+        transform: translateY(10px);
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background: var(--landing-xxx);
+        box-shadow: var(--light-box-shadow);
+        pointer-events: none;
+        transition: all 0.4s;
+        transition-delay: 0.3s;
+        z-index: 2;
+
+        img {
+          position: relative;
+          width: 100%;
+          border-radius: 1rem;
+          z-index: 2;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+
+        .v-button {
+          height: 48px;
+          width: 180px;
+        }
+      }
+
+      .trusted-by {
+        text-align: center;
+
+        > span {
+          font-family: var(--font);
+          color: var(--light-text);
+
+          > span {
+            color: var(--dark-text);
+            font-weight: 600;
+          }
+        }
+
+        .rating {
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          margin-top: 0.5rem;
+
+          .iconify {
+            font-size: 1.25rem;
+            color: var(--yellow);
+          }
+        }
+      }
+    }
+  }
+
+  .is-hero-title {
+    z-index: 2;
+
+    h1,
+    h2 {
+      color: var(--white);
+    }
+  }
+
+  .absolute-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 580px;
+    background: color-mix(in oklab, var(--widget-grey), black 4%);
+    transform: translateY(-100%);
+    transition: all 0.3s; // transition-all test
+
+    .header-inner {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      .cut-circle {
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Hero Dark mode
+========================================================================== */
+
+.is-dark {
+  .landing-page-wrapper {
+    .hero {
+      .absolute-header {
+        background-color: var(--landing-yyy);
+      }
+
+      .hero-body {
+        .title {
+          color: var(--smoke-white);
+
+          span {
+            color: var(--primary);
+          }
+        }
+
+        .tag {
+          background: var(--primary) !important;
+        }
+
+        .hero-mockup-wrap {
+          .hero-mockup-gradient {
+            background: linear-gradient(
+              90deg,
+              rgba(#e3fff8, 0.05) 0%,
+              rgba(#d9e7ff, 0.15) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+6. Stacks
+========================================================================== */
+
+.stacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .stack {
+    height: 54px;
+    width: 54px;
+    min-width: 54px;
+    border-radius: var(--radius-rounded);
+    background: var(--white);
+    border: 1px solid var(--fade-grey);
+    box-shadow: var(--light-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+
+    img {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: var(--radius-rounded);
+    }
+  }
+}
+
+/* ==========================================================================
+7. Boxed Features
+========================================================================== */
+
+.boxed-features {
+  &.is-flat {
+    .flex-card {
+      border: none !important;
+      background: none !important;
+
+      .flex-cell {
+        border: none !important;
+      }
+    }
+  }
+
+  &:not(.is-flat) {
+    .flex-card {
+      box-shadow: var(--light-box-shadow);
+    }
+  }
+
+  .flex-card {
+    @include vuero-l-card;
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .flex-cell {
+      width: 25%;
+      border-inline-end: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+      text-align: center;
+      padding: 24px 16px;
+
+      &.is-bordered {
+        border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+      }
+
+      &.no-border-edge {
+        border-inline-end: none;
+      }
+
+      .lnil {
+        font-size: 2.2rem;
+        color: var(--primary);
+        margin-bottom: 6px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 64px;
+        margin: 0 auto 6px;
+      }
+
+      .icon-holder {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 6px;
+      }
+
+      .iconify {
+        font-size: 3rem;
+        color: var(--primary);
+
+        &.smaller {
+          font-size: 2.5rem;
+        }
+      }
+
+      h3 {
+        font-family: var(--font-alt);
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--dark-text);
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--light-text);
+        max-width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .boxed-features {
+    .flex-card {
+      @include vuero-card--dark;
+    }
+  }
+}
+
+/* ==========================================================================
+8. Boxed Features Dark mode
+========================================================================== */
+
+.is-dark {
+  .landing-page-wrapper {
+    .stacks {
+      .stack {
+        background: color-mix(in oklab, var(--landing-yyy), white 8%);
+        border-color: color-mix(in oklab, var(--landing-yyy), white 18%);
+      }
+    }
+
+    .boxed-features {
+      .flex-card {
+        background: color-mix(in oklab, var(--landing-yyy), black 6%);
+        border-color: color-mix(in oklab, var(--landing-yyy), white 2%);
+
+        .flex-cell {
+          border-color: color-mix(in oklab, var(--landing-yyy), white 4%);
+
+          .lnil {
+            color: var(--primary);
+          }
+
+          h3 {
+            color: var(--dark-dark-text);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+9. Sections
+========================================================================== */
+
+.section {
+  position: relative;
+
+  &.section-focus {
+    background: color-mix(in oklab, var(--widget-grey), black 1%);
+  }
+
+  .section-title {
+    padding: 40px 0;
+
+    h2 {
+      font-family: var(--font-alt);
+      margin-bottom: 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-family: var(--font);
+      color: var(--light-text);
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+
+  .section-feature-description {
+    font-size: 1.2rem;
+  }
+
+  .side-feature {
+    h2 {
+      font-family: var(--font);
+      font-weight: 300;
+    }
+  }
+}
+
+/* ==========================================================================
+10. Sections Dark mode
+========================================================================== */
+
+.is-dark {
+  .landing-page-wrapper {
+    .section {
+      &.section-focus {
+        background: color-mix(in oklab, var(--landing-xxx), white 2%);
+      }
+
+      .section-title {
+        h2 {
+          color: var(--dark-dark-text);
+        }
+      }
+
+      .side-feature {
+        h2,
+        h3 {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+11. CTA block
+========================================================================== */
+
+.cta-block {
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 4%);
+  margin: 40px 0;
+
+  &.no-border {
+    padding-bottom: 2rem;
+    border-bottom: none;
+  }
+
+  &.is-box {
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--light-box-shadow);
+    border: 1px solid var(--fade-grey);
+    justify-content: space-between;
+  }
+
+  .head-text {
+    h3 {
+      font-family: var(--font-alt);
+      font-size: 1.8rem;
+      color: var(--dark-text);
+    }
+
+    p {
+      font-family: var(--font);
+      font-size: 1.1rem;
+      color: var(--light-text);
+    }
+  }
+
+  .head-action {
+    .buttons {
+      .button {
+        &.action-button {
+          height: 36px;
+          min-width: 140px;
+        }
+
+        &.chat-button {
+          background: transparent;
+          border: none;
+          box-shadow: none;
+          color: var(--primary);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+12. CTA block Dark mode
+========================================================================== */
+
+.is-dark {
+  .landing-page-wrapper {
+    .cta-block {
+      border-color: color-mix(in oklab, var(--landing-yyy), white 4%);
+
+      .head-text {
+        h3 {
+          color: var(--dark-dark-text);
+        }
+      }
+
+      .head-action {
+        .buttons {
+          .button {
+            &.action-button {
+              background: var(--primary);
+              border-color: var(--primary);
+            }
+
+            &.chat-button {
+              color: var(--primary);
+              background: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+13. Demos
+========================================================================== */
+
+.component-features {
+  .media-flex {
+    .left-icon {
+      margin-inline-end: 10px;
+
+      .lnil {
+        color: var(--primary);
+        font-size: 2.6rem;
+      }
+    }
+
+    .flex-meta {
+      h4 {
+        font-family: var(--font-alt);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-family: var(--font);
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+14. Demos Dark mode
+========================================================================== */
+
+.is-dark {
+  .landing-page-wrapper {
+    .component-features {
+      .media-flex {
+        .left-icon {
+          .lnil {
+            color: var(--primary);
+          }
+        }
+
+        .flex-meta {
+          h4 {
+            color: var(--dark-dark-text);
+          }
+        }
+      }
+    }
+
+    .button {
+      &.is-huge {
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+    }
+
+    .vertical-tabs-wrapper {
+      .tabs {
+        ul {
+          li {
+            &.is-active {
+              a {
+                color: var(--primary);
+                border-color: var(--primary);
+              }
+            }
+
+            a {
+              border-color: color-mix(in oklab, var(--landing-xxx), white 18%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+17. Night Switch
+========================================================================== */
+
+.switch-wrapper {
+  position: relative;
+  width: 130px;
+
+  .night-toggle {
+    display: block;
+    text-align: center;
+    user-select: none;
+    transform: scale(0.6);
+  }
+
+  .night-toggle--checkbox {
+    display: none;
+  }
+
+  .night-toggle--btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.4em;
+    transition: all 350ms ease-in;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  .night-toggle--btn,
+  .night-toggle--checkbox,
+  .night-toggle--feature {
+    &,
+    &::before,
+    &::after {
+      transition: all 250ms ease-in;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+    }
+  }
+
+  $toggleHeight: 70px;
+  $toggleWidth: 125px;
+  $borderWidth: 5px;
+  $toggleBtnRadius: $toggleHeight - 14px;
+  $bgColor--night: #3c4145;
+  $borderColor--night: #1c1c1c;
+  $toggleBtn-bgColor--night: var(--white);
+  $toggleBtn-borderColor--night: #e3e3c7;
+  $bgColor--day: #cdcdfa; // lighten(#797bf2, 18%);
+  $borderColor--day: #babbf8; // lighten(#797bf2, 14%);
+  $toggleBtn-bgColor--day: #ffdf6d;
+  $toggleBtn-borderColor--day: #e1c348;
+  $cloud-borderColor: #d3d3d3;
+  $cloud-bgColor: var(--white);
+
+  .night-toggle--daynight,
+  .night-toggle--like {
+    .night-toggle--btn {
+      position: relative;
+      height: $toggleHeight;
+      width: $toggleWidth;
+      border-radius: $toggleHeight;
+
+      // toggle button
+      &::before {
+        position: absolute;
+        top: 2px;
+        left: 4px;
+        width: $toggleBtnRadius;
+        height: $toggleBtnRadius;
+        border-radius: var(--radius-rounded);
+      }
+    }
+  }
+
+  .night-toggle--daynight {
+    .night-toggle--btn {
+      border: $borderWidth solid $borderColor--night;
+      background-color: $bgColor--night;
+
+      // toggle button
+      &::before {
+        background-color: $toggleBtn-bgColor--night;
+        border: $borderWidth solid $toggleBtn-borderColor--night;
+      }
+
+      &::after {
+        position: absolute;
+        top: 62%;
+        left: $toggleWidth - $toggleBtnRadius - $borderWidth * 2 - 20px;
+        z-index: 10;
+        width: $toggleBtnRadius * 0.2;
+        height: $toggleBtnRadius * 0.2;
+        opacity: 0;
+        background-color: $cloud-bgColor;
+        border-radius: var(--radius-rounded);
+
+        // crazy ass box-shadow to make the cloud
+        box-shadow:
+          $cloud-bgColor 0 0,
+          $cloud-bgColor 3px 0,
+          $cloud-bgColor 6px 0,
+          $cloud-bgColor 9px 0,
+          $cloud-bgColor 11px 0,
+          $cloud-bgColor 14px 0,
+          $cloud-bgColor 16px 0,
+          $cloud-bgColor 21px -1px 0 1px,
+          $cloud-bgColor 16px -7px 0 -2px,
+          $cloud-bgColor 7px -7px 0 1px,
+          $cloud-borderColor 0 0 0 4px,
+          $cloud-borderColor 6px 0 0 4px,
+          $cloud-borderColor 11px 0 0 4px,
+          $cloud-borderColor 16px 0 0 4px,
+          $cloud-borderColor 21px -1px 0 5px,
+          $cloud-borderColor 16px -7px 0 1px,
+          $cloud-borderColor 7px -7px 0 5px;
+        transition: opacity 100ms ease-in;
+      }
+    }
+
+    @keyframes starry_star {
+      50% {
+        background-color: rgb(255 255 255 / 10%);
+        box-shadow:
+          var(--white) 30px -3px 0 0,
+          var(--white) 12px 10px 0 -1px,
+          rgb(255 255 255 / 10%) 38px 18px 0 1px,
+          var(--white) 32px 34px 0 0,
+          rgb(255 255 255 / 10%) 20px 24px 0 -1.5px,
+          var(--white) 5px 38px 0 1px;
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+
+      50% {
+        opacity: 100;
+        transform: scale(1.1);
+      }
+
+      55% {
+        transform: scale(1.1);
+      }
+
+      75% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        opacity: 100;
+        transform: scale(1);
+      }
+    }
+
+    // stars
+    .night-toggle--feature {
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 52.5%;
+      z-index: 20;
+      width: 4px;
+      height: 4px;
+      border-radius: var(--radius-rounded);
+      background-color: var(--white);
+      box-shadow:
+        rgb(255 255 255 / 10%) 30px -3px 0 0,
+        rgb(255 255 255 / 10%) 12px 10px 0 -1px,
+        var(--white) 38px 18px 0 1px,
+        rgb(255 255 255 / 10%) 32px 34px 0 0,
+        var(--white) 20px 24px 0 -1.5px,
+        rgb(255 255 255 / 10%) 5px 38px 0 1px;
+      animation: starry_star 5s ease-in-out infinite;
+
+      &::before {
+        position: absolute;
+        top: -2px;
+        left: -25px;
+        width: 18px;
+        height: 18px;
+        background-color: $toggleBtn-bgColor--night;
+        border-radius: var(--radius-rounded);
+        border: 5px solid $toggleBtn-borderColor--night;
+        box-shadow:
+          $toggleBtn-borderColor--night -28px 0 0 -3px,
+          $toggleBtn-borderColor--night -8px 24px 0 -2px;
+        transform-origin: -6px 130%;
+      }
+    }
+
+    // what happens once checkbox is checked
+    .night-toggle--checkbox:checked {
+      & + .night-toggle--btn {
+        background-color: $bgColor--day;
+        border: $borderWidth solid $borderColor--day;
+
+        &::before {
+          left: $toggleWidth - $toggleBtnRadius - $borderWidth * 2 - 4px;
+          background-color: $toggleBtn-bgColor--day;
+          border: $borderWidth solid $toggleBtn-borderColor--day;
+        }
+
+        &::after {
+          opacity: 100;
+          animation-name: bounceIn;
+          animation-duration: 0.6s;
+          animation-delay: 0.1s;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-in-out;
+        }
+
+        > .night-toggle--feature {
+          opacity: 0;
+          box-shadow:
+            rgb(255 255 255 / 10%) 30px -3px 0 -4px,
+            rgb(255 255 255 / 10%) 12px 10px 0 -5px,
+            var(--white) 38px 18px 0 -3px,
+            rgb(255 255 255 / 10%) 32px 34px 0 -4px,
+            var(--white) 20px 24px 0 -5.5px,
+            rgb(255 255 255 / 10%) 5px 38px 0 -3px;
+          animation: none;
+
+          &::before {
+            left: 25px;
+            transform: rotate(calc(var(--transform-direction) * 70deg));
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+18. CTA Section
+========================================================================== */
+
+.cta-wrapper {
+  .cta-title {
+    text-align: center;
+
+    h3 {
+      font-family: var(--font-alt);
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: var(--light-text);
+      margin-bottom: 20px;
+    }
+
+    .custom-button {
+      display: flex;
+      align-items: center;
+      margin: 10px auto;
+      max-width: 200px;
+      font-family: var(--font);
+      border: 2px solid #d3f4ed;
+      border-radius: 100px;
+      background: #d3f4ed;
+      box-shadow: var(--light-box-shadow);
+      transition: all 0.3s; // transition-all test
+
+      img {
+        display: block;
+        height: 50px;
+        width: 50px;
+      }
+
+      span {
+        display: block;
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 1rem;
+        color: color-mix(in oklab, var(--lime), black 18%);
+        margin-inline-start: 22px;
+        transition: color 0.3s;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+19. Media Queries
+========================================================================== */
+
+@media (width <= 767px) {
+  .landing-page-wrapper {
+    .hero {
+      .hero-body {
+        .hero-mockup {
+          padding: 0.5rem;
+          border-radius: 1.25rem;
+
+          img {
+            border-radius: 0.85rem;
+          }
+        }
+
+        h1 {
+          font-size: 2.5rem !important;
+        }
+      }
+    }
+
+    .boxed-features {
+      .flex-card {
+        .flex-cell {
+          width: 100%;
+          border-inline-end: none;
+          border-bottom: 1px solid color-mix(in oklab, var(--fade-grey), black 3%);
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .cta-block {
+      flex-direction: column;
+      text-align: center;
+
+      .head-text {
+        padding-bottom: 20px;
+      }
+    }
+
+    .vuero-components {
+      .tabs-wrapper {
+        flex-direction: column;
+      }
+
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .tabs-inner {
+        width: 100% !important;
+      }
+
+      .tab-content.is-active {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .side-feature {
+    margin-bottom: 60px !important;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .landing-page-wrapper {
+    .main-hero {
+      .is-hero-title {
+        text-align: center !important;
+
+        .buttons {
+          justify-content: center;
+        }
+      }
+    }
+
+    .rounded-hero {
+      min-height: 75vh !important;
+
+      .hero-body {
+        .hero-mockup {
+          max-width: 610px !important;
+        }
+      }
+    }
+
+    .side-feature {
+      display: flex;
+    }
+
+    .component-features {
+      .media-flex {
+        flex-direction: column;
+        text-align: center;
+
+        .left-icon,
+        .flex-meta {
+          margin: 0;
+        }
+
+        .left-icon {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .vuero-components {
+      .tab-content {
+        .columns {
+          display: flex;
+
+          .column.is-3 {
+            min-width: 33.3% !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,752 @@
+/*! _utilities.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    1. Titles
+    2. Divider
+    3. Helpers
+    4. Hamburger
+    5. Tooltips
+    6. Alertify js
+    7. Alertify js Dark mode
+    8. Divider alt
+    9. Text tips
+    10. Text tips Dark mode
+    11. Hopscotch
+    12. Demo toggler
+    13. Background images
+    14. Dark mode images
+    15. Demo spacer
+    16. RTL
+*/
+
+/* ==========================================================================
+1. Titles
+========================================================================== */
+
+.title,
+.subtitle {
+  &.light-mb {
+    margin-bottom: 10px;
+  }
+
+  &.no-mb {
+    margin-bottom: 0;
+  }
+
+  &.has-margin-top {
+    margin-top: 20px;
+  }
+
+  &.has-margin-top-lg {
+    margin-top: 50px;
+  }
+
+  &.is-purple {
+    color: var(--primary);
+  }
+
+  &.is-light {
+    color: var(--white);
+  }
+}
+
+var {
+  font-style: inherit;
+}
+
+.has-text-centered {
+  text-align: center;
+}
+
+/* ==========================================================================
+2. Divider
+========================================================================== */
+
+.divider-container {
+  max-width: 640px;
+  margin: 0 auto;
+
+  .divider {
+    text-align: center;
+    margin: 1.5em auto 1em;
+    width: 100%;
+    position: relative;
+
+    span {
+      display: inline-block;
+      margin-top: 1px;
+      font-size: 1rem;
+      text-transform: none;
+      color: var(--primary-grey);
+
+      &::before,
+      &::after {
+        width: 36%;
+        display: block;
+        position: absolute;
+        inset-inline-start: 0;
+        top: 0.9em;
+        height: 1px;
+        content: ' ';
+        border-top: 1px solid var(--primary-grey);
+      }
+
+      &::after {
+        inset-inline-end: 0;
+        inset-inline-start: auto;
+      }
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .divider span::before,
+  .divider span::after {
+    width: 22% !important;
+  }
+}
+
+/* ==========================================================================
+3. Helpers
+========================================================================== */
+
+.is-flex-wrapped {
+  flex-wrap: wrap !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-vhidden {
+  visibility: hidden !important;
+}
+
+.no-click {
+  pointer-events: none !important;
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: default !important;
+}
+
+.ml-auto {
+  margin-inline-start: auto !important;
+}
+
+.mr-auto {
+  margin-inline-end: auto !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-mb {
+  margin-bottom: 0 !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.is-green {
+  color: var(--success);
+}
+
+.is-purple {
+  color: var(--primary);
+}
+
+.has-slimscroll {
+  overflow-y: auto;
+}
+
+.has-slimscroll-x {
+  overflow-x: auto;
+}
+
+.has-slimscroll-all {
+  overflow: auto;
+}
+
+.has-slimscroll,
+.has-slimscroll-x,
+.has-slimscroll-all {
+  &::-webkit-scrollbar {
+    height: 6px !important;
+    width: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    background: rgb(0 0 0 / 20%) !important;
+  }
+}
+
+.has-slimscroll-sm {
+  &::-webkit-scrollbar {
+    height: 3px !important;
+    width: 3px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    background: rgb(0 0 0 / 20%) !important;
+  }
+}
+
+.dark-text {
+  color: var(--dark-text);
+}
+
+.light-text {
+  color: var(--light-text);
+}
+
+.success-text {
+  color: var(--success);
+}
+
+.info-text {
+  color: var(--info);
+}
+
+.warning-text {
+  color: var(--warning);
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
+.inverted-text {
+  color: var(--smoke-white);
+}
+
+/* ==========================================================================
+4. Hamburger
+========================================================================== */
+
+.menu-toggle {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  background: transparent;
+  display: block;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.4s;
+  opacity: 1;
+  position: relative;
+
+  &.has-chevron {
+    .icon-box-toggle {
+      &.active {
+        .icon-line-top {
+          width: 13px !important;
+          top: 17px !important;
+        }
+
+        .icon-line-bottom {
+          width: 13px !important;
+          top: 9px !important;
+        }
+      }
+    }
+  }
+
+  .icon-box-toggle {
+    background: transparent;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    &.active > span.rotate {
+      transform: rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+    }
+
+    &.active > span > i.icon-line-center {
+      visibility: hidden;
+      width: 1px;
+      height: 3px;
+      inset-inline-start: 70%;
+    }
+
+    &.active > span > i.icon-line-bottom {
+      margin: -2px 0 0 -10px;
+      inset-inline-start: 50%;
+      top: 12px;
+      transform: rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+    }
+
+    &.active > span > i.icon-line-top {
+      margin: -2px 0 0 -10px;
+      inset-inline-start: 50%;
+      top: 12px;
+      transform: rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+    }
+  }
+
+  .icon-line-center {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: var(--primary);
+    margin: -1px 0 0 -10px;
+    inset-inline-start: 50%;
+    top: 12px;
+    transition: all 0.3s; // transition-all test
+  }
+
+  .icon-line-top {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+    margin: -3px 0 0 -10px;
+    inset-inline-start: 50%;
+    top: 6px;
+    transition: all 0.3s; // transition-all test
+  }
+
+  .icon-line-bottom {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+    margin: 2px 0 0 -10px;
+    inset-inline-start: 50%;
+    top: 17px;
+    transition: all 0.3s; // transition-all test
+  }
+}
+
+/* ==========================================================================
+6. Alertify js
+========================================================================== */
+
+.alertify .ajs-dialog {
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  border-radius: 8px !important;
+}
+
+.ajs-dimmer {
+  background-color: var(--dark-sidebar) !important;
+}
+
+.ajs-header {
+  font-weight: 600 !important;
+  font-family: var(--font-alt) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ajs-footer {
+  border-radius: 0 0 6px 6px !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.ajs-content {
+  padding: 16px 0 !important;
+  font-family: var(--font) !important;
+
+  b {
+    font-weight: 500 !important;
+    color: var(--primary) !important;
+  }
+}
+
+.ajs-buttons {
+  padding: 6px 10px;
+}
+
+.ajs-ok {
+  padding: 8px 22px;
+  height: 33px;
+  min-width: 82px !important;
+  line-height: 0;
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+  font-size: 0.75rem;
+  background: var(--primary) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-large);
+  transition: all 0.3s; // transition-all test
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--primary-box-shadow);
+  }
+}
+
+.ajs-cancel {
+  padding: 8px 22px;
+  height: 33px;
+  min-width: 82px !important;
+  line-height: 0;
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+  font-size: 0.75rem;
+  background: var(--white) !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: var(--radius-large);
+  transition: all 0.3s; // transition-all test
+  cursor: pointer;
+}
+
+/* ==========================================================================
+7. Alertify js Dark mode
+========================================================================== */
+
+.is-dark {
+  .ajs-dialog {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+  }
+
+  .ajs-header {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    color: var(--primary-grey) !important;
+  }
+
+  .ajs-content {
+    color: var(--dark-dark-text) !important;
+
+    span {
+      color: var(--dark-dark-text) !important;
+
+      b {
+        color: var(--primary) !important;
+      }
+    }
+  }
+
+  .ajs-footer {
+    background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+
+    .ajs-ok {
+      background: var(--primary) !important;
+    }
+
+    .ajs-cancel {
+      background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+      color: var(--muted-grey) !important;
+    }
+  }
+}
+
+/* ==========================================================================
+8. Divider alt
+========================================================================== */
+
+.divider {
+  display: flex;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+  }
+
+  &.line {
+    align-items: center;
+    margin: 1em -1em;
+
+    &::before,
+    &::after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+
+  &.one-line {
+    &::before,
+    &::after {
+      background: color-mix(in oklab, var(--fade-grey), black 5%);
+    }
+  }
+}
+
+/* ==========================================================================
+9. Text tips
+========================================================================== */
+
+.has-text-tip,
+.has-small-text-tip {
+  position: relative;
+  cursor: pointer;
+}
+
+.text-tooltip {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  width: 100%;
+  z-index: 999;
+
+  .tooltip-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 16px;
+    background: var(--white);
+    color: var(--dark-text);
+    border: 1px solid var(--primary-grey);
+    box-shadow: var(--light-box-shadow);
+    border-radius: var(--radius-large);
+    font-size: 0.9rem;
+  }
+}
+
+/* ==========================================================================
+10. Text tips Dark mode
+========================================================================== */
+
+.is-dark {
+  .text-tooltip {
+    .tooltip-content {
+      background: var(--dark-sidebar);
+      border-color: var(--dark-sidebar);
+      color: var(--primary-grey);
+    }
+  }
+}
+
+/* ==========================================================================
+11. Hopscotch
+========================================================================== */
+
+.app-wrapper {
+  &.is-pushed-bottom {
+    transform: translateY(50px);
+  }
+}
+
+.hopscotch-bubble {
+  .hopscotch-bubble-container {
+    .hopscotch-bubble-number {
+      padding: 0;
+      background: var(--primary);
+      border-radius: var(--radius-rounded);
+      box-shadow: var(--primary-box-shadow);
+      font-size: 0.8rem;
+    }
+
+    .hopscotcv-actions {
+      .hopscotch-nav-button {
+        background: var(--white);
+        text-shadow: none;
+        color: var(--primary);
+        border-color: var(--primary);
+        font-weight: 500;
+        height: 32px;
+        min-width: 80px;
+        border-radius: 100px;
+        transition: all 0.3s; // transition-all test
+
+        &:hover {
+          background: var(--primary);
+          color: var(--smoke-white);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+12. Demo toggler
+========================================================================== */
+
+.demo-wrapper {
+  position: fixed;
+  bottom: -50px;
+  inset-inline-end: -50px;
+  height: 140px;
+  width: 140px;
+  background: transparent;
+  border-radius: var(--radius-rounded);
+  transform: scale(0.4);
+  transition: all 0.3s; // transition-all test
+
+  &:hover {
+    background: var(--white);
+    transform: scale(1);
+
+    .form-switch {
+      opacity: 1 !important;
+      pointer-events: all !important;
+    }
+  }
+
+  .inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-switch {
+      position: relative;
+      top: -10px;
+      inset-inline-start: -10px;
+      display: block;
+      transition: all 0.3s; // transition-all test
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+/* ==========================================================================
+13. Background images
+========================================================================== */
+
+.has-background-image {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: rgb(0 0 0 / 10%);
+
+  &.is-top {
+    background-position: top !important;
+  }
+
+  &.is-bottom {
+    background-position: bottom !important;
+  }
+}
+
+/* ==========================================================================
+14. Dark mode images
+========================================================================== */
+
+.light-image {
+  display: inline-block !important;
+}
+
+.dark-image {
+  display: none !important;
+}
+
+.light-image-block {
+  display: block !important;
+}
+
+.dark-image-block {
+  display: none !important;
+}
+
+.is-dark {
+  .light-image {
+    display: none !important;
+  }
+
+  .dark-image {
+    display: inline-block !important;
+  }
+
+  .light-image-block {
+    display: none !important;
+  }
+
+  .dark-image-block {
+    display: block !important;
+  }
+}
+
+/* ==========================================================================
+15. Demo Spacer
+========================================================================== */
+
+.demo-spacer {
+  width: 100%;
+  height: 2px;
+  padding: 80px 0;
+}
+
+.is-gap-0\.5 {
+  gap: 0.5rem;
+}
+
+.is-gap-1 {
+  gap: 1rem;
+}
+
+/* ==========================================================================
+16. RTL
+========================================================================== */
+
+[dir='ltr'] {
+  .rtl-hidden {
+    display: block !important;
+  }
+
+  .ltr-hidden {
+    display: none !important;
+  }
+
+  .rtl-hidden-flex {
+    display: flex !important;
+  }
+
+  .ltr-hidden-flex {
+    display: none !important;
+  }
+}
+
+[dir='rtl'] {
+  .ltr-hidden {
+    display: block !important;
+  }
+
+  .rtl-hidden {
+    display: none !important;
+  }
+
+  .ltr-hidden-flex {
+    display: flex !important;
+  }
+
+  .rtl-hidden-flex {
+    display: none !important;
+  }
+
+  .rtl-reflect {
+    transform: scaleX(-1);
+  }
+}

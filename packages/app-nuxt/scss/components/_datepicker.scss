@@ -1,0 +1,262 @@
+/*! _datepicker.scss | Vuero | Css ninja 2020-2024 */
+
+/*
+    0. V-Calendar
+    1. V-Calendar Dark mode
+*/
+
+/* ==========================================================================
+0. V-Calendar
+========================================================================== */
+
+.vc-pane-container {
+  border-radius: 0.65 (rem);
+
+  .vc-pane-layout {
+    border-radius: 0.65 (rem);
+    font-family: var(--font);
+
+    .vc-pane {
+      padding: 1rem;
+    }
+
+    .vc-header {
+      margin-top: 0;
+
+      .vc-title {
+        position: relative;
+        top: -4px;
+        font-size: 1rem;
+        font-weight: 500;
+        background: transparent;
+      }
+    }
+
+    .vc-weeks {
+      margin-top: 0.75rem;
+
+      .vc-weekday {
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .vc-arrow {
+    background: transparent;
+    border-radius: var(--radius-rounded);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+
+    .iconify {
+      position: relative;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .vc-day-content {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+  }
+}
+
+.vc-popover-content-wrapper {
+  .vc-nav-popover-container {
+    background: var(--dark);
+
+    .vc-nav-container {
+      padding: 0.75rem;
+
+      .vc-nav-header {
+        margin-bottom: 0.75rem;
+
+        .vc-nav-title,
+        .vc-nav-arrow {
+          background-color: transparent !important;
+
+          &:active,
+          &:focus {
+            border-color: transparent !important;
+          }
+        }
+
+        .vc-nav-title {
+          color: var(--white);
+        }
+
+        .vc-nav-arrow {
+          position: relative;
+          top: 0.25rem;
+          border-radius: var(--radius-rounded);
+          width: 24px;
+          height: 24px;
+          min-width: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--white);
+
+          .iconify {
+            position: relative;
+            top: -1px;
+            height: 20px;
+            width: 20px;
+            stroke: var(--white);
+          }
+        }
+      }
+
+      .vc-nav-items {
+        .vc-nav-item {
+          color: var(--white);
+          background: var(--dark);
+          font-family: var(--font);
+          font-weight: 400;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+
+          &.is-active {
+            background: var(--primary) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vc-time-picker {
+  .vc-time-header {
+    .vc-time-weekday,
+    .vc-time-year {
+      color: var(--dark-text);
+    }
+  }
+
+  .vc-time-select-group {
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
+  .vc-base-select {
+    select {
+      background: transparent !important;
+      border-color: transparent !important;
+    }
+  }
+}
+
+/* ==========================================================================
+1. V-Calendar Dark mode
+========================================================================== */
+
+.is-dark {
+  --vc-border: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
+
+  .vc-popover-content {
+    background: var(--dark-sidebar) !important;
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 8%) !important;
+  }
+
+  .vc-container {
+    background: var(--dark-sidebar) !important;
+  }
+
+  .vc-pane-container {
+    .vc-pane-layout {
+      .vc-header {
+        .vc-title {
+          color: var(--dark-dark-text) !important;
+        }
+      }
+    }
+
+    .vc-day-content {
+      color: var(--dark-dark-text);
+    }
+
+    .vc-arrow {
+      &:hover {
+        background: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+      }
+    }
+  }
+
+  .vc-popover-content-wrapper {
+    .vc-highlight-base-start,
+    .vc-highlight-base-middle,
+    .vc-highlight-base-end {
+      background-color: color-mix(in oklab, var(--primary), white 1%) !important;
+    }
+
+    .vc-nav-popover-container {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 4%) !important;
+
+      .vc-nav-container {
+        .vc-nav-header {
+          .vc-nav-title,
+          .vc-nav-arrow {
+            &:hover {
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+            }
+          }
+        }
+
+        .vc-nav-items {
+          .vc-nav-item {
+            color: var(--white);
+            background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+
+            &:not(.is-active):hover {
+              background: color-mix(in oklab, var(--dark-sidebar), white 2%) !important;
+            }
+
+            &.is-active {
+              background: var(--primary) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vc-time-picker {
+    .vc-time-header {
+      .vc-time-weekday,
+      .vc-time-year {
+        color: var(--light-text);
+      }
+    }
+
+    .vc-time-select-group {
+      background: transparent !important;
+      border-color: transparent !important;
+      color: var(--white);
+    }
+
+    .vc-base-select {
+      select {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: var(--dark-dark-text) !important;
+      }
+    }
+
+    .vc-am-pm {
+      background: color-mix(in oklab, var(--dark-sidebar), black 4%) !important;
+
+      > button {
+        color: var(--white) !important;
+      }
+    }
+
+    &.vc-attached {
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%) !important;
+    }
+  }
+}

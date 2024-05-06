@@ -1,0 +1,628 @@
+<script lang="ts">
+import type { SlotsType, PropType } from 'vue'
+import { RouterLink } from 'vue-router'
+
+import VPlaceload from '~/components/base/VPlaceload.vue'
+
+export type VButtonSize = 'medium' | 'big' | 'huge'
+export type VButtonColor =
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'white'
+  | 'dark'
+  | 'light'
+export type VButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
+
+export default defineComponent({
+  props: {
+    to: {
+      type: [Object, String],
+      default: undefined,
+    },
+    href: {
+      type: String,
+      default: undefined,
+    },
+    icon: {
+      type: String,
+      default: undefined,
+    },
+    iconCaret: {
+      type: String,
+      default: undefined,
+    },
+    placeload: {
+      type: String,
+      default: undefined,
+    },
+    color: {
+      type: String as PropType<VButtonColor>,
+      default: undefined,
+      validator: (value: VButtonColor) => {
+        // The value must match one of these strings
+        if (
+          [
+            undefined,
+            'primary',
+            'info',
+            'success',
+            'warning',
+            'danger',
+            'white',
+            'dark',
+            'light',
+          ].indexOf(value) === -1
+        ) {
+          console.warn(
+            `VButton: invalid "${value}" color. Should be primary, info, success, warning, danger, dark, light, white or undefined`,
+          )
+          return false
+        }
+
+        return true
+      },
+    },
+    size: {
+      type: String as PropType<VButtonSize>,
+      default: undefined,
+      validator: (value: VButtonSize) => {
+        // The value must match one of these strings
+        if ([undefined, 'medium', 'big', 'huge'].indexOf(value) === -1) {
+          console.warn(
+            `VButton: invalid "${value}" size. Should be big, huge, medium or undefined`,
+          )
+          return false
+        }
+
+        return true
+      },
+    },
+    dark: {
+      type: String as PropType<VButtonDark>,
+      default: undefined,
+      validator: (value: VButtonDark) => {
+        // The value must match one of these strings
+        if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+          console.warn(
+            `VButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`,
+          )
+          return false
+        }
+
+        return true
+      },
+    },
+    rounded: {
+      type: Boolean,
+      default: false,
+    },
+    bold: {
+      type: Boolean,
+      default: false,
+    },
+    fullwidth: {
+      type: Boolean,
+      default: false,
+    },
+    light: {
+      type: Boolean,
+      default: false,
+    },
+    raised: {
+      type: Boolean,
+      default: false,
+    },
+    elevated: {
+      type: Boolean,
+      default: false,
+    },
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
+    darkOutlined: {
+      type: Boolean,
+      default: false,
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    },
+    lower: {
+      type: Boolean,
+      default: false,
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+    static: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  slots: Object as SlotsType<{
+    default: void
+  }>,
+  setup(props, { slots, attrs }) {
+    const classes = computed(() => {
+      const defaultClasses = (attrs?.class || []) as string[] | string
+      return [
+        defaultClasses,
+        'button',
+        'v-button',
+        props.disabled && 'is-disabled',
+        props.rounded && 'is-rounded',
+        props.bold && 'is-bold',
+        props.size && `is-${props.size}`,
+        props.lower && 'is-lower',
+        props.fullwidth && 'is-fullwidth',
+        props.outlined && 'is-outlined',
+        props.dark && `is-dark-bg-${props.dark}`,
+        props.darkOutlined && 'is-dark-outlined',
+        props.raised && 'is-raised',
+        props.elevated && 'is-elevated',
+        props.loading && !props.placeload && 'is-loading',
+        props.color && `is-${props.color}`,
+        props.light && 'is-light',
+        props.static && 'is-static',
+      ]
+    })
+    const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
+    const isCaretIconify = computed(
+      () => props.iconCaret && props.iconCaret.indexOf(':') !== -1,
+    )
+
+    const getChildrens = () => {
+      const childrens = []
+
+      let iconWrapper
+      if (isIconify.value) {
+        const icon = h('iconify-icon', {
+          class: 'iconify',
+          icon: props.icon,
+        })
+        iconWrapper = h('span', { class: 'icon' }, icon)
+      }
+      else if (props.icon) {
+        const icon = h('i', { 'aria-hidden': true, 'class': props.icon })
+        iconWrapper = h('span', { class: 'icon rtl-reflect' }, icon)
+      }
+
+      let caretWrapper
+      if (isCaretIconify.value) {
+        const caret = h('iconify-icon', {
+          class: 'iconify',
+          icon: props.iconCaret,
+        })
+        caretWrapper = h('span', { class: 'caret' }, caret)
+      }
+      else if (props.iconCaret) {
+        const caret = h('i', { 'aria-hidden': true, 'class': props.iconCaret })
+        caretWrapper = h('span', { class: 'caret' }, caret)
+      }
+
+      if (iconWrapper) {
+        childrens.push(iconWrapper)
+      }
+      if (props.placeload) {
+        childrens.push(
+          h(VPlaceload, {
+            width: props.placeload,
+          }),
+        )
+      }
+      else {
+        childrens.push(h('span', slots.default?.()))
+      }
+      if (caretWrapper) {
+        childrens.push(caretWrapper)
+      }
+
+      return childrens
+    }
+
+    return () => {
+      if (props.to) {
+        return h(
+          RouterLink,
+          {
+            ...attrs,
+            'aria-hidden': !!props.placeload,
+            'to': props.to,
+            'class': ['button', ...classes.value],
+          },
+          {
+            default: getChildrens,
+          },
+        )
+      }
+      else if (props.href) {
+        return h(
+          'a',
+          {
+            ...attrs,
+            'aria-hidden': !!props.placeload,
+            'href': props.href,
+            'class': classes.value,
+          },
+          {
+            default: getChildrens,
+          },
+        )
+      }
+
+      return h(
+        'button',
+        {
+          'type': 'button',
+          ...attrs,
+          'aria-hidden': !!props.placeload,
+          'disabled': props.disabled,
+          'class': ['button', ...classes.value],
+        },
+        {
+          default: getChildrens,
+        },
+      )
+    }
+  },
+})
+</script>
+
+<style lang="scss">
+.button {
+  &.is-circle {
+    border-radius: var(--radius-rounded);
+  }
+
+  &.v-button {
+    padding: 8px 22px;
+    height: 38px;
+    line-height: 1.1;
+    font-size: 0.95rem;
+    font-family: var(--font);
+    transition: all 0.3s; // transition-all test
+
+    &:not([disabled]) {
+      cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: none !important;
+      border-color: color-mix(in oklab, var(--fade-grey), black 2%);
+    }
+
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
+      &.is-active {
+        background: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: var(--white) !important;
+        box-shadow: var(--primary-box-shadow) !important;
+      }
+    }
+
+    &:focus-visible {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
+    }
+
+    &.is-bold {
+      font-weight: 500;
+    }
+
+    &.is-primary {
+      &.is-raised:hover {
+        opacity: 0.9;
+        box-shadow: var(--primary-box-shadow);
+      }
+
+      &.is-elevated {
+        box-shadow: var(--primary-box-shadow);
+      }
+    }
+
+    &.is-success {
+      &.is-raised:hover {
+        opacity: 0.9;
+        box-shadow: var(--success-box-shadow);
+      }
+
+      &.is-elevated {
+        box-shadow: var(--success-box-shadow);
+      }
+    }
+
+    &.is-info {
+      &.is-raised:hover {
+        opacity: 0.9;
+        box-shadow: var(--info-box-shadow);
+      }
+
+      &.is-elevated {
+        box-shadow: var(--info-box-shadow);
+      }
+    }
+
+    &.is-warning {
+      &.is-raised:hover {
+        opacity: 0.9;
+        box-shadow: var(--warning-box-shadow);
+      }
+
+      &.is-elevated {
+        box-shadow: var(--warning-box-shadow);
+      }
+    }
+
+    &.is-danger {
+      &.is-raised:hover {
+        opacity: 0.9;
+        box-shadow: var(--danger-box-shadow);
+      }
+
+      &.is-elevated {
+        box-shadow: var(--danger-box-shadow);
+      }
+    }
+
+    &.is-lower {
+      text-transform: none !important;
+      font-size: 0.9rem;
+    }
+
+    &.is-big {
+      height: 40px;
+    }
+
+    &.is-medium {
+      height: 2.5rem;
+      font-size: 1rem;
+    }
+
+    &.is-huge {
+      height: 50px;
+      width: 220px;
+    }
+  }
+
+  &.simple-action {
+    height: 32px;
+    padding: 0 24px;
+    line-height: 0;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s; // transition-all test
+
+    &.is-purple {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--smoke-white);
+
+      &:hover,
+      &:focus {
+        opacity: 0.95;
+        box-shadow: var(--primary-box-shadow);
+        color: var(--smoke-white) !important;
+      }
+    }
+
+    &.has-icon {
+      .iconify {
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+      }
+    }
+
+    &:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .iconify {
+      height: 18px;
+      width: 18px;
+      font-size: 18px;
+    }
+  }
+
+  .icon {
+    .iconify {
+      height: 14px;
+      width: 14px;
+      font-size: 14px;
+    }
+  }
+}
+
+.is-dark {
+  .v-button {
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      color: var(--dark-dark-text);
+
+      &:hover,
+      &:focus {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
+      }
+    }
+
+    &.is-light {
+      border: none;
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+      color: var(--smoke-white) !important;
+
+      &:hover {
+        background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+      }
+    }
+
+    &.is-primary {
+      border-color: var(--primary);
+      background: var(--primary);
+
+      &.is-raised:hover {
+        box-shadow: var(--primary-box-shadow) !important;
+      }
+
+      &.is-elevated {
+        box-shadow: var(--primary-box-shadow) !important;
+      }
+
+      &.is-outlined {
+        background: transparent;
+        border-color: var(--primary) !important;
+        color: var(--primary);
+
+        &:hover,
+        &:focus {
+          background: var(--primary) !important;
+          border-color: var(--primary) !important;
+          color: var(--white) !important;
+        }
+      }
+
+      &.is-light {
+        border: none;
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--primary), white 20%) !important;
+
+        &:hover {
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        }
+      }
+    }
+
+    &.is-info {
+      &.is-light {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--info), white 20%) !important;
+
+        &:hover {
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        }
+      }
+    }
+
+    &.is-success {
+      &.is-light {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--success), white 20%) !important;
+
+        &:hover {
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        }
+      }
+    }
+
+    &.is-warning {
+      &.is-light {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--warning), white 20%) !important;
+
+        &:hover {
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        }
+      }
+    }
+
+    &.is-danger {
+      &.is-light {
+        background: color-mix(in oklab, var(--dark-sidebar), white 10%) !important;
+        color: color-mix(in oklab, var(--danger), white 20%) !important;
+
+        &:hover {
+          background: color-mix(in oklab, var(--dark-sidebar), white 16%) !important;
+        }
+      }
+    }
+
+    &.is-white {
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+      border-color: var(--muted-grey) !important;
+      color: var(--muted-grey) !important;
+    }
+
+    &.is-dark-outlined {
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      color: var(--dark-dark-text);
+
+      &:hover,
+      &:focus {
+        border-color: var(--primary) !important;
+        color: var(--primary) !important;
+      }
+    }
+  }
+
+  .button {
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      color: var(--dark-dark-text);
+
+      &:hover,
+      &:focus {
+        border-color: color-mix(in oklab, var(--dark-sidebar), white 18%);
+      }
+    }
+
+    &.is-primary {
+      border-color: var(--primary);
+      background: var(--primary);
+    }
+
+    &.is-white {
+      background: color-mix(in oklab, var(--dark-sidebar), white 6%) !important;
+      border-color: var(--muted-grey) !important;
+      color: var(--muted-grey) !important;
+    }
+
+    &.is-dark-outlined {
+      background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+      border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
+      color: var(--dark-dark-text);
+
+      &:hover,
+      &:focus {
+        border-color: var(--primary) !important;
+        color: var(--primary) !important;
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,14 @@
+/*! accessibility.scss | Vuero | Css ninja 2020-2024 */
+
+:root {
+  --accessibility-focus-outline-style: dashed;
+  --accessibility-focus-outline-offset: 3px;
+  --accessibility-focus-outline-width: 1px;
+  --accessibility-focus-outline-color: color-mix(in oklab, var(--fade-grey), black 8%);
+
+  &.is-dark {
+    --accessibility-focus-outline-color: color-mix(in oklab, var(--dark-sidebar), white 25%);
+
+    color-scheme: dark;
+  }
+}

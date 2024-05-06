@@ -1,0 +1,18 @@
+/*! shadows.scss | Vuero | Css ninja 2020-2024 */
+
+$shadow-colors: 'primary', 'secondary', 'danger', 'warning', 'info', 'success', 'purple',
+  'blue', 'red', 'orange', 'yellow', 'green';
+
+:root {
+  --base-shadow: rgb(0 0 0 / 12%);
+  --light-box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+  --light-box-shadow-md: -1px 3px 10px 0 rgb(0 0 0 / 12%);
+
+  @each $color in $shadow-colors {
+    --#{$color}-shadow-from: hsl(from var(--#{$color}) h s l / 42%);
+    --#{$color}-shadow-to: hsl(from var(--#{$color}) h s l /  20%);
+    --#{$color}-box-shadow: 
+      0 14px 26px -12px var(--#{$color}-shadow-from),
+      0 4px 23px 0 var(--base-shadow), 0 8px 10px -5px var(--#{$color}-shadow-to) !important;
+  }
+}
