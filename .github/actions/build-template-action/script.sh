@@ -50,6 +50,9 @@ zip -r $ARCHIVE_PATH . \
   -x "release/*" \
   -x ".output/*" 
 
+# human readable size
+ARCHIVE_SIZE=$(du -h $ARCHIVE_PATH | cut -f1)
+
 echo "$PWD"
 echo "$DIRECTORY"
 echo "$GITHUB_WORKSPACE"
@@ -58,7 +61,7 @@ ls -lh $ARCHIVE_PATH
 
 echo "::endgroup::"
 
-echo "- ${INPUT_PROJECT^} ${INPUT_TAG} template built :rocket:" >> $GITHUB_STEP_SUMMARY
+echo "${ARCHIVE} built (${ARCHIVE_SIZE})" >> $GITHUB_STEP_SUMMARY
 
 # echo "::set-output name=filepath::${ARCHIVE_PATH}"
 echo "filepath=${ARCHIVE_PATH}" >> "$GITHUB_OUTPUT"

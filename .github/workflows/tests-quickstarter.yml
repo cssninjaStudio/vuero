@@ -41,4 +41,4 @@ jobs:
       - name: build quickstarter
         working-directory: ./temp
         run: |
-          pnpm build
+          NODE_OPTIONS=--max_old_space_size=4096 pnpm build
