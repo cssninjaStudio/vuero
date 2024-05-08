@@ -31,7 +31,7 @@ jobs:
       - name: install quickstarter
         working-directory: ./temp
         run: |
-          pnpm install
+          pnpm --ignore-workspace install
 
       - name: test quickstarter
         working-directory: ./temp
