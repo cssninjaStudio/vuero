@@ -7,6 +7,9 @@ inputs:
   tag:
     description: 'Tag'
     required: true
+  package:
+    description: 'Package'
+    required: true
 outputs:
   filepath:
     description: "template archive path"
@@ -17,5 +20,5 @@ runs:
     - run: sudo apt-get install zip
       shell: bash
     - id: build
-      run: ${{ github.action_path }}/script.sh ${{inputs.project}} ${{inputs.tag}}
+      run: ${{ github.action_path }}/script.sh ${{inputs.project}} ${{inputs.tag}} ${{inputs.package}}
       shell: bash

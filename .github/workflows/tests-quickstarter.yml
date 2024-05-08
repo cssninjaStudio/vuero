@@ -5,7 +5,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  quickstarter-build:
+  build:
+    strategy:
+      matrix:
+        package: [app, app-ssr, app-electron, app-nuxt, demo]
     runs-on: ubuntu-latest
 
     steps:
@@ -13,82 +16,29 @@ jobs:
       
       - run: corepack enable
       
-      - id: build_quickstarter
-        name: build test quickstarter
-        uses: ./.github/actions/build-quickstarter-action
+      - id: build_app
+        name: build archive
+        uses: ./.github/actions/build-template-action
         with:
           tag: test
           project: vuero
+          package: ${{ matrix.package }}
 
       - name: extract quickstarter
         run: |
-          unzip ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }} -d ${{ github.workspace }}/quickstarter
+          unzip ${{ github.workspace }}/${{ steps.build_app.outputs.filepath }} -d ${{ github.workspace }}/temp
 
       - name: install quickstarter
-        working-directory: ./quickstarter
+        working-directory: ./temp
         run: |
           pnpm install
+
+      - name: test quickstarter
+        working-directory: ./temp
+        run: |
+          pnpm test
       
       - name: build quickstarter
-        working-directory: ./quickstarter
+        working-directory: ./temp
         run: |
           pnpm build
-
-  quickstarter-build-ssr:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      
-      - run: corepack enable
-      
-      - id: build_quickstarter
-        name: build test quickstarter
-        uses: ./.github/actions/build-quickstarter-action
-        with:
-          tag: test
-          project: vuero
-
-      - name: extract quickstarter
-        run: |
-          unzip ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }} -d ${{ github.workspace }}/quickstarter
-
-      - name: install quickstarter
-        working-directory: ./quickstarter
-        run: |
-          pnpm install
-      
-      - name: build quickstarter (ssr)
-        working-directory: ./quickstarter
-        run: |
-          pnpm ssr:build
-
-  quickstarter-build-ssg:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      
-      - run: corepack enable
-      
-      - id: build_quickstarter
-        name: build test quickstarter
-        uses: ./.github/actions/build-quickstarter-action
-        with:
-          tag: test
-          project: vuero
-
-      - name: extract quickstarter
-        run: |
-          unzip ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }} -d ${{ github.workspace }}/quickstarter
-
-      - name: install quickstarter
-        working-directory: ./quickstarter
-        run: |
-          pnpm install
-      
-      - name: build quickstarter (ssg)
-        working-directory: ./quickstarter
-        run: |
-          pnpm ssg:build
-        

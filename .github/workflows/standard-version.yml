@@ -8,18 +8,12 @@ on:
     types: [standard-version]
 
 jobs:
-  tests:
-    uses: ./.github/workflows/tests.yml
-
   tests-quickstarter:
     uses: ./.github/workflows/tests-quickstarter.yml
-  # @todo: tests run OOM on GitHub actions runner, we should split them into smaller chunks
-  # tests-e2e:
-  #   uses: ./.github/workflows/tests-e2e.yml
 
   standard-version:
     runs-on: ubuntu-latest
-    needs: [tests, tests-quickstarter]
+    needs: [tests-quickstarter]
 
     steps:
       - uses: actions/checkout@v4

@@ -29,19 +29,45 @@ jobs:
           echo "PROJECT_CAP=${project^}" >> "$GITHUB_OUTPUT"
           echo "TAG=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
 
-      - id: build_template
-        name: build release template
+      - id: build_demo
+        name: build release demo
         uses: ./.github/actions/build-template-action
         with:
           tag: ${{ steps.meta.outputs.TAG }}
           project: ${{ steps.meta.outputs.PROJECT }}
+          package: demo
 
-      - id: build_quickstarter
-        name: build release quickstarter
-        uses: ./.github/actions/build-quickstarter-action
+      - id: build_app
+        name: build release app
+        uses: ./.github/actions/build-template-action
         with:
           tag: ${{ steps.meta.outputs.TAG }}
           project: ${{ steps.meta.outputs.PROJECT }}
+          package: app
+
+      - id: build_app_ssr
+        name: build release app-ssr
+        uses: ./.github/actions/build-template-action
+        with:
+          tag: ${{ steps.meta.outputs.TAG }}
+          project: ${{ steps.meta.outputs.PROJECT }}
+          package: app-ssr
+
+      - id: build_app_electron
+        name: build release app-electron
+        uses: ./.github/actions/build-template-action
+        with:
+          tag: ${{ steps.meta.outputs.TAG }}
+          project: ${{ steps.meta.outputs.PROJECT }}
+          package: app-electron
+
+      - id: build_app_nuxt
+        name: build release app-nuxt
+        uses: ./.github/actions/build-template-action
+        with:
+          tag: ${{ steps.meta.outputs.TAG }}
+          project: ${{ steps.meta.outputs.PROJECT }}
+          package: app-nuxt
 
       - id: changelog
         name: release changelog
@@ -60,8 +86,11 @@ jobs:
           prerelease: false
           fail_on_unmatched_files: true
           files: |
-            ${{ github.workspace }}/${{ steps.build_template.outputs.filepath }}
-            ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_demo.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_app.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_app_ssr.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_app_electron.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_app_nuxt.outputs.filepath }}
 
       - name: publish github draft release
         uses: eregon/publish-release@v1

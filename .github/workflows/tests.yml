@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Lint
-        run: pnpm test:lint
+      - name: Test all packages
+        run: pnpm -r test
 
   build:
     runs-on: ubuntu-latest
@@ -40,5 +40,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build (pnpm)
-        run: NODE_OPTIONS=--max-old-space-size=4096 pnpm build
+      - name: Build all packages
+        run: pnpm -r build
