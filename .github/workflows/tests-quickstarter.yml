@@ -26,7 +26,7 @@ jobs:
 
       - name: extract quickstarter
         run: |
-          unzip ${{ github.workspace }}/${{ steps.build_app.outputs.filepath }} -d ${{ github.workspace }}/temp
+          unzip ${{ steps.build_app.outputs.filepath }} -d ${{ github.workspace }}/temp
 
       - name: install quickstarter
         working-directory: ./temp

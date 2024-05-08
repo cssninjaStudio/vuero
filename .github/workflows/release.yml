@@ -86,11 +86,11 @@ jobs:
           prerelease: false
           fail_on_unmatched_files: true
           files: |
-            ${{ github.workspace }}/${{ steps.build_demo.outputs.filepath }}
-            ${{ github.workspace }}/${{ steps.build_app.outputs.filepath }}
-            ${{ github.workspace }}/${{ steps.build_app_ssr.outputs.filepath }}
-            ${{ github.workspace }}/${{ steps.build_app_electron.outputs.filepath }}
-            ${{ github.workspace }}/${{ steps.build_app_nuxt.outputs.filepath }}
+            ${{ steps.build_demo.outputs.filepath }}
+            ${{ steps.build_app.outputs.filepath }}
+            ${{ steps.build_app_ssr.outputs.filepath }}
+            ${{ steps.build_app_electron.outputs.filepath }}
+            ${{ steps.build_app_nuxt.outputs.filepath }}
 
       - name: publish github draft release
         uses: eregon/publish-release@v1
