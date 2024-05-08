@@ -2,10 +2,9 @@ name: deploy
 on:
   workflow_dispatch:
   push:
-    paths-ignore:
-      - '.vscode/**'
-      - 'cypress/**'
-      - 'scripts/**'
+    paths:
+      - '.github/**'
+      - 'packages/demo/**'
     branches:
       - main
 
@@ -40,13 +39,13 @@ jobs:
         uses: docker/build-push-action@v5
         timeout-minutes: 60
         with:
+          context: ./packages/demo
           push: true
           tags: ${{ env.dockertags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
             VITE_API_BASE_URL=https://vuero-api.cssninja.io
-            GTM_ID=GTM-N9P6H6B
 
   deploy:
     runs-on: ubuntu-latest
