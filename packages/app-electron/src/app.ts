@@ -24,15 +24,6 @@ export async function createApp() {
   app.use(head)
 
   const pinia = createPinia()
-
-  // restore pinia state from SSR if any, before loading plugins
-  if (!import.meta.env.SSR) {
-    const initialState = window.__vuero__
-    if (typeof initialState?.pinia === 'object') {
-      pinia.state.value = { ...initialState.pinia }
-    }
-  }
-
   app.use(pinia)
 
   const vuero: VueroAppContext = {
@@ -40,7 +31,6 @@ export async function createApp() {
     router,
     head,
     pinia,
-    event,
   }
 
   for (const path in plugins) {

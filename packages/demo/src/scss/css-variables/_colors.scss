@@ -6,7 +6,7 @@
   --placeload-nuance-to: rgb(0 0 0 / 15%);
 
   // bulma colors
-  --primary: oklch(66.67% 0.146 173.07);
+  --primary: oklch(66.67% 0.146 173.07deg);
   --primary--color-invert: color-mix(in oklab, var(--primary), white 90%);
   --primary--dark-color: color-mix(in oklab, var(--primary), black 5%);
   --primary--light-color: color-mix(in oklab, var(--primary), white 90%);
@@ -55,8 +55,8 @@
   --landing-yyy: #191b2a;
   
   --smoke-white: #fcfcfc;
-  --primary-grey: #cccccc;
-  --muted-grey: #999999;
+  --primary-grey: #ccc;
+  --muted-grey: #999;
   --fade-grey: #ededed;
   --widget-grey: #f5f6fa;
   --placeholder: #cfcfcf;
@@ -86,7 +86,7 @@
   --placeload-nuance-from: rgb(255 255 255 / 15%);
   --placeload-nuance-to: rgb(255 255 255 / 24%);
 
-  --primary: oklch(59.02% 0.146 172.62);
+  --primary: oklch(59.02% 0.146 172.62deg);
   --primary--color-invert: color-mix(in oklab, var(--primary), white 80%);
   --success: #1dc598;
   --warning: #e0a654;

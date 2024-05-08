@@ -2,15 +2,11 @@ import type { Plugin } from 'vue'
 
 export interface VueroContext extends Record<string, any> {}
 
-interface ContextOptions<T> {
-  default?: () => T
-}
-
 const injectionKey = Symbol('vuero-context') as InjectionKey<VueroContext>
 
 export function useVueroContext<T>(
   key: string,
-  options?: ContextOptions<T>,
+  defaultValue?: () => T,
 ): Ref<T | null> {
   const context = inject(injectionKey)
 
@@ -21,13 +17,9 @@ export function useVueroContext<T>(
   const state = toRef(context, key)
 
   if (state.value === undefined) {
-    const val = options?.default?.()
+    const val = defaultValue?.()
     state.value = val
   }
-
-  // if (!(key in context)) {
-  //   context[key] = options?.default?.() ?? null
-  // }
 
   return state
 }

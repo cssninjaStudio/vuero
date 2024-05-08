@@ -210,13 +210,14 @@ function reset() {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffffAA;
+    color: #fffA;
     transition: color 0.2s;
 
     &.is-contrasted {
-      color: #00000077;
+      color: #0007;
     }
   }
+
   .color-card-header-meta {
     display: flex;
     align-items: center;
@@ -227,7 +228,7 @@ function reset() {
         color: #fff;
 
         &.is-contrasted {
-          color: #000000AA;
+          color: #000A;
         }
       }
     }

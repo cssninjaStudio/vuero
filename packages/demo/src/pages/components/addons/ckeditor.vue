@@ -56,7 +56,7 @@ onMounted(async () => {
   editor.value = await import('@ckeditor/ckeditor5-build-classic').then(m => m.default)
 })
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'CKEditor'
 })

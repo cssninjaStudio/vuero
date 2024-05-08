@@ -8,7 +8,7 @@ const toc = useMarkdownToc(markdownContainer)
 const themeColors = useThemeColors()
 const { options } = useSplineSimple()
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VBillboardJS'
 })

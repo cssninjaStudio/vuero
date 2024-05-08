@@ -304,6 +304,7 @@ useHead({
       border-inline-start: 1px color-mix(in oklab, var(--fade-grey), black 3%);
     }
   }
+
   .is-pushed-messages {
     .view-wrapper {
       margin-inline-start: 140px !important;

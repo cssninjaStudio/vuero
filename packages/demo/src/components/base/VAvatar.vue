@@ -737,6 +737,7 @@ const { onceError } = useImageError()
 
     &.is-more {
       border-color: color-mix(in oklab, var(--dark-sidebar), black 12%);
+
       .inner {
         background: color-mix(in oklab, var(--dark-sidebar), white 10%);
       }

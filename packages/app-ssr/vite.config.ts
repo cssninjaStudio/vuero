@@ -53,7 +53,7 @@ export default defineConfig(({ isSsrBuild }) => ({
         entryFileNames: isSsrBuild ? '[name].mjs' : '[name]-[hash].js',
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        chunkFileNames: `assets/_/[name].${isSsrBuild ? 'mjs' : 'js'}`,
+        chunkFileNames: `assets/_/[hash].${isSsrBuild ? 'mjs' : 'js'}`,
         assetFileNames: 'assets/[hash][extname]',
       },
     },

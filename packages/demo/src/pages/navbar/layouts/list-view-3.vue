@@ -2,7 +2,7 @@
 type TabId = 'active' | 'inactive'
 const activeTab = ref<TabId>('active')
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'List View 3'
 })

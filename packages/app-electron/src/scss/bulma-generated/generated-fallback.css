@@ -2995,10 +2995,6 @@ code {
   color: rgb(255, 255, 255);
 }
 
-.is-dark strong {
-  color: rgb(255, 255, 255);
-}
-
 .title.is-purple,
 .subtitle.is-purple {
   color: rgb(255, 255, 255);
@@ -3315,6 +3311,10 @@ code {
   background: rgb(255, 255, 255);
 }
 
+.vc-popover-content-wrapper .vc-nav-popover-container {
+  background: rgb(255, 255, 255);
+}
+
 .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-title {
   color: rgb(255, 255, 255);
 }
@@ -3329,6 +3329,7 @@ code {
 
 .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-items .vc-nav-item {
   color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 .is-dark .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-items .vc-nav-item {

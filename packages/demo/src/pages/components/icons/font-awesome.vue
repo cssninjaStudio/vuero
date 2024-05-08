@@ -22,7 +22,7 @@ function getSnippet(icon: any) {
   return `<i class="fas fa-${icon.name}" aria-hidden="true"></i>`
 }
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Font Awesome Icons'
 })

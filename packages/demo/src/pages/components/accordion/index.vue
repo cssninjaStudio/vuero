@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VAccordion'
 })

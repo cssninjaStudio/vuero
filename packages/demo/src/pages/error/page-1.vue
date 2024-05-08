@@ -2,6 +2,8 @@
 useHead({
   title: 'Error Page 1 - Vuero',
 })
+
+const router = useRouter()
 </script>
 
 <template>
@@ -27,7 +29,7 @@ useHead({
           <VButton
             color="primary"
             elevated
-            @click="$router.go(-1)"
+            @click="() => router.go(-1)"
           >
             Take me Back
           </VButton>

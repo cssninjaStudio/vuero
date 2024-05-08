@@ -1,6 +1,7 @@
 <script setup lang="ts">
-useVueroContext({
-  pageTitle: 'My App',
+const pageTitle = useVueroContext<string>('page-title')
+onMounted(() => {
+  pageTitle.value = 'My App'
 })
 </script>
 

@@ -554,6 +554,7 @@ declare module 'vue' {
     VModalSizesDocumentation: typeof import('./../documentation/modal/v-modal-sizes-documentation.md')['default']
     VOptgroup: typeof import('./../src/components/base/VOptgroup.vue')['default']
     VOption: typeof import('./../src/components/base/VOption.vue')['default']
+    VPeity: typeof import('./../src/components/base-addons/VPeity.vue')['default']
     VPhotosSwipe: typeof import('./../src/components/base-addons/VPhotosSwipe.vue')['default']
     VPlaceholderPage: typeof import('./../src/components/base/VPlaceholderPage.vue')['default']
     VPlaceholderPageDocumentation: typeof import('./../documentation/placeholder-page/v-placeholder-page-documentation.md')['default']

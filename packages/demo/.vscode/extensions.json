@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "lokalise.i18n-ally",
+    "dbaeumer.vscode-eslint",
+    "syler.sass-indented",
+    "stylelint.vscode-stylelint",
+    "antfu.goto-alias",
+    "antfu.iconify"
+  ]
+}

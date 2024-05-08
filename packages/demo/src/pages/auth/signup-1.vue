@@ -593,6 +593,7 @@ useHead({
       &::-webkit-progress-bar {
         background-color: var(--white);
       }
+
       &::-webkit-progress-value {
         background-color: var(--primary);
         transition: width 0.5s ease;

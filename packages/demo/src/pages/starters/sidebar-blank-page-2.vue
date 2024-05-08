@@ -13,7 +13,7 @@ import Layout from '/@src/layouts/sidebar.vue'
  * @see /src/router.ts
  */
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Blank Page 2'
 })

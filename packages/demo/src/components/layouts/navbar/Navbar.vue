@@ -448,7 +448,6 @@ const isScrolling = computed(() => {
       }
 
       .right {
-
         .icon-link {
           background: color-mix(in oklab, var(--dark-sidebar), black 2%);
 

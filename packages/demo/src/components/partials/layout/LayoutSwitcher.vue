@@ -1017,6 +1017,7 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
   :global(.layout-switcher-modal-wrapper .modal-content) {
     max-height: 100vh;
   }
+
   .switcher-modal-content {
     flex-direction: column-reverse;
 
@@ -1039,6 +1040,7 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
       border-color: color-mix(in oklab, var(--dark-sidebar), white 12%);
     }
   }
+
   .layout-selector {
     .layout-item {
       &.is-active {

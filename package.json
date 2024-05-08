@@ -12,6 +12,34 @@
     "node": ">=18",
     "npm": ">=10"
   },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "commitlint": "19.3.0",
+    "eslint": "8.57.0",
+    "lint-staged": "15.2.2",
+    "stylelint": "16.5.0",
+    "typescript": "5.4.5",
+    "yorkie": "2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e -V "
+  },
+  "lint-staged": {
+    "packages/demo/**/*.ts": [
+      "eslint --fix"
+    ],
+    "packages/demo/**/*.scss": [
+      "stylelint"
+    ],
+    "packages/demo/**/*.md": [
+      "eslint --fix"
+    ],
+    "packages/demo/**/*.vue": [
+      "eslint --fix"
+    ]
+  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

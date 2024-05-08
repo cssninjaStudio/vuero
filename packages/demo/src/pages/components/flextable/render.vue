@@ -6,7 +6,7 @@ import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDrop
 import VFlexTableSortColumn from '/@src/components/base/VFlexTableSortColumn.vue'
 import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Render functions (advanced)'
 })

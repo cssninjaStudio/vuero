@@ -31,4 +31,4 @@ EXPOSE 3000 8080
 
 ENV NODE_ENV=production
 
-CMD ["pnpm", "ssr:serve"]
+CMD ["pnpm", "ssr:start"]

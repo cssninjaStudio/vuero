@@ -3,7 +3,7 @@ import type { VFlexTableWrapperDataResolver } from '/@src/components/base/VFlexT
 
 const { isMobileScreen } = useScreenSize()
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Async data (advanced)'
 })

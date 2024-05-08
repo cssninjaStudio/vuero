@@ -10,7 +10,7 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VMarkdownPreview'
 })

@@ -299,6 +299,7 @@
     }
   }
 }
+
 @media (width <= 767px) {
   .centered-mockup-wrapper {
     .hexagon {

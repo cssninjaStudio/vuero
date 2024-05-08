@@ -21,7 +21,7 @@ const props = withDefaults(
   },
 )
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 const route = useRoute()
 
 const linksWithChildren = computed(() => {

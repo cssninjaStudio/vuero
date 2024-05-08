@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { type RouteLocationAsString } from 'unplugin-vue-router'
+import type { RouteLocationRaw } from 'vue-router'
 
 export type VActionDark = '1' | '2' | '3' | '4' | '5' | '6'
 export interface VActionProps {
-  to?: RouteLocationAsString
+  to?: RouteLocationRaw
   dark?: VActionDark
   active?: boolean
   rounded?: boolean

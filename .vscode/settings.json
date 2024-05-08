@@ -2,27 +2,14 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
+  "eslint.enable": false,
   "[markdown]": {
     "editor.rulers": [80]
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "json",
-    "markdown",
-    "typescript",
-    "vue"
-  ],
-  "i18n-ally.localesPaths": "src/locales",
-  "i18n-ally.enabledParsers": ["yaml", "json", "json5"],
-  "i18n-ally.sortKeys": true,
-  "i18n-ally.keystyle": "nested",
   "files.associations": {
     "*.json": "jsonc"
   },
+  "vue.codeActions.enabled": false,
   "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"],
-  "vue.codeActions.enabled": false
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -3,8 +3,8 @@ import type { SlotsType } from 'vue'
 import type {
   RouteLocationOptions,
   LocationQueryValue,
-} from 'vue-router/auto'
-import { RouterLink } from 'vue-router'
+} from 'vue-router'
+import { NuxtLink } from '#components'
 
 export default defineComponent({
   props: {
@@ -95,7 +95,7 @@ export default defineComponent({
       })
 
       const link = h(
-        RouterLink,
+        NuxtLink,
         {
           to: sortedLink.value,
           onClick: handleLinkClick,

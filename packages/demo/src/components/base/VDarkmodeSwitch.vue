@@ -135,6 +135,7 @@ const { isDark, onChange } = useDarkmode()
     margin: 0 auto;
   }
 }
+
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .theme-toggle {
     margin: 0 auto;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VCardSocialMeta } from '/@src/data/documentation/components-meta'
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VCardSocial'
 })

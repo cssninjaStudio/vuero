@@ -4,7 +4,7 @@ import { VPlaceholderSectionMeta } from '/@src/data/documentation/components-met
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VPlaceholderSection'
 })

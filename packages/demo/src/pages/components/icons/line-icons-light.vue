@@ -24,7 +24,7 @@ function getSnippet(icon: any) {
   return ` <i class="lnil ${icon.className}" aria-hidden="true"></i>`
 }
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Line Icons Icons'
 })

@@ -1,0 +1,15 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "eslint.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "vue.codeActions.enabled": false,
+  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

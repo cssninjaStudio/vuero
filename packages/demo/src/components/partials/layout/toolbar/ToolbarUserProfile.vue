@@ -141,7 +141,7 @@ function logout() {
   }
 
   .dropdown-content, :deep(.dropdown-content) {
-    padding-top: 0px !important;
+    padding-top: 0 !important;
     overflow: hidden;
 
     .dropdown-head {
@@ -181,6 +181,7 @@ function logout() {
     }
   }
 }
+
 .is-dark {
   .profile-dropdown {
     .dropdown-content, :deep(.dropdown-content) {

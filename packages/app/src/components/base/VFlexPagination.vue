@@ -22,7 +22,6 @@ const props = withDefaults(defineProps<VFlexPaginationProps>(), {
   routerQueryKey: 'page',
 })
 
-const { t } = useI18n()
 const route = useRoute()
 const lastPage = computed(() => Math.ceil(props.totalItems / props.itemPerPage) || 1)
 const totalPageDisplayed = computed(() =>
@@ -106,7 +105,6 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           :to="paginatedLink(1)"
           tabindex="0"
           class="pagination-link"
-          :aria-label="t('components.v-flex-pagination.goto-page-title', { page: 1 })"
           :class="[currentPage === 1 && 'is-current']"
           @keydown.enter.prevent="
             (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
@@ -129,7 +127,6 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           :to="paginatedLink(page)"
           tabindex="0"
           class="pagination-link"
-          :aria-label="t('components.v-flex-pagination.goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
           @keydown.enter.prevent="
@@ -150,9 +147,6 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           :to="paginatedLink(lastPage)"
           tabindex="0"
           class="pagination-link"
-          :aria-label="
-            t('components.v-flex-pagination.goto-page-title', { page: lastPage })
-          "
           :class="[currentPage === lastPage && 'is-current']"
           @keydown.enter.prevent="
             (e: MouseEvent) => (e.target as HTMLAnchorElement).click()

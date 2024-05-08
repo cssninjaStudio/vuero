@@ -1,5 +1,5 @@
 // pie.ts
-import { type PeityOptions } from '/@src/components/base/VPeity.vue'
+import type { PeityOptions } from './types'
 import { createSvgElement } from './createSvgElement'
 
 export function drawPie(el: HTMLElement, data: number[], opts: PeityOptions) {

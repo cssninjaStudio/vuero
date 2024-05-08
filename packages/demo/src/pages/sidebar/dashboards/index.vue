@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-useVueroContext({
-  pageTitle: () => t('pages.dashboard-personnal-1.page-title'),
+const pageTitle = useVueroContext<string>('page-title')
+onMounted(() => {
+  pageTitle.value = t('pages.dashboard-personnal-1.page-title')
 })
 
 useHead(() => ({

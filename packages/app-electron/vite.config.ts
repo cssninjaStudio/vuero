@@ -32,13 +32,9 @@ export default defineConfig({
     ],
   },
   // development server configuration
-  server: process.env.VSCODE_DEBUG && (() => {
-    const url = new URL(pkg.debug.env.VITE_DEV_SERVER_URL)
-    return {
-      host: url.hostname,
-      port: +url.port,
-    }
-  })(),
+  server: {
+    port: 3000,
+  },
   clearScreen: false,
   // Predefine dependencies in order to prevent reloading them in the browser during development.
   optimizeDeps: {
@@ -56,8 +52,8 @@ export default defineConfig({
       output: {
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/_/[name].js',
+        entryFileNames: '[name]-[hash].js',
+        chunkFileNames: 'assets/_/[hash].js',
         assetFileNames: 'assets/[hash][extname]',
       },
     },
@@ -167,7 +163,7 @@ export default defineConfig({
         entry: 'electron/main/index.ts',
         onstart({ startup }) {
           if (process.env.VSCODE_DEBUG) {
-            console.log(/* For `.vscode/.debug.script.mjs` */'[startup] Electron App')
+            console.log(/* For `.vscode/.debug.script.mjs` */'[startup] Electron app ready')
           } else {
             startup()
           }

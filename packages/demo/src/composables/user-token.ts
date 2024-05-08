@@ -1,6 +1,5 @@
 import type { H3Event } from 'h3'
 import { deleteCookie, getCookie, setCookie } from 'h3'
-import { useStorage } from '@vueuse/core'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { useSSRContext } from 'vue'
 import { type VueroSSRContext } from '/@server/types'
@@ -29,7 +28,7 @@ export function useUserToken(event?: H3Event) {
 
   // when client only, use localStorage
   if (!__VUERO_SSR_BUILD__) {
-    token = useStorage(tokenKey, '')
+    token = useSessionStorage(tokenKey, '')
   }
 
   // otherwise, we need to use cookies to share the token between client and server

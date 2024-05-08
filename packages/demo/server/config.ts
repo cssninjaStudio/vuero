@@ -11,7 +11,9 @@ import { defineLazyEventHandler } from 'h3'
  * @see https://h3.unjs.io/
  */
 export function extendH3App(app: App) {
-  app.use('/api/hello-world', defineLazyEventHandler(() => import('./handlers/hello-world').then(m => m.default)))
+  app.use('/api/hello-world', defineLazyEventHandler(
+    () => import('./handlers/hello-world').then(m => m.default),
+  ))
 }
 
 export function generateStaticParams(): StaticParams {

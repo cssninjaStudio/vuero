@@ -186,7 +186,6 @@ useHead({
 }
 
 .is-dark {
-
   .video-section {
     .title {
       color: var(--white) !important;

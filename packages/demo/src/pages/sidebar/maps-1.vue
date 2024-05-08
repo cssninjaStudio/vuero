@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const panels = usePanels()
 const layoutSwitcher = useLayoutSwitcher()
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Maps 1'
 })

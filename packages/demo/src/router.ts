@@ -26,7 +26,7 @@ import {
  * /users/:id: -> renders the users/[id].vue component. id becomes a route param.
  *
  * View more examples:
- * @see https://github.com/posva/unplugin-vue-router#routes-folder-structure
+ * @see https://uvr.esm.is/guide/file-based-routing.html
  */
 export function createRouter() {
   return createClientRouter({

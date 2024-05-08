@@ -1,7 +1,10 @@
-/// <reference types="vite-plugin-electron/electron-env" />
-
 declare namespace NodeJS {
+  interface Process {
+    electronApp: import('node:child_process').ChildProcess
+  }
   interface ProcessEnv {
+    NODE_ENV: 'development' | 'test' | 'production'
+    
     VSCODE_DEBUG?: 'true'
     /**
      * The built directory structure
@@ -12,8 +15,8 @@ declare namespace NodeJS {
      * │ │ └── index.js    > Electron-Main
      * │ └─┬ preload
      * │   └── index.mjs   > Preload-Scripts
-     * ├─┬ dist
-     * │ └── index.html    > Electron-Renderer
+     * └─┬ dist
+     *   └── index.html    > Electron-Renderer
      * ```
      */
     APP_ROOT: string

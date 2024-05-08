@@ -56,7 +56,7 @@ export default defineConfig({
         // Using only hash to prevent adblockers from blocking assets that match their patterns.
         // Replace with [name] to use the original name for debug purposes.
         entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/_/[name].js',
+        chunkFileNames: 'assets/_/[hash].js',
         assetFileNames: 'assets/[hash][extname]',
       },
     },

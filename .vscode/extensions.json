@@ -3,7 +3,6 @@
     "Vue.volar",
     "lokalise.i18n-ally",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
     "syler.sass-indented",
     "stylelint.vscode-stylelint",
     "antfu.iconify"

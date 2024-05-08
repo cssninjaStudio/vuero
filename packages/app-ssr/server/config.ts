@@ -3,6 +3,7 @@
 
 import type { App } from 'h3'
 import type { StaticParams } from './types'
+import { defineLazyEventHandler } from 'h3'
 
 /**
  * Extend h3 app with eventHandler
@@ -10,18 +11,17 @@ import type { StaticParams } from './types'
  * @see https://h3.unjs.io/
  */
 export function extendH3App(app: App) {
-  // app.use('/api/hello/:name', eventHandler(async (event) => {
-  //   const query = getQuery(event)
-  //   const params = getRouterParams(event)
-
-  //   return `Hello ${params.name}!`
-  // }))
+  // app.use('/api/hello-world', defineLazyEventHandler(
+  //   () => import('./handlers/hello-world').then(m => m.default),
+  // ))
 }
 
 export function generateStaticParams(): StaticParams {
   return {
-    // '/path/with/dynamic/[slug]': async () => {
-    //   return [{ slug: 'first-slug' }, { slug: 'second-slug' }, { slug: 'third-slug' }]
-    // },
+    // '/path/with/dynamic/[slug]': () => [
+    //   { slug: 'first-slug' },
+    //   { slug: 'second-slug' },
+    //   { slug: 'third-slug' },
+    // ],
   }
 }

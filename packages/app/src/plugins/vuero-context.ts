@@ -1,14 +1,6 @@
+import { createVueroContext } from '/@src/composables/vuero-context'
 import { definePlugin } from '/@src/utils/plugins'
 
-interface VueroContext {
-  pageTitle: Ref<string>
-}
-export const injectionKey = Symbol('vuero-context') as InjectionKey<VueroContext>
-
-export default definePlugin(({ app }) => {
-  const pageTitle = ref('')
-
-  app.provide(injectionKey, {
-    pageTitle,
-  })
+export default definePlugin(({ app}) => {
+  app.use(createVueroContext())
 })

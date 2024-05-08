@@ -4,7 +4,7 @@ import { VFlexMeta, VFlexItemMeta } from '/@src/data/documentation/components-me
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const pageTitle = useVueroContext('page-title')
+const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VFlex'
 })

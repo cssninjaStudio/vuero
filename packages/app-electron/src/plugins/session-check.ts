@@ -20,10 +20,7 @@ export default definePlugin(async ({ router, pinia }) => {
   router.beforeEach((to) => {
     const token = useUserToken()
     if (to.meta.requiresAuth && !token.value) {
-      return {
-        name: '/auth',
-        query: { redirect: to.fullPath },
-      }
+      return '/'
     }
   })
 })
