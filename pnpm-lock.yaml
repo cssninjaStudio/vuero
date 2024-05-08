@@ -244,6 +244,9 @@ importers:
       sass:
         specifier: npm:sass-embedded@1.75.0
         version: sass-embedded@1.75.0
+      terser:
+        specifier: 5.31.0
+        version: 5.31.0
       typescript:
         specifier: 5.4.5
         version: 5.4.5
