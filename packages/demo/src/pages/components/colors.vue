@@ -76,7 +76,7 @@ const layoutColors = [
         <!--Theme Colors-->
         <ColorsDocumentation />
 
-        <div class="columns is-multiline">
+        <div class="columns is-multiline mb-6">
           <div
             v-for="color in bulmaColors"
             :key="color"
@@ -86,9 +86,9 @@ const layoutColors = [
           </div>
         </div>
 
-        <ThemeDocumentation />
+        <!-- <ThemeDocumentation /> -->
 
-        <div class="columns is-multiline">
+        <div class="columns is-multiline mb-6">
           <div
             v-for="color in layoutColors"
             :key="color"
@@ -98,8 +98,8 @@ const layoutColors = [
           </div>
         </div>
 
-        <ThemingDocumentation />
-        <div class="columns is-multiline">
+        <!-- <ThemingDocumentation /> -->
+        <div class="columns is-multiline mb-6">
           <div
             v-for="color in additionalColors"
             :key="color"

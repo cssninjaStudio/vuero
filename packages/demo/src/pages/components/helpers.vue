@@ -342,3 +342,9 @@ useHead({
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+.is-dark strong {
+  color: var(--dark-dark-text);
+}
+</style>
