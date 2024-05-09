@@ -14,12 +14,13 @@ jobs:
   standard-version:
     runs-on: ubuntu-latest
     needs: [tests-quickstarter]
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # needed for git history
-          token: ${{ secrets.APP_GITHUB_TOKEN }}
 
       # Enable corepack, note that nodejs is already installed
       - run: corepack enable
@@ -34,5 +35,4 @@ jobs:
           git config user.email admin@digisquad.io
           pnpm dlx standard-version ${{ github.event.inputs.options }}
           git push --follow-tags origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.APP_GITHUB_TOKEN }}
+
