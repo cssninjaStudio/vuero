@@ -25,7 +25,7 @@ const links = ref<LandingNavItem[]>([
   },
   {
     label: 'Support',
-    to: 'https://cssninja.io',
+    to: 'https://cssninja.io/faq/support',
   },
 ])
 

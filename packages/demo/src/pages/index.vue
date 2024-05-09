@@ -709,3 +709,10 @@ useHead({
     </MarketingSideFeatures>
   </Layout>
 </template>
+
+<style scoped lang="scss">
+#vuero-demos,
+#vuero-components {
+  scroll-margin-top: 50px;
+}
+</style>

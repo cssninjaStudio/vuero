@@ -246,6 +246,7 @@ const searchLabel = computed(() => {
           v-if="!filterInput && sidebarDemos.length > 6 && sidebarDemosFiltered.length > 0"
           :icon="showMoreSidebar ? 'lucide:minus': 'lucide:plus'"
           size="huge"
+          rounded
           bold
           raised
           :color="showMoreSidebar ? 'light' : 'primary'"
@@ -338,6 +339,7 @@ const searchLabel = computed(() => {
           v-if="!filterInput && navbarDemos.length > 6 && navbarDemosFiltered.length > 0"
           :icon="showMoreNavbar ? 'lucide:minus': 'lucide:plus'"
           size="huge"
+          rounded
           bold
           raised
           :color="showMoreNavbar ? 'light' : 'primary'"
@@ -430,6 +432,7 @@ const searchLabel = computed(() => {
           v-if="!filterInput && minimalDemos.length > 6 && minimalDemosFiltered.length > 0"
           :icon="showMoreMinimal ? 'lucide:minus': 'lucide:plus'"
           size="huge"
+          rounded
           bold
           raised
           :color="showMoreMinimal ? 'light' : 'primary'"
@@ -522,6 +525,7 @@ const searchLabel = computed(() => {
           v-if="!filterInput && templatesDemos.length > 6 && templatesDemosFiltered.length > 0"
           :icon="showMoreTemplates ? 'lucide:minus': 'lucide:plus'"
           size="huge"
+          rounded
           bold
           raised
           :color="showMoreTemplates ? 'light' : 'primary'"
@@ -614,6 +618,7 @@ const searchLabel = computed(() => {
           v-if="!filterInput && authDemos.length > 6 && authDemosFiltered.length > 0"
           :icon="showMoreAuth ? 'lucide:minus': 'lucide:plus'"
           size="huge"
+          rounded
           bold
           raised
           :color="showMoreAuth ? 'light' : 'primary'"
