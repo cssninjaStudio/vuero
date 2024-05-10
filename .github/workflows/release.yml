@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write
-      attestations: write
+      # id-token: write
+      # attestations: write
 
     steps:
       - uses: actions/checkout@v4
@@ -79,15 +79,15 @@ jobs:
           pnpm dlx conventional-changelog-cli -p conventionalcommits -r 2 -n ./.github/.versionrc.js -o ${{ github.workspace }}/CHANGELOG_RELEASE.md
           cat ${{ github.workspace }}/CHANGELOG_RELEASE.md
 
-      - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v1.1.0
-        with:
-          subject-path: |
-            ${{ steps.build_demo.outputs.filepath }}
-            ${{ steps.build_app.outputs.filepath }}
-            ${{ steps.build_app_ssr.outputs.filepath }}
-            ${{ steps.build_app_electron.outputs.filepath }}
-            ${{ steps.build_app_nuxt.outputs.filepath }}
+      # - name: Attest Build Provenance
+      #   uses: actions/attest-build-provenance@v1.1.0
+      #   with:
+      #     subject-path: |
+      #       ${{ steps.build_demo.outputs.filepath }}
+      #       ${{ steps.build_app.outputs.filepath }}
+      #       ${{ steps.build_app_ssr.outputs.filepath }}
+      #       ${{ steps.build_app_electron.outputs.filepath }}
+      #       ${{ steps.build_app_nuxt.outputs.filepath }}
 
       - id: create_release
         name: create github draft release
