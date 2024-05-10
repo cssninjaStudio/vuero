@@ -4,6 +4,7 @@
     "packages/app/package.json",
     "packages/app-electron/package.json",
     "packages/app-ssr/package.json",
+    "packages/app-nuxt/package.json",
     "packages/demo/package.json"
   ],
   "types": [

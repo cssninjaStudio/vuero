@@ -1,7 +1,11 @@
 {
   "name": "app-nuxt",
+  "version": "2.9.0",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
