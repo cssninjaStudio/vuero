@@ -1,6 +1,6 @@
 {
   "name": "app-electron",
-  "version": "2.9.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "main": "dist-electron/main/index.js",

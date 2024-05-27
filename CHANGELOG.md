@@ -2,6 +2,94 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/cssninjaStudio/vuero/compare/v2.9.0...v3.0.0) (2024-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* use css colors 5 features, remove generated hsl css variables via scss
+* **auth:** create useUserToken to use localstorage when client only and cookie with SSR
+* **server:** simplify ssr and ssg with vite runtime api, remove optional vite plugins
+* replace view-wapper pinia store with vuero-context plugin and composable
+* **darkmode:** replace pinia store with plugin and composable + use native view transition
+* **darkmode:** replace pinia store with plugin and composable + use native view transition
+* **layouts:** remove navbar-dropdown layout, now included in navbar
+* **layouts:** rework navbar layout to allow customization
+* **layouts:** rework navsearch layout to allow customization
+* **layouts:** rework sideblock layout to allow customization
+* **layouts:** rework sidebar layout to allow customization
+
+### 💅 Refactors
+
+* **auth:** create useUserToken to use localstorage when client only and cookie with SSR ([a7e9e9c](https://github.com/cssninjaStudio/vuero/commit/a7e9e9c6941e5959e6e7582faa603bcf7e7ea3eb))
+* **darkmode:** replace pinia store with plugin and composable + use native view transition ([0a5aaf8](https://github.com/cssninjaStudio/vuero/commit/0a5aaf808448faafc2b83de95090586efea5b34d))
+* **darkmode:** replace pinia store with plugin and composable + use native view transition ([d162054](https://github.com/cssninjaStudio/vuero/commit/d1620547610e1f25100b6be5838f7f3b7fd9a016))
+* **layouts!:** remove `src/layouts` from components auto load dirs ([45be427](https://github.com/cssninjaStudio/vuero/commit/45be427518418f6ff7987cc5b8b6af926a41501f))
+* **layouts:** remove navbar-dropdown layout, now included in navbar ([b34c8ae](https://github.com/cssninjaStudio/vuero/commit/b34c8aef46ea21cbdc1b609d17cde5f00573f31b))
+* **layouts:** rework auth layout, embed styles ([ce06e45](https://github.com/cssninjaStudio/vuero/commit/ce06e45d6104b0f6cbb886d99faba78256ffbb1b))
+* **layouts:** rework minimal layout, embed styles ([89c07dd](https://github.com/cssninjaStudio/vuero/commit/89c07dd2a49b058cdfa0957d27caa0b8b0a08df0))
+* **layouts:** rework navbar layout to allow customization ([f29cdad](https://github.com/cssninjaStudio/vuero/commit/f29cdad4c1f4c4df4a7c8fc818f8b807edd714b1))
+* **layouts:** rework navsearch layout to allow customization ([fe1b0f6](https://github.com/cssninjaStudio/vuero/commit/fe1b0f6a1784dd306735ff5a7cb5414d7ad60a5a))
+* **layouts:** rework sidebar layout to allow customization ([8a777e6](https://github.com/cssninjaStudio/vuero/commit/8a777e6eb7576432dbc012c09c826f67efd37a36))
+* **layouts:** rework sideblock layout to allow customization ([b3a76c0](https://github.com/cssninjaStudio/vuero/commit/b3a76c031508d3c2fdeb8a70a61a9f23d68ef6dc))
+* move project to mono repo ([adc7215](https://github.com/cssninjaStudio/vuero/commit/adc7215a00ac4e73a31929c2806ce7fbba4e92cd))
+* replace view-wapper pinia store with vuero-context plugin and composable ([89134c1](https://github.com/cssninjaStudio/vuero/commit/89134c1562b29d1282b82d3d3409ca3176964167))
+* **server:** simplify ssr and ssg with vite runtime api, remove optional vite plugins ([b2bbae6](https://github.com/cssninjaStudio/vuero/commit/b2bbae60016166f12a391927f544b054bec6b8ce))
+
+
+### 🩹 Bug Fixes
+
+* **a11y:** bind enter instead of space key for default actions ([10cea21](https://github.com/cssninjaStudio/vuero/commit/10cea21f9c9cb04f1f084df25c6a61f49a986f6e))
+* add overlay when mobile nav is open ([61ead0c](https://github.com/cssninjaStudio/vuero/commit/61ead0c0126900fa004c96c28915e7a6732958a9))
+* **apexcharts:** line colors in darkmode ([6807b08](https://github.com/cssninjaStudio/vuero/commit/6807b0879e52dc2c1def6a52bddb940dcc754aed))
+* avatar stack darkmode ([7a2df89](https://github.com/cssninjaStudio/vuero/commit/7a2df89bc9386f4bcd96676effa779f06eff7d4c))
+* **demo:** markdown to vue ssr prerender + hmr ([f30f05d](https://github.com/cssninjaStudio/vuero/commit/f30f05d6fd9a1f33ab69989026595398425d5109))
+* **demo:** update date picker range notation ([2f29e4e](https://github.com/cssninjaStudio/vuero/commit/2f29e4ea2e48c8d123724db820156ad074669ca7))
+* **demo:** use freepik image in product widget ([9c7cfa6](https://github.com/cssninjaStudio/vuero/commit/9c7cfa6374e5b2a4f887aae5cb2429955244250d))
+* **demo:** use VCheckbox in inbox message list ([6fbd698](https://github.com/cssninjaStudio/vuero/commit/6fbd6981ef420d3a7ed331d1705f39ac519181ab))
+* **demo:** use VTabs component in pages and panels ([b9d5e98](https://github.com/cssninjaStudio/vuero/commit/b9d5e98aea819a3981ba72a5df40317770dfab3f))
+* **plugins:** eager load plugins to prevent hmr issues ([be825bd](https://github.com/cssninjaStudio/vuero/commit/be825bd3e3aa8eef971cfad3fa4f86a340e74c4f))
+* **purge-comment:** avoid removing vue core comments ([9578570](https://github.com/cssninjaStudio/vuero/commit/957857012f493411bf7e27c15b42a0f415b72f5c))
+* **quickstarter:** add missing illustration ([1942997](https://github.com/cssninjaStudio/vuero/commit/194299769e61fb99688d96e670b5a9bedf69646c))
+* **quickstarter:** add missing webp files ([ab8799d](https://github.com/cssninjaStudio/vuero/commit/ab8799d9c25a0d0a795eea5751496ffb17423401))
+* remove unnecessary import + lazy load billboard and tiny slider only on client ([4eca75f](https://github.com/cssninjaStudio/vuero/commit/4eca75fbbbc481cb02e91c65e4f080eaa22d861b))
+* remove unused scss ([d00410e](https://github.com/cssninjaStudio/vuero/commit/d00410e62c460ddf279c7a492858e760c7d7a898))
+* remove unused useSidebar store ([5173a98](https://github.com/cssninjaStudio/vuero/commit/5173a9876f8e1697ef89aec64badbee1accd7b1c))
+* remove usage of shamefully hoist ([54a68d0](https://github.com/cssninjaStudio/vuero/commit/54a68d005c19484294dc0b3bfc23fccac670a785))
+* replace demo photo with remote images ([f028104](https://github.com/cssninjaStudio/vuero/commit/f0281049eec794fbef852c58aa2ffde2ad27bf4b))
+* **ssr:** hydration issues with teleport, darkmode, and id ([9ed2dee](https://github.com/cssninjaStudio/vuero/commit/9ed2dee5f9cdadf7982fb107b22538743a82fa0f))
+* use VIcon component to use any icon provider ([44684a4](https://github.com/cssninjaStudio/vuero/commit/44684a439512505dec628e5b22a4927194de3053))
+* **VAnimatedCheckbox:** compare raw objects ([312a39f](https://github.com/cssninjaStudio/vuero/commit/312a39fc98c965617cd9edd5d50838b89c79e35e))
+* **VCollapseLinks:** display content on mounted if contains active link ([10ab5aa](https://github.com/cssninjaStudio/vuero/commit/10ab5aa6b0e293afc0cfb110cfb6b835b62373fd))
+
+
+### 🚀 Features
+
+* add Client quickstarter ([06e3a31](https://github.com/cssninjaStudio/vuero/commit/06e3a310c60e3937dbb53d0cbf9e3c53ac334753))
+* add Dockerfile and docker compose for each quickstarters ([28f229d](https://github.com/cssninjaStudio/vuero/commit/28f229de9684c648bfca8e2e37e175c6ea022ea3))
+* add Electron quickstarter ([7c75a18](https://github.com/cssninjaStudio/vuero/commit/7c75a187251f482a37daf929b13c40fcdd516a1f))
+* add landing layout ([af5c0ab](https://github.com/cssninjaStudio/vuero/commit/af5c0ab7c0b5ecb185b572ca282d1f0b7cf03b22))
+* add Nuxt quickstarter ([034f887](https://github.com/cssninjaStudio/vuero/commit/034f8875a6439c75ed17c1b3dafd26768e5a2800))
+* add src/composables, src/stores, and src/utils to auto import directories ([1aeede1](https://github.com/cssninjaStudio/vuero/commit/1aeede1f2755699811ba616e6e22687209c22102))
+* add SSR quickstarter ([cb10780](https://github.com/cssninjaStudio/vuero/commit/cb107800819a80be811b432f6a5947aa74f20bc5))
+* add VDarkmodeSwitch component ([4a98e47](https://github.com/cssninjaStudio/vuero/commit/4a98e470e3943a713a9f1b2d1a359e03edba241c))
+* add VLink component to handle external links ([d7c6c8e](https://github.com/cssninjaStudio/vuero/commit/d7c6c8e9b5f3a6e6127e47c7eea2ddf2ab8fe7e1))
+* **base:** add end props to vdropdown ([f9574d4](https://github.com/cssninjaStudio/vuero/commit/f9574d406a03d706b295b5f1bc62d03b658e80a5))
+* configuration for max content size on layouts ([e0fc2f1](https://github.com/cssninjaStudio/vuero/commit/e0fc2f1bec08d0bdacc857978e1bee23535b79f8))
+* create useTinySlider composable ([76f3c4c](https://github.com/cssninjaStudio/vuero/commit/76f3c4c51f735671094be5b89e5eeaf06d96d6e7))
+* **demo:** add background grid effect ([bc6df70](https://github.com/cssninjaStudio/vuero/commit/bc6df705c84988de3eeb20d3bd0b6f6e2872d9da))
+* **demo:** add hello world server api route ([0373f50](https://github.com/cssninjaStudio/vuero/commit/0373f502a6f5a3be90888552281f547b93e9fcca))
+* **demo:** use focus trap and teleport in panels ([9110351](https://github.com/cssninjaStudio/vuero/commit/9110351ece15cca323dc0407276ec80eb4056685))
+* enable new vue devtools ([5ea8d16](https://github.com/cssninjaStudio/vuero/commit/5ea8d1642bb5099f8527abf596db55e86e9a3b39))
+* replace deprecated purge-icon with iconify-icon webcomponent ([e5b4af1](https://github.com/cssninjaStudio/vuero/commit/e5b4af102b79cfd9e3103a3a47ec76f2d21e0d38))
+* replace simplebar with native css scrollbars ([5ac62ad](https://github.com/cssninjaStudio/vuero/commit/5ac62ad87e92007d18e3a3580b1e674630e2cef9))
+* **ssr:** render app as stream + add cache header plugin example ([e6dabef](https://github.com/cssninjaStudio/vuero/commit/e6dabef5a323e8fcbe2397a64f46996f6a34e240))
+* update unplugin router data loader ([a497f95](https://github.com/cssninjaStudio/vuero/commit/a497f950f7c266ed570e774370f2d4e9b79c4f6e))
+* use css colors 5 features, remove generated hsl css variables via scss ([f52b909](https://github.com/cssninjaStudio/vuero/commit/f52b909d824520ed13c0c5a986825978f4155d20))
+* use fontsource variables font ([fc94a6d](https://github.com/cssninjaStudio/vuero/commit/fc94a6d5b40258daff5cb235fe9a484c20c79e00))
+* use VLink in layout components ([049dd3a](https://github.com/cssninjaStudio/vuero/commit/049dd3a74ef12371e35bf875cff1169b805a6167))
+* **VPageContentWrapper:** add size property ([6d5f682](https://github.com/cssninjaStudio/vuero/commit/6d5f682a89f4a487ad432b23dcfe41b24c479c7b))
+
 ## [2.9.0](https://github.com/cssninjaStudio/vuero/compare/v2.8.1...v2.9.0) (2024-01-23)
 
 
