@@ -26,7 +26,7 @@ services:
 
   vuero-api-demo:
     image: digisquad/cssninja.vuero-demo:latest
-    command: 'pnpm preview:json-server'
+    command: 'pnpm start:json-server'
     networks:
       - cssninja-services
     restart: 'unless-stopped'
