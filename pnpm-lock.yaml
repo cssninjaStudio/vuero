@@ -633,6 +633,9 @@ importers:
       imask:
         specifier: 7.6.0
         version: 7.6.0
+      json-server:
+        specifier: 0.17.4
+        version: 0.17.4
       listhen:
         specifier: 1.7.2
         version: 1.7.2
@@ -862,9 +865,6 @@ importers:
       js-yaml:
         specifier: 4.1.0
         version: 4.1.0
-      json-server:
-        specifier: 0.17.4
-        version: 0.17.4
       magic-string:
         specifier: 0.30.10
         version: 0.30.10
@@ -4974,7 +4974,7 @@ packages:
     resolution: {integrity: sha512-afW+h2CFafo+7Y9Lvw/xsqjaQlKLdJV7h1fCHfcYQ1C4SVMlu7OAekqWgu5d4SgvkBVU0pVpLlVsrSTBURFRkg==}
     peerDependencies:
       '@nuxt/kit': ^3.2.0
-      vue: ^3.2.0
+      vue: 3.4.10
     peerDependenciesMeta:
       '@nuxt/kit':
         optional: true
