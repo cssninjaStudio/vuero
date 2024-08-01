@@ -167,7 +167,7 @@
     "pathe": "1.1.2",
     "postcss-html": "1.6.0",
     "postcss-scss": "4.0.9",
-    "rimraf": "5.0.5",
+    "rimraf": "6.0.1",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",
     "shiki": "1.4.0",
