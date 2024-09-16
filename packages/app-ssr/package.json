@@ -61,7 +61,7 @@
     "@types/node": "20.12.8",
     "@types/serve-static": "1.15.7",
     "@vitejs/plugin-vue": "5.0.4",
-    "@vueuse/integrations": "10.9.0",
+    "@vueuse/integrations": "11.1.0",
     "fast-glob": "3.3.2",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",

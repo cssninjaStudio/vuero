@@ -152,7 +152,7 @@
     "@typescript-eslint/parser": "7.8.0",
     "@vitejs/plugin-vue": "5.0.4",
     "@vue/compiler-sfc": "3.4.26",
-    "@vueuse/integrations": "10.9.0",
+    "@vueuse/integrations": "11.1.0",
     "eslint": "8.57.0",
     "eslint-plugin-frontmatter": "0.0.8",
     "eslint-plugin-md": "1.0.19",
