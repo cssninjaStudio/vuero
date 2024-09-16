@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "20.12.8",
-    "@vueuse/nuxt": "10.9.0",
+    "@vueuse/nuxt": "11.1.0",
     "sass": "npm:sass-embedded@1.75.0",
     "typescript": "5.4.5",
     "ufo": "1.5.3",
