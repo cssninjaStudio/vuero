@@ -1,5 +1,6 @@
 <script setup lang="ts">
 export interface VInputProps {
+  id?: string
   raw?: boolean
   trueValue?: boolean
   falseValue?: boolean
@@ -9,12 +10,14 @@ const modelValue = defineModel<any>({
   default: '',
 })
 const props = withDefaults(defineProps<VInputProps>(), {
+  id: undefined,
   modelValue: '',
   trueValue: true,
   falseValue: false,
 })
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VInput',
 })

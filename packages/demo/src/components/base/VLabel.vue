@@ -9,6 +9,7 @@ const props = withDefaults(defineProps<VLabelProps>(), {
 })
 
 const context = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VLabel',
 })

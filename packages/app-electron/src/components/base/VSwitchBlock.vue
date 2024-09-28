@@ -2,6 +2,7 @@
 export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface VSwitchBlockProps {
+  id?: string
   label?: string
   color?: VSwitchBlockColor
   thin?: boolean
@@ -15,11 +16,13 @@ const modelValue = defineModel<boolean>({
   default: false,
 })
 const props = withDefaults(defineProps<VSwitchBlockProps>(), {
+  id: undefined,
   label: undefined,
   color: undefined,
 })
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VSwitchBlock',
 })

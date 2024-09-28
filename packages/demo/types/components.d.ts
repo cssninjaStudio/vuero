@@ -83,6 +83,7 @@ declare module 'vue' {
     ContentTablesDocumentation: typeof import('./../documentation/elements/content/content-tables-documentation.md')['default']
     ContentTitlesDocumentation: typeof import('./../documentation/elements/content/content-titles-documentation.md')['default']
     ContentUnorderedListsDocumentation: typeof import('./../documentation/elements/content/content-unordered-lists-documentation.md')['default']
+    copy: typeof import('./../src/components/base/VTextarea copy.vue')['default']
     CourseDashboard: typeof import('./../src/components/pages/dashboards/business/CourseDashboard.vue')['default']
     DashboardHeaderWrapper: typeof import('./../src/components/partials/lifestyle/DashboardHeaderWrapper.vue')['default']
     DatepickerBaseDocumentation: typeof import('./../documentation/plugins/datepicker/datepicker-base-documentation.md')['default']

@@ -2,22 +2,23 @@ import type { MaybeRefOrGetter, InjectionKey } from 'vue'
 import { useField, type FieldContext } from 'vee-validate'
 import { defu } from 'defu'
 
-export type VFieldContext = ReturnType<typeof createVFieldContext>
+export type VFieldContext<TValue = unknown> = {
+  id: Ref<string>
+  field: Ref<FieldContext<TValue> | undefined>
+}
 export const useVFieldSymbolContext = Symbol() as InjectionKey<VFieldContext>
 
-function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string>) {
-  const internal = ref(toValue(id))
+function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string | undefined>) {
+  const idVal = toValue(id)
+  const internal = ref<string>(idVal || useId())
   const field = ref<FieldContext<TValue>>()
 
-  watch(
-    () => toValue(id),
-    (value) => {
-      internal.value = value || `v-field-${crypto.randomUUID()}`
-    },
-  )
+  watch(() => toValue(id), () => {
+    internal.value = toValue(id) || useId()
+  })
 
-  if (id) {
-    field.value = useField(id)
+  if (idVal) {
+    field.value = useField<TValue>(idVal)
   }
 
   const vFieldContext = {
@@ -31,32 +32,31 @@ function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string>) {
 }
 
 interface VFieldContextOption {
-  id?: MaybeRefOrGetter<string>
+  id?: MaybeRefOrGetter<string | undefined>
   create?: MaybeRefOrGetter<boolean>
   inherit?: MaybeRefOrGetter<boolean>
   help?: MaybeRefOrGetter<string>
 }
 
-export function useVFieldContext(options = {} as VFieldContextOption) {
+export function useVFieldContext<TValue = unknown>(options = {} as VFieldContextOption) {
   const _options = defu(options, {
     create: true,
     inherit: true,
   })
 
-  if (unref(_options.inherit)) {
+  if (toValue(_options.inherit)) {
     const vFieldContext = inject(useVFieldSymbolContext, undefined)
     if (vFieldContext) {
-      return vFieldContext
+      return vFieldContext as VFieldContext<TValue>
     }
   }
 
-  const _help = unref(_options.help) ? unref(_options.help) + ': ' : ''
-
-  if (!unref(_options.create)) {
+  if (!toValue(_options.create)) {
+    const _help = toValue(_options.help) ? toValue(_options.help) + ': ' : ''
     throw new Error(
       `${_help}useVFieldContext (create = false) must be used inside a VField component`,
     )
   }
 
-  return createVFieldContext(_options.id)
+  return createVFieldContext<TValue>(_options.id)
 }

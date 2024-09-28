@@ -31,7 +31,10 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   wrapperClass: undefined,
 })
 
-const context = useVFieldContext()
+const context = useVFieldContext({
+  id: () => props.id,
+  help: 'VCheckbox',
+})
 
 const internal = computed({
   get() {

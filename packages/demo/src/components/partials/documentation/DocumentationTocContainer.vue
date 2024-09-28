@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const markdown = useTemplateRef<HTMLElement>('markdown')
-const toc = useMarkdownToc(markdownContainer)
+const toc = useMarkdownToc(markdown)
 </script>
 
 <template>

@@ -21,8 +21,8 @@ const props = withDefaults(
 )
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   help: 'VRangeRating',
-  id: props.id,
 })
 
 const hasValue = computed(

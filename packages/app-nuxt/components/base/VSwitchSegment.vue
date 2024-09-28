@@ -2,6 +2,7 @@
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface VSwitchSegmentProps {
+  id?: string
   labelTrue?: string
   labelFalse?: string
   color?: VSwitchSegmentColor
@@ -12,12 +13,14 @@ const modelValue = defineModel<boolean>({
 })
 
 const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
+  id: undefined,
   labelTrue: undefined,
   labelFalse: undefined,
   color: undefined,
 })
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VSwitchSegment',
 })

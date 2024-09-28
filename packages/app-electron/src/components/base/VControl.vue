@@ -49,8 +49,9 @@ const props = defineProps({
 })
 
 const { field, id } = useVFieldContext({
-  id: props.id,
-  inherit: !props.subcontrol,
+  id: () => props.id,
+  inherit: () => !props.subcontrol,
+  help: 'VControl',
 })
 
 const isValid = computed(() => props.isValid)

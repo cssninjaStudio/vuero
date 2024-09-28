@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VLabel from '~/components/base/VLabel.vue'
+import VLabel from '/@src/components/base/VLabel.vue'
 
 const props = defineProps({
   id: {
@@ -49,8 +49,9 @@ const props = defineProps({
 })
 
 const { field, id } = useVFieldContext({
-  id: props.id,
-  inherit: !props.subcontrol,
+  id: () => props.id,
+  inherit: () => !props.subcontrol,
+  help: 'VControl',
 })
 
 const isValid = computed(() => props.isValid)

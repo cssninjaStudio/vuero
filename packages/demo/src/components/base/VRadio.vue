@@ -25,8 +25,9 @@ const props = withDefaults(defineProps<VRadioProps>(), {
 })
 
 const { field, id } = useVFieldContext({
-  id: props.id,
+  id: () => props.id,
   inherit: false,
+  help: 'VRadio',
 })
 
 const internal = computed({

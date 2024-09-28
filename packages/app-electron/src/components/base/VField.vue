@@ -15,7 +15,11 @@ const props = withDefaults(defineProps<VFieldProps>(), {
   id: undefined,
   label: undefined,
 })
-const { field, id } = useVFieldContext({ id: props.id, inherit: !props.subcontrol })
+const { field, id } = useVFieldContext({
+  id: () => props.id,
+  inherit: () => !props.subcontrol,
+  help: 'VField',
+})
 
 const slots = useSlots()
 const hasLabel = computed(() => Boolean(slots?.label?.() || props.label))

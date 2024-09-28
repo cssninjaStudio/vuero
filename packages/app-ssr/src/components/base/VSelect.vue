@@ -1,5 +1,6 @@
 <script setup lang="ts">
 export interface VSelectProps {
+  id?: string
   raw?: boolean
   multiple?: boolean
 }
@@ -15,6 +16,7 @@ const props = defineProps<VSelectProps>()
 const attrs = useAttrs()
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VSelect',
 })

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 export interface VTextareaProps {
+  id?: string
   raw?: boolean
   autogrow?: boolean
 }
@@ -7,12 +8,10 @@ export interface VTextareaProps {
 const modelValue = defineModel<string>({
   default: '',
 })
-const props = defineProps<{
-  raw?: boolean
-  autogrow?: boolean
-}>()
+const props = defineProps<VTextareaProps>()
 
 const { field, id } = useVFieldContext({
+  id: () => props.id,
   create: false,
   help: 'VTextarea',
 })
