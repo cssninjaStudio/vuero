@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { RouteLocationOptions } from 'vue-router/auto'
+import type { RouteLocationOptions } from 'vue-router'
 
 export interface VFlexPaginationProps {
   itemPerPage: number

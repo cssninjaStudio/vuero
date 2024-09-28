@@ -3,7 +3,7 @@ import type { SlotsType } from 'vue'
 import type {
   RouteLocationOptions,
   LocationQueryValue,
-} from 'vue-router/auto'
+} from 'vue-router'
 import { RouterLink } from 'vue-router'
 
 export default defineComponent({
