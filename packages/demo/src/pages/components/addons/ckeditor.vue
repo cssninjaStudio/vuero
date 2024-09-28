@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import type { EditorConfig } from '@ckeditor/ckeditor5-core'
+import { hydrateOnVisible } from 'vue'
 
 // augment EditorConfig with fonts options
 import type {} from '@ckeditor/ckeditor5-font'
 
 const editor = shallowRef<any>()
-const CKEditor = defineAsyncComponent(() =>
-  import('@ckeditor/ckeditor5-vue').then(m => m.default.component),
-)
+const CKEditor = defineAsyncComponent({
+  loader: () => import('@ckeditor/ckeditor5-vue').then(m => m.Ckeditor),
+  hydrate: hydrateOnVisible(),
+})
 
 const editorConfig = {
   fontFamily: {
