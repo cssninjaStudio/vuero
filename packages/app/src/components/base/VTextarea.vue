@@ -17,7 +17,7 @@ const { field, id } = useVFieldContext({
   help: 'VTextarea',
 })
 
-const textareaRef = ref<HTMLTextAreaElement>()
+const textareaRef = useTemplateRef<HTMLTextAreaElement>('textarea')
 
 const internal = computed({
   get() {
@@ -57,7 +57,7 @@ const classes = computed(() => {
 <template>
   <textarea
     :id="id"
-    ref="textareaRef"
+    ref="textarea"
     v-model="internal"
     :class="classes"
     :name="id"

@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VRangeRatingMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Rating'
@@ -40,36 +37,24 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Rating button-->
-        <RangeRatingBasicDocumentation />
+    <DocumentationTocContainer>
+      <!--Rating button-->
+      <RangeRatingBasicDocumentation />
 
-        <RangeRatingMaxDocumentation />
+      <RangeRatingMaxDocumentation />
 
-        <RangeRatingLabelDocumentation />
+      <RangeRatingLabelDocumentation />
 
-        <RangeRatingReadonlyDocumentation />
+      <RangeRatingReadonlyDocumentation />
 
-        <RangeRatingSizesDocumentation />
+      <RangeRatingSizesDocumentation />
 
-        <RangeRatingCustomIconDocumentation />
+      <RangeRatingCustomIconDocumentation />
 
-        <DocumentationMeta
-          name="VRangeRating"
-          :meta="VRangeRatingMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VRangeRating"
+        :meta="VRangeRatingMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

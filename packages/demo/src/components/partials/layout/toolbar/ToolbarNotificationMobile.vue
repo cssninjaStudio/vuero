@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 const dropdown = useDropdownContext(dropdownElement)
 
 const { onceError } = useImageError()
@@ -7,7 +7,7 @@ const { onceError } = useImageError()
 
 <template>
   <div
-    ref="dropdownElement"
+    ref="dropdown-element"
     class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
   >
     <a

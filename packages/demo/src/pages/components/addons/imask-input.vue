@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VIMaskInputMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VIMaskInput'
@@ -40,25 +37,13 @@ useHead({
       ]"
     />
 
-    <div class="columns is-multiline">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <VImaskInputDocumentation />
+    <DocumentationTocContainer class="is-multiline">
+      <VImaskInputDocumentation />
 
-        <DocumentationMeta
-          name="VIMaskInput"
-          :meta="VIMaskInputMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VIMaskInput"
+        :meta="VIMaskInputMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

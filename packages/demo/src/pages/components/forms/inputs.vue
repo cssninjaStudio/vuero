@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VInputMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VInput'
@@ -40,53 +37,40 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Input-->
-        <InputBasicDocumentation />
+    <DocumentationTocContainer>
+      <!--Input-->
+      <InputBasicDocumentation />
 
-        <!--Help Text-->
-        <InputHelpDocumentation />
+      <!--Help Text-->
+      <InputHelpDocumentation />
 
-        <!--Rounded Input-->
-        <InputRoundedDocumentation />
+      <!--Rounded Input-->
+      <InputRoundedDocumentation />
 
-        <!--Focus Colors-->
-        <InputFocusDocumentation />
+      <!--Focus Colors-->
+      <InputFocusDocumentation />
 
-        <!--Font Awesome-->
-        <InputFaDocumentation />
+      <!--Font Awesome-->
+      <InputFaDocumentation />
 
-        <!--Line Icons-->
-        <InputLineDocumentation />
+      <!--Line Icons-->
+      <InputLineDocumentation />
 
-        <!--Lucide Icons-->
-        <InputFeatherDocumentation />
+      <!--Lucide Icons-->
+      <InputFeatherDocumentation />
 
-        <!--Loading State-->
-        <InputLoadingDocumentation />
+      <!--Loading State-->
+      <InputLoadingDocumentation />
 
-        <!--Disabled Input-->
-        <InputDisabledDocumentation />
+      <!--Disabled Input-->
+      <InputDisabledDocumentation />
 
-        <InputDatasetDocumentation />
+      <InputDatasetDocumentation />
 
-        <DocumentationMeta
-          name="VInput"
-          :meta="VInputMeta"
-        />
-      </div>
-
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VInput"
+        :meta="VInputMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

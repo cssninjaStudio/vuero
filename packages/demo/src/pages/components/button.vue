@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VButtonMeta, VButtonsMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VButton'
@@ -40,64 +37,52 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--VButton base-->
-        <VButtonBaseDocumentation />
+    <DocumentationTocContainer>
+      <!--VButton base-->
+      <VButtonBaseDocumentation />
 
-        <!--VButton link-->
-        <VButtonLinkDocumentation />
+      <!--VButton link-->
+      <VButtonLinkDocumentation />
 
-        <!--VButton colors-->
-        <VButtonColorsDocumentation />
+      <!--VButton colors-->
+      <VButtonColorsDocumentation />
 
-        <!--VButton light colors-->
-        <VButtonColorsLightDocumentation />
+      <!--VButton light colors-->
+      <VButtonColorsLightDocumentation />
 
-        <!--VButton outlined colors-->
-        <VButtonColorsOutlinedDocumentation />
+      <!--VButton outlined colors-->
+      <VButtonColorsOutlinedDocumentation />
 
-        <!--VButton placeload-->
-        <VButtonPlaceloadDocumentation />
+      <!--VButton placeload-->
+      <VButtonPlaceloadDocumentation />
 
-        <!--VButton Elevation-->
-        <VButtonElevatedDocumentation />
+      <!--VButton Elevation-->
+      <VButtonElevatedDocumentation />
 
-        <!--VButton Disabled-->
-        <VButtonDisabledDocumentation />
+      <!--VButton Disabled-->
+      <VButtonDisabledDocumentation />
 
-        <!--VButton Font Awesome-->
-        <VButtonFaDocumentation />
+      <!--VButton Font Awesome-->
+      <VButtonFaDocumentation />
 
-        <!--VButton Feather-->
-        <VButtonFeatherDocumentation />
+      <!--VButton Feather-->
+      <VButtonFeatherDocumentation />
 
-        <!--VButton Group-->
-        <VButtonGroupDocumentation />
+      <!--VButton Group-->
+      <VButtonGroupDocumentation />
 
-        <!--VButton Addons-->
-        <VButtonAddonsDocumentation />
+      <!--VButton Addons-->
+      <VButtonAddonsDocumentation />
 
-        <DocumentationMeta
-          name="VButton"
-          :meta="VButtonMeta"
-        />
+      <DocumentationMeta
+        name="VButton"
+        :meta="VButtonMeta"
+      />
 
-        <DocumentationMeta
-          name="VButtons"
-          :meta="VButtonsMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VButtons"
+        :meta="VButtonsMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

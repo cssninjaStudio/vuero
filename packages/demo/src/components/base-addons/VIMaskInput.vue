@@ -14,7 +14,7 @@ const emit = defineEmits<{
   'complete': [value: InputMask<Opts>, event?: InputEvent]
 }>()
 
-const inputElement = ref<HTMLElement>()
+const inputElement = useTemplateRef<HTMLElement>('input')
 const inputMask = shallowRef<InputMask<Opts>>()
 
 watch([inputElement, () => props.options, () => props.modelValue], () => {
@@ -69,7 +69,7 @@ defineExpose({
 
 <template>
   <input
-    ref="inputElement"
+    ref="input"
     type="text"
     :value="props.modelValue"
   >

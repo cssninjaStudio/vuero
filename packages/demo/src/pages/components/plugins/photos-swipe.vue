@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VPhotosSwipeMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VPhotosSwipe'
@@ -40,35 +37,23 @@ useHead({
       ]"
     />
 
-    <div class="columns is-multiline">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Thumbnails-->
-        <GalleryImagesDocumentation />
+    <DocumentationTocContainer class="is-multiline">
+      <!--Thumbnails-->
+      <GalleryImagesDocumentation />
 
-        <!--Curved Thumbnails-->
-        <GalleryImagesCurvedDocumentation />
+      <!--Curved Thumbnails-->
+      <GalleryImagesCurvedDocumentation />
 
-        <!--Rounded Thumbnails-->
-        <GalleryImagesRoundedDocumentation />
+      <!--Rounded Thumbnails-->
+      <GalleryImagesRoundedDocumentation />
 
-        <!--Bigger Thumbnails-->
-        <GalleryImagesLargerDocumentation />
+      <!--Bigger Thumbnails-->
+      <GalleryImagesLargerDocumentation />
 
-        <DocumentationMeta
-          name="VPhotosSwipe"
-          :meta="VPhotosSwipeMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VPhotosSwipe"
+        :meta="VPhotosSwipeMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

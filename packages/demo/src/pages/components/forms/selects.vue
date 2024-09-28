@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VSelectMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VSelect'
@@ -40,44 +37,32 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Select-->
-        <SelectBaseDocumentation />
+    <DocumentationTocContainer>
+      <!--Select-->
+      <SelectBaseDocumentation />
 
-        <!--Rounded Select-->
-        <SelectRoundedDocumentation />
+      <!--Rounded Select-->
+      <SelectRoundedDocumentation />
 
-        <!--Font Awesome-->
-        <SelectFaDocumentation />
+      <!--Font Awesome-->
+      <SelectFaDocumentation />
 
-        <!--Line Icons-->
-        <SelectLineDocumentation />
+      <!--Line Icons-->
+      <SelectLineDocumentation />
 
-        <!--Lucide Icons-->
-        <SelectFeatherDocumentation />
+      <!--Lucide Icons-->
+      <SelectFeatherDocumentation />
 
-        <!--Loading-->
-        <SelectLoadingDocumentation />
+      <!--Loading-->
+      <SelectLoadingDocumentation />
 
-        <!--Multiple-->
-        <SelectMultipleDocumentation />
+      <!--Multiple-->
+      <SelectMultipleDocumentation />
 
-        <DocumentationMeta
-          name="VSelect"
-          :meta="VSelectMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VSelect"
+        :meta="VSelectMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

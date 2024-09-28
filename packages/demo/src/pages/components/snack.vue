@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VSnackMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VSnack'
@@ -37,53 +34,41 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--VSnack base-->
-        <VSnackBaseDocumentation />
+    <DocumentationTocContainer>
+      <!--VSnack base-->
+      <VSnackBaseDocumentation />
 
-        <!--VSnack white-->
-        <VSnackWhiteDocumentation />
+      <!--VSnack white-->
+      <VSnackWhiteDocumentation />
 
-        <!--VSnack feather-->
-        <VSnackFeatherDocumentation />
+      <!--VSnack feather-->
+      <VSnackFeatherDocumentation />
 
-        <!--VSnack feather solid-->
-        <VSnackFeatherSolidDocumentation />
+      <!--VSnack feather solid-->
+      <VSnackFeatherSolidDocumentation />
 
-        <!--VSnack fa-->
-        <VSnackFaDocumentation />
+      <!--VSnack fa-->
+      <VSnackFaDocumentation />
 
-        <!--VSnack fa solid-->
-        <VSnackFaSolidDocumentation />
+      <!--VSnack fa solid-->
+      <VSnackFaSolidDocumentation />
 
-        <!--VSnack line-->
-        <VSnackLineDocumentation />
+      <!--VSnack line-->
+      <VSnackLineDocumentation />
 
-        <!--VSnack line solid-->
-        <VSnackLineSolidDocumentation />
+      <!--VSnack line solid-->
+      <VSnackLineSolidDocumentation />
 
-        <!--VSnack small image-->
-        <VSnackSmallImageDocumentation />
+      <!--VSnack small image-->
+      <VSnackSmallImageDocumentation />
 
-        <!--VSnack small icon-->
-        <VSnackSmallIconDocumentation />
+      <!--VSnack small icon-->
+      <VSnackSmallIconDocumentation />
 
-        <DocumentationMeta
-          name="VSnack"
-          :meta="VSnackMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VSnack"
+        :meta="VSnackMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

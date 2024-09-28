@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Content'
@@ -35,39 +32,27 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Typography-->
-        <ContentUnorderedListsDocumentation />
+    <DocumentationTocContainer>
+      <!--Typography-->
+      <ContentUnorderedListsDocumentation />
 
-        <!--Typography-->
-        <ContentOrderedListsDocumentation />
+      <!--Typography-->
+      <ContentOrderedListsDocumentation />
 
-        <!--Typography-->
-        <ContentTitlesDocumentation />
+      <!--Typography-->
+      <ContentTitlesDocumentation />
 
-        <!--Typography-->
-        <ContentSubtitlesDocumentation />
+      <!--Typography-->
+      <ContentSubtitlesDocumentation />
 
-        <!--Typography-->
-        <ContentBlockquotesDocumentation />
+      <!--Typography-->
+      <ContentBlockquotesDocumentation />
 
-        <!--Typography-->
-        <ContentDividersDocumentation />
+      <!--Typography-->
+      <ContentDividersDocumentation />
 
-        <!--Typography-->
-        <ContentTablesDocumentation />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <!--Typography-->
+      <ContentTablesDocumentation />
+    </DocumentationTocContainer>
   </div>
 </template>

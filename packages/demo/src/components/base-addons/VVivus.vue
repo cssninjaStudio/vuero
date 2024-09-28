@@ -10,7 +10,7 @@ export default defineComponent({
   },
   emits: ['ready'],
   setup(props, { emit }) {
-    const element = ref<HTMLElement>()
+    const element = useTemplateRef<HTMLElement>(null)
 
     watchEffect(() => {
       if (element.value) {

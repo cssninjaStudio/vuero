@@ -5,7 +5,7 @@ const panels = usePanels()
 const { onceError } = useImageError()
 
 const { locale } = useI18n()
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 const dropdown = useDropdownContext(dropdownElement)
 
 const localFlagSrc = computed(() => {
@@ -50,7 +50,7 @@ const localFlagSrc = computed(() => {
 
     <div class="toolbar-notifications is-hidden-mobile">
       <div
-        ref="dropdownElement"
+        ref="dropdown-element"
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
         <div

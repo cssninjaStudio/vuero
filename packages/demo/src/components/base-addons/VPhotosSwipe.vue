@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<VPhotoSwipeProps>(), {
 const { onceError } = useImageError()
 
 let lightbox: PhotoSwipeLightbox | null = null
-const galleryElement = ref<HTMLElement>()
+const galleryElement = useTemplateRef<HTMLElement>('gallery')
 
 onMounted(() => {
   lightbox = new PhotoSwipeLightbox({
@@ -51,7 +51,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    ref="galleryElement"
+    ref="gallery"
     class="my-gallery"
     itemscope
     itemtype="http://schema.org/ImageGallery"

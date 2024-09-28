@@ -153,7 +153,7 @@ const { field, id } = useVFieldContext({
   help: 'VMarkdownEditor',
 })
 
-const textareaRef = ref<HTMLTextAreaElement>()
+const textareaRef = useTemplateRef<HTMLTextAreaElement>('textarea')
 const mode = ref<'write' | 'preview'>('write')
 const trigger = shallowRef<CommandTrigger>()
 const cursor = shallowRef<Cursor>()
@@ -327,7 +327,7 @@ watchEffect((cleanup) => {
     <textarea
       v-show="mode === 'write'"
       :id="id"
-      ref="textareaRef"
+      ref="textarea"
       v-model="internal"
       v-bind="$attrs"
       class="textarea mt-0"

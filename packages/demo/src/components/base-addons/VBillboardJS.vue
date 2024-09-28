@@ -13,7 +13,7 @@ export interface VBillboardJSProps {
 const emit = defineEmits<VBillboardJSEmits>()
 const props = defineProps<VBillboardJSProps>()
 
-const element = ref<HTMLElement>()
+const element = useTemplateRef<HTMLElement>('element')
 
 onMounted(async () => {
   if (!element.value) return

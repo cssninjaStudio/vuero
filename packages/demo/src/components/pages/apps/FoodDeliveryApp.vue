@@ -7,9 +7,9 @@ const { onceError } = useImageError()
 
 const activeSection = ref('cart')
 
-const sliderElement = ref<HTMLElement>()
-const nextButtonElement = ref<HTMLElement>()
-const prevButtonElement = ref<HTMLElement>()
+const sliderElement = useTemplateRef<HTMLElement>('slider-element')
+const nextButtonElement = useTemplateRef<HTMLElement>('next-button')
+const prevButtonElement = useTemplateRef<HTMLElement>('prev-button')
 
 const onIndexChanged = (info: any) => {
   // direct access to info object
@@ -92,7 +92,7 @@ const goTo = (index: number) => {
 
           <div class="food-pills">
             <div
-              ref="prevButtonElement"
+              ref="prev-button"
               class="slick-custom is-prev slick-arrow"
             >
               <i
@@ -105,7 +105,7 @@ const goTo = (index: number) => {
               />
             </div>
             <div
-              ref="nextButtonElement"
+              ref="next-button"
               class="slick-custom is-next slick-arrow"
             >
               <i
@@ -118,7 +118,7 @@ const goTo = (index: number) => {
               />
             </div>
             <div
-              ref="sliderElement"
+              ref="slider-element"
               class="food-pills-inner pill-carousel"
             >
               <!--Pills Loop-->

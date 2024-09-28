@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { onceError } = useImageError()
 
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 const dropdown = useDropdownContext(dropdownElement)
 
 const wizard = useWizard()
@@ -113,7 +113,7 @@ const wizard = useWizard()
     </div>
 
     <div
-      ref="dropdownElement2"
+      ref="dropdown-element"
       class="dropdown is-right dropdown-trigger user-dropdown"
     >
       <div

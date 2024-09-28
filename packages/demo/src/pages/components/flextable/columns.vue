@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'Customize columns'
@@ -40,234 +37,222 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <VFlexTableColumnsDocumentation />
+    <DocumentationTocContainer>
+      <VFlexTableColumnsDocumentation />
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            :data="flexRowsContacts"
-            :columns="{
-              id: {
-                label: 'Identifier (inverted)',
-                inverted: true,
-                format: (value) => `ID-0000${value}`,
-              },
-              company: {
-                label: 'Company (bold)',
-                bold: true,
-              },
-              type: 'Type',
-              status: {
-                label: 'Status (center)',
-                align: 'center',
-              },
-              contacts: {
-                label: 'Contacts (end)',
-                align: 'end',
-                format: (value) => value.map((r: any) => r.initials).join(', '),
-              },
-            }"
-          />
-        </div>
-
-        <DocumentationDivider
-          id="grow"
-          title="Grow"
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          :data="flexRowsContacts"
+          :columns="{
+            id: {
+              label: 'Identifier (inverted)',
+              inverted: true,
+              format: (value) => `ID-0000${value}`,
+            },
+            company: {
+              label: 'Company (bold)',
+              bold: true,
+            },
+            type: 'Type',
+            status: {
+              label: 'Status (center)',
+              align: 'center',
+            },
+            contacts: {
+              label: 'Contacts (end)',
+              align: 'end',
+              format: (value) => value.map((r: any) => r.initials).join(', '),
+            },
+          }"
         />
+      </div>
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            :data="flexRowsContacts"
-            :columns="{
-              id: {
-                label: 'Identifier',
-                inverted: true,
-                format: (value) => `ID-0000${value}`,
-              },
-              company: {
-                label: 'Company',
-                bold: true,
-              },
-              type: 'Type',
-              status: {
-                label: 'Status',
-                align: 'center',
-              },
-              contacts: {
-                label: 'Contacts (grow)',
-                align: 'end',
-                grow: true,
-                format: (value) => value.map((r: any) => r.initials).join(', '),
-              },
-            }"
-          />
-        </div>
+      <DocumentationDivider
+        id="grow"
+        title="Grow"
+      />
 
-        <DocumentationDivider
-          id="grow-lg"
-          title="Grow (large)"
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          :data="flexRowsContacts"
+          :columns="{
+            id: {
+              label: 'Identifier',
+              inverted: true,
+              format: (value) => `ID-0000${value}`,
+            },
+            company: {
+              label: 'Company',
+              bold: true,
+            },
+            type: 'Type',
+            status: {
+              label: 'Status',
+              align: 'center',
+            },
+            contacts: {
+              label: 'Contacts (grow)',
+              align: 'end',
+              grow: true,
+              format: (value) => value.map((r: any) => r.initials).join(', '),
+            },
+          }"
         />
+      </div>
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            :data="flexRowsContacts"
-            :columns="{
-              id: {
-                label: 'Identifier',
-                inverted: true,
-                format: (value) => `ID-0000${value}`,
-              },
-              company: {
-                label: 'Company',
-                bold: true,
-              },
-              type: 'Type',
-              status: {
-                label: 'Status',
-                align: 'center',
-              },
-              contacts: {
-                label: 'Contacts (grow: lg)',
-                align: 'end',
-                grow: 'lg',
-                format: (value) => value.map((r: any) => r.initials).join(', '),
-              },
-            }"
-          />
-        </div>
+      <DocumentationDivider
+        id="grow-lg"
+        title="Grow (large)"
+      />
 
-        <DocumentationDivider
-          id="grow-xl"
-          title="Grow (xl)"
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          :data="flexRowsContacts"
+          :columns="{
+            id: {
+              label: 'Identifier',
+              inverted: true,
+              format: (value) => `ID-0000${value}`,
+            },
+            company: {
+              label: 'Company',
+              bold: true,
+            },
+            type: 'Type',
+            status: {
+              label: 'Status',
+              align: 'center',
+            },
+            contacts: {
+              label: 'Contacts (grow: lg)',
+              align: 'end',
+              grow: 'lg',
+              format: (value) => value.map((r: any) => r.initials).join(', '),
+            },
+          }"
         />
+      </div>
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            :data="flexRowsContacts"
-            :columns="{
-              id: {
-                label: 'Identifier',
-                inverted: true,
-                format: (value) => `ID-0000${value}`,
-              },
-              company: {
-                label: 'Company',
-                bold: true,
-              },
-              type: 'Type',
-              status: {
-                label: 'Status',
-                align: 'center',
-              },
-              contacts: {
-                label: 'Contacts (grow: xl)',
-                align: 'end',
-                grow: 'xl',
-                format: (value) => value.map((r: any) => r.initials).join(', '),
-              },
-            }"
-          />
-        </div>
+      <DocumentationDivider
+        id="grow-xl"
+        title="Grow (xl)"
+      />
 
-        <VFlexTableScrollableDocumentation class="mt-6" />
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          :data="flexRowsContacts"
+          :columns="{
+            id: {
+              label: 'Identifier',
+              inverted: true,
+              format: (value) => `ID-0000${value}`,
+            },
+            company: {
+              label: 'Company',
+              bold: true,
+            },
+            type: 'Type',
+            status: {
+              label: 'Status',
+              align: 'center',
+            },
+            contacts: {
+              label: 'Contacts (grow: xl)',
+              align: 'end',
+              grow: 'xl',
+              format: (value) => value.map((r: any) => r.initials).join(', '),
+            },
+          }"
+        />
+      </div>
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            print-objects
-            :data="flexRowsContacts"
-            :columns="{
-              id: {
-                label: 'Identifier',
-                inverted: true,
-                format: (value) => `ID-0000${value}`,
-              },
-              company: {
-                label: 'Company',
-                bold: true,
-                grow: true,
-              },
-              contacts: {
-                label: 'Contacts (scrollX & scrollY)',
-                grow: true,
-                scrollX: true,
-                scrollY: true,
-                cellClass: 'max-h-280',
-              },
-            }"
-          />
-        </div>
+      <VFlexTableScrollableDocumentation class="mt-6" />
 
-        <VFlexTableMediaDocumentation class="mt-6" />
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          print-objects
+          :data="flexRowsContacts"
+          :columns="{
+            id: {
+              label: 'Identifier',
+              inverted: true,
+              format: (value) => `ID-0000${value}`,
+            },
+            company: {
+              label: 'Company',
+              bold: true,
+              grow: true,
+            },
+            contacts: {
+              label: 'Contacts (scrollX & scrollY)',
+              grow: true,
+              scrollX: true,
+              scrollY: true,
+              cellClass: 'max-h-280',
+            },
+          }"
+        />
+      </div>
 
-        <div class="mt-4">
-          <VFlexTable
-            rounded
-            :data="flexRowsAdvanced"
-            :columns="{
-              username: {
-                label: 'User (media)',
-                grow: true,
-                media: true,
-              },
-              position: 'Position',
-              status: {
-                label: 'Status',
-              },
-              contacts: {
-                label: 'Contacts',
-                align: 'end',
-                format: (value) => value.map((r: any) => r.initials).join(', '),
-              },
-            }"
-          >
-            <template #body-cell="{ row, column, value }">
-              <template v-if="column.key === 'username'">
-                <VAvatar
-                  size="medium"
-                  :picture="row.picture"
-                  :badge="row.badge"
-                />
-                <div>
-                  <span class="item-name">{{ row.name }}</span>
-                  <span class="item-meta">
-                    <strong>{{ value }}</strong>
-                  </span>
-                </div>
-              </template>
+      <VFlexTableMediaDocumentation class="mt-6" />
 
-              <VPlaceload
-                v-else-if="column.key === 'status'"
-                mobile-width="30%"
+      <div class="mt-4">
+        <VFlexTable
+          rounded
+          :data="flexRowsAdvanced"
+          :columns="{
+            username: {
+              label: 'User (media)',
+              grow: true,
+              media: true,
+            },
+            position: 'Position',
+            status: {
+              label: 'Status',
+            },
+            contacts: {
+              label: 'Contacts',
+              align: 'end',
+              format: (value) => value.map((r: any) => r.initials).join(', '),
+            },
+          }"
+        >
+          <template #body-cell="{ row, column, value }">
+            <template v-if="column.key === 'username'">
+              <VAvatar
+                size="medium"
+                :picture="row.picture"
+                :badge="row.badge"
               />
-
-              <VAvatarStack
-                v-else-if="column.key === 'contacts'"
-                class="is-pushed-mobile"
-                size="small"
-                :avatars="row.contacts"
-                :title="value"
-                :limit="3"
-              />
+              <div>
+                <span class="item-name">{{ row.name }}</span>
+                <span class="item-meta">
+                  <strong>{{ value }}</strong>
+                </span>
+              </div>
             </template>
-          </VFlexTable>
-        </div>
+
+            <VPlaceload
+              v-else-if="column.key === 'status'"
+              mobile-width="30%"
+            />
+
+            <VAvatarStack
+              v-else-if="column.key === 'contacts'"
+              class="is-pushed-mobile"
+              size="small"
+              :avatars="row.contacts"
+              :title="value"
+              :limit="3"
+            />
+          </template>
+        </VFlexTable>
       </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+    </DocumentationTocContainer>
   </div>
 </template>

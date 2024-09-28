@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VFilePondMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VFilePond'
@@ -40,25 +37,13 @@ useHead({
       ]"
     />
 
-    <div class="columns is-multiline">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <VFilepondDocumentation />
+    <DocumentationTocContainer class="is-multiline">
+      <VFilepondDocumentation />
 
-        <DocumentationMeta
-          name="VFilePond"
-          :meta="VFilePondMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VFilePond"
+        :meta="VFilePondMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

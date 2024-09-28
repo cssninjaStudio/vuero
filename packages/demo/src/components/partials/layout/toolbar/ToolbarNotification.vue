@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 
 const dropdown = useDropdownContext(dropdownElement)
 const { onceError } = useImageError()
@@ -8,7 +8,7 @@ const { onceError } = useImageError()
 <template>
   <div class="toolbar-notifications is-hidden-mobile">
     <div
-      ref="dropdownElement"
+      ref="dropdown-element"
       class="dropdown is-spaced is-dots is-right dropdown-trigger"
     >
       <div

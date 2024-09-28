@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<VPlyrProps>(), {
 })
 
 const player = ref()
-const videoElement = ref<HTMLElement>()
+const videoElement = useTemplateRef<HTMLElement>('video')
 
 onMounted(async () => {
   if (videoElement.value) {
@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
 
     <video
       v-else
-      ref="videoElement"
+      ref="video"
       controls
       crossorigin="anonymous"
       playsinline

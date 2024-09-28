@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VFieldMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VField'
@@ -40,31 +37,19 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <VFieldBaseDocumentation />
-        <VFieldLabelInlineDocumentation />
-        <VFieldIdTrackingDocumentation />
-        <VFieldAddonEndDocumentation />
-        <VFieldAddonStartDocumentation />
-        <VFieldAddonRoundedDocumentation />
-        <VFieldAddonDirectionalDocumentation />
+    <DocumentationTocContainer>
+      <VFieldBaseDocumentation />
+      <VFieldLabelInlineDocumentation />
+      <VFieldIdTrackingDocumentation />
+      <VFieldAddonEndDocumentation />
+      <VFieldAddonStartDocumentation />
+      <VFieldAddonRoundedDocumentation />
+      <VFieldAddonDirectionalDocumentation />
 
-        <DocumentationMeta
-          name="VField"
-          :meta="VFieldMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VField"
+        :meta="VFieldMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

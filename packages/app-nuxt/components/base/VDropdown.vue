@@ -26,7 +26,7 @@ const props = withDefaults(defineProps<VDropdownProps>(), {
   classes: undefined,
 })
 
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 const dropdown = useDropdownContext(dropdownElement, props.options)
 
 defineExpose({
@@ -36,7 +36,7 @@ defineExpose({
 
 <template>
   <div
-    ref="dropdownElement"
+    ref="dropdown-element"
     :class="[
       props.right && 'is-right',
       props.up && 'is-up',

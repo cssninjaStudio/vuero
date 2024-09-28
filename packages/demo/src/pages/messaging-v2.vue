@@ -140,8 +140,8 @@ const selectedConversation = computed(() => {
   return conversations[0]
 })
 
-const dropdownElement2 = ref<HTMLElement>()
-const dropdown2 = useDropdownContext(dropdownElement2)
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
+const dropdown = useDropdownContext(dropdownElement)
 
 useHead({
   title: 'Messaging chat - Navbar - Vuero',
@@ -302,15 +302,15 @@ useHead({
           <div class="chat-area-footer">
             <div class="add-content">
               <div
-                ref="dropdownElement2"
+                ref="dropdown-element"
                 class="dropdown dropdown-trigger is-up"
-                :class="[dropdown2.isOpen && 'is-active']"
+                :class="[dropdown.isOpen && 'is-active']"
               >
                 <div>
                   <div
                     class="button"
                     aria-haspopup="true"
-                    @click="dropdown2.toggle"
+                    @click="dropdown.toggle"
                   >
                     <VIcon
                       icon="lucide:plus"

@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VBreadcrumbMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VBreadcrumb'
@@ -37,38 +34,26 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Breadcrumb Default-->
-        <BreadcrumbDefaultDocumentation />
+    <DocumentationTocContainer>
+      <!--Breadcrumb Default-->
+      <BreadcrumbDefaultDocumentation />
 
-        <!--Arrow Separator-->
-        <BreadcrumbArrowDocumentation />
+      <!--Arrow Separator-->
+      <BreadcrumbArrowDocumentation />
 
-        <!--Bullet Separator-->
-        <BreadcrumbBulletDocumentation />
+      <!--Bullet Separator-->
+      <BreadcrumbBulletDocumentation />
 
-        <!--Dot Separator-->
-        <BreadcrumbDotDocumentation />
+      <!--Dot Separator-->
+      <BreadcrumbDotDocumentation />
 
-        <!--Succeeds Separator-->
-        <BreadcrumbSucceedsDocumentation />
+      <!--Succeeds Separator-->
+      <BreadcrumbSucceedsDocumentation />
 
-        <DocumentationMeta
-          name="VBreadcrumb"
-          :meta="VBreadcrumbMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VBreadcrumb"
+        :meta="VBreadcrumbMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

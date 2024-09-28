@@ -32,7 +32,7 @@ const props = withDefaults(defineProps<VPeityProps>(), {
   values: () => [],
 })
 
-const svgElement = ref<HTMLElement>()
+const svgElement = useTemplateRef<HTMLElement>('svg')
 const svgHeight = computed(() => {
   const height = props.height || 16
 
@@ -96,7 +96,7 @@ watchPostEffect(() => {
 
 <template>
   <svg
-    ref="svgElement"
+    ref="svg"
     xmlns="http://www.w3.org/2000/svg"
     class="peity"
     :height="svgHeight"

@@ -7,7 +7,7 @@ import {
 
 const { expensesOptions } = useExpensesAreaChart()
 
-const sliderElement = ref<HTMLElement>()
+const sliderElement = useTemplateRef<HTMLElement>('slider-element')
 const { slider } = useTinySlider(sliderElement, {
   controls: false,
   nav: true,
@@ -61,7 +61,7 @@ const goto = (index: number) => {
               <!--Carousel-->
               <div class="cards-carousel">
                 <div
-                  ref="sliderElement"
+                  ref="slider-element"
                   class="cards-carousel-inner"
                 >
                   <!--Carousel Item-->

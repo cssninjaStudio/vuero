@@ -6,12 +6,12 @@ Dropzone.autoDiscover = false
 
 let isInit = false
 const isUploading = ref(false)
-const previewTemplateElement = ref<HTMLElement>()
-const previewContainerElement = ref<HTMLElement>()
-const totalProgressElement = ref<HTMLElement>()
-const addUploadElement = ref<HTMLElement>()
-const startUploadElement = ref<HTMLElement>()
-const cancelUploadElement = ref<HTMLElement>()
+const previewTemplateElement = useTemplateRef<HTMLElement>('preview-template')
+const previewContainerElement = useTemplateRef<HTMLElement>('preview-container')
+const totalProgressElement = useTemplateRef<HTMLElement>('total-progress')
+const addUploadElement = useTemplateRef<HTMLElement>('add-upload')
+const startUploadElement = useTemplateRef<HTMLElement>('start-upload')
+const cancelUploadElement = useTemplateRef<HTMLElement>('cancel-upload')
 const dropzone = ref<typeof Dropzone>()
 const previewTemplate = ref('')
 
@@ -243,7 +243,7 @@ watch(previewTemplate, () => {
             <div class="uploader-actions">
               <div class="uploader-action">
                 <span
-                  ref="addUploadElement"
+                  ref="add-upload"
                   class="inner-action fileinput-button hint--bubble hint--primary hint--top"
                   data-hint="Add Files"
                 >
@@ -254,7 +254,7 @@ watch(previewTemplate, () => {
               </div>
               <div class="uploader-action">
                 <button
-                  ref="startUploadElement"
+                  ref="start-upload"
                   type="button"
                   class="inner-action start hint--bubble hint--primary hint--top"
                   data-hint="Upload All"
@@ -266,7 +266,7 @@ watch(previewTemplate, () => {
               </div>
               <div class="uploader-action">
                 <button
-                  ref="cancelUploadElement"
+                  ref="cancel-upload"
                   type="button"
                   class="inner-action cancel hint--bubble hint--primary hint--top"
                   data-hint="Remove All"
@@ -282,7 +282,7 @@ watch(previewTemplate, () => {
             <!-- The global file processing state -->
             <div class="fileupload-process">
               <div
-                ref="totalProgressElement"
+                ref="total-progress"
                 class="progress progress-striped active"
                 role="progressbar"
                 aria-valuemin="0"
@@ -313,11 +313,11 @@ watch(previewTemplate, () => {
         </div>
 
         <div
-          ref="previewContainerElement"
+          ref="preview-container"
           class="template-list"
         >
           <div
-            ref="previewTemplateElement"
+            ref="preview-template"
             class="template-list-item"
           >
             <div class="preview-box">

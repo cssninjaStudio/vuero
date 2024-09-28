@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const dropdownElement = ref<HTMLElement>()
+const dropdownElement = useTemplateRef<HTMLElement>('dropdown-element')
 const dropdown = useDropdownContext(dropdownElement)
 </script>
 
@@ -8,7 +8,7 @@ const dropdown = useDropdownContext(dropdownElement)
     <div class="control">
       <div class="add-content">
         <div
-          ref="dropdownElement"
+          ref="dropdown-element"
           class="dropdown dropdown-trigger is-up"
         >
           <div>

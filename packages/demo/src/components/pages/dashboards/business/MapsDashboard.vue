@@ -14,9 +14,9 @@ const { isDark } = useDarkmode()
 const selectedFeature = ref()
 const selectedFeatureLatLng = ref()
 const selectedFeatureName = ref('')
-const mapElement = shallowRef<HTMLElement>()
-const geocoderElement = shallowRef<HTMLElement>()
-const popupElement = shallowRef<HTMLElement>()
+const mapElement = useTemplateRef<HTMLElement>('map-element')
+const geocoderElement = useTemplateRef<HTMLElement>('geocoder-element')
+const popupElement = useTemplateRef<HTMLElement>('popup-element')
 const map = shallowRef<Map>()
 const popup = shallowRef<Popup>()
 const geocoder = shallowRef<any>()
@@ -359,15 +359,15 @@ watch(
       :class="[props.reversed && 'is-reversed']"
     >
       <div
-        ref="mapElement"
+        ref="map-element"
         class="map-section"
       />
       <div
-        ref="geocoderElement"
+        ref="geocoder-element"
         class="geocoder"
       />
       <div
-        ref="popupElement"
+        ref="popup-element"
         style="display: none; visibility: hidden"
       >
         <MapMarker

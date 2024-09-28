@@ -26,8 +26,8 @@ const props = withDefaults(
 )
 
 const animatedCheckboxId = ref<string | undefined>()
-const element = ref<HTMLElement>()
-const innerElement = ref<HTMLElement>()
+const element = useTemplateRef<HTMLElement>('element')
+const innerElement = useTemplateRef<HTMLElement>('inner')
 const checked = computed(() =>
   Boolean(modelValue.value.find(item => toRaw(item) === toRaw(props.value))),
 )
@@ -90,7 +90,7 @@ watchEffect(updateCheckbox)
       class="checkmark-wrap"
     >
       <div
-        ref="innerElement"
+        ref="inner"
         class="shadow-circle"
       />
       <svg

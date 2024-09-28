@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VTooltip'
@@ -35,28 +32,16 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!-- @TODO -->
-        <!--Default Tooltip-->
-        <TooltipBaseDocumentation />
+    <DocumentationTocContainer>
+      <!-- @TODO -->
+      <!--Default Tooltip-->
+      <TooltipBaseDocumentation />
 
-        <!--Tooltip Colors-->
-        <TooltipColorsDocumentation />
+      <!--Tooltip Colors-->
+      <TooltipColorsDocumentation />
 
-        <!--Tooltip Shapes-->
-        <TooltipShapesDocumentation />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <!--Tooltip Shapes-->
+      <TooltipShapesDocumentation />
+    </DocumentationTocContainer>
   </div>
 </template>

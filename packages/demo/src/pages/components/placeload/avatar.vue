@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VPlaceloadAvatarMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VPlaceloadAvatar'
@@ -37,29 +34,17 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--Loader-->
-        <PlaceloadAvatarBaseDocumentation />
-        <PlaceloadAvatarWrapDocumentation />
-        <PlaceloadAvatarSizeDocumentation />
-        <PlaceloadAvatarRadiusDocumentation />
+    <DocumentationTocContainer>
+      <!--Loader-->
+      <PlaceloadAvatarBaseDocumentation />
+      <PlaceloadAvatarWrapDocumentation />
+      <PlaceloadAvatarSizeDocumentation />
+      <PlaceloadAvatarRadiusDocumentation />
 
-        <DocumentationMeta
-          name="VPlaceloadAvatar"
-          :meta="VPlaceloadAvatarMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VPlaceloadAvatar"
+        :meta="VPlaceloadAvatarMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

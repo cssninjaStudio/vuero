@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { VGridMeta, VGridItemMeta } from '/@src/data/documentation/components-meta'
 
-const markdownContainer = ref<HTMLElement>()
-const toc = useMarkdownToc(markdownContainer)
-
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
   pageTitle.value = 'VGrid'
@@ -37,31 +34,19 @@ useHead({
       ]"
     />
 
-    <div class="columns">
-      <div
-        ref="markdownContainer"
-        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-        class="column doc-column stay-focus-container"
-      >
-        <!--VGrid-->
-        <VGridBaseDocumentation />
+    <DocumentationTocContainer>
+      <!--VGrid-->
+      <VGridBaseDocumentation />
 
-        <DocumentationMeta
-          name="VGrid"
-          :meta="VGridMeta"
-        />
+      <DocumentationMeta
+        name="VGrid"
+        :meta="VGridMeta"
+      />
 
-        <DocumentationMeta
-          name="VGridItem"
-          :meta="VGridItemMeta"
-        />
-      </div>
-      <div
-        v-if="toc.length"
-        class="column is-3 toc-column"
-      >
-        <DocumentationToc :toc="toc" />
-      </div>
-    </div>
+      <DocumentationMeta
+        name="VGridItem"
+        :meta="VGridItemMeta"
+      />
+    </DocumentationTocContainer>
   </div>
 </template>

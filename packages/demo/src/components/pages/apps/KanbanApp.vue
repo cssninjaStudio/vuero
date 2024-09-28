@@ -16,11 +16,11 @@ const {
   search,
 } = useKanban()
 
-const newContainer = ref<HTMLElement>()
-const progressContainer = ref<HTMLElement>()
-const readyContainer = ref<HTMLElement>()
-const reviewContainer = ref<HTMLElement>()
-const completedContainer = ref<HTMLElement>()
+const newContainer = useTemplateRef<HTMLElement>('new-container')
+const progressContainer = useTemplateRef<HTMLElement>('progress-container')
+const readyContainer = useTemplateRef<HTMLElement>('ready-container')
+const reviewContainer = useTemplateRef<HTMLElement>('review-container')
+const completedContainer = useTemplateRef<HTMLElement>('completed-container')
 
 const isColumnNewCollapsed = ref(false)
 const isColumnProgressCollapsed = ref(false)
@@ -174,7 +174,7 @@ onMounted(() => {
             </div>
 
             <div
-              ref="newContainer"
+              ref="new-container"
               data-state="new"
             >
               <!-- Empty state image / text -->
@@ -290,7 +290,7 @@ onMounted(() => {
             </div>
 
             <div
-              ref="progressContainer"
+              ref="progress-container"
               data-state="progress"
             >
               <!-- Empty state image / text -->
@@ -392,7 +392,7 @@ onMounted(() => {
             </div>
 
             <div
-              ref="readyContainer"
+              ref="ready-container"
               data-state="ready"
             >
               <div
@@ -500,7 +500,7 @@ onMounted(() => {
             </div>
 
             <div
-              ref="reviewContainer"
+              ref="review-container"
               data-state="review"
             >
               <div
@@ -602,7 +602,7 @@ onMounted(() => {
             </div>
 
             <div
-              ref="completedContainer"
+              ref="completed-container"
               data-state="completed"
             >
               <!-- Empty state image / text -->
