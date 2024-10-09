@@ -52,7 +52,7 @@
     "@types/node": "20.12.8",
     "@vitejs/plugin-vue": "5.0.4",
     "cross-env": "7.0.3",
-    "electron": "30.0.2",
+    "electron": "32.2.0",
     "electron-builder": "24.13.3",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",
