@@ -72,7 +72,7 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--Image Accordion-->
+        <!-- Image Accordion -->
         <AccordionImageDocumentation />
       </div>
       <div class="column is-12">

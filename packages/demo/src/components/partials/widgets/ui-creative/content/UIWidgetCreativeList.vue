@@ -16,7 +16,7 @@ const props = withDefaults(
       v-for="item in props.list"
       :key="item.id"
       class="creative-list-item"
-      :class="'is-' + item.color"
+      :class="`is-${item.color}`"
     >
       <VAvatar
         :picture="item.picture"

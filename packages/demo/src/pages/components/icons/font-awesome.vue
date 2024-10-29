@@ -59,7 +59,7 @@ useHead({
 
     <div class="columns">
       <div class="column is-12">
-        <!--Font Awesome-->
+        <!-- Font Awesome -->
         <IconsFaDocumentation />
 
         <DocumentationDemoCard>

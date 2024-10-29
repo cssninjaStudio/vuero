@@ -3,7 +3,7 @@
     id="brands-tab"
     class="tab-content is-active"
   >
-    <!--Empty Placeholder -->
+    <!-- Empty Placeholder -->
     <VPlaceholderPage
       title="No brands to show."
       subtitle="Too bad. Looks like Clarissa enabled her brand privacy setting. You won't be

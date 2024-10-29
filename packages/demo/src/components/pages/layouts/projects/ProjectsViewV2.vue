@@ -46,13 +46,13 @@
     </div>
 
     <div class="columns is-multiline projects-card-grid">
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#118 Agios Inc. Rebranding</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -109,13 +109,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#117 Sweet Candy Website Updates</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -168,13 +168,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#116 Update our Design Plugin</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -219,13 +219,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#115 Refactor Chat App</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -273,13 +273,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#114 Develop a Marketing Website</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -330,13 +330,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#113 Develop a Landing Page</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -381,13 +381,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#112 Build a Social Mobile App</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -439,13 +439,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#111 Bulma Inc. Rebranding</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">
@@ -497,13 +497,13 @@
         </div>
       </div>
 
-      <!--Project-->
+      <!-- Project -->
       <div class="column is-6">
         <div class="grid-item">
           <div class="top-section">
             <div class="head">
               <h3>#110 Develop a Localisation Plugin</h3>
-              <!--Dropdown-->
+              <!-- Dropdown -->
               <ProjectCardDropdown />
             </div>
             <div class="body">

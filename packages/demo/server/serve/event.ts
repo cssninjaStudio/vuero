@@ -1,15 +1,15 @@
-import { readFileSync } from 'node:fs'
-
-import {
-  setResponseStatus,
-  setResponseHeader,
-  getRequestURL,
-  eventHandler,
-} from 'h3'
-import { isProduction, isDebug } from 'std-env'
 import type { ViteDevServer } from 'vite'
 
 import type { VueroServerRender } from '../types'
+import { readFileSync } from 'node:fs'
+import {
+  eventHandler,
+  getRequestURL,
+  setResponseHeader,
+  setResponseStatus,
+} from 'h3'
+
+import { isDebug, isProduction } from 'std-env'
 import { resolve } from '../utils'
 
 export function createEventHandler({
@@ -59,7 +59,7 @@ export function createEventHandler({
         setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
         setResponseStatus(event, 500)
 
-        console.error('[pageError] ' + error)
+        console.error(`[pageError] ${error}`)
         return 'Internal Server Error'
       }
     }

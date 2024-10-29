@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import type { App } from 'h3'
 import type { StaticParams } from './types'
 import { defineLazyEventHandler } from 'h3'

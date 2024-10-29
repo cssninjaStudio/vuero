@@ -4,41 +4,13 @@
   "private": true,
   "type": "module",
   "license": "SEE LICENSE IN LICENSE.md",
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.3",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
   "engines": {
     "node": ">=18",
     "npm": ">=10"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
-    "commitlint": "19.5.0",
-    "eslint": "9.11.1",
-    "lint-staged": "15.2.10",
-    "stylelint": "16.9.0",
-    "typescript": "5.6.2",
-    "yorkie": "2.0.0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -e -V "
-  },
-  "lint-staged": {
-    "packages/demo/**/*.ts": [
-      "eslint --fix"
-    ],
-    "packages/demo/**/*.scss": [
-      "stylelint"
-    ],
-    "packages/demo/**/*.md": [
-      "eslint --fix"
-    ],
-    "packages/demo/**/*.vue": [
-      "eslint --fix"
-    ]
   },
   "pnpm": {
     "peerDependencyRules": {

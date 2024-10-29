@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
-
 import { VFlexTableMeta } from '/@src/data/documentation/components-meta'
 
-const rowClick = (row: any) => {
+import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
+
+function rowClick(row: any) {
   console.log(row)
 }
 

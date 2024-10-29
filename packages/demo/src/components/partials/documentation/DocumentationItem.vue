@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { version } from '../../../../package.json'
 
-const slots = useSlots()
-const route = useRoute()
-
-const hasCodeSample = computed(() => !!slots.code?.())
-const hasExample = computed(() => !!slots.example?.())
-const hasDefault = computed(() => !!slots.default?.())
-
 const props = withDefaults(
   defineProps<{
     frontmatter?: any
@@ -23,6 +16,12 @@ const props = withDefaults(
     sourceMeta: undefined,
   },
 )
+const slots = useSlots()
+const route = useRoute()
+
+const hasCodeSample = computed(() => !!slots.code?.())
+const hasExample = computed(() => !!slots.example?.())
+const hasDefault = computed(() => !!slots.default?.())
 
 const displayCode = ref(false)
 const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)

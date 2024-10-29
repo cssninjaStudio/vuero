@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VTagColor } from '/@src/components/base/VTag.vue'
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
+import type { VTagColor } from '/@src/components/base/VTag.vue'
 import * as listData from '/@src/data/layouts/view-list-v1'
 
 export interface UserData extends VAvatarProps {
@@ -68,9 +68,9 @@ const filteredData = computed(() => {
       </div>
     </div>
 
-    <!--List-->
+    <!-- List -->
     <div class="list-view list-view-v1">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -94,7 +94,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <div class="list-view-inner">
-        <!--Item-->
+        <!-- Item -->
         <TransitionGroup
           name="list-complete"
           tag="div"
@@ -155,7 +155,7 @@ const filteredData = computed(() => {
                   <span>in Team</span>
                 </div>
 
-                <!--Dropdown-->
+                <!-- Dropdown -->
                 <ListViewV1Dropdown />
               </div>
             </div>

@@ -15,7 +15,7 @@ const avatars = [
   '/images/avatars/svg/vuero-4.svg',
 ]
 
-const handleSignup = async () => {
+async function handleSignup() {
   if (!isLoading.value) {
     step.value++
     isLoading.value = true

@@ -35,34 +35,34 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VSnack base-->
+      <!-- VSnack base -->
       <VSnackBaseDocumentation />
 
-      <!--VSnack white-->
+      <!-- VSnack white -->
       <VSnackWhiteDocumentation />
 
-      <!--VSnack feather-->
+      <!-- VSnack feather -->
       <VSnackFeatherDocumentation />
 
-      <!--VSnack feather solid-->
+      <!-- VSnack feather solid -->
       <VSnackFeatherSolidDocumentation />
 
-      <!--VSnack fa-->
+      <!-- VSnack fa -->
       <VSnackFaDocumentation />
 
-      <!--VSnack fa solid-->
+      <!-- VSnack fa solid -->
       <VSnackFaSolidDocumentation />
 
-      <!--VSnack line-->
+      <!-- VSnack line -->
       <VSnackLineDocumentation />
 
-      <!--VSnack line solid-->
+      <!-- VSnack line solid -->
       <VSnackLineSolidDocumentation />
 
-      <!--VSnack small image-->
+      <!-- VSnack small image -->
       <VSnackSmallImageDocumentation />
 
-      <!--VSnack small icon-->
+      <!-- VSnack small icon -->
       <VSnackSmallIconDocumentation />
 
       <DocumentationMeta

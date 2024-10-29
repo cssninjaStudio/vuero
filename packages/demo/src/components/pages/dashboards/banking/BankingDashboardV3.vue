@@ -11,7 +11,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
 
 <template>
   <div class="banking-dashboard banking-dashboard-v3">
-    <!--Header-->
+    <!-- Header -->
     <div class="dashboard-header">
       <div class="left">
         <span>Latest Bitcoin (BTC) Price Chart</span>
@@ -43,29 +43,29 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
       </div>
     </div>
 
-    <!--Body-->
+    <!-- Body -->
     <div class="columns">
       <div class="column is-8">
-        <!--Tiles-->
+        <!-- Tiles -->
         <div class="dashboard-tiles">
-          <!--Tile-->
+          <!-- Tile -->
           <div class="dashboard-tile">
             <span>Market Cap</span>
             <span class="dark-inverted">$129,992,260,090</span>
           </div>
-          <!--Tile-->
+          <!-- Tile -->
           <div class="dashboard-tile">
             <span>Volume 24h</span>
             <span class="dark-inverted">$453,178 K</span>
           </div>
-          <!--Tile-->
+          <!-- Tile -->
           <div class="dashboard-tile">
             <span>Low/high 24h</span>
             <span class="dark-inverted">$10,212 - $10,584</span>
           </div>
         </div>
 
-        <!--Chart-->
+        <!-- Chart -->
         <div class="dashboard-card">
           <ApexChart
             id="currency-chart"
@@ -103,7 +103,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
       </div>
 
       <div class="column is-4">
-        <!--Info-->
+        <!-- Info -->
         <div class="dashboard-card is-side">
           <VBlock
             title="Bitcoin"

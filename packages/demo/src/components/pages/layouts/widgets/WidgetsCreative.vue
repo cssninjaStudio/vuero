@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { avatarList, avatarListCreative } from '/@src/data/widgets/ui/avatarList'
+import { followersStats } from '/@src/data/widgets/ui/followers'
+import { products } from '/@src/data/widgets/ui/productList'
 import {
   socialButtonList1,
   socialButtonList2,
 } from '/@src/data/widgets/ui/socialButtonList'
-import { followersStats } from '/@src/data/widgets/ui/followers'
-import { products } from '/@src/data/widgets/ui/productList'
 </script>
 
 <template>
   <div class="columns is-multiline widget-demo-columns">
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <IllustrationWidget
         class="illustration-widget-v1"
         title="You unlocked 2 new Achievements"
@@ -21,7 +21,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         badge-right="/images/illustrations/widgets/3.svg"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <ContactWidget
         picture="/images/avatars/svg/vuero-1.svg"
         username="Erik K."
@@ -32,7 +32,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         phone="+1 444-5156"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <IllustrationWidget
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
@@ -40,7 +40,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         picture="/images/illustrations/widgets/7.svg"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <AvatarListWidget
         :avatars="avatarList"
         squared
@@ -48,7 +48,7 @@ import { products } from '/@src/data/widgets/ui/productList'
     </div>
 
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <IllustrationWidget
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
@@ -56,13 +56,13 @@ import { products } from '/@src/data/widgets/ui/productList'
         picture="/images/illustrations/widgets/4.svg"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <SocialButtonsWidget :buttons="socialButtonList1" />
 
-      <!--Widget-->
+      <!-- Widget -->
       <AvatarListWidget :avatars="avatarList" />
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="followers-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Followers" />
@@ -72,12 +72,12 @@ import { products } from '/@src/data/widgets/ui/productList'
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <CartWidget :products="products" />
     </div>
 
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="text-widget">
         <template #header>
           <UIWidgetToolbarIcon
@@ -100,7 +100,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <IllustrationWidget
         class="illustration-widget-v3"
         title="You unlocked 2 new Achievements"
@@ -108,7 +108,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         picture="/images/illustrations/widgets/5.svg"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <ContactWidget
         picture="/images/avatars/svg/vuero-1.svg"
         username="Erik K."
@@ -121,13 +121,13 @@ import { products } from '/@src/data/widgets/ui/productList'
         reversed
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <SocialButtonsWidget
         :buttons="socialButtonList2"
         rounded
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="creative-list-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Designers" />
@@ -142,7 +142,7 @@ import { products } from '/@src/data/widgets/ui/productList'
     </div>
 
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="creative-list-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Designers" />
@@ -152,14 +152,14 @@ import { products } from '/@src/data/widgets/ui/productList'
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <CallWidget
         picture="/images/illustrations/widgets/6.svg"
         badge="https://media.cssninja.io/content/avatars/7.jpg"
         username="Alice"
       />
 
-      <!--Widget-->
+      <!-- Widget -->
       <IllustrationWidget
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"

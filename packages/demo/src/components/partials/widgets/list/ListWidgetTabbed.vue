@@ -14,7 +14,7 @@ const props = withDefaults(
 
 const state = ref(props.toggled)
 
-const toggleTabs = () => {
+function toggleTabs() {
   state.value = !state.value
 }
 </script>

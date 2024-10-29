@@ -17,7 +17,7 @@ const props = withDefaults(
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
-      <!--Item-->
+      <!-- Item -->
       <div
         v-for="item in components"
         :key="item.id"

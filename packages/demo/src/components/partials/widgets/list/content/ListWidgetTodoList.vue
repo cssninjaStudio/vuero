@@ -8,10 +8,6 @@ export interface ModelItem {
   time?: string
 }
 
-const modelValue = defineModel<T[]>({
-  default: () => [],
-})
-
 const props = withDefaults(
   defineProps<{
     todos?: T[]
@@ -22,6 +18,10 @@ const props = withDefaults(
     color: undefined,
   },
 )
+
+const modelValue = defineModel<T[]>({
+  default: () => [],
+})
 </script>
 
 <template>

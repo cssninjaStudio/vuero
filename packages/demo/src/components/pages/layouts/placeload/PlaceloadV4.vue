@@ -53,9 +53,9 @@ const optionsSingle = [
     </div>
 
     <div class="tile-grid tile-grid-v1">
-      <!--Tile Grid v1-->
+      <!-- Tile Grid v1 -->
       <div class="columns is-multiline">
-        <!--Grid item-->
+        <!-- Grid item -->
         <div
           v-for="key in 30"
           :key="key"

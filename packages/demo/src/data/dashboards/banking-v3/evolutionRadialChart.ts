@@ -20,7 +20,7 @@ export function useEvolutionRadialChart() {
             fontSize: '13px',
             fontFamily: '"Roboto Flex Variable", sans-serif',
             color: themeColors.grey,
-            formatter: function () {
+            formatter() {
               return ['(30 days)']
             },
           },

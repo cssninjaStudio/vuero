@@ -2,7 +2,7 @@
 const country = ref('')
 const createAccount = ref(true)
 const subscribe = ref(false)
-const onSubmit = () => {
+function onSubmit() {
   console.log('Form submitted!')
 }
 </script>

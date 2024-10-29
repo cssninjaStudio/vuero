@@ -34,7 +34,7 @@ export default definePlugin(async ({ router, pinia, event }) => {
       const user = await $fetch('/api/users/me')
       userSession.setUser(user)
     }
-    catch (err) {
+    catch {
       // Delete stored token if it fails
       token.value = undefined
     }

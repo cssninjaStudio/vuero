@@ -9,10 +9,10 @@ defineOptions({
   inheritAttrs: false,
 })
 
+const props = defineProps<VSelectProps>()
 const modelValue = defineModel<any>({
   default: '',
 })
-const props = defineProps<VSelectProps>()
 const attrs = useAttrs()
 
 const { field, id } = useVFieldContext({
@@ -39,7 +39,8 @@ const internal = computed({
 })
 
 const classes = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return ['select', props.multiple && 'is-multiple']
 })

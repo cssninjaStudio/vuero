@@ -51,7 +51,7 @@ export function useCreditcardMask() {
     parse: (value) => {
       const monthYear = value.split('/')
       if (monthYear.length === 2) {
-        return new Date(parseInt(monthYear[1]) + 2000, parseInt(monthYear[0]) - 1, 1)
+        return new Date(Number.parseInt(monthYear[1]) + 2000, Number.parseInt(monthYear[0]) - 1, 1)
       }
       return new Date()
     },
@@ -173,7 +173,7 @@ export function useCreditcardMask() {
         },
       },
     ],
-    dispatch: function (appended: string, dynamicMasked: any) {
+    dispatch(appended: string, dynamicMasked: any) {
       const number = (dynamicMasked.value + appended).replace(/\D/g, '')
 
       for (let i = 0; i < dynamicMasked.compiledMasks.length; i++) {

@@ -33,7 +33,7 @@ const filters = ref('')
 
     <div class="list-view list-view-v1">
       <div class="list-view-inner">
-        <!--Item-->
+        <!-- Item -->
         <div
           v-for="key in 10"
           :key="key"

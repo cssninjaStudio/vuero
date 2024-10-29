@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NavbarItem, NavbarItemDropdown, NavbarItemMegamenu, NavbarItemAction } from './navbar.types'
+import type { NavbarItem, NavbarItemAction, NavbarItemDropdown, NavbarItemMegamenu } from './navbar.types'
 import { useNavbarLayoutContext } from './navbar.context'
 
 const props = defineProps<{

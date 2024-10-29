@@ -50,13 +50,13 @@ export function useProfitBarChart() {
       width: 2,
       colors: ['transparent'],
     },
-    series: series,
+    series,
     xaxis: {
       categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     },
     yaxis: {
       labels: {
-        formatter: function (val: string) {
+        formatter(val: string) {
           return val + 70
         },
       },
@@ -66,7 +66,7 @@ export function useProfitBarChart() {
     },
     tooltip: {
       y: {
-        formatter: function (val: string) {
+        formatter(val: string) {
           return val + 70
         },
       },

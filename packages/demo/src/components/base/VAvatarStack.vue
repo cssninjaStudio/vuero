@@ -30,7 +30,7 @@ const props = withDefaults(defineProps<VAvatarStackProps>(), {
       <div
         v-if="avatars.length > props.limit"
         class="v-avatar"
-        :class="[size && 'is-' + props.size]"
+        :class="[size && `is-${props.size}`]"
       >
         <span class="avatar is-more">
           <span class="inner">

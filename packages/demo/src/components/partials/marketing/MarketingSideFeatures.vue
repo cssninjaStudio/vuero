@@ -14,7 +14,7 @@ const props = defineProps<{
 <template>
   <div class="section">
     <div class="container">
-      <!--Title-->
+      <!-- Title -->
       <div v-if="props.title || props.subtitle" class="section-title has-text-centered">
         <h2 v-if="props.title" class="title is-2">
           {{ props.title }}

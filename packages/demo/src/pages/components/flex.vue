@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VFlexMeta, VFlexItemMeta } from '/@src/data/documentation/components-meta'
+import { VFlexItemMeta, VFlexMeta } from '/@src/data/documentation/components-meta'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
@@ -35,7 +35,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VFlex-->
+      <!-- VFlex -->
       <VFlexBaseDocumentation />
 
       <DocumentationMeta

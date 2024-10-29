@@ -1,6 +1,6 @@
-import { definePlugin } from '/@src/utils/plugins'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(({ router }) => {
   if (import.meta.env.SSR) {

@@ -29,7 +29,7 @@ const tab = ref(props.activeTab)
           class="inner-button is-facebook"
           :class="[
             tab === index && 'is-active',
-            'is-' + button.network,
+            `is-${button.network}`,
             props.rounded && 'is-rounded',
           ]"
           tabindex="0"

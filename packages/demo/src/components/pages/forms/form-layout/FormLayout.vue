@@ -9,7 +9,7 @@ const { y } = useWindowScroll()
 const isStuck = computed(() => {
   return y.value > 30
 })
-const onSubmit = () => {
+function onSubmit() {
   console.log('Form submitted!')
 }
 </script>
@@ -52,7 +52,7 @@ const onSubmit = () => {
         </div>
       </div>
       <div class="form-body">
-        <!--Fieldset-->
+        <!-- Fieldset -->
         <div class="form-fieldset">
           <div class="fieldset-heading">
             <h4>Personal Info</h4>
@@ -99,7 +99,7 @@ const onSubmit = () => {
             </div>
           </div>
         </div>
-        <!--Fieldset-->
+        <!-- Fieldset -->
         <div class="form-fieldset">
           <div class="fieldset-heading">
             <h4>Company Info</h4>
@@ -185,7 +185,7 @@ const onSubmit = () => {
             </div>
           </div>
         </div>
-        <!--Fieldset-->
+        <!-- Fieldset -->
         <div class="form-fieldset">
           <div class="fieldset-heading">
             <h4>Demonstration</h4>

@@ -1,9 +1,4 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'toggleMobileConversation'): void
-  (e: 'update:conversationId', value: number): void
-}>()
-
 const props = withDefaults(
   defineProps<{
     conversations?: any[]
@@ -15,6 +10,11 @@ const props = withDefaults(
     conversationId: 0,
   },
 )
+
+const emit = defineEmits<{
+  (e: 'toggleMobileConversation'): void
+  (e: 'update:conversationId', value: number): void
+}>()
 </script>
 
 <template>
@@ -22,7 +22,7 @@ const props = withDefaults(
     :class="[props.mobileConversationListOpen && 'is-active']"
     class="conversation-area has-slimscroll"
   >
-    <!--Conversation-->
+    <!-- Conversation -->
     <div
       v-for="conversation in props.conversations"
       :key="conversation.id"

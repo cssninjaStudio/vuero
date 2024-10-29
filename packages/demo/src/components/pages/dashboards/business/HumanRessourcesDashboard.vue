@@ -46,10 +46,10 @@ const columns = {
     <div class="columns">
       <div class="column is-8">
         <div class="columns is-multiline">
-          <!--Header-->
+          <!-- Header -->
           <div class="column is-12">
             <div class="block-header">
-              <!--left-->
+              <!-- left -->
               <div class="left">
                 <div class="current-user">
                   <VAvatar
@@ -61,7 +61,7 @@ const columns = {
                 </div>
               </div>
 
-              <!--Center-->
+              <!-- Center -->
               <div class="center">
                 <h4 class="block-heading">
                   New Rookies
@@ -91,7 +91,7 @@ const columns = {
                 </div>
               </div>
 
-              <!--Right-->
+              <!-- Right -->
               <div class="right">
                 <h4 class="block-heading">
                   Job Feed
@@ -112,7 +112,7 @@ const columns = {
             </div>
           </div>
 
-          <!--Selector-->
+          <!-- Selector -->
           <div class="column is-12">
             <div class="feed-settings">
               <h3 class="dark-inverted">
@@ -132,7 +132,7 @@ const columns = {
             </div>
           </div>
 
-          <!--Side Text-->
+          <!-- Side Text -->
           <div class="column is-4">
             <div class="side-text">
               <h3 class="dark-inverted">
@@ -150,7 +150,7 @@ const columns = {
             </div>
           </div>
 
-          <!--Incoming-->
+          <!-- Incoming -->
           <div class="column is-7 is-offset-1">
             <div class="incoming">
               <VFlexTable
@@ -216,7 +216,7 @@ const columns = {
             </div>
           </div>
 
-          <!--Rookies-->
+          <!-- Rookies -->
           <div class="column is-12">
             <div class="recent-rookies">
               <div class="recent-rookies-header">
@@ -230,7 +230,7 @@ const columns = {
               </div>
 
               <div class="columns user-grid user-grid-v4 is-flex-tablet-p">
-                <!--Rookie-->
+                <!-- Rookie -->
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
@@ -253,7 +253,7 @@ const columns = {
                     </div>
                   </div>
                 </div>
-                <!--Rookie-->
+                <!-- Rookie -->
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
@@ -276,7 +276,7 @@ const columns = {
                     </div>
                   </div>
                 </div>
-                <!--Rookie-->
+                <!-- Rookie -->
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
@@ -306,7 +306,7 @@ const columns = {
       </div>
 
       <div class="column is-4">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="search-widget">
           <template #body>
             <div class="field">
@@ -326,7 +326,7 @@ const columns = {
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <ListWidgetTabbed
           title="Todo"
           :labels="['All', 'Mine']"
@@ -345,7 +345,7 @@ const columns = {
           </template>
         </ListWidgetTabbed>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="picker-widget">
           <template #header>
             <div class="widget-toolbar">

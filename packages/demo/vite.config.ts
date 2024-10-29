@@ -1,22 +1,22 @@
-import { resolve, dirname } from 'node:path'
+import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { defineConfig } from 'vite'
-import { isProduction, isDebug, env } from 'std-env'
-import Vue from '@vitejs/plugin-vue'
-import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import Components from 'unplugin-vue-components/vite'
-import Imports from 'unplugin-auto-import/vite'
 import I18n from '@intlify/unplugin-vue-i18n/vite'
-import { VitePWA } from 'vite-plugin-pwa'
-import PurgeCSS from 'rollup-plugin-purgecss'
 import Unhead from '@unhead/addons/vite'
-import DevTools from 'vite-plugin-vue-devtools'
 import { unheadVueComposablesImports } from '@unhead/vue'
+import Vue from '@vitejs/plugin-vue'
+import PurgeCSS from 'rollup-plugin-purgecss'
+import { env, isDebug, isProduction } from 'std-env'
+import Imports from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
+import { defineConfig } from 'vite'
+import { VitePWA } from 'vite-plugin-pwa'
+import DevTools from 'vite-plugin-vue-devtools'
 
+import { PurgeComments } from './vite-plugin/purge-comments'
 // local vite plugin
 import { VueroMarkdownDoc } from './vite-plugin/vuero-doc'
-import { PurgeComments } from './vite-plugin/purge-comments'
 
 /**
  * This is the main configuration file for vitejs
@@ -94,7 +94,7 @@ export default defineConfig(({ isSsrBuild }) => ({
           if (id.endsWith('scss/main.scss')) {
             return 'layouts'
           }
-          if (id.endsWith('.scss') && id.match(/components\/layouts\/(?:.*?)scss$/)) {
+          if (id.endsWith('.scss') && id.match(/components\/layouts\/.*?scss$/)) {
             return 'layouts'
           }
         },
@@ -272,15 +272,15 @@ export default defineConfig(({ isSsrBuild }) => ({
       safelist: {
         standard: [
           /(autv|lnil|lnir|fas?)/,
-          /-(leave|enter|appear)(|-(to|from|active))$/,
-          /^(?!(|.*?:)cursor-move).+-move$/,
-          /^router-link(|-exact)-active$/,
+          /-(leave|enter|appear)(-(to|from|active))?$/,
+          /^(?!.*?:cursor-move).+-move$/,
+          /^router-link(-exact)?-active$/,
           /data-v-.*/,
         ],
       },
       defaultExtractor(content) {
-        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
-        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+        const contentWithoutStyleBlocks = content.replace(/<style[\s\S]+?<\/style>/gi, '')
+        return contentWithoutStyleBlocks.match(/[\w\-/:]*[\w\-/]/g) || []
       },
     }),
   ],

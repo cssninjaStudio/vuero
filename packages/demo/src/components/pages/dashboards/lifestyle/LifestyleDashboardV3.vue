@@ -3,8 +3,8 @@ import { useEnergyChart } from '/@src/data/dashboards/lifestyle-v3/energyChart'
 import { useOverallChart } from '/@src/data/dashboards/lifestyle-v3/overallChart'
 import { useOxygenChart } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
 import { useProgressChart } from '/@src/data/dashboards/lifestyle-v3/progressChart'
-import { followersList } from '/@src/data/widgets/ui/followers'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+import { followersList } from '/@src/data/widgets/ui/followers'
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { energyChartOptions } = useEnergyChart()
@@ -51,7 +51,7 @@ const { progressChartOptions } = useProgressChart()
     </div>
 
     <div class="columns is-multiline is-flex-tablet-p">
-      <!--Tile-->
+      <!-- Tile -->
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
@@ -73,7 +73,7 @@ const { progressChartOptions } = useProgressChart()
         </div>
       </div>
 
-      <!--Tile-->
+      <!-- Tile -->
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
@@ -95,7 +95,7 @@ const { progressChartOptions } = useProgressChart()
         </div>
       </div>
 
-      <!--Tile-->
+      <!-- Tile -->
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
@@ -117,7 +117,7 @@ const { progressChartOptions } = useProgressChart()
         </div>
       </div>
 
-      <!--Tile-->
+      <!-- Tile -->
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
@@ -143,7 +143,7 @@ const { progressChartOptions } = useProgressChart()
     <div class="columns is-multiline">
       <div class="column is-9">
         <div class="columns is-multiline">
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-6">
             <div class="dashboard-card">
               <div class="card-head">
@@ -171,7 +171,7 @@ const { progressChartOptions } = useProgressChart()
             </div>
           </div>
 
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-6">
             <div class="dashboard-card">
               <div class="card-head">
@@ -199,7 +199,7 @@ const { progressChartOptions } = useProgressChart()
             </div>
           </div>
 
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-6">
             <div class="dashboard-card">
               <div class="card-head">
@@ -227,7 +227,7 @@ const { progressChartOptions } = useProgressChart()
             </div>
           </div>
 
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-6">
             <div class="dashboard-card">
               <div class="card-head">
@@ -258,7 +258,7 @@ const { progressChartOptions } = useProgressChart()
       </div>
 
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="search-widget">
           <template #body>
             <div class="field">
@@ -284,7 +284,7 @@ const { progressChartOptions } = useProgressChart()
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="picker-widget">
           <template #header>
             <div class="widget-toolbar">
@@ -410,7 +410,7 @@ const { progressChartOptions } = useProgressChart()
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="gauge-widget">
           <template #header>
             <UIWidgetToolbarDropdown title="Gauge Widget" />
@@ -429,7 +429,7 @@ const { progressChartOptions } = useProgressChart()
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="text-widget">
           <template #header>
             <UIWidgetToolbarFollowers

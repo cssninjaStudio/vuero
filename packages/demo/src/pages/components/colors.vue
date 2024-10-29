@@ -73,7 +73,7 @@ const layoutColors = [
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--Theme Colors-->
+        <!-- Theme Colors -->
         <ColorsDocumentation />
 
         <div class="columns is-multiline mb-6">

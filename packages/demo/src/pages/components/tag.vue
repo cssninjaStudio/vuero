@@ -35,25 +35,25 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VTag base-->
+      <!-- VTag base -->
       <VTagBaseDocumentation />
 
-      <!--VTag rounded-->
+      <!-- VTag rounded -->
       <VTagRoundedDocumentation />
 
-      <!--VTag curved-->
+      <!-- VTag curved -->
       <VTagCurvedDocumentation />
 
-      <!--VTag Outlined-->
+      <!-- VTag Outlined -->
       <VTagOutlinedDocumentation />
 
-      <!--VTag Elevated-->
+      <!-- VTag Elevated -->
       <VTagElevatedDocumentation />
 
-      <!--VTag addons-->
+      <!-- VTag addons -->
       <VTagAddonsDocumentation />
 
-      <!--VTag list-->
+      <!-- VTag list -->
       <VTagListDocumentation />
 
       <DocumentationMeta

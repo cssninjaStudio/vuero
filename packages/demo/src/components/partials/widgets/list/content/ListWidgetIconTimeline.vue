@@ -22,7 +22,7 @@ const { onceError } = useImageError()
     >
       <div
         class="timeline-icon"
-        :class="[props.squared && 'is-squared', props.colored && 'is-' + item.color]"
+        :class="[props.squared && 'is-squared', props.colored && `is-${item.color}`]"
       >
         <img
           v-if="item.picture"

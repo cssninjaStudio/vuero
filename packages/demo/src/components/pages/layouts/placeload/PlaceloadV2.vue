@@ -44,7 +44,7 @@ const filters = ref('')
 
         <template #body>
           <div class="flex-list-inner">
-            <!--Table item placeload-->
+            <!-- Table item placeload -->
             <div
               v-for="key in 10"
               :key="key"

@@ -13,7 +13,7 @@ export default {
     /** Font icons */
     'font-family-no-missing-generic-family-keyword': null,
 
-    /** SCSS **/
+    /** SCSS */
     'at-rule-no-unknown': null,
     'no-descending-specificity': null,
     'scss/at-mixin-pattern': null,
@@ -24,7 +24,7 @@ export default {
     'declaration-block-no-redundant-longhand-properties': null,
     'import-notation': 'string',
 
-    /** Bulma **/
+    /** Bulma */
     'function-name-case': null,
     'scss/dollar-variable-pattern': null,
     'no-duplicate-selectors': null,
@@ -35,7 +35,7 @@ export default {
       },
     ],
 
-    /** Vuejs **/
+    /** Vuejs */
     'custom-property-empty-line-before': null,
     'selector-pseudo-element-no-unknown': [
       true,

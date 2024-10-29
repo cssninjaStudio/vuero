@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { useSharingChart } from '/@src/data/dashboards/company/sharingChart'
-import { useUsersChart } from '/@src/data/dashboards/company/usersChart'
 import { useUsersBarChart } from '/@src/data/dashboards/company/usersBarChart'
-import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+import { useUsersChart } from '/@src/data/dashboards/company/usersChart'
 import { popovers } from '/@src/data/users/userPopovers'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { barData, barData2, usersBarOptions } = useUsersBarChart()
 const { sharingOptions } = useSharingChart()
@@ -190,7 +191,7 @@ onMounted(async () => {
       </div>
 
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="gauge-widget"
           straight
@@ -229,7 +230,7 @@ onMounted(async () => {
         </div>
       </div>
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="picker-widget"
           straight
@@ -372,7 +373,7 @@ onMounted(async () => {
           </div>
 
           <div class="ticket-list">
-            <!--Ticket-->
+            <!-- Ticket -->
             <VBlock
               title="[#45651] Cannot save changes to user profile"
               subtitle="Iam not able to save changes I make to my user profile. When
@@ -407,7 +408,7 @@ onMounted(async () => {
               </template>
             </VBlock>
 
-            <!--Ticket-->
+            <!-- Ticket -->
             <VBlock
               title="[#45783] Cannot create a new opportunity"
               subtitle="when I try to create a new opportunity, Iam redirected to a
@@ -442,7 +443,7 @@ onMounted(async () => {
               </template>
             </VBlock>
 
-            <!--Ticket-->
+            <!-- Ticket -->
             <VBlock
               title="[#45723] Payment fails when using PayPal"
               subtitle="When I try to use PayPal as a payment method, it spins
@@ -477,7 +478,7 @@ onMounted(async () => {
               </template>
             </VBlock>
 
-            <!--Ticket-->
+            <!-- Ticket -->
             <VBlock
               title="[#45862] Cannot find the assets in the theme folder"
               subtitle="I followed the documentation but Iam not able to locate the

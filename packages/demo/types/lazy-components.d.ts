@@ -1,7 +1,7 @@
 declare module 'vue' {
-  import type { DatePicker, Calendar } from 'v-calendar'
   import type Multiselect from '@vueform/multiselect'
   import type Slider from '@vueform/slider'
+  import type { Calendar, DatePicker } from 'v-calendar'
   import type ApexChart from 'vue3-apexcharts'
 
   export interface GlobalComponents {

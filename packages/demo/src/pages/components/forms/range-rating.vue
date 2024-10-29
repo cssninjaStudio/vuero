@@ -38,7 +38,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Rating button-->
+      <!-- Rating button -->
       <RangeRatingBasicDocumentation />
 
       <RangeRatingMaxDocumentation />

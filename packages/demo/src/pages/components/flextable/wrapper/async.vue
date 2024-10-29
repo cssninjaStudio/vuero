@@ -115,13 +115,13 @@ function useQueryParam() {
 
       // read "limit" from the query params
       if (Array.isArray(route?.query?.limit)) {
-        limitQuery = parseInt(route.query.limit[0] ?? `${defaultLimit}`)
+        limitQuery = Number.parseInt(route.query.limit[0] ?? `${defaultLimit}`)
       }
       else {
-        limitQuery = parseInt(route.query.limit ?? `${defaultLimit}`)
+        limitQuery = Number.parseInt(route.query.limit ?? `${defaultLimit}`)
       }
 
-      if (Object.is(limitQuery, NaN)) {
+      if (Object.is(limitQuery, Number.NaN)) {
         limitQuery = defaultLimit
       }
 
@@ -147,14 +147,14 @@ function useQueryParam() {
       let pageQuery: number
 
       if (Array.isArray(route?.query?.page)) {
-        pageQuery = parseInt(route.query.page[0] ?? `${defaultPage}`)
+        pageQuery = Number.parseInt(route.query.page[0] ?? `${defaultPage}`)
       }
       else {
-        pageQuery = parseInt(route.query.page ?? `${defaultPage}`)
+        pageQuery = Number.parseInt(route.query.page ?? `${defaultPage}`)
       }
 
       // read "page" from the query params
-      if (Object.is(pageQuery, NaN)) {
+      if (Object.is(pageQuery, Number.NaN)) {
         pageQuery = defaultPage
       }
 
@@ -194,7 +194,7 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   controller,
 }) => {
   // sort will be a string like "name:asc"
-  let [sortField, sortOrder]
+  const [sortField, sortOrder]
     = sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
 
   // async fetch data to our server
@@ -220,7 +220,7 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   // our backend send us the count in the headers,
   // but we can also get it from another request
   if (headers.has('X-Total-Count')) {
-    total.value = parseInt(headers.get('X-Total-Count') ?? '0')
+    total.value = Number.parseInt(headers.get('X-Total-Count') ?? '0')
   }
 
   // the return of the function must be an array
@@ -282,7 +282,7 @@ function onCallClick(row: any) {
 
     <div class="columns">
       <div class="column is-12">
-        <!--Flex Table Advanced-->
+        <!-- Flex Table Advanced -->
         <VFlexTableWrapperAdvancedDocumentation />
 
         <!--
@@ -291,7 +291,7 @@ function onCallClick(row: any) {
         <VFlexTableWrapper
           v-model:page="queryParam.page"
           v-model:limit="queryParam.limit"
-          v-model:searchTerm="queryParam.searchTerm"
+          v-model:search-term="queryParam.searchTerm"
           v-model:sort="queryParam.sort"
           :columns="columns"
           :data="fetchData"
@@ -303,7 +303,7 @@ function onCallClick(row: any) {
             Note that we can not destructure it
           -->
           <template #default="wrapperState">
-            <!--Table Pagination-->
+            <!-- Table Pagination -->
             <VFlexPagination
               v-if="!isMobileScreen"
               v-model:current-page="wrapperState.page"
@@ -543,7 +543,7 @@ function onCallClick(row: any) {
               </template>
             </VFlexTable>
 
-            <!--Table Pagination-->
+            <!-- Table Pagination -->
             <VFlexPagination
               v-model:current-page="wrapperState.page"
               class="mt-5"

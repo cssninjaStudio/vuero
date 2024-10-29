@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { demoMarkdown } from '/@src/data/documentation/markdown'
 import { VMarkdownPreviewMeta } from '/@src/data/documentation/components-meta'
+import { demoMarkdown } from '/@src/data/documentation/markdown'
 
 const { y } = useWindowScroll()
 

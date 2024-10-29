@@ -47,31 +47,31 @@ export function usePersonalScoreGauge() {
 
   // For demo purpose
   const onPersonalScoreGaugeReady = (billboard: Chart) => {
-    setTimeout(function () {
+    setTimeout(() => {
       billboard.load({
         columns: [['data', 10]],
       })
     }, 1000)
 
-    setTimeout(function () {
+    setTimeout(() => {
       billboard.load({
         columns: [['data', 50]],
       })
     }, 2000)
 
-    setTimeout(function () {
+    setTimeout(() => {
       billboard.load({
         columns: [['data', 70]],
       })
     }, 3000)
 
-    setTimeout(function () {
+    setTimeout(() => {
       billboard.load({
         columns: [['data', 0]],
       })
     }, 4000)
 
-    setTimeout(function () {
+    setTimeout(() => {
       billboard.load({
         columns: [['data', 100]],
       })

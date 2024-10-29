@@ -15,7 +15,8 @@ const context = useVFieldContext({
 })
 
 const classes = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return ['label']
 })

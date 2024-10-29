@@ -15,13 +15,14 @@ wizard.setStep({
     router.push('/wizard-v1/project-files')
   },
   validateStepFn: async () => {
-    if (search.value) return
+    if (search.value)
+      return
 
     router.push('/wizard-v1/project-tools')
   },
 })
 
-const addTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
+function addTeammate(teammate: Omit<WizardTeammate, 'role'>) {
   wizard.data.teammates.push({
     ...teammate,
     role: 'reader',
@@ -29,10 +30,7 @@ const addTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
   search.value = ''
 }
 
-const setTeammateRole = (
-  teammate: Omit<WizardTeammate, 'role'>,
-  role: WizardTeammateRole,
-) => {
+function setTeammateRole(teammate: Omit<WizardTeammate, 'role'>, role: WizardTeammateRole) {
   const index = wizard.data.teammates.findIndex((item) => {
     return item.name === teammate.name
   })
@@ -42,7 +40,7 @@ const setTeammateRole = (
   }
 }
 
-const removeTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
+function removeTeammate(teammate: Omit<WizardTeammate, 'role'>) {
   const index = wizard.data.teammates.findIndex((item) => {
     return item.name === teammate.name
   })
@@ -51,7 +49,7 @@ const removeTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
   }
 }
 
-const getRoleLevel = (teammate: WizardTeammate) => {
+function getRoleLevel(teammate: WizardTeammate) {
   switch (teammate.role) {
     case 'collaborator':
       return 1
@@ -91,7 +89,7 @@ watchEffect(() => {
         <p>Start by adding members to your team</p>
       </div>
 
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!isAddingMembers"
         class="is-people"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarProps, VAvatarColor } from '/@src/components/base/VAvatar.vue'
+import type { VAvatarColor, VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { users } from '/@src/data/layouts/user-grid-v1'
 
 const filters = ref('')
@@ -76,7 +76,7 @@ function getAvatarData(user: any): VAvatarProps {
     </div>
 
     <div class="user-grid user-grid-v1">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -104,7 +104,7 @@ function getAvatarData(user: any): VAvatarProps {
         tag="div"
         class="columns is-multiline"
       >
-        <!--Grid item-->
+        <!-- Grid item -->
         <div
           v-for="item in filteredData"
           :key="item.id"

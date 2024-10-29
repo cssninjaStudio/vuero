@@ -115,7 +115,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
     </div>
 
-    <!--Table Pagination-->
+    <!-- Table Pagination -->
     <VFlexPagination
       v-if="filteredData.length > 5"
       v-model:current-page="page"

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
+import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
-import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 
 const collator = new Intl.Collator('en')

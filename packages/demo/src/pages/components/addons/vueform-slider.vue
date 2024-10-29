@@ -36,25 +36,25 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Simple slider-->
+      <!-- Simple slider -->
       <SliderBaseDocumentation />
 
-      <!--Squared tooltip-->
+      <!-- Squared tooltip -->
       <SliderSquaredDocumentation />
 
-      <!--Curved tooltip-->
+      <!-- Curved tooltip -->
       <SliderCurvedDocumentation />
 
-      <!--Slider colors-->
+      <!-- Slider colors -->
       <SliderColorDocumentation />
 
-      <!--Multiple sliders-->
+      <!-- Multiple sliders -->
       <SliderMultipleDocumentation />
 
-      <!--Tooltip format-->
+      <!-- Tooltip format -->
       <SliderFormatDocumentation />
 
-      <!--Slider Mergin-->
+      <!-- Slider Mergin -->
       <SliderMergingDocumentation />
 
       <div class="pb-6 mb-6" />

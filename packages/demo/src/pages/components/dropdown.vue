@@ -36,25 +36,25 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownColorsDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownButtonSlotDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownButtonHoverDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownModernDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownWithIconsDocumentation />
 
-      <!--Dropdown-->
+      <!-- Dropdown -->
       <DropdownWithImagesDocumentation />
 
       <DocumentationMeta
@@ -62,7 +62,7 @@ useHead({
         :meta="VDropdownMeta"
       />
 
-      <!--Artificial Spacing-->
+      <!-- Artificial Spacing -->
       <div class="demo-spacer" />
     </DocumentationTocContainer>
   </div>

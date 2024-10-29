@@ -15,12 +15,12 @@ interface NotyfContext {
   orange: (payload: string | Partial<INotyfNotificationOptions>) => void
 }
 
-export const useNotyf = () => {
-  return inject(notyfSymbol)!
-}
-
 const notyfSymbol: InjectionKey<NotyfContext>
   = Symbol('notyf')
+
+export function useNotyf() {
+  return inject(notyfSymbol)!
+}
 
 export function createNotyf(): Plugin {
   return {

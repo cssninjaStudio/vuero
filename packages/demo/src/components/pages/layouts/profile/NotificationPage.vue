@@ -3,7 +3,7 @@
     <div class="timeline-header" />
     <div class="timeline-wrapper-inner">
       <div class="timeline-container">
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item is-unread">
           <div class="date">
             <span>Sep 23, 2020</span>
@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item is-unread">
           <div class="date">
             <span>Sep 23, 2020</span>
@@ -57,7 +57,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 22, 2020</span>
@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 23, 2020</span>
@@ -131,7 +131,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 22, 2020</span>
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 23, 2020</span>
@@ -197,7 +197,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 23, 2020</span>
@@ -221,7 +221,7 @@
           </div>
         </div>
 
-        <!--Timeline item-->
+        <!-- Timeline item -->
         <div class="timeline-item">
           <div class="date">
             <span>Sep 23, 2020</span>

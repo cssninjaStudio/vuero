@@ -8,15 +8,15 @@ export interface VSwitchSegmentProps {
   color?: VSwitchSegmentColor
 }
 
-const modelValue = defineModel<boolean>({
-  default: false,
-})
-
 const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
   id: undefined,
   labelTrue: undefined,
   labelFalse: undefined,
   color: undefined,
+})
+
+const modelValue = defineModel<boolean>({
+  default: false,
 })
 
 const { field, id } = useVFieldContext({

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SideblockLayoutContext, SideblockItem, SideblockTheme } from './sideblock.types'
+import type { SideblockItem, SideblockLayoutContext, SideblockTheme } from './sideblock.types'
 import { injectionKey } from './sideblock.context'
 import SideblockItemMobile from './SideblockItemMobile.vue'
 

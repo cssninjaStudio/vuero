@@ -61,7 +61,7 @@ const filteredData = computed(() => {
     </div>
 
     <div class="user-grid user-grid-v3">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -84,14 +84,14 @@ const filteredData = computed(() => {
         </template>
       </VPlaceholderPage>
 
-      <!--Active Tab-->
+      <!-- Active Tab -->
       <div v-if="tab === 'all'">
         <TransitionGroup
           name="list"
           tag="div"
           class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
         >
-          <!--Grid item-->
+          <!-- Grid item -->
           <div
             v-for="item in filteredData"
             :key="item.id"
@@ -102,9 +102,9 @@ const filteredData = computed(() => {
         </TransitionGroup>
       </div>
 
-      <!--inactive Tab-->
+      <!-- inactive Tab -->
       <div v-else-if="tab === 'team'">
-        <!--Empty placeholder-->
+        <!-- Empty placeholder -->
         <VPlaceholderPage
           title="No team members."
           subtitle="Looks like you don't have any team members yet. When you'll start

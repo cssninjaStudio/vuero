@@ -7,7 +7,7 @@ wizard.setStep({
   number: 1,
 })
 
-const validateStep = (relatedTo: WizardRelatedTo) => {
+function validateStep(relatedTo: WizardRelatedTo) {
   wizard.data.relatedTo = relatedTo
 
   router.push('/wizard-v1/project-info')

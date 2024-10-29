@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import {
-  valueSingle,
   optionsSingle,
+  valueSingle,
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
 import { useGroupedSocialChart } from '/@src/data/dashboards/lifestyle-v1/groupedSocialCharts'
-import { useReputationChart } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
 import { useInfluenceChart } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
+import { useReputationChart } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
 import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
 
 const { reputationChartOptions } = useReputationChart()
@@ -40,7 +40,7 @@ const {
     </div>
 
     <div class="columns is-multiline is-flex-tablet-p">
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -71,7 +71,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -102,7 +102,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -133,7 +133,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -164,7 +164,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -195,7 +195,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4 is-half-tablet-p">
         <OverviewCard>
           <div class="card-head">
@@ -226,7 +226,7 @@ const {
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-6 is-full-tablet-p">
         <div class="stat-widget flex-stat-widget is-straight">
           <div class="chart-media">
@@ -252,7 +252,7 @@ const {
           </div>
         </div>
 
-        <!--Grouped Stat Widget-->
+        <!-- Grouped Stat Widget -->
         <div class="stat-widget grouped-stat-widget is-straight">
           <div class="widget-head">
             <h3 class="dark-inverted">
@@ -308,7 +308,7 @@ const {
           </div>
         </div>
 
-        <!--Flex Stat Widget-->
+        <!-- Flex Stat Widget -->
         <FlexStatWidget
           title="Influence Growth"
           straight
@@ -323,7 +323,7 @@ const {
         </FlexStatWidget>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
         <OverviewCard>
           <div class="card-head">

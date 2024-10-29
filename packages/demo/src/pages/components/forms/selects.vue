@@ -38,25 +38,25 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Select-->
+      <!-- Select -->
       <SelectBaseDocumentation />
 
-      <!--Rounded Select-->
+      <!-- Rounded Select -->
       <SelectRoundedDocumentation />
 
-      <!--Font Awesome-->
+      <!-- Font Awesome -->
       <SelectFaDocumentation />
 
-      <!--Line Icons-->
+      <!-- Line Icons -->
       <SelectLineDocumentation />
 
-      <!--Lucide Icons-->
+      <!-- Lucide Icons -->
       <SelectFeatherDocumentation />
 
-      <!--Loading-->
+      <!-- Loading -->
       <SelectLoadingDocumentation />
 
-      <!--Multiple-->
+      <!-- Multiple -->
       <SelectMultipleDocumentation />
 
       <DocumentationMeta

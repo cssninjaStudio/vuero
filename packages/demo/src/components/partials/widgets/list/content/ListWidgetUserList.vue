@@ -30,7 +30,7 @@ const props = withDefaults(
           v-if="user.progress < 0"
           href="#"
           class="go-icon is-down"
-          :data-content="user.progress + '%'"
+          :data-content="`${user.progress}%`"
         >
           <VIcon
             icon="lucide:chevron-right"
@@ -40,7 +40,7 @@ const props = withDefaults(
           v-else
           href="#"
           class="go-icon is-up"
-          :data-content="'+' + user.progress + '%'"
+          :data-content="`+${user.progress}%`"
         >
           <VIcon
             icon="lucide:chevron-right"

@@ -1,5 +1,4 @@
-import { hydrateOnVisible } from 'vue'
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent, hydrateOnVisible } from 'vue'
 
 import { definePlugin } from '/@src/utils/plugins'
 
@@ -7,7 +6,7 @@ export default definePlugin(({ app }) => {
   // here we are defining a lazy loaded component
   // that will be imported on demand
   app.component(
-    // eslint-disable-next-line vue/multi-word-component-names
+
     'Multiselect',
     defineAsyncComponent({
       loader: () => import('@vueform/multiselect').then(mod => mod.default),
@@ -18,7 +17,7 @@ export default definePlugin(({ app }) => {
   )
 
   app.component(
-    // eslint-disable-next-line vue/multi-word-component-names
+
     'Slider',
     defineAsyncComponent({
       loader: () => import('@vueform/slider').then(mod => mod.default),

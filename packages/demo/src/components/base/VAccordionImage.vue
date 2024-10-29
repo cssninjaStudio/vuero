@@ -11,12 +11,11 @@ export interface VAccordionImageProps {
   items: VAccordionImageItem[]
 }
 
-const emit = defineEmits<VAccordionImageEmits>()
 const props = withDefaults(defineProps<VAccordionImageProps>(), {
   items: () => [],
 })
-
-const toggle = (key: number) => {
+const emit = defineEmits<VAccordionImageEmits>()
+function toggle(key: number) {
   emit('select', key)
 }
 </script>

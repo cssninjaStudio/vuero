@@ -54,8 +54,8 @@ export function useRevenueAreaChart() {
         format: 'dd/MM/yy HH:mm',
       },
       y: {
-        formatter: function (val: number) {
-          return '$' + val
+        formatter(val: number) {
+          return `$${val}`
         },
       },
     },

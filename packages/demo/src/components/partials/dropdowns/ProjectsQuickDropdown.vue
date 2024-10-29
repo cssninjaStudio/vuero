@@ -86,6 +86,7 @@ const selectedProject = ref(projects[1])
     </template>
   </VDropdown>
 </template>
+
 <style lang="scss">
 .project-dropdown {
   margin-inline-end: 12px;

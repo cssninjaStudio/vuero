@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type {
-  LandingNavItem,
   LandingFooterColumn,
+  LandingNavItem,
   LandingSocialItem,
 } from '/@src/components/layouts/landing/landing.types'
 

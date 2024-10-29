@@ -1,8 +1,8 @@
+import type { VueroSSRContext } from '/@server/types'
 import type { H3Event } from 'h3'
-import { deleteCookie, getCookie, setCookie } from 'h3'
 import { useCookies } from '@vueuse/integrations/useCookies'
+import { deleteCookie, getCookie, setCookie } from 'h3'
 import { useSSRContext } from 'vue'
-import { type VueroSSRContext } from '/@server/types'
 
 interface CookieOption {
   path?: string

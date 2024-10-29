@@ -87,7 +87,7 @@ const filterProjects = ref(0)
       </div>
 
       <div class="columns is-multiline grid-body">
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -136,7 +136,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -187,7 +187,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -233,7 +233,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -280,7 +280,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -326,7 +326,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -375,7 +375,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -421,7 +421,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">
@@ -466,7 +466,7 @@ const filterProjects = ref(0)
             </div>
           </a>
         </div>
-        <!--Project-->
+        <!-- Project -->
         <div class="column is-4">
           <a class="grid-item">
             <div class="item-head">

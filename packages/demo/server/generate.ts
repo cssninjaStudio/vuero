@@ -4,15 +4,15 @@
 import fs from 'node:fs'
 import fsp from 'node:fs/promises'
 import path from 'node:path'
-import { type ResolvedConfig, type InlineConfig, resolveConfig } from 'vite'
 import colors from 'picocolors'
 import { env } from 'std-env'
+import { type InlineConfig, resolveConfig, type ResolvedConfig } from 'vite'
 
-import { createRenderer } from './generate/renderer'
 import { buildApp } from './generate/builder'
-import { scanRoutes } from './generate/scan'
 import { populateRouteParams } from './generate/populate'
 import { renderToFile } from './generate/render-to-file'
+import { createRenderer } from './generate/renderer'
+import { scanRoutes } from './generate/scan'
 
 async function build() {
   const mode = env.MODE || env.NODE_ENV || 'production'
@@ -70,7 +70,7 @@ async function build() {
     })
     const duration = performance.now() - start
 
-    const formattedDuration = duration.toFixed(2).padStart(5) + 'ms'
+    const formattedDuration = `${duration.toFixed(2).padStart(5)}ms`
     config.logger.info(
       colors.dim(`[${page.logPrefix}] ${colors.green(page.url)} - ${colors.cyan(file)} - ${formattedDuration}`),
     )

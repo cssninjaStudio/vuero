@@ -165,7 +165,7 @@ const { onceError } = useImageError()
       </div>
 
       <div class="end">
-        <!--Dropdown-->
+        <!-- Dropdown -->
         <InfluencerDropdown />
       </div>
     </div>

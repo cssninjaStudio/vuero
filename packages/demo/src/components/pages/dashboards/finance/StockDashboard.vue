@@ -1,10 +1,10 @@
 <template>
   <div class="finance-dashboard stock-dashboard">
     <div class="columns">
-      <!--Graph-->
+      <!-- Graph -->
       <div class="column is-4">
         <div class="graph">
-          <!--Dropdown-->
+          <!-- Dropdown -->
           <GraphDropdown />
 
           <svg
@@ -83,10 +83,10 @@
         </div>
       </div>
 
-      <!--Graph-->
+      <!-- Graph -->
       <div class="column is-4">
         <div class="graph">
-          <!--Dropdown-->
+          <!-- Dropdown -->
           <GraphDropdown />
 
           <svg
@@ -167,7 +167,7 @@
 
       <div class="column is-4">
         <div class="graph">
-          <!--Dropdown-->
+          <!-- Dropdown -->
           <GraphDropdown />
 
           <svg
@@ -361,7 +361,7 @@
         <div class="stock-card">
           <div class="action-bar">
             <h3>Today's Gainers</h3>
-            <!--Dropdown-->
+            <!-- Dropdown -->
             <StockDropdown />
           </div>
 
@@ -448,7 +448,7 @@
         <div class="stock-card">
           <div class="action-bar">
             <h3>Popular this week</h3>
-            <!--Dropdown-->
+            <!-- Dropdown -->
             <StockDropdown />
           </div>
 

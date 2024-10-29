@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ChartOptions, Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 
 import 'billboard.js/dist/billboard.min.css'
 
@@ -10,13 +10,13 @@ export interface VBillboardJSProps {
   options: ChartOptions
 }
 
-const emit = defineEmits<VBillboardJSEmits>()
 const props = defineProps<VBillboardJSProps>()
-
+const emit = defineEmits<VBillboardJSEmits>()
 const element = useTemplateRef<HTMLElement>('element')
 
 onMounted(async () => {
-  if (!element.value) return
+  if (!element.value)
+    return
 
   try {
     const bb = await import('billboard.js').then(m => m.default || m)

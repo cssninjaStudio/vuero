@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type VPlaceloadProps = {
+export interface VPlaceloadProps {
   width?: string
   height?: string
   mobileWidth?: string

@@ -17,12 +17,14 @@ export function useImageError(target?: Ref<HTMLImageElement | null>, options: Us
     }
   }
   const cleanup = () => {
-    if (!target?.value) return
+    if (!target?.value)
+      return
     target.value?.removeEventListener('error', handler)
   }
 
   const stopWatch = watchEffect(() => {
-    if (!target?.value) return
+    if (!target?.value)
+      return
     cleanup()
 
     target.value?.addEventListener('error', handler, {
@@ -45,7 +47,8 @@ function onceError(event: Event, fallback?: string): void
 function onceError(event: Event, width?: number, height?: number): void
 function onceError(event: Event, width?: number | string, height?: number): void {
   const target = event.target as HTMLImageElement
-  if (!target || !width) return
+  if (!target || !width)
+    return
 
   let src: string
   if (typeof width === 'string') {

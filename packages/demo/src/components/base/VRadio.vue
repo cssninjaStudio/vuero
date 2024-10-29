@@ -12,16 +12,16 @@ export interface VRadioProps {
   paddingless?: boolean
 }
 
-const modelValue = defineModel<any>({
-  default: undefined,
-})
-
 const props = withDefaults(defineProps<VRadioProps>(), {
   id: undefined,
   label: undefined,
   color: undefined,
   name: undefined,
   paddingless: false,
+})
+
+const modelValue = defineModel<any>({
+  default: undefined,
 })
 
 const { field, id } = useVFieldContext({

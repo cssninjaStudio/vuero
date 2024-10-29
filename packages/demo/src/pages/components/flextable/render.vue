@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { flexRowsAdvanced } from '/@src/data/documentation/table'
+import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 
+import VFlexTableSortColumn from '/@src/components/base/VFlexTableSortColumn.vue'
 import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
-import VFlexTableSortColumn from '/@src/components/base/VFlexTableSortColumn.vue'
-import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
+import { flexRowsAdvanced } from '/@src/data/documentation/table'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
@@ -204,11 +204,11 @@ const exampleColumns = {
 
     <div class="columns">
       <div class="column is-12">
-        <!--Flex Table-->
+        <!-- Flex Table -->
         <VFlexTableWithRenderDocumentation class="mt-5" />
 
         <div class="mt-4">
-          <!--VFlexTabe-->
+          <!-- VFlexTabe -->
           <VFlexTable
             :data="sortedData"
             :columns="exampleColumns"

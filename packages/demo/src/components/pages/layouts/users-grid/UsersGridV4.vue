@@ -67,7 +67,7 @@ const optionsSingle = [
     </div>
 
     <div class="user-grid user-grid-v4">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -95,7 +95,7 @@ const optionsSingle = [
         tag="div"
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
       >
-        <!--Grid item-->
+        <!-- Grid item -->
         <div
           v-for="item in filteredData"
           :key="item.id"

@@ -38,19 +38,19 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Textarea-->
+      <!-- Textarea -->
       <TextareaBaseDocumentation />
 
-      <!--Textarea Focus-->
+      <!-- Textarea Focus -->
       <TextareaFocusDocumentation />
 
-      <!--Textarea loading-->
+      <!-- Textarea loading -->
       <TextareaLoadingDocumentation />
 
-      <!--Textarea disabled-->
+      <!-- Textarea disabled -->
       <TextareaDisabledDocumentation />
 
-      <!--Textarea Addon-->
+      <!-- Textarea Addon -->
       <TextareaAddonDocumentation />
 
       <DocumentationMeta

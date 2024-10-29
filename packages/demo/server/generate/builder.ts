@@ -1,4 +1,4 @@
-import type { ResolvedConfig, InlineConfig } from 'vite'
+import type { InlineConfig, ResolvedConfig } from 'vite'
 import colors from 'picocolors'
 import { mergeConfig, build as viteBuild } from 'vite'
 

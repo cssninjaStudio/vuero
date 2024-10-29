@@ -96,7 +96,7 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--Simple Datatable-->
+        <!-- Simple Datatable -->
         <CKEditorBasicDocumentation />
 
         <div class="columns">

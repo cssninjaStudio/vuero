@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// @ts-ignore
 import { ColorPicker } from 'vue-accessible-color-picker'
 import 'vue-accessible-color-picker/styles'
 
@@ -46,7 +45,7 @@ useMutationObserver(window?.document?.documentElement, () => {
 const { text, copy, copied } = useClipboard()
 
 const isOpen = ref(false)
-const toggle = () => {
+function toggle() {
   isOpen.value = !isOpen.value
 }
 function updateColor({ colors }: any) {

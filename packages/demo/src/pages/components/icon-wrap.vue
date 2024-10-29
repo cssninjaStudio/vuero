@@ -35,7 +35,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--IconBox-->
+      <!-- IconBox -->
       <IconWrapDefaultDocumentation />
 
       <IconWrapColorsDocumentation />

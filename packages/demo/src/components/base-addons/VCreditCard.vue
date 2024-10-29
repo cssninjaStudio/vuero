@@ -13,7 +13,6 @@ export interface VCreditCardProps {
   flipped?: boolean
 }
 
-const emit = defineEmits<VCreditCardEmits>()
 const props = withDefaults(defineProps<VCreditCardProps>(), {
   color: 'grey',
   name: 'John Doe',
@@ -21,7 +20,7 @@ const props = withDefaults(defineProps<VCreditCardProps>(), {
   cvc: '123',
   expiry: '01/30',
 })
-
+const emit = defineEmits<VCreditCardEmits>()
 const { t } = useI18n()
 const nameUppercase = computed(() => props.name?.toUpperCase() ?? '')
 </script>

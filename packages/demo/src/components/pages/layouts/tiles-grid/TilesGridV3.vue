@@ -60,7 +60,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
     </div>
 
     <div class="tile-grid tile-grid-v3">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -83,7 +83,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         </template>
       </VPlaceholderPage>
 
-      <!--Tile Grid v3-->
+      <!-- Tile Grid v3 -->
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <a

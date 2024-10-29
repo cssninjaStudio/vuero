@@ -14,10 +14,10 @@ export interface VMessageProps {
   closable?: boolean
 }
 
-const emit = defineEmits<VMessageEmits>()
 const props = withDefaults(defineProps<VMessageProps>(), {
   color: undefined,
 })
+const emit = defineEmits<VMessageEmits>()
 </script>
 
 <template>

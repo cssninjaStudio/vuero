@@ -19,9 +19,9 @@
     "@fontsource-variable/fira-code": "5.1.0",
     "@fontsource-variable/montserrat": "5.1.0",
     "@fontsource-variable/roboto-flex": "5.1.0",
-    "@unhead/addons": "1.11.6",
-    "@unhead/ssr": "1.11.6",
-    "@unhead/vue": "1.11.6",
+    "@unhead/addons": "1.11.10",
+    "@unhead/ssr": "1.11.10",
+    "@unhead/vue": "1.11.10",
     "@vueuse/core": "11.1.0",
     "@vueuse/router": "11.1.0",
     "bulma": "npm:@cssninja/bulma@0.9.4",
@@ -30,17 +30,17 @@
     "focus-trap-vue": "4.0.3",
     "iconify-icon": "2.1.0",
     "nuxt": "3.13.2",
-    "pinia": "2.2.2",
-    "vee-validate": "4.13.2",
-    "vue": "3.5.10",
+    "pinia": "2.2.4",
+    "vee-validate": "4.14.6",
+    "vue": "3.5.12",
     "vue-router": "4.4.5"
   },
   "devDependencies": {
-    "@types/node": "22.7.4",
+    "@types/node": "22.8.2",
     "@vueuse/nuxt": "11.1.0",
     "sass": "npm:sass-embedded@1.75.0",
-    "typescript": "5.6.2",
+    "typescript": "5.6.3",
     "ufo": "1.5.4",
-    "vite": "5.4.8"
+    "vite": "5.4.10"
   }
 }

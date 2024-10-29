@@ -10,7 +10,7 @@ wizard.setStep({
   },
 })
 
-const onAddFile = (error: any, fileInfo: any) => {
+function onAddFile(error: any, fileInfo: any) {
   if (error) {
     notyf.error(`${error.main}: ${error.sub}`)
     console.error(error)
@@ -23,7 +23,7 @@ const onAddFile = (error: any, fileInfo: any) => {
   }
 }
 
-const onRemoveFile = (error: any, fileInfo: any) => {
+function onRemoveFile(error: any, fileInfo: any) {
   if (error) {
     notyf.error(error)
     console.error(error)

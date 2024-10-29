@@ -31,8 +31,8 @@ export function usePopularityGaugeChart() {
             fontFamily: '"Roboto Flex Variable", sans-serif',
             fontWeight: '500',
             color: undefined,
-            formatter: function (val: number) {
-              return val + '%'
+            formatter(val: number) {
+              return `${val}%`
             },
           },
         },

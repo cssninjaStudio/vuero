@@ -34,7 +34,7 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--Theme Colors-->
+        <!-- Theme Colors -->
         <HelpersDocumentation />
 
         <div class="columns is-multiline">

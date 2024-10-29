@@ -1,12 +1,11 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'update:mobileMessageOpen', value: boolean): void
-}>()
 const props = defineProps<{
   selected?: boolean
   mobileMessageOpen?: boolean
 }>()
-
+const emit = defineEmits<{
+  (e: 'update:mobileMessageOpen', value: boolean): void
+}>()
 const { onceError } = useImageError()
 const { isMediumScreen } = useScreenSize()
 </script>
@@ -52,7 +51,7 @@ const { isMediumScreen } = useScreenSize()
         />
       </a>
     </div>
-    <!--Message-->
+    <!-- Message -->
     <div class="message-wrapper has-slimscroll">
       <div class="message-inner">
         <div class="message-head">
@@ -88,7 +87,7 @@ const { isMediumScreen } = useScreenSize()
             </a>
           </div>
         </div>
-        <!--Mail Content-->
+        <!-- Mail Content -->
         <div class="mail-content content">
           <p>Hey Erik,</p>
           <p>
@@ -130,7 +129,7 @@ const { isMediumScreen } = useScreenSize()
         </div>
       </div>
 
-      <!--Reply-->
+      <!-- Reply -->
       <div class="reply-box-wrap">
         <div class="reply-bubble">
           <div class="reply-as">
@@ -146,7 +145,7 @@ const { isMediumScreen } = useScreenSize()
 
             <InboxMessageDropdown />
           </div>
-          <!--textarea-->
+          <!-- textarea -->
           <div class="control">
             <textarea
               class="textarea"

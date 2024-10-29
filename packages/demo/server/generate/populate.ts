@@ -23,7 +23,7 @@ export async function populateRouteParams({
     const url: string
       = routes[index] === '/' ? '/' : routes[index].replace(/\/$/, '') // remove trailing slash
 
-    const logCount = `${1 + parseInt(index, 10)}/${routes.length}`
+    const logCount = `${1 + Number.parseInt(index, 10)}/${routes.length}`
 
     if (url.includes('[')) {
       const routeStaticParamsFn
@@ -101,6 +101,8 @@ export async function populateRouteParams({
               return true
             }
           }
+
+          return false
         })
       })
 
@@ -110,7 +112,7 @@ export async function populateRouteParams({
 
       // render each static param
       for (const subindex in routeStaticParams) {
-        const logSubCount = `${1 + parseInt(subindex, 10)}/${routeStaticParams.length}`
+        const logSubCount = `${1 + Number.parseInt(subindex, 10)}/${routeStaticParams.length}`
         const param = routeStaticParams[subindex]
 
         const paramUrl = params.reduce((url, p) => {

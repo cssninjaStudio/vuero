@@ -36,46 +36,46 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Autocomplete-->
+      <!-- Autocomplete -->
       <MultiselectAutocompleteDocumentation />
 
-      <!--Simple select-->
+      <!-- Simple select -->
       <MultiselectBaseDocumentation />
 
-      <!--Multiselect-->
+      <!-- Multiselect -->
       <MultiselectMultipleObjectDocumentation />
 
-      <!--Multiselect custom label-->
+      <!-- Multiselect custom label -->
       <MultiselectMultipleCustomLabelDocumentation />
 
-      <!--Disabled option-->
+      <!-- Disabled option -->
       <MultiselectDisabledOptionDocumentation />
 
-      <!--Tags-->
+      <!-- Tags -->
       <MultiselectTagsBaseDocumentation />
 
-      <!--Slot-->
+      <!-- Slot -->
       <MultiselectSelectSlotDocumentation />
 
-      <!--Slot search-->
+      <!-- Slot search -->
       <MultiselectSelectSlotSearchDocumentation />
 
-      <!--Slot search-->
+      <!-- Slot search -->
       <MultiselectSelectSlotUsersDocumentation />
 
-      <!--Slot icons search-->
+      <!-- Slot icons search -->
       <MultiselectSelectSlotIconsDocumentation />
 
-      <!--Tags images-->
+      <!-- Tags images -->
       <MultiselectTagsImageSlotDocumentation />
 
-      <!--Tags users-->
+      <!-- Tags users -->
       <MultiselectTagsCustomSlotDocumentation />
 
-      <!--Tags images stacked-->
+      <!-- Tags images stacked -->
       <MultiselectTagsImagesStackedDocumentation />
 
-      <!--Tags users stacked-->
+      <!-- Tags users stacked -->
       <MultiselectTagsUsersStackedDocumentation />
 
       <div class="pb-6 mb-6" />

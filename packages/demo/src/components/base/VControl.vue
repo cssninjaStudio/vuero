@@ -60,7 +60,8 @@ const hasError = computed(() =>
 )
 
 const controlClasees = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return [
     'control',

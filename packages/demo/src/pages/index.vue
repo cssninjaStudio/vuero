@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Layout from '/@src/layouts/landing.vue'
 import packageJson from '../../package.json'
+import Layout from '/@src/layouts/landing.vue'
 
 const activeTab = ref<'components' | 'forms' | 'plugins'>('components')
 
@@ -62,13 +62,13 @@ useHead({
       </div>
     </div>
 
-    <!--Stacks Section-->
+    <!-- Stacks Section -->
     <div
       id="stacks-section"
       class="section"
     >
       <div class="container">
-        <!--Stacks-->
+        <!-- Stacks -->
         <div class="stacks">
           <div>
             <Tippy
@@ -211,7 +211,7 @@ useHead({
           </div>
         </div>
 
-        <!--Title-->
+        <!-- Title -->
         <div class="section-title has-text-centered">
           <h2 class="title is-2">
             Amazing Features
@@ -219,7 +219,7 @@ useHead({
           <h4>All you need to build your project is there.</h4>
         </div>
 
-        <!--Boxed Features-->
+        <!-- Boxed Features -->
         <div class="boxed-features">
           <div class="flex-card light-bordered hover-inset">
             <div class="flex-cell is-bordered">
@@ -289,7 +289,7 @@ useHead({
           </div>
         </div>
 
-        <!--CTA-->
+        <!-- CTA -->
         <div class="cta-block">
           <div class="head-text">
             <h3>Buy Vuero</h3>
@@ -314,7 +314,7 @@ useHead({
           </div>
         </div>
 
-        <!--Title-->
+        <!-- Title -->
         <div class="section-title has-text-centered">
           <h2 class="title is-2">
             Developer Experience
@@ -322,7 +322,7 @@ useHead({
           <h4>A set of professional tools to build professional apps.</h4>
         </div>
 
-        <!--Boxed Features-->
+        <!-- Boxed Features -->
         <div class="boxed-features is-flat pb-6">
           <div class="flex-card light-bordered hover-inset">
             <div class="flex-cell is-bordered">
@@ -485,7 +485,7 @@ useHead({
       class="section"
     >
       <div class="container">
-        <!--Title-->
+        <!-- Title -->
         <div class="section-title has-text-centered">
           <h2 class="title is-2">
             Outstanding Demos
@@ -493,12 +493,12 @@ useHead({
           <h4>Check out a wide variety of demo pages.</h4>
         </div>
 
-        <!--Demos partial-->
+        <!-- Demos partial -->
         <LandingDemos />
       </div>
     </div>
 
-    <!--Side Features Section-->
+    <!-- Side Features Section -->
     <MarketingSideFeatures
       title="Top Tier Product"
       subtitle="Vuero has been carefully handcrafted."
@@ -559,7 +559,7 @@ useHead({
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column is-6 is-offset-3 has-text-centered">
-            <!--Title-->
+            <!-- Title -->
             <div class="section-title has-text-centered p-b-40">
               <h2 class="title is-3">
                 Reusable components
@@ -626,7 +626,7 @@ useHead({
           </div>
         </div>
 
-        <!--CTA-->
+        <!-- CTA -->
         <p class="p-t-40 p-b-40 has-text-centered">
           <a
             href="http://go.cssninja.io/buy-vuero"
@@ -636,7 +636,7 @@ useHead({
           </a>
         </p>
 
-        <!--Components-->
+        <!-- Components -->
         <div class="vuero-components p-t-40 p-b-60">
           <div class="vertical-tabs-wrapper">
             <VTabs

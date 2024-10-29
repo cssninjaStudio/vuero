@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { VBillboardJSMeta } from '/@src/data/documentation/components-meta'
-
 import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
+
+import { VBillboardJSMeta } from '/@src/data/documentation/components-meta'
 
 const themeColors = useThemeColors()
 const { options } = useSplineSimple()

@@ -27,7 +27,7 @@ wizard.setStep({
 
       <div class="tools-wrapper">
         <div class="columns is-multiline">
-          <!--Tool-->
+          <!-- Tool -->
           <VField
             v-for="tool in tools"
             :key="tool.name"

@@ -35,7 +35,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Loader-->
+      <!-- Loader -->
       <PlaceloadBaseDocumentation />
 
       <PlaceloadWrapDocumentation />

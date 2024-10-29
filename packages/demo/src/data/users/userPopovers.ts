@@ -1,4 +1,5 @@
-import { type UserPopover } from '/@src/types/users'
+import type { UserPopover } from '/@src/types/users'
+
 export const popovers: {
   [id: string]: UserPopover
 } = {

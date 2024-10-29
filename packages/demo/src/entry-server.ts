@@ -1,10 +1,10 @@
+import type { VueroServerRender, VueroSSRContext } from '/@server/types'
 import devalue from '@nuxt/devalue'
-import { getRequestURL, setResponseHeader } from 'h3'
-import { renderToWebStream } from 'vue/server-renderer'
 import { renderSSRHead } from '@unhead/ssr'
+import { getRequestURL, setResponseHeader } from 'h3'
 import { minify } from 'html-minifier-terser'
 
-import type { VueroServerRender, VueroSSRContext } from '/@server/types'
+import { renderToWebStream } from 'vue/server-renderer'
 import { createApp } from '/@src/app'
 
 const placeholderAppRe = /<div id="app"([\s\w\-"'=[\]]*)><\/div>/
@@ -91,8 +91,10 @@ function wrapTemplate(html: string) {
 
 function renderPreloadLinks(modules?: any, manifest?: any) {
   let links = ''
-  if (!modules) return links
-  if (!manifest) return links
+  if (!modules)
+    return links
+  if (!manifest)
+    return links
 
   const seen = new Set()
   modules?.forEach((id: string) => {

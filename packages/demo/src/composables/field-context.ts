@@ -1,12 +1,12 @@
-import type { MaybeRefOrGetter, InjectionKey } from 'vue'
-import { useField, type FieldContext } from 'vee-validate'
+import type { InjectionKey, MaybeRefOrGetter } from 'vue'
 import { defu } from 'defu'
+import { type FieldContext, useField } from 'vee-validate'
 
-export type VFieldContext<TValue = unknown> = {
+export interface VFieldContext<TValue = unknown> {
   id: Ref<string>
   field: Ref<FieldContext<TValue> | undefined>
 }
-export const useVFieldSymbolContext = Symbol() as InjectionKey<VFieldContext>
+export const useVFieldSymbolContext = Symbol('v-field') as InjectionKey<VFieldContext>
 
 function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string | undefined>) {
   const idVal = toValue(id)
@@ -52,7 +52,7 @@ export function useVFieldContext<TValue = unknown>(options = {} as VFieldContext
   }
 
   if (!toValue(_options.create)) {
-    const _help = toValue(_options.help) ? toValue(_options.help) + ': ' : ''
+    const _help = toValue(_options.help) ? `${toValue(_options.help)}: ` : ''
     throw new Error(
       `${_help}useVFieldContext (create = false) must be used inside a VField component`,
     )

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
-import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
-import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
 import { useFlexRadialChartCircle } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
 import { useFlexRadialChartStripes } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
 import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
 import { useGroupedRadialCharts } from '/@src/data/widgets/charts/groupedRadialCharts'
+import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
+import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
 import { memberList } from '/@src/data/widgets/table/memberList'
 
 const { spark1, spark2, spark3, spark4 } = useSalesSparksCharts()
@@ -24,7 +24,7 @@ const {
 
 <template>
   <div class="columns is-multiline">
-    <!--Spark Tile Widgets-->
+    <!-- Spark Tile Widgets -->
     <div class="column is-3">
       <SparkStatWidget straight>
         <ApexChart
@@ -73,7 +73,7 @@ const {
       </SparkStatWidget>
     </div>
 
-    <!--Line Stats Widget-->
+    <!-- Line Stats Widget -->
     <div class="column is-6">
       <LineStatWidget
         title="Revenue"
@@ -93,7 +93,7 @@ const {
       </LineStatWidget>
     </div>
 
-    <!--Line Stats Widget-->
+    <!-- Line Stats Widget -->
     <div class="column is-6">
       <LineStatWidget
         title="Revenue"
@@ -113,7 +113,7 @@ const {
       </LineStatWidget>
     </div>
 
-    <!--Flex Stat Widget-->
+    <!-- Flex Stat Widget -->
     <div class="column is-6">
       <FlexStatWidget
         title="Sales Revenue"
@@ -129,7 +129,7 @@ const {
       </FlexStatWidget>
     </div>
 
-    <!--Flex Stat Widget-->
+    <!-- Flex Stat Widget -->
     <div class="column is-6">
       <FlexStatWidget
         title="Sales Revenue"
@@ -145,7 +145,7 @@ const {
       </FlexStatWidget>
     </div>
 
-    <!--Grouped Stat Widget-->
+    <!-- Grouped Stat Widget -->
     <div class="column is-6">
       <GroupedStatWidget
         title="Additional Stats"
@@ -182,7 +182,7 @@ const {
       </GroupedStatWidget>
     </div>
 
-    <!--Grouped Stat Widget-->
+    <!-- Grouped Stat Widget -->
     <div class="column is-6">
       <GroupedStatWidget
         title="Additional Stats"
@@ -220,7 +220,7 @@ const {
       </GroupedStatWidget>
     </div>
 
-    <!--Followers Stat Widget-->
+    <!-- Followers Stat Widget -->
     <div class="column is-4">
       <SocialStatWidget
         icon="fab fa-twitter"
@@ -229,7 +229,7 @@ const {
       />
     </div>
 
-    <!--Followers Stat Widget-->
+    <!-- Followers Stat Widget -->
     <div class="column is-4">
       <SocialStatWidget
         icon="fab fa-twitter"
@@ -239,7 +239,7 @@ const {
       />
     </div>
 
-    <!--Followers Stat Widget-->
+    <!-- Followers Stat Widget -->
     <div class="column is-4">
       <SocialStatWidget
         icon="fab fa-twitter"
@@ -249,7 +249,7 @@ const {
       />
     </div>
 
-    <!--Table Widget-->
+    <!-- Table Widget -->
     <div class="column is-12">
       <TableWidget
         title="Members"
@@ -260,7 +260,7 @@ const {
       />
     </div>
 
-    <!--Table Widget-->
+    <!-- Table Widget -->
     <div class="column is-12">
       <TableWidget
         title="Members"

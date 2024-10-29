@@ -36,16 +36,16 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--File input button-->
+      <!-- File input button -->
       <FileBaseDocumentation />
 
-      <!--File input boxed-->
+      <!-- File input boxed -->
       <FileBoxedDocumentation />
 
-      <!--File Left-->
+      <!-- File Left -->
       <FileLeftDocumentation />
 
-      <!--File Right-->
+      <!-- File Right -->
       <FileRightDocumentation />
     </DocumentationTocContainer>
   </div>

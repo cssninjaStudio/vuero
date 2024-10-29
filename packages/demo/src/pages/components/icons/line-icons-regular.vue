@@ -61,7 +61,7 @@ useHead({
 
     <div class="columns">
       <div class="column is-12">
-        <!--Line Icons-->
+        <!-- Line Icons -->
         <IconsLineRegularDocumentation />
 
         <DocumentationDemoCard class="mt-4">

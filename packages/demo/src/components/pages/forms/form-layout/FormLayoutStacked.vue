@@ -17,7 +17,7 @@ const isStuck = computed(() => {
 
 const options = ref(['All day'])
 
-const onSubmit = () => {
+function onSubmit() {
   console.log('Form submitted!')
 }
 </script>

@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { SlotsType, InjectionKey, PropType } from 'vue'
+import type { InjectionKey, PropType, SlotsType } from 'vue'
 import type { VFlexTableColumn } from './VFlexTable.vue'
 import VFlexTableSortColumn from './VFlexTableSortColumn.vue'
 
@@ -49,7 +49,7 @@ export interface VFlexTableWrapperInjection {
   fetchData: (controller?: AbortController) => Promise<void>
 }
 
-export const flewTableWrapperSymbol: InjectionKey<VFlexTableWrapperInjection> = Symbol()
+export const flexTableWrapperSymbol: InjectionKey<VFlexTableWrapperInjection> = Symbol('flex-table-wrapper')
 
 const defaultFormatter = (value: any) => value
 const defaultSortFunction: VFlexTableWrapperSortFunction = ({ key, order, a, b }) => {
@@ -173,7 +173,8 @@ export default defineComponent({
 
     const columns = computed(() => {
       const columnProps = props.columns
-      if (!columnProps) return columnProps
+      if (!columnProps)
+        return columnProps
 
       const wrapperColumns: Record<string, Partial<VFlexTableWrapperColumn>> = {}
 
@@ -238,14 +239,17 @@ export default defineComponent({
 
     const filteredData = computed(() => {
       let data = rawData.value
-      if (!data) return data
-      if (typeof props.data === 'function') return data
+      if (!data)
+        return data
+      if (typeof props.data === 'function')
+        return data
 
       // filter data
       if (searchTerm.value) {
         const searchableColumns = columns.value
           ? (Object.values(columns.value).filter((column) => {
-              if (!column || typeof column === 'string') return false
+              if (!column || typeof column === 'string')
+                return false
               return column.searchable === true
             }) as Partial<VFlexTableWrapperColumn>[])
           : []
@@ -254,7 +258,8 @@ export default defineComponent({
           const _searchRe = new RegExp(searchTerm.value, 'i')
           data = data.filter((row, index) => {
             return searchableColumns.some((column) => {
-              if (!column.key) return false
+              if (!column.key)
+                return false
 
               const value = row[column.key]
 
@@ -268,7 +273,8 @@ export default defineComponent({
                 })
               }
 
-              if (typeof value === 'string') return value.match(_searchRe)
+              if (typeof value === 'string')
+                return value.match(_searchRe)
 
               return false
             })
@@ -281,8 +287,10 @@ export default defineComponent({
 
     const sortedData = computed(() => {
       let data = filteredData.value
-      if (!data) return data
-      if (typeof props.data === 'function') return data
+      if (!data)
+        return data
+      if (typeof props.data === 'function')
+        return data
 
       // sort data
       if (sort.value && sort.value.includes(':')) {
@@ -290,7 +298,8 @@ export default defineComponent({
 
         const sortingColumn = columns.value
           ? (Object.values(columns.value).find((column) => {
-              if (!column || typeof column === 'string') return false
+              if (!column || typeof column === 'string')
+                return false
               return column.sortable === true && column.key === sortField
             }) as Partial<VFlexTableWrapperColumn>)
           : null
@@ -298,8 +307,10 @@ export default defineComponent({
         if (sortingColumn) {
           const sorted = [...data]
           sorted.sort((a, b) => {
-            if (!sortingColumn.key) return 0
-            if (!sortingColumn.sort) return 0
+            if (!sortingColumn.key)
+              return 0
+            if (!sortingColumn.sort)
+              return 0
 
             return sortingColumn.sort({
               order: sortOrder,
@@ -317,10 +328,12 @@ export default defineComponent({
     })
 
     const data = computed(() => {
-      if (typeof props.data === 'function') return rawData.value
-      if (!rawData.value) return rawData.value
+      if (typeof props.data === 'function')
+        return rawData.value
+      if (!rawData.value)
+        return rawData.value
 
-      let data = sortedData.value
+      const data = sortedData.value
 
       // paginate data
       return data?.slice(start.value, start.value + limit.value)
@@ -389,7 +402,7 @@ export default defineComponent({
       fetchData,
     }) as VFlexTableWrapperInjection
 
-    provide(flewTableWrapperSymbol, wrapperState)
+    provide(flexTableWrapperSymbol, wrapperState)
     context.expose(wrapperState)
 
     return () => {

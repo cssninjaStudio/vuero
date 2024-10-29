@@ -36,16 +36,16 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Datepicker-->
+      <!-- Datepicker -->
       <DatepickerBaseDocumentation />
 
-      <!--DateRangepicker-->
+      <!-- DateRangepicker -->
       <DatepickerRangeDocumentation />
 
-      <!--DateTimepicker-->
+      <!-- DateTimepicker -->
       <DatepickerTimeDocumentation />
 
-      <!--Timepicker-->
+      <!-- Timepicker -->
       <DatepickerTimeSingleDocumentation />
     </DocumentationTocContainer>
   </div>

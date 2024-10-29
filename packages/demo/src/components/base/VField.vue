@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type VFieldProps = {
+export interface VFieldProps {
   id?: string
   label?: string
   addons?: boolean
@@ -24,7 +24,8 @@ const { field, id } = useVFieldContext({
 const slots = useSlots()
 const hasLabel = computed(() => Boolean(slots?.label?.() || props.label))
 const classes = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return [
     'field',

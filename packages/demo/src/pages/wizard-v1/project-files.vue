@@ -9,6 +9,7 @@ const isUploading = ref(false)
 const previewTemplateElement = useTemplateRef<HTMLElement>('preview-template')
 const previewContainerElement = useTemplateRef<HTMLElement>('preview-container')
 const totalProgressElement = useTemplateRef<HTMLElement>('total-progress')
+// eslint-disable-next-line unused-imports/no-unused-vars
 const addUploadElement = useTemplateRef<HTMLElement>('add-upload')
 const startUploadElement = useTemplateRef<HTMLElement>('start-upload')
 const cancelUploadElement = useTemplateRef<HTMLElement>('cancel-upload')
@@ -29,7 +30,7 @@ wizard.setStep({
   },
 })
 
-const initDropzone = () => {
+function initDropzone() {
   if (isInit) {
     return
   }
@@ -201,7 +202,7 @@ watch(previewTemplate, () => {
         <p>Or you can skip this step. You can always add more files later.</p>
       </div>
 
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!isUploading"
         class="is-files"

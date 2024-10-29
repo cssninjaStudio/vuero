@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import * as listData from '/@src/data/layouts/flex-list-v2'
-
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
+
+import * as listData from '/@src/data/layouts/flex-list-v2'
 
 export interface ProjectData {
   id: number
@@ -131,7 +131,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
     </div>
 
-    <!--Table Pagination-->
+    <!-- Table Pagination -->
     <VFlexPagination
       v-if="filteredData.length > 5"
       v-model:current-page="page"

@@ -15,9 +15,6 @@ export interface VCheckboxProps {
   wrapperClass?: string
 }
 
-const modelValue = defineModel<any>({
-  default: false,
-})
 const props = withDefaults(defineProps<VCheckboxProps>(), {
   id: undefined,
   label: undefined,
@@ -30,7 +27,9 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   paddingless: false,
   wrapperClass: undefined,
 })
-
+const modelValue = defineModel<any>({
+  default: false,
+})
 const context = useVFieldContext({
   id: () => props.id,
   help: 'VCheckbox',
@@ -54,7 +53,8 @@ const internal = computed({
 })
 
 const classes = computed(() => {
-  if (props.raw) return [props.wrapperClass]
+  if (props.raw)
+    return [props.wrapperClass]
 
   return [
     'checkbox',

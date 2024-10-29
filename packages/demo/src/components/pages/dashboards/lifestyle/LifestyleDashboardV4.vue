@@ -7,7 +7,7 @@ const { onceError } = useImageError()
     <div class="columns">
       <div class="column is-8">
         <div class="columns is-multiline">
-          <!--Header-->
+          <!-- Header -->
           <div class="column is-12">
             <div class="illustration-header-2">
               <div class="header-image">
@@ -33,20 +33,20 @@ const { onceError } = useImageError()
             </div>
           </div>
 
-          <!--Content-->
+          <!-- Content -->
           <div class="column is-7">
             <div class="writing-stats">
-              <!--Stat-->
+              <!-- Stat -->
               <div class="writing-stat">
                 <span>Articles</span>
                 <span class="dark-inverted">209</span>
               </div>
-              <!--Stat-->
+              <!-- Stat -->
               <div class="writing-stat">
                 <span>Readers</span>
                 <span class="dark-inverted">863</span>
               </div>
-              <!--Stat-->
+              <!-- Stat -->
               <div class="writing-stat">
                 <span>Comments</span>
                 <span class="dark-inverted">386</span>
@@ -54,7 +54,7 @@ const { onceError } = useImageError()
             </div>
 
             <div class="featured-authors">
-              <!--Header-->
+              <!-- Header -->
               <div class="featured-authors-header">
                 <h3 class="dark-inverted">
                   Featured Authors
@@ -66,7 +66,7 @@ const { onceError } = useImageError()
               </div>
 
               <div class="featured-authors-list">
-                <!--Item-->
+                <!-- Item -->
                 <div class="featured-authors-item">
                   <VBlock
                     title="Alice C."
@@ -84,7 +84,7 @@ const { onceError } = useImageError()
                     </template>
                   </VBlock>
                 </div>
-                <!--Item-->
+                <!-- Item -->
                 <div class="featured-authors-item">
                   <VBlock
                     title="Elizabeth F."
@@ -102,7 +102,7 @@ const { onceError } = useImageError()
                     </template>
                   </VBlock>
                 </div>
-                <!--Item-->
+                <!-- Item -->
                 <div class="featured-authors-item">
                   <VBlock
                     title="Jonathan K."
@@ -120,7 +120,7 @@ const { onceError } = useImageError()
                     </template>
                   </VBlock>
                 </div>
-                <!--Item-->
+                <!-- Item -->
                 <div class="featured-authors-item">
                   <VBlock
                     title="Christie D."
@@ -142,11 +142,11 @@ const { onceError } = useImageError()
             </div>
           </div>
 
-          <!--Content-->
+          <!-- Content -->
           <div class="column is-5">
-            <!--Updates-->
+            <!-- Updates -->
             <div class="updates">
-              <!--Header-->
+              <!-- Header -->
               <div class="updates-header">
                 <h3 class="dark-inverted">
                   Updates
@@ -158,27 +158,27 @@ const { onceError } = useImageError()
               </div>
 
               <div class="updates-list">
-                <!--Update-->
+                <!-- Update -->
                 <div class="update-item is-dark-bordered-12">
                   <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
-                <!--Update-->
+                <!-- Update -->
                 <div class="update-item is-dark-bordered-12">
                   <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
-                <!--Update-->
+                <!-- Update -->
                 <div class="update-item is-dark-bordered-12">
                   <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
-                <!--Update-->
+                <!-- Update -->
                 <div class="update-item is-dark-bordered-12">
                   <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
-                <!--Update-->
+                <!-- Update -->
                 <div class="update-item is-dark-bordered-12">
                   <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
@@ -189,10 +189,10 @@ const { onceError } = useImageError()
         </div>
       </div>
 
-      <!--Feed-->
+      <!-- Feed -->
       <div class="column is-4">
         <div class="articles-feed">
-          <!--Header-->
+          <!-- Header -->
           <div class="articles-feed-header">
             <h3 class="dark-inverted">
               New Articles
@@ -202,7 +202,7 @@ const { onceError } = useImageError()
               tabindex="0"
             >View All</a>
           </div>
-          <!--Subheader-->
+          <!-- Subheader -->
           <div class="articles-feed-subheader">
             <div class="selector">
               <button class="button is-selected">
@@ -213,10 +213,10 @@ const { onceError } = useImageError()
               </button>
             </div>
           </div>
-          <!--List-->
+          <!-- List -->
           <div class="articles-feed-list">
             <div class="articles-feed-list-inner">
-              <!--Item-->
+              <!-- Item -->
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
@@ -242,7 +242,7 @@ const { onceError } = useImageError()
                   </VBlock>
                 </div>
               </a>
-              <!--Item-->
+              <!-- Item -->
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img

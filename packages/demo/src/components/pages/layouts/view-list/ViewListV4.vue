@@ -2,6 +2,15 @@
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as listData from '/@src/data/layouts/view-list-v4'
 
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'all' | 'saved'
+  }>(),
+  {
+    activeTab: 'all',
+  },
+)
+
 const { onceError } = useImageError()
 
 export interface RecipeData {
@@ -18,15 +27,6 @@ export interface RecipeData {
 }
 
 const recipes = listData.recipes as RecipeData[]
-
-const props = withDefaults(
-  defineProps<{
-    activeTab?: 'all' | 'saved'
-  }>(),
-  {
-    activeTab: 'all',
-  },
-)
 
 const filters = ref('')
 const tab = ref(props.activeTab)
@@ -79,9 +79,9 @@ const filteredData = computed(() => {
       </div>
     </div>
 
-    <!--List-->
+    <!-- List -->
     <div class="list-view list-view-v4">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!filteredData.length"
         title="We couldn't find any matching results."
@@ -104,14 +104,14 @@ const filteredData = computed(() => {
         </template>
       </VPlaceholderPage>
 
-      <!--Active Tab-->
+      <!-- Active Tab -->
       <div v-else-if="tab === 'all'">
         <div class="list-view-inner">
           <TransitionGroup
             name="list-complete"
             tag="div"
           >
-            <!--Item-->
+            <!-- Item -->
             <div
               v-for="(item, key) in filteredData"
               :key="key"
@@ -199,10 +199,10 @@ const filteredData = computed(() => {
         />
       </div>
 
-      <!--Inactive Tab-->
+      <!-- Inactive Tab -->
       <div v-else-if="tab === 'saved'">
         <div class="list-view-inner">
-          <!--Empty placeholder-->
+          <!-- Empty placeholder -->
           <VPlaceholderPage
             title="No saved recipes."
             subtitle="Looks like you don't have any saved recipes for the moment.

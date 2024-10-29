@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container">
-      <!--Title-->
+      <!-- Title -->
       <div class="section-title has-text-centered">
         <h2 class="title is-2">
           Comprehensive Pricing
@@ -9,9 +9,9 @@
         <h4>There's a right plan for everyone out there.</h4>
       </div>
 
-      <!--Wrapper-->
+      <!-- Wrapper -->
       <div class="pricing-wrapper">
-        <!--Pricing plan-->
+        <!-- Pricing plan -->
         <div class="pricing-plan">
           <div class="name">
             Free
@@ -43,7 +43,7 @@
           </ul>
         </div>
 
-        <!--Pricing plan-->
+        <!-- Pricing plan -->
         <div class="pricing-plan">
           <div class="name">
             Business
@@ -75,7 +75,7 @@
           </ul>
         </div>
 
-        <!--Pricing plan-->
+        <!-- Pricing plan -->
         <div class="pricing-plan is-featured">
           <div class="name">
             Pro
@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <!--CTA-->
+      <!-- CTA -->
       <div class="cta-block no-border">
         <div class="head-text">
           <h3>Want to learn more?</h3>

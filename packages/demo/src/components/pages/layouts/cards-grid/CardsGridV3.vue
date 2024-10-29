@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarProps, VAvatarColor } from '/@src/components/base/VAvatar.vue'
+import type { VAvatarColor, VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { projects } from '/@src/data/layouts/card-grid-v3'
 
 const filters = ref('')
@@ -74,7 +74,7 @@ function getAvatarData(user: any): VAvatarProps {
     </div>
 
     <div class="card-grid card-grid-v3">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -97,13 +97,13 @@ function getAvatarData(user: any): VAvatarProps {
         </template>
       </VPlaceholderPage>
 
-      <!--Card Grid v3-->
+      <!-- Card Grid v3 -->
       <TransitionGroup
         name="list"
         tag="div"
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
       >
-        <!--Grid Item-->
+        <!-- Grid Item -->
         <div
           v-for="item in filteredData"
           :key="item.id"

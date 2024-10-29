@@ -38,10 +38,10 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Switch-->
+      <!-- Switch -->
       <SwitchSegmentDocumentation />
 
-      <!--Label-->
+      <!-- Label -->
       <SwitchSegmentLabelDocumentation />
 
       <DocumentationMeta

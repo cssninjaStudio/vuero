@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!--Edit Profile-->
+    <!-- Edit Profile -->
     <div class="account-wrapper">
       <div class="columns">
-        <!--Navigation-->
+        <!-- Navigation -->
         <div class="column is-4">
           <div class="account-box is-navigation">
             <VBlock

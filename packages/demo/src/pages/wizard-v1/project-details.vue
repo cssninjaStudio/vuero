@@ -31,7 +31,7 @@ const filteredCustomers = computed<WizardCustomer[]>(() => {
     .splice(0, 4)
 })
 
-const selectCustomer = (customer: WizardCustomer | null) => {
+function selectCustomer(customer: WizardCustomer | null) {
   wizard.data.customer = customer
 }
 </script>

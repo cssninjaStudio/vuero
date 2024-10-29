@@ -1,16 +1,16 @@
 <script setup lang="ts">
+import {
+  flexRowsOrders,
+  optionsSingle,
+  valueSingle,
+} from '/@src/data/dashboards/ecommerce/dashboardData'
+import { useSparksCharts } from '/@src/data/dashboards/ecommerce/sparksCharts'
 import { useFlexRadialChartCircle } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
 import { useFlexRadialChartStripes } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
-import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
-import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
 import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
 import { useGroupedRadialCharts } from '/@src/data/widgets/charts/groupedRadialCharts'
-import { useSparksCharts } from '/@src/data/dashboards/ecommerce/sparksCharts'
-import {
-  valueSingle,
-  optionsSingle,
-  flexRowsOrders,
-} from '/@src/data/dashboards/ecommerce/dashboardData'
+import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
 
 const { flexRadialChartCircleOptions } = useFlexRadialChartCircle()
 const { flexRadialChartStripesOptions } = useFlexRadialChartStripes()
@@ -28,7 +28,7 @@ const {
 
 <template>
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
-    <!--Header-->
+    <!-- Header -->
     <div class="dashboard-header">
       <VAvatar
         picture="/images/avatars/svg/vuero-1.svg"
@@ -54,7 +54,7 @@ const {
     </div>
 
     <div class="columns is-multiline">
-      <!--Dashboard tile-->
+      <!-- Dashboard tile -->
       <div class="column is-3">
         <div class="dashboard-tile">
           <div class="tile-head">
@@ -85,7 +85,7 @@ const {
         </div>
       </div>
 
-      <!--Dashboard tile-->
+      <!-- Dashboard tile -->
       <div class="column is-3">
         <div class="dashboard-tile">
           <div class="tile-head">
@@ -116,7 +116,7 @@ const {
         </div>
       </div>
 
-      <!--Dashboard tile-->
+      <!-- Dashboard tile -->
       <div class="column is-3">
         <div class="dashboard-tile">
           <div class="tile-head">
@@ -147,7 +147,7 @@ const {
         </div>
       </div>
 
-      <!--Dashboard tile-->
+      <!-- Dashboard tile -->
       <div class="column is-3">
         <div class="dashboard-tile">
           <div class="tile-head">
@@ -178,7 +178,7 @@ const {
         </div>
       </div>
 
-      <!--Line Stats Widget-->
+      <!-- Line Stats Widget -->
       <div class="column is-6">
         <LineStatWidget
           title="Revenue"
@@ -198,7 +198,7 @@ const {
         </LineStatWidget>
       </div>
 
-      <!--Line Stats Widget-->
+      <!-- Line Stats Widget -->
       <div class="column is-6">
         <LineStatWidget
           title="Revenue"
@@ -218,7 +218,7 @@ const {
         </LineStatWidget>
       </div>
 
-      <!--Flex Stat Widget-->
+      <!-- Flex Stat Widget -->
       <div class="column is-6">
         <FlexStatWidget
           title="Sales Revenue"
@@ -234,7 +234,7 @@ const {
         </FlexStatWidget>
       </div>
 
-      <!--Flex Stat Widget-->
+      <!-- Flex Stat Widget -->
       <div class="column is-6">
         <FlexStatWidget
           title="Sales Revenue"
@@ -250,7 +250,7 @@ const {
         </FlexStatWidget>
       </div>
 
-      <!--Grouped Stat Widget-->
+      <!-- Grouped Stat Widget -->
       <div class="column is-6">
         <GroupedStatWidget
           title="Additional Stats"
@@ -287,7 +287,7 @@ const {
         </GroupedStatWidget>
       </div>
 
-      <!--Grouped Stat Widget-->
+      <!-- Grouped Stat Widget -->
       <div class="column is-6">
         <GroupedStatWidget
           title="Additional Stats"
@@ -325,9 +325,9 @@ const {
         </GroupedStatWidget>
       </div>
 
-      <!--Table-->
+      <!-- Table -->
       <div class="column is-12">
-        <!--Header-->
+        <!-- Header -->
         <div class="table-header">
           <h3 class="dark-inverted">
             Recent Orders

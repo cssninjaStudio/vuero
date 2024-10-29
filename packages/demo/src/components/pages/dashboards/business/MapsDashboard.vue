@@ -4,11 +4,11 @@ import type { Map, Popup } from 'mapbox-gl'
 import 'mapbox-gl/src/css/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
-const themeColors = useThemeColors()
-
 const props = defineProps<{
   reversed?: boolean
 }>()
+
+const themeColors = useThemeColors()
 
 const { isDark } = useDarkmode()
 const selectedFeature = ref()
@@ -21,7 +21,7 @@ const map = shallowRef<Map>()
 const popup = shallowRef<Popup>()
 const geocoder = shallowRef<any>()
 
-let popupCtr: {
+let PopupCtr: {
   new (): Popup
 }
 
@@ -205,7 +205,7 @@ function loadLayers() {
     type: 'circle',
     source: 'places',
     paint: {
-      'circle-color': isDark ? themeColors.purple : themeColors.lime,
+      'circle-color': (isDark ? themeColors.purple : themeColors.lime) || '',
       'circle-radius': 6,
       'circle-stroke-width': 2,
       'circle-stroke-color': isDark
@@ -253,7 +253,7 @@ onMounted(() => {
     if (!mapElement.value || !geocoderElement.value) {
       return
     }
-    popupCtr = _popupCtr
+    PopupCtr = _popupCtr
     // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
     mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
 
@@ -317,13 +317,14 @@ watchPostEffect(() => {
     essential: true, // this animation is considered essential with respect to prefers-reduced-motion
   })
 
-  if (!popupCtr) return
+  if (!PopupCtr)
+    return
 
   if (popup.value) {
     popup.value.remove()
   }
 
-  popup.value = new popupCtr()
+  popup.value = new PopupCtr()
     .on('open', () => {
       selectedFeatureName.value = name
     })
@@ -383,12 +384,12 @@ watch(
         <div
           class="content-section-body has-slimscroll"
         >
-          <!--Title-->
+          <!-- Title -->
           <h4 class="content-section-title">
             Recent Locations
           </h4>
 
-          <!--Map Box-->
+          <!-- Map Box -->
           <div
             v-for="(feature, key) in locations.features"
             :key="key"

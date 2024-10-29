@@ -6,7 +6,7 @@ const router = useRouter()
 
 const isLoading = ref(false)
 
-const accept = async () => {
+async function accept() {
   isLoading.value = true
   notyf.primary('Invitation for Banking Solution Website accepted')
 

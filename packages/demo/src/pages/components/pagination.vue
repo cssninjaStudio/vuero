@@ -47,7 +47,7 @@ useHead({
 
     <div class="columns">
       <div class="column is-12">
-        <!--Flex Table-->
+        <!-- Flex Table -->
         <VFlexPaginationBaseDocumentation />
 
         <div class="mt-4">

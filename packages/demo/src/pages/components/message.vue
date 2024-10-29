@@ -35,10 +35,10 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Message-->
+      <!-- Message -->
       <VMessageBaseDocumentation />
 
-      <!--Message Colors-->
+      <!-- Message Colors -->
       <VMessageColorsDocumentation />
 
       <DocumentationMeta

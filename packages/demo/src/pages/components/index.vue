@@ -31,7 +31,7 @@ useHead({
 
           <div class="hub-body">
             <div class="body-inner">
-              <!--Component/buttons-->
+              <!-- Component/buttons -->
               <HubCard
                 title="Buttons"
                 content="Get familiar with the Vuero button styles. Code examples included."
@@ -54,7 +54,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/icons-->
+              <!-- Component/icons -->
               <HubCard
                 title="Icons"
                 content="Get familiar with the Vuero icon libraries. Code examples included."
@@ -77,7 +77,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/dropdowns-->
+              <!-- Component/dropdowns -->
               <HubCard
                 title="Dropdowns"
                 content="Get familiar with the Vuero dropdown styles. Code examples included."
@@ -100,7 +100,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/modals-->
+              <!-- Component/modals -->
               <HubCard
                 title="Modals"
                 content="Get familiar with the Vuero modal styles. Code examples included."
@@ -123,7 +123,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/progress-->
+              <!-- Component/progress -->
               <HubCard
                 title="Progress"
                 content="Get familiar with the Vuero progress bar styles. Code examples included."
@@ -146,7 +146,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/forms-->
+              <!-- Component/forms -->
               <HubCard
                 title="Forms"
                 content="Get familiar with the Vuero form elements. Code examples included."
@@ -169,7 +169,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/checkbox-->
+              <!-- Component/checkbox -->
               <HubCard
                 title="Checkboxes"
                 content="Get familiar with the Vuero checkboxes styles. Code examples included."
@@ -192,7 +192,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/switch-block-->
+              <!-- Component/switch-block -->
               <HubCard
                 title="Switches"
                 content="Get familiar with the Vuero switches styles. Code examples included."
@@ -214,7 +214,7 @@ useHead({
                   >
                 </template>
               </HubCard>
-              <!--Component/content-->
+              <!-- Component/content -->
               <HubCard
                 title="Content"
                 content="Get familiar with the Vuero content styles. Code examples included."
@@ -237,7 +237,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/tags-->
+              <!-- Component/tags -->
               <HubCard
                 title="Tags"
                 content="Get familiar with the Vuero tags styles. Code examples included."
@@ -260,7 +260,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/tabs-->
+              <!-- Component/tabs -->
               <HubCard
                 title="Tabs"
                 content="Get familiar with the Vuero nav tabs styles. Code examples included."
@@ -283,7 +283,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/cards-->
+              <!-- Component/cards -->
               <HubCard
                 title="Cards"
                 content="Get familiar with the Vuero card styles. Code examples included."
@@ -305,7 +305,7 @@ useHead({
                   >
                 </template>
               </HubCard>
-              <!--Component/avatars-->
+              <!-- Component/avatars -->
               <HubCard
                 title="Avatars"
                 content="Get familiar with the Vuero avatar styles. Code examples included."
@@ -328,7 +328,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/accordions-->
+              <!-- Component/accordions -->
               <HubCard
                 title="Accordions"
                 content="Get familiar with the Vuero accordion styles. Code examples included."
@@ -351,7 +351,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/breadcrumbs-->
+              <!-- Component/breadcrumbs -->
               <HubCard
                 title="Breadcrumbs"
                 content="Get familiar with the Vuero breadcrumb styles. Code examples included."
@@ -374,7 +374,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/iconbox-->
+              <!-- Component/iconbox -->
               <HubCard
                 title="Icon Box"
                 content="Get familiar with the Vuero icon boxes styles. Code examples included."
@@ -397,7 +397,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/flextables-->
+              <!-- Component/flextables -->
               <HubCard
                 title="Flex Table"
                 content="Get familiar with the Vuero flex table styles. Code examples included."
@@ -420,7 +420,7 @@ useHead({
                 </template>
               </HubCard>
 
-              <!--Component/snacks-->
+              <!-- Component/snacks -->
               <HubCard
                 title="Snacks"
                 content="Get familiar with the Vuero snacks styles. Code examples included."

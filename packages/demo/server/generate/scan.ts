@@ -14,6 +14,6 @@ export async function scanRoutes(cwd: string) {
         .replace('/src/pages/', '')
         .toLowerCase()
 
-      return '/' + name.replace(/index$/, '')
+      return `/${name.replace(/index$/, '')}`
     })
 }

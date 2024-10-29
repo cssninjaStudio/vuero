@@ -16,7 +16,7 @@ const props = defineProps<{
       </div>
       <div class="right">
         <VTag
-          :label="props.products.length + ' items'"
+          :label="`${props.products.length} items`"
           color="orange"
           curved
         />

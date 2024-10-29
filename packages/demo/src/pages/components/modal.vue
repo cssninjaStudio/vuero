@@ -55,7 +55,7 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--VModal-->
+      <!-- VModal -->
       <VModalBaseDocumentation />
 
       <div class="buttons mb-6">
@@ -85,7 +85,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--VModal sizes-->
+      <!-- VModal sizes -->
       <VModalSizesDocumentation />
 
       <div class="buttons mb-6">
@@ -121,7 +121,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--VModal forms-->
+      <!-- VModal forms -->
       <VModalFormsDocumentation />
 
       <div class="buttons mb-6">
@@ -157,7 +157,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--VModal options-->
+      <!-- VModal options -->
       <VModalOptionsDocumentation />
 
       <div class="buttons mb-6">

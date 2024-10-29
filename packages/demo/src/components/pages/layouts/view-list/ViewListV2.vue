@@ -55,9 +55,9 @@ const filteredData = computed(() => {
     </div>
   </div>
 
-  <!--List-->
+  <!-- List -->
   <div class="list-view list-view-v2">
-    <!--List Empty Search Placeholder -->
+    <!-- List Empty Search Placeholder -->
     <VPlaceholderPage
       :class="[filteredData.length !== 0 && 'is-hidden']"
       title="We couldn't find any matching results."
@@ -80,7 +80,7 @@ const filteredData = computed(() => {
       </template>
     </VPlaceholderPage>
 
-    <!--Active Tab-->
+    <!-- Active Tab -->
     <Transition v-if="filteredData.length" name="fade-fast">
       <div v-if="activeTab === 'active'">
         <div class="list-view-inner">
@@ -180,10 +180,10 @@ const filteredData = computed(() => {
                     </span>
                     <span
                       v-if="
-                        item.comodities.other &&
-                          item.comodities.otherThing &&
-                          item.comodities.otherCoolThing &&
-                          item.comodities.otherGreatCoolThing
+                        item.comodities.other
+                          && item.comodities.otherThing
+                          && item.comodities.otherCoolThing
+                          && item.comodities.otherGreatCoolThing
                       "
                     >
                       <i
@@ -194,9 +194,9 @@ const filteredData = computed(() => {
                     </span>
                     <span
                       v-else-if="
-                        item.comodities.other &&
-                          item.comodities.otherThing &&
-                          item.comodities.otherCoolThing
+                        item.comodities.other
+                          && item.comodities.otherThing
+                          && item.comodities.otherCoolThing
                       "
                     >
                       <i
@@ -249,7 +249,7 @@ const filteredData = computed(() => {
       </div>
       <div v-else-if="activeTab === 'inactive'">
         <div class="list-view-inner">
-          <!--Empty placeholder-->
+          <!-- Empty placeholder -->
           <VPlaceholderPage
             title="There are no inactive properties."
             subtitle="Looks like there are no inactive properties to display. You can

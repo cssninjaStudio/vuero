@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container">
-      <!--Title-->
+      <!-- Title -->
       <div class="section-title has-text-centered">
         <h2 class="title is-2">
           Impecable UI/UX
@@ -11,7 +11,7 @@
 
       <div class="centered-mockup-wrapper">
         <div class="mockup-container mb-6">
-          <!--Hexagon shapes-->
+          <!-- Hexagon shapes -->
           <img
             class="hexagon hexagon-1 light-image"
             src="/images/icons/hexagons/green.svg"
@@ -43,7 +43,7 @@
             alt=""
           >
 
-          <!--Mockup-->
+          <!-- Mockup -->
           <img
             class="light-image centered-mockup"
             src="/images/illustrations/landing/app-1.webp"
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <!--Stacks-->
+      <!-- Stacks -->
       <div class="stacks">
         <div>
           <Tippy

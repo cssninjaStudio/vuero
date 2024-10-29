@@ -1,5 +1,5 @@
 <script lang="ts" setup generic="Opts extends FactoryArg">
-import type { InputMask, FactoryArg, UpdateOpts } from 'imask'
+import type { FactoryArg, InputMask, UpdateOpts } from 'imask'
 
 import IMask from 'imask'
 
@@ -36,13 +36,15 @@ watch([inputElement, () => props.options, () => props.modelValue], () => {
       }
 
       inputMask.value.on('accept', (inputEvent) => {
-        if (!inputMask.value) return
+        if (!inputMask.value)
+          return
         emit('update:modelValue', inputMask.value?.value || '')
         emit('accept', inputMask.value, inputEvent)
       })
 
       inputMask.value.on('complete', (inputEvent) => {
-        if (!inputMask.value) return
+        if (!inputMask.value)
+          return
         emit('complete', inputMask.value, inputEvent)
       })
     }

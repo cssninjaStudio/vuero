@@ -30,8 +30,8 @@ export function useFlexRadialChartStripes() {
             fontFamily: '"Roboto Flex Variable", sans-serif',
             fontWeight: '500',
             color: undefined,
-            formatter: function (val: string) {
-              return val + '%'
+            formatter(val: string) {
+              return `${val}%`
             },
           },
         },

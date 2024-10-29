@@ -12,15 +12,14 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const modelValue = defineModel<boolean>({
-  default: false,
-})
 const props = withDefaults(defineProps<VSwitchBlockProps>(), {
   id: undefined,
   label: undefined,
   color: undefined,
 })
-
+const modelValue = defineModel<boolean>({
+  default: false,
+})
 const { field, id } = useVFieldContext({
   id: () => props.id,
   create: false,

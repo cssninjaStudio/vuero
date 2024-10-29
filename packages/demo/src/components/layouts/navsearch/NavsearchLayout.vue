@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type {
-  NavsearchTheme,
   NavsearchItem,
-  NavsearchScrollBehavior,
   NavsearchLayoutContext,
+  NavsearchScrollBehavior,
+  NavsearchTheme,
 } from './navsearch.types'
 import { injectionKey } from './navsearch.context'
 

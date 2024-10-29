@@ -19,25 +19,25 @@ const selectedToolLevel = ref('')
 const isScrolling = computed(() => {
   return y.value > 30
 })
-const addLanguage = async () => {
+async function addLanguage() {
   isEditingLanguages.value = false
   await onSave()
   selectedLanguage.value = ''
   selectedLanguageLevel.value = ''
 }
-const addSkill = async () => {
+async function addSkill() {
   isEditingSkills.value = false
   await onSave()
   selectedSkill.value = ''
   selectedSkillLevel.value = ''
 }
-const addTool = async () => {
+async function addTool() {
   isEditingTools.value = false
   await onSave()
   selectedTool.value = ''
   selectedToolLevel.value = ''
 }
-const onSave = async () => {
+async function onSave() {
   isLoading.value = true
   await sleep()
   notyf.primary('Your changes have been successfully saved!')
@@ -81,7 +81,7 @@ const onSave = async () => {
       </div>
     </div>
     <div class="form-body">
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div
           v-if="!isEditingLanguages"
@@ -106,7 +106,7 @@ const onSave = async () => {
         </div>
 
         <div class="setting-list">
-          <!--Inner Form-->
+          <!-- Inner Form -->
           <form
             v-if="isEditingLanguages"
             method="post"
@@ -232,7 +232,7 @@ const onSave = async () => {
           </form>
 
           <template v-else>
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/flags/united-states-of-america.svg" />
 
@@ -245,7 +245,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/flags/france.svg" />
 
@@ -258,7 +258,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/flags/germany.svg" />
 
@@ -271,7 +271,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/flags/spain.svg" />
 
@@ -284,7 +284,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Create Item-->
+            <!-- Create Item -->
             <div class="setting-item is-create">
               <VIconWrap icon="lnil lnil-circle-plus" />
 
@@ -310,7 +310,7 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div
           v-if="!isEditingSkills"
@@ -335,7 +335,7 @@ const onSave = async () => {
         </div>
 
         <div class="setting-list">
-          <!--Inner Form-->
+          <!-- Inner Form -->
           <form
             v-if="isEditingSkills"
             method="post"
@@ -493,7 +493,7 @@ const onSave = async () => {
             </div>
           </form>
           <template v-else>
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/stacks/js.svg" />
 
@@ -506,7 +506,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/stacks/html5.svg" />
 
@@ -519,7 +519,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/stacks/css3.svg" />
 
@@ -532,7 +532,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Create Item-->
+            <!-- Create Item -->
             <div class="setting-item is-create">
               <VIconWrap icon="lnil lnil-circle-plus" />
 
@@ -558,7 +558,7 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div
           v-if="!isEditingTools"
@@ -583,7 +583,7 @@ const onSave = async () => {
         </div>
 
         <div class="setting-list">
-          <!--Inner Form-->
+          <!-- Inner Form -->
           <form
             v-if="isEditingTools"
             method="post"
@@ -701,7 +701,7 @@ const onSave = async () => {
           </form>
 
           <template v-else>
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="/images/icons/stacks/illustrator.svg" />
 
@@ -714,7 +714,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="https://media.cssninja.io/content/photos/tools/jira.svg" />
 
@@ -727,7 +727,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Skill Item-->
+            <!-- Skill Item -->
             <div class="setting-item">
               <VIconWrap picture="https://media.cssninja.io/content/photos/tools/office.svg" />
 
@@ -740,7 +740,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Create Item-->
+            <!-- Create Item -->
             <div class="setting-item is-create">
               <VIconWrap icon="lnil lnil-circle-plus" />
 

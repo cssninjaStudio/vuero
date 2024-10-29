@@ -7,7 +7,7 @@
 
     <div class="onboarding-wrap">
       <div class="onboarding-wrap-inner">
-        <!--Card-->
+        <!-- Card -->
         <div class="onboarding-card">
           <img
             class="light-image"
@@ -33,7 +33,7 @@
             </VButton>
           </div>
         </div>
-        <!--Card-->
+        <!-- Card -->
         <div class="onboarding-card">
           <img
             class="light-image"
@@ -59,7 +59,7 @@
             </VButton>
           </div>
         </div>
-        <!--Card-->
+        <!-- Card -->
         <div class="onboarding-card">
           <img
             class="light-image"

@@ -12,7 +12,7 @@ function renderIcon(data: any /* , cell: any, row: any */) {
 
 // Caffeinated column cell manipulation
 function renderYesNo(data: any /* , cell: any, row: any */) {
-  return data == 'true'
+  return data === 'true'
     ? '<div class="has-text-centered"><span class="positive-icon"><VIcon  icon="lucide:check"/></span></div>'
     : '<div class="has-text-centered"><span class="negative-icon"><VIcon  icon="lucide:x"/></span></div>'
 }
@@ -22,7 +22,7 @@ function renderHighLow(data: any /* , cell: any, row: any */) {
   if (data > 0) {
     return `<span class="price dark-inverted">${data}</span>`
   }
-  else if (data == 0) {
+  else if (data === 0) {
     return `<span class="price price-free dark-inverted">${data}</span>`
   }
 }

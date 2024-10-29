@@ -2,8 +2,8 @@
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { useTaskCompletionChart } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
 import { useTeamEfficiencyChart } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
-import { popovers } from '/@src/data/users/userPopovers'
 import * as usersData from '/@src/data/dashboards/personal-v2/users'
+import { popovers } from '/@src/data/users/userPopovers'
 
 const { completionOptions } = useTaskCompletionChart()
 const { barOptions } = useTeamEfficiencyChart()
@@ -17,7 +17,7 @@ const democheck = ref(['value_2'])
 
 <template>
   <div class="personal-dashboard personal-dashboard-v2">
-    <!--Personal Dashboard V2-->
+    <!-- Personal Dashboard V2 -->
     <div class="columns is-multiline">
       <div class="column is-12">
         <div class="dashboard-header">
@@ -73,7 +73,7 @@ const democheck = ref(['value_2'])
             >View All</a>
           </div>
           <div class="active-projects">
-            <!--Project-->
+            <!-- Project -->
             <VBlock
               title="Delivery App Project"
               subtitle="Updated 30m ago"
@@ -96,7 +96,7 @@ const democheck = ref(['value_2'])
               </template>
             </VBlock>
 
-            <!--Project-->
+            <!-- Project -->
             <VBlock
               title="Health and Fitness Dashboard"
               subtitle="Updated 5h ago"
@@ -119,7 +119,7 @@ const democheck = ref(['value_2'])
               </template>
             </VBlock>
 
-            <!--Project-->
+            <!-- Project -->
             <VBlock
               title="Learning Tracker Dashboard"
               subtitle="Updated 7h ago"
@@ -142,7 +142,7 @@ const democheck = ref(['value_2'])
               </template>
             </VBlock>
 
-            <!--Project-->
+            <!-- Project -->
             <VBlock
               title="Banking App Dashboard"
               subtitle="Updated 10h ago"
@@ -371,7 +371,7 @@ const democheck = ref(['value_2'])
             <div class="checkboxes-list">
               <!-- List item -->
               <div class="list-item">
-                <!-- Animated checkbox-->
+                <!-- Animated checkbox -->
                 <VAnimatedCheckbox
                   v-model="democheck"
                   value="value_1"
@@ -383,7 +383,7 @@ const democheck = ref(['value_2'])
               </div>
               <!-- List item -->
               <div class="list-item">
-                <!-- Animated checkbox-->
+                <!-- Animated checkbox -->
                 <VAnimatedCheckbox
                   v-model="democheck"
                   value="value_2"
@@ -395,7 +395,7 @@ const democheck = ref(['value_2'])
               </div>
               <!-- List item -->
               <div class="list-item">
-                <!-- Animated checkbox-->
+                <!-- Animated checkbox -->
                 <VAnimatedCheckbox
                   v-model="democheck"
                   value="value_3"
@@ -407,7 +407,7 @@ const democheck = ref(['value_2'])
               </div>
               <!-- List item -->
               <div class="list-item">
-                <!-- Animated checkbox-->
+                <!-- Animated checkbox -->
                 <VAnimatedCheckbox
                   v-model="democheck"
                   value="value_4"

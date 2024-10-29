@@ -265,7 +265,7 @@ const { onceError } = useImageError()
               </div>
             </div>
 
-            <!--Skills-->
+            <!-- Skills -->
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Skills</h4>
@@ -278,7 +278,7 @@ const { onceError } = useImageError()
               </div>
               <div class="section-content">
                 <div class="skills-wrapper">
-                  <!--Skill-->
+                  <!-- Skill -->
                   <div class="skills-item">
                     <VIconWrap picture="/images/icons/stacks/js.svg" />
 
@@ -312,7 +312,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Skill-->
+                  <!-- Skill -->
                   <div class="skills-item">
                     <VIconWrap
                       icon="lnil lnil-burger-alt"
@@ -348,7 +348,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Skill-->
+                  <!-- Skill -->
                   <div class="skills-item">
                     <VIconWrap picture="/images/icons/stacks/html5.svg" />
 
@@ -381,7 +381,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Skill-->
+                  <!-- Skill -->
                   <div class="skills-item">
                     <VIconWrap picture="/images/icons/stacks/css3.svg" />
 
@@ -424,7 +424,7 @@ const { onceError } = useImageError()
             </div>
           </div>
 
-          <!--Recommendations-->
+          <!-- Recommendations -->
           <div class="profile-card">
             <div class="profile-card-section no-padding">
               <div class="section-title">
@@ -440,7 +440,7 @@ const { onceError } = useImageError()
               </div>
               <div class="section-content">
                 <div class="recommendations-wrapper">
-                  <!--Recommendation-->
+                  <!-- Recommendation -->
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
@@ -460,7 +460,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Recommendation-->
+                  <!-- Recommendation -->
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
@@ -486,7 +486,7 @@ const { onceError } = useImageError()
           </div>
         </div>
         <div class="column is-4">
-          <!--Notifications-->
+          <!-- Notifications -->
           <div class="profile-card">
             <div class="profile-card-section no-padding">
               <div class="section-title">
@@ -512,7 +512,7 @@ const { onceError } = useImageError()
             </div>
           </div>
 
-          <!--Tools-->
+          <!-- Tools -->
           <div class="profile-card">
             <div class="profile-card-section no-padding">
               <div class="section-title">
@@ -530,7 +530,7 @@ const { onceError } = useImageError()
               </div>
               <div class="section-content">
                 <div class="tools-wrapper">
-                  <!--Tool-->
+                  <!-- Tool -->
                   <div class="tools-item">
                     <VIconWrap picture="/images/icons/stacks/illustrator.svg">
                       <template #after>
@@ -551,7 +551,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Tool-->
+                  <!-- Tool -->
                   <div class="tools-item">
                     <VIconWrap picture="https://media.cssninja.io/content/photos/brands/jira.svg">
                       <template #after>
@@ -572,7 +572,7 @@ const { onceError } = useImageError()
                     </div>
                   </div>
 
-                  <!--Tool-->
+                  <!-- Tool -->
                   <div class="tools-item">
                     <VIconWrap picture="https://media.cssninja.io/content/photos/brands/office.svg">
                       <template #after>
@@ -597,7 +597,7 @@ const { onceError } = useImageError()
             </div>
           </div>
 
-          <!--Recent Views-->
+          <!-- Recent Views -->
           <div class="profile-card">
             <div class="profile-card-section no-padding">
               <div class="section-title">
@@ -609,7 +609,7 @@ const { onceError } = useImageError()
               </div>
               <div class="section-content">
                 <div class="people-wrapper">
-                  <!--People-->
+                  <!-- People -->
                   <a
                     href="#"
                     class="people-item"
@@ -625,7 +625,7 @@ const { onceError } = useImageError()
                     </div>
                   </a>
 
-                  <!--People-->
+                  <!-- People -->
                   <a
                     href="#"
                     class="people-item"
@@ -641,7 +641,7 @@ const { onceError } = useImageError()
                     </div>
                   </a>
 
-                  <!--People-->
+                  <!-- People -->
                   <a
                     href="#"
                     class="people-item"
@@ -657,7 +657,7 @@ const { onceError } = useImageError()
                     </div>
                   </a>
 
-                  <!--People-->
+                  <!-- People -->
                   <a
                     href="#"
                     class="people-item"
@@ -673,7 +673,7 @@ const { onceError } = useImageError()
                     </div>
                   </a>
 
-                  <!--People-->
+                  <!-- People -->
                   <a
                     href="#"
                     class="people-item"

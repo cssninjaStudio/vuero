@@ -3,7 +3,7 @@ import { VLoaderMeta } from '/@src/data/documentation/components-meta'
 
 const isLoaderActive = ref(false)
 
-const toggleLoaders = () => {
+function toggleLoaders() {
   isLoaderActive.value = !isLoaderActive.value
 }
 
@@ -42,7 +42,7 @@ useHead({
 
     <div class="columns">
       <div class="column is-12">
-        <!--Loader-->
+        <!-- Loader -->
         <VLoaderDocumentation />
 
         <div class="mb-4">

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { popovers } from '/@src/data/users/userPopovers'
 import { VCardMeta } from '/@src/data/documentation/components-meta'
+import { popovers } from '/@src/data/users/userPopovers'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
@@ -36,7 +36,7 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Basic Cards-->
+      <!-- Basic Cards -->
       <CardBaseDocumentation />
 
       <div class="columns is-multiline mb-6">
@@ -75,7 +75,7 @@ useHead({
         </div>
       </div>
 
-      <!--Elevated Cards-->
+      <!-- Elevated Cards -->
       <CardElevatedDocumentation />
 
       <div class="columns is-multiline mb-6">
@@ -120,7 +120,7 @@ useHead({
         </div>
       </div>
 
-      <!--Colored Cards-->
+      <!-- Colored Cards -->
       <CardColorsDocumentation />
 
       <div class="columns is-multiline mb-6">
@@ -204,7 +204,7 @@ useHead({
         </div>
       </div>
 
-      <!--Structured Cards-->
+      <!-- Structured Cards -->
       <CardStructuredDocumentation />
 
       <div class="columns is-multiline mb-6">

@@ -10,10 +10,11 @@ export default defineComponent({
   },
   emits: ['ready'],
   setup(props, { emit }) {
-    const element = useTemplateRef<HTMLElement>(null)
+    const element = useTemplateRef<HTMLElement>()
 
     watchEffect(() => {
       if (element.value) {
+        // eslint-disable-next-line no-new
         new Vivus(element.value, props.options, (vivus: any) => {
           emit('ready', vivus)
         })

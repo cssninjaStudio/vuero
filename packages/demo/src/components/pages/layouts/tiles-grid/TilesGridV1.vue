@@ -75,7 +75,7 @@ const optionsSingle = [
     </div>
 
     <div class="tile-grid tile-grid-v1">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
@@ -98,13 +98,13 @@ const optionsSingle = [
         </template>
       </VPlaceholderPage>
 
-      <!--Tile Grid v1-->
+      <!-- Tile Grid v1 -->
       <TransitionGroup
         name="list"
         tag="div"
         class="columns is-multiline"
       >
-        <!--Grid item-->
+        <!-- Grid item -->
         <div
           v-for="(item, key) in filteredData"
           :key="key"

@@ -38,7 +38,7 @@ const testCards = [
   '6200000000000005',
   '6759649826438453',
 ]
-const randomCard = () => {
+function randomCard() {
   const randomNumber = Math.floor(Math.random() * testCards.length)
   if (creditcardInput.number.replace(/\s/g, '') !== testCards[randomNumber]) {
     creditcardInput.number = testCards[randomNumber]

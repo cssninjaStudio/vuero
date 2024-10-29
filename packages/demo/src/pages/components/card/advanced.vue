@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 
-import * as userStacks from '/@src/data/users/userStacks'
 import { VCardAdvancedMeta } from '/@src/data/documentation/components-meta'
+import * as userStacks from '/@src/data/users/userStacks'
 
 const userStack2 = userStacks.userStack2 as VAvatarProps[]
 const pageTitle = useVueroContext<string>('page-title')
@@ -43,7 +43,7 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--VCard Advanced-->
+        <!-- VCard Advanced -->
         <VCardAdvancedDocumentation />
       </div>
 

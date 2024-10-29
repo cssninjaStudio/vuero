@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type {
-  NavbarTheme,
   NavbarItem,
-  NavbarItemMegamenu,
   NavbarItemDropdown,
+  NavbarItemMegamenu,
   NavbarLayoutContext,
+  NavbarTheme,
 } from './navbar.types'
 import { injectionKey } from './navbar.context'
 

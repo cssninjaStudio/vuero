@@ -1,5 +1,5 @@
-import { definePlugin } from '/@src/utils/plugins'
 import { DataLoaderPlugin } from 'unplugin-vue-router/data-loaders'
+import { definePlugin } from '/@src/utils/plugins'
 
 /**
  * Enable Vue Data Loader plugin from unplugin-vue-router

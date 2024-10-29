@@ -5,12 +5,12 @@ import {
 } from 'h3'
 import { listen } from 'listhen'
 
-import { isProduction, env } from 'std-env'
-import { resolve } from './utils'
-import { createRenderer, loadAssets } from './serve/renderer'
-import { createEventHandler } from './serve/event'
+import { env, isProduction } from 'std-env'
 import { extendH3App } from './config'
+import { createEventHandler } from './serve/event'
 import { registerProcessHandlers } from './serve/process-handlers'
+import { createRenderer, loadAssets } from './serve/renderer'
+import { resolve } from './utils'
 
 async function createServer() {
   const app = createApp({
@@ -72,7 +72,7 @@ createServer()
       console.error('[dev] [serverError] ', error)
     }
     else {
-      console.error('[serverError] ' + error)
+      console.error(`[serverError] ${error}`)
     }
     process.exit(1)
   })

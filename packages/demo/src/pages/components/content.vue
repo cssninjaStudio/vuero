@@ -33,25 +33,25 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Typography-->
+      <!-- Typography -->
       <ContentUnorderedListsDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentOrderedListsDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentTitlesDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentSubtitlesDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentBlockquotesDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentDividersDocumentation />
 
-      <!--Typography-->
+      <!-- Typography -->
       <ContentTablesDocumentation />
     </DocumentationTocContainer>
   </div>

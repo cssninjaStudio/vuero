@@ -70,12 +70,12 @@ export function useDemo13RangeBar() {
       },
       dataLabels: {
         enabled: true,
-        formatter: function (val: string, opts: any) {
+        formatter(val: string, opts: any) {
           const label = opts?.w?.globals?.labels?.[opts.dataPointIndex] ?? ''
           const a = dayjs(val[0])
           const b = dayjs(val[1])
           const diff = b.diff(a, 'days')
-          return label + ': ' + diff + (diff > 1 ? 'D' : 'd')
+          return `${label}: ${diff}${diff > 1 ? 'D' : 'd'}`
         },
         style: {
           colors: ['#f3f4f5', '#fff'],

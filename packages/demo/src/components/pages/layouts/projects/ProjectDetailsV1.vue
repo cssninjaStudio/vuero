@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const panels = usePanels()
 const props = withDefaults(
   defineProps<{
     activeTab?: 'project' | 'team' | 'tasks'
@@ -8,7 +7,7 @@ const props = withDefaults(
     activeTab: 'project',
   },
 )
-
+const panels = usePanels()
 const tab = ref(props.activeTab)
 const filterTasks = ref(0)
 
@@ -349,7 +348,7 @@ const participants = [
         </div>
       </div>
 
-      <!--Project Team-->
+      <!-- Project Team -->
       <div
         v-if="tab === 'team'"
         class="tab-content is-active"
@@ -357,7 +356,7 @@ const participants = [
         <div class="project-details-inner">
           <div class="project-team-card">
             <div class="columns is-multiline">
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -382,7 +381,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -407,7 +406,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -432,7 +431,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -457,7 +456,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -482,7 +481,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6 has-border-bottom">
                 <VBlock
                   center
@@ -507,7 +506,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6">
                 <VBlock
                   center
@@ -532,7 +531,7 @@ const participants = [
                   fit? Duo Reges: constructio interrete.
                 </p>
               </div>
-              <!--Team Member-->
+              <!-- Team Member -->
               <div class="column is-6">
                 <VBlock
                   center
@@ -583,7 +582,7 @@ const participants = [
             </div>
 
             <div class="columns is-multiline">
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -616,7 +615,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -645,7 +644,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -674,7 +673,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -706,7 +705,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -735,7 +734,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -767,7 +766,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">
@@ -799,7 +798,7 @@ const participants = [
                   </div>
                 </div>
               </div>
-              <!--Task-->
+              <!-- Task -->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
                   <a class="title-wrap">

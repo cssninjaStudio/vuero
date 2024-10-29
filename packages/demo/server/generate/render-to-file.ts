@@ -1,10 +1,10 @@
-import { ServerResponse, IncomingMessage } from 'node:http'
-import fs from 'node:fs'
-import path from 'node:path'
-import { Socket } from 'node:net'
-import { H3Event } from 'h3'
-
 import type { VueroServerRender } from '../types'
+import fs from 'node:fs'
+import { IncomingMessage, ServerResponse } from 'node:http'
+import { Socket } from 'node:net'
+import path from 'node:path'
+
+import { H3Event } from 'h3'
 import { resolve } from '../utils'
 
 export async function renderToFile(render: VueroServerRender, {

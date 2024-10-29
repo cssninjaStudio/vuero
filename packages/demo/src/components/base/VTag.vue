@@ -38,8 +38,8 @@ const props = withDefaults(defineProps<VTagProps>(), {
   <small
     class="tag"
     :class="[
-      props.color && 'is-' + props.color,
-      props.size && 'is-' + props.size,
+      props.color && `is-${props.color}`,
+      props.size && `is-${props.size}`,
       props.rounded && 'is-rounded',
       props.curved && 'is-curved',
       props.outlined && 'is-outlined',

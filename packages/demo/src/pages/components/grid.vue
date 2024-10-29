@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VGridMeta, VGridItemMeta } from '/@src/data/documentation/components-meta'
+import { VGridItemMeta, VGridMeta } from '/@src/data/documentation/components-meta'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
@@ -35,7 +35,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VGrid-->
+      <!-- VGrid -->
       <VGridBaseDocumentation />
 
       <DocumentationMeta

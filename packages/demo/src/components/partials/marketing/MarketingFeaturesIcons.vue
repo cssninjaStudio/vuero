@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container">
-      <!--Title-->
+      <!-- Title -->
       <div class="section-title has-text-centered py-6">
         <h2 class="title is-2">
           Awesome Features
@@ -9,10 +9,10 @@
         <h4>Vuero has been carefully handcrafted.</h4>
       </div>
 
-      <!--Content-->
+      <!-- Content -->
       <div class="py-12">
         <div class="columns is-vcentered is-multiline card-icon-boxes">
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -127,7 +127,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -150,7 +150,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -173,7 +173,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -196,7 +196,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -219,7 +219,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -242,7 +242,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -265,7 +265,7 @@
               </div>
             </div>
           </div>
-          <!--Box-->
+          <!-- Box -->
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
@@ -290,7 +290,7 @@
           </div>
         </div>
 
-        <!--CTA-->
+        <!-- CTA -->
         <div class="cta-block no-border">
           <div class="head-text">
             <h3>Want to learn more?</h3>

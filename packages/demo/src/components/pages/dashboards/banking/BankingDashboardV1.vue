@@ -34,7 +34,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
 <template>
   <div class="banking-dashboard banking-dashboard-v1">
     <div class="columns is-multiline">
-      <!--Credit Cards-->
+      <!-- Credit Cards -->
       <div class="column is-4">
         <div class="dashboard-card is-credit-cards">
           <div class="title-wrap">
@@ -72,7 +72,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 <span class="dark-inverted">$2,834.31</span>
               </div>
               <div class="credit-card-end">
-                <!--Dropdown-->
+                <!-- Dropdown -->
                 <GraphDropdown />
               </div>
             </div>
@@ -138,7 +138,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 <span class="dark-inverted">$10,563.18</span>
               </div>
               <div class="credit-card-end">
-                <!--Dropdown-->
+                <!-- Dropdown -->
                 <GraphDropdown />
               </div>
             </div>

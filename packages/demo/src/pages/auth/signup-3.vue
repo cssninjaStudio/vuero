@@ -3,7 +3,7 @@ const router = useRouter()
 const notyf = useNotyf()
 const isLoading = ref(false)
 
-const handleSignup = async () => {
+async function handleSignup() {
   if (!isLoading.value) {
     isLoading.value = true
     sleep(2000)
@@ -23,7 +23,7 @@ useHead({
 <template>
   <div class="auth-wrapper-inner is-single">
     <LandingGrids class="is-contrasted" />
-    <!--Fake navigation-->
+    <!-- Fake navigation -->
     <div class="auth-nav">
       <div class="left" />
       <div class="center">
@@ -42,10 +42,10 @@ useHead({
       </div>
     </div>
 
-    <!--Single Centered Form-->
+    <!-- Single Centered Form -->
     <div class="single-form-wrap is-relative">
       <div class="inner-wrap">
-        <!--Form Title-->
+        <!-- Form Title -->
         <div class="auth-head">
           <h2>Join Us Now.</h2>
           <p>Start by creating your account</p>
@@ -54,7 +54,7 @@ useHead({
           </RouterLink>
         </div>
 
-        <!--Form-->
+        <!-- Form -->
         <div class="form-card">
           <form
             method="post"

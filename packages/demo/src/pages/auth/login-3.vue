@@ -6,7 +6,7 @@ const notyf = useNotyf()
 const token = useUserToken()
 const redirect = route.query.redirect as string
 
-const handleLogin = async () => {
+async function handleLogin() {
   if (!isLoading.value) {
     isLoading.value = true
 
@@ -35,7 +35,7 @@ useHead({
 <template>
   <div class="auth-wrapper-inner is-single">
     <LandingGrids class="is-contrasted" />
-    <!--Fake navigation-->
+    <!-- Fake navigation -->
     <div class="auth-nav">
       <div class="left" />
       <div class="center">
@@ -54,10 +54,10 @@ useHead({
       </div>
     </div>
 
-    <!--Single Centered Form-->
+    <!-- Single Centered Form -->
     <div class="single-form-wrap is-relative">
       <div class="inner-wrap">
-        <!--Form Title-->
+        <!-- Form Title -->
         <div class="auth-head">
           <h2>Welcome Back.</h2>
           <p>Please sign in to your account</p>
@@ -66,7 +66,7 @@ useHead({
           </RouterLink>
         </div>
 
-        <!--Form-->
+        <!-- Form -->
         <div class="form-card">
           <form
             method="post"

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
-  valueSingle,
   optionsSingle,
+  valueSingle,
 } from '/@src/data/dashboards/banking-v2/dashboardData'
+import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 
 const { expensesOptions } = useExpensesAreaChart()
 
@@ -28,7 +28,7 @@ const { slider } = useTinySlider(sliderElement, {
   },
 })
 
-const goto = (index: number) => {
+function goto(index: number) {
   if (slider.value) {
     slider.value.goTo(index)
   }
@@ -37,11 +37,11 @@ const goto = (index: number) => {
 
 <template>
   <div class="banking-dashboard banking-dashboard-v2">
-    <!--Panel-->
+    <!-- Panel -->
     <div class="dashboard-card is-card-panel">
       <div class="columns is-gapless">
         <div class="column is-8">
-          <!--Box-->
+          <!-- Box -->
           <div class="inner-box has-bounds">
             <div class="box-title">
               <h3>My Cards</h3>
@@ -58,13 +58,13 @@ const goto = (index: number) => {
                 </button>
               </div>
 
-              <!--Carousel-->
+              <!-- Carousel -->
               <div class="cards-carousel">
                 <div
                   ref="slider-element"
                   class="cards-carousel-inner"
                 >
-                  <!--Carousel Item-->
+                  <!-- Carousel Item -->
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
@@ -97,7 +97,7 @@ const goto = (index: number) => {
                       </div>
                     </div>
                   </div>
-                  <!--Carousel Item-->
+                  <!-- Carousel Item -->
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
@@ -130,7 +130,7 @@ const goto = (index: number) => {
                       </div>
                     </div>
                   </div>
-                  <!--Carousel Item-->
+                  <!-- Carousel Item -->
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
@@ -163,7 +163,7 @@ const goto = (index: number) => {
                       </div>
                     </div>
                   </div>
-                  <!--Carousel Item-->
+                  <!-- Carousel Item -->
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
@@ -202,7 +202,7 @@ const goto = (index: number) => {
           </div>
         </div>
         <div class="column is-4">
-          <!--Box-->
+          <!-- Box -->
           <div class="inner-box">
             <div class="box-title">
               <h3>Balance</h3>
@@ -218,7 +218,7 @@ const goto = (index: number) => {
               </VField>
             </div>
 
-            <!--Balance-->
+            <!-- Balance -->
             <div class="card-balance-wrap">
               <div class="card-balance">
                 <span>$6,341.14</span>
@@ -267,14 +267,14 @@ const goto = (index: number) => {
     <div class="dashboard-card is-card-panel is-grey">
       <div class="columns is-gapless">
         <div class="column is-8">
-          <!--Box-->
+          <!-- Box -->
           <div class="inner-box">
             <div class="box-title">
               <h3>Monthly Summary</h3>
             </div>
 
             <div class="columns">
-              <!--Monthly Summary-->
+              <!-- Monthly Summary -->
               <div class="column is-4">
                 <div class="monthly-summary-wrap">
                   <div class="monthly-summary">
@@ -289,7 +289,7 @@ const goto = (index: number) => {
                   </div>
                 </div>
               </div>
-              <!--Chart-->
+              <!-- Chart -->
               <div class="column is-8">
                 <div class="chart-wrapper">
                   <a
@@ -310,7 +310,7 @@ const goto = (index: number) => {
         </div>
 
         <div class="column is-4">
-          <!--Box-->
+          <!-- Box -->
           <div class="inner-box">
             <div class="box-title">
               <h3>Transactions</h3>
@@ -319,9 +319,9 @@ const goto = (index: number) => {
                 tabindex="0"
               >View All</a>
             </div>
-            <!--Transactions-->
+            <!-- Transactions -->
             <div class="transactions">
-              <!--Transaction-->
+              <!-- Transaction -->
               <VBlock
                 title="Food Delivery"
                 subtitle="Oct 23, 2020 - 8:46pm"
@@ -343,7 +343,7 @@ const goto = (index: number) => {
                   <span class="dark-inverted">- $41.49</span>
                 </template>
               </VBlock>
-              <!--Transaction-->
+              <!-- Transaction -->
               <VBlock
                 title="Market Earnings"
                 subtitle="Oct 18, 2020 - 9:11am"
@@ -365,7 +365,7 @@ const goto = (index: number) => {
                   <span class="dark-inverted">+ $263.39</span>
                 </template>
               </VBlock>
-              <!--Transaction-->
+              <!-- Transaction -->
               <VBlock
                 title="Online Order"
                 subtitle="Oct 16, 2020 - 2:13pm"

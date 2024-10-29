@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
-  valueSingle,
   optionsSingle,
+  valueSingle,
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
 
 const { onceError } = useImageError()
@@ -28,7 +28,7 @@ const { onceError } = useImageError()
     </div>
 
     <div class="columns is-multiline">
-      <!--Posting hours-->
+      <!-- Posting hours -->
       <div class="column is-12 h-hidden-mobile">
         <OverviewCard heatmap>
           <div class="card-head">
@@ -41,7 +41,7 @@ const { onceError } = useImageError()
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4">
         <OverviewCard>
           <div class="card-head">
@@ -65,7 +65,7 @@ const { onceError } = useImageError()
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4">
         <OverviewCard>
           <div class="card-head">
@@ -89,7 +89,7 @@ const { onceError } = useImageError()
         </OverviewCard>
       </div>
 
-      <!--Card-->
+      <!-- Card -->
       <div class="column is-4">
         <OverviewCard>
           <div class="card-head">
@@ -116,7 +116,7 @@ const { onceError } = useImageError()
       <div class="column is-12">
         <OverviewCard metrics>
           <div class="columns is-flex-tablet-p">
-            <!--Metric-->
+            <!-- Metric -->
             <div class="column is-3">
               <div class="metric">
                 <div class="metric-head">
@@ -137,7 +137,7 @@ const { onceError } = useImageError()
                 </div>
               </div>
             </div>
-            <!--Metric-->
+            <!-- Metric -->
             <div class="column is-3">
               <div class="metric">
                 <div class="metric-head">
@@ -158,7 +158,7 @@ const { onceError } = useImageError()
                 </div>
               </div>
             </div>
-            <!--Metric-->
+            <!-- Metric -->
             <div class="column is-3">
               <div class="metric">
                 <div class="metric-head">
@@ -179,7 +179,7 @@ const { onceError } = useImageError()
                 </div>
               </div>
             </div>
-            <!--Metric-->
+            <!-- Metric -->
             <div class="column is-3">
               <div class="metric">
                 <div class="metric-head">
@@ -204,7 +204,7 @@ const { onceError } = useImageError()
         </OverviewCard>
       </div>
 
-      <!--Posts-->
+      <!-- Posts -->
       <div class="column is-4">
         <div class="card v-card">
           <header class="card-header">
@@ -263,7 +263,7 @@ const { onceError } = useImageError()
         </div>
       </div>
 
-      <!--Posts-->
+      <!-- Posts -->
       <div class="column is-4">
         <div class="card v-card">
           <header class="card-header">
@@ -322,7 +322,7 @@ const { onceError } = useImageError()
         </div>
       </div>
 
-      <!--Posts-->
+      <!-- Posts -->
       <div class="column is-4">
         <div class="card v-card">
           <header class="card-header">

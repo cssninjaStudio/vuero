@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type Stack = {
+export interface Stack {
   logo: string
   name: string
   description: string

@@ -1,14 +1,14 @@
-import { createApp as createClientApp, createSSRApp } from 'vue'
+import type { VueroAppContext, VueroPlugin } from '/@src/utils/plugins'
 
 import type { H3Event } from 'h3'
-import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
+import { createHead } from '@unhead/vue'
 import { createPinia } from 'pinia'
 
-import type { VueroPlugin, VueroAppContext } from '/@src/utils/plugins'
+import { createApp as createClientApp, createSSRApp } from 'vue'
+import '/@src/styles'
 import { createRouter } from '/@src/router'
 import VueroApp from '/@src/VueroApp.vue'
-import '/@src/styles'
 
 const plugins = import.meta.glob<{ default?: VueroPlugin }>('./plugins/*.ts', {
   eager: true,
@@ -49,7 +49,8 @@ export async function createApp(event?: H3Event) {
   for (const path in plugins) {
     try {
       const plugin = plugins[path]?.default
-      if (!plugin) throw new Error(`Plugin does not have a default export.`)
+      if (!plugin)
+        throw new Error(`Plugin does not have a default export.`)
       await plugin(vuero)
     }
     catch (error) {

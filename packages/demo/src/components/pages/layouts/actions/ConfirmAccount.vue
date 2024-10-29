@@ -4,7 +4,7 @@ const router = useRouter()
 
 const isLoading = ref(false)
 
-const confirm = async () => {
+async function confirm() {
   isLoading.value = true
   notyf.primary('Your account is confirmed Erik !')
 

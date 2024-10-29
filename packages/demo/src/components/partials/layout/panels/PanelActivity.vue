@@ -63,7 +63,7 @@ const activeTab = ref<TabId>('team')
               <div class="right-panel-body">
                 <Transition name="fade-fast" mode="out-in">
                   <div v-if="activeTab === 'team'">
-                    <!--Team Member-->
+                    <!-- Team Member -->
                     <div class="team-card">
                       <VAvatar
                         picture="https://media.cssninja.io/content/avatars/12.jpg"
@@ -91,7 +91,7 @@ const activeTab = ref<TabId>('team')
                       </a>
                     </div>
 
-                    <!--Team Member-->
+                    <!-- Team Member -->
                     <div class="team-card">
                       <VAvatar
                         picture="https://media.cssninja.io/content/avatars/25.jpg"
@@ -119,7 +119,7 @@ const activeTab = ref<TabId>('team')
                       </a>
                     </div>
 
-                    <!--Team Member-->
+                    <!-- Team Member -->
                     <div class="team-card">
                       <VAvatar
                         picture="https://media.cssninja.io/content/avatars/18.jpg"
@@ -147,7 +147,7 @@ const activeTab = ref<TabId>('team')
                       </a>
                     </div>
 
-                    <!--Team Member-->
+                    <!-- Team Member -->
                     <div class="team-card">
                       <VAvatar
                         picture="https://media.cssninja.io/content/avatars/13.jpg"
@@ -177,7 +177,7 @@ const activeTab = ref<TabId>('team')
                   </div>
 
                   <div v-else-if="activeTab === 'projects'">
-                    <!--Project-->
+                    <!-- Project -->
                     <div class="project-card">
                       <div class="project-inner">
                         <img
@@ -227,7 +227,7 @@ const activeTab = ref<TabId>('team')
                       </div>
                     </div>
 
-                    <!--Project-->
+                    <!-- Project -->
                     <div class="project-card">
                       <div class="project-inner">
                         <img
@@ -273,7 +273,7 @@ const activeTab = ref<TabId>('team')
                       </div>
                     </div>
 
-                    <!--Project-->
+                    <!-- Project -->
                     <div class="project-card">
                       <div class="project-inner">
                         <img
@@ -321,9 +321,9 @@ const activeTab = ref<TabId>('team')
                   </div>
 
                   <div v-else-if="activeTab === 'schedule'">
-                    <!--Timeline-->
+                    <!-- Timeline -->
                     <div class="icon-timeline">
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon
@@ -335,7 +335,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 11:30am</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <img
@@ -350,7 +350,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 01:00pm</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon
@@ -362,7 +362,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 01:45pm</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon
@@ -374,7 +374,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 02:30pm</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon
@@ -386,7 +386,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 03:30pm</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon
@@ -398,7 +398,7 @@ const activeTab = ref<TabId>('team')
                           <span>Today - 05:00pm</span>
                         </div>
                       </div>
-                      <!--Timeline item-->
+                      <!-- Timeline item -->
                       <div class="timeline-item">
                         <div class="timeline-icon">
                           <VIcon

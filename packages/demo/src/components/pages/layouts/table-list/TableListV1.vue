@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { userList } from '/@src/data/layouts/datatable-v1'
-
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
+
+import { userList } from '/@src/data/layouts/datatable-v1'
 
 export interface UserData extends VAvatarProps {
   id: number
@@ -130,7 +130,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
     </div>
 
-    <!--Table Pagination-->
+    <!-- Table Pagination -->
     <VFlexPagination
       v-if="filteredData.length > 5"
       v-model:current-page="page"

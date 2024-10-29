@@ -1,20 +1,20 @@
 <script lang="ts">
 import type { FilePondEvent, FilePondOptions } from 'filepond'
 
+import type { ComponentObjectPropsOptions, EmitsOptions, PropType } from 'vue'
 import * as FilePond from 'filepond'
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size'
 import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'
-import FilePondPluginImageExitOrientation from 'filepond-plugin-image-exif-orientation'
 import FilePondPluginImageCrop from 'filepond-plugin-image-crop'
 import FilePondPluginImageEdit from 'filepond-plugin-image-edit'
+import FilePondPluginImageExitOrientation from 'filepond-plugin-image-exif-orientation'
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview'
 import FilePondPluginImageResize from 'filepond-plugin-image-resize'
-import FilePondPluginImageTransform from 'filepond-plugin-image-transform'
 
+import FilePondPluginImageTransform from 'filepond-plugin-image-transform'
 import 'filepond/dist/filepond.min.css'
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css'
 import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.min.css'
-import { type PropType, type ComponentObjectPropsOptions, type EmitsOptions } from 'vue'
 
 type FilePondSize = undefined | 'small' | 'tiny'
 
@@ -45,7 +45,7 @@ const types = {
 }
 
 // Setup initial prop types and update when plugins are added
-const getNativeConstructorFromType = (type: keyof typeof types) => {
+function getNativeConstructorFromType(type: keyof typeof types) {
   if (!type) {
     return String
   }
@@ -65,7 +65,7 @@ const defaultOptions = FilePond.getOptions() as Record<string, any>
 
 for (const prop in _OptionTypes) {
   // don't add events to the props array
-  if (/^on/.test(prop)) {
+  if (prop.startsWith('on')) {
     eventNames.push(prop.replace('on', ''))
     continue
   }
@@ -86,7 +86,7 @@ export default defineComponent({
       default: undefined,
       validator: (value: FilePondSize) => {
         // The value must match one of these strings
-        if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
+        if (![undefined, 'small', 'tiny'].includes(value)) {
           console.warn(
             `VFilePond: invalid "${value}" size. Should be small, tiny or undefined`,
           )
@@ -124,7 +124,7 @@ export default defineComponent({
                 }
               }
 
-              reject()
+              reject(new Error('File type not allowed'))
             }),
         })
 

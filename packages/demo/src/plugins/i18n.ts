@@ -1,5 +1,5 @@
-import { definePlugin } from '/@src/utils/plugins'
 import { createI18n } from 'vue-i18n'
+import { definePlugin } from '/@src/utils/plugins'
 
 /**
  * messages are generated using vite-plugin-i18n

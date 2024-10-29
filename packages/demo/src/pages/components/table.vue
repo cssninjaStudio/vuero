@@ -33,7 +33,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Table-->
+      <!-- Table -->
       <TableBaseDocumentation />
 
       <VCard
@@ -120,7 +120,7 @@ useHead({
         </table>
       </VCard>
 
-      <!--Table striped-->
+      <!-- Table striped -->
       <TableStripedDocumentation />
 
       <VCard
@@ -207,7 +207,7 @@ useHead({
         </table>
       </VCard>
 
-      <!--Table media-->
+      <!-- Table media -->
       <TableMediaDocumentation />
 
       <VCard

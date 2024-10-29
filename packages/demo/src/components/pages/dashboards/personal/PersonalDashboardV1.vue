@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useCustomersCharts } from '/@src/data/dashboards/personal-v1/customersChart'
-import { useTeamGaugeChart } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
 import { useProfitChart } from '/@src/data/dashboards/personal-v1/profitChart'
+import { useTeamGaugeChart } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
 
 const { customersOptions } = useCustomersCharts()
 const { teamGaugeOptions } = useTeamGaugeChart()
@@ -10,8 +10,8 @@ const { profitChartOptions } = useProfitChart()
 
 <template>
   <div class="personal-dashboard personal-dashboard-v1">
-    <!--Personal Dashboard V1-->
-    <!--Header-->
+    <!-- Personal Dashboard V1 -->
+    <!-- Header -->
     <div class="dashboard-header">
       <VAvatar
         picture="/images/avatars/svg/vuero-1.svg"
@@ -34,10 +34,10 @@ const { profitChartOptions } = useProfitChart()
       </div>
     </div>
 
-    <!--Body-->
+    <!-- Body -->
     <div class="dashboard-body">
       <div class="columns is-multiline">
-        <!--Card-->
+        <!-- Card -->
         <div class="column is-6">
           <div class="dashboard-card">
             <h4 class="dark-inverted">
@@ -46,7 +46,7 @@ const { profitChartOptions } = useProfitChart()
 
             <div class="quick-stats">
               <div class="quick-stats-inner">
-                <!--Stat-->
+                <!-- Stat -->
                 <div class="quick-stat">
                   <VBlock
                     title="2,870"
@@ -69,7 +69,7 @@ const { profitChartOptions } = useProfitChart()
                   </VBlock>
                 </div>
 
-                <!--Stat-->
+                <!-- Stat -->
                 <div class="quick-stat">
                   <VBlock
                     title="131"
@@ -92,7 +92,7 @@ const { profitChartOptions } = useProfitChart()
                   </VBlock>
                 </div>
 
-                <!--Stat-->
+                <!-- Stat -->
                 <div class="quick-stat">
                   <VBlock
                     title="$398,49"
@@ -115,7 +115,7 @@ const { profitChartOptions } = useProfitChart()
                   </VBlock>
                 </div>
 
-                <!--Stat-->
+                <!-- Stat -->
                 <div class="quick-stat">
                   <VBlock
                     title="$6542,31"
@@ -142,7 +142,7 @@ const { profitChartOptions } = useProfitChart()
           </div>
         </div>
 
-        <!--Card-->
+        <!-- Card -->
         <div class="column is-6">
           <div class="dashboard-card">
             <ApexChart
@@ -154,7 +154,7 @@ const { profitChartOptions } = useProfitChart()
           </div>
         </div>
 
-        <!--Card-->
+        <!-- Card -->
         <div class="column is-4">
           <div class="dashboard-card is-upgrade">
             <i
@@ -171,7 +171,7 @@ const { profitChartOptions } = useProfitChart()
           </div>
         </div>
 
-        <!--Card-->
+        <!-- Card -->
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
@@ -191,7 +191,7 @@ const { profitChartOptions } = useProfitChart()
           </div>
         </div>
 
-        <!--Card-->
+        <!-- Card -->
         <div class="column is-4">
           <div class="dashboard-card">
             <ApexChart

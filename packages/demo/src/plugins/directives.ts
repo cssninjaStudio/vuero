@@ -1,7 +1,7 @@
-import { definePlugin } from '/@src/utils/plugins'
+import { vBackground } from '/@src/directives/background'
 import { vPreloadLink } from '/@src/directives/preload-link'
 import { vTooltip } from '/@src/directives/tooltip'
-import { vBackground } from '/@src/directives/background'
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(({ app }) => {
   // register global v-preload-link directive

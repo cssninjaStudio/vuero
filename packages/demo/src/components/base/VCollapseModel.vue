@@ -8,12 +8,11 @@ interface VCollapseProps {
   withChevron?: boolean
 }
 
+const props = defineProps<VCollapseProps>()
 const modelValue = defineModel<number | undefined>({
   default: undefined,
 })
-const props = defineProps<VCollapseProps>()
-
-const toggle = (key: number) => {
+function toggle(key: number) {
   if (modelValue.value === key) {
     modelValue.value = undefined
     return

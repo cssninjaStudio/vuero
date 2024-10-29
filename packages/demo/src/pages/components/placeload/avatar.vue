@@ -35,7 +35,7 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Loader-->
+      <!-- Loader -->
       <PlaceloadAvatarBaseDocumentation />
       <PlaceloadAvatarWrapDocumentation />
       <PlaceloadAvatarSizeDocumentation />

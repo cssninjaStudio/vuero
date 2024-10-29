@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable ts/ban-ts-comment */
+
+import type { ViteDevServer } from 'vite'
+import type { VueroServerRender } from '../types.js'
 
 import { readFileSync } from 'node:fs'
-import type { ViteDevServer } from 'vite'
-
-import type { VueroServerRender } from '../types.js'
 import { isProduction } from 'std-env'
 import { resolve } from '../utils.js'
 

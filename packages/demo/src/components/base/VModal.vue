@@ -25,18 +25,17 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const emit = defineEmits<VModalEmits>()
 const props = withDefaults(defineProps<VModalProps>(), {
   is: 'div',
   size: undefined,
   actions: undefined,
   cancelLabel: undefined,
 })
-
+const emit = defineEmits<VModalEmits>()
 const wasOpen = ref(false)
 const cancelLabel = computed(() => props.cancelLabel || 'Cancel')
 
-const checkScroll = () => {
+function checkScroll() {
   if (props.noscroll && props.open) {
     if (!import.meta.env.SSR) {
       document.documentElement.classList.add('no-scroll')

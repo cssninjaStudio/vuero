@@ -1,7 +1,7 @@
 import type { Plugin } from 'vite'
 import MagicString from 'magic-string'
 
-const commentRe = /<!--(?:.{2,}?)-->/sg
+const commentRe = /<!--.{2,}?-->/gs
 
 /**
  * This plugin removes HTML comments from your code.

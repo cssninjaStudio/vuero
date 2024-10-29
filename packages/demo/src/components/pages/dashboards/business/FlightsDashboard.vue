@@ -11,7 +11,7 @@ const options = ref(['All Flights', 'All Options'])
   <div class="business-dashboard flights-dashboard">
     <div class="columns">
       <div class="column is-9">
-        <!--Booking bar-->
+        <!-- Booking bar -->
         <div class="booking-bar-wrapper">
           <img
             class="travel-illustration light-image"
@@ -76,7 +76,7 @@ const options = ref(['All Flights', 'All Options'])
           <h3 class="dark-inverted">
             74 results
           </h3>
-          <!--Dropdown-->
+          <!-- Dropdown -->
           <FlightResultsDropdown />
         </div>
 
@@ -113,7 +113,7 @@ const options = ref(['All Flights', 'All Options'])
         </div>
 
         <div class="flights">
-          <!--Flight-->
+          <!-- Flight -->
           <a class="flight-card">
             <img
               src="/images/illustrations/dashboards/flights/company1.svg"
@@ -145,7 +145,7 @@ const options = ref(['All Flights', 'All Options'])
             <div class="flight-price">374</div>
           </a>
 
-          <!--Flight-->
+          <!-- Flight -->
           <a class="flight-card">
             <img
               src="/images/illustrations/dashboards/flights/company2.svg"
@@ -177,7 +177,7 @@ const options = ref(['All Flights', 'All Options'])
             <div class="flight-price">392</div>
           </a>
 
-          <!--Flight-->
+          <!-- Flight -->
           <a class="flight-card">
             <img
               src="/images/illustrations/dashboards/flights/company1.svg"
@@ -209,7 +209,7 @@ const options = ref(['All Flights', 'All Options'])
             <div class="flight-price">398</div>
           </a>
 
-          <!--Flight-->
+          <!-- Flight -->
           <a class="flight-card">
             <img
               src="/images/illustrations/dashboards/flights/company3.svg"
@@ -241,7 +241,7 @@ const options = ref(['All Flights', 'All Options'])
             <div class="flight-price">407</div>
           </a>
 
-          <!--Flight-->
+          <!-- Flight -->
           <a class="flight-card">
             <img
               src="/images/illustrations/dashboards/flights/company1.svg"
@@ -276,7 +276,7 @@ const options = ref(['All Flights', 'All Options'])
       </div>
 
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="search-widget"
           straight
@@ -305,7 +305,7 @@ const options = ref(['All Flights', 'All Options'])
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="picker-widget">
           <template #header>
             <div class="widget-toolbar">

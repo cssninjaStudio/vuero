@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SidebarLayoutContext, SidebarItem, SidebarItemSubsidebar, SidebarTheme } from './sidebar.types'
+import type { SidebarItem, SidebarItemSubsidebar, SidebarLayoutContext, SidebarTheme } from './sidebar.types'
 import { injectionKey } from './sidebar.context'
 
 const props = withDefaults(

@@ -1,6 +1,6 @@
 import type { ChartOptions } from 'billboard.js'
 
-import { step, areaStep } from 'billboard.js'
+import { areaStep, step } from 'billboard.js'
 
 export function useStepSimpleChart() {
   const themeColors = useThemeColors()

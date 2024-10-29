@@ -79,7 +79,7 @@ const filteredData = computed(() => {
     </div>
 
     <div class="flex-list-wrapper flex-list-v3">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!filteredData.length"
         title="We couldn't find any matching results."
@@ -102,7 +102,7 @@ const filteredData = computed(() => {
         </template>
       </VPlaceholderPage>
 
-      <!--Active Tab-->
+      <!-- Active Tab -->
       <div
         v-else-if="tab === 'all' && filteredData.length"
         class="tab-content is-active"
@@ -118,7 +118,7 @@ const filteredData = computed(() => {
               tag="div"
               class="flex-list-inner"
             >
-              <!--Table item-->
+              <!-- Table item -->
               <div
                 v-for="item in filteredData"
                 :key="item.id"
@@ -199,7 +199,7 @@ const filteredData = computed(() => {
           </template>
         </VFlexTable>
 
-        <!--Table Pagination-->
+        <!-- Table Pagination -->
         <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
@@ -209,12 +209,12 @@ const filteredData = computed(() => {
         />
       </div>
 
-      <!--inactive Tab-->
+      <!-- inactive Tab -->
       <div
         v-else-if="tab === 'saved'"
         class="tab-content is-active"
       >
-        <!--Empty placeholder-->
+        <!-- Empty placeholder -->
         <VPlaceholderPage
           title="No saved courses."
           subtitle="Looks like you don't have any saved courses yet. You can add a

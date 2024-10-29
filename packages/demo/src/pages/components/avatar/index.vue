@@ -35,40 +35,40 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Avatar-->
+      <!-- Avatar -->
       <AvatarDefaultDocumentation />
 
-      <!--Avatar Square-->
+      <!-- Avatar Square -->
       <AvatarSquareDocumentation />
 
-      <!--Avatar Fallback-->
+      <!-- Avatar Fallback -->
       <AvatarHandleFallbackDocumentation />
 
-      <!--Avatar Dot-->
+      <!-- Avatar Dot -->
       <AvatarDotDocumentation />
 
-      <!--Avatar Dot Squared-->
+      <!-- Avatar Dot Squared -->
       <AvatarDotSquaredDocumentation />
 
-      <!--Avatar Dot Colors-->
+      <!-- Avatar Dot Colors -->
       <AvatarDotColorsDocumentation />
 
-      <!--Avatar Badge-->
+      <!-- Avatar Badge -->
       <AvatarBadgeDocumentation />
 
-      <!--Avatar Fake-->
+      <!-- Avatar Fake -->
       <AvatarFakeDocumentation />
 
-      <!--Avatar Fake Squared-->
+      <!-- Avatar Fake Squared -->
       <AvatarFakeSquareDocumentation />
 
-      <!--Avatar Fake Badge-->
+      <!-- Avatar Fake Badge -->
       <AvatarFakeBadgeDocumentation />
 
-      <!--Avatar Fake Colors-->
+      <!-- Avatar Fake Colors -->
       <AvatarFakeColorDocumentation />
 
-      <!--Avatar Fake Squared Colors-->
+      <!-- Avatar Fake Squared Colors -->
       <AvatarFakeSquaredColorDocumentation />
 
       <DocumentationMeta

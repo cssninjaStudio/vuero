@@ -11,10 +11,6 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const modelValue = defineModel<T[]>({
-  default: () => [],
-})
-
 const props = withDefaults(
   defineProps<{
     value: T
@@ -24,6 +20,10 @@ const props = withDefaults(
     color: undefined,
   },
 )
+
+const modelValue = defineModel<T[]>({
+  default: () => [],
+})
 
 const animatedCheckboxId = ref<string | undefined>()
 const element = useTemplateRef<HTMLElement>('element')
@@ -36,7 +36,7 @@ onMounted(() => {
   animatedCheckboxId.value = `v-animated-checkbox-${crypto.randomUUID()}`
 })
 
-const updateCheckbox = () => {
+function updateCheckbox() {
   if (element.value && innerElement.value) {
     if (checked.value) {
       element.value.classList.add('is-checked')
@@ -76,7 +76,7 @@ watchEffect(updateCheckbox)
   <div
     ref="element"
     class="animated-checkbox"
-    :class="[color && 'is-' + color]"
+    :class="[color && `is-${color}`]"
   >
     <input
       :id="animatedCheckboxId"

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
-import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
-import { useSalesRevenueRadialChart } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
-import { useSalesRadialGroupChart } from '/@src/data/dashboards/sales/salesRadialGroupChart'
 import { useSalesBarChart } from '/@src/data/dashboards/sales/salesBarChart'
+import { useSalesRadialGroupChart } from '/@src/data/dashboards/sales/salesRadialGroupChart'
+import { useSalesRevenueRadialChart } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
+import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { barData, barData2, salesBarOptions } = useSalesBarChart()
@@ -38,7 +38,7 @@ onMounted(() => {
 
 <template>
   <div class="finance-dashboard sales-dashboard">
-    <!--Header-->
+    <!-- Header -->
     <div class="dashboard-header">
       <VAvatar
         size="large"
@@ -221,7 +221,7 @@ onMounted(() => {
         </div>
 
         <div class="column is-3">
-          <!--Widget-->
+          <!-- Widget -->
           <div class="widget gauge-widget is-straight">
             <div class="widget-toolbar">
               <div class="left">
@@ -265,7 +265,7 @@ onMounted(() => {
           </div>
         </div>
         <div class="column is-3">
-          <!--Widget-->
+          <!-- Widget -->
           <UIWidget
             class="picker-widget"
             straight

@@ -11,7 +11,7 @@ const sliderElement = useTemplateRef<HTMLElement>('slider-element')
 const nextButtonElement = useTemplateRef<HTMLElement>('next-button')
 const prevButtonElement = useTemplateRef<HTMLElement>('prev-button')
 
-const onIndexChanged = (info: any) => {
+function onIndexChanged(info: any) {
   // direct access to info object
   const indexPrev = info.indexCached
   const indexCurrent = info.index
@@ -40,7 +40,7 @@ watch(slider, (value) => {
   }
 })
 
-const goTo = (index: number) => {
+function goTo(index: number) {
   if (slider.value) {
     slider.value.goTo(index)
   }
@@ -49,7 +49,7 @@ const goTo = (index: number) => {
 
 <template>
   <div class="food-delivery-dashboard">
-    <!--Left-->
+    <!-- Left -->
     <div class="left">
       <div class="left-header">
         <div class="header-image">
@@ -121,7 +121,7 @@ const goTo = (index: number) => {
               ref="slider-element"
               class="food-pills-inner pill-carousel"
             >
-              <!--Pills Loop-->
+              <!-- Pills Loop -->
               <div
                 v-for="(item, index) in foodDelivery.foodPills"
                 :key="item.id"
@@ -144,7 +144,7 @@ const goTo = (index: number) => {
 
           <div class="restaurants-list">
             <div class="columns is-multiline">
-              <!--Restaurants Loop-->
+              <!-- Restaurants Loop -->
               <div
                 v-for="restaurant in foodDelivery.restaurants"
                 :key="restaurant.id"

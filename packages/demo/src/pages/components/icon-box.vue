@@ -35,25 +35,25 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Icon Box-->
+      <!-- Icon Box -->
       <IconBoxDefaultDocumentation />
 
-      <!--Box Colors-->
+      <!-- Box Colors -->
       <IconBoxColorsDocumentation />
 
-      <!--Box Border-->
+      <!-- Box Border -->
       <IconBoxSquaredBorderDocumentation />
 
-      <!--Box Rounded-->
+      <!-- Box Rounded -->
       <IconBoxRoundedDocumentation />
 
-      <!--Box Colors-->
+      <!-- Box Colors -->
       <IconBoxRoundedBorderDocumentation />
 
-      <!--Lucide Icons-->
+      <!-- Lucide Icons -->
       <IconBoxFeatherDocumentation />
 
-      <!--Font Awesome-->
+      <!-- Font Awesome -->
       <IconBoxFaDocumentation />
 
       <DocumentationMeta
@@ -61,6 +61,5 @@ useHead({
         :meta="VIconBoxMeta"
       />
     </DocumentationTocContainer>
-      
   </div>
 </template>

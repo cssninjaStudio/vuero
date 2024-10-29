@@ -39,7 +39,7 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--VCard Social-->
+        <!-- VCard Social -->
         <VCardSocialDocumentation />
       </div>
 

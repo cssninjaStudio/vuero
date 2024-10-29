@@ -41,7 +41,7 @@ const activeTab = ref<TabId>('all')
     </div>
 
     <div class="search-results-body">
-      <!--Search Placeholder -->
+      <!-- Search Placeholder -->
       <VPlaceholderPage
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the search terms

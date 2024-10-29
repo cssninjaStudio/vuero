@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const modelValue = defineModel<number | undefined>({
-  default: undefined,
-})
 const props = withDefaults(
   defineProps<{
     id?: string
@@ -19,7 +16,9 @@ const props = withDefaults(
     readonly: undefined,
   },
 )
-
+const modelValue = defineModel<number | undefined>({
+  default: undefined,
+})
 const { field, id } = useVFieldContext({
   id: () => props.id,
   help: 'VRangeRating',
@@ -51,21 +50,24 @@ const sizeStyle = computed(() => {
   switch (props.size) {
     case 'small':
       return 'is-size-6'
-    case 'base':
-      return 'is-size-5'
     case 'medium':
       return 'is-size-4'
     case 'large':
       return 'is-size-3'
     case 'xlarge':
       return 'is-size-2'
+    case 'base':
+    default:
+      return 'is-size-5'
   }
 })
 
 const radiogroup = ref()
 function focus() {
-  if (props.readonly) return
-  if (props.disabled) return
+  if (props.readonly)
+    return
+  if (props.disabled)
+    return
   if (radiogroup.value) {
     radiogroup.value.focus()
   }
@@ -74,8 +76,10 @@ function focus() {
 const wrapper = ref()
 const { focused } = useFocusWithin(wrapper)
 onKeyStroke('ArrowLeft', (e) => {
-  if (!focused.value) return
-  if (props.disabled) return
+  if (!focused.value)
+    return
+  if (props.disabled)
+    return
 
   e.preventDefault()
 
@@ -84,8 +88,10 @@ onKeyStroke('ArrowLeft', (e) => {
   }
 })
 onKeyStroke('ArrowRight', (e) => {
-  if (!focused.value) return
-  if (props.disabled) return
+  if (!focused.value)
+    return
+  if (props.disabled)
+    return
 
   e.preventDefault()
 
@@ -96,7 +102,8 @@ onKeyStroke('ArrowRight', (e) => {
 
 const highlighted = ref<number>()
 function highlightIndex(index: number) {
-  if (props.readonly) return
+  if (props.readonly)
+    return
   highlighted.value = index + 1
 }
 function unhighlight() {
@@ -104,13 +111,16 @@ function unhighlight() {
 }
 
 function selectIndex(index: number) {
-  if (props.readonly) return
-  if (props.disabled) return
+  if (props.readonly)
+    return
+  if (props.disabled)
+    return
   internal.value = index + 1
 }
 
 function isStarSelected(index: number) {
-  if (!hasValue.value) return 0
+  if (!hasValue.value)
+    return 0
 
   if (highlighted.value !== undefined) {
     return highlighted.value - index > 0

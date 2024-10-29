@@ -1,21 +1,22 @@
-import type { Plugin, ResolvedConfig } from 'vite'
 import type {
-  ThemeRegistration,
-  ThemeRegistrationRaw,
   BuiltinTheme,
   StringLiteralUnion,
+  ThemeRegistration,
+  ThemeRegistrationRaw,
 } from 'shiki'
+import type { Plugin, ResolvedConfig } from 'vite'
 
-import { join, basename } from 'pathe'
 import { compileTemplate, parse } from '@vue/compiler-sfc'
 import MagicString from 'magic-string'
+import { basename, join } from 'pathe'
 
 import { createProcessor } from './markdown'
 import { transformExampleMarkup, transformSlots } from './transform'
 
 function parseId(id: string) {
   const index = id.indexOf('?')
-  if (index < 0) return id
+  if (index < 0)
+    return id
   else return id.slice(0, index)
 }
 
@@ -51,7 +52,8 @@ export function VueroMarkdownDoc(options: PluginOptions) {
     const input = transformExampleMarkup(raw)
 
     // process markdown with remark
-    if (!processor) processor = await createProcessor(options.shiki.themes)
+    if (!processor)
+      processor = await createProcessor(options.shiki.themes)
 
     const vFile = await processor?.process(input)
 

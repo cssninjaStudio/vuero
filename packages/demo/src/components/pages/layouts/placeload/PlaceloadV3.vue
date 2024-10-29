@@ -49,7 +49,7 @@ const optionsSingle = [
 
     <div class="user-grid user-grid-v1">
       <div class="columns is-multiline">
-        <!--Grid item-->
+        <!-- Grid item -->
         <div
           v-for="key in 20"
           :key="key"

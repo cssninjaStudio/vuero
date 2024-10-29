@@ -21,7 +21,7 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-const onAddFile = (error: any, file: any) => {
+function onAddFile(error: any, file: any) {
   if (error) {
     console.error(error)
     return
@@ -29,7 +29,7 @@ const onAddFile = (error: any, file: any) => {
 
   console.log('file added', file)
 }
-const onRemoveFile = (error: any, file: any) => {
+function onRemoveFile(error: any, file: any) {
   if (error) {
     console.error(error)
     return
@@ -37,7 +37,7 @@ const onRemoveFile = (error: any, file: any) => {
 
   console.log('file removed', file)
 }
-const onSave = async () => {
+async function onSave() {
   isLoading.value = true
   await sleep()
   notyf.primary('Your changes have been successfully saved!')
@@ -81,7 +81,7 @@ const onSave = async () => {
       </div>
     </div>
     <div class="form-body">
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Profile Picture</h4>
@@ -141,7 +141,7 @@ const onSave = async () => {
         </VAvatar>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Personal Info</h4>
@@ -149,7 +149,7 @@ const onSave = async () => {
         </div>
 
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="lucide:user">
@@ -161,7 +161,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="lucide:user">
@@ -173,7 +173,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl icon="lucide:briefcase">
@@ -185,7 +185,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl icon="lucide:map-pin">
@@ -197,7 +197,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl>
@@ -214,14 +214,14 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Professional Info</h4>
           <p>This can help you to win some opportunities</p>
         </div>
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField v-slot="{ id }">
               <VControl>
@@ -234,7 +234,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField v-slot="{ id }">
               <VControl>
@@ -247,7 +247,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField v-slot="{ id }">
               <VControl>
@@ -260,7 +260,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField v-slot="{ id }">
               <VControl>
@@ -273,7 +273,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField v-slot="{ id }">
               <VControl>
@@ -292,14 +292,14 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Social Profiles</h4>
           <p>This can help others finding you on social media</p>
         </div>
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-facebook-f">
@@ -311,7 +311,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-twitter">
@@ -323,7 +323,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-dribbble">
@@ -335,7 +335,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-instagram">
@@ -347,7 +347,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-github">
@@ -359,7 +359,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-gitlab">

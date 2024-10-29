@@ -11,7 +11,7 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-const onAddFile = (error: any, file: any) => {
+function onAddFile(error: any, file: any) {
   if (error) {
     console.error(error)
     return
@@ -19,7 +19,7 @@ const onAddFile = (error: any, file: any) => {
 
   console.log('file added', file)
 }
-const onRemoveFile = (error: any, file: any) => {
+function onRemoveFile(error: any, file: any) {
   if (error) {
     console.error(error)
     return
@@ -27,11 +27,11 @@ const onRemoveFile = (error: any, file: any) => {
 
   console.log('file removed', file)
 }
-const addExperience = async () => {
+async function addExperience() {
   isUploading.value = false
   onSave()
 }
-const onSave = async () => {
+async function onSave() {
   isLoading.value = true
   await sleep()
   notyf.primary('Your changes have been successfully saved!')
@@ -75,7 +75,7 @@ const onSave = async () => {
       </div>
     </div>
     <div class="form-body">
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div
           v-if="!isUploading"
@@ -100,7 +100,7 @@ const onSave = async () => {
         </div>
 
         <div class="setting-list">
-          <!--Inner Form-->
+          <!-- Inner Form -->
           <form
             v-if="isUploading"
             method="post"
@@ -206,7 +206,7 @@ const onSave = async () => {
           </form>
 
           <template v-else>
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/airbnb.svg"
@@ -230,7 +230,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/facebook.svg"
@@ -254,7 +254,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/atlassian.svg"
@@ -278,7 +278,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/github.svg"
@@ -302,7 +302,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/slack.svg"
@@ -326,7 +326,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Experience Item-->
+            <!-- Experience Item -->
             <div class="setting-item">
               <img
                 src="https://media.cssninja.io/content/photos/brands/gitlab.svg"
@@ -350,7 +350,7 @@ const onSave = async () => {
               </div>
             </div>
 
-            <!--Create Item-->
+            <!-- Create Item -->
             <div class="setting-item is-create">
               <VIconWrap icon="lnil lnil-circle-plus" />
 

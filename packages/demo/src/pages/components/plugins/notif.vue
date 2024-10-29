@@ -42,7 +42,7 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Success Toast-->
+      <!-- Success Toast -->
       <NotyfSuccessDocumentation />
 
       <div class="buttons mb-6">
@@ -54,7 +54,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Error Toast-->
+      <!-- Error Toast -->
       <NotyfErrorDocumentation />
 
       <div class="buttons mb-6">
@@ -66,7 +66,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Info Toast-->
+      <!-- Info Toast -->
       <NotyfInfoDocumentation />
 
       <div class="buttons mb-6">
@@ -78,7 +78,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Warning Toast-->
+      <!-- Warning Toast -->
       <NotyfWarningDocumentation />
 
       <div class="buttons mb-6">
@@ -90,7 +90,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Primary Toast-->
+      <!-- Primary Toast -->
       <NotyfPrimaryDocumentation />
 
       <div class="buttons mb-6">
@@ -102,7 +102,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Purple Toast-->
+      <!-- Purple Toast -->
       <NotyfPurpleDocumentation />
 
       <div class="buttons mb-6">
@@ -114,7 +114,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Blue Toast-->
+      <!-- Blue Toast -->
       <NotyfBlueDocumentation />
 
       <div class="buttons mb-6">
@@ -126,7 +126,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Green Toast-->
+      <!-- Green Toast -->
       <NotyfGreenDocumentation />
 
       <div class="buttons mb-6">
@@ -138,7 +138,7 @@ useHead({
         </VButton>
       </div>
 
-      <!--Orange Toast-->
+      <!-- Orange Toast -->
       <NotyfOrangeDocumentation />
 
       <div class="buttons mb-6">

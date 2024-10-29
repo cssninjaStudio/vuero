@@ -7,7 +7,7 @@ const { y } = useWindowScroll()
 const isStuck = computed(() => {
   return y.value > 30
 })
-const onSubmit = () => {
+function onSubmit() {
   console.log('Form submitted!')
 }
 </script>

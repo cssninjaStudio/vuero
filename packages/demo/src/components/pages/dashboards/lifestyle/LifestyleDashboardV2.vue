@@ -31,7 +31,7 @@ const topicList = dashboardData.topicList as any[]
     <div class="columns">
       <div class="column is-9">
         <div class="columns is-multiline is-flex-tablet-p">
-          <!--Card-->
+          <!-- Card -->
           <div class="column is-3">
             <div
               v-background="{
@@ -63,7 +63,7 @@ const topicList = dashboardData.topicList as any[]
             </div>
           </div>
 
-          <!--Card-->
+          <!-- Card -->
           <div class="column is-3">
             <div
               v-background="{
@@ -95,7 +95,7 @@ const topicList = dashboardData.topicList as any[]
             </div>
           </div>
 
-          <!--Card-->
+          <!-- Card -->
           <div class="column is-3">
             <div
               v-background="{
@@ -127,7 +127,7 @@ const topicList = dashboardData.topicList as any[]
             </div>
           </div>
 
-          <!--Card-->
+          <!-- Card -->
           <div class="column is-3">
             <div
               v-background="{
@@ -159,7 +159,7 @@ const topicList = dashboardData.topicList as any[]
             </div>
           </div>
 
-          <!--List-->
+          <!-- List -->
           <div class="column is-6">
             <div class="dashboard-list">
               <div class="dashboard-title">
@@ -278,7 +278,7 @@ const topicList = dashboardData.topicList as any[]
             </div>
           </div>
 
-          <!--List-->
+          <!-- List -->
           <div class="column is-6">
             <div class="dashboard-list">
               <div class="dashboard-title">
@@ -404,7 +404,7 @@ const topicList = dashboardData.topicList as any[]
       </div>
 
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="search-widget">
           <template #body>
             <div class="field">
@@ -430,7 +430,7 @@ const topicList = dashboardData.topicList as any[]
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget class="text-widget">
           <template #header>
             <UIWidgetToolbarIcon
@@ -449,7 +449,7 @@ const topicList = dashboardData.topicList as any[]
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <ListWidgetSingle
           title="Hot Topics"
           class="list-widget-v1 p-t-20 p-l-20 p-r-20 p-b-20"

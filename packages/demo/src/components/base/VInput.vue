@@ -6,16 +6,15 @@ export interface VInputProps {
   falseValue?: boolean
 }
 
-const modelValue = defineModel<any>({
-  default: '',
-})
 const props = withDefaults(defineProps<VInputProps>(), {
   id: undefined,
   modelValue: '',
   trueValue: true,
   falseValue: false,
 })
-
+const modelValue = defineModel<any>({
+  default: '',
+})
 const { field, id } = useVFieldContext({
   id: () => props.id,
   create: false,
@@ -40,7 +39,8 @@ const internal = computed({
 })
 
 const classes = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return ['input', 'v-input']
 })

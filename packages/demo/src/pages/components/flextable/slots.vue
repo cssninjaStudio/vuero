@@ -90,11 +90,11 @@ function contactUser(row: any) {
 
     <div class="columns">
       <div class="column is-12">
-        <!--Flex Table-->
+        <!-- Flex Table -->
         <VFlexTableWithSlotsDocumentation class="mt-5" />
 
         <div class="mt-4">
-          <!--VFlexTabe-->
+          <!-- VFlexTabe -->
           <VFlexTable
             :data="flexRowsContacts"
             :columns="columns"

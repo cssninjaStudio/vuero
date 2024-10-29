@@ -1,8 +1,4 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'selectConversation', id: number): void
-}>()
-
 const props = withDefaults(
   defineProps<{
     conversations?: any[]
@@ -13,6 +9,10 @@ const props = withDefaults(
     selectedConversationId: 0,
   },
 )
+
+const emit = defineEmits<{
+  (e: 'selectConversation', id: number): void
+}>()
 
 const { onceError } = useImageError()
 </script>

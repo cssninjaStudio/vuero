@@ -1,10 +1,10 @@
 const randomizeArray = function (arg: number[]) {
   const array = arg.slice()
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex
+  let currentIndex = array.length
+  let temporaryValue
+  let randomIndex
 
-  while (0 !== currentIndex) {
+  while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex)
     currentIndex -= 1
 
@@ -19,8 +19,30 @@ const randomizeArray = function (arg: number[]) {
 export function useSalesSparksCharts() {
   const themeColors = useThemeColors()
   const sparklineData = [
-    472, 454, 547, 385, 562, 247, 652, 318, 379, 391, 622, 515, 355, 415, 358, 271, 932,
-    534, 615, 278, 546, 435, 192, 465,
+    472,
+    454,
+    547,
+    385,
+    562,
+    247,
+    652,
+    318,
+    379,
+    391,
+    622,
+    515,
+    355,
+    415,
+    358,
+    271,
+    932,
+    534,
+    615,
+    278,
+    546,
+    435,
+    192,
+    465,
   ]
 
   const spark1 = shallowRef({
@@ -47,7 +69,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
+    labels: [...Array.from({ length: 24 }).keys()].map(n => `2020-10-0${n + 1}`),
     yaxis: {
       min: 0,
       labels: {
@@ -101,7 +123,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
+    labels: [...Array.from({ length: 24 }).keys()].map(n => `2020-10-0${n + 1}`),
     yaxis: {
       min: 0,
       labels: {
@@ -155,7 +177,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
+    labels: [...Array.from({ length: 24 }).keys()].map(n => `2020-10-0${n + 1}`),
     xaxis: {
       type: 'datetime',
     },
@@ -209,7 +231,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
+    labels: [...Array.from({ length: 24 }).keys()].map(n => `2020-10-0${n + 1}`),
     xaxis: {
       type: 'datetime',
     },

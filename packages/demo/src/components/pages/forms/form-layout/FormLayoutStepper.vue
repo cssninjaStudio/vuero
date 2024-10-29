@@ -13,7 +13,7 @@ const storageType = ref('')
 const taxType = ref('')
 const taxStatements = ref('')
 
-const validateStep = async () => {
+async function validateStep() {
   if (currentStep.value === 4) {
     if (isLoading.value) {
       return

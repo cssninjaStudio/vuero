@@ -37,8 +37,8 @@ export function useRevenueChart() {
     },
     tooltip: {
       y: {
-        formatter: function (val: string) {
-          return '$' + val
+        formatter(val: string) {
+          return `$${val}`
         },
       },
     },

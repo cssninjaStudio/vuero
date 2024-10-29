@@ -1,12 +1,14 @@
 import { kebabCase } from 'scule'
 
-const SELF_CLOSING_TAG_REGEX = /<([^\s></]+)([^>]+)\/>/g
+// eslint-disable-next-line regexp/no-super-linear-backtracking
+const SELF_CLOSING_TAG_REGEX = /<([^\s<>]+)([^<>]*)\/>/g
 const OPEN_TAG_REGEX = /<([^\s></]+)/g
 const CLOSE_TAG_REGEX = /<\/([^\s></]+)/g
 
 export function transformExampleMarkup(raw: string) {
   let output = raw
   let content: RegExpMatchArray | null = null
+  // eslint-disable-next-line no-cond-assign
   if ((content = raw.match(/<!--example-->([\s\S]*?)<!--\/example-->/))) {
     const kebabContent = content[1]
       .replaceAll(SELF_CLOSING_TAG_REGEX, (substring, tag) => {

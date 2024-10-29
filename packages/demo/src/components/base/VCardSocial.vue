@@ -29,7 +29,6 @@ export interface VCardSocialProps {
   likeLabel?: string
 }
 
-const emit = defineEmits<VCardSocialEmits>()
 const props = withDefaults(defineProps<VCardSocialProps>(), {
   hashtags: () => [],
   avatar: undefined,
@@ -37,7 +36,7 @@ const props = withDefaults(defineProps<VCardSocialProps>(), {
   shareLabel: 'Share',
   likeLabel: 'Like',
 })
-
+const emit = defineEmits<VCardSocialEmits>()
 const icon = computed(() => {
   switch (props.network) {
     case 'facebook':

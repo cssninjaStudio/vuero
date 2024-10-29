@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { NavsearchItem } from '/@src/components/layouts/navsearch/navsearch.types'
-
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
+
+import type { NavsearchItem } from '/@src/components/layouts/navsearch/navsearch.types'
 import type { UserPopover } from '/@src/types/users'
 import { popovers } from '/@src/data/users/userPopovers'
 

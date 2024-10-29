@@ -151,9 +151,9 @@ useHead({
 <template>
   <MinimalLayout>
     <div class="chat-app-wrapper">
-      <!--Header-->
+      <!-- Header -->
       <div class="chat-app-header">
-        <!--Logo-->
+        <!-- Logo -->
         <div class="logo">
           <VLink to="/">
             <AnimatedLogo
@@ -163,7 +163,7 @@ useHead({
           </VLink>
         </div>
 
-        <!--Search-->
+        <!-- Search -->
         <div class="search-bar">
           <div class="field">
             <div class="control has-icon">
@@ -183,9 +183,9 @@ useHead({
           </div>
         </div>
 
-        <!--User Settings-->
+        <!-- User Settings -->
         <div class="user-settings">
-          <!--Toolbar-->
+          <!-- Toolbar -->
           <div class="toolbar desktop-toolbar">
             <ToolbarThemeToggle />
             <ToolbarNotification />
@@ -195,11 +195,11 @@ useHead({
         </div>
       </div>
 
-      <!--Chat app wrapper-->
+      <!-- Chat app wrapper -->
       <div class="wrapper">
-        <!--Conversation List-->
+        <!-- Conversation List -->
         <WebappConversationList
-          v-model:conversationId="selectedConversationId"
+          v-model:conversation-id="selectedConversationId"
           :mobile-conversation-list-open="mobileConversationListOpen"
           :conversations="conversations"
           @toggle-mobile-conversation="
@@ -207,11 +207,11 @@ useHead({
           "
         />
 
-        <!--Conversation messages-->
+        <!-- Conversation messages -->
         <div
           class="chat-area is-active has-slimscroll"
         >
-          <!--Conversation 1-->
+          <!-- Conversation 1 -->
           <WebappConversation1
             :class="[selectedConversationId === 1 && 'is-active']"
             @toggle-mobile-conversation="
@@ -219,7 +219,7 @@ useHead({
             "
           />
 
-          <!--Conversation 2-->
+          <!-- Conversation 2 -->
           <WebappConversation2
             :class="[selectedConversationId === 2 && 'is-active']"
             @toggle-mobile-conversation="
@@ -227,7 +227,7 @@ useHead({
             "
           />
 
-          <!--Conversation 3-->
+          <!-- Conversation 3 -->
           <WebappConversation3
             :class="[selectedConversationId === 3 && 'is-active']"
             @toggle-mobile-conversation="
@@ -235,7 +235,7 @@ useHead({
             "
           />
 
-          <!--Conversation 4-->
+          <!-- Conversation 4 -->
           <WebappConversation4
             :class="[selectedConversationId === 4 && 'is-active']"
             @toggle-mobile-conversation="
@@ -243,7 +243,7 @@ useHead({
             "
           />
 
-          <!--Conversation 5-->
+          <!-- Conversation 5 -->
           <WebappConversation5
             :class="[selectedConversationId === 5 && 'is-active']"
             @toggle-mobile-conversation="
@@ -251,7 +251,7 @@ useHead({
             "
           />
 
-          <!--Conversation 6-->
+          <!-- Conversation 6 -->
           <WebappConversation6
             :class="[selectedConversationId === 6 && 'is-active']"
             @toggle-mobile-conversation="
@@ -259,7 +259,7 @@ useHead({
             "
           />
 
-          <!--Conversation 7-->
+          <!-- Conversation 7 -->
           <WebappConversation7
             :class="[selectedConversationId === 7 && 'is-active']"
             @toggle-mobile-conversation="
@@ -267,7 +267,7 @@ useHead({
             "
           />
 
-          <!--Conversation 8-->
+          <!-- Conversation 8 -->
           <WebappConversation8
             :class="[selectedConversationId === 8 && 'is-active']"
             @toggle-mobile-conversation="
@@ -275,7 +275,7 @@ useHead({
             "
           />
 
-          <!--Conversation 9-->
+          <!-- Conversation 9 -->
           <WebappConversation9
             :class="[selectedConversationId === 9 && 'is-active']"
             @toggle-mobile-conversation="
@@ -283,7 +283,7 @@ useHead({
             "
           />
 
-          <!--Conversation 10-->
+          <!-- Conversation 10 -->
           <WebappConversation10
             :class="[selectedConversationId === 10 && 'is-active']"
             @toggle-mobile-conversation="
@@ -291,7 +291,7 @@ useHead({
             "
           />
 
-          <!--Conversation 11-->
+          <!-- Conversation 11 -->
           <WebappConversation11
             :class="[selectedConversationId === 11 && 'is-active']"
             @toggle-mobile-conversation="
@@ -387,7 +387,7 @@ useHead({
           </div>
         </div>
 
-        <!--Conversation Details-->
+        <!-- Conversation Details -->
         <div
           class="detail-area has-slimscroll"
         >

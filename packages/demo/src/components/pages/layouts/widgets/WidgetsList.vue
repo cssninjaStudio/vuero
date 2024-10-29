@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useTodoList } from '/@src/data/widgets/list/todoList'
 import { fileList1, fileList2 } from '/@src/data/widgets/list/fileList'
-import { userList } from '/@src/data/widgets/list/userList'
-import { topicList } from '/@src/data/widgets/list/topicList'
 import { timeline } from '/@src/data/widgets/list/timeline'
+import { useTodoList } from '/@src/data/widgets/list/todoList'
+import { topicList } from '/@src/data/widgets/list/topicList'
+import { userList } from '/@src/data/widgets/list/userList'
 
 const { todoList1, todoList2, todoList3, todoList4 } = useTodoList()
 
@@ -19,7 +19,7 @@ const todoList4Selection = ref([
 
 <template>
   <div class="columns is-multiline widget-demo-columns half-columns">
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="User Progress"
@@ -30,7 +30,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V1b-->
+    <!-- List Widget V1b -->
     <div class="column is-4">
       <ListWidgetSingle
         title="User Progress"
@@ -44,7 +44,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V2-->
+    <!-- List Widget V2 -->
     <div class="column is-4">
       <ListWidgetTabbed
         title="Files"
@@ -60,7 +60,7 @@ const todoList4Selection = ref([
       </ListWidgetTabbed>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Todo"
@@ -75,7 +75,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Todo"
@@ -90,7 +90,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V2-->
+    <!-- List Widget V2 -->
     <div class="column is-4">
       <ListWidgetTabbed
         title="Todo"
@@ -113,7 +113,7 @@ const todoList4Selection = ref([
       </ListWidgetTabbed>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Topics"
@@ -127,7 +127,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Topics"
@@ -138,7 +138,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V2-->
+    <!-- List Widget V2 -->
     <div class="column is-4">
       <ListWidgetTabbed
         title="Topics"
@@ -154,7 +154,7 @@ const todoList4Selection = ref([
       </ListWidgetTabbed>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Timeline"
@@ -165,7 +165,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Timeline"
@@ -179,7 +179,7 @@ const todoList4Selection = ref([
       </ListWidgetSingle>
     </div>
 
-    <!--List Widget V1a-->
+    <!-- List Widget V1a -->
     <div class="column is-4">
       <ListWidgetSingle
         title="Timeline"

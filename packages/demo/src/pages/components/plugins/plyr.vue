@@ -38,13 +38,13 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--1:1 Video Player-->
+      <!-- 1:1 Video Player -->
       <VideoBaseDocumentation />
 
-      <!--4:3 Video Player-->
+      <!-- 4:3 Video Player -->
       <VideoFourDocumentation />
 
-      <!--16:9 Video Player-->
+      <!-- 16:9 Video Player -->
       <VideoSixteenDocumentation />
 
       <DocumentationMeta

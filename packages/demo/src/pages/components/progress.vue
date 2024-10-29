@@ -35,13 +35,13 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VProgress-->
+      <!-- VProgress -->
       <VProgressBaseDocumentation />
 
-      <!--VProgress colors-->
+      <!-- VProgress colors -->
       <VProgressColorsDocumentation />
 
-      <!--VProgress undeterminate-->
+      <!-- VProgress undeterminate -->
       <VProgressUndeterminateDocumentation />
 
       <DocumentationMeta

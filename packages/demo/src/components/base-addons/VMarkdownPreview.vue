@@ -155,21 +155,23 @@ export default defineComponent({
     const processMd = async () => {
       const _source = unref(props.source)
       const _processor = unref(processor)
-      if (!_processor) return
-      if (!_source) return
+      if (!_processor)
+        return
+      if (!_source)
+        return
 
       const result = (await _processor.process(_source)).toString()
 
       html.value = result
     }
 
-    if (import.meta.env.SSR) {
-      await loadProcessors()
-      await processMd()
-    }
-    else {
+    if (!import.meta.env.SSR) {
       watchEffect(loadProcessors)
       watchEffect(processMd)
+    }
+    else {
+      await loadProcessors()
+      await processMd()
     }
 
     const classes = computed(() => {

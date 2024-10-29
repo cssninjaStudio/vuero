@@ -8,8 +8,8 @@
  * @see /src/utils/api/chat
  */
 
-import { acceptHMRUpdate, defineStore } from 'pinia'
 import type { $Fetch } from 'ofetch'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export interface Conversation {
   id: number
@@ -66,7 +66,8 @@ export const useChat = defineStore('chat', () => {
   })
 
   async function loadConversations(start = 0, limit = 10) {
-    if (loading.value) return
+    if (loading.value)
+      return
 
     loading.value = true
 
@@ -80,7 +81,8 @@ export const useChat = defineStore('chat', () => {
   }
 
   async function selectConversastion(conversationId: number) {
-    if (loading.value) return
+    if (loading.value)
+      return
 
     loading.value = true
 
@@ -141,7 +143,7 @@ async function fetchConversations(
   )
 
   if (headers.has('X-Total-Count')) {
-    count = parseInt(headers.get('X-Total-Count') ?? '0')
+    count = Number.parseInt(headers.get('X-Total-Count') ?? '0')
   }
 
   return { conversations, count }
@@ -160,7 +162,7 @@ async function fetchMessages(
   )
 
   if (headers.has('X-Total-Count')) {
-    count = parseInt(headers.get('X-Total-Count') ?? '0')
+    count = Number.parseInt(headers.get('X-Total-Count') ?? '0')
   }
 
   return { messages, count }

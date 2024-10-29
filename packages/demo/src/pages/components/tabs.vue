@@ -35,37 +35,37 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VTabs-->
+      <!-- VTabs -->
       <TabsBaseDocumentation />
 
-      <!--Centered Tabs-->
+      <!-- Centered Tabs -->
       <TabsCenteredDocumentation />
 
-      <!--Right Tabs-->
+      <!-- Right Tabs -->
       <TabsRightDocumentation />
 
-      <!--Iconify Tabs-->
+      <!-- Iconify Tabs -->
       <TabsIconifyDocumentation />
 
-      <!--Boxed Tabs-->
+      <!-- Boxed Tabs -->
       <TabsBoxedDocumentation />
 
-      <!--Toggle Tabs-->
+      <!-- Toggle Tabs -->
       <TabsToggleDocumentation />
 
-      <!--Rounded Toggle Tabs-->
+      <!-- Rounded Toggle Tabs -->
       <TabsRoundedDocumentation />
 
-      <!--Slider Tabs 2x-->
+      <!-- Slider Tabs 2x -->
       <TabsSliderDoubleDocumentation />
 
-      <!--Square Slider Tabs 2x-->
+      <!-- Square Slider Tabs 2x -->
       <TabsSliderDsquareDocumentation />
 
-      <!--Slider Tabs 3x-->
+      <!-- Slider Tabs 3x -->
       <TabsSliderTripleDocumentation />
 
-      <!--Squared Slider Tabs 3x-->
+      <!-- Squared Slider Tabs 3x -->
       <TabsSliderTsquareDocumentation />
 
       <DocumentationMeta

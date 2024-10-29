@@ -1,7 +1,7 @@
 import {
   createRouter as createClientRouter,
-  createWebHistory,
   createMemoryHistory,
+  createWebHistory,
 } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
 
@@ -59,7 +59,7 @@ export function createRouter() {
 
         // vue-router does not incorporate scroll-margin-top on its own.
         if (el) {
-          const top = parseFloat(getComputedStyle(el).scrollMarginTop)
+          const top = Number.parseFloat(getComputedStyle(el).scrollMarginTop)
           if (el instanceof HTMLElement) {
             el.focus()
           }

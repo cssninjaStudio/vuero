@@ -1,6 +1,6 @@
 import { hydrateOnVisible } from 'vue'
-import { definePlugin } from '/@src/utils/plugins'
 import 'v-calendar/dist/style.css'
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(({ app }) => {
   app.component(

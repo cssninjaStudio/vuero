@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type VNode } from 'vue'
+import type { VNode } from 'vue'
 import { flewTableWrapperSymbol } from './VFlexTableWrapper.vue'
 
 export interface VFlexTableColumn {
@@ -31,18 +31,18 @@ export interface VFlexTableProps {
   noHeader?: boolean
 }
 
-const emits = defineEmits<{
-  (e: 'rowClick', row: any, index: number): void
-}>()
 const props = withDefaults(defineProps<VFlexTableProps>(), {
   columns: undefined,
   data: () => [],
 })
-
+const emits = defineEmits<{
+  (e: 'rowClick', row: any, index: number): void
+}>()
 const wrapper = inject(flewTableWrapperSymbol, null)
 
 const data = computed(() => {
-  if (wrapper?.data) return wrapper.data
+  if (wrapper?.data)
+    return wrapper.data
 
   if (props.reactive) {
     if (isReactive(props.data)) {
@@ -59,7 +59,7 @@ const data = computed(() => {
 const defaultFormatter = (value: any) => value
 const columns = computed(() => {
   const columnsSrc = wrapper?.columns ?? props.columns
-  let columns: VFlexTableColumn[] = []
+  const columns: VFlexTableColumn[] = []
 
   if (columnsSrc) {
     for (const [key, label] of Object.entries(columnsSrc)) {
@@ -113,7 +113,7 @@ const columns = computed(() => {
       >
         <template
           v-for="column in columns"
-          :key="'col' + column.key"
+          :key="`col${column.key}`"
         >
           <slot
             name="header-column"
@@ -180,7 +180,7 @@ const columns = computed(() => {
           >
             <template
               v-for="column in columns"
-              :key="'row' + column.key"
+              :key="`row${column.key}`"
             >
               <VFlexTableCell :column="column">
                 <slot

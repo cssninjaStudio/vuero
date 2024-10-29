@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { RouteLocationAsString } from 'unplugin-vue-router'
-import type { SlotsType, PropType } from 'vue'
+import type { PropType, SlotsType } from 'vue'
 import { RouterLink } from 'vue-router'
 
 import VPlaceload from '/@src/components/base/VPlaceload.vue'
@@ -54,7 +54,7 @@ export default defineComponent({
       validator: (value: VButtonColor) => {
         // The value must match one of these strings
         if (
-          [
+          ![
             undefined,
             'primary',
             'info',
@@ -64,7 +64,7 @@ export default defineComponent({
             'white',
             'dark',
             'light',
-          ].indexOf(value) === -1
+          ].includes(value)
         ) {
           console.warn(
             `VButton: invalid "${value}" color. Should be primary, info, success, warning, danger, dark, light, white or undefined`,
@@ -80,7 +80,7 @@ export default defineComponent({
       default: undefined,
       validator: (value: VButtonSize) => {
         // The value must match one of these strings
-        if ([undefined, 'medium', 'big', 'huge'].indexOf(value) === -1) {
+        if (![undefined, 'medium', 'big', 'huge'].includes(value)) {
           console.warn(
             `VButton: invalid "${value}" size. Should be big, huge, medium or undefined`,
           )
@@ -95,7 +95,7 @@ export default defineComponent({
       default: undefined,
       validator: (value: VButtonDark) => {
         // The value must match one of these strings
-        if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+        if (![undefined, '1', '2', '3', '4', '5', '6'].includes(value)) {
           console.warn(
             `VButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`,
           )
@@ -181,9 +181,9 @@ export default defineComponent({
         props.static && 'is-static',
       ]
     })
-    const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
+    const isIconify = computed(() => props.icon && props.icon.includes(':'))
     const isCaretIconify = computed(
-      () => props.iconCaret && props.iconCaret.indexOf(':') !== -1,
+      () => props.iconCaret && props.iconCaret.includes(':'),
     )
 
     const getChildrens = () => {

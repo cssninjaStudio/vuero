@@ -1,4 +1,4 @@
-import type { VNode, Component } from 'vue'
+import type { Component, VNode } from 'vue'
 
 // -- Sideblock
 export interface SideblockItemCollapse {

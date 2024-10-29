@@ -10,7 +10,7 @@ const HEADER_SELECTORS = [
   'a[name]',
 ]
 
-export type TocItem = {
+export interface TocItem {
   id: string
   title: string
   level: number
@@ -23,11 +23,12 @@ export function useMarkdownToc(target: Ref<HTMLElement | undefined>) {
     if (target.value) {
       const anchors = target.value.querySelectorAll(HEADER_SELECTORS.join(', '))
       anchors.forEach((anchor) => {
-        if (anchor.classList.contains('toc-ignore')) return
+        if (anchor.classList.contains('toc-ignore'))
+          return
 
         toc.value.push({
           id: anchor.id,
-          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '') || '1'),
+          level: Number.parseInt(anchor.tagName.replace(/[a-z]+/i, '') || '1'),
           title: anchor.textContent || '',
         })
       })

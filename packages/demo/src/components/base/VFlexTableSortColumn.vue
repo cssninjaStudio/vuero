@@ -1,8 +1,8 @@
 <script lang="ts">
 import type { SlotsType } from 'vue'
 import type {
-  RouteLocationOptions,
   LocationQueryValue,
+  RouteLocationOptions,
 } from 'vue-router'
 import { RouterLink } from 'vue-router'
 
@@ -71,7 +71,7 @@ export default defineComponent({
       return {
         name: route.name,
         params: route.params,
-        query: query,
+        query,
       } as RouteLocationOptions
     })
 

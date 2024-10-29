@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { useGenericLine } from '/@src/data/dashboards/billboardjs-demo/genericLine'
-import { useRegionLine } from '/@src/data/dashboards/billboardjs-demo/regionLine'
-import { useAreaSimpleChart } from '/@src/data/dashboards/billboardjs-demo/areaSimple'
 import { useAreaLineRangeChart } from '/@src/data/dashboards/billboardjs-demo/areaLineRange'
+import { useAreaSimpleChart } from '/@src/data/dashboards/billboardjs-demo/areaSimple'
 import { useBarSimple } from '/@src/data/dashboards/billboardjs-demo/barSimple'
 import { useBarStacked } from '/@src/data/dashboards/billboardjs-demo/barStacked'
-import { useStepSimpleChart } from '/@src/data/dashboards/billboardjs-demo/stepSimple'
-import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
 import { useBubbleSimple } from '/@src/data/dashboards/billboardjs-demo/bubbleSimple'
-import { useScatterSimple } from '/@src/data/dashboards/billboardjs-demo/scatterSimple'
-import { usePieSimple } from '/@src/data/dashboards/billboardjs-demo/pieSimple'
 import { useDonutSimple } from '/@src/data/dashboards/billboardjs-demo/donutSimple'
 import { useGaugeSimple } from '/@src/data/dashboards/billboardjs-demo/gaugeSimple'
+import { useGenericLine } from '/@src/data/dashboards/billboardjs-demo/genericLine'
+import { usePieSimple } from '/@src/data/dashboards/billboardjs-demo/pieSimple'
 import { useRadarSimple } from '/@src/data/dashboards/billboardjs-demo/radarSimple'
+import { useRegionLine } from '/@src/data/dashboards/billboardjs-demo/regionLine'
+import { useScatterSimple } from '/@src/data/dashboards/billboardjs-demo/scatterSimple'
+import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
+import { useStepSimpleChart } from '/@src/data/dashboards/billboardjs-demo/stepSimple'
 
 const genericLine = reactive(useGenericLine())
 const regionLine = reactive(useRegionLine())

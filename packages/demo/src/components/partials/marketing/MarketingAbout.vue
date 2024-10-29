@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container">
-      <!--Title-->
+      <!-- Title -->
       <div class="section-title has-text-centered py-6">
         <h2 class="title is-2">
           About Us
@@ -12,7 +12,7 @@
       <div class="video-section py-12">
         <div class="columns is-vcentered">
           <div class="column is-6 is-relative is-centered-portrait">
-            <!--Video PLayer-->
+            <!-- Video PLayer -->
             <VPlyr
               ratio="square"
               title="Lorem ipsum dolor sit amet"
@@ -23,7 +23,7 @@
             />
           </div>
           <div class="column is-6">
-            <!--Content-->
+            <!-- Content -->
             <div class="columns is-multiline b-columns-half-tablet-p">
               <div class="column is-6">
                 <div class="py-2 medium:py-4">

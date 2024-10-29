@@ -35,22 +35,22 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VBlock base-->
+      <!-- VBlock base -->
       <VBlockBaseDocumentation />
 
-      <!--VBlock icon-->
+      <!-- VBlock icon -->
       <VBlockIconDocumentation />
 
-      <!--VBlock center-->
+      <!-- VBlock center -->
       <VBlockCenterDocumentation />
 
-      <!--VBlock icon center-->
+      <!-- VBlock icon center -->
       <VBlockIconCenterDocumentation />
 
-      <!--VBlock base responsive-->
+      <!-- VBlock base responsive -->
       <VBlockBaseResponsiveDocumentation />
 
-      <!--VBlock center responsive-->
+      <!-- VBlock center responsive -->
       <VBlockCenterResponsiveDocumentation />
 
       <DocumentationMeta

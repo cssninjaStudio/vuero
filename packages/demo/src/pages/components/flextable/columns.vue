@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'
+import { flexRowsAdvanced, flexRowsContacts } from '/@src/data/documentation/table'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {

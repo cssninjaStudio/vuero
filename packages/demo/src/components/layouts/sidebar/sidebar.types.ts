@@ -1,4 +1,4 @@
-import type { VNode, Component } from 'vue'
+import type { Component, VNode } from 'vue'
 
 // -- Sidebar
 export interface SidebarItemSubsidebar {

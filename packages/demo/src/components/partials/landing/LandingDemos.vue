@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import sidebar from '/@src/data/landing/sidebar.json'
+import type { ComputedRef, Ref } from 'vue'
 import auth from '/@src/data/landing/auth.json'
 import minimal from '/@src/data/landing/minimal.json'
-import starters from '/@src/data/landing/starters.json'
 import navbar from '/@src/data/landing/navbar.json'
-import { type ComputedRef, type Ref } from 'vue'
+import sidebar from '/@src/data/landing/sidebar.json'
+import starters from '/@src/data/landing/starters.json'
 
 export interface DemoItem {
   name: string
@@ -32,7 +32,7 @@ function computedFilter(items: DemoItem[], filter: Ref<string>, showAll: Ref<boo
       return items.slice(0, 6)
     }
 
-    const searchValue = filter.value.replace(/[^A-Za-z0-9]/g, '')
+    const searchValue = filter.value.replace(/[^A-Z0-9]/gi, '')
     const filterRe = new RegExp(searchValue, 'i')
 
     return items.filter((demo) => {
@@ -164,7 +164,7 @@ const searchLabel = computed(() => {
       </VPlaceholderPage>
     </div>
 
-    <!--ADMIN-->
+    <!-- ADMIN -->
     <div
       v-if="sidebarDemosFiltered.length > 0"
       class="demo-section"
@@ -244,7 +244,7 @@ const searchLabel = computed(() => {
       <div class="has-text-centered my-6">
         <VButton
           v-if="!filterInput && sidebarDemos.length > 6 && sidebarDemosFiltered.length > 0"
-          :icon="showMoreSidebar ? 'lucide:minus': 'lucide:plus'"
+          :icon="showMoreSidebar ? 'lucide:minus' : 'lucide:plus'"
           size="huge"
           rounded
           bold
@@ -257,7 +257,7 @@ const searchLabel = computed(() => {
       </div>
     </div>
 
-    <!--WEBAPP-->
+    <!-- WEBAPP -->
     <div
       v-if="navbarDemosFiltered.length > 0"
       class="demo-section"
@@ -337,7 +337,7 @@ const searchLabel = computed(() => {
       <div class="has-text-centered my-6">
         <VButton
           v-if="!filterInput && navbarDemos.length > 6 && navbarDemosFiltered.length > 0"
-          :icon="showMoreNavbar ? 'lucide:minus': 'lucide:plus'"
+          :icon="showMoreNavbar ? 'lucide:minus' : 'lucide:plus'"
           size="huge"
           rounded
           bold
@@ -350,7 +350,7 @@ const searchLabel = computed(() => {
       </div>
     </div>
 
-    <!--MINIMAL-->
+    <!-- MINIMAL -->
     <div
       v-if="minimalDemosFiltered.length > 0"
       class="demo-section"
@@ -430,7 +430,7 @@ const searchLabel = computed(() => {
       <div class="has-text-centered my-6">
         <VButton
           v-if="!filterInput && minimalDemos.length > 6 && minimalDemosFiltered.length > 0"
-          :icon="showMoreMinimal ? 'lucide:minus': 'lucide:plus'"
+          :icon="showMoreMinimal ? 'lucide:minus' : 'lucide:plus'"
           size="huge"
           rounded
           bold
@@ -443,7 +443,7 @@ const searchLabel = computed(() => {
       </div>
     </div>
 
-    <!--TEMPLATES-->
+    <!-- TEMPLATES -->
     <div
       v-if="templatesDemosFiltered.length > 0"
       class="demo-section"
@@ -523,7 +523,7 @@ const searchLabel = computed(() => {
       <div class="has-text-centered my-6">
         <VButton
           v-if="!filterInput && templatesDemos.length > 6 && templatesDemosFiltered.length > 0"
-          :icon="showMoreTemplates ? 'lucide:minus': 'lucide:plus'"
+          :icon="showMoreTemplates ? 'lucide:minus' : 'lucide:plus'"
           size="huge"
           rounded
           bold
@@ -536,7 +536,7 @@ const searchLabel = computed(() => {
       </div>
     </div>
 
-    <!--AUTH-->
+    <!-- AUTH -->
     <div
       v-if="authDemosFiltered.length > 0"
       class="demo-section"
@@ -616,7 +616,7 @@ const searchLabel = computed(() => {
       <div class="has-text-centered my-6">
         <VButton
           v-if="!filterInput && authDemos.length > 6 && authDemosFiltered.length > 0"
-          :icon="showMoreAuth ? 'lucide:minus': 'lucide:plus'"
+          :icon="showMoreAuth ? 'lucide:minus' : 'lucide:plus'"
           size="huge"
           rounded
           bold

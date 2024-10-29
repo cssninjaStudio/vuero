@@ -1,6 +1,6 @@
 import { useCssVar } from '@vueuse/core'
 
-export const useThemeColors = () => {
+export function useThemeColors() {
   const primary = useCssVar('--primary')
   const secondary = useCssVar('--secondary')
   const success = useCssVar('--success')

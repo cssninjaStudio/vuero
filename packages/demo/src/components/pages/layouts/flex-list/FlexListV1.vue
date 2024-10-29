@@ -79,7 +79,7 @@ const filteredData = computed(() => {
     </div>
 
     <div class="flex-list-wrapper flex-list-v1">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!filteredData.length"
         title="We couldn't find any matching results."
@@ -114,7 +114,7 @@ const filteredData = computed(() => {
             tag="div"
             class="flex-list-inner"
           >
-            <!--Table item-->
+            <!-- Table item -->
             <div
               v-for="item in filteredData"
               :key="item.id"
@@ -189,7 +189,7 @@ const filteredData = computed(() => {
         </template>
       </VFlexTable>
 
-      <!--Table Pagination-->
+      <!-- Table Pagination -->
       <VFlexPagination
         v-if="filteredData.length > 5"
         v-model:current-page="page"

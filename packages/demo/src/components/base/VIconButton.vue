@@ -1,5 +1,5 @@
 <script lang="ts">
-import { type PropType } from 'vue'
+import type { PropType } from 'vue'
 
 export type VIconButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
 export type VIconButtonColor =
@@ -30,9 +30,7 @@ export default defineComponent({
       validator: (value: VIconButtonColor) => {
         // The value must match one of these strings
         if (
-          [undefined, 'primary', 'info', 'success', 'warning', 'danger', 'white'].indexOf(
-            value,
-          ) === -1
+          ![undefined, 'primary', 'info', 'success', 'warning', 'danger', 'white'].includes(value)
         ) {
           console.warn(
             `VIconButton: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`,
@@ -47,9 +45,10 @@ export default defineComponent({
       type: String as PropType<VIconButtonDark>,
       default: '1',
       validator: (value: VIconButtonDark) => {
-        if (!value) return true
+        if (!value)
+          return true
         // The value must match one of these strings
-        if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+        if (!['1', '2', '3', '4', '5', '6'].includes(value)) {
           console.warn(
             `VIconButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`,
           )
@@ -109,7 +108,7 @@ export default defineComponent({
         props.light && 'is-light',
       ]
     })
-    const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
+    const isIconify = computed(() => props.icon && props.icon.includes(':'))
 
     return () => {
       let icon

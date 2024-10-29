@@ -5,18 +5,17 @@ export interface VReloadPromptProps {
   appName: string
 }
 
-const loading = ref(false)
 const props = defineProps<VReloadPromptProps>()
-
+const loading = ref(false)
 const { t } = useI18n()
 const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW()
 
-const close = async () => {
+async function close() {
   loading.value = false
   offlineReady.value = false
   needRefresh.value = false
 }
-const update = async () => {
+async function update() {
   loading.value = true
   await updateServiceWorker()
   loading.value = false

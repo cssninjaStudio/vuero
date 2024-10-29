@@ -3,7 +3,7 @@
     <div class="soccer-dashboard-inner">
       <div class="columns">
         <div class="column is-4">
-          <!--Live match card-->
+          <!-- Live match card -->
           <div class="live-match">
             <div class="head">
               <h3 class="title is-5">
@@ -58,7 +58,7 @@
             </div>
           </div>
 
-          <!--Leagues-->
+          <!-- Leagues -->
           <div class="leagues">
             <div class="head">
               <h3 class="title is-5">
@@ -138,9 +138,9 @@
           </div>
         </div>
 
-        <!--Right side-->
+        <!-- Right side -->
         <div class="column is-8">
-          <!--Colored CTA-->
+          <!-- Colored CTA -->
           <div class="dashboard-cta">
             <div class="dashboard-cta-img">
               <img
@@ -164,11 +164,11 @@
             </VButton>
           </div>
 
-          <!--Matches table-->
+          <!-- Matches table -->
           <div class="matches-card">
-            <!--Header-->
+            <!-- Header -->
             <div class="matches-card-header">
-              <!--Tabs-->
+              <!-- Tabs -->
               <ul class="header-nav">
                 <li class="nav-item">
                   <a class="nav-link is-active">All</a>
@@ -185,7 +185,7 @@
               </ul>
             </div>
 
-            <!--Table-->
+            <!-- Table -->
             <div class="matches-card-body">
               <table class="table">
                 <thead>

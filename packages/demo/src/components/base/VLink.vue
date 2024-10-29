@@ -6,7 +6,7 @@ defineOptions({
 })
 
 const props = defineProps({
-  // @ts-ignore
+  // @ts-expect-error - props are defined in the template
   ...RouterLink.props,
 })
 
@@ -19,7 +19,7 @@ const isExternalLink = computed(() => {
   <a
     v-if="isExternalLink"
     v-bind="$attrs"
-    :href="to"
+    :href="props.to"
     target="_blank"
   >
     <slot />

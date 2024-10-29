@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { FocusTrap } from 'focus-trap-vue'
+import type { VAvatarColor, VAvatarProps } from '/@src/components/base/VAvatar.vue'
 
-import type { VAvatarProps, VAvatarColor } from '/@src/components/base/VAvatar.vue'
 import type { UserPopover } from '/@src/types/users'
+import { FocusTrap } from 'focus-trap-vue'
 
 import { popovers } from '/@src/data/users/userPopovers'
 

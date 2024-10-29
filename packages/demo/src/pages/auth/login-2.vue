@@ -6,7 +6,7 @@ const notyf = useNotyf()
 const token = useUserToken()
 const redirect = route.query.redirect as string
 
-const handleLogin = async () => {
+async function handleLogin() {
   if (!isLoading.value) {
     isLoading.value = true
 

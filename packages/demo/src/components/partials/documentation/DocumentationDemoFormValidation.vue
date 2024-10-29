@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { toTypedSchema } from '@vee-validate/zod'
 import { useField, useFieldArray, useForm } from 'vee-validate'
-import { z } from 'zod'
 import VueScrollTo from 'vue-scrollto'
+import { z } from 'zod'
 
 const notyf = useNotyf()
 const { scrollTo } = VueScrollTo
@@ -102,7 +102,8 @@ const loading = ref(false)
 
 // here we handle our form submission
 const handleSignup = handleSubmit(async (values) => {
-  if (loading.value) return
+  if (loading.value)
+    return
 
   loading.value = true
 

@@ -8,13 +8,13 @@ useHead({
 
 <template>
   <MinimalLayout>
-    <!--Wizard Navbar-->
+    <!-- Wizard Navbar -->
     <WizardV1Navigation
       v-model:step="wizard.step"
       :title="wizard.stepTitle"
     />
 
-    <!--Wizard Progress Bar-->
+    <!-- Wizard Progress Bar -->
     <VProgress
       id="wizard-progress"
       class="wizard-progress"
@@ -24,7 +24,7 @@ useHead({
       :max="100"
     />
 
-    <!--Main Wrapper-->
+    <!-- Main Wrapper -->
     <form
       method="post"
       novalidate
@@ -33,7 +33,7 @@ useHead({
     >
       <RouterView />
 
-      <!--Wizard Navigation Buttons-->
+      <!-- Wizard Navigation Buttons -->
       <div
         class="wizard-buttons"
         :class="[wizard.canNavigate && 'is-active']"

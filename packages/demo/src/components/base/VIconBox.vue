@@ -29,8 +29,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
   <div
     class="v-icon"
     :class="[
-      props.size && 'is-' + props.size,
-      props.color && 'is-' + props.color,
+      props.size && `is-${props.size}`,
+      props.color && `is-${props.color}`,
       props.rounded && 'is-rounded',
       props.bordered && 'is-bordered',
     ]"

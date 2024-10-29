@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { kebabCase } from 'scule'
 import type { ComponentMeta } from 'vue-component-meta'
+import { kebabCase } from 'scule'
+
 const props = defineProps<{
   meta: ComponentMeta
   name: string
@@ -63,13 +64,13 @@ const props = defineProps<{
               <td>
                 <VMarkdownPreview
                   size="small"
-                  :source="'```ts\n' + prop.default + '\n```'"
+                  :source="`\`\`\`ts\n${prop.default}\n\`\`\``"
                 />
               </td>
               <td>
                 <VMarkdownPreview
                   size="small"
-                  :source="'```ts\n' + prop.type + '\n```'"
+                  :source="`\`\`\`ts\n${prop.type}\n\`\`\``"
                 />
               </td>
             </tr>
@@ -110,7 +111,7 @@ const props = defineProps<{
               <td>
                 <VMarkdownPreview
                   size="small"
-                  :source="'```ts\n' + prop.type + '\n```'"
+                  :source="`\`\`\`ts\n${prop.type}\n\`\`\``"
                 />
               </td>
             </tr>
@@ -151,7 +152,7 @@ const props = defineProps<{
               <td>
                 <VMarkdownPreview
                   size="small"
-                  :source="'```ts\n' + prop.type + '\n```'"
+                  :source="`\`\`\`ts\n${prop.type}\n\`\`\``"
                 />
               </td>
             </tr>
@@ -192,7 +193,7 @@ const props = defineProps<{
               <td>
                 <VMarkdownPreview
                   size="small"
-                  :source="'```ts\n' + prop.type + '\n```'"
+                  :source="`\`\`\`ts\n${prop.type}\n\`\`\``"
                 />
               </td>
             </tr>

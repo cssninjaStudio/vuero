@@ -38,40 +38,40 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--VButton base-->
+      <!-- VButton base -->
       <VButtonBaseDocumentation />
 
-      <!--VButton link-->
+      <!-- VButton link -->
       <VButtonLinkDocumentation />
 
-      <!--VButton colors-->
+      <!-- VButton colors -->
       <VButtonColorsDocumentation />
 
-      <!--VButton light colors-->
+      <!-- VButton light colors -->
       <VButtonColorsLightDocumentation />
 
-      <!--VButton outlined colors-->
+      <!-- VButton outlined colors -->
       <VButtonColorsOutlinedDocumentation />
 
-      <!--VButton placeload-->
+      <!-- VButton placeload -->
       <VButtonPlaceloadDocumentation />
 
-      <!--VButton Elevation-->
+      <!-- VButton Elevation -->
       <VButtonElevatedDocumentation />
 
-      <!--VButton Disabled-->
+      <!-- VButton Disabled -->
       <VButtonDisabledDocumentation />
 
-      <!--VButton Font Awesome-->
+      <!-- VButton Font Awesome -->
       <VButtonFaDocumentation />
 
-      <!--VButton Feather-->
+      <!-- VButton Feather -->
       <VButtonFeatherDocumentation />
 
-      <!--VButton Group-->
+      <!-- VButton Group -->
       <VButtonGroupDocumentation />
 
-      <!--VButton Addons-->
+      <!-- VButton Addons -->
       <VButtonAddonsDocumentation />
 
       <DocumentationMeta

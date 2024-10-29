@@ -1,23 +1,23 @@
-import yaml from 'js-yaml'
-import rehypeExternalLinks from 'rehype-external-links'
-import rehypeRaw from 'rehype-raw'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeStringify from 'rehype-stringify'
-import remarkParse from 'remark-parse'
-import remarkGfm from 'remark-gfm'
-import remarkRehype from 'remark-rehype'
-import remarkFrontmatter from 'remark-frontmatter'
-import rehypeShiki from '@shikijs/rehype'
 import type {
-  ThemeRegistration,
-  ThemeRegistrationRaw,
   BuiltinLanguage,
   BuiltinTheme,
   StringLiteralUnion,
+  ThemeRegistration,
+  ThemeRegistrationRaw,
 } from 'shiki'
-import { unified } from 'unified'
 import type { Literal, Parent } from 'unist'
+import rehypeShiki from '@shikijs/rehype'
+import yaml from 'js-yaml'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeExternalLinks from 'rehype-external-links'
+import rehypeRaw from 'rehype-raw'
+import rehypeSlug from 'rehype-slug'
+import rehypeStringify from 'rehype-stringify'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkGfm from 'remark-gfm'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import { unified } from 'unified'
 
 const langs = [
   'vue',

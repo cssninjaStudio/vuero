@@ -2,7 +2,7 @@
 import type { Options } from 'plyr'
 import 'plyr/dist/plyr.css'
 
-export type VPlyrCaptions = {
+export interface VPlyrCaptions {
   src: string
   srclang: string
   default?: boolean
@@ -48,7 +48,7 @@ onBeforeUnmount(() => {
 <template>
   <div
     class="video-player-container"
-    :class="[ratio && 'is-' + ratio, reversed && 'reversed-play']"
+    :class="[ratio && `is-${ratio}`, reversed && 'reversed-play']"
   >
     <!-- video element -->
     <iframe

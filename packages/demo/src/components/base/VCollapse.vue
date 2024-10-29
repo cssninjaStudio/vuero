@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<VCollapseProps>(), {
 })
 
 const internalItemOpen = ref<number | undefined>(props.itemOpen)
-const toggle = (key: number) => {
+function toggle(key: number) {
   if (internalItemOpen.value === key) {
     internalItemOpen.value = undefined
     return

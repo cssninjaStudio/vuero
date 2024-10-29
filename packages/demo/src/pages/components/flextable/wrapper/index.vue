@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import type {
-  VFlexTableWrapperSortFunction,
   VFlexTableWrapperFilterFunction,
+  VFlexTableWrapperSortFunction,
 } from '/@src/components/base/VFlexTableWrapper.vue'
-import { users } from '/@src/data/layouts/card-grid-v1'
-
 import { VFlexTableWrapperMeta } from '/@src/data/documentation/components-meta'
+
+import { users } from '/@src/data/layouts/card-grid-v1'
 
 const pageTitle = useVueroContext<string>('page-title')
 onMounted(() => {
@@ -95,7 +95,7 @@ const columns = {
     />
 
     <DocumentationTocContainer>
-      <!--Flex Table Wrapper base documentation-->
+      <!-- Flex Table Wrapper base documentation -->
       <VFlexTableWrapperDocumentation />
 
       <VFlexTableWrapper
@@ -108,7 +108,7 @@ const columns = {
           Note that we can not destructure it
         -->
         <template #default="wrapperState">
-          <!-- We can place any content inside the default slot-->
+          <!-- We can place any content inside the default slot -->
           <VFlexTableToolbar>
             <template #left>
               <!-- We can bind wrapperState.searchInput to any input -->
@@ -183,7 +183,7 @@ const columns = {
             </template>
           </VFlexTable>
 
-          <!-- Table Pagination with wrapperState.page binded-->
+          <!-- Table Pagination with wrapperState.page binded -->
           <VFlexPagination
             v-model:current-page="wrapperState.page"
             class="mt-6"

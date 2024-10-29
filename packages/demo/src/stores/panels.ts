@@ -9,8 +9,8 @@
  * @see /src/components/panels/PanelActivity.vue
  */
 
-import { acceptHMRUpdate, defineStore } from 'pinia'
 import { useStorage } from '@vueuse/core'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export type ActivePanelId = 'none' | 'search' | 'languages' | 'activity' | 'task'
 

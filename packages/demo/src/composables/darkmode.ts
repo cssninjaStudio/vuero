@@ -9,7 +9,7 @@ type DarkModeSchema = 'auto' | 'dark' | 'light'
 const darkmodeClass = 'is-dark'
 const injectionKey = Symbol('darkmode') as InjectionKey<DarkmodeContext>
 
-export const useDarkmode = () => {
+export function useDarkmode() {
   return inject(injectionKey, {
     // default values to prevent inject errors
     isDark: ref(false),
@@ -40,7 +40,8 @@ export function createDarkmode(): Plugin {
             document.documentElement.classList.add('no-transition')
           }
 
-          if (v === preferredDark.value) colorSchema.value = 'auto'
+          if (v === preferredDark.value)
+            colorSchema.value = 'auto'
           else colorSchema.value = v ? 'dark' : 'light'
 
           if (!import.meta.env.SSR && document.documentElement) {
@@ -62,11 +63,11 @@ export function createDarkmode(): Plugin {
         event.preventDefault()
 
         const clipPath = [
-      `circle(0px at ${event.clientX}px ${event.clientY}px)`,
-      `circle(${Math.hypot(
-        Math.max(event.clientX, target.clientWidth - event.clientX),
-        Math.max(event.clientY, target.clientHeight - event.clientY),
-      )}px at ${event.clientX}px ${event.clientY}px)`,
+          `circle(0px at ${event.clientX}px ${event.clientY}px)`,
+          `circle(${Math.hypot(
+            Math.max(event.clientX, target.clientWidth - event.clientX),
+            Math.max(event.clientY, target.clientHeight - event.clientY),
+          )}px at ${event.clientX}px ${event.clientY}px)`,
         ]
 
         await (document as any).startViewTransition(async () => {

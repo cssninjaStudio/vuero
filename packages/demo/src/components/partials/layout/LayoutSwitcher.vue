@@ -29,7 +29,7 @@ const selectedSlug = computed(() => {
   }
 })
 
-const layoutComponent = (slug?: string) => {
+function layoutComponent(slug?: string) {
   switch (slug) {
     case 'search':
       return 'NavsearchLayout'
@@ -48,9 +48,12 @@ const componentCode = computed(() => {
   let propSet = false
 
   for (const [key, value] of Object.entries(layoutSwitcher.dynamicLayoutProps)) {
-    if (key === 'key') continue
-    if (!value) continue
-    if (value === 'default') continue
+    if (key === 'key')
+      continue
+    if (!value)
+      continue
+    if (value === 'default')
+      continue
 
     propSet = true
     code += `\n  ${kebabCase(key)}="${value}"`
@@ -159,8 +162,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navbar-default' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navbar-default'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -238,8 +241,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navbar-colored' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navbar-colored'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -283,8 +286,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navsearch-fixed' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navsearch-fixed'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -323,8 +326,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navsearch-fixed-fade' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navsearch-fixed-fade'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -363,8 +366,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navsearch-shrink' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navsearch-shrink'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -404,8 +407,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.navbarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'navsearch-reveal' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'navsearch-reveal'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -449,8 +452,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-default' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-default'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -489,8 +492,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-color' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-color'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -529,8 +532,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-curved' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-curved'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -569,8 +572,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-color-curved' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-color-curved'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -609,8 +612,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-labels' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-labels'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -649,8 +652,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-labels-hover' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-labels-hover'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -689,8 +692,8 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.dynamicLayoutId === 'sidebar-float' &&
-                              'is-active',
+                            layoutSwitcher.dynamicLayoutId === 'sidebar-float'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -734,9 +737,9 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.isSidebarRoute &&
-                              layoutSwitcher.dynamicLayoutId === 'sideblock-default' &&
-                              'is-active',
+                            layoutSwitcher.isSidebarRoute
+                              && layoutSwitcher.dynamicLayoutId === 'sideblock-default'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -775,9 +778,9 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.isSidebarRoute &&
-                              layoutSwitcher.dynamicLayoutId === 'sideblock-color' &&
-                              'is-active',
+                            layoutSwitcher.isSidebarRoute
+                              && layoutSwitcher.dynamicLayoutId === 'sideblock-color'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -816,9 +819,9 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.isSidebarRoute &&
-                              layoutSwitcher.dynamicLayoutId === 'sideblock-curved' &&
-                              'is-active',
+                            layoutSwitcher.isSidebarRoute
+                              && layoutSwitcher.dynamicLayoutId === 'sideblock-curved'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -857,9 +860,9 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
                           :to="layoutSwitcher.sidebarLayoutLink"
                           class="layout-item"
                           :class="[
-                            layoutSwitcher.isSidebarRoute &&
-                              layoutSwitcher.dynamicLayoutId === 'sideblock-color-curved' &&
-                              'is-active',
+                            layoutSwitcher.isSidebarRoute
+                              && layoutSwitcher.dynamicLayoutId === 'sideblock-color-curved'
+                              && 'is-active',
                           ]"
                           @keydown.enter.prevent="
                             () => {
@@ -906,7 +909,6 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
 </template>
 
 <style scoped lang="scss">
-
 /* ==========================================================================
 1. Layout Selector
 ========================================================================== */
@@ -1055,5 +1057,4 @@ const codeLines = computed(() => componentCode.value.split('\n').length)
     }
   }
 }
-
 </style>

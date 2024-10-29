@@ -12,7 +12,7 @@ const isAllChecked = computed(() => {
   return selectedConversationList.value.length === 10
 })
 
-const toggleSelection = () => {
+function toggleSelection() {
   if (isAllChecked.value) {
     selectedConversationList.value.splice(0, selectedConversationList.value.length)
   }
@@ -35,7 +35,7 @@ useHead({
   <MinimalLayout>
     <div class="inbox-wrapper">
       <div class="wrapper-inner">
-        <!--Inbox sidebar-->
+        <!-- Inbox sidebar -->
         <div
           class="inbox-sidebar"
           :class="[mobileSidebarOpen && 'mobile-active']"
@@ -111,9 +111,9 @@ useHead({
               />
             </a>
           </div>
-          <!--Inner-->
+          <!-- Inner -->
           <div class="sidebar-inner">
-            <!--Inner menu-->
+            <!-- Inner menu -->
             <div class="inner-menu">
               <a class="button compose-button is-fullwidth">Compose</a>
               <div class="inbox-menu">
@@ -196,7 +196,7 @@ useHead({
                 </ul>
               </div>
             </div>
-            <!--Scroll menu-->
+            <!-- Scroll menu -->
             <div class="scroll-menu">
               <div class="title-wrap">
                 <h3 :class="[contactSearchOpen && 'is-hidden']">
@@ -253,7 +253,7 @@ useHead({
                 </a>
               </div>
               <div class="contact-list has-slimscroll">
-                <!--Contact-->
+                <!-- Contact -->
                 <div class="contact-block">
                   <img
                     src="https://media.cssninja.io/content/avatars/7.jpg"
@@ -265,7 +265,7 @@ useHead({
                     <span>alice@vuero.io</span>
                   </div>
                 </div>
-                <!--Contact-->
+                <!-- Contact -->
                 <div class="contact-block">
                   <img
                     src="https://media.cssninja.io/content/avatars/25.jpg"
@@ -277,7 +277,7 @@ useHead({
                     <span>melany@vuero.io</span>
                   </div>
                 </div>
-                <!--Contact-->
+                <!-- Contact -->
                 <div class="contact-block">
                   <img
                     src="https://media.cssninja.io/content/avatars/18.jpg"
@@ -289,7 +289,7 @@ useHead({
                     <span>esteban@vuero.io</span>
                   </div>
                 </div>
-                <!--Contact-->
+                <!-- Contact -->
                 <div class="contact-block">
                   <img
                     src="https://media.cssninja.io/content/avatars/32.jpg"
@@ -301,7 +301,7 @@ useHead({
                     <span>jonathan@vuero.io</span>
                   </div>
                 </div>
-                <!--Contact-->
+                <!-- Contact -->
                 <div class="contact-block">
                   <img
                     src="https://media.cssninja.io/content/avatars/38.jpg"
@@ -318,7 +318,7 @@ useHead({
           </div>
         </div>
 
-        <!--Messages list-->
+        <!-- Messages list -->
         <div class="inbox-messages">
           <div class="header-area">
             <div class="actions">
@@ -406,76 +406,76 @@ useHead({
               </VDropdown>
             </div>
           </div>
-          <!--Messages-->
+          <!-- Messages -->
           <div class="messages-list has-slimscroll">
-            <!--messages list partial-->
+            <!-- messages list partial -->
             <InboxMessagesList
-              v-model:conversationId="selectedConversationId"
-              v-model:selectedConversationList="selectedConversationList"
+              v-model:conversation-id="selectedConversationId"
+              v-model:selected-conversation-list="selectedConversationList"
             />
           </div>
         </div>
 
-        <!--Loader-->
+        <!-- Loader -->
         <div class="inbox-message-overlay">
           <div class="loader is-loading" />
         </div>
 
-        <!--Message details 1-->
+        <!-- Message details 1 -->
         <Message1
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 1"
         />
 
-        <!--Message details 2-->
+        <!-- Message details 2 -->
         <Message2
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 2"
         />
 
-        <!--Message details 3-->
+        <!-- Message details 3 -->
         <Message3
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 3"
         />
 
-        <!--Message details 4-->
+        <!-- Message details 4 -->
         <Message4
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 4"
         />
 
-        <!--Message details 5-->
+        <!-- Message details 5 -->
         <Message5
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 5"
         />
 
-        <!--Message details 6-->
+        <!-- Message details 6 -->
         <Message6
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 6"
         />
 
-        <!--Message details 7-->
+        <!-- Message details 7 -->
         <Message7
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 7"
         />
 
-        <!--Message details 8-->
+        <!-- Message details 8 -->
         <Message8
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 8"
         />
 
-        <!--Message details 9-->
+        <!-- Message details 9 -->
         <Message9
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 9"
         />
 
-        <!--Message details 10-->
+        <!-- Message details 10 -->
         <Message10
           v-model:mobile-message-open="mobileMessageOpen"
           :selected="selectedConversationId === 10"

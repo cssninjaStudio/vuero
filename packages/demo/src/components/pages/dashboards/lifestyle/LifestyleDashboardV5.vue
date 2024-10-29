@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {
-  members,
   featuredLeft,
   featuredRight,
   feed,
+  members,
 } from '/@src/data/dashboards/lifestyle-v5'
 </script>
 
@@ -51,9 +51,9 @@ import {
       </div>
     </div>
 
-    <!--Media Feed-->
+    <!-- Media Feed -->
     <div class="media-feed">
-      <!--Group-->
+      <!-- Group -->
       <div class="feed-group">
         <h4 class="group-title">
           Today
@@ -80,15 +80,15 @@ import {
                     class="media-feed-item has-background-image"
                     :class="[item.size === 'large' && 'is-big']"
                   >
-                    <!--Duration-->
+                    <!-- Duration -->
                     <span class="tag item-duration">{{ item.duration }}</span>
-                    <!--Play button-->
+                    <!-- Play button -->
                     <button class="play-button">
                       <VIcon
                         icon="lucide:play"
                       />
                     </button>
-                    <!--Bottom Overlay-->
+                    <!-- Bottom Overlay -->
                     <div class="item-overlay" />
                     <!-- Overlay content -->
                     <div class="overlay-layer">
@@ -140,15 +140,15 @@ import {
                     class="media-feed-item has-background-image"
                     :class="[item.size === 'large' && 'is-big']"
                   >
-                    <!--Duration-->
+                    <!-- Duration -->
                     <span class="tag item-duration">{{ item.duration }}</span>
-                    <!--Play button-->
+                    <!-- Play button -->
                     <button class="play-button">
                       <VIcon
                         icon="lucide:play"
                       />
                     </button>
-                    <!--Bottom Overlay-->
+                    <!-- Bottom Overlay -->
                     <div class="item-overlay" />
                     <!-- Overlay content -->
                     <div class="overlay-layer">
@@ -185,7 +185,7 @@ import {
         </div>
       </div>
 
-      <!--Group-->
+      <!-- Group -->
       <div class="feed-group">
         <h4 class="group-title">
           Yesterday
@@ -193,7 +193,7 @@ import {
 
         <div class="group-content">
           <div class="columns is-multiline">
-            <!--Media item-->
+            <!-- Media item -->
             <div
               v-for="item in feed"
               :key="item.id"
@@ -207,15 +207,15 @@ import {
                 class="media-feed-item has-background-image"
                 :class="[item.size === 'large' && 'is-big']"
               >
-                <!--Duration-->
+                <!-- Duration -->
                 <span class="tag item-duration">{{ item.duration }}</span>
-                <!--Play button-->
+                <!-- Play button -->
                 <button class="play-button">
                   <VIcon
                     icon="lucide:play"
                   />
                 </button>
-                <!--Bottom Overlay-->
+                <!-- Bottom Overlay -->
                 <div class="item-overlay" />
                 <!-- Overlay content -->
                 <div class="overlay-layer">

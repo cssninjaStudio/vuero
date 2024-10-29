@@ -38,16 +38,16 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Switch-->
+      <!-- Switch -->
       <SwitchBlockDocumentation />
 
-      <!--Thin Switch-->
+      <!-- Thin Switch -->
       <SwitchBlockThinDocumentation />
 
-      <!--Switch Block-->
+      <!-- Switch Block -->
       <SwitchBlockLabelDocumentation />
 
-      <!--Switch Block Thin-->
+      <!-- Switch Block Thin -->
       <SwitchBlockThinLabelDocumentation />
 
       <DocumentationMeta

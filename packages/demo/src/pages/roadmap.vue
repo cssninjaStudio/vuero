@@ -1,5 +1,9 @@
 <script lang="ts">
 import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
+</script>
+
+<script setup lang="ts">
+import { useRouteQuery } from '@vueuse/router'
 /**
  * This is an example of data loader (experimental feature)
  * Name the loader however you want **and export it**
@@ -9,6 +13,7 @@ import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
  * @see https://github.com/vuejs/rfcs/discussions/460
  * @see https://uvr.esm.is/rfcs/data-loaders/
  */
+// eslint-disable-next-line vue/no-export-in-script-setup
 export const useRoadmapData = defineBasicLoader(async (to) => {
   console.log('useRoadmapData defineLoader', to)
 
@@ -49,10 +54,6 @@ export const useRoadmapData = defineBasicLoader(async (to) => {
   // used for SSR only
   key: 'roadmap-data',
 })
-</script>
-
-<script setup lang="ts">
-import { useRouteQuery } from '@vueuse/router'
 
 const { data, isLoading } = useRoadmapData()
 const years = ['2022', '2021', '2020', '2019']
@@ -77,7 +78,7 @@ useHead({
     <LandingGrids class="is-contrasted" />
     <!-- Roadmap -->
     <div class="roadmap-wrapper is-relative">
-      <!--Top header-->
+      <!-- Top header -->
       <div class="roadmap-top">
         <RouterLink
           to="/"
@@ -222,7 +223,7 @@ useHead({
                 </div>
 
                 <div class="roadmap-list">
-                  <!--Item-->
+                  <!-- Item -->
                   <template
                     v-for="(year, index) in data.roadmap"
                     :key="index"
@@ -233,8 +234,8 @@ useHead({
                     >
                       <div
                         v-if="
-                          selectedYear.includes(quarter.year) &&
-                            String(quarter.quarter) === String(selectedQuarter)
+                          selectedYear.includes(quarter.year)
+                            && String(quarter.quarter) === String(selectedQuarter)
                         "
                         class="roadmap-item"
                       >
@@ -328,7 +329,7 @@ useHead({
                       </h2>
                     </div>
                     <div class="changelog-items-inner">
-                      <!--Item-->
+                      <!-- Item -->
                       <template
                         v-for="(item, r) in block.releases"
                         :key="r"
@@ -353,8 +354,8 @@ useHead({
                                 class="changelog-line"
                                 :style="{
                                   opacity:
-                                    selectedChangeType === 'All' ||
-                                    selectedChangeType === line.type
+                                    selectedChangeType === 'All'
+                                    || selectedChangeType === line.type
                                       ? 1
                                       : 0.3,
                                 }"

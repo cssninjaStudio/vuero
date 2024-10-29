@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { LandingFooterColumn, LandingSocialItem } from './landing.types'
+
 const props = defineProps<{
   title?: string
   subtitle?: string

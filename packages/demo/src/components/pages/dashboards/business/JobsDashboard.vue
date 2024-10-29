@@ -18,7 +18,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 <template>
   <div class="jobs-dashboard">
     <div class="jobs-dashboard-wrapper">
-      <!--Search toolbar -->
+      <!-- Search toolbar -->
       <div class="search-menu">
         <div class="search-bar">
           <VField class="is-autocomplete-select is-curved-select">
@@ -63,9 +63,9 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         </button>
       </div>
 
-      <!--Dashboard content -->
+      <!-- Dashboard content -->
       <div class="main-container">
-        <!--Left Alert -->
+        <!-- Left Alert -->
         <div class="search-type">
           <div class="alert">
             <div class="alert-title">
@@ -90,7 +90,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             </VButton>
           </div>
 
-          <!--Left filters block -->
+          <!-- Left filters block -->
           <div class="job-time">
             <div class="job-time-title">
               Type of Employment
@@ -159,7 +159,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             </div>
           </div>
 
-          <!--Left filters block -->
+          <!-- Left filters block -->
           <div class="job-time">
             <div class="job-time-title">
               Seniority Level
@@ -228,7 +228,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             </div>
           </div>
 
-          <!--Left filters block -->
+          <!-- Left filters block -->
           <div class="job-time">
             <div class="job-time-title">
               Salary Range
@@ -308,9 +308,9 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           </div>
         </div>
 
-        <!--Results-->
+        <!-- Results -->
         <div class="searched-jobs">
-          <!--Results toolbar-->
+          <!-- Results toolbar -->
           <div class="searched-bar">
             <div class="searched-count">
               Showing 46 Jobs
@@ -323,9 +323,9 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             </div>
           </div>
 
-          <!--Results content-->
+          <!-- Results content -->
           <div class="job-cards">
-            <!--Card-->
+            <!-- Card -->
             <div
               v-for="(job, index) in jobs"
               :key="index"

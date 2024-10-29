@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type UserItem = {
+export interface UserItem {
   avatar?: string
   badge?: string
   fullName?: string
@@ -109,7 +109,7 @@ onUnmounted(() => {
             :height="45"
             :width="100"
             :stroke-width="1.6"
-            :stroke="'var(--primary)'"
+            stroke="var(--primary)"
             :values="values"
           />
           <div class="stats">

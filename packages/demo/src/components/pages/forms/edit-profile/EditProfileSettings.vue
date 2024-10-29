@@ -12,7 +12,7 @@ const partners = ref(false)
 const isScrolling = computed(() => {
   return y.value > 30
 })
-const onSave = async () => {
+async function onSave() {
   isLoading.value = true
   await sleep()
   notyf.primary('Your changes have been successfully saved!')
@@ -61,7 +61,7 @@ const onSave = async () => {
       class="form-body"
       @submit.prevent="onSave"
     >
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Change Password</h4>
@@ -69,7 +69,7 @@ const onSave = async () => {
         </div>
 
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl icon="lucide:unlock">
@@ -81,7 +81,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl icon="lucide:lock">
@@ -93,7 +93,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl icon="lucide:lock">
@@ -108,7 +108,7 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>2 Factor Auth</h4>
@@ -116,7 +116,7 @@ const onSave = async () => {
         </div>
 
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl>
@@ -128,7 +128,7 @@ const onSave = async () => {
               </VControl>
             </VField>
           </div>
-          <!--Field-->
+          <!-- Field -->
           <div
             v-if="twoFactor"
             class="column is-12"
@@ -147,7 +147,7 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Notifications</h4>
@@ -155,7 +155,7 @@ const onSave = async () => {
         </div>
 
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl>
@@ -180,7 +180,7 @@ const onSave = async () => {
         </div>
       </div>
 
-      <!--Fieldset-->
+      <!-- Fieldset -->
       <div class="fieldset">
         <div class="fieldset-heading">
           <h4>Marketing</h4>
@@ -188,7 +188,7 @@ const onSave = async () => {
         </div>
 
         <div class="columns is-multiline">
-          <!--Field-->
+          <!-- Field -->
           <div class="column is-12">
             <VField>
               <VControl>

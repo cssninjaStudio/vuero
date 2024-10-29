@@ -38,31 +38,31 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Input-->
+      <!-- Input -->
       <InputBasicDocumentation />
 
-      <!--Help Text-->
+      <!-- Help Text -->
       <InputHelpDocumentation />
 
-      <!--Rounded Input-->
+      <!-- Rounded Input -->
       <InputRoundedDocumentation />
 
-      <!--Focus Colors-->
+      <!-- Focus Colors -->
       <InputFocusDocumentation />
 
-      <!--Font Awesome-->
+      <!-- Font Awesome -->
       <InputFaDocumentation />
 
-      <!--Line Icons-->
+      <!-- Line Icons -->
       <InputLineDocumentation />
 
-      <!--Lucide Icons-->
+      <!-- Lucide Icons -->
       <InputFeatherDocumentation />
 
-      <!--Loading State-->
+      <!-- Loading State -->
       <InputLoadingDocumentation />
 
-      <!--Disabled Input-->
+      <!-- Disabled Input -->
       <InputDisabledDocumentation />
 
       <InputDatasetDocumentation />

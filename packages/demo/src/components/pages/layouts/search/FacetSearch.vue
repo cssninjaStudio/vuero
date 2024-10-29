@@ -132,7 +132,7 @@ const options = ref(['Newest'])
 
     <div class="search-results-body">
       <div class="columns">
-        <!--Filters-->
+        <!-- Filters -->
         <div class="column is-4">
           <div class="filter-box">
             <h4 class="dark-inverted">
@@ -390,10 +390,10 @@ const options = ref(['Newest'])
           </div>
         </div>
 
-        <!--Results-->
+        <!-- Results -->
         <div class="column is-8">
           <div v-if="activeTab === 'all'">
-            <!--Search Results Group-->
+            <!-- Search Results Group -->
             <div class="search-results-group">
               <div class="group-header">
                 <VIconWrap icon="lucide:user" />
@@ -401,7 +401,7 @@ const options = ref(['Newest'])
               </div>
 
               <div class="search-results-list">
-                <!--Item-->
+                <!-- Item -->
                 <div
                   v-for="(person, index) in people"
                   :key="index"
@@ -428,7 +428,7 @@ const options = ref(['Newest'])
               </div>
             </div>
 
-            <!--Search Results Group-->
+            <!-- Search Results Group -->
             <div class="search-results-group">
               <div class="group-header">
                 <VIconWrap icon="lucide:file-text" />
@@ -437,7 +437,7 @@ const options = ref(['Newest'])
               </div>
 
               <div class="search-results-list">
-                <!--Item-->
+                <!-- Item -->
                 <div
                   v-for="(record, index) in records"
                   :key="index"
@@ -467,7 +467,7 @@ const options = ref(['Newest'])
           </div>
 
           <div v-else-if="activeTab === 'people'">
-            <!--Search Results Group-->
+            <!-- Search Results Group -->
             <div class="search-results-group">
               <div class="search-results-list">
                 <div
@@ -498,10 +498,10 @@ const options = ref(['Newest'])
           </div>
 
           <div v-else-if="activeTab === 'records'">
-            <!--Search Results Group-->
+            <!-- Search Results Group -->
             <div class="search-results-group">
               <div class="search-results-list">
-                <!--Item-->
+                <!-- Item -->
                 <div
                   v-for="(record, index) in records"
                   :key="index"

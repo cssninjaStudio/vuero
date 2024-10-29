@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useRevenueChart } from '/@src/data/dashboards/analytics/revenueChart'
 import { useGoalCharts } from '/@src/data/dashboards/analytics/goalChart'
-import { useProfitBarChart } from '/@src/data/dashboards/analytics/profitBarChart'
 import { useGrowthRadialChart } from '/@src/data/dashboards/analytics/growthRadialChart'
+import { useProfitBarChart } from '/@src/data/dashboards/analytics/profitBarChart'
+import { useRevenueChart } from '/@src/data/dashboards/analytics/revenueChart'
 import { followersList } from '/@src/data/widgets/ui/followers'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
 
@@ -17,7 +17,7 @@ const { optionsCircle } = useGrowthRadialChart()
     <div class="columns">
       <div class="column is-9">
         <div class="columns is-multiline">
-          <!--Dashboard Tile-->
+          <!-- Dashboard Tile -->
           <div class="column is-4">
             <div class="dashboard-tile">
               <div class="tile-head">
@@ -48,7 +48,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
             </div>
           </div>
-          <!--Dashboard Tile-->
+          <!-- Dashboard Tile -->
           <div class="column is-4">
             <div class="dashboard-tile">
               <div class="tile-head">
@@ -79,7 +79,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
             </div>
           </div>
-          <!--Dashboard Tile-->
+          <!-- Dashboard Tile -->
           <div class="column is-4">
             <div class="dashboard-tile">
               <div class="tile-head">
@@ -110,7 +110,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
             </div>
           </div>
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-8">
             <div class="dashboard-card">
               <div class="card-head">
@@ -137,7 +137,7 @@ const { optionsCircle } = useGrowthRadialChart()
               />
             </div>
           </div>
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-4">
             <div class="dashboard-card">
               <div class="card-head">
@@ -167,7 +167,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
             </div>
           </div>
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-4">
             <div class="dashboard-card">
               <div class="card-head">
@@ -204,7 +204,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
             </div>
           </div>
-          <!--Dashboard Card-->
+          <!-- Dashboard Card -->
           <div class="column is-8">
             <div class="dashboard-card">
               <div class="card-head">
@@ -225,7 +225,7 @@ const { optionsCircle } = useGrowthRadialChart()
       </div>
 
       <div class="column is-3">
-        <!--Widget-->
+        <!-- Widget -->
         <ContactWidget
           picture="/images/avatars/svg/vuero-1.svg"
           username="Erik K."
@@ -239,7 +239,7 @@ const { optionsCircle } = useGrowthRadialChart()
           straight
         />
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="picker-widget"
           straight
@@ -368,7 +368,7 @@ const { optionsCircle } = useGrowthRadialChart()
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="text-widget"
           straight
@@ -390,7 +390,7 @@ const { optionsCircle } = useGrowthRadialChart()
           </template>
         </UIWidget>
 
-        <!--Widget-->
+        <!-- Widget -->
         <UIWidget
           class="list-widget"
           straight

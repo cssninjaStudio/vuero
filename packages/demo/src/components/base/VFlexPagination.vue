@@ -14,14 +14,13 @@ export interface VFlexPaginationEmits {
   (e: 'update:currentPage', currentPage: number): void
 }
 
-const emits = defineEmits<VFlexPaginationEmits>()
 const props = withDefaults(defineProps<VFlexPaginationProps>(), {
   currentPage: 1,
   maxLinksDisplayed: 4,
   useRouter: true,
   routerQueryKey: 'page',
 })
-
+const emits = defineEmits<VFlexPaginationEmits>()
 const route = useRoute()
 const lastPage = computed(() => Math.ceil(props.totalItems / props.itemPerPage) || 1)
 const totalPageDisplayed = computed(() =>
@@ -58,7 +57,7 @@ const pages = computed(() => {
 
 const showLastLink = computed(() => lastPage.value > 1)
 
-const paginatedLink = (page = 1) => {
+function paginatedLink(page = 1) {
   if (props.noRouter) {
     return {}
   }
@@ -78,7 +77,7 @@ const paginatedLink = (page = 1) => {
     query,
   } as RouteLocationOptions
 }
-const handleLinkClick = (e: MouseEvent, page = 1) => {
+function handleLinkClick(e: MouseEvent, page = 1) {
   const _page = Math.max(1, Math.min(page, lastPage.value))
   emits('update:currentPage', _page)
 

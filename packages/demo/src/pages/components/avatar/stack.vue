@@ -35,13 +35,13 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Small Stack-->
+      <!-- Small Stack -->
       <AvatarStackSmallDocumentation />
 
-      <!--Regular Stack-->
+      <!-- Regular Stack -->
       <AvatarStackRegularDocumentation />
 
-      <!--Medium Stack-->
+      <!-- Medium Stack -->
       <AvatarStackMediumDocumentation />
 
       <DocumentationMeta

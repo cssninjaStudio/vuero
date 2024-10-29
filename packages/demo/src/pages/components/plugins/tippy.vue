@@ -36,19 +36,19 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Text Popover-->
+      <!-- Text Popover -->
       <PopoverBaseDocumentation />
 
-      <!--Popover Position-->
+      <!-- Popover Position -->
       <PopoverPositionDocumentation />
 
-      <!--Avatar Popover-->
+      <!-- Avatar Popover -->
       <PopoverAvatarDocumentation />
 
-      <!--Icon Popover-->
+      <!-- Icon Popover -->
       <PopoverIconDocumentation />
 
-      <!--Profile Popover-->
+      <!-- Profile Popover -->
       <PopoverComplexDocumentation />
     </DocumentationTocContainer>
   </div>

@@ -38,16 +38,16 @@ useHead({
     />
 
     <DocumentationTocContainer class="is-multiline">
-      <!--Thumbnails-->
+      <!-- Thumbnails -->
       <GalleryImagesDocumentation />
 
-      <!--Curved Thumbnails-->
+      <!-- Curved Thumbnails -->
       <GalleryImagesCurvedDocumentation />
 
-      <!--Rounded Thumbnails-->
+      <!-- Rounded Thumbnails -->
       <GalleryImagesRoundedDocumentation />
 
-      <!--Bigger Thumbnails-->
+      <!-- Bigger Thumbnails -->
       <GalleryImagesLargerDocumentation />
 
       <DocumentationMeta

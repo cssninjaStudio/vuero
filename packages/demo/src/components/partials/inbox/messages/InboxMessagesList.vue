@@ -1,8 +1,4 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'update:conversationId', value: number): void
-  (e: 'update:selectedConversationList', value: number[]): void
-}>()
 const props = withDefaults(
   defineProps<{
     conversationId?: number
@@ -13,7 +9,10 @@ const props = withDefaults(
     selectedConversationList: () => [],
   },
 )
-
+const emit = defineEmits<{
+  (e: 'update:conversationId', value: number): void
+  (e: 'update:selectedConversationList', value: number[]): void
+}>()
 const unread = ref(true)
 const internalSelection = ref(props.selectedConversationList)
 
@@ -59,7 +58,7 @@ watchEffect(() => {
       Oct 22
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 1 && 'is-selected']"
@@ -84,7 +83,7 @@ watchEffect(() => {
       Oct 21
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 3 && 'is-selected']"
@@ -109,7 +108,7 @@ watchEffect(() => {
       Oct 20
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 4 && 'is-selected']"
@@ -134,7 +133,7 @@ watchEffect(() => {
       Oct 19
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 5 && 'is-selected']"
@@ -161,7 +160,7 @@ watchEffect(() => {
       Oct 19
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 6 && 'is-selected']"
@@ -186,7 +185,7 @@ watchEffect(() => {
       Oct 18
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 7 && 'is-selected']"
@@ -211,7 +210,7 @@ watchEffect(() => {
       Oct 18
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 8 && 'is-selected']"
@@ -236,7 +235,7 @@ watchEffect(() => {
       Oct 17
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 9 && 'is-selected']"
@@ -261,7 +260,7 @@ watchEffect(() => {
       Oct 17
     </div>
   </div>
-  <!--Message-->
+  <!-- Message -->
   <div
     class="inbox-message"
     :class="[conversationId === 10 && 'is-selected']"

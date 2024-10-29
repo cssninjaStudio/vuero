@@ -1,33 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "strict": true,
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "removeComments": true,
-    "importHelpers": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
-    "noEmit": true,
-    "allowJs": true,
-    "allowImportingTsExtensions": true,
-    "noImplicitThis": true,
-    // "verbatimModuleSyntax": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
     "lib": ["esnext", "dom"],
-    "types": [
-      "vite/client",
-      "vite-plugin-pwa/client",
-      "unplugin-vue-router/client",
-      "@intlify/unplugin-vue-i18n/messages"
-    ],
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "paths": {
       "photoswipe/lightbox": [
         "./node_modules/photoswipe/dist/types/lightbox/lightbox.d.ts"
@@ -40,7 +20,27 @@
       ],
       "/@src/*": ["./src/*"],
       "/@server/*": ["./server/*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "vite-plugin-pwa/client",
+      "unplugin-vue-router/client",
+      "@intlify/unplugin-vue-i18n/messages"
+    ],
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "removeComments": true,
+    // "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
   "include": [
     "vite-plugin/**/*.ts",

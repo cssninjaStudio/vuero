@@ -1,11 +1,20 @@
 <script setup lang="ts">
 import VueScrollTo from 'vue-scrollto'
 
-export type TocItem = {
+export interface TocItem {
   id: string
   title: string
   level: number
 }
+
+const props = withDefaults(
+  defineProps<{
+    toc?: TocItem[]
+  }>(),
+  {
+    toc: () => [],
+  },
+)
 
 const stayFocus = useLocalStorage('disable-stay-focus', '')
 
@@ -18,15 +27,6 @@ const stayFocusEnabled = computed({
   },
 })
 
-const props = withDefaults(
-  defineProps<{
-    toc?: TocItem[]
-  }>(),
-  {
-    toc: () => [],
-  },
-)
-
 const route = useRoute()
 const router = useRouter()
 
@@ -34,7 +34,7 @@ const isActiveAnchor = computed(() => {
   return (id: string) => `#${id}` === route.hash
 })
 
-const onTocClick = (id?: string) => {
+function onTocClick(id?: string) {
   VueScrollTo.scrollTo(id ? `#${id}` : '#app', 500, { offset: -30 })
   router.replace({
     ...route,

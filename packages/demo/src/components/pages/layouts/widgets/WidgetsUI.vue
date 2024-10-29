@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { followersList } from '/@src/data/widgets/ui/followers'
-import { tagList1, tagList2 } from '/@src/data/widgets/ui/tagList'
-import { tabs } from '/@src/data/widgets/ui/tabList'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+import { useTrendWidgetChart } from '/@src/data/widgets/charts/trendWidgetChart'
 import { days } from '/@src/data/widgets/ui/dayList'
+import { followersList } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
-import { useTrendWidgetChart } from '/@src/data/widgets/charts/trendWidgetChart'
+import { tabs } from '/@src/data/widgets/ui/tabList'
 
-import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+import { tagList1, tagList2 } from '/@src/data/widgets/ui/tagList'
 
 const { onceError } = useImageError()
 
@@ -17,9 +17,9 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
 
 <template>
   <div class="columns is-multiline widget-demo-columns">
-    <!--Widget Column-->
+    <!-- Widget Column -->
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="gauge-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Gauge Widget" />
@@ -38,7 +38,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="text-widget">
         <template #header>
           <UIWidgetToolbarFollowers
@@ -57,7 +57,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="search-widget">
         <template #body>
           <div class="field">
@@ -83,7 +83,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="video-widget">
         <template #body>
           <UIWidgetMovie
@@ -93,7 +93,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="tags-widget">
         <template #body>
           <UIWidgetTagList :tags="tagList1" />
@@ -101,23 +101,23 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
       </UIWidget>
     </div>
 
-    <!--Widget Column-->
+    <!-- Widget Column -->
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="icon-toolbar-widget">
         <template #header>
           <UIWidgetToolbarIcons :tabs="tabs" />
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="calendar-widget">
         <template #header>
           <UIWidgetDays :days="days" />
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="picker-widget">
         <template #header>
           <div class="widget-toolbar">
@@ -235,7 +235,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="icon-list-widget">
         <template #body>
           <UIWidgetIconList :list="iconList" />
@@ -243,9 +243,9 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
       </UIWidget>
     </div>
 
-    <!--Widget Column-->
+    <!-- Widget Column -->
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="text-widget">
         <template #header>
           <UIWidgetToolbarIcon title="Payment" />
@@ -260,7 +260,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="image-widget">
         <template #body>
           <img
@@ -279,7 +279,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="inbox-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Inbox" />
@@ -290,9 +290,9 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
       </UIWidget>
     </div>
 
-    <!--Widget Column-->
+    <!-- Widget Column -->
     <div class="column is-3">
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="tags-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Labels" />
@@ -302,7 +302,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="list-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="Labels" />
@@ -312,7 +312,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="stats-widget">
         <template #header>
           <UIWidgetToolbarDropdown title="" />
@@ -341,7 +341,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         </template>
       </UIWidget>
 
-      <!--Widget-->
+      <!-- Widget -->
       <UIWidget class="text-widget">
         <template #header>
           <UIWidgetToolbarIcon

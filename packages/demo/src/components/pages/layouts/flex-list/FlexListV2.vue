@@ -13,8 +13,6 @@ export interface ProjectData {
   team: VAvatarProps[]
 }
 
-const projects = listData.projects as ProjectData[]
-
 const props = withDefaults(
   defineProps<{
     activeTab?: 'active' | 'closed'
@@ -23,6 +21,8 @@ const props = withDefaults(
     activeTab: 'active',
   },
 )
+
+const projects = listData.projects as ProjectData[]
 
 const filters = ref('')
 const tab = ref(props.activeTab)
@@ -97,7 +97,7 @@ const filteredData = computed(() => {
     </div>
 
     <div class="flex-list-wrapper flex-list-v2">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="tab === 'active' && filteredData.length === 0"
         title="We couldn't find any matching results."
@@ -136,7 +136,7 @@ const filteredData = computed(() => {
               tag="div"
               class="flex-list-inner"
             >
-              <!--Table item-->
+              <!-- Table item -->
               <div
                 v-for="item in filteredData"
                 :key="item.id"
@@ -181,7 +181,7 @@ const filteredData = computed(() => {
           </template>
         </VFlexTable>
 
-        <!--Table Pagination-->
+        <!-- Table Pagination -->
         <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
@@ -195,7 +195,7 @@ const filteredData = computed(() => {
         v-else-if="tab === 'closed'"
         class="tab-content is-active"
       >
-        <!--Empty placeholder-->
+        <!-- Empty placeholder -->
         <VPlaceholderPage
           title="No closed projects."
           subtitle="Looks like you don't have any closed project yet. When you'll

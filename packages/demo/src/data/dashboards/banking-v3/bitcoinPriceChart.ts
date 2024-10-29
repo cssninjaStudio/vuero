@@ -1,11 +1,43 @@
 function generateDayWiseTimeSeries(s: number, count: number) {
   const values = [
     [
-      0.4, 0.3, 1, 0.9, 2.9, 1.9, 2.5, 0.9, 1.2, 0.7, 1.9, 0.5, 1.3, 0.9, 1.7, 0.2, 0.7,
+      0.4,
+      0.3,
+      1,
+      0.9,
+      2.9,
+      1.9,
+      2.5,
+      0.9,
+      1.2,
+      0.7,
+      1.9,
+      0.5,
+      1.3,
+      0.9,
+      1.7,
+      0.2,
+      0.7,
       0.5,
     ],
     [
-      0.2, 0.3, 0.8, 0.7, 2.2, 1.6, 2.3, 0.7, 1.1, 0.5, 1.2, 0.5, 1, 0.4, 1.5, 0.2, 0.6,
+      0.2,
+      0.3,
+      0.8,
+      0.7,
+      2.2,
+      1.6,
+      2.3,
+      0.7,
+      1.1,
+      0.5,
+      1.2,
+      0.5,
+      1,
+      0.4,
+      1.5,
+      0.2,
+      0.6,
       2,
     ],
   ]
@@ -102,8 +134,8 @@ export function useBitcoinPriceChart() {
         format: 'dd MMM yyyy',
       },
       y: {
-        formatter: function (val: number) {
-          return val + '%'
+        formatter(val: number) {
+          return `${val}%`
         },
       },
     },

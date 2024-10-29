@@ -35,19 +35,19 @@ useHead({
     />
 
     <DocumentationTocContainer>
-      <!--Breadcrumb Default-->
+      <!-- Breadcrumb Default -->
       <BreadcrumbDefaultDocumentation />
 
-      <!--Arrow Separator-->
+      <!-- Arrow Separator -->
       <BreadcrumbArrowDocumentation />
 
-      <!--Bullet Separator-->
+      <!-- Bullet Separator -->
       <BreadcrumbBulletDocumentation />
 
-      <!--Dot Separator-->
+      <!-- Dot Separator -->
       <BreadcrumbDotDocumentation />
 
-      <!--Succeeds Separator-->
+      <!-- Succeeds Separator -->
       <BreadcrumbSucceedsDocumentation />
 
       <DocumentationMeta

@@ -4,7 +4,7 @@ const props = defineProps<{
 }>()
 
 const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
+  return props.icon && props.icon.includes(':')
 })
 </script>
 

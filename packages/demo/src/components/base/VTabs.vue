@@ -19,15 +19,14 @@ export interface VTabsProps {
   disabled?: boolean
 }
 
-const emit = defineEmits<{
-  (e: 'update:selected', value: any): void
-}>()
 const props = withDefaults(defineProps<VTabsProps>(), {
   selected: undefined,
   type: undefined,
   align: undefined,
 })
-
+const emit = defineEmits<{
+  (e: 'update:selected', value: any): void
+}>()
 const activeValue = ref(props.selected || props.tabs?.[0]?.value)
 const sliderClass = computed(() => {
   if (!props.slider) {
@@ -58,7 +57,8 @@ const sliderClass = computed(() => {
 })
 
 function toggle(value: string) {
-  if (props.disabled) return
+  if (props.disabled)
+    return
   activeValue.value = value
 }
 

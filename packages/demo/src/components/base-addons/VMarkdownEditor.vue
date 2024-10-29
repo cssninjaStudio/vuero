@@ -1,27 +1,27 @@
 <script setup lang="ts">
+import type { Cursor } from 'textarea-markdown-editor/dist/esm/Cursor.new'
 import type {
   BUILT_IN_COMMANDS,
+  Command,
   CommandTrigger,
   TextareaMarkdownOptions,
-  Command,
 } from 'textarea-markdown-editor/dist/esm/types'
-import type { Cursor } from 'textarea-markdown-editor/dist/esm/Cursor.new'
 import { bootstrapTextareaMarkdown } from 'textarea-markdown-editor/dist/esm/bootstrap'
 
 type VMarkdownEditorAction = (typeof BUILT_IN_COMMANDS)[number]
-type VMarkdownEditorContext = {
+interface VMarkdownEditorContext {
   textarea: HTMLTextAreaElement
   cursor: Cursor
   trigger: CommandTrigger
   value: string
 }
-type VMarkdownEditorCommandAction = {
+interface VMarkdownEditorCommandAction {
   icon: string
   tooltip?: string
   label?: string
   action: VMarkdownEditorAction | ((ctx: VMarkdownEditorContext) => void | Promise<void>)
 }
-type VMarkdownEditorCommandGroup = {
+interface VMarkdownEditorCommandGroup {
   icon: string
   tooltip?: string
   vertical?: boolean
@@ -33,10 +33,6 @@ type VMarkdownEditorToolbar = Record<
   string,
   VMarkdownEditorCommandAction | VMarkdownEditorCommandGroup
 >
-
-const modelValue = defineModel<string>({
-  default: '',
-})
 
 const props = withDefaults(
   defineProps<{
@@ -149,6 +145,10 @@ const props = withDefaults(
   },
 )
 
+const modelValue = defineModel<string>({
+  default: '',
+})
+
 const { field, id } = useVFieldContext({
   help: 'VMarkdownEditor',
 })
@@ -182,7 +182,7 @@ function fitSize() {
 
   if (props.autogrow) {
     textareaRef.value.style.height = 'auto'
-    textareaRef.value.style.height = textareaRef.value.scrollHeight + 'px'
+    textareaRef.value.style.height = `${textareaRef.value.scrollHeight}px`
   }
 }
 

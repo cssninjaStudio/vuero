@@ -25,7 +25,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
     <div class="course-grid">
       <div class="columns is-multiline">
-        <!--Course card-->
+        <!-- Course card -->
         <div
           v-for="course in courses"
           :key="course.id"
@@ -95,9 +95,9 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       </div>
     </div>
 
-    <!--Tile Grid v1-->
+    <!-- Tile Grid v1 -->
     <div class="columns is-multiline tile-grid tile-grid-v2">
-      <!--Grid item-->
+      <!-- Grid item -->
       <div class="column is-4">
         <div class="dashboard-title">
           <div class="left">
@@ -136,7 +136,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         </div>
       </div>
 
-      <!--Grid item-->
+      <!-- Grid item -->
       <div class="column is-8">
         <div class="dashboard-title">
           <div class="left">

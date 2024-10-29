@@ -34,13 +34,13 @@ useHead({
 
     <DocumentationTocContainer>
       <!-- @TODO -->
-      <!--Default Tooltip-->
+      <!-- Default Tooltip -->
       <TooltipBaseDocumentation />
 
-      <!--Tooltip Colors-->
+      <!-- Tooltip Colors -->
       <TooltipColorsDocumentation />
 
-      <!--Tooltip Shapes-->
+      <!-- Tooltip Shapes -->
       <TooltipShapesDocumentation />
     </DocumentationTocContainer>
   </div>

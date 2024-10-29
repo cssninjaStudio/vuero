@@ -1,15 +1,15 @@
 /// <reference types="node" />
 
-import { join, basename } from 'node:path'
-import { readdir, lstat, writeFile } from 'node:fs/promises'
-
 import type {
-  MetaCheckerOptions,
   EventMeta,
-  PropertyMeta,
   ExposeMeta,
+  MetaCheckerOptions,
+  PropertyMeta,
   SlotMeta,
 } from 'vue-component-meta'
+import { lstat, readdir, writeFile } from 'node:fs/promises'
+
+import { basename, join } from 'node:path'
 import { createCheckerByJson } from 'vue-component-meta'
 
 const checkerOptions: MetaCheckerOptions = {
@@ -73,7 +73,8 @@ async function walk(
     }
 
     const isVueFile = path.endsWith('.vue')
-    if (!isVueFile) continue
+    if (!isVueFile)
+      continue
 
     const name = basename(path, '.vue')
     const meta = await extractMeta(checker, path)

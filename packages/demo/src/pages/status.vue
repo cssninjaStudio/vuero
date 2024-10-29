@@ -11,7 +11,7 @@ useHead({
     <LandingGrids class="is-contrasted" />
     <!-- Status -->
     <div class="status-page-wrapper is-relative">
-      <!--Status header-->
+      <!-- Status header -->
       <div class="head">
         <RouterLink
           to="/"
@@ -38,7 +38,7 @@ useHead({
         </div>
       </div>
 
-      <!--Status body-->
+      <!-- Status body -->
       <div class="status-block">
         <div class="status-header">
           <div class="indicator" />
@@ -60,7 +60,7 @@ useHead({
         </div>
 
         <div class="status-list">
-          <!--Status item-->
+          <!-- Status item -->
           <div class="list-block">
             <div class="icon-wrap">
               <img

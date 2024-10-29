@@ -61,9 +61,9 @@ const filteredData = computed(() => {
       </div>
     </div>
 
-    <!--List-->
+    <!-- List -->
     <div class="list-view list-view-v3">
-      <!--List Empty Search Placeholder -->
+      <!-- List Empty Search Placeholder -->
       <VPlaceholderPage
         v-if="!filteredData.length"
         title="We couldn't find any matching results."
@@ -86,14 +86,14 @@ const filteredData = computed(() => {
         </template>
       </VPlaceholderPage>
 
-      <!--Active Tab-->
+      <!-- Active Tab -->
       <div v-else-if="activeTab === 'all'">
         <div class="list-view-inner">
           <TransitionGroup
             name="list-complete"
             tag="div"
           >
-            <!--Item-->
+            <!-- Item -->
             <div
               v-for="item in filteredData"
               :key="item.id"
@@ -166,10 +166,10 @@ const filteredData = computed(() => {
         />
       </div>
 
-      <!--Inactive Tab-->
+      <!-- Inactive Tab -->
       <div v-else-if="activeTab === 'saved'">
         <div class="list-view-inner">
-          <!--Empty placeholder-->
+          <!-- Empty placeholder -->
           <VPlaceholderPage
             title="No saved jobs."
             subtitle="Looks like you don't have any saved jobs for the moment. It's
