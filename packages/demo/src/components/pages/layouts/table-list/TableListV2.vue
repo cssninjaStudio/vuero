@@ -64,13 +64,15 @@ const filteredData = computed(() => {
       <div class="table-container">
         <table class="table datatable-table is-fullwidth">
           <thead>
-            <th>Id</th>
-            <th>Project</th>
-            <th>Customer</th>
-            <th>Industry</th>
-            <th>Status</th>
-            <th>Team</th>
-            <th>Actions</th>
+            <tr>
+              <th>Id</th>
+              <th>Project</th>
+              <th>Customer</th>
+              <th>Industry</th>
+              <th>Status</th>
+              <th>Team</th>
+              <th>Actions</th>
+            </tr>
           </thead>
           <tbody>
             <tr
