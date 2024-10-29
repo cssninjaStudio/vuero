@@ -151,8 +151,6 @@ const themeClasses = computed(() => {
     .sidebar-inner {
       .icon-menu,
       .bottom-menu {
-        overflow-x: hidden;
-
         li {
           a {
             &.router-link-active {
