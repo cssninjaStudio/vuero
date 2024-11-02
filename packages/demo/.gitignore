@@ -25,6 +25,7 @@ node_modules/
 dist
 dist-electron
 release
+.eslintcache
 
 # ignoring vuero releases files
 *.zip

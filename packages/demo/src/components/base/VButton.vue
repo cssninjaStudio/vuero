@@ -1,6 +1,6 @@
 <script lang="ts">
-import type { RouteLocationAsString } from 'vue-router'
 import type { PropType, SlotsType } from 'vue'
+import type { RouteLocationAsString } from 'vue-router'
 import { RouterLink } from 'vue-router'
 
 import VPlaceload from '/@src/components/base/VPlaceload.vue'
