@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { RouteLocationAsString } from 'unplugin-vue-router'
+import type { RouteLocationAsString } from 'vue-router'
 import type { PropType, SlotsType } from 'vue'
 import { RouterLink } from 'vue-router'
 

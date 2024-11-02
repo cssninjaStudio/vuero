@@ -32,6 +32,10 @@ let lightbox: PhotoSwipeLightbox | null = null
 const galleryElement = useTemplateRef<HTMLElement>('gallery')
 
 onMounted(() => {
+  if (!galleryElement.value) {
+    return
+  }
+
   lightbox = new PhotoSwipeLightbox({
     gallery: galleryElement.value,
     pswpModule: () => import('photoswipe'),

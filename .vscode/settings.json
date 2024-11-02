@@ -9,7 +9,5 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "vue.codeActions.enabled": false,
-  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "vue.codeActions.enabled": false
 }

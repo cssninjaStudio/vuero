@@ -32,17 +32,17 @@ const active = computed(() => !props.readonly && hasValue.value)
 const internal = computed({
   get() {
     if (field?.value) {
-      return field.value.value ?? 0
+      return field.value.value as any as number ?? 0
     }
     else {
-      return modelValue.value ?? 0
+      return modelValue.value as number ?? 0
     }
   },
-  set(value: any) {
+  set(value) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    modelValue.value = value
+    modelValue.value = value as any
   },
 })
 
@@ -83,7 +83,7 @@ onKeyStroke('ArrowLeft', (e) => {
 
   e.preventDefault()
 
-  if (internal.value > 0) {
+  if (typeof internal.value === 'number' && internal.value > 0) {
     internal.value = internal.value - 1
   }
 })
@@ -95,7 +95,7 @@ onKeyStroke('ArrowRight', (e) => {
 
   e.preventDefault()
 
-  if (internal.value < props.max) {
+  if (typeof internal.value === 'number' && internal.value < props.max) {
     internal.value = internal.value + 1
   }
 })
@@ -126,7 +126,7 @@ function isStarSelected(index: number) {
     return highlighted.value - index > 0
   }
 
-  return internal.value - index > 0
+  return (internal.value ?? 0) - index > 0
 }
 </script>
 
@@ -171,7 +171,7 @@ function isStarSelected(index: number) {
         :key="index"
         :role="active ? 'radio' : undefined"
         :aria-label="String(index + 1)"
-        :aria-checked="active ? internal - index > 0 : undefined"
+        :aria-checked="active ? (internal ?? 0) - index > 0 : undefined"
         aria-hidden="true"
         class="rating-star"
         :class="{

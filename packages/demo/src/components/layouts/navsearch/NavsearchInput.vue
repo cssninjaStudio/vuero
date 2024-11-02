@@ -48,8 +48,8 @@ const modelValue = defineModel<string>()
             role="button"
             tabindex="0"
             class="search-result"
-            @click="() => emits('select', item)"
-            @keydown.enter.prevent="() => emits('select', item)"
+            @click="() => emits('select', item as T)"
+            @keydown.enter.prevent="() => emits('select', item as T)"
           >
             <slot v-bind="{ item }" />
           </a>

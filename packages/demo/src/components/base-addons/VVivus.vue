@@ -10,7 +10,7 @@ export default defineComponent({
   },
   emits: ['ready'],
   setup(props, { emit }) {
-    const element = useTemplateRef<HTMLElement>()
+    const element = shallowRef<HTMLElement>()
 
     watchEffect(() => {
       if (element.value) {

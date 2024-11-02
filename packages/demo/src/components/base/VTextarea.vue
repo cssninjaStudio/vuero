@@ -20,10 +20,10 @@ const textareaRef = useTemplateRef<HTMLTextAreaElement>('textarea')
 const internal = computed({
   get() {
     if (field?.value) {
-      return field.value.value
+      return field.value.value as any as string
     }
     else {
-      return modelValue.value
+      return modelValue.value as string
     }
   },
   set(value: any) {

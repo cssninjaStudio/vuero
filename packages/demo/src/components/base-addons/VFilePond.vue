@@ -100,7 +100,7 @@ export default defineComponent({
   emits: ['input', ...eventNames],
   setup(props, { emit, expose }) {
     const pond = ref<FilePond.FilePond>()
-    const inputElement = useTemplateRef<HTMLInputElement>(null)
+    const inputElement = shallowRef<HTMLInputElement>()
     const pondOptions = Object.assign({}, { ...props }) as FilePondOptions
 
     expose({

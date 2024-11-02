@@ -12,9 +12,9 @@ export function useRegionLine() {
         ['data2', 50, 20, 10, 40, 15, 25],
       ],
       colors: {
-        data1: themeColors.purple,
-        data2: themeColors.lime,
-        data3: themeColors.info,
+        data1: themeColors.purple || '',
+        data2: themeColors.lime || '',
+        data3: themeColors.info || '',
       },
       regions: {
         data1: [

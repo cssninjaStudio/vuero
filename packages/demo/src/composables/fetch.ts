@@ -13,7 +13,7 @@ export function useApiFetch(event?: H3Event) {
         options.headers = {
           ...options.headers,
           Authorization: `Bearer ${token.value}`,
-        }
+        } as any
       }
     },
   })

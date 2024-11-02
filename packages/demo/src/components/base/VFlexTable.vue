@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { VNode } from 'vue'
-import { flewTableWrapperSymbol } from './VFlexTableWrapper.vue'
+import { flexTableWrapperSymbol } from './VFlexTableWrapper.vue'
 
 export interface VFlexTableColumn {
   key: string
@@ -38,7 +38,7 @@ const props = withDefaults(defineProps<VFlexTableProps>(), {
 const emits = defineEmits<{
   (e: 'rowClick', row: any, index: number): void
 }>()
-const wrapper = inject(flewTableWrapperSymbol, null)
+const wrapper = inject(flexTableWrapperSymbol, null)
 
 const data = computed(() => {
   if (wrapper?.data)

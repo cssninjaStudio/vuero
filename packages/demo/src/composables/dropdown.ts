@@ -8,7 +8,7 @@ export interface DropdownOptions {
  * Generate refs to handle a dropdown state
  */
 export function useDropdownContext(
-  target: Ref<HTMLElement | undefined>,
+  target: Ref<HTMLElement | undefined | null>,
   options: DropdownOptions = { clickOutside: true },
 ) {
   const isOpen = ref(false)

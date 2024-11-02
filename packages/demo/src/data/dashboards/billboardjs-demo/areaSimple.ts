@@ -12,9 +12,9 @@ export function useAreaSimpleChart() {
         ['data2', 130, 100, 140, 200, 150, 50],
       ],
       colors: {
-        data1: themeColors.purple,
-        data2: themeColors.lime,
-        data3: themeColors.info,
+        data1: themeColors.purple || '',
+        data2: themeColors.lime || '',
+        data3: themeColors.info || '',
       },
       types: {
         data1: 'area',

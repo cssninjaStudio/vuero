@@ -36,7 +36,7 @@ const modelValue = defineModel<T[]>({
       <template #icon>
         <VAnimatedCheckbox
           v-model="modelValue"
-          :value="todo"
+          :value="todo as T"
           :color="props.color"
         />
       </template>

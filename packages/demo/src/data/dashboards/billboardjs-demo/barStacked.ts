@@ -13,9 +13,9 @@ export function useBarStacked() {
         ['data3', -230, 200, 200, -300, 250, 250],
       ],
       colors: {
-        data1: themeColors.purple,
-        data2: themeColors.lime,
-        data3: themeColors.purple,
+        data1: themeColors.purple || '',
+        data2: themeColors.lime || '',
+        data3: themeColors.purple || '',
       },
       groups: [['data1', 'data2']],
     },

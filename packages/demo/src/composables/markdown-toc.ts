@@ -16,7 +16,7 @@ export interface TocItem {
   level: number
 }
 
-export function useMarkdownToc(target: Ref<HTMLElement | undefined>) {
+export function useMarkdownToc(target: Ref<HTMLElement | undefined | null>) {
   const toc = ref<TocItem[]>([])
 
   watchEffect(() => {

@@ -13,7 +13,7 @@ export default definePlugin(({ app }) => {
     name: 'ApexChart',
     inheritAttrs: false,
     setup(_, { attrs }) {
-      return () => h(ClientOnly, () => h(ApexChart, attrs))
+      return () => h(ClientOnly, () => h(ApexChart, attrs as any))
     },
   }))
 })

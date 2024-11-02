@@ -2,7 +2,7 @@ import type { TinySliderInstance, TinySliderSettings } from 'tiny-slider/src/tin
 import type { MaybeRefOrGetter } from 'vue'
 
 export function useTinySlider(
-  target: Ref<Element | undefined>,
+  target: Ref<Element | undefined | null>,
   settings: MaybeRefOrGetter<Omit<TinySliderSettings, 'container'>> = {},
 ) {
   const slider = shallowRef<TinySliderInstance | null>(null)

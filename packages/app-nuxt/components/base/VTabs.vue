@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { RouteLocationRaw } from 'vue-router'
+import type { RouteLocationAsString } from 'vue-router'
 
 export type VTabsType = 'boxed' | 'toggle' | 'rounded'
 export type VTabsAlign = 'centered' | 'right'
@@ -7,7 +7,7 @@ export interface VTabsItem {
   label: string
   value: string
   icon?: string
-  to?: RouteLocationRaw
+  to?: RouteLocationAsString
 }
 export interface VTabsProps {
   tabs: VTabsItem[]

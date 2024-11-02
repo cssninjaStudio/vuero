@@ -1,11 +1,11 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 
 import { gauge } from 'billboard.js'
 
 export function usePersonalScoreGauge() {
   const themeColors = useThemeColors()
 
-  const personalScoreGaugeOptions = shallowRef({
+  const personalScoreGaugeOptions = shallowRef<ChartOptions>({
     data: {
       columns: [['data', 91.4]],
       type: gauge(),
@@ -24,10 +24,10 @@ export function usePersonalScoreGauge() {
     gauge: {},
     color: {
       pattern: [
-        themeColors.purple,
-        themeColors.info,
-        themeColors.orange,
-        themeColors.lime,
+        themeColors.purple || '',
+        themeColors.info || '',
+        themeColors.orange || '',
+        themeColors.lime || '',
       ],
       threshold: {
         values: [30, 60, 90, 100],

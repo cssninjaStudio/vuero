@@ -39,7 +39,7 @@ export function createNotyf(): Plugin {
           types: [
             {
               type: 'warning',
-              background: themeColors.warning,
+              background: themeColors.warning || '',
               icon: {
                 className: 'fas fa-hand-paper',
                 tagName: 'i',
@@ -48,7 +48,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'info',
-              background: themeColors.info,
+              background: themeColors.info || '',
               icon: {
                 className: 'fas fa-info-circle',
                 tagName: 'i',
@@ -57,7 +57,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'primary',
-              background: themeColors.primary,
+              background: themeColors.primary || '',
               icon: {
                 className: 'fas fa-car-crash',
                 tagName: 'i',
@@ -66,7 +66,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'accent',
-              background: themeColors.purple,
+              background: themeColors.purple || '',
               icon: {
                 className: 'fas fa-car-crash',
                 tagName: 'i',
@@ -75,7 +75,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'purple',
-              background: themeColors.purple,
+              background: themeColors.purple || '',
               icon: {
                 className: 'fas fa-check',
                 tagName: 'i',
@@ -84,7 +84,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'blue',
-              background: themeColors.blue,
+              background: themeColors.blue || '',
               icon: {
                 className: 'fas fa-check',
                 tagName: 'i',
@@ -93,7 +93,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'green',
-              background: themeColors.lime,
+              background: themeColors.lime || '',
               icon: {
                 className: 'fas fa-check',
                 tagName: 'i',
@@ -102,7 +102,7 @@ export function createNotyf(): Plugin {
             },
             {
               type: 'orange',
-              background: themeColors.orange,
+              background: themeColors.orange || '',
               icon: {
                 className: 'fas fa-check',
                 tagName: 'i',

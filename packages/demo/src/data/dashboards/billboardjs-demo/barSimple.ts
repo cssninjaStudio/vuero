@@ -12,10 +12,10 @@ export function useBarSimple() {
         ['data2', 130, 100, 140, 200, 150, 50],
       ],
       colors: {
-        data1: themeColors.purple,
-        data2: themeColors.lime,
-        data3: themeColors.orange,
-        data4: themeColors.purple,
+        data1: themeColors.purple || '',
+        data2: themeColors.lime || '',
+        data3: themeColors.orange || '',
+        data4: themeColors.purple || '',
       },
     },
     bar: {

@@ -21,10 +21,10 @@ export function useGaugeSimple() {
     gauge: {},
     color: {
       pattern: [
-        themeColors.purple,
-        themeColors.info,
-        themeColors.lime,
-        themeColors.purple,
+        themeColors.purple || '',
+        themeColors.info || '',
+        themeColors.lime || '',
+        themeColors.purple || '',
       ],
       threshold: {
         values: [30, 60, 90, 100],
