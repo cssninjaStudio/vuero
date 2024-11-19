@@ -134,7 +134,7 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "41.3.1",
     "@intlify/unplugin-vue-i18n": "4.0.0",
-    "@stylistic/eslint-plugin": "1.8.0",
+    "@stylistic/eslint-plugin": "2.11.0",
     "@types/compression": "1.7.5",
     "@types/dragula": "3.7.5",
     "@types/fs-extra": "11.0.4",
