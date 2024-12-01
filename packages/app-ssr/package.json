@@ -58,7 +58,7 @@
   "devDependencies": {
     "@types/compression": "1.7.5",
     "@types/html-minifier-terser": "7.0.2",
-    "@types/node": "20.12.8",
+    "@types/node": "22.10.1",
     "@types/serve-static": "1.15.7",
     "@vitejs/plugin-vue": "5.0.4",
     "@vueuse/integrations": "10.9.0",

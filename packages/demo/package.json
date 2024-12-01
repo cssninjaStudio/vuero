@@ -142,7 +142,7 @@
     "@types/js-yaml": "4.0.9",
     "@types/mapbox-gl": "3.1.0",
     "@types/mapbox__mapbox-gl-geocoder": "5.0.0",
-    "@types/node": "20.12.8",
+    "@types/node": "22.10.1",
     "@types/nprogress": "0.2.3",
     "@types/photoswipe": "4.1.6",
     "@types/serve-static": "1.15.7",

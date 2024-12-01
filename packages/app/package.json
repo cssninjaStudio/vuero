@@ -44,7 +44,7 @@
     "vue-router": "4.3.2"
   },
   "devDependencies": {
-    "@types/node": "20.12.8",
+    "@types/node": "22.10.1",
     "@vitejs/plugin-vue": "5.0.4",
     "rollup-plugin-purgecss": "6.0.0",
     "sass": "npm:sass-embedded@1.75.0",
