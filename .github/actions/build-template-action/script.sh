@@ -27,6 +27,7 @@ then
 fi
 
 CWD=`pwd`
+DOCUMENTATION_PATH=./documentation
 PACKAGE_PATH=./packages/${INPUT_PACKAGE}
 ARCHIVE=${INPUT_PROJECT}-${INPUT_PACKAGE}-${INPUT_TAG}.zip
 ARCHIVE_PATH=$CWD/$ARCHIVE
@@ -49,6 +50,12 @@ zip -r $ARCHIVE_PATH . \
   -x "dist-electron/*" \
   -x "release/*" \
   -x ".output/*" 
+
+# add /documentation to the zip
+cd $CWD
+if [ -d $DOCUMENTATION_PATH ]; then
+  zip -r $ARCHIVE_PATH $DOCUMENTATION_PATH
+fi
 
 # human readable size
 ARCHIVE_SIZE=$(du -h $ARCHIVE_PATH | cut -f1)
