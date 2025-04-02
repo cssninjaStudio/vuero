@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 
+import type { ViteDevServer } from 'vite'
 import {
   setResponseStatus,
   setResponseHeader,
@@ -7,7 +8,7 @@ import {
   eventHandler,
 } from 'h3'
 import { isProduction, isDebug } from 'std-env'
-import type { ViteDevServer } from 'vite'
+import { Youch } from 'youch'
 
 import type { VueroServerRender } from '../types'
 import { resolve } from '../utils'
@@ -53,7 +54,10 @@ export function createEventHandler({
         vite?.ssrFixStacktrace(error)
         console.error('[dev] [pageError] ', error)
 
-        return error.message
+        const youch = new Youch()
+        return await youch.toHTML(error, {
+          title: 'An error occurred during Vuero server rendering',
+        })
       }
       else {
         setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')

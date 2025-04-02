@@ -8,6 +8,7 @@ import {
   setResponseHeader,
   setResponseStatus,
 } from 'h3'
+import { Youch } from 'youch'
 
 import { isDebug, isProduction } from 'std-env'
 import { resolve } from '../utils'
@@ -53,7 +54,10 @@ export function createEventHandler({
         vite?.ssrFixStacktrace(error)
         console.error('[dev] [pageError] ', error)
 
-        return error.message
+        const youch = new Youch()
+        return await youch.toHTML(error, {
+          title: 'An error occurred during Vuero server rendering',
+        })
       }
       else {
         setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')

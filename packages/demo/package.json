@@ -176,6 +176,7 @@
     "vite-plugin-pwa": "1.0.0",
     "vite-plugin-vue-devtools": "7.7.2",
     "vue-component-meta": "2.2.8",
-    "vue-tsc": "2.2.8"
+    "vue-tsc": "2.2.8",
+    "youch": "4.1.0-beta.6"
   }
 }
