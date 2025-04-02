@@ -23,7 +23,7 @@ node_modules/
 
 # build output
 dist
-dist-electron
+out
 release
 
 # ignoring vuero releases files

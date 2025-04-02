@@ -16,10 +16,6 @@ import { createApp } from './app'
 import 'iconify-icon'
 
 
-import './electron-ipc/ipc'
-// If you want use Node.js, the`nodeIntegration` needs to be enabled in the Main process.
-// import './electron-ipc/node'
-
 /**
  * We create our app and mount it when it is ready
  *

@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "private": true,
   "type": "module",
-  "main": "dist-electron/main/index.js",
+  "main": "./out/main/index.js",
+  "homepage": "https://vuero.cssninja.io",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
@@ -12,17 +13,19 @@
     "npm": ">=10"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "electron-vite dev",
     "build": "run-s build:update-bulma-colors build:client build:electron",
     "build:update-bulma-colors": "bulma-css-vars",
-    "build:client": "rimraf dist-electron && cross-env NODE_ENV=production vite build",
+    "build:client": "electron-vite build",
     "build:electron": "electron-builder build",
-    "start": "cross-env NODE_ENV=production serve dist -s -p 5000",
+    "start": "electron-vite preview",
     "test": "run-p test:*",
     "test:tsc": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@cssninja/bulma-css-vars": "0.9.3",
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^4.0.0",
     "@fontsource-variable/fira-code": "5.2.5",
     "@fontsource-variable/montserrat": "5.2.5",
     "@fontsource-variable/roboto-flex": "5.2.5",
@@ -33,6 +36,7 @@
     "@vueuse/router": "13.0.0",
     "bulma": "npm:@cssninja/bulma@0.9.4",
     "defu": "6.1.4",
+    "electron-updater": "^6.3.9",
     "focus-trap": "7.6.4",
     "focus-trap-vue": "4.0.3",
     "iconify-icon": "2.3.0",
@@ -49,11 +53,15 @@
     "vue-router": "4.5.0"
   },
   "devDependencies": {
+    "@electron-toolkit/eslint-config-prettier": "3.0.0",
+    "@electron-toolkit/eslint-config-ts": "^3.0.0",
+    "@electron-toolkit/tsconfig": "^1.0.1",
     "@types/node": "22.13.17",
     "@vitejs/plugin-vue": "5.2.3",
     "cross-env": "7.0.3",
     "electron": "35.1.2",
     "electron-builder": "26.0.12",
+    "electron-vite": "3.1.0",
     "rollup-plugin-purgecss": "7.0.2",
     "sass": "1.75.0",
     "terser": "5.39.0",
@@ -61,8 +69,6 @@
     "unplugin-auto-import": "19.1.2",
     "unplugin-vue-components": "28.4.1",
     "vite": "6.2.4",
-    "vite-plugin-electron": "0.29.0",
-    "vite-plugin-electron-renderer": "0.14.6",
     "vite-plugin-vue-devtools": "7.7.2",
     "vue-tsc": "2.2.8"
   }

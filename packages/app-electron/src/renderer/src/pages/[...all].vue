@@ -1,8 +1,4 @@
 <script setup lang="ts">
-definePage({
-  alias: ['/'],
-})
-
 const isLoading = ref(false)
 const router = useRouter()
 const route = useRoute()
