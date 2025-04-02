@@ -113,7 +113,7 @@ export default defineConfig(({ isSsrBuild }) => ({
      * unplugin-vue-router plugin generate routes based on file system
      * allow to use typed routes and usage of defineLoader
      *
-     * @see https://uvr.esm.is/rfcs/data-loaders/
+     * @see https://uvr.esm.is/
      */
     VueRouter({
       routesFolder: 'src/pages',
@@ -148,14 +148,14 @@ export default defineConfig(({ isSsrBuild }) => ({
     /**
      * Unhead provides a Vite plugin to optimise your builds, by removing composables that aren't needed and simplifying your code.
      *
-     * @see https://unhead.harlanzw.com/guide/getting-started/vite-plugin
+     * @see https://unhead.unjs.io/docs/vue/head/guides/advanced/vite-plugin
      */
     Unhead(),
 
     /**
      * unplugin-auto-import allow to automaticaly import modules/components
      *
-     * @see https://github.com/antfu/unplugin-auto-import
+     * @see https://github.com/unplugin/unplugin-auto-import
      */
     Imports({
       dts: './types/imports.d.ts',
@@ -203,7 +203,7 @@ export default defineConfig(({ isSsrBuild }) => ({
      * unplugin-vue-components plugin is responsible of autoloading components
      * documentation and md file are loaded for elements and components sections
      *
-     * @see https://github.com/antfu/unplugin-vue-components
+     * @see https://github.com/unplugin/unplugin-vue-components
      */
     Components({
       dirs: ['documentation', 'src/components'],
@@ -215,7 +215,7 @@ export default defineConfig(({ isSsrBuild }) => ({
     /**
      * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
      *
-     * @see https://github.com/antfu/vite-plugin-pwa
+     * @see https://vite-pwa-org.netlify.app/
      */
     VitePWA({
       base: '/',
