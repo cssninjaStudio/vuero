@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import type { VueHeadClient, MergeHead } from '@unhead/vue'
+import type { VueHeadClient } from '@unhead/vue'
 import type { Router } from 'vue-router'
 import type { Pinia } from 'pinia'
 import type { H3Event } from 'h3'
@@ -7,7 +7,7 @@ import type { H3Event } from 'h3'
 export interface VueroAppContext {
   app: App
   router: Router
-  head: VueHeadClient<MergeHead>
+  head: VueHeadClient
   pinia: Pinia
   event?: H3Event
 }

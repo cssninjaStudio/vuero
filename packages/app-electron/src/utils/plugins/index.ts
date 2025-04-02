@@ -1,12 +1,12 @@
 import type { App } from 'vue'
-import type { VueHeadClient, MergeHead } from '@unhead/vue'
+import type { VueHeadClient } from '@unhead/vue'
 import type { Router } from 'vue-router'
 import type { Pinia } from 'pinia'
 
 export interface VueroAppContext {
   app: App
   router: Router
-  head: VueHeadClient<MergeHead>
+  head: VueHeadClient
   pinia: Pinia
 }
 export type VueroPlugin = (vuero: VueroAppContext) => void | Promise<void>
