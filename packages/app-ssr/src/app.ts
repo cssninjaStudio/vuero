@@ -1,7 +1,8 @@
 import { createSSRApp } from 'vue'
 
 import type { H3Event } from 'h3'
-import { createHead } from '@unhead/vue'
+import { createHead as createClientHead } from '@unhead/vue/client'
+import { createHead as createSSRHead } from '@unhead/vue/server'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
 
@@ -19,9 +20,14 @@ export async function createApp(event?: H3Event) {
 
   const router = createRouter()
 
-  const head = createHead({
-    plugins: [InferSeoMetaPlugin()],
-  })
+  const head = import.meta.env.SSR
+    ? createSSRHead({
+      plugins: [InferSeoMetaPlugin()],
+    })
+    : createClientHead({
+      plugins: [InferSeoMetaPlugin()],
+    })
+
   app.use(head)
 
   const pinia = createPinia()

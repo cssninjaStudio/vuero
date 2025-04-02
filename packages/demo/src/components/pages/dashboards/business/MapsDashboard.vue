@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Map, Popup } from 'mapbox-gl'
 
-import 'mapbox-gl/src/css/mapbox-gl.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
 const props = defineProps<{

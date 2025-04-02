@@ -255,7 +255,7 @@ export default defineConfig(({ isSsrBuild }) => ({
          *
          * @see https://vite-pwa-org.netlify.app/guide/service-worker-precache.html
          */
-        globPatterns: ['**/*.{js,mjs,css,ico,png,svg,webp,jpg,jpeg,html}'],
+        globPatterns: ['**/*.{ico,js,mjs,css,html}'],
       },
     }),
 

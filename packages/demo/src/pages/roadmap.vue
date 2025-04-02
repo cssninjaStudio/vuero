@@ -1,8 +1,6 @@
 <script lang="ts">
 import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
-</script>
 
-<script setup lang="ts">
 import { useRouteQuery } from '@vueuse/router'
 
 /**
@@ -55,7 +53,9 @@ export const useRoadmapData = defineBasicLoader(async (to) => {
   // used for SSR only
   key: 'roadmap-data',
 })
+</script>
 
+<script setup lang="ts">
 const { data, isLoading } = useRoadmapData()
 const years = ['2022', '2021', '2020', '2019']
 const changeTypes = ['All', 'Enhancements', 'Features', 'Bug fixes']

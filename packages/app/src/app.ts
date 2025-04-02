@@ -1,6 +1,6 @@
 import { createApp as createClientApp } from 'vue'
 
-import { createHead } from '@unhead/vue'
+import { createHead } from '@unhead/vue/client'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
 
