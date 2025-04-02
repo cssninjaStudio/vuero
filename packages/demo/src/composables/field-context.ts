@@ -1,6 +1,7 @@
+import type { FieldContext } from 'vee-validate'
 import type { InjectionKey, MaybeRefOrGetter } from 'vue'
 import { defu } from 'defu'
-import { type FieldContext, useField } from 'vee-validate'
+import { useField } from 'vee-validate'
 
 export interface VFieldContext<TValue = unknown> {
   id: Ref<string>

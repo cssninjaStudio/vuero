@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
-
 import { useRouteQuery } from '@vueuse/router'
+
+import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
 
 /**
  * This is an example of data loader (experimental feature)
@@ -12,7 +12,7 @@ import { useRouteQuery } from '@vueuse/router'
  * @see https://github.com/vuejs/rfcs/discussions/460
  * @see https://uvr.esm.is/rfcs/data-loaders/
  */
-// eslint-disable-next-line vue/no-export-in-script-setup
+
 export const useRoadmapData = defineBasicLoader(async (to) => {
   console.log('useRoadmapData defineLoader', to)
 

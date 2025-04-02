@@ -1,4 +1,4 @@
-const randomizeArray = function (arg: number[]) {
+function randomizeArray(arg: number[]) {
   const array = arg.slice()
   let currentIndex = array.length
   let temporaryValue

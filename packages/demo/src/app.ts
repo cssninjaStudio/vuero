@@ -24,11 +24,11 @@ export async function createApp(event?: H3Event) {
 
   const head = __VUERO_SSR_BUILD__
     ? createSSRHead({
-      plugins: [InferSeoMetaPlugin()],
-    })
+        plugins: [InferSeoMetaPlugin()],
+      })
     : createClientHead({
-      plugins: [InferSeoMetaPlugin()],
-    })
+        plugins: [InferSeoMetaPlugin()],
+      })
 
   app.use(head)
 

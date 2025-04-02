@@ -1,4 +1,5 @@
-import { createVueroContext, type VueroContext } from '/@src/composables/vuero-context'
+import type { VueroContext } from '/@src/composables/vuero-context'
+import { createVueroContext } from '/@src/composables/vuero-context'
 import { definePlugin } from '/@src/utils/plugins'
 
 // augment the initial state type

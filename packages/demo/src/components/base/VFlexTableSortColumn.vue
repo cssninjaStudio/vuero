@@ -29,6 +29,7 @@ export default defineComponent({
       default: 'sort',
     },
   },
+  emits: ['update:modelValue'],
   slots: Object as SlotsType<{
     default: {
       isDesc: boolean
@@ -37,7 +38,6 @@ export default defineComponent({
       value: string | LocationQueryValue[]
     }
   }>,
-  emits: ['update:modelValue'],
   setup(props, context) {
     const route = useRoute()
     const rawSort = computed(

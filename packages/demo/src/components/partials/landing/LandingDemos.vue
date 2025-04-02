@@ -68,10 +68,10 @@ const navbarDemos = navbar.sort(displayOrder) as DemoItem[]
 
 const totalDemos
   = sidebarDemos.length
-  + authDemos.length
-  + minimalDemos.length
-  + templatesDemos.length
-  + navbarDemos.length
+    + authDemos.length
+    + minimalDemos.length
+    + templatesDemos.length
+    + navbarDemos.length
 
 const filterInput = ref('')
 

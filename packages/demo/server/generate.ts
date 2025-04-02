@@ -1,12 +1,13 @@
 // Pre-render the app into static HTML.
 // run `pnpm ssg:build` and then `dist` can be served as a static site.
 
+import type { InlineConfig, ResolvedConfig } from 'vite'
 import fs from 'node:fs'
 import fsp from 'node:fs/promises'
 import path from 'node:path'
 import colors from 'picocolors'
 import { env } from 'std-env'
-import { type InlineConfig, resolveConfig, type ResolvedConfig } from 'vite'
+import { resolveConfig } from 'vite'
 
 import { buildApp } from './generate/builder'
 import { populateRouteParams } from './generate/populate'

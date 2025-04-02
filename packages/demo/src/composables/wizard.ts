@@ -1,10 +1,10 @@
-import type { InjectionKey } from 'vue'
-
 /**
  * Using typescript types allow better developer experience
  * with autocompletion and compiler error prechecking
  */
 import type { WizardData } from '/@src/types/wizard'
+
+import type { InjectionKey } from 'vue'
 
 interface WizardStepOptions {
   number: number

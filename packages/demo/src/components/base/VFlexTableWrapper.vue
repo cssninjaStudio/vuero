@@ -111,10 +111,10 @@ export default defineComponent({
       default: 300,
     },
   },
+  emits: ['update:sort', 'update:page', 'update:limit', 'update:searchTerm'],
   slots: Object as SlotsType<{
     default: VFlexTableWrapperInjection
   }>,
-  emits: ['update:sort', 'update:page', 'update:limit', 'update:searchTerm'],
   setup(props, context) {
     const rawData = ref<any[]>()
     const loading = ref(false)

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import PhotoSwipeLightbox, { type PhotoSwipeOptions } from 'photoswipe/lightbox'
+import type { PhotoSwipeOptions } from 'photoswipe/lightbox'
+import PhotoSwipeLightbox from 'photoswipe/lightbox'
 
 import 'photoswipe/style.css'
 

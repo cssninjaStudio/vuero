@@ -8,9 +8,9 @@ import {
   setResponseHeader,
   setResponseStatus,
 } from 'h3'
-import { Youch } from 'youch'
-
 import { isDebug, isProduction } from 'std-env'
+
+import { Youch } from 'youch'
 import { resolve } from '../utils'
 
 export function createEventHandler({

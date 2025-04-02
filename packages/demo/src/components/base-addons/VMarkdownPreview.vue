@@ -1,6 +1,7 @@
 <script lang="ts">
 import type { BuiltinLanguage, BuiltinTheme } from 'shiki'
-import { h, type PropType } from 'vue'
+import type { PropType } from 'vue'
+import { h } from 'vue'
 
 async function loadModules() {
   const [
