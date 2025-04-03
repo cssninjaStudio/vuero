@@ -207,6 +207,9 @@ export default defineConfig(({ isSsrBuild }) => ({
      */
     Components({
       dirs: ['documentation', 'src/components'],
+      globsExclude: [
+        'documentation/{guide,help,layouts}/**',
+      ],
       extensions: ['vue', 'md'],
       dts: './types/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
