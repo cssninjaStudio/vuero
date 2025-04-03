@@ -6,7 +6,7 @@ export interface VCollapseItem {
   url?: string
 }
 export interface VCollapseProps {
-  items: VCollapseItem[]
+  items?: VCollapseItem[]
   itemOpen?: number
   withChevron?: boolean
 }
@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<VCollapseProps>(), {
 })
 
 const internalItemOpen = ref<number | undefined>(props.itemOpen)
-const toggle = (key: number) => {
+function toggle(key: number) {
   if (internalItemOpen.value === key) {
     internalItemOpen.value = undefined
     return

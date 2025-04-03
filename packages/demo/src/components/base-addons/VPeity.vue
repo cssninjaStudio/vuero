@@ -3,8 +3,8 @@ import type { PeityOptions, PeityType } from '/@src/utils/peity/types'
 import { drawBar, drawLine, drawPie } from '/@src/utils/peity'
 
 export interface VPeityProps {
-  values: number[]
-  type: PeityType
+  values?: number[]
+  type?: PeityType
   min?: number
   max?: number
   radius?: number

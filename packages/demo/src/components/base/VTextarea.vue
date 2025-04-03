@@ -5,11 +5,10 @@ export interface VTextareaProps {
   autogrow?: boolean
 }
 
+const props = defineProps<VTextareaProps>()
 const modelValue = defineModel<string>({
   default: '',
 })
-const props = defineProps<VTextareaProps>()
-
 const { field, id } = useVFieldContext({
   id: () => props.id,
   create: false,
@@ -42,12 +41,13 @@ function fitSize() {
 
   if (props.autogrow) {
     textareaRef.value.style.height = 'auto'
-    textareaRef.value.style.height = textareaRef.value.scrollHeight + 'px'
+    textareaRef.value.style.height = `${textareaRef.value.scrollHeight}px`
   }
 }
 
 const classes = computed(() => {
-  if (props.raw) return []
+  if (props.raw)
+    return []
 
   return ['textarea']
 })

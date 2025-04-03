@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface VAccordionProps {
-  items: {
+  items?: {
     title: string
     content: string
   }[]
@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<VAccordionProps>(), {
 })
 
 const internalOpenItems = ref(props.openItems)
-const toggle = (key: number) => {
+function toggle(key: number) {
   const wasOpen = internalOpenItems.value.includes(key)
 
   if (props.exclusive) {

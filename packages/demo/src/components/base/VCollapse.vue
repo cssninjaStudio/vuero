@@ -6,7 +6,7 @@ export interface VCollapseItem {
   url?: string
 }
 export interface VCollapseProps {
-  items: VCollapseItem[]
+  items?: VCollapseItem[]
   itemOpen?: number
   withChevron?: boolean
 }

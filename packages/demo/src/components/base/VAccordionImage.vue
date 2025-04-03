@@ -8,7 +8,7 @@ export interface VAccordionImageEmits {
   (e: 'select', key: string | number): void
 }
 export interface VAccordionImageProps {
-  items: VAccordionImageItem[]
+  items?: VAccordionImageItem[]
 }
 
 const props = withDefaults(defineProps<VAccordionImageProps>(), {

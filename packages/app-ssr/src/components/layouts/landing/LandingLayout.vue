@@ -2,7 +2,7 @@
 import type { LandingNavItem } from './landing.types'
 
 const props = withDefaults(defineProps<{
-  links: LandingNavItem[]
+  links?: LandingNavItem[]
 }>(), {
   links: () => [],
 })

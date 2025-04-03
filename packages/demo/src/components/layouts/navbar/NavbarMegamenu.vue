@@ -2,7 +2,7 @@
 import type { NavbarMegamenu } from './navbar.types'
 
 const props = withDefaults(defineProps<{
-  children: NavbarMegamenu[]
+  children?: NavbarMegamenu[]
 }>(), {
   children: () => [],
 })

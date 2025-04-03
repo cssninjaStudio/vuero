@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface VAccordionProps {
-  items: {
+  items?: {
     title: string
     content: string
   }[]

@@ -2,7 +2,7 @@
 import type { LandingNavItem } from './landing.types'
 
 const props = withDefaults(defineProps<{
-  links: LandingNavItem[]
+  links?: LandingNavItem[]
 }>(), {
   links: () => [],
 })
@@ -46,6 +46,6 @@ const props = withDefaults(defineProps<{
 </template>
 
 <style lang="scss">
-@import '~/scss/abstracts/all';
-@import '~/scss/layout/landing';
+@import '/@src/scss/abstracts/all';
+@import '/@src/scss/layout/landing';
 </style>
