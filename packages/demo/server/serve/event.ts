@@ -10,7 +10,6 @@ import {
 } from 'h3'
 import { isDebug, isProduction } from 'std-env'
 
-import { Youch } from 'youch'
 import { resolve } from '../utils'
 
 export function createEventHandler({
@@ -54,6 +53,7 @@ export function createEventHandler({
         vite?.ssrFixStacktrace(error)
         console.error('[dev] [pageError] ', error)
 
+        const Youch = await import('youch').then(m => m.Youch)
         const youch = new Youch()
         return await youch.toHTML(error, {
           title: 'An error occurred during Vuero server rendering',
