@@ -34,7 +34,7 @@ export default defineConfig({
        */
       VueRouter({
         routesFolder: 'src/renderer/src/pages',
-        dts: './types/router.d.ts',
+        dts: './src/renderer/types/router.d.ts',
         beforeWriteFiles(root) {
           root.insert('/', resolve('src/renderer/src/pages/[...all].vue'))
         },
@@ -80,8 +80,8 @@ export default defineConfig({
        * @see https://github.com/antfu/unplugin-vue-components
        */
       Components({
-        dirs: ['documentation', 'src/components'],
-        extensions: ['vue', 'md'],
+        dirs: ['src/components'],
+        extensions: ['vue'],
         dts: './types/components.d.ts',
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       }),
