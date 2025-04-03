@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { RouteLocationAsString } from 'unplugin-vue-router'
+import type { RouteLocationAsString } from 'vue-router'
 
 export type VTabsType = 'boxed' | 'toggle' | 'rounded'
 export type VTabsAlign = 'centered' | 'right'
