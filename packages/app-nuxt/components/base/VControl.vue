@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import VLabel from '/@src/components/base/VLabel.vue'
-
 const props = defineProps({
   id: {
     type: String,
