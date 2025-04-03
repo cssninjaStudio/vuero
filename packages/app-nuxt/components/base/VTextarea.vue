@@ -18,10 +18,10 @@ const { field, id } = useVFieldContext({
 
 const textareaRef = useTemplateRef<HTMLTextAreaElement>('textarea')
 
-const internal = computed({
+const internal = computed<string>({
   get() {
     if (field?.value) {
-      return field.value.value
+      return (field.value.value) as any
     }
     else {
       return modelValue.value

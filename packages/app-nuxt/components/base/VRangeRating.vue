@@ -30,10 +30,10 @@ const hasValue = computed(
 )
 const active = computed(() => !props.readonly && hasValue.value)
 
-const internal = computed({
+const internal = computed<number>({
   get() {
     if (field?.value) {
-      return (field.value.value as number | undefined) ?? 0
+      return (field.value.value) as any ?? 0
     }
     else {
       return modelValue.value ?? 0

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const modelValue = defineModel<number | undefined>({
+  default: undefined,
+})
 const props = withDefaults(
   defineProps<{
     id?: string
@@ -16,9 +19,7 @@ const props = withDefaults(
     readonly: undefined,
   },
 )
-const modelValue = defineModel<number | undefined>({
-  default: undefined,
-})
+
 const { field, id } = useVFieldContext({
   id: () => props.id,
   help: 'VRangeRating',
@@ -29,20 +30,20 @@ const hasValue = computed(
 )
 const active = computed(() => !props.readonly && hasValue.value)
 
-const internal = computed({
+const internal = computed<number>({
   get() {
     if (field?.value) {
-      return field.value.value as any as number ?? 0
+      return (field.value.value) as any ?? 0
     }
     else {
-      return modelValue.value as number ?? 0
+      return modelValue.value ?? 0
     }
   },
-  set(value) {
+  set(value: any) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    modelValue.value = value as any
+    modelValue.value = value
   },
 })
 
@@ -50,24 +51,21 @@ const sizeStyle = computed(() => {
   switch (props.size) {
     case 'small':
       return 'is-size-6'
+    case 'base':
+      return 'is-size-5'
     case 'medium':
       return 'is-size-4'
     case 'large':
       return 'is-size-3'
     case 'xlarge':
       return 'is-size-2'
-    case 'base':
-    default:
-      return 'is-size-5'
   }
 })
 
 const radiogroup = ref()
 function focus() {
-  if (props.readonly)
-    return
-  if (props.disabled)
-    return
+  if (props.readonly) return
+  if (props.disabled) return
   if (radiogroup.value) {
     radiogroup.value.focus()
   }
@@ -76,34 +74,29 @@ function focus() {
 const wrapper = ref()
 const { focused } = useFocusWithin(wrapper)
 onKeyStroke('ArrowLeft', (e) => {
-  if (!focused.value)
-    return
-  if (props.disabled)
-    return
+  if (!focused.value) return
+  if (props.disabled) return
 
   e.preventDefault()
 
-  if (typeof internal.value === 'number' && internal.value > 0) {
+  if (internal.value > 0) {
     internal.value = internal.value - 1
   }
 })
 onKeyStroke('ArrowRight', (e) => {
-  if (!focused.value)
-    return
-  if (props.disabled)
-    return
+  if (!focused.value) return
+  if (props.disabled) return
 
   e.preventDefault()
 
-  if (typeof internal.value === 'number' && internal.value < props.max) {
+  if (internal.value < props.max) {
     internal.value = internal.value + 1
   }
 })
 
 const highlighted = ref<number>()
 function highlightIndex(index: number) {
-  if (props.readonly)
-    return
+  if (props.readonly) return
   highlighted.value = index + 1
 }
 function unhighlight() {
@@ -111,22 +104,19 @@ function unhighlight() {
 }
 
 function selectIndex(index: number) {
-  if (props.readonly)
-    return
-  if (props.disabled)
-    return
+  if (props.readonly) return
+  if (props.disabled) return
   internal.value = index + 1
 }
 
 function isStarSelected(index: number) {
-  if (!hasValue.value)
-    return 0
+  if (!hasValue.value) return 0
 
   if (highlighted.value !== undefined) {
     return highlighted.value - index > 0
   }
 
-  return (internal.value ?? 0) - index > 0
+  return internal.value - index > 0
 }
 </script>
 
@@ -171,7 +161,7 @@ function isStarSelected(index: number) {
         :key="index"
         :role="active ? 'radio' : undefined"
         :aria-label="String(index + 1)"
-        :aria-checked="active ? (internal ?? 0) - index > 0 : undefined"
+        :aria-checked="active ? internal - index > 0 : undefined"
         aria-hidden="true"
         class="rating-star"
         :class="{

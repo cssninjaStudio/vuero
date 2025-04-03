@@ -1,4 +1,4 @@
-import type { Ref } from 'vue'
+import type { ShallowRef } from 'vue'
 
 export interface DropdownOptions {
   clickOutside?: boolean
@@ -8,7 +8,7 @@ export interface DropdownOptions {
  * Generate refs to handle a dropdown state
  */
 export function useDropdownContext(
-  target: Ref<HTMLElement | undefined>,
+  target: Readonly<ShallowRef<HTMLElement | null>>,
   options: DropdownOptions = { clickOutside: true },
 ) {
   const isOpen = ref(false)

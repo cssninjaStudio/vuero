@@ -5,10 +5,11 @@ export interface VTextareaProps {
   autogrow?: boolean
 }
 
-const props = defineProps<VTextareaProps>()
 const modelValue = defineModel<string>({
   default: '',
 })
+const props = defineProps<VTextareaProps>()
+
 const { field, id } = useVFieldContext({
   id: () => props.id,
   create: false,
@@ -17,13 +18,13 @@ const { field, id } = useVFieldContext({
 
 const textareaRef = useTemplateRef<HTMLTextAreaElement>('textarea')
 
-const internal = computed({
+const internal = computed<string>({
   get() {
     if (field?.value) {
-      return field.value.value as any as string
+      return (field.value.value) as any
     }
     else {
-      return modelValue.value as string
+      return modelValue.value
     }
   },
   set(value: any) {
@@ -41,13 +42,12 @@ function fitSize() {
 
   if (props.autogrow) {
     textareaRef.value.style.height = 'auto'
-    textareaRef.value.style.height = `${textareaRef.value.scrollHeight}px`
+    textareaRef.value.style.height = textareaRef.value.scrollHeight + 'px'
   }
 }
 
 const classes = computed(() => {
-  if (props.raw)
-    return []
+  if (props.raw) return []
 
   return ['textarea']
 })

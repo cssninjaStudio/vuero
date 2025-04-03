@@ -19,7 +19,7 @@ const isExternalLink = computed(() => {
   <a
     v-if="isExternalLink"
     v-bind="$attrs"
-    :href="to"
+    :href="props.to"
     target="_blank"
   >
     <slot />

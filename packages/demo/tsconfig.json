@@ -35,7 +35,7 @@
     "importHelpers": true,
     "noEmit": true,
     "removeComments": true,
-    // "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
