@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/cssninjaStudio/vuero/compare/v3.0.0...v3.1.0) (2025-04-03)
+
+
+### 🩹 Bug Fixes
+
+* display ToolbarUserProfile on sidebar with label layout ([87c2863](https://github.com/cssninjaStudio/vuero/commit/87c2863c45d7904982875ccb7036dc72988f144a))
+* typescript issues ([0cb128f](https://github.com/cssninjaStudio/vuero/commit/0cb128fde76739a296120c9f548490d274c866a0))
+* update vue router and unplugin-vue-router ([5953451](https://github.com/cssninjaStudio/vuero/commit/595345148cb5d1a894fdaab59849b5462702f445))
+
+
+### 🚀 Features
+
+* enable eslint cache ([9dd739f](https://github.com/cssninjaStudio/vuero/commit/9dd739f4dc0f71470ca45e4525eb97e60ea7da65))
+* impove dev SSR error rendering with youch ([fceec68](https://github.com/cssninjaStudio/vuero/commit/fceec68ce67b50fbce5c8e31475e2a1f2f23f42d))
+* migrate electron example to electron-vite ([b79591f](https://github.com/cssninjaStudio/vuero/commit/b79591f31e2a5879e6e93206ea13c7f42285dfdf))
+* migrate to eslint v9 ([db10489](https://github.com/cssninjaStudio/vuero/commit/db104890a24cb83d45b2b0212fe87f7d539c1716))
+* refactor useVFieldContext to use useId ([acc7f7f](https://github.com/cssninjaStudio/vuero/commit/acc7f7f2bb8497756af773fa7dc0565c5486dd2f))
+* replace ref with useTemplateRef ([3adcb06](https://github.com/cssninjaStudio/vuero/commit/3adcb06674a7e4995b6703d9afb886e18c7dc3ed))
+* upgrade major dependencies ([40664c1](https://github.com/cssninjaStudio/vuero/commit/40664c11eb3bd245bc868df5f704c91015371bab))
+* use new lazy hydration strategies ([0c24640](https://github.com/cssninjaStudio/vuero/commit/0c2464073430086bec371d0f9d5a00f61112754f))
+
 ## [3.0.0](https://github.com/cssninjaStudio/vuero/compare/v2.9.0...v3.0.0) (2024-05-10)
 
 
