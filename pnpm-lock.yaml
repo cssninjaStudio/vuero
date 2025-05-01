@@ -868,8 +868,8 @@ importers:
         specifier: 1.5.0
         version: 1.5.0(postcss-html@1.8.0)(stylelint@16.10.0(typescript@5.8.2))
       stylelint-config-standard:
-        specifier: 36.0.1
-        version: 36.0.1(stylelint@16.10.0(typescript@5.8.2))
+        specifier: 38.0.0
+        version: 38.0.0(stylelint@16.10.0(typescript@5.8.2))
       stylelint-config-standard-scss:
         specifier: 13.1.0
         version: 13.1.0(postcss@8.5.3)(stylelint@16.10.0(typescript@5.8.2))
@@ -1524,6 +1524,7 @@ packages:
 
   '@ckeditor/ckeditor5-build-classic@44.3.0':
     resolution: {integrity: sha512-tvOwT1dAZlY4v1vZItqR0VFfTzr+OLoEmnOW/Lchl2Y0BUWT99GCfABCvAdakBBYvKdsMLsH0jqZFvnLxJCUmg==}
+    deprecated: The predefined builds are no longer maintained. Check the https://ckeditor.com/docs/ckeditor5/latest/updating/nim-migration/predefined-builds.html page for the details.
 
   '@ckeditor/ckeditor5-ckbox@44.3.0':
     resolution: {integrity: sha512-R0cHl7aafBU1dvfpFu/dMq+7SMTKa7dAi1wQyu5RqmdN0glCAGXoyffe5h2gujcHGlUqzjGE9oX3207rrPi12A==}
@@ -8000,6 +8001,12 @@ packages:
     peerDependencies:
       stylelint: ^16.13.0
 
+  stylelint-config-recommended@16.0.0:
+    resolution: {integrity: sha512-4RSmPjQegF34wNcK1e1O3Uz91HN8P1aFdFzio90wNK9mjgAI19u5vsU868cVZboKzCaa5XbpvtTzAAGQAxpcXA==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.16.0
+
   stylelint-config-standard-scss@13.1.0:
     resolution: {integrity: sha512-Eo5w7/XvwGHWkeGLtdm2FZLOMYoZl1omP2/jgFCXyl2x5yNz7/8vv4Tj6slHvMSSUNTaGoam/GAZ0ZhukvalfA==}
     engines: {node: '>=18.12.0'}
@@ -8015,6 +8022,12 @@ packages:
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.1.0
+
+  stylelint-config-standard@38.0.0:
+    resolution: {integrity: sha512-uj3JIX+dpFseqd/DJx8Gy3PcRAJhlEZ2IrlFOc4LUxBX/PNMEQ198x7LCOE2Q5oT9Vw8nyc4CIL78xSqPr6iag==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.18.0
 
   stylelint-scss@6.8.1:
     resolution: {integrity: sha512-al+5eRb72bKrFyVAY+CLWKUMX+k+wsDCgyooSfhISJA2exqnJq1PX1iIIpdrvhu3GtJgNJZl9/BIW6EVSMCxdg==}
@@ -17846,6 +17859,10 @@ snapshots:
     dependencies:
       stylelint: 16.10.0(typescript@5.8.2)
 
+  stylelint-config-recommended@16.0.0(stylelint@16.10.0(typescript@5.8.2)):
+    dependencies:
+      stylelint: 16.10.0(typescript@5.8.2)
+
   stylelint-config-standard-scss@13.1.0(postcss@8.5.3)(stylelint@16.10.0(typescript@5.8.2)):
     dependencies:
       stylelint: 16.10.0(typescript@5.8.2)
@@ -17858,6 +17875,11 @@ snapshots:
     dependencies:
       stylelint: 16.10.0(typescript@5.8.2)
       stylelint-config-recommended: 14.0.1(stylelint@16.10.0(typescript@5.8.2))
+
+  stylelint-config-standard@38.0.0(stylelint@16.10.0(typescript@5.8.2)):
+    dependencies:
+      stylelint: 16.10.0(typescript@5.8.2)
+      stylelint-config-recommended: 16.0.0(stylelint@16.10.0(typescript@5.8.2))
 
   stylelint-scss@6.8.1(stylelint@16.10.0(typescript@5.8.2)):
     dependencies:
