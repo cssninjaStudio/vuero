@@ -1,4 +1,4 @@
-FROM bitnami/node:20 AS build
+FROM bitnami/node:22 AS build
 WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
