@@ -127,10 +127,10 @@ importers:
         version: 0.9.3(@cssninja/bulma@0.9.4)
       '@electron-toolkit/preload':
         specifier: ^3.0.1
-        version: 3.0.1(electron@35.1.2)
+        version: 3.0.1(electron@36.5.0)
       '@electron-toolkit/utils':
         specifier: ^4.0.0
-        version: 4.0.0(electron@35.1.2)
+        version: 4.0.0(electron@36.5.0)
       '@fontsource-variable/fira-code':
         specifier: 5.2.5
         version: 5.2.5
@@ -226,8 +226,8 @@ importers:
         specifier: 7.0.3
         version: 7.0.3
       electron:
-        specifier: 35.1.2
-        version: 35.1.2
+        specifier: 36.5.0
+        version: 36.5.0
       electron-builder:
         specifier: 26.0.12
         version: 26.0.12(electron-builder-squirrel-windows@26.0.12)
@@ -1524,6 +1524,7 @@ packages:
 
   '@ckeditor/ckeditor5-build-classic@44.3.0':
     resolution: {integrity: sha512-tvOwT1dAZlY4v1vZItqR0VFfTzr+OLoEmnOW/Lchl2Y0BUWT99GCfABCvAdakBBYvKdsMLsH0jqZFvnLxJCUmg==}
+    deprecated: The predefined builds are no longer maintained. Check the https://ckeditor.com/docs/ckeditor5/latest/updating/nim-migration/predefined-builds.html page for the details.
 
   '@ckeditor/ckeditor5-ckbox@44.3.0':
     resolution: {integrity: sha512-R0cHl7aafBU1dvfpFu/dMq+7SMTKa7dAi1wQyu5RqmdN0glCAGXoyffe5h2gujcHGlUqzjGE9oX3207rrPi12A==}
@@ -2373,6 +2374,7 @@ packages:
 
   '@oxc-parser/wasm@0.60.0':
     resolution: {integrity: sha512-Dkf9/D87WGBCW3L0+1DtpAfL4SrNsgeRvxwjpKCtbH7Kf6K+pxrT0IridaJfmWKu1Ml+fDvj+7HEyBcfUC/TXQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@oxc-project/types@0.56.5':
     resolution: {integrity: sha512-skY3kOJwp22W4RkaadH1hZ3hqFHjkRrIIE0uQ4VUg+/Chvbl+2pF+B55IrIk2dgsKXS57YEUsJuN6I6s4rgFjA==}
@@ -4513,8 +4515,8 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@35.1.2:
-    resolution: {integrity: sha512-ipYSDZEV3+PpHfJ8/oWlpMCvxwutX6xLvBz2HRPgEzSFzgLmGO7YXTjEow4DhDtCpGE+b95NTGoJaRAVQi5n7A==}
+  electron@36.5.0:
+    resolution: {integrity: sha512-ouVtHbHDFsRBHPGx9G6RDm4ccPaSCmrrR8tbUGZuqbJhqIClVBkVMz94Spjihag2Zo1eHtYD+KevALrc/94g1g==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -10378,17 +10380,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@electron-toolkit/preload@3.0.1(electron@35.1.2)':
+  '@electron-toolkit/preload@3.0.1(electron@36.5.0)':
     dependencies:
-      electron: 35.1.2
+      electron: 36.5.0
 
   '@electron-toolkit/tsconfig@1.0.1(@types/node@22.13.17)':
     dependencies:
       '@types/node': 22.13.17
 
-  '@electron-toolkit/utils@4.0.0(electron@35.1.2)':
+  '@electron-toolkit/utils@4.0.0(electron@36.5.0)':
     dependencies:
-      electron: 35.1.2
+      electron: 36.5.0
 
   '@electron/asar@3.2.18':
     dependencies:
@@ -13535,7 +13537,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@35.1.2:
+  electron@36.5.0:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 22.13.17

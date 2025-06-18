@@ -59,7 +59,7 @@
     "@types/node": "22.13.17",
     "@vitejs/plugin-vue": "5.2.3",
     "cross-env": "7.0.3",
-    "electron": "35.1.2",
+    "electron": "36.5.0",
     "electron-builder": "26.0.12",
     "electron-vite": "3.1.0",
     "rollup-plugin-purgecss": "7.0.2",
