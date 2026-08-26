@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "22.13.17",
-    "@vitejs/plugin-vue": "5.2.3",
+    "@vitejs/plugin-vue": "6.0.8",
     "rollup-plugin-purgecss": "7.0.2",
     "sass": "1.75.0",
     "terser": "5.39.0",

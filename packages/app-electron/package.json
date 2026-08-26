@@ -57,7 +57,7 @@
     "@electron-toolkit/eslint-config-ts": "^3.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@types/node": "22.13.17",
-    "@vitejs/plugin-vue": "5.2.3",
+    "@vitejs/plugin-vue": "6.0.8",
     "cross-env": "7.0.3",
     "electron": "35.1.2",
     "electron-builder": "26.0.12",

@@ -147,7 +147,7 @@
     "@types/serve-static": "1.15.7",
     "@types/unist": "3.0.3",
     "@types/vivus": "0.4.7",
-    "@vitejs/plugin-vue": "5.2.3",
+    "@vitejs/plugin-vue": "6.0.8",
     "@vue/compiler-sfc": "3.5.13",
     "@vueuse/integrations": "13.0.0",
     "eslint": "9.23.0",
