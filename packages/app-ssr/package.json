@@ -60,7 +60,7 @@
     "@types/html-minifier-terser": "7.0.2",
     "@types/node": "22.13.17",
     "@types/serve-static": "1.15.7",
-    "@vitejs/plugin-vue": "5.2.3",
+    "@vitejs/plugin-vue": "6.0.8",
     "@vueuse/integrations": "13.0.0",
     "fast-glob": "3.3.3",
     "rollup-plugin-purgecss": "7.0.2",
