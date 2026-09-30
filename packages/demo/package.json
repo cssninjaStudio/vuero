@@ -6,7 +6,7 @@
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "engines": {
     "node": ">=18",
     "npm": ">=10"
