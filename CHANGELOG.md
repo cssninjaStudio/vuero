@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/cssninjaStudio/vuero/compare/v3.1.0...v3.2.0) (2026-09-30)
+
+
+### ⚖️ License
+
+* relicense under MIT ([5dff5bb](https://github.com/cssninjaStudio/vuero/commit/5dff5bba54a8e61963b863dcccabfeca8d315ab3))
+
 ## [3.1.0](https://github.com/cssninjaStudio/vuero/compare/v3.0.0...v3.1.0) (2025-04-03)
 
 
