@@ -133,7 +133,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.11.0",
     "@ckeditor/ckeditor5-core": "44.3.0",
-    "@intlify/unplugin-vue-i18n": "6.0.5",
+    "@intlify/unplugin-vue-i18n": "11.2.5",
     "@types/compression": "1.7.5",
     "@types/dragula": "3.7.5",
     "@types/fs-extra": "11.0.4",
