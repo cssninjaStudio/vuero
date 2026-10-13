@@ -144,7 +144,7 @@
     "@types/node": "22.13.17",
     "@types/nprogress": "0.2.3",
     "@types/photoswipe": "4.1.6",
-    "@types/serve-static": "1.15.7",
+    "@types/serve-static": "2.2.0",
     "@types/unist": "3.0.3",
     "@types/vivus": "0.4.7",
     "@vitejs/plugin-vue": "5.2.3",
