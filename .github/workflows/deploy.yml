@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up dockertags
         run: |
           echo "dockertags=digisquad/cssninja.vuero-demo:latest" >> $GITHUB_ENV
@@ -52,7 +52,7 @@ jobs:
     needs: [docker-build]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Publish
         uses: appleboy/scp-action@master
         with:
